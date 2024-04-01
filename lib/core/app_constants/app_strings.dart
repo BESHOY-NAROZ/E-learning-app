@@ -30,6 +30,19 @@ class AppStrings {
   static const String kForgetPasswordHintBottomView = 'المتابعة بطريقة أخرى ؟';
   static const String kForgetPasswordLeftBottomView = 'تسجيل حساب';
   static const String kForgetPasswordRightBottomView = 'تسجيل دخول';
+  static const String kForgetPasswordErrorFormFiled = 'مثال للخطأ';
+  static const String kForgetPasswordGetCodeEmailMainText = 'تأكيد البريد '
+      'الإلكترونى';
+  static const String kForgetPasswordGetCodePhoneMainText = 'تأكيد رقمك الخاص';
+
+  static const String kForgetPasswordGetCodeEmailHintText = 'أدخل الكود المرسل '
+      'إلى البريد الإلكترونى بك';
+  static const String kForgetPasswordGetCodePhoneHintText = 'أدخل الكود المرسل '
+      'إلى رقم الهاتف الخاص بك';
+  static const String kForgetPasswordGetCodeHintText = 'إرسال مرة أخرة';
+  static const String kForgetPasswordGetCodeSecondHintText = ' لم يصلك الكود '
+      'بعد ؟ ';
+  static const String kForgetPasswordGetCodeMainButtonText = 'تأكيد';
 
 
 

@@ -11,7 +11,7 @@ import 'forget_password_with_phone/forget_password_with_phone_number_screen.dart
 class ForgetPasswordWays extends StatelessWidget {
   const ForgetPasswordWays({Key? key}) : super(key: key);
 
-static int myIndex = 0;
+static int myIndex = 1;
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);

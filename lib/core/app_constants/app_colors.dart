@@ -25,6 +25,11 @@ class AppColors{
     (0xffFFFFFF);
   static const Color kForgetPasswordMainText = Color(0xff4A88C5);
   static const Color kForgetPasswordHintBottomView = Color(0xff868E96);
+  static const Color kForgetPasswordErrorFormFiled = Color(0xffDC3434);
+  static const Color kForgetPasswordGetCodeSecondHintText = Color(0xff4A88C5);
+  static const Color kFormFiledGetCodeFormFiled = Color(0xffCED4DA);
+
+
 
 
 
