@@ -3,6 +3,7 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_Text.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
 import 'package:flutter/material.dart';
@@ -52,34 +53,18 @@ class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
           SizedBox(
             height: AppDimensions.getDimensions(requiredHeight: 45),
             width: AppDimensions.getDimensions(requiredWidth: 320),
-            child: TextFormField(
-              keyboardType: TextInputType.emailAddress,
+            child: CustomTextFormFiled(
+              hintText: AppStrings.kForgetPasswordTextFormFiledHintEmail,
               controller: ForgetPasswordWithEmail.emailController,
+              keyboardType: TextInputType.emailAddress,
               validator: (value) {
                 if (value == null || value.isEmpty) {
                   return '';
                 }
                 return null;
               },
-              decoration: InputDecoration(
-                errorStyle: const TextStyle(height: 0),
-                isDense: true,
-                enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: const BorderSide(
-                        color: AppColors.kLoginFormFiledBorder)),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                hintText: AppStrings.kForgetPasswordTextFormFiledHintEmail,
-                hintStyle: const TextStyle(
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.kFormFiledHint,
-                  fontSize: 14,
-                  fontFamily: 'Almarai',
-                ),
-              ),
             ),
+
           ),
           CustomMainButton(
             text: AppStrings.kForgetPasswordMainButtonText,

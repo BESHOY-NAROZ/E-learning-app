@@ -47,9 +47,10 @@ class LoginScreen extends StatelessWidget {
                 fontSize: 12),
           ),
           const CustomTextFormFiled(
+            obscureText: true,
             prefixIcon: Icon(Icons.visibility_off,
                 color: AppColors.kLoginFormFiledBorder),
-            hintText: AppStrings.kLogInTextFormFiledHint,
+            hintText: AppStrings.kResetPasswordHintFormFiled,
           ),
           Row(
             children: [
