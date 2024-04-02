@@ -1,7 +1,7 @@
-
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_with_phone/forget_password_countdown_timer.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/app_bar_signin.dart';
@@ -60,6 +60,7 @@ class _ForgetPasswordGetCodePhoneNumberState
                     ),
                     child: TextField(
                       maxLength: 1,
+                      cursorHeight: 0,
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.number,
                       style: const TextStyle(fontSize: 42),
@@ -90,13 +91,13 @@ class _ForgetPasswordGetCodePhoneNumberState
                     ForgetPasswordGetCodePhoneNumber.startCuntDown = true;
                   });
                 },
-                child:  MainHintText(
-                  myText:ForgetPasswordGetCodePhoneNumber.startCuntDown ?
-                  (AppStrings.kForgetPasswordGetCodePhoneCounter) :
-                  AppStrings.kForgetPasswordGetCodeHintText,
-                  color: ForgetPasswordGetCodePhoneNumber.startCuntDown ?
-                  AppColors.kSignInMainHintText:
-                  AppColors.kForgetPasswordGetCodeSecondHintText,
+                child: MainHintText(
+                  myText: ForgetPasswordGetCodePhoneNumber.startCuntDown
+                      ? (AppStrings.kForgetPasswordGetCodePhoneCounter)
+                      : AppStrings.kForgetPasswordGetCodeHintText,
+                  color: ForgetPasswordGetCodePhoneNumber.startCuntDown
+                      ? AppColors.kSignInMainHintText
+                      : AppColors.kForgetPasswordGetCodeSecondHintText,
                 ),
               ),
 
@@ -107,7 +108,10 @@ class _ForgetPasswordGetCodePhoneNumberState
             ],
           ),
           CustomMainButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, RoutesManager.resetPassword);
+
+            },
             text: AppStrings.kForgetPasswordGetCodeMainButtonText,
           ),
           const ForgetPasswordBottomView(

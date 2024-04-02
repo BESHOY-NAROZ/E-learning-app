@@ -16,13 +16,13 @@ class AppColors{
   static const Color kLoginOr = Color(0xff000000);
   static const Color kLoginLinear = Color(0xffF2F3FA);
   static const Color kLoginWays = Color(0xff0F6EAA);
-  static const Color kForgetPasswordToggleSelectedButtonColor = Color
-    (0xffF2F3FA);
-  static const Color kForgetPasswordToggleButtonColor = Color(0xff4A88C5);
+  static const Color kForgetPasswordToggleSelectedButtonColor = Color(0xff4A88C5);
+  static const Color kForgetPasswordToggleButtonColor = Color
+  (0xffF2F3FA);
   static const Color kForgetPasswordToggleSelectedButtonText = Color
-    (0xff868E96);
-  static const Color kForgetPasswordToggleButtonText = Color
     (0xffFFFFFF);
+  static const Color kForgetPasswordToggleButtonText = Color
+  (0xff868E96);
   static const Color kForgetPasswordMainText = Color(0xff4A88C5);
   static const Color kForgetPasswordHintBottomView = Color(0xff868E96);
   static const Color kForgetPasswordErrorFormFiled = Color(0xffDC3434);

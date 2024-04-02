@@ -1,4 +1,5 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_Text.dart';
@@ -11,20 +12,24 @@ class ForgetPasswordWithPhoneNumber extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
         children: [
 
-          ForgetPasswordMainText(
+          const ForgetPasswordMainText(
             myText: AppStrings.kForgetPasswordMainTextPhone,
           ),
-          MainHintText(
+          const MainHintText(
             myText: AppStrings.kForgetPasswordHintTextPhone,
           ),
-          CustomTextFormFiled(
+          const CustomTextFormFiled(
             hintText: AppStrings.kForgetPasswordTextFormFiledHintPhone,
           ),
           CustomMainButton(
             text: AppStrings.kForgetPasswordMainButtonText,
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+
+            },
           ),
 
         ],

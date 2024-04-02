@@ -3,6 +3,7 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_lists.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/uderlined_text.dart';
@@ -51,7 +52,11 @@ class LoginScreen extends StatelessWidget {
         ),
         Row(
           children: [
-            const CustomUnderLinedText(myText: AppStrings.kLogInForgetPassword,fontSize: 12),
+            InkWell(
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordWays);
+                },
+                child: const CustomUnderLinedText(myText: AppStrings.kLogInForgetPassword,fontSize: 12)),
 
             const Spacer(),
             const Text(

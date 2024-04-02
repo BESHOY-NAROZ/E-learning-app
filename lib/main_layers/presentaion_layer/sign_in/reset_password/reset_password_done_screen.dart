@@ -2,6 +2,7 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_Text.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,7 @@ class ResetPasswordDone extends StatelessWidget {
           CustomMainButton(
             text: AppStrings.kResetPasswordDoneMainButtonText,
             onPressed: () {
+              Navigator.pushReplacementNamed(context, RoutesManager.loginScreen);
 
             },
           )

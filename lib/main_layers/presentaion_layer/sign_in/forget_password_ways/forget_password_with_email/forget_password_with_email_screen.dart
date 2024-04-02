@@ -1,6 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_Text.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
@@ -83,6 +84,8 @@ class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
           CustomMainButton(
             text: AppStrings.kForgetPasswordMainButtonText,
             onPressed: () {
+              Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodeEmail);
+
               setState(() {
                 if (!ForgetPasswordWithEmail._formKey.currentState!
                     .validate()) {
