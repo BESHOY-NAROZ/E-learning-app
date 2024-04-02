@@ -47,7 +47,7 @@ class AppStrings {
   static const String kForgetPasswordGetCodeMainButtonText = 'تأكيد';
   static const String kResetPasswordMainText = 'إعادة التعيين';
   static const String kResetPasswordHintText =
-      ' يمكنك الأن تعيين كلمة المرور الجديدة. كلمة المرور الجديدة يجب أن تكون مختلفة عن القد يمة';
+      ' يمكنك الأن تعيين كلمة المرور الجديدة. كلمة المرور الجديدة يجب أن تكون مختلفة عن القديمة';
 
 static const String kResetPasswordHintFormFiled = '*******************';
 static const String kResetPasswordMainButtonText = 'تعيين';
