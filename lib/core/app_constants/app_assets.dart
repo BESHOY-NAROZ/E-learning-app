@@ -4,4 +4,5 @@ class AppAssets{
   static const String kFaceBook = 'assets/images/Facebook.png';
   static const String kIPhone = 'assets/images/IPhone.png';
   static const String kGoogle = 'assets/images/Google.png';
+  static const String kCorrect = 'assets/images/Correct.png';
 }

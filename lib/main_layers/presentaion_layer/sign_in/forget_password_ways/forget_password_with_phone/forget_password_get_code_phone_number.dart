@@ -1,16 +1,29 @@
+
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_with_phone/forget_password_countdown_timer.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/app_bar_signin.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_text.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
 import 'package:flutter/material.dart';
 
-class ForgetPasswordGetCodePhoneNumber extends StatelessWidget {
-  const ForgetPasswordGetCodePhoneNumber({Key? key}) : super(key: key);
+class ForgetPasswordGetCodePhoneNumber extends StatefulWidget {
+  const ForgetPasswordGetCodePhoneNumber({
+    Key? key,
+  }) : super(key: key);
 
+  static bool startCuntDown = false;
+
+  @override
+  State<ForgetPasswordGetCodePhoneNumber> createState() =>
+      _ForgetPasswordGetCodePhoneNumberState();
+}
+
+class _ForgetPasswordGetCodePhoneNumberState
+    extends State<ForgetPasswordGetCodePhoneNumber> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -65,16 +78,32 @@ class ForgetPasswordGetCodePhoneNumber extends StatelessWidget {
               },
             ),
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              MainHintText(
-                myText: AppStrings.kForgetPasswordGetCodeHintText,
-                color: AppColors.kForgetPasswordGetCodeSecondHintText,
+              if (ForgetPasswordGetCodePhoneNumber.startCuntDown)
+                const CountDownTimer(),
+              InkWell(
+                onTap: () {
+                  setState(() {
+                    CountDownTimerState();
+                    ForgetPasswordGetCodePhoneNumber.startCuntDown = true;
+                  });
+                },
+                child:  MainHintText(
+                  myText:ForgetPasswordGetCodePhoneNumber.startCuntDown ?
+                  (AppStrings.kForgetPasswordGetCodePhoneCounter) :
+                  AppStrings.kForgetPasswordGetCodeHintText,
+                  color: ForgetPasswordGetCodePhoneNumber.startCuntDown ?
+                  AppColors.kSignInMainHintText:
+                  AppColors.kForgetPasswordGetCodeSecondHintText,
+                ),
               ),
-              MainHintText(
+
+              const MainHintText(
                 myText: AppStrings.kForgetPasswordGetCodeSecondHintText,
               ),
+              // const CountDownTimer()
             ],
           ),
           CustomMainButton(

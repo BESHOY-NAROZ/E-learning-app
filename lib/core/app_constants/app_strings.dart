@@ -42,8 +42,22 @@ class AppStrings {
   static const String kForgetPasswordGetCodeHintText = 'إرسال مرة أخرة';
   static const String kForgetPasswordGetCodeSecondHintText = ' لم يصلك الكود '
       'بعد ؟ ';
+  static const String kForgetPasswordGetCodePhoneCounter= ' إرسال مرة أخرة '
+      'خلال  ';
   static const String kForgetPasswordGetCodeMainButtonText = 'تأكيد';
+  static const String kResetPasswordMainText = 'إعادة التعيين';
+  static const String kResetPasswordHintText =
+      ' يمكنك الأن تعيين كلمة المرور الجديدة. كلمة المرور الجديدة يجب أن تكون مختلفة عن القد يمة';
 
+static const String kResetPasswordHintFormFiled = '*******************';
+static const String kResetPasswordMainButtonText = 'تعيين';
+static const String kResetPasswordFirstError = 'أكثر من 6 أحرف';
+static const String kResetPasswordSecondError = 'تحتوى على رقم (1) على الأقل';
+  static const String kResetPasswordThirdError = 'مثال للخطأ';
+  static const String kResetPasswordDoneMainText = 'تم إعادة التعيين بنجاح';
+  static const String kResetPasswordDoneHintText = 'تم إعادة تعيين كلمة '
+      'المرور الخاصة بك. يمكنك الأن \n إعادة تسجيل الدخول لحسابك';
+  static const String kResetPasswordDoneMainButtonText = 'تسجيل الدخول';
 
 
 
