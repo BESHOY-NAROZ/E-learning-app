@@ -31,13 +31,14 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
             children: [
               Container(
                 height: AppDimensions.getDimensions(requiredHeight: 34.16),
-                width: AppDimensions.getDimensions(requiredWidth: 105),
+                width: AppDimensions.getDimensions(requiredWidth: 99.94),
                 decoration: BoxDecoration(
                     color:  ForgetPasswordWays.myIndex == 0 ? AppColors
                         .kForgetPasswordToggleSelectedButtonColor: AppColors.kForgetPasswordToggleButtonColor
                     ,
                     borderRadius: BorderRadius.circular(10)),
                 child: MaterialButton(
+                  padding: const EdgeInsets.all(0),
                   child:  Text(
                     AppStrings.kForgetPasswordButtonEmail,
                     textAlign: TextAlign.center,
@@ -60,15 +61,17 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
               //AppColors.kForgetPasswordToggleSelectedButtonColor
               Container(
                 height: AppDimensions.getDimensions(requiredHeight: 34.16),
-                width: AppDimensions.getDimensions(requiredWidth: 105),
+                width: AppDimensions.getDimensions(requiredWidth: 99.94),
                 decoration: BoxDecoration(
                     color: ForgetPasswordWays.myIndex == 1 ? AppColors
         .kForgetPasswordToggleSelectedButtonColor: AppColors
                         .kForgetPasswordToggleButtonColor,
                     borderRadius: BorderRadius.circular(10)),
                 child: MaterialButton(
+                  padding: const EdgeInsets.all(0),
                   child:  Text(
                     AppStrings.kForgetPasswordButtonPhone,
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       color: ForgetPasswordWays.myIndex == 1 ? AppColors
