@@ -23,6 +23,7 @@ class ForgetPasswordWithPhoneNumber extends StatelessWidget {
           ),
           const CustomTextFormFiled(
             hintText: AppStrings.kForgetPasswordTextFormFiledHintPhone,
+            keyboardType: TextInputType.phone,
           ),
           CustomMainButton(
             text: AppStrings.kForgetPasswordMainButtonText,

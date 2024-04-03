@@ -31,6 +31,10 @@ class AppColors{
   static const Color kResetPasswordError = Color(0xff5CCB67);
   static const Color kResetPasswordDone = Color(0xff4A87C4);
 
+  //Main Screen
+  static const Color kUnderMainTextMainScreenNewOffer = Color(0xff495057);
+  static const Color kMainScreenNewVersionButtonText = Color(0xff495057);
+  static const Color kMainScreenNewVersionButton = Color(0xffF2F3FA);
 
 
 

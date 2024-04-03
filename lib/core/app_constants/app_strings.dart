@@ -59,10 +59,22 @@ static const String kResetPasswordSecondError = 'تحتوى على رقم (1) ع
       'المرور الخاصة بك. يمكنك الأن \n إعادة تسجيل الدخول لحسابك';
   static const String kResetPasswordDoneMainButtonText = 'تسجيل الدخول';
 
-
-
-
-
-
-
+  //Main Screens
+  static const String kMainTextMainScreenNewOffer = 'عرض جديد\nخصيصاً لك';
+  static const String kMainTextMainScreenNewVersion = 'تم إضافة\nتحديث جديد';
+  static const String kUnderMainTextMainScreenNewOffer = 'أحصل على خصم عيد '
+      'الأم';
+  static const String kHintText1TextMainScreenNewOffer = 'شروط العرض';
+  static const String kHintText2TextMainScreenNewOffer = 'الشرط الأول   .';
+  static const String kHintText3TextMainScreenNewOffer = 'المحتوى الثانى   .';
+  static const String kHintText4TextMainScreenNewOffer = 'باقى محتوى العرض   .';
+  static const String kHintText5TextMainScreenNewOffer = 'فى حال مواجهة المشاكل يمكنك التواصل معنا';
+  static const String kMainButtonTextMainScreenNewOffer = 'الحصول على العرض';
+  static const String kMainFirstButtonTextMainScreenNewVersion = 'تحديث لاحقاً';
+  static const String kMainSecondButtonTextMainScreenNewVersion = 'تحديث الأن';
+  static const String kHintTextMainScreenUpperMainButton = 'هذا التحديث مطلوب '
+      'لبدء '
+      'التطبيق';
+  static const String kMainTextMainScreenRemovedAccount = 'تم ايقاف\nالحساب';
+  static const String kMainButtonTextMainScreenRemovedAccount  = 'تواصل مع الدعم الفنى';
 }
