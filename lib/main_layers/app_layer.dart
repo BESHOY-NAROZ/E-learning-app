@@ -1,6 +1,7 @@
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'presentaion_layer/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'presentaion_layer/main_screens/removed_account/removed_account_screen.dart';
 
 
@@ -13,7 +14,7 @@ class AppHome extends StatelessWidget {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesGenerator.getRoute ,
-      home:  SafeArea(child: RemovedAccount())
+      home:  SafeArea(child: HomeMainScreen())
     );
   }
 }

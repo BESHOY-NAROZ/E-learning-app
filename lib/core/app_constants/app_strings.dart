@@ -77,4 +77,8 @@ static const String kResetPasswordSecondError = 'تحتوى على رقم (1) ع
       'التطبيق';
   static const String kMainTextMainScreenRemovedAccount = 'تم ايقاف\nالحساب';
   static const String kMainButtonTextMainScreenRemovedAccount  = 'تواصل مع الدعم الفنى';
+  static const String kAppBarTitleMainScreenHome  = 'أهلا , مولر مجدى';
+  static const String kMainTextMainScreenHome  = 'الرئيسية';
+  static const String kHintText1MainScreenHome  = 'الجديد';
+  static const String kHintText2MainScreenHome  = 'المدرسين';
 }

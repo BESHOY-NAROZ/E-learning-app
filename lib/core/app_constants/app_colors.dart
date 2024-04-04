@@ -35,6 +35,12 @@ class AppColors{
   static const Color kUnderMainTextMainScreenNewOffer = Color(0xff495057);
   static const Color kMainScreenNewVersionButtonText = Color(0xff495057);
   static const Color kMainScreenNewVersionButton = Color(0xffF2F3FA);
+  static const Color kAppBarMainScreens = Color(0xff2160A7);
+  static const Color kAppBarTitleMainScreenHome = Color(0xffFFFFFF);
+  static const Color kAppBarPhotoMainScreenHome = Color(0xFFD9D9D9);
+  static const Color kAppBarBorderMainScreenHome = Color(0xffFFFFFF);
+  static const Color kHintTextMainScreenHome = Color(0xff495057);
+  static const Color kSplitterMainScreenHome = Color(0xFFD9D9D9);
 
 
 
