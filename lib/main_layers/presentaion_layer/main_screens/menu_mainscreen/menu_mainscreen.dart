@@ -15,14 +15,14 @@ class MenuMainScreen extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 825, designWidth: 360);
     return Scaffold(
       bottomNavigationBar: const BottomNavigationBarMainScreen(
-        designHeight: 825,
+        designHeight: 1006,
         designWidth: 360,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           const AppBarMainScreen(
-            designHeight: 825,
+            designHeight: 1006,
             designWidth: 360,
           ),
           SizedBox(

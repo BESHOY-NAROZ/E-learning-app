@@ -1,5 +1,4 @@
 class AppStrings {
-
   // MainShared Strings
 
   // Sign In Strings
@@ -20,8 +19,10 @@ class AppStrings {
   static const String kForgetPasswordMainTextEmail = 'البريد الإلكترونى';
   static const String kForgetPasswordHintTextPhone = 'أدخل رقم الهاتف المتصل '
       'بالحساب الخاص بك';
-  static const String kForgetPasswordHintTextEmail = 'أدخل البريد الإلكترونى المتصل بالحساب الخاص بك';
-  static const String kForgetPasswordHint = 'أدخل رقم الهاتف المتصل بالحساب الخاص بك';
+  static const String kForgetPasswordHintTextEmail =
+      'أدخل البريد الإلكترونى المتصل بالحساب الخاص بك';
+  static const String kForgetPasswordHint =
+      'أدخل رقم الهاتف المتصل بالحساب الخاص بك';
   static const String kForgetPasswordTextFormFiledHintPhone = 'Ex : '
       '012345678910';
   static const String kForgetPasswordTextFormFiledHintEmail = 'example@gmail'
@@ -42,17 +43,17 @@ class AppStrings {
   static const String kForgetPasswordGetCodeHintText = 'إرسال مرة أخرة';
   static const String kForgetPasswordGetCodeSecondHintText = ' لم يصلك الكود '
       'بعد ؟ ';
-  static const String kForgetPasswordGetCodePhoneCounter= ' إرسال مرة أخرة '
+  static const String kForgetPasswordGetCodePhoneCounter = ' إرسال مرة أخرة '
       'خلال  ';
   static const String kForgetPasswordGetCodeMainButtonText = 'تأكيد';
   static const String kResetPasswordMainText = 'إعادة التعيين';
   static const String kResetPasswordHintText =
       ' يمكنك الأن تعيين كلمة المرور الجديدة. كلمة المرور الجديدة يجب أن تكون مختلفة عن القديمة';
 
-static const String kResetPasswordHintFormFiled = '*******************';
-static const String kResetPasswordMainButtonText = 'تعيين';
-static const String kResetPasswordFirstError = 'أكثر من 6 أحرف';
-static const String kResetPasswordSecondError = 'تحتوى على رقم (1) على الأقل';
+  static const String kResetPasswordHintFormFiled = '*******************';
+  static const String kResetPasswordMainButtonText = 'تعيين';
+  static const String kResetPasswordFirstError = 'أكثر من 6 أحرف';
+  static const String kResetPasswordSecondError = 'تحتوى على رقم (1) على الأقل';
   static const String kResetPasswordThirdError = 'مثال للخطأ';
   static const String kResetPasswordDoneMainText = 'تم إعادة التعيين بنجاح';
   static const String kResetPasswordDoneHintText = 'تم إعادة تعيين كلمة '
@@ -68,7 +69,8 @@ static const String kResetPasswordSecondError = 'تحتوى على رقم (1) ع
   static const String kHintText2TextMainScreenNewOffer = 'الشرط الأول   .';
   static const String kHintText3TextMainScreenNewOffer = 'المحتوى الثانى   .';
   static const String kHintText4TextMainScreenNewOffer = 'باقى محتوى العرض   .';
-  static const String kHintText5TextMainScreenNewOffer = 'فى حال مواجهة المشاكل يمكنك التواصل معنا';
+  static const String kHintText5TextMainScreenNewOffer =
+      'فى حال مواجهة المشاكل يمكنك التواصل معنا';
   static const String kMainButtonTextMainScreenNewOffer = 'الحصول على العرض';
   static const String kMainFirstButtonTextMainScreenNewVersion = 'تحديث لاحقاً';
   static const String kMainSecondButtonTextMainScreenNewVersion = 'تحديث الأن';
@@ -76,31 +78,34 @@ static const String kResetPasswordSecondError = 'تحتوى على رقم (1) ع
       'لبدء '
       'التطبيق';
   static const String kMainTextMainScreenRemovedAccount = 'تم ايقاف\nالحساب';
-  static const String kMainButtonTextMainScreenRemovedAccount  = 'تواصل مع الدعم الفنى';
-  static const String kAppBarTitleMainScreenHome  = 'أهلا , مولر مجدى';
-  static const String kMainTextMainScreenHome  = 'الرئيسية';
-  static const String kHintText1MainScreenHome  = 'الجديد';
-  static const String kHintText2MainScreenHome  = 'المدرسين';
-  static const String kHintText3MainScreenHome  = 'المجموعات';
-  static const String kSmallButtonMainScreenHome  = 'المزيد  ';
-  static const String kSmallListFirstTextMainScreenHome  = 'احمد لطيف';
-  static const String kSmallListSecondTextMainScreenHome  = 'الاحياء , الكيمياء';
-  static const String kBottomNavigationBarMenuMainScreenHome  = 'المزيد';
-  static const String kBottomNavigationBarNotificationMainScreenHome  = 'الإش'
+  static const String kMainButtonTextMainScreenRemovedAccount =
+      'تواصل مع الدعم الفنى';
+  static const String kAppBarTitleMainScreenHome = 'أهلا , مولر مجدى';
+  static const String kMainTextMainScreenHome = 'الرئيسية';
+  static const String kHintText1MainScreenHome = 'الجديد';
+  static const String kHintText2MainScreenHome = 'المدرسين';
+  static const String kHintText3MainScreenHome = 'المجموعات';
+  static const String kSmallButtonMainScreenHome = 'المزيد  ';
+  static const String kSmallListFirstTextMainScreenHome = 'احمد لطيف';
+  static const String kSmallListSecondTextMainScreenHome = 'الاحياء , الكيمياء';
+  static const String kBottomNavigationBarMenuMainScreenHome = 'المزيد';
+  static const String kBottomNavigationBarNotificationMainScreenHome = 'الإش'
       'عارات';
-  static const String kBottomNavigationBarUsersMainScreenHome  = 'المجموعات';
-  static const String kBottomNavigationBarHomeMainScreenHome  = 'الرئيسية';
-  static const String kBottomListFirstTextHomeMainScreenHome  = 'مجموعة';
-  static const String kBottomListGroupNumberHomeMainScreenHome  = '(1)';
-  static const String kBottomListSecondTextHomeMainScreenHome  = 'مجموعة مادة الكيمياء';
-  static const String kBottomListThirdTextHomeMainScreenHome  = 'طلاب الصف الثالث الثانوى';
-  static const String kBottomListFirstTeacherHomeMainScreenHome  = 'أ . احمد خالد';
-  static const String kBottomListSecondTeacherHomeMainScreenHome  = 'أ . شريف كمال';
-  static const String kBottomListNumberOfUsersHomeMainScreenHome  = '+3';
-  static const String kMainTextMainScreenMenu  = 'القائمة';
-  static const String kHintTextMainScreenMenu  = 'شخصى';
-  static const String kFirstContainerMainScreenMenu  = 'تعديل معلومات\nالحساب';
-static const String kSecondContainerMainScreenMenu  = '\nكود الـ(QR) الخاص '
-    'بى';
-
+  static const String kBottomNavigationBarUsersMainScreenHome = 'المجموعات';
+  static const String kBottomNavigationBarHomeMainScreenHome = 'الرئيسية';
+  static const String kBottomListFirstTextHomeMainScreenHome = 'مجموعة';
+  static const String kBottomListGroupNumberHomeMainScreenHome = '(1)';
+  static const String kBottomListSecondTextHomeMainScreenHome =
+      'مجموعة مادة الكيمياء';
+  static const String kBottomListThirdTextHomeMainScreenHome =
+      'طلاب الصف الثالث الثانوى';
+  static const String kBottomListFirstTeacherHomeMainScreenHome =
+      'أ . احمد خالد';
+  static const String kBottomListSecondTeacherHomeMainScreenHome =
+      'أ . شريف كمال';
+  static const String kBottomListNumberOfUsersHomeMainScreenHome = '+3';
+  static const String kMainTextMainScreenMenu = 'القائمة';
+  static const String kHintTextMainScreenMenu = 'شخصى';
+  static const String kFirstContainerMainScreenMenu = 'تعديل معلومات\nالحساب';
+  static const String kSecondContainerMainScreenMenu = '(QR)كودال\n الخاص بي';
 }
