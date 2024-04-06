@@ -41,7 +41,20 @@ class AppColors{
   static const Color kAppBarBorderMainScreenHome = Color(0xffFFFFFF);
   static const Color kHintTextMainScreenHome = Color(0xff495057);
   static const Color kSplitterMainScreenHome = Color(0xFFD9D9D9);
+  static const Color kSmallButtonMainScreenHome = Color(0xffF2F3FA);
+  static const Color kSmallButtonTextMainScreenHome = Color(0xff868E96);
+  static const Color kSmallListMainScreenHome = Color(0xffF2F3FA);
+  static const Color kSmallListFirstTextMainScreenHome = Color(0xFF495057);
+  static const Color kSmallListSecondTextMainScreenHome = Color(0xFFADB5BD);
+  static const Color kBottomContainerMainScreenHome = Color(0xFFEDEEF6);
+  static const Color kBottomAppBarMainScreenHome = Color(0xffFFFFFF);
 
+  static const Color kBottomNavigationBarUnSelectedMainScreenHome = Color
+    (0xFFCED4DA);
+  static const Color kBottomNavigationBarSelectedMainScreenHome = Color(0xFF495057);
+  static const Color kBottomBottomListHintMainScreenHome = Color(0xFF808080);
+  static const Color kBottomBottomListUsersMainScreenHome = Color(0xff0F6EAA);
+  static const Color kContainerMainScreenMenu = Color(0xFFF2F3FA);
 
 
 

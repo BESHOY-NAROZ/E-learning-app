@@ -81,4 +81,26 @@ static const String kResetPasswordSecondError = 'تحتوى على رقم (1) ع
   static const String kMainTextMainScreenHome  = 'الرئيسية';
   static const String kHintText1MainScreenHome  = 'الجديد';
   static const String kHintText2MainScreenHome  = 'المدرسين';
+  static const String kHintText3MainScreenHome  = 'المجموعات';
+  static const String kSmallButtonMainScreenHome  = 'المزيد  ';
+  static const String kSmallListFirstTextMainScreenHome  = 'احمد لطيف';
+  static const String kSmallListSecondTextMainScreenHome  = 'الاحياء , الكيمياء';
+  static const String kBottomNavigationBarMenuMainScreenHome  = 'المزيد';
+  static const String kBottomNavigationBarNotificationMainScreenHome  = 'الإش'
+      'عارات';
+  static const String kBottomNavigationBarUsersMainScreenHome  = 'المجموعات';
+  static const String kBottomNavigationBarHomeMainScreenHome  = 'الرئيسية';
+  static const String kBottomListFirstTextHomeMainScreenHome  = 'مجموعة';
+  static const String kBottomListGroupNumberHomeMainScreenHome  = '(1)';
+  static const String kBottomListSecondTextHomeMainScreenHome  = 'مجموعة مادة الكيمياء';
+  static const String kBottomListThirdTextHomeMainScreenHome  = 'طلاب الصف الثالث الثانوى';
+  static const String kBottomListFirstTeacherHomeMainScreenHome  = 'أ . احمد خالد';
+  static const String kBottomListSecondTeacherHomeMainScreenHome  = 'أ . شريف كمال';
+  static const String kBottomListNumberOfUsersHomeMainScreenHome  = '+3';
+  static const String kMainTextMainScreenMenu  = 'القائمة';
+  static const String kHintTextMainScreenMenu  = 'شخصى';
+  static const String kFirstContainerMainScreenMenu  = 'تعديل معلومات\nالحساب';
+static const String kSecondContainerMainScreenMenu  = '\nكود الـ(QR) الخاص '
+    'بى';
+
 }
