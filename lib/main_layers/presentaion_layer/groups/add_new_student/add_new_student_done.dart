@@ -4,7 +4,7 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_grey_button.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/close_sign_mainscreen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
@@ -21,15 +21,8 @@ class AddNewStudentDone extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 38),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                left: AppDimensions.getDimensions(requiredWidth: 308),
-              ),
-              child: const CloseSign(),
-            ),
+
+            const CloseSign(),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
             SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 154),
