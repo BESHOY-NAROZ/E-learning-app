@@ -2,25 +2,26 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigationBarMainScreen extends StatefulWidget {
+class MainBottomNavigationBar extends StatefulWidget {
   final double? designHeight;
   final double? designWidth;
 
-  const BottomNavigationBarMainScreen({
+  const MainBottomNavigationBar({
     super.key,
     this.designHeight,
     this.designWidth,
   });
 
   @override
-  State<BottomNavigationBarMainScreen> createState() =>
+  State<MainBottomNavigationBar> createState() =>
       _BottomNavigationBarMainScreenState();
 }
 
 class _BottomNavigationBarMainScreenState
-    extends State<BottomNavigationBarMainScreen> {
+    extends State<MainBottomNavigationBar> {
   static int index = 3;
 
   @override
@@ -34,6 +35,15 @@ class _BottomNavigationBarMainScreenState
       width: AppDimensions.getDimensions(requiredWidth: 305),
       child: BottomNavigationBar(
         onTap: (value) {
+          if(value == 0){
+            Navigator.pushNamed(context, RoutesManager.menuMainScreen);
+          }
+         else if(value == 2){
+            Navigator.pushNamed(context, RoutesManager.studentsGroups);
+          }
+          else if(value == 3){
+            Navigator.pushNamed(context, RoutesManager.homeMainScreen);
+          }
           setState(() {
             index = value;
           });

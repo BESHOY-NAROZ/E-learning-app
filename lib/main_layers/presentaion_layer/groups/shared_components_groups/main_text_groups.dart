@@ -1,17 +1,18 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class ForgetPasswordMainText extends StatelessWidget{
+class MainTextGroups extends StatelessWidget{
   final String ? myText;
 
-  const ForgetPasswordMainText({super.key, this.myText});
+  const MainTextGroups({super.key, this.myText});
   @override
   Widget build(BuildContext context) {
     return Text(myText!,
+        textAlign: TextAlign.end,
         style: const TextStyle(
         fontFamily: 'Almarai',
-        color: AppColors.kForgetPasswordMainText,
+        color: AppColors.kMainTextGroups,
         fontWeight: FontWeight.w700,
-        fontSize: 24),);
+        fontSize: 20),);
   }
 }

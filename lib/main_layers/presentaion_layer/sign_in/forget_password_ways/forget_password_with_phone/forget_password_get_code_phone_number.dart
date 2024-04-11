@@ -3,10 +3,10 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_with_phone/forget_password_countdown_timer.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/app_bar_signin.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_bottom_view.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_text.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,7 @@ class _ForgetPasswordGetCodePhoneNumberState
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const ForgetPasswordMainText(
+          const MainTextBlue(
             myText: AppStrings.kForgetPasswordGetCodePhoneMainText,
           ),
           const MainHintText(

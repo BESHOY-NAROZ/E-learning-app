@@ -57,6 +57,12 @@ class AppColors{
   static const Color kContainerMainScreenMenu = Color(0xFFF2F3FA);
 
 
+  //Groups
+  static const Color kMainTextGroups = Color(0xFF495057);
+  static const Color kAfterQRGroups = Color(0xFF818181);
+
+
+
 
   static const Color kMainButton = Color(0xffDC3434);
   static const Color kMainButtonText = Color(0xffFFFFFF);

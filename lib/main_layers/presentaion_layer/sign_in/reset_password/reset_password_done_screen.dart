@@ -4,7 +4,7 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_Text.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
 
 class ResetPasswordDone extends StatelessWidget {
@@ -25,7 +25,7 @@ class ResetPasswordDone extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 154),
               width: AppDimensions.getDimensions(requiredWidth: 154),
               child: Image.asset(AppAssets.kCorrect)),
-          const ForgetPasswordMainText(myText: AppStrings
+          const MainTextBlue(myText: AppStrings
               .kResetPasswordDoneMainText,),
       const Text(
         AppStrings.kResetPasswordDoneHintText

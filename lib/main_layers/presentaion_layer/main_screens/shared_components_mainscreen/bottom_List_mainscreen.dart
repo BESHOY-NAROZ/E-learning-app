@@ -16,6 +16,7 @@ class BottomListMainScreen extends StatelessWidget {
       height: AppDimensions.getDimensions(
         requiredHeight: 285,),
       child: ListView.builder(
+        padding: EdgeInsets.zero,
         itemCount: 3,
         scrollDirection: Axis.vertical,
         itemBuilder: (context, index) {

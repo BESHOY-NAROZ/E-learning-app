@@ -2,6 +2,7 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/close_sign_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/main_hint_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
@@ -77,7 +78,10 @@ class SecondNewVersion extends StatelessWidget {
                   left: AppDimensions.getDimensions(requiredWidth: 32),
                 ),
                 child: CustomMainButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesManager.removedAccount);
+
+                  },
                   text: AppStrings.kMainSecondButtonTextMainScreenNewVersion,
                 ),
               ),

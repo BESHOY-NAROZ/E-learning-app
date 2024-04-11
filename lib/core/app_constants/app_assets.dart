@@ -27,4 +27,13 @@ class AppAssets{
       'nuUser.png';
   static const String kMenuQRScreen = 'assets/images/Me'
       'nuQR.png';
+  static const String kSettingsMainScreen = 'assets/images/Setting.png';
+  static const String kCallMeMainScreen = 'assets/images/CallMe.png';
+  static const String kOpinionMainScreen = 'assets/images/Opinion.png';
+  static const String kHelpMainScreen = 'assets/images/Help.png';
+  static const String kLogOutMainScreen = 'assets/images/Logout.png';
+  static const String kQRMainScreen = 'assets/images/QR.png';
+  static const String kRemoveGroupsScreen = 'assets/images/Remove.png';
+  static const String kStudentGroupsScreen = 'assets/images/Student.png';
+
 }

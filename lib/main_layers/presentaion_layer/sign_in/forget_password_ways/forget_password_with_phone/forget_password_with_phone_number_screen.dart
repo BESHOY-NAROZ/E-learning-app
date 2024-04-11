@@ -1,8 +1,8 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_main_Text.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,7 @@ class ForgetPasswordWithPhoneNumber extends StatelessWidget {
     return  Column(
         children: [
 
-          const ForgetPasswordMainText(
+          const MainTextBlue(
             myText: AppStrings.kForgetPasswordMainTextPhone,
           ),
           const MainHintText(

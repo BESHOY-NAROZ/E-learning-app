@@ -1,6 +1,7 @@
 class AppStrings {
   // MainShared Strings
 
+
   // Sign In Strings
   static const String kAppBarLogIn = 'تسجيل دخول';
   static const String kLogInEmailOrPhone = 'البريد الإلكترونى / رقم الهاتف';
@@ -60,6 +61,7 @@ class AppStrings {
       'المرور الخاصة بك. يمكنك الأن \n إعادة تسجيل الدخول لحسابك';
   static const String kResetPasswordDoneMainButtonText = 'تسجيل الدخول';
 
+
   //Main Screens
   static const String kMainTextMainScreenNewOffer = 'عرض جديد\nخصيصاً لك';
   static const String kMainTextMainScreenNewVersion = 'تم إضافة\nتحديث جديد';
@@ -105,7 +107,50 @@ class AppStrings {
       'أ . شريف كمال';
   static const String kBottomListNumberOfUsersHomeMainScreenHome = '+3';
   static const String kMainTextMainScreenMenu = 'القائمة';
-  static const String kHintTextMainScreenMenu = 'شخصى';
+  static const String kHintTextFirstMainScreenMenu = 'شخصى';
+  static const String kHintTextSecondMainScreenMenu = 'المزيد';
   static const String kFirstContainerMainScreenMenu = 'تعديل معلومات\nالحساب';
   static const String kSecondContainerMainScreenMenu = '(QR)كودال\n الخاص بي';
+  static const String kFirstButtonMainScreenMenu = 'المدرسين';
+  static const String kSecondButtonMainScreenMenu = 'مجموعات الطلاب';
+  static const String kThirdButtonMainScreenMenu = 'الاشعارات';
+  static const String kFourthButtonMainScreenMenu = 'إعدادات التطبيق';
+  static const String kFifthButtonMainScreenMenu = 'تواصل معنا';
+  static const String kSixthButtonMainScreenMenu = 'رأيك يهمنا';
+  static const String kSeventhButtonMainScreenMenu = 'مساعدة';
+  static const String kEighthButtonMainScreenMenu = 'تسجيل الخروج';
+  static const String kQRMainScreenFinal = 'الخاص بي (QR) كود ال';
+
+
+//Groups
+  static const String kAppBarTitleGroupsStudentGroups = 'مجموعات الطلاب';
+  static const String kContainerTeachersGroupsStudentGroups = 'المدرسين';
+  static const String kContainerFirstTeacherGroupsStudentGroups =
+      'أ . احمد خالد';
+  static const String kContainerSecondTeacherGroupsStudentGroups =
+      'أ . شريف كمال';
+  static const String kButtonTextGroupsStudentGroups = 'إنشاء مجموعة جديدة';
+  static const String kSmallButtonCreateGroupGroupStudentGroups = 'إضافة طالب ';
+  static const String kStudentNameGroups = 'كريم عاطف';
+  static const String kStudentLevelGroups = 'الصف الاول الثانوى';
+  static const String kGroupStatisticsGroups = 'احصائيات المجموعة';
+  static const String kSentExamsGroups = 'الامتحانات المرسلة';
+  static const String kAttendanceAndDepartureGroups = 'الحضور و الانصراف';
+  static const String kAddNewStudentGroups = 'اضافة طالب جديد';
+  static const String kAddStudentEmailGroups = 'أدخل البريد الإلكترونى المتصل بحساب الطالب';
+  static const String kAddStudentPhoneGroups = 'أدخل رقم الهاتف المتصل بحساب الطالب';
+  static const String kSentRequestNowGroups = 'أرسل الطلب الأن';
+  static const String kORGroups ='أو';
+  static const String kScanButtonTextGroups ='كود (QR) مسح ال';
+  static const String kScanTextGroups = 'المتصل بحساب الطالب ( QR ) مسح ال';
+  static const String kStudentNumberGroups = '+20 123847615';
+  static const String kAddButtonGroups = 'اضافة';
+  static const String kRequestSentGroups = 'تم إرسال الطلب';
+  static const String kSpecialRequestSentGroups = 'تم إرسال طلب إضافة طالب إلى '
+      '“كريم عاطف\nصالح ”';
+  static const String kGoToGroupGroups = 'الذهاب الى المجموعة';
+  static const String kCancelJoinRequestGroups = 'إلغاء طلب الاضافة';
+
+
+
 }
