@@ -1,6 +1,10 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/every_student_in_group.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/group_statistics/group_statistics_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/app_bar_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/more_row_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_grey_button.dart';
@@ -47,7 +51,7 @@ class CreateGroup extends StatelessWidget {
                     itemCount: 3,
                     scrollDirection: Axis.vertical,
                     itemBuilder: (context, index) {
-                      return EveryStudentInGroupList();
+                      return const EveryStudentInGroupList();
                     },
                   ),
                 ),
@@ -56,13 +60,18 @@ class CreateGroup extends StatelessWidget {
                       requiredHeight: 59),
                 ),
                 MainGreyButton(
-                  buttonName: AppStrings.kGroupStatisticsGroups,
-                  onPressed: (){},
+                  buttonName: AppStrings.kGroupStatisticsButtonGroups,
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesManager.groupStatistics);
+                  },
                 ),
                SizedBox(height: AppDimensions.getDimensions(requiredHeight: 11))
                , MainGreyButton(
                   buttonName: AppStrings.kSentExamsGroups,
-                  onPressed: (){},
+                  onPressed: (){
+
+                      Navigator.pushNamed(context, RoutesManager.sentExams);
+                  },
                 )
 ,                SizedBox(height: AppDimensions.getDimensions(requiredHeight:
                 11))

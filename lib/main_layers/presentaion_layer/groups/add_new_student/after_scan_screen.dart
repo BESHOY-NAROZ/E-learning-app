@@ -22,7 +22,7 @@ class AfterScan extends StatelessWidget {
           const AppBarGroups(
             designHeight: 1006,
             designWidth: 360,
-            myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,
+            myTitle: AppStrings.kAddNewStudentGroups,
           ),
           Padding(
             padding: EdgeInsets.symmetric(

@@ -35,5 +35,7 @@ class AppAssets{
   static const String kQRMainScreen = 'assets/images/QR.png';
   static const String kRemoveGroupsScreen = 'assets/images/Remove.png';
   static const String kStudentGroupsScreen = 'assets/images/Student.png';
+  static const String kCorrectExam = 'assets/images/CorrectExam.png';
+  static const String kShowExam = 'assets/images/Show.png';
 
 }

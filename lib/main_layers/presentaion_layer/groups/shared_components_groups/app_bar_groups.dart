@@ -53,20 +53,20 @@ class AppBarGroups extends StatelessWidget {
                     padding: EdgeInsets.only(
                       right: AppDimensions.getDimensions(requiredWidth: 20),
                     ),
-                    child: SizedBox(
-                      width: AppDimensions.getDimensions(requiredWidth: 45),
-                      height: AppDimensions.getDimensions(requiredHeight: 45),
-                      child: ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                AppColors.kAppBarLoginBack.withOpacity(0.1)),
-                            elevation: MaterialStateProperty.all(0),
-                            padding: MaterialStateProperty.all(EdgeInsets.zero)),
+                    child: InkWell(onTap: () {
+
+                    },
+                      child: Container(
+                        width: AppDimensions.getDimensions(requiredWidth: 45),
+                        height: AppDimensions.getDimensions(requiredHeight: 45),
+                        decoration: BoxDecoration(
+                          color: AppColors.kBottomAppBarMainScreenHome.withOpacity(0.1),
+                          shape: BoxShape.circle
+                        ),
                         child: const Icon(
                           Icons.arrow_forward_ios_outlined,
                           color: Colors.white,
                         ),
-                        onPressed: () {},
                       ),
                     ),
                   ),

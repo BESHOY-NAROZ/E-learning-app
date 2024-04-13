@@ -3,7 +3,9 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_stud
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/after_scan_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/group_statistics/group_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/groups_students/students_groups_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/menu_mainscreen/menu_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_offer/new_offer_screen.dart';
@@ -41,6 +43,8 @@ class RoutesManager {
   static const String addStudentByQR = "/addStudentByQR";
   static const String afterNewScan = "/afterNewScan";
   static const String addNewStudentDone = "/addNewStudentDone";
+  static const String groupStatistics = "/groupStatistics";
+  static const String sentExams = "/sentExams";
 
 
 }
@@ -88,6 +92,10 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const AfterScan());
         case RoutesManager.addNewStudentDone:
         return MaterialPageRoute(builder: (_) => const AddNewStudentDone());
+        case RoutesManager.groupStatistics:
+        return MaterialPageRoute(builder: (_) => const GroupStatistics());
+        case RoutesManager.sentExams:
+        return MaterialPageRoute(builder: (_) => const SentExams());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

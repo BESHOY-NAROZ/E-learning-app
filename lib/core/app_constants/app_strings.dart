@@ -133,7 +133,7 @@ class AppStrings {
   static const String kSmallButtonCreateGroupGroupStudentGroups = 'إضافة طالب ';
   static const String kStudentNameGroups = 'كريم عاطف';
   static const String kStudentLevelGroups = 'الصف الاول الثانوى';
-  static const String kGroupStatisticsGroups = 'احصائيات المجموعة';
+  static const String kGroupStatisticsButtonGroups = 'احصائيات المجموعة';
   static const String kSentExamsGroups = 'الامتحانات المرسلة';
   static const String kAttendanceAndDepartureGroups = 'الحضور و الانصراف';
   static const String kAddNewStudentGroups = 'اضافة طالب جديد';
@@ -150,6 +150,24 @@ class AppStrings {
       '“كريم عاطف\nصالح ”';
   static const String kGoToGroupGroups = 'الذهاب الى المجموعة';
   static const String kCancelJoinRequestGroups = 'إلغاء طلب الاضافة';
+  static const String kGroupStatisticsGroups = 'احصائيات المجموعة';
+  static const String kFirstTestGroups = 'الاختبار الاول';
+  static const String kTwelveStudentsGroups = '12 طالب';
+  static const String kFromAllGroups = ' من اجمالى ';
+  static const String kSixStudentsGroups = ' 6 طلاب';
+  static const String kTestSolvedGroups = 'تم حل الامتحان من قبل';
+  static const String kSolvePercentageGroups = 'نسبة حل الأمتحان ';
+  static const String kSolvePercentageNumberGroups = '88%';
+  static const String kFailedPercentageGroups = 'نسبة الرسوب';
+  static const String kSucceededPercentageGroups = 'نسبة النجاح';
+  static const String kSucceededNumberGroups = '12 طالب ناجح من 20';
+  static const String kExamsSentToGroupGroups = 'الامتحانات المرسلة '
+      'الى المجموعة';
+  static const String kExamsSentBlackTextGroups = 'حكم محمد على فى مصر';
+  static const String kExamsSentGreyTextGroups = 'مادة الدراسات - الباب الأول'
+      ' - الفصل الثانى - الدرس الأول';
+  static const String kCorrectExamsGroups = 'تصحيح';
+  static const String kShowExamsGroups = 'عرض';
 
 
 
