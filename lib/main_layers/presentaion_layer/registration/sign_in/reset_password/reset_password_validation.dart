@@ -22,6 +22,8 @@ class ResetPasswordValidation extends StatefulWidget {
 class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
   @override
   Widget build(BuildContext context) {
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
+
     return Form(
       key: ResetPasswordValidation._formKey,
       child: Column(
@@ -61,6 +63,9 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
             ),
           ),
           SizedBox(
+            height: AppDimensions.getDimensions(requiredHeight: 9),
+          ),
+          SizedBox(
             height: AppDimensions.getDimensions(requiredHeight: 45),
             width: AppDimensions.getDimensions(requiredWidth: 320),
             child: TextFormField(
@@ -93,8 +98,12 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
             ),
           ),
           if (!ResetPasswordValidation.validate)
-         const Column(
-           children: [   Row(
+          Column(
+           crossAxisAlignment: CrossAxisAlignment.end,
+           children: [
+             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 7),),
+             const Row(
+             mainAxisAlignment: MainAxisAlignment.end,
              children: [
                Text(
                  AppStrings.kResetPasswordFirstError,
@@ -112,7 +121,8 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
                )
              ],
            ),
-             Row(
+             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 4),),
+             const Row(mainAxisAlignment: MainAxisAlignment.end,
                children: [
                  Text(
                    AppStrings.kResetPasswordSecondError,
@@ -130,7 +140,9 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
                  )
                ],
              ),
-             Row(
+             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 4),),
+             const Row(
+               mainAxisAlignment: MainAxisAlignment.end,
                children: [
                  Text(
                    AppStrings.kResetPasswordThirdError,
@@ -149,17 +161,25 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
                ],
              ),],
          ),
+          SizedBox(height: AppDimensions.getDimensions(requiredHeight: 19),),
+
           MainButtonRed(
             buttonName: AppStrings.kResetPasswordMainButtonText,
             onPressed: () {
-              Navigator.pushReplacementNamed(context, RoutesManager.resetPasswordDone);
 
+              if (ResetPasswordValidation._formKey.currentState!.validate()) {
+                setState(() {
+                  ResetPasswordValidation.validate = true;
 
-              setState(() {
-                if (!ResetPasswordValidation._formKey.currentState!.validate()) {
-                  ResetPasswordValidation.validate = false;
-                }
-              });
+                });
+                Navigator.pushNamed(context, RoutesManager.resetPasswordDone);
+              }else
+             {
+               setState(() {
+                 ResetPasswordValidation.validate = false;
+
+               });
+             }
             },
           ),
         ],

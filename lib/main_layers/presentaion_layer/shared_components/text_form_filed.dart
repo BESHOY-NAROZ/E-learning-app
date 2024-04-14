@@ -10,11 +10,12 @@ class CustomTextFormFiled extends StatelessWidget {
   final bool ? obscureText;
   final TextInputType ? keyboardType;
   final String? Function(String?)?  validator;
+  final String? Function(String?)?  onChanged;
   final TextEditingController ? controller;
   final TextDirection ? textDirection;
   final bool ? enabled;
 
-  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled}) : super(key: key);
+  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled, this.onChanged}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class CustomTextFormFiled extends StatelessWidget {
     return  SizedBox(height: AppDimensions.getDimensions(requiredHeight: 45),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       child: TextFormField(textDirection: textDirection ?? TextDirection.ltr,
+        onChanged: onChanged,
         controller: controller,
         validator: validator,
         keyboardType: keyboardType,

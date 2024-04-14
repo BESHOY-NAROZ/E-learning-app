@@ -21,7 +21,7 @@ class SecondNewVersion extends StatelessWidget {
         width: AppDimensions.screenWidth,
         child: Padding(
           padding: EdgeInsets.only(
-            right: AppDimensions.getDimensions(requiredWidth: 32),
+            right: AppDimensions.getDimensions(requiredWidth: 20),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
@@ -75,7 +75,7 @@ class SecondNewVersion extends StatelessWidget {
                   top: AppDimensions.getDimensions(
                     requiredHeight: 8,
                   ),
-                  left: AppDimensions.getDimensions(requiredWidth: 32),
+                  left: AppDimensions.getDimensions(requiredWidth: 20),
                 ),
                 child: MainButtonRed(
                   onPressed: () {

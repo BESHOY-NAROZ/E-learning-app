@@ -2,10 +2,10 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/app_bar_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/hint_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_result_container.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_text_groups.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
@@ -25,7 +25,7 @@ class WhoAttended extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const AppBarGroups(
+          const MainAppBar(
             designHeight: 1006,
             designWidth: 360,
             myTitle: AppStrings.kAttendanceAndDepartureAppBarGroups,

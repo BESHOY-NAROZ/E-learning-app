@@ -1,9 +1,10 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/main_hint_text_registration.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
 import 'package:flutter/material.dart';
 
 class ForgetPasswordWithPhoneNumber extends StatelessWidget {
@@ -12,29 +13,42 @@ class ForgetPasswordWithPhoneNumber extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
-        children: [
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
-          const MainTextBlue(
-            myText: AppStrings.kForgetPasswordMainTextPhone,
-          ),
-          const MainHintText(
-            myText: AppStrings.kForgetPasswordHintTextPhone,
-          ),
-          const CustomTextFormFiled(
-            hintText: AppStrings.kForgetPasswordTextFormFiledHintPhone,
-            keyboardType: TextInputType.phone,
-          ),
-          MainButtonRed(
-            buttonName: AppStrings.kForgetPasswordMainButtonText,
-            onPressed: () {
-              Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
-
-            },
-          ),
-
-        ],
-
+    return  SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            const MainTextBlue(
+              myText: AppStrings.kForgetPasswordMainTextPhone,
+            ),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 9),
+            ),
+            const MainHintTextRegistration(
+              myText: AppStrings.kForgetPasswordHintTextPhone,
+            ),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 16),
+            ),
+            const CustomTextFormFiled(
+              hintText: AppStrings.kForgetPasswordTextFormFiledHintPhone,
+              keyboardType: TextInputType.phone,
+            ),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 13),
+            ),
+            MainButtonRed(
+              buttonName: AppStrings.kForgetPasswordMainButtonText,
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+      
+              },
+            ),
+      
+          ],
+      
+      ),
     );
 
   }

@@ -12,6 +12,7 @@ class ForgetPasswordBottomView extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return  Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
       Text(
       hintText!,
@@ -22,6 +23,7 @@ class ForgetPasswordBottomView extends StatelessWidget {
           fontSize: 10),
     ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CustomUnderLinedText(myText:
             AppStrings.kForgetPasswordLeftBottomView,),

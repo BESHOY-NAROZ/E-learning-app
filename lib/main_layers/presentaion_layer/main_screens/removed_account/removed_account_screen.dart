@@ -20,7 +20,7 @@ class RemovedAccount extends StatelessWidget {
         width: AppDimensions.screenWidth,
         child: Padding(
           padding: EdgeInsets.only(
-            right: AppDimensions.getDimensions(requiredWidth: 32),
+            right: AppDimensions.getDimensions(requiredWidth: 20),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
@@ -66,7 +66,7 @@ class RemovedAccount extends StatelessWidget {
                 padding: EdgeInsets.only(
                     bottom: AppDimensions.getDimensions(requiredHeight: 40
                     ),
-                left: AppDimensions.getDimensions(requiredWidth: 32
+                left: AppDimensions.getDimensions(requiredWidth: 20
                 ),),
 
                 child: Center(

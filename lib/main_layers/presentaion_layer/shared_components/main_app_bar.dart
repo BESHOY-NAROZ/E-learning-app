@@ -3,12 +3,12 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
-class AppBarGroups extends StatelessWidget {
+class MainAppBar extends StatelessWidget {
   final double? designHeight;
   final double? designWidth;
   final String? myTitle;
 
-  const AppBarGroups({
+  const MainAppBar({
     Key? key,
     this.designHeight,
     this.designWidth,
@@ -31,24 +31,26 @@ class AppBarGroups extends StatelessWidget {
                 height: AppDimensions.getDimensions(requiredHeight: 25),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  const Spacer(),
                   Padding(
                     padding: EdgeInsets.only(
                       top: AppDimensions.getDimensions(requiredHeight: 18),
+                      left: AppDimensions.getDimensions(requiredWidth: 65),
                     ),
-                    child: Text(
-                      myTitle!,
-                      style: const TextStyle(
-                          fontFamily: 'Almarai',
-                          color: AppColors.kAppBarTitleMainScreenHome,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 20),
+                    child: Center(
+                      child: Text(
+                        myTitle!,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontFamily: 'Almarai',
+                            color: AppColors.kAppBarTitleMainScreenHome,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20),
+                      ),
                     ),
                   ),
-                  SizedBox(
-                    width: AppDimensions.getDimensions(requiredWidth: 39),
-                  ),
+const Spacer(),
                   Padding(
                     padding: EdgeInsets.only(
                       right: AppDimensions.getDimensions(requiredWidth: 20),

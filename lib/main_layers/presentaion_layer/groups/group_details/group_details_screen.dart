@@ -4,7 +4,7 @@ import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/group_statistics/group_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/app_bar_groups.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class GroupDetails extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const AppBarGroups(
+          const MainAppBar(
             designHeight: 1006,
             designWidth: 360,
             myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,

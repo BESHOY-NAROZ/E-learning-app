@@ -6,6 +6,7 @@ import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/main_hint_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,8 @@ class FirstNewVersion extends StatelessWidget {
         height: AppDimensions.screenHeight,
         width: AppDimensions.screenWidth,
         child: Padding(
-          padding:  EdgeInsets.only(right:AppDimensions.getDimensions(requiredWidth: 32),
+          padding: EdgeInsets.only(
+            right: AppDimensions.getDimensions(requiredWidth: 20),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
@@ -39,7 +41,8 @@ class FirstNewVersion extends StatelessWidget {
                       top: AppDimensions.getDimensions(requiredHeight: 60),
                     ),
                     child: SizedBox(
-                        height: AppDimensions.getDimensions(requiredHeight: 308),
+                        height:
+                            AppDimensions.getDimensions(requiredHeight: 308),
                         child: Image.asset(AppAssets.kPhone)),
                   ),
                   const Spacer(),
@@ -51,7 +54,6 @@ class FirstNewVersion extends StatelessWidget {
                           myText: AppStrings.kMainTextMainScreenNewVersion))
                 ],
               ),
-
               const MainHintTextMainScreen(
                 myText1: AppStrings.kHintText1TextMainScreenNewOffer,
                 myText2: AppStrings.kHintText2TextMainScreenNewOffer,
@@ -61,48 +63,34 @@ class FirstNewVersion extends StatelessWidget {
               ),
               const Spacer(),
               Padding(
-                padding:  EdgeInsets.only(
-                  left: AppDimensions.getDimensions(requiredWidth: 32
+                  padding: EdgeInsets.only(
+                    left: AppDimensions.getDimensions(requiredWidth: 20),
                   ),
-                ),
-                child: Container(
-                  height: AppDimensions.getDimensions(requiredHeight: 45),
-                  width: AppDimensions.getDimensions(requiredWidth: 320),
-                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
-                  child: MaterialButton(
-                      color: AppColors.kMainScreenNewVersionButton,
-                      shape: const RoundedRectangleBorder(),
-                      onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.secondNewVersion);
-
-                      },
-                      child: const Text(AppStrings.kMainFirstButtonTextMainScreenNewVersion,
-                        style: TextStyle(
-                            fontFamily: 'Almarai',
-                            color: AppColors.kMainScreenNewVersionButtonText,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16),
-                      )
-                  ),
-                )
-              ),
+                  child: MainButtonGrey(
+                    buttonName:
+                        AppStrings.kMainFirstButtonTextMainScreenNewVersion,
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, RoutesManager.secondNewVersion);
+                    },
+                  )),
               Padding(
-                padding:  EdgeInsets.only(bottom: AppDimensions
-                    .getDimensions(requiredHeight: 40),
-                  top: AppDimensions
-                      .getDimensions(requiredHeight: 8,),
-                  left: AppDimensions.getDimensions(requiredWidth: 32
+                padding: EdgeInsets.only(
+                  bottom: AppDimensions.getDimensions(requiredHeight: 40),
+                  top: AppDimensions.getDimensions(
+                    requiredHeight: 8,
                   ),
+                  left: AppDimensions.getDimensions(requiredWidth: 20),
                 ),
-                child: MainButtonRed(onPressed: () {
-
-                },
-                  buttonName: AppStrings.kMainSecondButtonTextMainScreenNewVersion,
-
+                child: MainButtonRed(
+                  onPressed: () {
+                    Navigator.pushNamed(
+                        context, RoutesManager.homeMainScreen);
+                  },
+                  buttonName:
+                      AppStrings.kMainSecondButtonTextMainScreenNewVersion,
                 ),
               ),
-
             ],
           ),
         ),

@@ -23,12 +23,12 @@ import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_ve
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_version/second_new_version.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/removed_account/removed_account_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_ways_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_with_email/forget_password_get_code_email.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_with_phone/forget_password_get_code_phone_number.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/log_in/login_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/reset_password/reset_password_done_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/sign_in/reset_password/reset_password_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_ways_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_with_email/forget_password_get_code_email.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_with_phone/forget_password_get_code_phone_number.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/log_in/login_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password/reset_password_done_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password/reset_password_screen.dart';
 import 'package:flutter/material.dart';
 
 class RoutesManager {

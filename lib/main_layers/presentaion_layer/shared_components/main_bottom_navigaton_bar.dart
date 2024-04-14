@@ -36,13 +36,13 @@ class _BottomNavigationBarMainScreenState
       child: BottomNavigationBar(
         onTap: (value) {
           if(value == 0){
-            Navigator.pushNamed(context, RoutesManager.menuMainScreen);
+            Navigator.pushReplacementNamed(context, RoutesManager.menuMainScreen);
           }
          else if(value == 2){
-            Navigator.pushNamed(context, RoutesManager.studentsGroups);
+            Navigator.pushReplacementNamed(context, RoutesManager.studentsGroups);
           }
           else if(value == 3){
-            Navigator.pushNamed(context, RoutesManager.homeMainScreen);
+            Navigator.pushReplacementNamed(context, RoutesManager.homeMainScreen);
           }
           setState(() {
             index = value;

@@ -57,9 +57,14 @@ class HomeMainScreen extends StatelessWidget {
                       return SizedBox(
                           width:
                               AppDimensions.getDimensions(requiredWidth: 333),
-                          child: Image.asset(
-                            AppAssets.kListImageHomeScreen,
-                            fit: BoxFit.fill,
+                          child: Padding(
+                            padding:  EdgeInsets.symmetric
+                              (horizontal:AppDimensions.getDimensions
+                              (requiredWidth: 3)),
+                            child: Image.asset(
+                              AppAssets.kListImageHomeScreen,
+                              fit: BoxFit.fill,
+                            ),
                           ));
                     },
                   ),
