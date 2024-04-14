@@ -3,15 +3,17 @@ import 'package:flutter/material.dart';
 
 class MainTextBlue extends StatelessWidget{
   final String ? myText;
+  final FontWeight ? fontWeight;
+  final double ? fontSize;
 
-  const MainTextBlue({super.key, this.myText});
+  const MainTextBlue({super.key, this.myText, this.fontWeight, this.fontSize});
   @override
   Widget build(BuildContext context) {
     return Text(myText!,
-        style: const TextStyle(
+        style:  TextStyle(
         fontFamily: 'Almarai',
         color: AppColors.kForgetPasswordMainText,
-        fontWeight: FontWeight.w700,
-        fontSize: 24),);
+        fontWeight: fontWeight ??FontWeight.w700,
+        fontSize: fontSize ?? 24),);
   }
 }

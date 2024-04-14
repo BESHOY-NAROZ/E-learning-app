@@ -70,7 +70,9 @@ class SentExams extends StatelessWidget {
                 ),
                  SizedBox(
                    height: AppDimensions.getDimensions(requiredHeight: 530),
-                   child: ListView.separated(itemBuilder: (context, index) {
+                   child: ListView.separated(
+                       padding: EdgeInsets.zero,
+                       itemBuilder: (context, index) {
                     return const ExamsSentList();
                                    }, separatorBuilder: (context, index) {
                     return SizedBox(height: AppDimensions.getDimensions

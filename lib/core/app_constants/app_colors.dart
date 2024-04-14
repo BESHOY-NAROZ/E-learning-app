@@ -68,6 +68,7 @@ class AppColors{
   static const Color kSentExamsContainerGroups = Color(0xFFF2F3FA);
   static const Color kBottomContainerGroups = Color(0xFF4A88C4);
   static const Color kSentGreyTextGroups = Color(0xFFADB5BD);
+  static const Color kStudentNameGroups = Color(0xFF818181);
 
 
 
@@ -75,6 +76,10 @@ class AppColors{
   static const Color kMainButton = Color(0xffDC3434);
   static const Color kMainTextBlack = Color(0xFF495057);
   static const Color kMainButtonText = Color(0xffFFFFFF);
+  static const Color kMainTextGreen = Color(0xFF5BCB67);
+  static const Color kMainTextYellow = Color(0xFFF6CB5E);
+  static const Color kMainTextRed = Color(0xFFDC3434);
+
 
 
 }

@@ -4,11 +4,11 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
-class MainGreyButton extends StatelessWidget {
+class MainButtonGrey extends StatelessWidget {
   final void Function() ? onPressed;
   final String  ? buttonName;
 
-  const MainGreyButton({
+  const MainButtonGrey({
     super.key, this.onPressed, this.buttonName,
   });
 

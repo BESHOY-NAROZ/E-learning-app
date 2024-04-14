@@ -4,10 +4,10 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/app_bar_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_grey_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/groups_students/students_groups_list_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:flutter/material.dart';
 
 class StudentGroups extends StatelessWidget {
@@ -51,19 +51,25 @@ class StudentGroups extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 400),
                     child: ListView.builder(
+                      padding: EdgeInsets.zero,
                       itemCount: 2,
                       scrollDirection: Axis.vertical,
                       itemBuilder: (context, index) {
-                        return const StudentsGroupsListGroups();
+                        return InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, RoutesManager.groupDetails);
+                            },
+                            child: const StudentsGroupsListGroups());
                       },
                     ),
                   ),
                   SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 51)),
-                  MainGreyButton(
+                  MainButtonGrey(
                     buttonName: AppStrings.kButtonTextGroupsStudentGroups,
                     onPressed: () {
                       Navigator.pushNamed(context, RoutesManager.createGroup);
+
                     },
                   )
                 ],

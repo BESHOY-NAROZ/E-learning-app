@@ -2,10 +2,14 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_stud
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/after_scan_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/group_details/group_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/group_statistics/group_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/groups_students/students_groups_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/students_profile/student_profile_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/students_profile/student_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/menu_mainscreen/menu_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_offer/new_offer_screen.dart';
@@ -38,13 +42,17 @@ class RoutesManager {
   static const String menuMainScreen = "/menuMainScreen";
   static const String qRMainScreen = "/qRMainScreen";
   static const String studentsGroups = "/studentsGroups";
-  static const String createGroup = "/createGroup";
+  static const String groupDetails = "/groupDetails";
   static const String addNewStudent = "/addNewStudent";
   static const String addStudentByQR = "/addStudentByQR";
   static const String afterNewScan = "/afterNewScan";
   static const String addNewStudentDone = "/addNewStudentDone";
   static const String groupStatistics = "/groupStatistics";
   static const String sentExams = "/sentExams";
+  static const String createGroup = "/createGroup";
+  static const String createGroupDone = "/createGroupDone";
+  static const String studentsProfile = "/studentsProfile";
+  static const String studentStatistics = "/studentStatistics";
 
 
 }
@@ -82,8 +90,8 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const QRMainScreen());
         case RoutesManager.studentsGroups:
         return MaterialPageRoute(builder: (_) => const StudentGroups());
-        case RoutesManager.createGroup:
-        return MaterialPageRoute(builder: (_) => const CreateGroup());
+        case RoutesManager.groupDetails:
+        return MaterialPageRoute(builder: (_) => const GroupDetails());
         case RoutesManager.addNewStudent:
         return MaterialPageRoute(builder: (_) => const AddNewStudent());
         case RoutesManager.addStudentByQR:
@@ -96,6 +104,14 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const GroupStatistics());
         case RoutesManager.sentExams:
         return MaterialPageRoute(builder: (_) => const SentExams());
+        case RoutesManager.createGroup:
+        return MaterialPageRoute(builder: (_) => const CreateGroup());
+        case RoutesManager.createGroupDone:
+        return MaterialPageRoute(builder: (_) => const CreateGroupDone());
+        case RoutesManager.studentsProfile:
+        return MaterialPageRoute(builder: (_) => const StudentProfile());
+      case RoutesManager.studentStatistics:
+        return MaterialPageRoute(builder: (_) => const StudentStatistics());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

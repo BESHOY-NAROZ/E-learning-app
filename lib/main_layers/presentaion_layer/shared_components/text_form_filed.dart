@@ -11,8 +11,10 @@ class CustomTextFormFiled extends StatelessWidget {
   final TextInputType ? keyboardType;
   final String? Function(String?)?  validator;
   final TextEditingController ? controller;
+  final TextDirection ? textDirection;
+  final bool ? enabled;
 
-  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType}) : super(key: key);
+  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +22,17 @@ class CustomTextFormFiled extends StatelessWidget {
 
     return  SizedBox(height: AppDimensions.getDimensions(requiredHeight: 45),
       width: AppDimensions.getDimensions(requiredWidth: 320),
-      child: TextFormField(
+      child: TextFormField(textDirection: textDirection ?? TextDirection.ltr,
         controller: controller,
         validator: validator,
         keyboardType: keyboardType,
         obscureText: obscureText ?? false,
+        textAlign: TextAlign.right,
+
         decoration: InputDecoration(
           errorStyle: const TextStyle(height: 0),
           isDense: true,
+          enabled: enabled ?? true,
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
               borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)
@@ -38,7 +43,7 @@ class CustomTextFormFiled extends StatelessWidget {
           suffixIcon: suffixIcon,
           prefixIcon: prefixIcon,
           hintText: hintText,
-          hintStyle: const TextStyle(
+          hintStyle: hintStyle ?? const TextStyle(
             fontWeight: FontWeight.w400,
             color: AppColors.kFormFiledHint,
             fontSize: 14,

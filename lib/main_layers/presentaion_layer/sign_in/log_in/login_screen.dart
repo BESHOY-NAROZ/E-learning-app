@@ -4,7 +4,7 @@ import 'package:assiut_project/core/app_constants/app_lists.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/uderlined_text.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/app_bar_signin.dart';
@@ -80,8 +80,8 @@ class LoginScreen extends StatelessWidget {
               ),
             ],
           ),
-          const CustomMainButton(
-            text: AppStrings.kLogInMainButtonText,
+          const CustomMainButtonRed(
+            buttonName: AppStrings.kLogInMainButtonText,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

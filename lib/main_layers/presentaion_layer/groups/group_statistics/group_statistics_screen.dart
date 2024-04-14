@@ -69,6 +69,7 @@ class GroupStatistics extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 530),
                   child: ListView.separated(
+                      padding: EdgeInsets.zero,
                       itemBuilder: (context, index) {
                         return const TestStatisticsList();
                       },

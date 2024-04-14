@@ -1,14 +1,13 @@
+import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/every_student_in_group.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/group_statistics/group_statistics_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/app_bar_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/more_row_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_grey_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/hint_text_groups.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
 class CreateGroup extends StatelessWidget {
@@ -27,64 +26,125 @@ class CreateGroup extends StatelessWidget {
           const AppBarGroups(
             designHeight: 1006,
             designWidth: 360,
-            myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,
+            myTitle: AppStrings.kCreateGroupGroups,
           ),
           Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 25),
+                  height: AppDimensions.getDimensions(requiredHeight: 7),
                 ),
-                const MoreRowGroups(
-
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 27),
+                const MainTextGroups(
+                  myText: AppStrings.kCreateGroupGroups,
                 ),
                 SizedBox(
-                  height: AppDimensions.getDimensions(
-                      requiredHeight: 280),
-                  child: ListView.builder(
-                    padding: EdgeInsets.zero,
-                    itemCount: 3,
-                    scrollDirection: Axis.vertical,
-                    itemBuilder: (context, index) {
-                      return const EveryStudentInGroupList();
-                    },
+                  height: AppDimensions.getDimensions(requiredHeight: 20),
+                ),
+                const HintTextGroups(
+                  myText: AppStrings.kCreateGroupHintTextGroups,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 16,
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
+                ),
+                const CustomTextFormFiled(
+                  hintText: AppStrings.kCreateGroupHintTextFormGroups,
+                  textDirection: TextDirection.rtl,
+                  hintStyle: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.kFormFiledHint,
+                    fontSize: 12,
+                    fontFamily: 'Almarai',
                   ),
                 ),
                 SizedBox(
-                  height: AppDimensions.getDimensions(
-                      requiredHeight: 59),
+                  height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                MainGreyButton(
-                  buttonName: AppStrings.kGroupStatisticsButtonGroups,
+                const HintTextGroups(
+                  myText: AppStrings.kEducationalLevelHintTextGroups,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 16,
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
+                ),
+                const CustomTextFormFiled(
+                  hintText: AppStrings.kHighSchoolHintTextFormGroups,
+                  textDirection: TextDirection.rtl,
+                  prefixIcon: Icon(Icons.arrow_left_rounded),
+                  enabled: false,
+                  hintStyle: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.kFormFiledHint,
+                    fontSize: 12,
+                    fontFamily: 'Almarai',
+                  ),
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 16),
+                ),
+                const HintTextGroups(
+                  myText: AppStrings.kClassRoomHintTextGroups,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 16,
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
+                ),
+                const CustomTextFormFiled(
+                  hintText: AppStrings.kClassRoomHintTextFiledGroups,
+                  textDirection: TextDirection.rtl,
+                  prefixIcon: Icon(Icons.arrow_left_rounded),
+                  enabled: false,
+                  hintStyle: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.kFormFiledHint,
+                    fontSize: 12,
+                    fontFamily: 'Almarai',
+                  ),
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 16),
+                ),
+                const HintTextGroups(
+                  myText: AppStrings.kSubjectsHintTextGroups,
+                  fontWeight: FontWeight.w700,
+                  fontSize: 16,
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
+                ),
+                const CustomTextFormFiled(
+                  hintText: AppStrings.kSubjectsTextFiledGroups,
+                  textDirection: TextDirection.rtl,
+                  prefixIcon: Icon(Icons.arrow_left_rounded),
+                  enabled: false,
+                  hintStyle: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.kFormFiledHint,
+                    fontSize: 12,
+                    fontFamily: 'Almarai',
+                  ),
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 112),
+                ),
+                CustomMainButtonRed(
+                  buttonName: AppStrings.kCreationButtonTextGroups,
                   onPressed: () {
-                    Navigator.pushNamed(context, RoutesManager.groupStatistics);
+                    Navigator.pushNamed(context, RoutesManager.createGroupDone);
                   },
-                ),
-               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 11))
-               , MainGreyButton(
-                  buttonName: AppStrings.kSentExamsGroups,
-                  onPressed: (){
-
-                      Navigator.pushNamed(context, RoutesManager.sentExams);
-                  },
-                )
-,                SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                11))
-
-                ,MainGreyButton(
-                  buttonName: AppStrings.kAttendanceAndDepartureGroups,
-                  onPressed: (){},
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     );
   }
 }
+//                  prefixIcon: Icon(Icons.arrow_left_rounded),

@@ -68,9 +68,9 @@ class AppStrings {
   static const String kUnderMainTextMainScreenNewOffer = 'أحصل على خصم عيد '
       'الأم';
   static const String kHintText1TextMainScreenNewOffer = 'شروط العرض';
-  static const String kHintText2TextMainScreenNewOffer = 'الشرط الأول   .';
-  static const String kHintText3TextMainScreenNewOffer = 'المحتوى الثانى   .';
-  static const String kHintText4TextMainScreenNewOffer = 'باقى محتوى العرض   .';
+  static const String kHintText2TextMainScreenNewOffer = 'الشرط الأول   •';
+  static const String kHintText3TextMainScreenNewOffer = 'المحتوى الثانى   •';
+  static const String kHintText4TextMainScreenNewOffer = 'باقى محتوى العرض   •';
   static const String kHintText5TextMainScreenNewOffer =
       'فى حال مواجهة المشاكل يمكنك التواصل معنا';
   static const String kMainButtonTextMainScreenNewOffer = 'الحصول على العرض';
@@ -168,7 +168,53 @@ class AppStrings {
       ' - الفصل الثانى - الدرس الأول';
   static const String kCorrectExamsGroups = 'تصحيح';
   static const String kShowExamsGroups = 'عرض';
-
+  static const String kCreateGroupGroups = 'إنشاء مجموعة جديد';
+  static const String kCreateGroupHintTextGroups = 'اسم المجموعة';
+  static const String kCreateGroupHintTextFormGroups = 'مجموعة 1';
+  static const String kEducationalLevelHintTextGroups = 'المرحلة التعليمية';
+  static const String kHighSchoolHintTextFormGroups = 'المرحلة الثانوية';
+  static const String kClassRoomHintTextGroups = 'الصف الدراسى';
+  static const String kClassRoomHintTextFiledGroups = 'الصف الاول الثانوى';
+  static const String kSubjectsHintTextGroups = 'المواد';
+  static const String kSubjectsTextFiledGroups = 'مادة الكيمياء';
+  static const String kCreationButtonTextGroups = 'إنشاء';
+  static const String kCreateGroupDoneGroups = 'تم انشاء مجموعة';
+  static const String kCreateGroupDoneHintTextGroups = 'تم انشاء مجموعة جديدة '
+      'بأسم “ مجموعة أ “';
+  static const String kAddStudentButtonGroups = 'اضافة طلاب';
+  static const String kProfileStudentNameGroups = 'كريم عاطف';
+  static const String kPersonalDataGroups = 'البيانات الشخصية';
+  static const String kBirthDateGroups = 'تارخ الميلاد •';
+  static const String kActualBirthDateGroups = '12 / 10 / 2005';
+  static const String kEmailGroups = 'البريد الالكترونى •';
+  static const String kActualEmailGroups = 'karimatef@gmail.com';
+  static const String kGenderGroups = 'النوع •';
+  static const String kActualGenderGroups = 'ذكر';
+  static const String kPhoneNumberGroups = 'رقم الهاتف •';
+  static const String kActualPhoneNumberGroups = '012238394726';
+  static const String kEducationalDataGroups = 'البيانات التعليمة';
+  static const String kEducationTypeGroups = 'نوع التعليم •';
+  static const String kActualEducationTypeGroups = 'عربى';
+  static const String kSectionTypeGroups = 'الشعبة •';
+  static const String kActualSectionTypeGroups = 'علمى علوم';
+  static const String kClassRoomGroups = 'الصف الدراسى •';
+  static const String kActualClassRoomGroups = 'الصف الدراسى الاول';
+  static const String kEducationalLevelGroups = 'المرحلة التعليمية •';
+  static const String kActualEducationalLevelGroups = 'المرحلة الثانوية';
+  static const String kStatisticsButtonGroups = 'الاحصائيات';
+  static const String kStudentStatisticsGroups = 'احصائيات الطالب';
+  static const String kExamGradesGroups = 'درجات الأمتحانات';
+  static const String kResultGroups = 'النتيجة';
+  static const String kActualResultGroups = '100/30';
+  static const String kTransitionalElementsGroups = 'اختبار: العناصر الانتقالية';
+  static const String kHintTextStatisticsGroups = 'الأحياء , الباب الأول , الفصل الثانى';
+  static const String kExamsNotSolvedGroups = 'امتحانات لم تحل';
+  static const String kDigestiveGroups = ' الجهاز الهضمى';
+  static const String kExamsSolvedGroups = 'امتحانات تم حلها';
+  static const String kPercentageTextGroups = 'النسبة المئوية';
+  static const String kSolvePercentageGreenGroups = '88%';
+  static const String kSolvePercentageYellowGroups = '76%';
+  static const String kSolvePercentageRedGroups = '57%';
 
 
 }

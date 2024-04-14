@@ -2,7 +2,7 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/main_hint_text.dart';
@@ -66,8 +66,8 @@ class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
             ),
 
           ),
-          CustomMainButton(
-            text: AppStrings.kForgetPasswordMainButtonText,
+          CustomMainButtonRed(
+            buttonName: AppStrings.kForgetPasswordMainButtonText,
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodeEmail);
 

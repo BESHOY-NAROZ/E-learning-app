@@ -2,11 +2,11 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
-class CustomMainButton extends StatelessWidget {
-  final String? text;
+class CustomMainButtonRed extends StatelessWidget {
+  final String? buttonName;
   final void Function() ? onPressed;
 
-  const CustomMainButton({Key? key, this.text, this.onPressed}) : super(key: key);
+  const CustomMainButtonRed({Key? key, this.buttonName, this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class CustomMainButton extends StatelessWidget {
         color: AppColors.kMainButton,
         shape: const RoundedRectangleBorder(),
         onPressed: onPressed,
-        child: Text(text!,
+        child: Text(buttonName!,
           style: const TextStyle(
               fontFamily: 'Almarai',
               color: AppColors.kMainButtonText,

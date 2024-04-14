@@ -18,7 +18,7 @@ class MainTextBlack extends StatelessWidget {
       style:  TextStyle(
           fontFamily: 'Almarai',
           color: AppColors.kMainTextBlack,
-          fontWeight: fontWeight,
-          fontSize: fontSize),);
+          fontWeight: fontWeight ?? FontWeight.w700,
+          fontSize: fontSize ?? 20),);
   }
 }

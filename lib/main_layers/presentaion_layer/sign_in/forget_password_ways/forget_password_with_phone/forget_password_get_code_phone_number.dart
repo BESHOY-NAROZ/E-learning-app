@@ -2,7 +2,7 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/forget_password_ways/forget_password_with_phone/forget_password_countdown_timer.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/app_bar_signin.dart';
@@ -107,12 +107,12 @@ class _ForgetPasswordGetCodePhoneNumberState
               // const CountDownTimer()
             ],
           ),
-          CustomMainButton(
+          CustomMainButtonRed(
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.resetPassword);
 
             },
-            text: AppStrings.kForgetPasswordGetCodeMainButtonText,
+            buttonName: AppStrings.kForgetPasswordGetCodeMainButtonText,
           ),
           const ForgetPasswordBottomView(
             hintText: AppStrings.kForgetPasswordHintBottomView,

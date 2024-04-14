@@ -3,8 +3,8 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/hint_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_grey_button.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/app_bar_signin.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:flutter/material.dart';
@@ -98,8 +98,8 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
         AddNewStudentWays.myIndex == 0
             ? const AddNewStudentWithEmail()
             : const AddNewStudentWithPhone(),
-        CustomMainButton(
-          text: AppStrings.kSentRequestNowGroups,
+        CustomMainButtonRed(
+          buttonName: AppStrings.kSentRequestNowGroups,
           onPressed: () {
             Navigator.pushNamed(context, RoutesManager.afterNewScan);
           },
@@ -133,7 +133,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 23),
         ),
-        MainGreyButton(
+        MainButtonGrey(
           buttonName: AppStrings.kScanButtonTextGroups,
           onPressed: () {
             Navigator.pushNamed(context, RoutesManager.addStudentByQR);

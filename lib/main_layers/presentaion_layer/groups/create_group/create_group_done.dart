@@ -5,13 +5,12 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
 
-class AddNewStudentDone extends StatelessWidget {
-  const AddNewStudentDone({Key? key}) : super(key: key);
+class CreateGroupDone extends StatelessWidget {
+  const CreateGroupDone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,35 +30,30 @@ class AddNewStudentDone extends StatelessWidget {
                 child: Image.asset(AppAssets.kCorrect)),
 
             const MainTextBlue(
-              myText: AppStrings.kRequestSentGroups,
+              myText: AppStrings.kCreateGroupDoneGroups,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
 
             const Text(
-              AppStrings.kSpecialRequestSentGroups,
+              AppStrings.kCreateGroupDoneHintTextGroups,
               textAlign: TextAlign.center,
+              textDirection: TextDirection.rtl,
               style: TextStyle(
                   fontFamily: 'Almarai',
                   color: AppColors.kSignInMainHintText,
                   fontWeight: FontWeight.w400,
                   fontSize: 14),
             ),
-            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 214)),
+            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
 
             CustomMainButtonRed(
-              buttonName: AppStrings.kGoToGroupGroups,
+              buttonName: AppStrings.kAddStudentButtonGroups,
               onPressed: () {
 
               },
             ),
-            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 10)),
 
-            MainButtonGrey(
-              buttonName: AppStrings.kCancelJoinRequestGroups,
-              onPressed: () {
 
-              },
-            )
           ],
         ),
       ),
