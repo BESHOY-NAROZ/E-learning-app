@@ -80,7 +80,7 @@ class LoginScreen extends StatelessWidget {
               ),
             ],
           ),
-          const CustomMainButtonRed(
+          const MainButtonRed(
             buttonName: AppStrings.kLogInMainButtonText,
           ),
           Row(

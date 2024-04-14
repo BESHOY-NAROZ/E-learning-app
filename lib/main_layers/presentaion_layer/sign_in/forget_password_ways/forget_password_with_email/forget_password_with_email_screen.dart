@@ -66,7 +66,7 @@ class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
             ),
 
           ),
-          CustomMainButtonRed(
+          MainButtonRed(
             buttonName: AppStrings.kForgetPasswordMainButtonText,
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodeEmail);

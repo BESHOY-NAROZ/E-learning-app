@@ -79,7 +79,7 @@ class ForgetPasswordGetCodeEmail extends StatelessWidget {
               ),
             ],
           ),
-          CustomMainButtonRed(
+          MainButtonRed(
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.resetPassword);
             },

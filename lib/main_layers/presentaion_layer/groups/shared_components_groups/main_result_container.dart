@@ -16,9 +16,10 @@ class MainResultContainer extends StatelessWidget {
   final String ? bottomLeftText;
   final String ? topRightText;
   final String ? bottomRightText;
+  final double ? widthSpacer;
 
   const MainResultContainer({
-    super.key, this.topLeftText, this.bottomLeftText, this.topRightText, this.bottomRightText,
+    super.key, this.topLeftText, this.bottomLeftText, this.topRightText, this.bottomRightText, this.widthSpacer,
   });
 
   @override
@@ -77,7 +78,8 @@ class MainResultContainer extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: AppDimensions.getDimensions(requiredWidth: 52),
+            width: AppDimensions.getDimensions(requiredWidth: widthSpacer ??
+                52),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,

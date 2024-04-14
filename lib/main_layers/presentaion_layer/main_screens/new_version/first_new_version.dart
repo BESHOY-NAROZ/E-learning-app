@@ -95,7 +95,7 @@ class FirstNewVersion extends StatelessWidget {
                   left: AppDimensions.getDimensions(requiredWidth: 32
                   ),
                 ),
-                child: CustomMainButtonRed(onPressed: () {
+                child: MainButtonRed(onPressed: () {
 
                 },
                   buttonName: AppStrings.kMainSecondButtonTextMainScreenNewVersion,

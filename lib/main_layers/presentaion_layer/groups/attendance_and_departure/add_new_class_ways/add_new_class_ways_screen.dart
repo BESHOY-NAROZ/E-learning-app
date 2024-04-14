@@ -2,6 +2,9 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_ways/add_new_student_with_phone/add_new_student_with_phone_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_ways/add_new_class_with_email/add_new_class_with_email_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_ways/add_new_class_with_phone/add_new_class_with_phone_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/hint_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
@@ -9,19 +12,18 @@ import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_comp
 import 'package:assiut_project/main_layers/presentaion_layer/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:flutter/material.dart';
 
-import 'add_new_student_with_email/add_new_student_with_email_screen.dart';
-import 'add_new_student_with_phone/add_new_student_with_phone_screen.dart';
 
-class AddNewStudentWays extends StatefulWidget {
-  const AddNewStudentWays({Key? key}) : super(key: key);
+
+class AddNewClassWays extends StatefulWidget {
+  const AddNewClassWays({Key? key}) : super(key: key);
 
   static int myIndex = 0;
 
   @override
-  State<AddNewStudentWays> createState() => _AddNewStudentWaysState();
+  State<AddNewClassWays> createState() => _AddNewStudentWaysState();
 }
 
-class _AddNewStudentWaysState extends State<AddNewStudentWays> {
+class _AddNewStudentWaysState extends State<AddNewClassWays> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -35,7 +37,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
               height: AppDimensions.getDimensions(requiredHeight: 34.16),
               width: AppDimensions.getDimensions(requiredWidth: 99.94),
               decoration: BoxDecoration(
-                  color: AddNewStudentWays.myIndex == 0
+                  color: AddNewClassWays.myIndex == 0
                       ? AppColors.kForgetPasswordToggleSelectedButtonColor
                       : AppColors.kForgetPasswordToggleButtonColor,
                   borderRadius: BorderRadius.circular(10)),
@@ -46,7 +48,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
-                    color: AddNewStudentWays.myIndex == 0
+                    color: AddNewClassWays.myIndex == 0
                         ? AppColors.kForgetPasswordToggleSelectedButtonText
                         : AppColors.kForgetPasswordToggleButtonText,
                     fontSize: 12,
@@ -55,7 +57,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
                 ),
                 onPressed: () {
                   setState(() {
-                    AddNewStudentWays.myIndex = 0;
+                    AddNewClassWays.myIndex = 0;
                   });
                 },
               ),
@@ -65,7 +67,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
               height: AppDimensions.getDimensions(requiredHeight: 34.16),
               width: AppDimensions.getDimensions(requiredWidth: 99.94),
               decoration: BoxDecoration(
-                  color: AddNewStudentWays.myIndex == 1
+                  color: AddNewClassWays.myIndex == 1
                       ? AppColors.kForgetPasswordToggleSelectedButtonColor
                       : AppColors.kForgetPasswordToggleButtonColor,
                   borderRadius: BorderRadius.circular(10)),
@@ -76,7 +78,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
-                    color: AddNewStudentWays.myIndex == 1
+                    color: AddNewClassWays.myIndex == 1
                         ? AppColors.kForgetPasswordToggleSelectedButtonText
                         : AppColors.kForgetPasswordToggleButtonText,
                     fontSize: 12,
@@ -85,7 +87,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
                 ),
                 onPressed: () {
                   setState(() {
-                    AddNewStudentWays.myIndex = 1;
+                    AddNewClassWays.myIndex = 1;
                   });
                 },
               ),
@@ -95,13 +97,13 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 25),
         ),
-        AddNewStudentWays.myIndex == 0
-            ? const AddNewStudentWithEmail()
-            : const AddNewStudentWithPhone(),
+        AddNewClassWays.myIndex == 0
+            ? const AddNewClassWithEmail()
+            : const AddNewClassWithPhone(),
         MainButtonRed(
-          buttonName: AppStrings.kSentRequestNowGroups,
+          buttonName: AppStrings.kStudentSignToClassButtonGroups,
           onPressed: () {
-            Navigator.pushNamed(context, RoutesManager.afterNewScan);
+            Navigator.pushReplacementNamed(context, RoutesManager.addNewClassDone);
           },
         ),
         SizedBox(
@@ -136,7 +138,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
         MainButtonGrey(
           buttonName: AppStrings.kScanButtonTextGroups,
           onPressed: () {
-            Navigator.pushNamed(context, RoutesManager.addStudentByQR);
+            Navigator.pushNamed(context, RoutesManager.addNewClassByQR);
 
           },
         )

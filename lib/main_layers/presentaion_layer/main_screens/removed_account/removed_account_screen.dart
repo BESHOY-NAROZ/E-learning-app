@@ -70,7 +70,7 @@ class RemovedAccount extends StatelessWidget {
                 ),),
 
                 child: Center(
-                  child: CustomMainButtonRed(
+                  child: MainButtonRed(
                     onPressed: () {
                       Navigator.pushNamed(context, RoutesManager.homeMainScreen);
 

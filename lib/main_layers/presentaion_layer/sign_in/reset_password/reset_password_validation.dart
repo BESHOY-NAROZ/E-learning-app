@@ -149,7 +149,7 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
                ],
              ),],
          ),
-          CustomMainButtonRed(
+          MainButtonRed(
             buttonName: AppStrings.kResetPasswordMainButtonText,
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.resetPasswordDone);

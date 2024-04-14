@@ -2,6 +2,12 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_stud
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/after_scan_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_by_qr_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_ways/add_new_class_ways_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/attendance_and_departure_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/who_attended.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/group_details/group_details_screen.dart';
@@ -53,6 +59,11 @@ class RoutesManager {
   static const String createGroupDone = "/createGroupDone";
   static const String studentsProfile = "/studentsProfile";
   static const String studentStatistics = "/studentStatistics";
+  static const String attendanceAndDeparture = "/attendanceAndDeparture";
+  static const String whoAttended = "/whoAttended";
+  static const String addNewClass = "/addNewClass";
+  static const String addNewClassByQR = "/addNewClassByQR";
+  static const String addNewClassDone = "/addNewClassDone";
 
 
 }
@@ -112,6 +123,16 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const StudentProfile());
       case RoutesManager.studentStatistics:
         return MaterialPageRoute(builder: (_) => const StudentStatistics());
+        case RoutesManager.attendanceAndDeparture:
+        return MaterialPageRoute(builder: (_) => const AttendanceAndDeparture());
+        case RoutesManager.whoAttended:
+        return MaterialPageRoute(builder: (_) => const WhoAttended());
+        case RoutesManager.addNewClass:
+        return MaterialPageRoute(builder: (_) => const AddNewClass());
+        case RoutesManager.addNewClassByQR:
+        return MaterialPageRoute(builder: (_) => const AddNewClassByQR());
+        case RoutesManager.addNewClassDone:
+        return MaterialPageRoute(builder: (_) => const AddNewClassDone());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

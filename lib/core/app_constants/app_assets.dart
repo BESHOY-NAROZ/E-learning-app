@@ -38,5 +38,6 @@ class AppAssets{
   static const String kCorrectExam = 'assets/images/CorrectExam.png';
   static const String kShowExam = 'assets/images/Show.png';
   static const String kExamVector = 'assets/images/Exam.png';
+  static const String kClockVector = 'assets/images/Clock.png';
 
 }

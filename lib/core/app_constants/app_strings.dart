@@ -215,6 +215,19 @@ class AppStrings {
   static const String kSolvePercentageGreenGroups = '88%';
   static const String kSolvePercentageYellowGroups = '76%';
   static const String kSolvePercentageRedGroups = '57%';
+  static const String kAttendanceAndDepartureAppBarGroups = 'الحضور و الانصراف';
+  static const String kAttendanceAndDepartureMainTextGroups = 'حضور و انصراف '
+      'طلاب المجموعة';
+  static const String kFirstSessionGroups = 'الحصة الاولى';
+  static const String kBiologyGroups = 'الأحياء';
+  static const String kStudentAttendanceGroups = 'حضور الطلاب';
+  static const String kActualStudentAttendanceGroups = '12 / 6';
+  static const String kNewLessonGroups = 'حصة جديدة';
+  static const String kAttendedGroups = 'تم الحضور';
+  static const String kAttendedTimeGroups = '10:00 Am';
+  static const String kStudentSignToClassGroups = 'تسجيل حضور الطالب';
+  static const String kStudentSignToClassButtonGroups = 'تسجيل حضور';
+  static const String kBackToGroupGroups = 'العودة الى المجموعة';
 
 
 }

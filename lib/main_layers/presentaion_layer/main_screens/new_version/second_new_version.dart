@@ -77,7 +77,7 @@ class SecondNewVersion extends StatelessWidget {
                   ),
                   left: AppDimensions.getDimensions(requiredWidth: 32),
                 ),
-                child: CustomMainButtonRed(
+                child: MainButtonRed(
                   onPressed: () {
                     Navigator.pushNamed(context, RoutesManager.removedAccount);
 

@@ -14,6 +14,7 @@ class MainButtonGrey extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Container(
       height: AppDimensions.getDimensions(requiredHeight: 45),
       width: AppDimensions.getDimensions(requiredWidth: 320),

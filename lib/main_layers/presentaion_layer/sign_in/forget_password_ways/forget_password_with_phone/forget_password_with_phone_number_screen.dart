@@ -25,7 +25,7 @@ class ForgetPasswordWithPhoneNumber extends StatelessWidget {
             hintText: AppStrings.kForgetPasswordTextFormFiledHintPhone,
             keyboardType: TextInputType.phone,
           ),
-          CustomMainButtonRed(
+          MainButtonRed(
             buttonName: AppStrings.kForgetPasswordMainButtonText,
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);

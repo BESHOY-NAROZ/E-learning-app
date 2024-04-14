@@ -36,7 +36,7 @@ class ResetPasswordDone extends StatelessWidget {
             fontWeight: FontWeight.w400,
             fontSize: 14),
       ),
-          CustomMainButtonRed(
+          MainButtonRed(
             buttonName: AppStrings.kResetPasswordDoneMainButtonText,
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.loginScreen);

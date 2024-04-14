@@ -107,7 +107,7 @@ class _ForgetPasswordGetCodePhoneNumberState
               // const CountDownTimer()
             ],
           ),
-          CustomMainButtonRed(
+          MainButtonRed(
             onPressed: () {
               Navigator.pushReplacementNamed(context, RoutesManager.resetPassword);
 

@@ -133,7 +133,7 @@ class CreateGroup extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 112),
                 ),
-                CustomMainButtonRed(
+                MainButtonRed(
                   buttonName: AppStrings.kCreationButtonTextGroups,
                   onPressed: () {
                     Navigator.pushNamed(context, RoutesManager.createGroupDone);

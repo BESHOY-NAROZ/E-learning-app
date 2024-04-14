@@ -83,7 +83,10 @@ class GroupDetails extends StatelessWidget {
 
                 ,MainButtonGrey(
                   buttonName: AppStrings.kAttendanceAndDepartureGroups,
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.pushNamed(context, RoutesManager.attendanceAndDeparture);
+
+                  },
                 )
               ],
             ),

@@ -46,7 +46,7 @@ class CreateGroupDone extends StatelessWidget {
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
 
-            CustomMainButtonRed(
+            MainButtonRed(
               buttonName: AppStrings.kAddStudentButtonGroups,
               onPressed: () {
 
