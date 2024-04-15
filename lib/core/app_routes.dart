@@ -1,3 +1,5 @@
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/conatct_us/contact_us_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/general%20_settings/general%20_settings_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_screen.dart';
@@ -74,6 +76,8 @@ class RoutesManager {
   static const String afterScanTeacher = "/afterScanTeacher";
   static const String addNewTeacherByQR = "/addNewTeacherByQR";
   static const String addNewTeacherDone = "/addNewTeacherDone";
+  static const String contactUS = "/contactUS";
+  static const String generalSettings = "/generalSettings";
 
 
 }
@@ -153,6 +157,10 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const AddNewTeacherByQR());
         case RoutesManager.addNewTeacherDone:
         return MaterialPageRoute(builder: (_) => const AddNewTeacherDone());
+        case RoutesManager.contactUS:
+        return MaterialPageRoute(builder: (_) => const ContactUS());
+        case RoutesManager.generalSettings:
+        return MaterialPageRoute(builder: (_) => const GeneralSettings());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

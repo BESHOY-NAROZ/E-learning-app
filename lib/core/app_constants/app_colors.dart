@@ -75,6 +75,9 @@ class AppColors{
 
   //////////////////////Common/////////////////////
   static const Color kContainerCommon = Color(0xFFECEDF5);
+  static const Color kHintCommon = Color(0xFF7A7A7A);
+  static const Color kButtonCommon = Color(0xFFE7E8F0);
+  static const Color kTextButtonCommon = Color(0xFFDC3434);
 
 
 

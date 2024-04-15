@@ -258,6 +258,23 @@ class AppStrings {
   static const String kPhoneCommon = '+20 1234 5484 65';
   static const String kWebSiteCommon = 'www.gps.com';
   static const String kSocialMediaCommon = 'مواقع التواصل الإجتماعى';
+  static const String kGeneralSettingsCommon = 'إعدادات عامة';
+  static const String kAppSettingsCommon = 'إعدادات التطبيق';
+  static const String kLanguageCommon = 'اللغة';
+  static const String kArabicCommon = 'العربية';
+  static const String kLightModeCommon = 'الوضع المضئ';
+  static const String kDarkModeCommon = 'الوضع المظلم';
+  static const String kRemoveAccountCommon = 'حذف  الحساب';
+  static const String kAccountSettingsCommon = 'إعدادات الحساب';
+  static const String kInviteFriendsCommon = 'أدع أصدقائك';
+  static const String kInviteFriendsMainTextCommon = 'دعوة الأصدقاء لزيادة النقاط';
+  static const String kFirstUnderMainTextCommon = 'هذا النص هو مثال لنص •';
+  static const String kSecondUnderMainTextCommon = 'المساحة، لقد تم توليد هذا النص •';
+  static const String kThirdUnderMainTextCommon = 'من مولد النص العربى •';
+  static const String kCodeCommon = 'SDWQGSCZWE';
+  static const String kCopyCodeCommon = 'نسخ الكود';
+  static const String kShareAppCommon = 'مشاركة التطبيق';
+  static const String kCopyAppLinkCommon = 'نسخ رابط التطبيق';
 
 
 
