@@ -2,7 +2,8 @@ class AppStrings {
   // MainShared Strings
 
 
-  // Sign In Strings
+  ////////////////////////////////// Sign In Strings ////////////////////
+
   static const String kAppBarLogIn = 'تسجيل دخول';
   static const String kLogInEmailOrPhone = 'البريد الإلكترونى / رقم الهاتف';
   static const String kLogInTextFormFiledHint = 'example@gmail.com';
@@ -62,7 +63,8 @@ class AppStrings {
   static const String kResetPasswordDoneMainButtonText = 'تسجيل الدخول';
 
 
-  //Main Screens
+  ///////////////////////Main Screens////////////////////
+
   static const String kMainTextMainScreenNewOffer = 'عرض جديد\nخصيصاً لك';
   static const String kMainTextMainScreenNewVersion = 'تم إضافة\nتحديث جديد';
   static const String kUnderMainTextMainScreenNewOffer = 'أحصل على خصم عيد '
@@ -122,7 +124,8 @@ class AppStrings {
   static const String kQRMainScreenFinal = 'الخاص بي (QR) كود ال';
 
 
-//Groups
+//////////////////////Groups////////////////////////////////
+
   static const String kAppBarTitleGroupsStudentGroups = 'مجموعات الطلاب';
   static const String kContainerTeachersGroupsStudentGroups = 'المدرسين';
   static const String kContainerFirstTeacherGroupsStudentGroups =
@@ -229,5 +232,20 @@ class AppStrings {
   static const String kStudentSignToClassButtonGroups = 'تسجيل حضور';
   static const String kBackToGroupGroups = 'العودة الى المجموعة';
 
+///////////////////////////////Teachers/////////////////////
 
+  static const String kTeachers = 'المدرسين';
+  static const String kTeachersMenu = 'قائمة المدرسين';
+  static const String kHintTeachers = 'المدرسين الذى يقوم المساعد بالعمل معهم';
+  static const String kTeacherNameTeachers = 'احمد لطيف';
+  static const String kTeacherSubjectsTeachers = 'الاحياء , الكيمياء';
+  static const String kAddTeacherTeachers = 'إضافة مدرس  جديد';
+  static const String kAddTeacherAppBarTeachers = 'اضافة مدرس جديد';
+  static const String kAddTeacherHintTeachers = 'أدخل رقم الهاتف المتصل بحساب '
+      'المدرس';
+  static const String kAfterScanHintTeachers = 'مسح ال ( QR )  المتصل بحساب '
+      'المدرس';
+  static const String kAddTeacherDoneTeachers = 'تم إرسال طلب إضافة مدرس إلى '
+      '“كريم عاطف\nصالح ”';
+  static const String kBackToTeachersTeachers = 'الذهاب الى المدرسين';
 }

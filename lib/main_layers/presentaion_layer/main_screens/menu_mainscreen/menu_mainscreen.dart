@@ -145,9 +145,14 @@ class MenuMainScreen extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 12),
                 ),
-                const MainButtonMainScreenMenu(
-                  myTitle: AppStrings.kFirstButtonMainScreenMenu,
-                  myIcon: AppAssets.kVector2HomeScreen,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutesManager.teachers);
+                  },
+                  child: const MainButtonMainScreenMenu(
+                    myTitle: AppStrings.kFirstButtonMainScreenMenu,
+                    myIcon: AppAssets.kVector2HomeScreen,
+                  ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),

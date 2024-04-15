@@ -5,12 +5,15 @@ class HintTextGroups extends StatelessWidget {
   final String ? myText;
   final FontWeight ? fontWeight;
   final double ? fontSize;
-  const HintTextGroups({Key? key, this.myText, this.fontWeight, this.fontSize}) : super(key: key);
+  final TextDirection ? textDirection;
+
+  const HintTextGroups({Key? key, this.myText, this.fontWeight, this.fontSize, this.textDirection}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return  Text(myText!,
       textAlign: TextAlign.end,
+      textDirection: textDirection ?? TextDirection.ltr,
       style:  TextStyle(
           fontFamily: 'Almarai',
           color: AppColors.kLoginEmailOrPhone,

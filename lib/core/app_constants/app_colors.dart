@@ -70,6 +70,9 @@ class AppColors{
   static const Color kSentGreyTextGroups = Color(0xFFADB5BD);
   static const Color kStudentNameGroups = Color(0xFF818181);
 
+  //////////////////////Teachers/////////////////////
+  static const Color kHintTeachers = Color(0xFF7A7A7A);
+
 
 
 

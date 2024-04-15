@@ -10,8 +10,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
 
-class AddNewStudentDone extends StatelessWidget {
-  const AddNewStudentDone({Key? key}) : super(key: key);
+class AddNewTeacherDone extends StatelessWidget {
+  const AddNewTeacherDone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,22 +22,20 @@ class AddNewStudentDone extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
             const CloseSign(),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
             SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 154),
                 width: AppDimensions.getDimensions(requiredWidth: 154),
                 child: Image.asset(AppAssets.kCorrect)),
-
             const MainTextBlue(
               myText: AppStrings.kRequestSentGroups,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-
             const Text(
-              AppStrings.kSpecialRequestSentGroups,
+              AppStrings.kAddTeacherDoneTeachers,
               textAlign: TextAlign.center,
+              textDirection: TextDirection.rtl,
               style: TextStyle(
                   fontFamily: 'Almarai',
                   color: AppColors.kSignInMainHintText,
@@ -45,20 +43,16 @@ class AddNewStudentDone extends StatelessWidget {
                   fontSize: 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 214)),
-
             MainButtonRed(
-              buttonName: AppStrings.kGoToGroupGroups,
+              buttonName: AppStrings.kBackToTeachersTeachers,
               onPressed: () {
-Navigator.pushNamed(context, RoutesManager.groupDetails);
+                Navigator.pushNamed(context, RoutesManager.teachers);
               },
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 10)),
-
             MainButtonGrey(
               buttonName: AppStrings.kCancelJoinRequestGroups,
-              onPressed: () {
-
-              },
+              onPressed: () {},
             )
           ],
         ),

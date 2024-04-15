@@ -29,6 +29,11 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_i
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/log_in/login_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password/reset_password_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password/reset_password_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_by_qr_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/after_scan_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teachers/teachers_screen.dart';
 import 'package:flutter/material.dart';
 
 class RoutesManager {
@@ -64,6 +69,11 @@ class RoutesManager {
   static const String addNewClass = "/addNewClass";
   static const String addNewClassByQR = "/addNewClassByQR";
   static const String addNewClassDone = "/addNewClassDone";
+  static const String teachers = "/teachers";
+  static const String addNewTeacher = "/addNewTeacher";
+  static const String afterScanTeacher = "/afterScanTeacher";
+  static const String addNewTeacherByQR = "/addNewTeacherByQR";
+  static const String addNewTeacherDone = "/addNewTeacherDone";
 
 
 }
@@ -133,6 +143,16 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const AddNewClassByQR());
         case RoutesManager.addNewClassDone:
         return MaterialPageRoute(builder: (_) => const AddNewClassDone());
+        case RoutesManager.teachers:
+        return MaterialPageRoute(builder: (_) => const Teachers());
+        case RoutesManager.addNewTeacher:
+        return MaterialPageRoute(builder: (_) => const AddNewTeacher());
+        case RoutesManager.afterScanTeacher:
+        return MaterialPageRoute(builder: (_) => const AfterScanTeacher());
+        case RoutesManager.addNewTeacherByQR:
+        return MaterialPageRoute(builder: (_) => const AddNewTeacherByQR());
+        case RoutesManager.addNewTeacherDone:
+        return MaterialPageRoute(builder: (_) => const AddNewTeacherDone());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

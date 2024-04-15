@@ -2,10 +2,10 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
-import 'small_button_groups.dart';
-
+import '../../shared_components/main_add_small_button.dart';
 
 class MoreRowGroups extends StatelessWidget {
   const MoreRowGroups({
@@ -20,10 +20,12 @@ class MoreRowGroups extends StatelessWidget {
       width: AppDimensions.getDimensions(requiredWidth: 320),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-
         children: [
-          const SmallButtonGroups(
+          MainAddSmallButton(
             myText: AppStrings.kSmallButtonCreateGroupGroupStudentGroups,
+            onPressed: () {
+              Navigator.pushNamed(context, RoutesManager.addNewStudent);
+            },
           ),
           const Spacer(),
           Row(

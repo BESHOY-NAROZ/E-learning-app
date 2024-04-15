@@ -3,13 +3,15 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
-class SmallButtonGroups extends StatelessWidget {
+class MainAddSmallButton extends StatelessWidget {
 
   final String? myText;
+  final double? requiredWidth;
+  final void Function()? onPressed;
 
-  const SmallButtonGroups({
+  const MainAddSmallButton({
     super.key,
-    this.myText,
+    this.myText, this.requiredWidth, this.onPressed,
   });
 
   @override
@@ -17,7 +19,7 @@ class SmallButtonGroups extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Container(
-        width: AppDimensions.getDimensions(requiredWidth: 98),
+        width: AppDimensions.getDimensions(requiredWidth: requiredWidth ?? 98),
 
         padding: const EdgeInsets.all(0),
 
@@ -26,9 +28,7 @@ class SmallButtonGroups extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         child: IconButton(
-          onPressed: () {
-            Navigator.pushNamed(context, RoutesManager.addNewStudent);
-          },
+          onPressed: onPressed,
           padding: const EdgeInsets.all(0),
           icon: Row(
             mainAxisAlignment: MainAxisAlignment.center,

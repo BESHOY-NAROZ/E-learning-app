@@ -49,6 +49,7 @@ class CreateGroupDone extends StatelessWidget {
             MainButtonRed(
               buttonName: AppStrings.kAddStudentButtonGroups,
               onPressed: () {
+                Navigator.pushNamed(context, RoutesManager.addNewStudent);
 
               },
             ),
