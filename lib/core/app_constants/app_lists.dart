@@ -14,6 +14,12 @@ class AppLists {
     Image.asset(AppAssets.kIPhone),
     Image.asset(AppAssets.kDots),
   ];
+  static List<Image> kSocialMedia = [
+    Image.asset(AppAssets.kFaceBook,),
+    Image.asset(AppAssets.kGoogle),
+    Image.asset(AppAssets.kWhatsapp),
+    Image.asset(AppAssets.kTelegram),
+  ];
   static List<Color> kStudentStatisticsColorList = [
     AppColors.kMainTextGreen,
     AppColors.kMainTextYellow,

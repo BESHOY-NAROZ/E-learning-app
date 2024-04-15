@@ -39,5 +39,9 @@ class AppAssets{
   static const String kShowExam = 'assets/images/Show.png';
   static const String kExamVector = 'assets/images/Exam.png';
   static const String kClockVector = 'assets/images/Clock.png';
+  static const String kEmail = 'assets/images/Email.png';
+  static const String kWebSite = 'assets/images/WebSite.png';
+  static const String kWhatsapp = 'assets/images/Whatsapp.png';
+  static const String kTelegram = 'assets/images/Telegram.png';
 
 }

@@ -248,4 +248,17 @@ class AppStrings {
   static const String kAddTeacherDoneTeachers = 'تم إرسال طلب إضافة مدرس إلى '
       '“كريم عاطف\nصالح ”';
   static const String kBackToTeachersTeachers = 'الذهاب الى المدرسين';
+
+
+///////////////////////////////CommonFiles/////////////////////
+
+  static const String kContactUsCommon = 'تواصل معنا';
+  static const String kContactUsMainTextCommon = 'تواصل الأن من خلال';
+  static const String kEmailCommon = 'Example@GPS.com';
+  static const String kPhoneCommon = '+20 1234 5484 65';
+  static const String kWebSiteCommon = 'www.gps.com';
+  static const String kSocialMediaCommon = 'مواقع التواصل الإجتماعى';
+
+
+
 }

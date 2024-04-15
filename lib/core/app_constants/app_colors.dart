@@ -73,15 +73,20 @@ class AppColors{
   //////////////////////Teachers/////////////////////
   static const Color kHintTeachers = Color(0xFF7A7A7A);
 
+  //////////////////////Common/////////////////////
+  static const Color kContainerCommon = Color(0xFFECEDF5);
 
 
 
+
+  //////////////////////Main/////////////////////
   static const Color kMainButton = Color(0xffDC3434);
   static const Color kMainTextBlack = Color(0xFF495057);
   static const Color kMainButtonText = Color(0xffFFFFFF);
   static const Color kMainTextGreen = Color(0xFF5BCB67);
   static const Color kMainTextYellow = Color(0xFFF6CB5E);
   static const Color kMainTextRed = Color(0xFFDC3434);
+  static const Color kMainGery96 = Color(0xFF868E96);
 
 
 
