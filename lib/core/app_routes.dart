@@ -1,5 +1,9 @@
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/conatct_us/contact_us_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/general%20_settings/general%20_settings_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/help/help_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/notifications/notifications_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/your_opinion/add_opinion_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/your_opinion/your_opinion_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_screen.dart';
@@ -78,6 +82,10 @@ class RoutesManager {
   static const String addNewTeacherDone = "/addNewTeacherDone";
   static const String contactUS = "/contactUS";
   static const String generalSettings = "/generalSettings";
+  static const String notificationsCommon = "/notificationsCommon";
+  static const String helpBody = "/helpBody";
+  static const String yourOpinion = "/yourOpinion";
+  static const String addOpinionDone = "/addOpinionDone";
 
 
 }
@@ -161,6 +169,14 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const ContactUS());
         case RoutesManager.generalSettings:
         return MaterialPageRoute(builder: (_) => const GeneralSettings());
+        case RoutesManager.notificationsCommon:
+        return MaterialPageRoute(builder: (_) => const Notifications());
+        case RoutesManager.helpBody:
+        return MaterialPageRoute(builder: (_) => const HelpBody());
+        case RoutesManager.yourOpinion:
+        return MaterialPageRoute(builder: (_) => const YourOpinion());
+        case RoutesManager.addOpinionDone:
+        return MaterialPageRoute(builder: (_) => const AddOpinionDone());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

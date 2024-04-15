@@ -43,5 +43,6 @@ class AppAssets{
   static const String kWebSite = 'assets/images/WebSite.png';
   static const String kWhatsapp = 'assets/images/Whatsapp.png';
   static const String kTelegram = 'assets/images/Telegram.png';
+  static const String kImageHelp = 'assets/images/ImageHelp.png';
 
 }

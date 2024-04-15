@@ -38,7 +38,9 @@ class _BottomNavigationBarMainScreenState
           if(value == 0){
             Navigator.pushReplacementNamed(context, RoutesManager.menuMainScreen);
           }
-         else if(value == 2){
+         else if(value == 1){
+            Navigator.pushReplacementNamed(context, RoutesManager.notificationsCommon);
+          } else if(value == 2){
             Navigator.pushReplacementNamed(context, RoutesManager.studentsGroups);
           }
           else if(value == 3){

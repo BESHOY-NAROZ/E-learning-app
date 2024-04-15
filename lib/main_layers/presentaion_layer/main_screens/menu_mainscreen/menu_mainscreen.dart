@@ -195,16 +195,26 @@ class MenuMainScreen extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainButtonMainScreenMenu(
-                  myTitle: AppStrings.kSixthButtonMainScreenMenu,
-                  myIcon: AppAssets.kOpinionMainScreen,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutesManager.yourOpinion);
+                  },
+                  child: const MainButtonMainScreenMenu(
+                    myTitle: AppStrings.kSixthButtonMainScreenMenu,
+                    myIcon: AppAssets.kOpinionMainScreen,
+                  ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainButtonMainScreenMenu(
-                  myTitle: AppStrings.kSeventhButtonMainScreenMenu,
-                  myIcon: AppAssets.kHelpMainScreen,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutesManager.helpBody);
+                  },
+                  child: const MainButtonMainScreenMenu(
+                    myTitle: AppStrings.kSeventhButtonMainScreenMenu,
+                    myIcon: AppAssets.kHelpMainScreen,
+                  ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),

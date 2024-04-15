@@ -275,6 +275,35 @@ class AppStrings {
   static const String kCopyCodeCommon = 'نسخ الكود';
   static const String kShareAppCommon = 'مشاركة التطبيق';
   static const String kCopyAppLinkCommon = 'نسخ رابط التطبيق';
+  static const String kNotificationsCommon = 'الاشعارات';
+  static const String kNotificationsMainTextCommon = 'الإشعارات';
+  static const String kRecentlyCommon = 'حديثاً';
+  static const String kSixMinCommon = 'منذ 6 د';
+  static const String kThreeHoursCommon = 'منذ 3 س';
+  static const String kFirstGroupCommon = 'مجموعة 1';
+  static const String kGroupStaticsCommon = 'احصائيات مجموعة 2';
+  static const String kFDescriptionNotificationsCommon = 'نتيجة اختبار مجموعة'
+      ' 1 فى امتحان '
+      'مادة '
+      'الكيمياء ';
+  static const String kSDescriptionNotificationsCommon = 'هذا النص هو مثال '
+      'لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى';
+  static const String kLaterCommon = 'مؤخراً';
+  static const String kHelpCommon = 'المساعدة';
+  static const String kProgramDescCommon = 'شرح البرنامج';
+  static const String kProgramPointsDescCommon = 'شرح برنامج النقاط';
+  static const String kYourOpinionCommon = 'رأيك يهمنا';
+  static const String kUserOpinionCommon = 'رأى المستخدم';
+  static const String kUserOpinionDescCommon = 'يمكنك الابداء برأيك عن '
+      'التطبيق و ارساله \nلنا و ذلك لارضاء كل مستخدم و سهولة الاستخدام';
+  static const String kAppRateCommon = 'تقييم البرنامج';
+  static const String kSentOpinionCommon = 'أرسال الرأى';
+  static const String kRatingCommon = '0 - 5';
+  static const String kExampleCommon = 'مثال : محمد أيمن';
+  static const String kOpinionDoneCommon = 'تم إرسال الرأى';
+  static const String kBackToHomeCommon = 'الرجوع الى الرئيسية';
+  static const String kOpinionDoneHintCommon = 'تم إرسال رأيك للتاكد من راحة و '
+      'سهولة استخدامك\nللتطبيق';
 
 
 

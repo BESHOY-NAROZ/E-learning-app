@@ -4,7 +4,11 @@ import 'package:flutter/material.dart';
 
 import 'presentaion_layer/common_files/conatct_us/contact_us_screen.dart';
 import 'presentaion_layer/common_files/general _settings/general _settings_screen.dart';
+import 'presentaion_layer/common_files/help/help_screen.dart';
 import 'presentaion_layer/common_files/invite_friends/invite_friends_screen.dart';
+import 'presentaion_layer/common_files/notifications/notifications_screen.dart';
+import 'presentaion_layer/common_files/your_opinion/add_opinion_done.dart';
+import 'presentaion_layer/common_files/your_opinion/your_opinion_screen.dart';
 import 'presentaion_layer/registration/sign_in/log_in/login_screen.dart';
 
 
@@ -17,7 +21,7 @@ class AppHome extends StatelessWidget {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesGenerator.getRoute ,
-      home:  SafeArea(child: InviteFriends())
+      home:  SafeArea(child: LoginScreen())
     );
   }
 }

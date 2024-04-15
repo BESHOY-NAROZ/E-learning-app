@@ -14,14 +14,17 @@ class CustomTextFormFiled extends StatelessWidget {
   final TextEditingController ? controller;
   final TextDirection ? textDirection;
   final bool ? enabled;
+  final double ? height;
 
-  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled, this.onChanged}) : super(key: key);
+
+  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled, this.onChanged, this.height}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
-    return  SizedBox(height: AppDimensions.getDimensions(requiredHeight: 45),
+    return  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
+    height ?? 45),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       child: TextFormField(textDirection: textDirection ?? TextDirection.ltr,
         onChanged: onChanged,
@@ -30,7 +33,7 @@ class CustomTextFormFiled extends StatelessWidget {
         keyboardType: keyboardType,
         obscureText: obscureText ?? false,
         textAlign: TextAlign.right,
-
+        maxLines: null,
         decoration: InputDecoration(
           errorStyle: const TextStyle(height: 0),
           isDense: true,
