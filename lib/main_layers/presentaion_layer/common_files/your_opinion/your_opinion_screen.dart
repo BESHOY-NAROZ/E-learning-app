@@ -109,6 +109,7 @@ class YourOpinion extends StatelessWidget {
                   ),
                   CustomTextFormFiled(
                     height: AppDimensions.getDimensions(requiredHeight: 119),
+                    maxLines: null,
                     hintText: AppStrings.kExampleCommon,
                   ),
                   SizedBox(

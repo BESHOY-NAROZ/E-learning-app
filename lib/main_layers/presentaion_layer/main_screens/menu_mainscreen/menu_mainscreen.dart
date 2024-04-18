@@ -32,8 +32,8 @@ class MenuMainScreen extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(
-                right: AppDimensions.getDimensions(requiredWidth: 19),
-                left: AppDimensions.getDimensions(requiredWidth: 19),
+              right: AppDimensions.getDimensions(requiredWidth: 19),
+              left: AppDimensions.getDimensions(requiredWidth: 19),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -60,7 +60,8 @@ class MenuMainScreen extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, RoutesManager.qRMainScreen);
+                        Navigator.pushNamed(
+                            context, RoutesManager.qRMainScreen);
                       },
                       child: Container(
                         height: AppDimensions.getDimensions(requiredHeight: 63),
@@ -82,7 +83,7 @@ class MenuMainScreen extends StatelessWidget {
                             ),
                             SizedBox(
                               width:
-                              AppDimensions.getDimensions(requiredWidth: 5),
+                                  AppDimensions.getDimensions(requiredWidth: 5),
                             ),
                             SizedBox(
                                 width: AppDimensions.getDimensions(
@@ -94,39 +95,44 @@ class MenuMainScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 8),
                     ),
-                    Container(
-                      height: AppDimensions.getDimensions(requiredHeight: 63),
-                      width: AppDimensions.getDimensions(requiredWidth: 156),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: AppColors.kContainerMainScreenMenu),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            AppStrings.kFirstContainerMainScreenMenu,
-                            textAlign: TextAlign.end,
-                            style: TextStyle(
-                                fontFamily: 'Almarai',
-                                color: AppColors.kHintTextMainScreenHome,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 12),
-                          ),
-                          SizedBox(
-                            width:
-                            AppDimensions.getDimensions(requiredWidth: 5),
-                          ),
-                          SizedBox(
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 34),
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 34),
-                              child: Image.asset(AppAssets.kMenuUserScreen))
-                        ],
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(
+                            context, RoutesManager.profileEditing);
+                      },
+                      child: Container(
+                        height: AppDimensions.getDimensions(requiredHeight: 63),
+                        width: AppDimensions.getDimensions(requiredWidth: 156),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            color: AppColors.kContainerMainScreenMenu),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                              AppStrings.kFirstContainerMainScreenMenu,
+                              textAlign: TextAlign.end,
+                              style: TextStyle(
+                                  fontFamily: 'Almarai',
+                                  color: AppColors.kHintTextMainScreenHome,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 12),
+                            ),
+                            SizedBox(
+                              width:
+                                  AppDimensions.getDimensions(requiredWidth: 5),
+                            ),
+                            SizedBox(
+                                width: AppDimensions.getDimensions(
+                                    requiredWidth: 34),
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 34),
+                                child: Image.asset(AppAssets.kMenuUserScreen))
+                          ],
+                        ),
                       ),
                     ),
                   ],
@@ -234,5 +240,3 @@ class MenuMainScreen extends StatelessWidget {
     );
   }
 }
-
-

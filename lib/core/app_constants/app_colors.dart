@@ -83,6 +83,15 @@ class AppColors{
 
 
 
+////////////////////// Profile Editing /////////////////////////////////////
+  static const Color kMainTextProfileEditing = Color(0xFF2769AC);
+  static const Color kBorderProfileEditing = Color(0xff4A88C5);
+  static const Color kChangeProfileEditing = Color(0xFFD9D9D9);
+  static const Color kDetailsProfileEditing = Color(0xFF7A7A7A);
+
+
+
+
 
   //////////////////////Main/////////////////////
   static const Color kMainButton = Color(0xffDC3434);

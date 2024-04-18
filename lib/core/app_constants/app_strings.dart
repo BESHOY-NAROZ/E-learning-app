@@ -305,6 +305,31 @@ class AppStrings {
   static const String kOpinionDoneHintCommon = 'تم إرسال رأيك للتاكد من راحة و '
       'سهولة استخدامك\nللتطبيق';
 
+////////////////////// Profile Editing /////////////////////////////////////
+  static const String kAppBarProfileEditing = 'تعديل حساب المساعد';
+  static const String kBasicInformationProfileEditing = 'المعلومات الأساسية';
+  static const String kFullNameProfileEditing = 'الإسم بالكامل';
+  static const String kActualFullNameProfileEditing = 'مولر مجدى نمر';
+  static const String kPhoneNumberProfileEditing = 'رقم الهاتف';
+  static const String kActualPhoneNumberProfileEditing = '012345678910';
+  static const String kGenderProfileEditing = 'النوع';
+  static const String kActualGenderProfileEditing = 'النوع';
+  static const String kResetDataProfileEditing = 'إعادة تعيين بيانات الدخول';
+  static const String kChooseDataProfileEditing = 'اختر البيانات المراد '
+      'تعديلها';
+  static const String kResetEmailProfileEditing = 'إعادة تعيين البريد '
+      'الإلكترونى';
+  static const String kResetPasswordProfileEditing = 'إعادة تعيين كلمة المرور';
+  static const String kAddNewNumberProfileEditing = 'اضافة رقم جديد ';
+  static const String kEditProfileEditing = 'تعديـــل';
+  static const String kEmailProfileEditing = 'البريد الإلكترونى';
+  static const String kHintProfileEditing =
+      'يمكنك الأن تعيين بريد إلكترونى '
+      'جديد.\n البريد الالكترونى الجديد يجب أن يكون مختلف عن القديم';
+  static const String kSetProfileEditing = 'تعيين';
+  static const String kActualEmailProfileEditing = 'example@gmail.com';
+  static const String kResetDoneProfileEditing = 'تم إعادة التعيين بنجاح';
+  static const String kResetDoneHintProfileEditing = 'تم إعادة تعيين البريد الإلكترونى الخاص بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
 
 
 }

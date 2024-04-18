@@ -13,11 +13,14 @@ class CustomTextFormFiled extends StatelessWidget {
   final String? Function(String?)?  onChanged;
   final TextEditingController ? controller;
   final TextDirection ? textDirection;
+  final int ? maxLines;
   final bool ? enabled;
   final double ? height;
+  final TextAlign ? textAlign;
 
 
-  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled, this.onChanged, this.height}) : super(key: key);
+
+  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled, this.onChanged, this.height, this.maxLines, this.textAlign}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +35,10 @@ class CustomTextFormFiled extends StatelessWidget {
         validator: validator,
         keyboardType: keyboardType,
         obscureText: obscureText ?? false,
-        textAlign: TextAlign.right,
-        maxLines: null,
+        textAlign: textAlign??TextAlign.right,
+        maxLines: maxLines ?? 1,
+        enableSuggestions: false,
+        autocorrect: false,
         decoration: InputDecoration(
           errorStyle: const TextStyle(height: 0),
           isDense: true,

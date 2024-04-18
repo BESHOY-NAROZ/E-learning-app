@@ -29,6 +29,11 @@ import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_ve
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_version/second_new_version.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/removed_account/removed_account_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/profile_editing_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/reset_email/reset_email_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/reset_email/reset_email_get_code.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/reset_email/reset_email_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/reset_email/set_email_now.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_ways_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_with_email/forget_password_get_code_email.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_with_phone/forget_password_get_code_phone_number.dart';
@@ -86,6 +91,11 @@ class RoutesManager {
   static const String helpBody = "/helpBody";
   static const String yourOpinion = "/yourOpinion";
   static const String addOpinionDone = "/addOpinionDone";
+  static const String profileEditing = "/profileEditing";
+  static const String resetEmail = "/resetEmail";
+  static const String resetEmailGetCode = "/resetEmailGetCode";
+  static const String setEmailNow = "/setEmailNow";
+  static const String resetEmailDone = "/resetEmailDone";
 
 
 }
@@ -177,6 +187,16 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const YourOpinion());
         case RoutesManager.addOpinionDone:
         return MaterialPageRoute(builder: (_) => const AddOpinionDone());
+        case RoutesManager.profileEditing:
+        return MaterialPageRoute(builder: (_) => const ProfileEditing());
+        case RoutesManager.resetEmail:
+        return MaterialPageRoute(builder: (_) => const ResetEmail());
+        case RoutesManager.resetEmailGetCode:
+        return MaterialPageRoute(builder: (_) => const ResetEmailGetCode());
+        case RoutesManager.setEmailNow:
+        return MaterialPageRoute(builder: (_) => const SetEmailNow());
+        case RoutesManager.resetEmailDone:
+        return MaterialPageRoute(builder: (_) => const ResetEmailDone());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:
