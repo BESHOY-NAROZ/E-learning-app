@@ -330,6 +330,14 @@ class AppStrings {
   static const String kActualEmailProfileEditing = 'example@gmail.com';
   static const String kResetDoneProfileEditing = 'تم إعادة التعيين بنجاح';
   static const String kResetDoneHintProfileEditing = 'تم إعادة تعيين البريد الإلكترونى الخاص بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
-
+  static const String kWriteOldPasswordProfileEditing = 'أدخل كلمة المرور '
+      'القديمة الخاصة بحسابك';
+  static const String kResetProfileEditing = 'إعادة التعيين';
+  static const String kHintResetProfileEditing = ' يمكنك الأن تعيين كلمة '
+      'المرور '
+      'الجديدة. \nكلمة المرور الجديدة يجب أن تكون مختلفة عن القديمة';
+  static const String kHintResetDoneProfileEditing = 'تم إعادة تعيين كلمة '
+      'المرور '
+      'الخاصة بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
 
 }

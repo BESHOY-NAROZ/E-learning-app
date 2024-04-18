@@ -10,8 +10,6 @@ import 'presentaion_layer/common_files/notifications/notifications_screen.dart';
 import 'presentaion_layer/common_files/your_opinion/add_opinion_done.dart';
 import 'presentaion_layer/common_files/your_opinion/your_opinion_screen.dart';
 import 'presentaion_layer/profile_editing/profile_editing_screen.dart';
-import 'presentaion_layer/profile_editing/reset_email/reset_email_get_code.dart';
-import 'presentaion_layer/profile_editing/reset_email/reset_email_screen.dart';
 import 'presentaion_layer/registration/sign_in/log_in/login_screen.dart';
 
 
@@ -24,7 +22,7 @@ class AppHome extends StatelessWidget {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesGenerator.getRoute ,
-      home:  SafeArea(child: ResetEmailGetCode())
+      home:  SafeArea(child: ProfileEditing())
     );
   }
 }

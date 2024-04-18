@@ -58,7 +58,7 @@ class SetEmailNow extends StatelessWidget {
                   MainButtonRed(
                     buttonName: AppStrings.kSetProfileEditing,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context,
+                      Navigator.pushNamed(context,
                           RoutesManager.resetEmailDone);
                     },
                   ),
