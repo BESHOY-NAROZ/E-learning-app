@@ -155,7 +155,9 @@ class ProfileEditing extends StatelessWidget {
                     ),
                     MainButtonGrey(
                       buttonName: AppStrings.kAddNewNumberProfileEditing,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, RoutesManager.addNewNumber)
+                      ;},
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 33),

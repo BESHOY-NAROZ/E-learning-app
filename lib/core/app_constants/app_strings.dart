@@ -339,5 +339,21 @@ class AppStrings {
   static const String kHintResetDoneProfileEditing = 'تم إعادة تعيين كلمة '
       'المرور '
       'الخاصة بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
+  static const String kAddNewNumberAppbarProfileEditing = 'تعديل  حساب المساعد';
+  static const String kAddNewNumberMainProfileEditing = 'اضافة رقم جديد';
+  static const String kAddNewNumberHintProfileEditing = 'اضافة المزيد من الارقام و طرق التواصل مع المدرس';
+static const String kPhoneNumberHintProfileEditing = 'رقم الهاتف';
+static const String kAddNewNumberSmallButtonProfileEditing = 'إضافة رقم جديد';
+static const String kRemoveProfileEditing = 'حذف';
+static const String kAddNewNumberButtonProfileEditing = 'اضافة الرقم';
+static const String kAddNewNumberDoneMainProfileEditing = 'تم اضافة رقم هاتف '
+    'جديد';
+static const String kAddNewNumberDoneHintProfileEditing = 'تم اضافة المزيد من '
+    'الارقام و طرق التواصل مع المدرس';
+static const String kStillEditProfileEditing = 'استكمال تعديل الحساب';
+
+
+// static const String kSetProfileEditing = 'تعيين';
+// static const String kSetProfileEditing = 'تعيين';
 
 }

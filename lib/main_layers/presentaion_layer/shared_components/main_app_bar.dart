@@ -50,21 +50,23 @@ class MainAppBar extends StatelessWidget {
                       ),
                     ),
                   ),
-const Spacer(),
+                  const Spacer(),
                   Padding(
                     padding: EdgeInsets.only(
                       right: AppDimensions.getDimensions(requiredWidth: 20),
                     ),
-                    child: InkWell(onTap: () {
+                    child: InkWell(
+                      onTap: () {
+                          Navigator.pop(context);
 
-                    },
+                      },
                       child: Container(
                         width: AppDimensions.getDimensions(requiredWidth: 45),
                         height: AppDimensions.getDimensions(requiredHeight: 45),
                         decoration: BoxDecoration(
-                          color: AppColors.kBottomAppBarMainScreenHome.withOpacity(0.1),
-                          shape: BoxShape.circle
-                        ),
+                            color: AppColors.kBottomAppBarMainScreenHome
+                                .withOpacity(0.1),
+                            shape: BoxShape.circle),
                         child: const Icon(
                           Icons.arrow_forward_ios_outlined,
                           color: Colors.white,

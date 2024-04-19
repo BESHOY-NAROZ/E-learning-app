@@ -29,6 +29,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_ve
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_version/second_new_version.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/removed_account/removed_account_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/add_new_number/add_new_number_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/add_new_number/add_new_number_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/profile_editing_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/reset_email/reset_email_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/reset_email/reset_email_get_code.dart';
@@ -108,6 +110,10 @@ class RoutesManager {
       "eEmail";
   static const String setPasswordProfileEditing = "/setPasswordProfileEditing";
   static const String setPasswordDone = "/setPasswordDone";
+  static const String addNewNumber = "/addNewNumber";
+  static const String addNewNumberDone = "/addNewNumberDone";
+
+
 }
 
 class RoutesGenerator {
@@ -222,6 +228,12 @@ class RoutesGenerator {
         case RoutesManager.setPasswordDone:
         return MaterialPageRoute(
             builder: (_) => const SetPasswordDone());
+        case RoutesManager.addNewNumber:
+        return MaterialPageRoute(
+            builder: (_) => const AddNewNumber());
+        case RoutesManager.addNewNumberDone:
+        return MaterialPageRoute(
+            builder: (_) => const AddNewNumberDone());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

@@ -21,7 +21,7 @@ class _ToggleButtonState extends State<CustomToggleButton> {
       children: [
         Container(
           height: AppDimensions.getDimensions(requiredHeight: 34.16),
-          width: AppDimensions.getDimensions(requiredWidth: 162.46),
+          width: AppDimensions.getDimensions(requiredWidth: 155),
           decoration: BoxDecoration(
               color: GeneralSettings.myIndex == 0
                   ? AppColors.kForgetPasswordToggleSelectedButtonColor
@@ -51,7 +51,7 @@ class _ToggleButtonState extends State<CustomToggleButton> {
         //AppColors.kForgetPasswordToggleSelectedButtonColor
         Container(
           height: AppDimensions.getDimensions(requiredHeight: 34.16),
-          width: AppDimensions.getDimensions(requiredWidth: 162.46),
+          width: AppDimensions.getDimensions(requiredWidth: 155),
           decoration: BoxDecoration(
               color: GeneralSettings.myIndex == 1
                   ? AppColors.kForgetPasswordToggleSelectedButtonColor

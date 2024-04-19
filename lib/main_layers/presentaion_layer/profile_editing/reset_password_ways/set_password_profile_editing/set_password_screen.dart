@@ -44,7 +44,7 @@ class SetPasswordProfileEditing extends StatelessWidget {
                   ),
                   const MainHintTextRegistration(
                     myText: AppStrings.kHintResetProfileEditing,
-                    textAlign: TextAlign.end,
+                    textDirection: TextDirection.rtl,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 22.58),
