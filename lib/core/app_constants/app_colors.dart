@@ -90,6 +90,12 @@ class AppColors{
   static const Color kDetailsProfileEditing = Color(0xFF7A7A7A);
 
 
+  //////////////// Sign Up ///////////
+  static const Color kCircleContainerSignUp = Color(0xFF4A88C4);
+  static const Color kSignUpContainerSignUp = Color(0xFFE7E8F0);
+  static const Color kSignUpIconSignUp = Color(0xFF495057);
+  static const Color kButtonSignUp = Color(0xFF979797);
+
 
 
 
@@ -101,6 +107,7 @@ class AppColors{
   static const Color kMainTextYellow = Color(0xFFF6CB5E);
   static const Color kMainTextRed = Color(0xFFDC3434);
   static const Color kMainGery96 = Color(0xFF868E96);
+  static const Color kMainContainer = Color(0xFFF2F3FA);
 
 
 

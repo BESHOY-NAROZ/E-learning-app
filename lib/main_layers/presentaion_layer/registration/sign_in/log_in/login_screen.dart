@@ -166,15 +166,20 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 55),
                   ),
-                  const Row(
+                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                          padding: EdgeInsets.only(top: 8.0),
-                          child: CustomUnderLinedText(
-                            myText: AppStrings.kLogInCreateAccount,
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, RoutesManager.assistantMainDetails);
+                            },
+                            child: const CustomUnderLinedText(
+                              myText: AppStrings.kLogInCreateAccount,
+                            ),
                           )),
-                      Text(
+                      const Text(
                         AppStrings.kLogInWithoutAccount,
                         style: TextStyle(
                             fontFamily: 'Almarai',

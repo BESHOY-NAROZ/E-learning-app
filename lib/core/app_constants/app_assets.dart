@@ -44,5 +44,17 @@ class AppAssets{
   static const String kWhatsapp = 'assets/images/Whatsapp.png';
   static const String kTelegram = 'assets/images/Telegram.png';
   static const String kImageHelp = 'assets/images/ImageHelp.png';
+  static const String kTeacherAccount = 'assets/images/TeacherAccount.png';
+  static const String kAssistantAccount = 'assets/images/AssistantAccount.png';
+  static const String kID = 'assets/images/ID.png';
+  static const String kUpload = 'assets/images/Upload.png';
+  static const String kCamera = 'assets/images/Camera.png';
+
+
+
+
+  ///// Lottie
+  static const String kCorrectLottie = 'assets/lottie_files/Correct.json';
+  static const String kBlueLike = 'assets/lottie_files/BlueLike.json';
 
 }

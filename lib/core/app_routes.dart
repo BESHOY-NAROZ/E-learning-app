@@ -47,6 +47,10 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_i
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/log_in/login_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password_registration/reset_password_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password_registration/reset_password_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/%20assistant_main_details/assistant_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/add_id/add_id_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/confirm_account/confirm_account_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_screen.dart';
@@ -112,6 +116,10 @@ class RoutesManager {
   static const String setPasswordDone = "/setPasswordDone";
   static const String addNewNumber = "/addNewNumber";
   static const String addNewNumberDone = "/addNewNumberDone";
+  static const String assistantMainDetails = "/assistantMainDetails";
+  static const String addID = "/addID";
+  static const String confirmAccount = "/confirmAccount";
+  static const String signUpDone = "/signUpDone";
 
 
 }
@@ -234,6 +242,18 @@ class RoutesGenerator {
         case RoutesManager.addNewNumberDone:
         return MaterialPageRoute(
             builder: (_) => const AddNewNumberDone());
+        case RoutesManager.assistantMainDetails:
+        return MaterialPageRoute(
+            builder: (_) => const AssistantMainDetails());
+        case RoutesManager.addID:
+        return MaterialPageRoute(
+            builder: (_) => const AddID());
+        case RoutesManager.confirmAccount:
+        return MaterialPageRoute(
+            builder: (_) => const ConfirmAccount());
+        case RoutesManager.signUpDone:
+        return MaterialPageRoute(
+            builder: (_) => const SignUpDone());
       // case RoutesManager.newOffer:
       // return MaterialPageRoute(builder: (_) => const NewOffer());
       default:

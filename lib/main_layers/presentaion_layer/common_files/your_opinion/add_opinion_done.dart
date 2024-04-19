@@ -9,6 +9,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class AddOpinionDone extends StatelessWidget {
   const AddOpinionDone({Key? key}) : super(key: key);
@@ -24,10 +25,13 @@ class AddOpinionDone extends StatelessWidget {
           children: [
             const CloseSign(),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
-            SizedBox(
+            Container(
                 height: AppDimensions.getDimensions(requiredHeight: 154),
                 width: AppDimensions.getDimensions(requiredWidth: 154),
-                child: Image.asset(AppAssets.kCorrect)),
+                child: Lottie.asset(AppAssets.kBlueLike,
+                )
+
+            ),
             const MainTextBlue(
               myText: AppStrings.kOpinionDoneCommon,
             ),

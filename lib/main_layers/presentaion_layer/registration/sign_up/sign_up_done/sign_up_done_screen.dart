@@ -9,8 +9,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class ResetEmailDone extends StatelessWidget {
-  const ResetEmailDone({Key? key}) : super(key: key);
+class SignUpDone extends StatelessWidget {
+  const SignUpDone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,20 +22,22 @@ class ResetEmailDone extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+
               const CloseSign(),
-              SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 112)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
               SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 154),
                   width: AppDimensions.getDimensions(requiredWidth: 154),
                   child: Lottie.asset(AppAssets.kBlueLike,
                   ),),
+
               const MainTextBlue(
-                myText: AppStrings.kResetDoneProfileEditing,
+                myText: AppStrings.kSignUpDoneSignUp,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
+
               const Text(
-                AppStrings.kResetDoneHintProfileEditing,
+                AppStrings.kHintDoneSignUp,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
                 style: TextStyle(
@@ -44,18 +46,21 @@ class ResetEmailDone extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     fontSize: 14),
               ),
-              SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 280)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
+
               MainButtonRed(
-                buttonName: AppStrings.kResetPasswordDoneMainButtonText,
+                buttonName: AppStrings.kButtonDoneSignUp,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.loginScreen);
+                  Navigator.pushNamed(context, RoutesManager.homeMainScreen);
                 },
               ),
+
+
             ],
           ),
         ),
       ),
     );
+
   }
 }

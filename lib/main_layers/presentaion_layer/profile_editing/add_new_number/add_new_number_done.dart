@@ -7,6 +7,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/c
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class AddNewNumberDone extends StatelessWidget {
   const AddNewNumberDone({Key? key}) : super(key: key);
@@ -27,7 +28,8 @@ class AddNewNumberDone extends StatelessWidget {
               SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 154),
                   width: AppDimensions.getDimensions(requiredWidth: 154),
-                  child: Image.asset(AppAssets.kCorrect)),
+                  child: Lottie.asset(AppAssets.kBlueLike,
+                  ),),
               const MainTextBlue(
                 myText: AppStrings.kAddNewNumberDoneMainProfileEditing,
               ),

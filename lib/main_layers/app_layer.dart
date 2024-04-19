@@ -12,6 +12,9 @@ import 'presentaion_layer/common_files/your_opinion/your_opinion_screen.dart';
 import 'presentaion_layer/profile_editing/add_new_number/add_new_number_screen.dart';
 import 'presentaion_layer/profile_editing/profile_editing_screen.dart';
 import 'presentaion_layer/registration/sign_in/log_in/login_screen.dart';
+import 'presentaion_layer/registration/sign_up/ assistant_main_details/assistant_main_details_screen.dart';
+import 'presentaion_layer/registration/sign_up/account_type/account_type_screen.dart';
+import 'presentaion_layer/registration/sign_up/add_id/add_id_screen.dart';
 
 
 class AppHome extends StatelessWidget {
@@ -23,7 +26,7 @@ class AppHome extends StatelessWidget {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesGenerator.getRoute ,
-      home:  SafeArea(child: LoginScreen())
+      home:  SafeArea(child: AddOpinionDone())
     );
   }
 }

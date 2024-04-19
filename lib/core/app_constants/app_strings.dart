@@ -1,7 +1,6 @@
 class AppStrings {
   // MainShared Strings
 
-
   ////////////////////////////////// Sign In Strings ////////////////////
 
   static const String kAppBarLogIn = 'تسجيل دخول';
@@ -61,7 +60,6 @@ class AppStrings {
   static const String kResetPasswordDoneHintText = 'تم إعادة تعيين كلمة '
       'المرور الخاصة بك. يمكنك الأن \n إعادة تسجيل الدخول لحسابك';
   static const String kResetPasswordDoneMainButtonText = 'تسجيل الدخول';
-
 
   ///////////////////////Main Screens////////////////////
 
@@ -123,7 +121,6 @@ class AppStrings {
   static const String kEighthButtonMainScreenMenu = 'تسجيل الخروج';
   static const String kQRMainScreenFinal = 'الخاص بي (QR) كود ال';
 
-
 //////////////////////Groups////////////////////////////////
 
   static const String kAppBarTitleGroupsStudentGroups = 'مجموعات الطلاب';
@@ -140,11 +137,13 @@ class AppStrings {
   static const String kSentExamsGroups = 'الامتحانات المرسلة';
   static const String kAttendanceAndDepartureGroups = 'الحضور و الانصراف';
   static const String kAddNewStudentGroups = 'اضافة طالب جديد';
-  static const String kAddStudentEmailGroups = 'أدخل البريد الإلكترونى المتصل بحساب الطالب';
-  static const String kAddStudentPhoneGroups = 'أدخل رقم الهاتف المتصل بحساب الطالب';
+  static const String kAddStudentEmailGroups =
+      'أدخل البريد الإلكترونى المتصل بحساب الطالب';
+  static const String kAddStudentPhoneGroups =
+      'أدخل رقم الهاتف المتصل بحساب الطالب';
   static const String kSentRequestNowGroups = 'أرسل الطلب الأن';
-  static const String kORGroups ='أو';
-  static const String kScanButtonTextGroups ='كود (QR) مسح ال';
+  static const String kORGroups = 'أو';
+  static const String kScanButtonTextGroups = 'كود (QR) مسح ال';
   static const String kScanTextGroups = 'المتصل بحساب الطالب ( QR ) مسح ال';
   static const String kStudentNumberGroups = '+20 123847615';
   static const String kAddButtonGroups = 'اضافة';
@@ -209,8 +208,10 @@ class AppStrings {
   static const String kExamGradesGroups = 'درجات الأمتحانات';
   static const String kResultGroups = 'النتيجة';
   static const String kActualResultGroups = '100/30';
-  static const String kTransitionalElementsGroups = 'اختبار: العناصر الانتقالية';
-  static const String kHintTextStatisticsGroups = 'الأحياء , الباب الأول , الفصل الثانى';
+  static const String kTransitionalElementsGroups =
+      'اختبار: العناصر الانتقالية';
+  static const String kHintTextStatisticsGroups =
+      'الأحياء , الباب الأول , الفصل الثانى';
   static const String kExamsNotSolvedGroups = 'امتحانات لم تحل';
   static const String kDigestiveGroups = ' الجهاز الهضمى';
   static const String kExamsSolvedGroups = 'امتحانات تم حلها';
@@ -249,7 +250,6 @@ class AppStrings {
       '“كريم عاطف\nصالح ”';
   static const String kBackToTeachersTeachers = 'الذهاب الى المدرسين';
 
-
 ///////////////////////////////CommonFiles/////////////////////
 
   static const String kContactUsCommon = 'تواصل معنا';
@@ -267,9 +267,11 @@ class AppStrings {
   static const String kRemoveAccountCommon = 'حذف  الحساب';
   static const String kAccountSettingsCommon = 'إعدادات الحساب';
   static const String kInviteFriendsCommon = 'أدع أصدقائك';
-  static const String kInviteFriendsMainTextCommon = 'دعوة الأصدقاء لزيادة النقاط';
+  static const String kInviteFriendsMainTextCommon =
+      'دعوة الأصدقاء لزيادة النقاط';
   static const String kFirstUnderMainTextCommon = 'هذا النص هو مثال لنص •';
-  static const String kSecondUnderMainTextCommon = 'المساحة، لقد تم توليد هذا النص •';
+  static const String kSecondUnderMainTextCommon =
+      'المساحة، لقد تم توليد هذا النص •';
   static const String kThirdUnderMainTextCommon = 'من مولد النص العربى •';
   static const String kCodeCommon = 'SDWQGSCZWE';
   static const String kCopyCodeCommon = 'نسخ الكود';
@@ -323,13 +325,13 @@ class AppStrings {
   static const String kAddNewNumberProfileEditing = 'اضافة رقم جديد ';
   static const String kEditProfileEditing = 'تعديـــل';
   static const String kEmailProfileEditing = 'البريد الإلكترونى';
-  static const String kHintProfileEditing =
-      'يمكنك الأن تعيين بريد إلكترونى '
+  static const String kHintProfileEditing = 'يمكنك الأن تعيين بريد إلكترونى '
       'جديد.\n البريد الالكترونى الجديد يجب أن يكون مختلف عن القديم';
   static const String kSetProfileEditing = 'تعيين';
   static const String kActualEmailProfileEditing = 'example@gmail.com';
   static const String kResetDoneProfileEditing = 'تم إعادة التعيين بنجاح';
-  static const String kResetDoneHintProfileEditing = 'تم إعادة تعيين البريد الإلكترونى الخاص بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
+  static const String kResetDoneHintProfileEditing =
+      'تم إعادة تعيين البريد الإلكترونى الخاص بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
   static const String kWriteOldPasswordProfileEditing = 'أدخل كلمة المرور '
       'القديمة الخاصة بحسابك';
   static const String kResetProfileEditing = 'إعادة التعيين';
@@ -341,19 +343,63 @@ class AppStrings {
       'الخاصة بك. يمكنك الأن إعادة تسجيل الدخول لحسابك';
   static const String kAddNewNumberAppbarProfileEditing = 'تعديل  حساب المساعد';
   static const String kAddNewNumberMainProfileEditing = 'اضافة رقم جديد';
-  static const String kAddNewNumberHintProfileEditing = 'اضافة المزيد من الارقام و طرق التواصل مع المدرس';
-static const String kPhoneNumberHintProfileEditing = 'رقم الهاتف';
-static const String kAddNewNumberSmallButtonProfileEditing = 'إضافة رقم جديد';
-static const String kRemoveProfileEditing = 'حذف';
-static const String kAddNewNumberButtonProfileEditing = 'اضافة الرقم';
-static const String kAddNewNumberDoneMainProfileEditing = 'تم اضافة رقم هاتف '
-    'جديد';
-static const String kAddNewNumberDoneHintProfileEditing = 'تم اضافة المزيد من '
-    'الارقام و طرق التواصل مع المدرس';
-static const String kStillEditProfileEditing = 'استكمال تعديل الحساب';
+  static const String kAddNewNumberHintProfileEditing =
+      'اضافة المزيد من الارقام و طرق التواصل مع المدرس';
+  static const String kPhoneNumberHintProfileEditing = 'رقم الهاتف';
+  static const String kAddNewNumberSmallButtonProfileEditing = 'إضافة رقم جديد';
+  static const String kRemoveProfileEditing = 'حذف';
+  static const String kAddNewNumberButtonProfileEditing = 'اضافة الرقم';
+  static const String kAddNewNumberDoneMainProfileEditing = 'تم اضافة رقم هاتف '
+      'جديد';
+  static const String kAddNewNumberDoneHintProfileEditing =
+      'تم اضافة المزيد من '
+      'الارقام و طرق التواصل مع المدرس';
+  static const String kStillEditProfileEditing = 'استكمال تعديل الحساب';
+
+
+
+  ///////////////////// Sin Up ////////////////////////////////
+static const String kAccountRegistrationSignUp = 'تسجيل حساب';
+static const String kAccountTypeSignUp = 'نوع الحساب';
+static const String kChooseAccountTypeSignUp = 'قم بإختيار نوع الحساب المراد إنشاءه';
+ static const String kTeacherAccountSignUp = 'حساب المدرس';
+ static const String kAccountCapabilitiesSignUp = 'إظهار احد اهم امكانيات الحساب';
+ static const String kAssistantAccountSignUp = 'حساب المساعد';
+ static const String kHaveAccountSignUp = 'لديك حساب بالفعل ؟';
+ static const String kLoginSignUp = 'تسجيل دخول ';
+ static const String kAssistantSignUp = 'تسجيل حساب مساعد';
+ static const String kMainDetailsSignUp = 'البيانات الأساسية';
+ static const String kAssistantHintSignUp = 'أدخل البيانات الأتية لتتم عملية '
+     'إنشاء '
+     'الحساب';
+  static const String kFullNameSignUp = 'الإسم بالكامل';
+  static const String kActualFullNameSignUp = 'مثال : محمد أيمن';
+  static const String kPhoneNumberSignUp = 'رقم الهاتف';
+  static const String kActualPhoneNumberSignUp = '012345678910';
+  static const String kBirthDateSignUp = 'تاريخ الميلاد';
+  static const String kActualBirthDateSignUp = 'أدخل تاريخ ميلادك';
+  static const String kEmailSignUp = 'البريد الإلكترونى';
+  static const String kActualEmailSignUp = 'example@gmail.com';
+  static const String kPasswordSignUp = 'كلمة المرور';
+  static const String kConfirmPasswordSignUp = 'تأكيد كلمة المرور';
+  static const String kGenderSignUp = 'النوع';
+  static const String kActualGenderSignUp = 'ذكر';
+  static const String kAddIDSignUp = 'اضافة صورة بطاقة';
+  static const String kAddPhotoSignUp = 'إضافة صورة بطاقة';
+  static const String kAddPhotoHintSignUp = 'قم بأضافة صورتين لبطاقتك الشخصية';
+  static const String kAddPhotoForwardSignUp = 'صورة البطاقة الامامية';
+  static const String kAddPhotoBackSignUp = 'صورة البطاقة الخلفية';
+  static const String kAddPhotoContinuanceSignUp = 'متابعــــــة';
+  static const String kUploadImageSignUp = 'تحميل\nصورة';
+  static const String kTakeImageSignUp = 'التقاط\nصورة';
+  static const String kConfirmAccountSignUp = 'تأكيد الحساب';
+  static const String kConfirmNumberSignUp = 'تأكيد رقمك الخاص';
+  static const String kSignUpDoneSignUp = 'تم تسجيل الحساب';
+  static const String kHintDoneSignUp = 'تم تسجيل حساب المدرس الخاص بك. يمكنك '
+      'الأن إعادة تسجيل الدخول لحسابك';
+  static const String kButtonDoneSignUp = 'الذهاب الى الرئيسية';
 
 
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
-
 }
