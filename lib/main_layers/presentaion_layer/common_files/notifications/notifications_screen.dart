@@ -20,7 +20,7 @@ class Notifications extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
-      bottomNavigationBar: const MainBottomNavigationBar(
+      bottomNavigationBar:  const MainBottomNavigationBar(
         designHeight: 1006,
         designWidth: 360,
       ),

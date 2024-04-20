@@ -163,7 +163,7 @@ class AssistantMainDetails extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: AppDimensions.getDimensions(requiredHeight: 7),),
-                  PasswordValidation(),
+                  const PasswordValidation(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),

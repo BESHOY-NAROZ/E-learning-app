@@ -94,7 +94,7 @@ class YourOpinion extends StatelessWidget {
                      ),
                      SizedBox(width: AppDimensions.getDimensions(requiredWidth:
                      4),),
-                     Icon(Icons.star,color: AppColors.kMainTextYellow,size: 30,)
+                     const Icon(Icons.star,color: AppColors.kMainTextYellow,size: 30,)
                    ],
                  ),
                   SizedBox(

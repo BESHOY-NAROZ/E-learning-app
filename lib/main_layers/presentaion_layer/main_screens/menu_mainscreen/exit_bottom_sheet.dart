@@ -25,7 +25,7 @@ class ExitBottomSheet extends StatelessWidget {
               width:
               AppDimensions.getDimensions(requiredWidth: 360),
               height:
-              AppDimensions.getDimensions(requiredHeight: 190),
+              AppDimensions.getDimensions(requiredHeight: 195),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
                   color: AppColors.kMainButtonText,
@@ -62,7 +62,7 @@ class ExitBottomSheet extends StatelessWidget {
                         children: [
                           Container(
                             height: AppDimensions.getDimensions(
-                                requiredHeight: 48),
+                                requiredHeight: 52),
                             width: AppDimensions.getDimensions(
                                 requiredWidth: 136),
                             clipBehavior:
@@ -94,7 +94,7 @@ class ExitBottomSheet extends StatelessWidget {
                           ),
                           Container(
                             height: AppDimensions.getDimensions(
-                                requiredHeight: 48),
+                                requiredHeight: 52),
                             width: AppDimensions.getDimensions(
                                 requiredWidth: 136),
                             clipBehavior:
@@ -136,6 +136,6 @@ class ExitBottomSheet extends StatelessWidget {
         myTitle: AppStrings.kEighthButtonMainScreenMenu,
         myIcon: AppAssets.kLogOutMainScreen,
       ),
-    );
+    );;
   }
 }

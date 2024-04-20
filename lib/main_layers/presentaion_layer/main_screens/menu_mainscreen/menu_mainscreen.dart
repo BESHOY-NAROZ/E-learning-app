@@ -20,7 +20,7 @@ class MenuMainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 825, designWidth: 360);
     return Scaffold(
-      bottomNavigationBar: const MainBottomNavigationBar(
+      bottomNavigationBar:  const MainBottomNavigationBar(
         designHeight: 1006,
         designWidth: 360,
       ),
@@ -64,6 +64,7 @@ class MenuMainScreen extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
+
                         Navigator.pushNamed(
                             context, RoutesManager.qRMainScreen);
                       },

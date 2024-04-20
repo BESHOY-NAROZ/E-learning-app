@@ -18,9 +18,10 @@ class StudentProfile extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 805, designWidth: 360);
 
     return Scaffold(
-      bottomNavigationBar: const MainBottomNavigationBar(
+      bottomNavigationBar:  const MainBottomNavigationBar(
         designHeight: 1006,
         designWidth: 360,
+
       ),
       body: Column(
         children: [

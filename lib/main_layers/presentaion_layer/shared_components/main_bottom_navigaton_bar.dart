@@ -24,12 +24,14 @@ class _BottomNavigationBarMainScreenState
     extends State<MainBottomNavigationBar> {
   static int index = 3;
 
+
+  
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(
         context: context,
-        designHeight: widget.designHeight,
-        designWidth: widget.designWidth);
+        designHeight: 1006,
+        designWidth: 360);
     return SizedBox(
       height: AppDimensions.getDimensions(requiredHeight: 57.6),
       width: AppDimensions.getDimensions(requiredWidth: 305),
@@ -38,7 +40,7 @@ class _BottomNavigationBarMainScreenState
           if(value == 0){
             Navigator.pushReplacementNamed(context, RoutesManager.menuMainScreen);
           }
-         else if(value == 1){
+          else if(value == 1){
             Navigator.pushReplacementNamed(context, RoutesManager.notificationsCommon);
           } else if(value == 2){
             Navigator.pushReplacementNamed(context, RoutesManager.studentsGroups);
@@ -55,7 +57,7 @@ class _BottomNavigationBarMainScreenState
         type: BottomNavigationBarType.fixed,
         backgroundColor: AppColors.kBottomAppBarMainScreenHome,
         unselectedItemColor:
-            AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
+        AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
         selectedItemColor: AppColors.kBottomNavigationBarSelectedMainScreenHome,
         selectedLabelStyle: const TextStyle(
             fontFamily: 'Almarai', fontWeight: FontWeight.w700, fontSize: 11),
@@ -71,7 +73,7 @@ class _BottomNavigationBarMainScreenState
                     color: index == 0
                         ? AppColors.kBottomNavigationBarSelectedMainScreenHome
                         : AppColors
-                            .kBottomNavigationBarUnSelectedMainScreenHome,
+                        .kBottomNavigationBarUnSelectedMainScreenHome,
                   )),
               label: AppStrings.kBottomNavigationBarMenuMainScreenHome),
           BottomNavigationBarItem(
@@ -83,7 +85,7 @@ class _BottomNavigationBarMainScreenState
                     color: index == 1
                         ? AppColors.kBottomNavigationBarSelectedMainScreenHome
                         : AppColors
-                            .kBottomNavigationBarUnSelectedMainScreenHome,
+                        .kBottomNavigationBarUnSelectedMainScreenHome,
                   )),
               label: AppStrings.kBottomNavigationBarNotificationMainScreenHome),
           BottomNavigationBarItem(
@@ -95,7 +97,7 @@ class _BottomNavigationBarMainScreenState
                     color: index == 2
                         ? AppColors.kBottomNavigationBarSelectedMainScreenHome
                         : AppColors
-                            .kBottomNavigationBarUnSelectedMainScreenHome,
+                        .kBottomNavigationBarUnSelectedMainScreenHome,
                   )),
               label: AppStrings.kBottomNavigationBarUsersMainScreenHome),
           BottomNavigationBarItem(
@@ -107,7 +109,7 @@ class _BottomNavigationBarMainScreenState
                     color: index == 3
                         ? AppColors.kBottomNavigationBarSelectedMainScreenHome
                         : AppColors
-                            .kBottomNavigationBarUnSelectedMainScreenHome,
+                        .kBottomNavigationBarUnSelectedMainScreenHome,
                   )),
               label: AppStrings.kBottomNavigationBarHomeMainScreenHome),
         ],

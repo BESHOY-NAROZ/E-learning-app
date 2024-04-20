@@ -22,7 +22,7 @@ class StudentStatistics extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 1108, designWidth: 360);
 
     return Scaffold(
-      bottomNavigationBar: const MainBottomNavigationBar(
+      bottomNavigationBar:  const MainBottomNavigationBar(
         designHeight: 1006,
         designWidth: 360,
       ),

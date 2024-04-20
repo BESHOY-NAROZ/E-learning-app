@@ -25,7 +25,7 @@ class AddOpinionDone extends StatelessWidget {
           children: [
             const CloseSign(),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
-            Container(
+            SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 154),
                 width: AppDimensions.getDimensions(requiredWidth: 154),
                 child: Lottie.asset(AppAssets.kBlueLike,

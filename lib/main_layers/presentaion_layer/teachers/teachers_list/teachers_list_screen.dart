@@ -25,7 +25,7 @@ class TeachersList extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          RemoveTeacherBottomSheet(),
+          const RemoveTeacherBottomSheet(),
           SizedBox(
             width: AppDimensions.getDimensions(requiredWidth: 100),
           ),

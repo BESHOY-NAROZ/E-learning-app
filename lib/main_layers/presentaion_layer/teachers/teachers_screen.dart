@@ -21,7 +21,7 @@ class Teachers extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Scaffold(
-      bottomNavigationBar: const MainBottomNavigationBar(
+      bottomNavigationBar:  const MainBottomNavigationBar(
         designHeight: 1006,
         designWidth: 360,
       ),
