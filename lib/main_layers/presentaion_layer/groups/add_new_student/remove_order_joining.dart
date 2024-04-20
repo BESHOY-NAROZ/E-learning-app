@@ -1,3 +1,4 @@
+// remove_order_joining
 import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
@@ -11,8 +12,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class AddNewStudentDone extends StatelessWidget {
-  const AddNewStudentDone({Key? key}) : super(key: key);
+class RemoveOrderJoiningDone extends StatelessWidget {
+  const RemoveOrderJoiningDone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,21 +24,22 @@ class AddNewStudentDone extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+
             const CloseSign(),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 154),
               width: AppDimensions.getDimensions(requiredWidth: 154),
-              child: Lottie.asset(
-                AppAssets.kBlueLike,
-              ),
-            ),
+              child: Lottie.asset(AppAssets.kBlueLike,
+              ),),
+
             const MainTextBlue(
-              myText: AppStrings.kRequestSentGroups,
+              myText: AppStrings.kMainCancelOrderGroups,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
+
             const Text(
-              AppStrings.kSpecialRequestSentGroups,
+              AppStrings.kHintCancelOrderGroups,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Almarai',
@@ -45,21 +47,16 @@ class AddNewStudentDone extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   fontSize: 14),
             ),
-            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 214)),
+            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 240)),
+
             MainButtonRed(
               buttonName: AppStrings.kGoToGroupGroups,
               onPressed: () {
                 Navigator.pushNamed(context, RoutesManager.groupDetails);
               },
             ),
-            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 10)),
-            MainButtonGrey(
-              buttonName: AppStrings.kCancelJoinRequestGroups,
-              onPressed: () {
-                Navigator.pushNamed(
-                    context, RoutesManager.removeOrderJoiningDone);
-              },
-            )
+
+
           ],
         ),
       ),

@@ -148,7 +148,10 @@ class AppStrings {
   static const String kStudentNumberGroups = '+20 123847615';
   static const String kAddButtonGroups = 'اضافة';
   static const String kRequestSentGroups = 'تم إرسال الطلب';
+  static const String kMainCancelOrderGroups = 'تم إلغاء الطلب';
   static const String kSpecialRequestSentGroups = 'تم إرسال طلب إضافة طالب إلى '
+      '“كريم عاطف\nصالح ”';
+  static const String kHintCancelOrderGroups = 'تم إلغاء طلب إضافة طالب إلى '
       '“كريم عاطف\nصالح ”';
   static const String kGoToGroupGroups = 'الذهاب الى المجموعة';
   static const String kCancelJoinRequestGroups = 'إلغاء طلب الاضافة';
@@ -374,7 +377,8 @@ static const String kChooseAccountTypeSignUp = 'قم بإختيار نوع ال�
  static const String kAccountCapabilitiesSignUp = 'إظهار احد اهم امكانيات الحساب';
  static const String kAssistantAccountSignUp = 'حساب المساعد';
  static const String kHaveAccountSignUp = 'لديك حساب بالفعل ؟';
- static const String kLoginSignUp = 'تسجيل دخول ';
+ static const String kLoginSignUp = 'تسجيل دخول';
+ static const String kCreateAccountSignUp = 'تسجيل حساب';
  static const String kAssistantSignUp = 'تسجيل حساب مساعد';
  static const String kMainDetailsSignUp = 'البيانات الأساسية';
  static const String kAssistantHintSignUp = 'أدخل البيانات الأتية لتتم عملية '

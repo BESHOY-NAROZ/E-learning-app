@@ -42,6 +42,7 @@ class ConfirmAccountCountDownTimerState extends State<ConfirmAccountCountDownTim
 
   @override
   void dispose() {
+    _timer!.cancel();
     super.dispose();
   }
 

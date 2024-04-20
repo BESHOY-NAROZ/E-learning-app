@@ -11,6 +11,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:flutter/material.dart';
 
+import 'exit_bottom_sheet.dart';
+
 class MenuMainScreen extends StatelessWidget {
   const MenuMainScreen({Key? key}) : super(key: key);
 
@@ -165,16 +167,26 @@ class MenuMainScreen extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainButtonMainScreenMenu(
-                  myTitle: AppStrings.kSecondButtonMainScreenMenu,
-                  myIcon: AppAssets.kVector3HomeScreen,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutesManager.studentsGroups);
+                  },
+                  child: const MainButtonMainScreenMenu(
+                    myTitle: AppStrings.kSecondButtonMainScreenMenu,
+                    myIcon: AppAssets.kVector3HomeScreen,
+                  ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainButtonMainScreenMenu(
-                  myTitle: AppStrings.kThirdButtonMainScreenMenu,
-                  myIcon: AppAssets.kBottomNavigationBarItem2HomeScreen,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutesManager.notificationsCommon);
+                  },
+                  child: const MainButtonMainScreenMenu(
+                    myTitle: AppStrings.kThirdButtonMainScreenMenu,
+                    myIcon: AppAssets.kBottomNavigationBarItem2HomeScreen,
+                  ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -227,127 +239,7 @@ class MenuMainScreen extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                InkWell(
-                  onTap: () {
-                    showModalBottomSheet(
-                      context: context,
-                      builder: (context) {
-                        return Container(
-                          width:
-                              AppDimensions.getDimensions(requiredWidth: 360),
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 190),
-                          clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(
-                              color: AppColors.kMainButtonText,
-                              borderRadius: BorderRadius.circular(20)),
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: AppDimensions.getDimensions(
-                                  requiredWidth: 20),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                const MainTextBlack(
-                                  myText: AppStrings.kMainLogOutSheet,
-                                  fontSize: 18,
-                                ),
-                                SizedBox(
-                                  height: AppDimensions.getDimensions(
-                                      requiredHeight: 14),
-                                ),
-                                const MainTextGrey(
-                                  myText: AppStrings.kHintLogOutSheet,
-                                  color: AppColors.kDetailsProfileEditing,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                                SizedBox(
-                                  height: AppDimensions.getDimensions(
-                                      requiredHeight: 12),
-                                ),
-                                Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        height: AppDimensions.getDimensions(
-                                            requiredHeight: 48),
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 136),
-                                        clipBehavior:
-                                            Clip.antiAliasWithSaveLayer,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
-                                        child: MaterialButton(
-                                            color: AppColors
-                                                .kMainScreenNewVersionButton,
-                                            shape:
-                                                const RoundedRectangleBorder(),
-                                            onPressed: () {
-                                              Navigator.pop(context);
-                                            },
-                                            child: const Text(
-                                              AppStrings.kBackLogOutSheet,
-                                              style: TextStyle(
-                                                  fontFamily: 'Almarai',
-                                                  color: AppColors
-                                                      .kMainScreenNewVersionButtonText,
-                                                  fontWeight: FontWeight.w700,
-                                                  fontSize: 16),
-                                            )),
-                                      ),
-                                      SizedBox(
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 10),
-                                      ),
-                                      Container(
-                                        height: AppDimensions.getDimensions(
-                                            requiredHeight: 48),
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 136),
-                                        clipBehavior:
-                                            Clip.antiAliasWithSaveLayer,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
-                                        child: MaterialButton(
-                                            color: AppColors.kMainButton,
-                                            shape:
-                                                const RoundedRectangleBorder(),
-                                            onPressed: () {
-                                              Navigator.popAndPushNamed
-                                                (context, RoutesManager.loginScreen);
-                                            },
-                                            child: const Text(
-                                              AppStrings.kActualLogOutSheet,
-                                              style: TextStyle(
-                                                  fontFamily: 'Almarai',
-                                                  color:
-                                                      AppColors.kMainButtonText,
-                                                  fontWeight: FontWeight.w700,
-                                                  fontSize: 16),
-                                            )),
-                                      ),
-                                      SizedBox(
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 15),
-                                      )
-                                    ]),
-                              ],
-                            ),
-                          ),
-                        );
-                      },
-                    );
-                  },
-                  child: const MainButtonMainScreenMenu(
-                    myTitle: AppStrings.kEighthButtonMainScreenMenu,
-                    myIcon: AppAssets.kLogOutMainScreen,
-                  ),
-                ),
+                const ExitBottomSheet(),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
@@ -359,3 +251,5 @@ class MenuMainScreen extends StatelessWidget {
     );
   }
 }
+
+

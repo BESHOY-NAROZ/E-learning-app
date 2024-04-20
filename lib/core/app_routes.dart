@@ -8,6 +8,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_stud
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/add_new_student_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/after_scan_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/add_new_student/remove_order_joining.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/add_new_class_screen.dart';
@@ -81,6 +82,7 @@ class RoutesManager {
   static const String groupDetails = "/groupDetails";
   static const String removeStudentDone = "/removeStudentDone";
   static const String addNewStudent = "/addNewStudent";
+  static const String removeOrderJoiningDone = "/removeOrderJoiningDone";
   static const String addStudentByQR = "/addStudentByQR";
   static const String afterNewScan = "/afterNewScan";
   static const String addNewStudentDone = "/addNewStudentDone";
@@ -175,6 +177,8 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const AfterScan());
       case RoutesManager.addNewStudentDone:
         return MaterialPageRoute(builder: (_) => const AddNewStudentDone());
+        case RoutesManager.removeOrderJoiningDone:
+        return MaterialPageRoute(builder: (_) => const RemoveOrderJoiningDone());
       case RoutesManager.groupStatistics:
         return MaterialPageRoute(builder: (_) => const GroupStatistics());
       case RoutesManager.sentExams:

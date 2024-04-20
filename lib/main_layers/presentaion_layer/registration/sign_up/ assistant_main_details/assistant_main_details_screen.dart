@@ -220,9 +220,9 @@ class AssistantMainDetails extends StatelessWidget {
                       height: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
                     MainButtonRed(
-                      buttonName:AppStrings.kLoginSignUp ,
+                      buttonName:AppStrings.kCreateAccountSignUp ,
                       onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.loginScreen);
+                        Navigator.pushNamed(context, RoutesManager.confirmAccount);
                       },
                     ),
                     SizedBox(

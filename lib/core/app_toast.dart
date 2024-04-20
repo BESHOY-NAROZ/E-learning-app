@@ -10,7 +10,7 @@ class MyToast {
     FToast fToast = FToast();
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     fToast.init(context!);
-    IconData ? myIcon;
+
 
     Widget toast = Container(
       height: AppDimensions.getDimensions(requiredHeight: 45),
