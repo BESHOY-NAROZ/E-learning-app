@@ -49,6 +49,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_i
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password_registration/reset_password_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password_registration/reset_password_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/%20assistant_main_details/assistant_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/account_type/account_type_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/add_id/add_id_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/confirm_account/confirm_account_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/sign_up_done/sign_up_done_screen.dart';
@@ -120,6 +121,7 @@ class RoutesManager {
   static const String setPasswordDone = "/setPasswordDone";
   static const String addNewNumber = "/addNewNumber";
   static const String addNewNumberDone = "/addNewNumberDone";
+  static const String accountType = "/accountType";
   static const String assistantMainDetails = "/assistantMainDetails";
   static const String addID = "/addID";
   static const String confirmAccount = "/confirmAccount";
@@ -253,6 +255,9 @@ class RoutesGenerator {
         case RoutesManager.assistantMainDetails:
         return MaterialPageRoute(
             builder: (_) => const AssistantMainDetails());
+        case RoutesManager.accountType:
+        return MaterialPageRoute(
+            builder: (_) => const AccountType());
         case RoutesManager.addID:
         return MaterialPageRoute(
             builder: (_) => const AddID());

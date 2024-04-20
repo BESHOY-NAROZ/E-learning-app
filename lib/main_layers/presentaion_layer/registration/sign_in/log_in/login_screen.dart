@@ -173,7 +173,8 @@ class LoginScreen extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 8.0),
                           child: InkWell(
                             onTap: () {
-                              Navigator.pushNamed(context, RoutesManager.assistantMainDetails);
+                              Navigator.pushNamed(context, RoutesManager
+                                  .accountType);
                             },
                             child: const CustomUnderLinedText(
                               myText: AppStrings.kLogInCreateAccount,

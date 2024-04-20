@@ -3,6 +3,7 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_lists.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_toast.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/conatct_us/main_container_contact_us_common.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
@@ -74,7 +75,10 @@ class InviteFriends extends StatelessWidget {
                           color: AppColors.kMainScreenNewVersionButton,
                           shape: const RoundedRectangleBorder(),
                           onPressed: () {
-
+                            MyToast.showMyToast(context: context,
+                              myMessage:  AppStrings.kCopiedToast,
+                              myIcon: Icons.close_rounded,
+                            );
                           },
                           child:  const Text( AppStrings.kCopyCodeCommon,
                             style: TextStyle(

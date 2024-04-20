@@ -421,6 +421,7 @@ static const String kHintLogOutSheet = 'هل انت متأكد انك تريد �
     ' ؟';
   static const String kActualLogOutSheet = 'خروج';
   static const String kBackLogOutSheet = 'تراجع';
+
   static const String kMainDeleteStudent = 'حذف طالب';
   static const String kHintDeleteStudent = 'هل انت متأكد انك تريد حذف الطالب ؟';
   static const String kNameDeleteStudent = 'كريم عاطف';
@@ -432,6 +433,17 @@ static const String kHintLogOutSheet = 'هل انت متأكد انك تريد �
   static const String kHintDeleteTeacher = 'هل انت متأكد انك تريد حذف المدرس ؟';
   static const String kActualDeleteTeacher = 'حذف';
   static const String kBackDeleteTeacher = 'تراجع';
+
+  static const String kMainDeleteAccount = 'حذف الحساب';
+  static const String kHintDeleteAccount = 'هل انت متأكد انك تريد حذف الحساب ؟';
+  static const String kActualDeleteAccount = 'حذف';
+  static const String kBackDeleteAccount = 'تراجع';
+
+
+///////////// Toast ///////////////
+static const String kDeleteToast = 'تم حذف الحساب';
+static const String kCopiedToast = 'تم نسخ الكود';
+
 
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
