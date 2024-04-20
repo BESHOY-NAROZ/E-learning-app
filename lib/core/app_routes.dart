@@ -136,13 +136,13 @@ class RoutesGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
       case RoutesManager.loginScreen:
-        return MaterialPageRoute(builder: (_) => const LoginScreen());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const LoginScreen());
       case RoutesManager.resetPasswordDone:
-        return MaterialPageRoute(builder: (_) => const ResetPasswordDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ResetPasswordDone());
       case RoutesManager.resetPassword:
-        return MaterialPageRoute(builder: (_) => const ResetPassword());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ResetPassword());
       case RoutesManager.forgetPasswordWays:
-        return MaterialPageRoute(builder: (_) => const ForgetPasswordWays());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ForgetPasswordWays());
       case RoutesManager.forgetPasswordGetCodeEmail:
         return MaterialPageRoute(
             builder: (_) => const ForgetPasswordGetCodeEmail());
@@ -150,94 +150,94 @@ class RoutesGenerator {
         return MaterialPageRoute(
             builder: (_) => const ForgetPasswordGetCodePhoneNumber());
       case RoutesManager.newOffer:
-        return MaterialPageRoute(builder: (_) => const NewOffer());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const NewOffer());
       case RoutesManager.firstNewVersion:
-        return MaterialPageRoute(builder: (_) => const FirstNewVersion());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const FirstNewVersion());
       case RoutesManager.secondNewVersion:
-        return MaterialPageRoute(builder: (_) => const SecondNewVersion());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const SecondNewVersion());
       case RoutesManager.removedAccount:
-        return MaterialPageRoute(builder: (_) => const RemovedAccount());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const RemovedAccount());
       case RoutesManager.homeMainScreen:
-        return MaterialPageRoute(builder: (_) => const HomeMainScreen());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const HomeMainScreen());
       case RoutesManager.menuMainScreen:
-        return MaterialPageRoute(builder: (_) => const MenuMainScreen());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const MenuMainScreen());
       case RoutesManager.qRMainScreen:
-        return MaterialPageRoute(builder: (_) => const QRMainScreen());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const QRMainScreen());
       case RoutesManager.studentsGroups:
-        return MaterialPageRoute(builder: (_) => const StudentGroups());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const StudentGroups());
       case RoutesManager.groupDetails:
-        return MaterialPageRoute(builder: (_) => const GroupDetails());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const GroupDetails());
         case RoutesManager.removeStudentDone:
-        return MaterialPageRoute(builder: (_) => const RemoveStudentDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const RemoveStudentDone());
       case RoutesManager.addNewStudent:
-        return MaterialPageRoute(builder: (_) => const AddNewStudent());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewStudent());
       case RoutesManager.addStudentByQR:
-        return MaterialPageRoute(builder: (_) => const AddNewStudentByQR());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewStudentByQR());
       case RoutesManager.afterNewScan:
-        return MaterialPageRoute(builder: (_) => const AfterScan());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AfterScan());
       case RoutesManager.addNewStudentDone:
-        return MaterialPageRoute(builder: (_) => const AddNewStudentDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewStudentDone());
         case RoutesManager.removeOrderJoiningDone:
-        return MaterialPageRoute(builder: (_) => const RemoveOrderJoiningDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const RemoveOrderJoiningDone());
       case RoutesManager.groupStatistics:
-        return MaterialPageRoute(builder: (_) => const GroupStatistics());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const GroupStatistics());
       case RoutesManager.sentExams:
-        return MaterialPageRoute(builder: (_) => const SentExams());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const SentExams());
       case RoutesManager.createGroup:
-        return MaterialPageRoute(builder: (_) => const CreateGroup());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const CreateGroup());
       case RoutesManager.createGroupDone:
-        return MaterialPageRoute(builder: (_) => const CreateGroupDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const CreateGroupDone());
       case RoutesManager.studentsProfile:
-        return MaterialPageRoute(builder: (_) => const StudentProfile());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const StudentProfile());
       case RoutesManager.studentStatistics:
-        return MaterialPageRoute(builder: (_) => const StudentStatistics());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const StudentStatistics());
       case RoutesManager.attendanceAndDeparture:
         return MaterialPageRoute(
             builder: (_) => const AttendanceAndDeparture());
       case RoutesManager.whoAttended:
-        return MaterialPageRoute(builder: (_) => const WhoAttended());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const WhoAttended());
       case RoutesManager.addNewClass:
-        return MaterialPageRoute(builder: (_) => const AddNewClass());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewClass());
       case RoutesManager.addNewClassByQR:
-        return MaterialPageRoute(builder: (_) => const AddNewClassByQR());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewClassByQR());
       case RoutesManager.addNewClassDone:
-        return MaterialPageRoute(builder: (_) => const AddNewClassDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewClassDone());
       case RoutesManager.teachers:
-        return MaterialPageRoute(builder: (_) => const Teachers());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const Teachers());
         case RoutesManager.removeTeacherDone:
-        return MaterialPageRoute(builder: (_) => const RemoveTeacherDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const RemoveTeacherDone());
       case RoutesManager.addNewTeacher:
-        return MaterialPageRoute(builder: (_) => const AddNewTeacher());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewTeacher());
       case RoutesManager.afterScanTeacher:
-        return MaterialPageRoute(builder: (_) => const AfterScanTeacher());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AfterScanTeacher());
       case RoutesManager.addNewTeacherByQR:
-        return MaterialPageRoute(builder: (_) => const AddNewTeacherByQR());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewTeacherByQR());
       case RoutesManager.addNewTeacherDone:
-        return MaterialPageRoute(builder: (_) => const AddNewTeacherDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewTeacherDone());
       case RoutesManager.contactUS:
-        return MaterialPageRoute(builder: (_) => const ContactUS());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ContactUS());
       case RoutesManager.generalSettings:
-        return MaterialPageRoute(builder: (_) => const GeneralSettings());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const GeneralSettings());
       case RoutesManager.notificationsCommon:
-        return MaterialPageRoute(builder: (_) => const Notifications());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const Notifications());
       case RoutesManager.helpBody:
-        return MaterialPageRoute(builder: (_) => const HelpBody());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const HelpBody());
       case RoutesManager.yourOpinion:
-        return MaterialPageRoute(builder: (_) => const YourOpinion());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const YourOpinion());
       case RoutesManager.addOpinionDone:
-        return MaterialPageRoute(builder: (_) => const AddOpinionDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddOpinionDone());
       case RoutesManager.profileEditing:
-        return MaterialPageRoute(builder: (_) => const ProfileEditing());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ProfileEditing());
       case RoutesManager.resetEmail:
-        return MaterialPageRoute(builder: (_) => const ResetEmail());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ResetEmail());
       case RoutesManager.resetEmailGetCode:
-        return MaterialPageRoute(builder: (_) => const ResetEmailGetCode());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ResetEmailGetCode());
       case RoutesManager.setEmailNow:
-        return MaterialPageRoute(builder: (_) => const SetEmailNow());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const SetEmailNow());
       case RoutesManager.resetEmailDone:
-        return MaterialPageRoute(builder: (_) => const ResetEmailDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ResetEmailDone());
       case RoutesManager.resetPasswordWays:
-        return MaterialPageRoute(builder: (_) => const ResetPasswordWays());
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ResetPasswordWays());
       case RoutesManager.resetPasswordGetCodePhoneNumber:
         return MaterialPageRoute(
             builder: (_) => const ResetPasswordGetCodePhoneNumber());
@@ -272,7 +272,7 @@ class RoutesGenerator {
         return MaterialPageRoute(
             builder: (_) => const SignUpDone());
       // case RoutesManager.newOffer:
-      // return MaterialPageRoute(builder: (_) => const NewOffer());
+      // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:
         return unDefinedRoute();
     }
