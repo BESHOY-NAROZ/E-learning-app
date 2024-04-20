@@ -28,7 +28,7 @@ class AppHome extends StatelessWidget {
     return   const MaterialApp(
       debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesGenerator.getRoute ,
-      home:  SafeArea(child: GeneralSettings())
+      home:  SafeArea(child: LoginScreen())
     );
   }
 }

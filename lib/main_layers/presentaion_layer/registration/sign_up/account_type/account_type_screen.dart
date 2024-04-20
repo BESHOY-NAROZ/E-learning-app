@@ -59,9 +59,14 @@ class AccountType extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 30),
                   ),
-                  const AccountMainContainer(
-                    myAccount: AppStrings.kTeacherAccountSignUp,
-                    myIcon: AppAssets.kTeacherAccount,
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, RoutesManager.assistantMainDetails);
+                    },
+                    child: const AccountMainContainer(
+                      myAccount: AppStrings.kAssistantAccountSignUp,
+                      myIcon: AppAssets.kAssistantAccount,
+                    ),
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 270),
