@@ -13,10 +13,15 @@ class CloseSign extends StatelessWidget {
         top: AppDimensions.getDimensions(requiredHeight: 45),
         left: AppDimensions.getDimensions(requiredWidth: 300),
       ),
-      child: const Icon(Icons.close_rounded,
-        size: 30,
-        weight: 100
-        ,color: AppColors.kResetPasswordDone,
+      child: InkWell(
+        onTap: () {
+          Navigator.pop(context);
+        },
+        child: const Icon(Icons.close_rounded,
+          size: 30,
+          weight: 100
+          ,color: AppColors.kResetPasswordDone,
+        ),
       ),
     );
   }

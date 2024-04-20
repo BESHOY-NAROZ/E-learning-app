@@ -232,6 +232,10 @@ class AppStrings {
   static const String kStudentSignToClassGroups = 'تسجيل حضور الطالب';
   static const String kStudentSignToClassButtonGroups = 'تسجيل حضور';
   static const String kBackToGroupGroups = 'العودة الى المجموعة';
+  static const String kMainRemoveStudentGroups = 'تم حذف الطالب';
+  static const String kHintRemoveStudentGroups = 'تم حذف الطالب “كريم عاطف\nصالح ” من المجموعة';
+  static const String kButtonRemoveStudentGroups = 'العودة الى المجموعة';
+
 
 ///////////////////////////////Teachers/////////////////////
 
@@ -249,6 +253,10 @@ class AppStrings {
   static const String kAddTeacherDoneTeachers = 'تم إرسال طلب إضافة مدرس إلى '
       '“كريم عاطف\nصالح ”';
   static const String kBackToTeachersTeachers = 'الذهاب الى المدرسين';
+  static const String kMainDeleteTeacherTeachers = 'تم حذف المدرس';
+  static const String kHintDeleteTeacherTeachers = 'تم حذف المدرس “ احمد خالد'
+      ' “ من قائمة المدرسين';
+  static const String kButtonDeleteTeacherTeachers = 'العودة  الى المدرسين';
 
 ///////////////////////////////CommonFiles/////////////////////
 
@@ -399,6 +407,31 @@ static const String kChooseAccountTypeSignUp = 'قم بإختيار نوع ال�
       'الأن إعادة تسجيل الدخول لحسابك';
   static const String kButtonDoneSignUp = 'الذهاب الى الرئيسية';
 
+///////////// Additions ///////////////
+static const String kProfilePhotoBottomSheet = 'الصورة الشخصية';
+static const String kTakePhotoBottomSheet = 'التقاط صورة';
+static const String kFromGallerySheet = 'اضافة من المعرض';
+static const String kMainRemoveSheet = 'حذف رقم الهاتف';
+static const String kHintRemoveSheet = 'هل انت متأكد انك تريد حذف رقم الهاتف '
+    ' ؟';
+static const String kActualRemoveSheet = 'حذف';
+static const String kBackRemoveSheet = 'تراجع';
+static const String kMainLogOutSheet = 'تسجيل خروج';
+static const String kHintLogOutSheet = 'هل انت متأكد انك تريد الخروج من الحساب '
+    ' ؟';
+  static const String kActualLogOutSheet = 'خروج';
+  static const String kBackLogOutSheet = 'تراجع';
+  static const String kMainDeleteStudent = 'حذف طالب';
+  static const String kHintDeleteStudent = 'هل انت متأكد انك تريد حذف الطالب ؟';
+  static const String kNameDeleteStudent = 'كريم عاطف';
+  static const String kLevelDeleteStudent = 'الصف الاول الثانوى';
+  static const String kActualDeleteStudent = 'حذف';
+  static const String kBackDeleteStudent = 'تراجع';
+
+  static const String kMainDeleteTeacher = 'حذف مدرس';
+  static const String kHintDeleteTeacher = 'هل انت متأكد انك تريد حذف المدرس ؟';
+  static const String kActualDeleteTeacher = 'حذف';
+  static const String kBackDeleteTeacher = 'تراجع';
 
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';

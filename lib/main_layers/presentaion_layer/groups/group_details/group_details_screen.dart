@@ -9,7 +9,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:flutter/material.dart';
 
-import 'every_student_in_group.dart';
+import 'every_student_in_group/every_student_in_group.dart';
 import 'more_row_groups.dart';
 
 class GroupDetails extends StatelessWidget {

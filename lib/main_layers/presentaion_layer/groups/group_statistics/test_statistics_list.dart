@@ -25,11 +25,10 @@ class TestStatisticsList extends StatelessWidget {
         padding:  EdgeInsets.only(right: AppDimensions.getDimensions
           (requiredWidth: 13)),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 5),
-            ),
+
             const MainTextBlack(
               myText: AppStrings.kFirstTestGroups,
               fontSize: 16,
@@ -39,6 +38,7 @@ class TestStatisticsList extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 4),
             ),
             const Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 MainTextBlack(

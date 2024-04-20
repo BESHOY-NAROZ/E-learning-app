@@ -2,7 +2,11 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:flutter/material.dart';
+
+import 'remove_student_bottom_sheet.dart';
 
 class EveryStudentInGroupList extends StatelessWidget {
   const EveryStudentInGroupList({Key? key}) : super(key: key);
@@ -32,10 +36,7 @@ class EveryStudentInGroupList extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              SizedBox(
-                  width: AppDimensions.getDimensions(requiredWidth: 20),
-                  height: AppDimensions.getDimensions(requiredHeight: 22),
-                  child: Image.asset(AppAssets.kRemoveGroupsScreen)),
+              const RemoveStudentBottomSheet(),
               SizedBox(
                 width: AppDimensions.getDimensions(requiredWidth: 100),
               ),
@@ -62,10 +63,12 @@ class EveryStudentInGroupList extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(width: AppDimensions.getDimensions(requiredWidth: 12),)
-             , Container(
-                  width: AppDimensions.getDimensions(requiredWidth: 60),  
-                  height: AppDimensions.getDimensions(requiredHeight: 60),
+              SizedBox(
+                width: AppDimensions.getDimensions(requiredWidth: 12),
+              ),
+              Container(
+                width: AppDimensions.getDimensions(requiredWidth: 60),
+                height: AppDimensions.getDimensions(requiredHeight: 60),
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                 ),
@@ -76,3 +79,5 @@ class EveryStudentInGroupList extends StatelessWidget {
         ));
   }
 }
+
+

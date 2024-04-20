@@ -41,7 +41,8 @@ class ForgetPasswordWithPhoneNumber extends StatelessWidget {
             MainButtonRed(
               buttonName: AppStrings.kForgetPasswordMainButtonText,
               onPressed: () {
-                Navigator.pushReplacementNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+                Navigator.pushNamed(context, RoutesManager
+                    .forgetPasswordGetCodePhoneNumber);
       
               },
             ),

@@ -99,6 +99,12 @@ class AppColors{
 
 
 
+  //////// Additions ////////////
+  static const Color kLineBottomSheet = Color(0xFF999999);
+
+
+
+
   //////////////////////Main/////////////////////
   static const Color kMainButton = Color(0xffDC3434);
   static const Color kMainTextBlack = Color(0xFF495057);

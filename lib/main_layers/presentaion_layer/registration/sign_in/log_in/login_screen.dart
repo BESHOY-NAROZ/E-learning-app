@@ -79,7 +79,7 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       InkWell(
                           onTap: () {
-                            Navigator.pushReplacementNamed(
+                            Navigator.pushNamed(
                                 context, RoutesManager.forgetPasswordWays);
                           },
                           child: const CustomUnderLinedText(

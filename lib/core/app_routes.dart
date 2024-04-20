@@ -16,6 +16,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_a
 import 'package:assiut_project/main_layers/presentaion_layer/groups/attendance_and_departure/who_attended.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/create_group/create_group_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/groups/group_details/every_student_in_group/remove_student_Done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/group_details/group_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/group_statistics/group_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/groups_students/students_groups_screen.dart';
@@ -55,6 +56,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_te
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/add_new_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/add_new_teacher/after_scan_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teachers/teachers_list/remove_teacher/remove_teacher_Done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teachers/teachers_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -76,6 +78,7 @@ class RoutesManager {
   static const String qRMainScreen = "/qRMainScreen";
   static const String studentsGroups = "/studentsGroups";
   static const String groupDetails = "/groupDetails";
+  static const String removeStudentDone = "/removeStudentDone";
   static const String addNewStudent = "/addNewStudent";
   static const String addStudentByQR = "/addStudentByQR";
   static const String afterNewScan = "/afterNewScan";
@@ -92,6 +95,7 @@ class RoutesManager {
   static const String addNewClassByQR = "/addNewClassByQR";
   static const String addNewClassDone = "/addNewClassDone";
   static const String teachers = "/teachers";
+  static const String removeTeacherDone = "/removeTeacherDone";
   static const String addNewTeacher = "/addNewTeacher";
   static const String afterScanTeacher = "/afterScanTeacher";
   static const String addNewTeacherByQR = "/addNewTeacherByQR";
@@ -159,6 +163,8 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const StudentGroups());
       case RoutesManager.groupDetails:
         return MaterialPageRoute(builder: (_) => const GroupDetails());
+        case RoutesManager.removeStudentDone:
+        return MaterialPageRoute(builder: (_) => const RemoveStudentDone());
       case RoutesManager.addNewStudent:
         return MaterialPageRoute(builder: (_) => const AddNewStudent());
       case RoutesManager.addStudentByQR:
@@ -192,6 +198,8 @@ class RoutesGenerator {
         return MaterialPageRoute(builder: (_) => const AddNewClassDone());
       case RoutesManager.teachers:
         return MaterialPageRoute(builder: (_) => const Teachers());
+        case RoutesManager.removeTeacherDone:
+        return MaterialPageRoute(builder: (_) => const RemoveTeacherDone());
       case RoutesManager.addNewTeacher:
         return MaterialPageRoute(builder: (_) => const AddNewTeacher());
       case RoutesManager.afterScanTeacher:
