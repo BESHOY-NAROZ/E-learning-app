@@ -85,7 +85,7 @@ class FirstNewVersion extends StatelessWidget {
                 child: MainButtonRed(
                   onPressed: () {
                     Navigator.pushNamed(
-                        context, RoutesManager.homeMainScreen);
+                        context, RoutesManager.myHome);
                   },
                   buttonName:
                       AppStrings.kMainSecondButtonTextMainScreenNewVersion,

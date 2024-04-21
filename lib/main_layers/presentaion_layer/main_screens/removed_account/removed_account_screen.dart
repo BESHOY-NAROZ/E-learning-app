@@ -72,7 +72,7 @@ class RemovedAccount extends StatelessWidget {
                 child: Center(
                   child: MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(context, RoutesManager.homeMainScreen);
+                      Navigator.pushNamed(context, RoutesManager.myHome);
 
                     },
                     buttonName: AppStrings.kMainButtonTextMainScreenRemovedAccount,

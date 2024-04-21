@@ -51,7 +51,7 @@ class SignUpDone extends StatelessWidget {
               MainButtonRed(
                 buttonName: AppStrings.kButtonDoneSignUp,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.homeMainScreen);
+                  Navigator.pushNamed(context, RoutesManager.myHome);
                 },
               ),
 

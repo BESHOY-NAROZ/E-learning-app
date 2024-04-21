@@ -6,7 +6,6 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/conatct_us/main_container_contact_us_common.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/notifications/main_container_notifications.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
@@ -20,10 +19,10 @@ class Notifications extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
-      bottomNavigationBar:  const MainBottomNavigationBar(
-        designHeight: 1006,
-        designWidth: 360,
-      ),
+      // bottomNavigationBar:  const MainBottomNavigationBar(
+      //   designHeight: 1006,
+      //   designWidth: 360,
+      // ),
       body: Column(
         children: [
           const MainAppBar(

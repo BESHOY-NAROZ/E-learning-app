@@ -4,7 +4,6 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/app_bar_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/bottom_List_mainscreen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/more_row_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/small_button_mainscreen.dart';
@@ -17,10 +16,10 @@ class HomeMainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
     return Scaffold(
-      bottomNavigationBar:  const MainBottomNavigationBar(
-        designHeight: 1006,
-        designWidth: 360,
-      ),
+      // bottomNavigationBar:  const MainBottomNavigationBar(
+      //   designHeight: 1006,
+      //   designWidth: 360,
+      // ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [

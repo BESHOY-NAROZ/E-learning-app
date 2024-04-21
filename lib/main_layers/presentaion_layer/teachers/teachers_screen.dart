@@ -6,7 +6,6 @@ import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/shared_components_mainscreen/app_bar_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_add_small_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:flutter/material.dart';
@@ -21,10 +20,10 @@ class Teachers extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Scaffold(
-      bottomNavigationBar:  const MainBottomNavigationBar(
-        designHeight: 1006,
-        designWidth: 360,
-      ),
+      // bottomNavigationBar:  const MainBottomNavigationBar(
+      //   designHeight: 1006,
+      //   designWidth: 360,
+      // ),
       body: Column(
         children: [
           const MainAppBar(

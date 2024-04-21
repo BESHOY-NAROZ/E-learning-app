@@ -6,7 +6,6 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/s
 import 'package:assiut_project/main_layers/presentaion_layer/groups/sent_exams/sent_exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'every_student_in_group/every_student_in_group.dart';
@@ -19,11 +18,11 @@ class GroupDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
-      bottomNavigationBar:  const MainBottomNavigationBar(
-        designHeight: 1006,
-        designWidth: 360,
-
-      ),
+      // bottomNavigationBar:  const MainBottomNavigationBar(
+      //   designHeight: 1006,
+      //   designWidth: 360,
+      //
+      // ),
       body: Column(
         children: [
           const MainAppBar(

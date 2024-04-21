@@ -136,6 +136,6 @@ class ExitBottomSheet extends StatelessWidget {
         myTitle: AppStrings.kEighthButtonMainScreenMenu,
         myIcon: AppAssets.kLogOutMainScreen,
       ),
-    );;
+    );
   }
 }

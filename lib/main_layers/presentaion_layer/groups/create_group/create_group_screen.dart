@@ -5,7 +5,6 @@ import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/hint_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/shared_components_groups/main_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
@@ -17,10 +16,10 @@ class CreateGroup extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
-      bottomNavigationBar:  const MainBottomNavigationBar(
-        designHeight: 1006,
-        designWidth: 360,
-      ),
+      // bottomNavigationBar:  const MainBottomNavigationBar(
+      //   designHeight: 1006,
+      //   designWidth: 360,
+      // ),
       body: Column(
         children: [
           const MainAppBar(

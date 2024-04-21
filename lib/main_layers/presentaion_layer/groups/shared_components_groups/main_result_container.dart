@@ -2,7 +2,6 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_green.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';

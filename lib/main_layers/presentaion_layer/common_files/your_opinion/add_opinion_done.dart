@@ -50,7 +50,7 @@ class AddOpinionDone extends StatelessWidget {
             MainButtonRed(
               buttonName: AppStrings.kBackToHomeCommon,
               onPressed: () {
-                Navigator.pushNamed(context, RoutesManager.homeMainScreen);
+                Navigator.pushNamed(context, RoutesManager.myHome);
               },
             ),
           ],

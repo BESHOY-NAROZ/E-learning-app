@@ -7,7 +7,6 @@ import 'package:assiut_project/main_layers/presentaion_layer/groups/students_pro
 import 'package:assiut_project/main_layers/presentaion_layer/groups/students_profile/exams_not_solved.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/groups/students_profile/exams_solved.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_bottom_navigaton_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_green.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
@@ -22,10 +21,10 @@ class StudentStatistics extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 1108, designWidth: 360);
 
     return Scaffold(
-      bottomNavigationBar:  const MainBottomNavigationBar(
-        designHeight: 1006,
-        designWidth: 360,
-      ),
+      // bottomNavigationBar:  const MainBottomNavigationBar(
+      //   designHeight: 1006,
+      //   designWidth: 360,
+      // ),
       body: Column(
         children: [
           const MainAppBar(

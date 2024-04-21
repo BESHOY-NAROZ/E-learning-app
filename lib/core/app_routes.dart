@@ -31,6 +31,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_ve
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/new_version/second_new_version.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/main_screens/removed_account/removed_account_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/my_home/my_home_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/add_new_number/add_new_number_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/add_new_number/add_new_number_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/profile_editing/profile_editing_screen.dart';
@@ -75,6 +76,7 @@ class RoutesManager {
   static const String firstNewVersion = "/firstNewVersion";
   static const String secondNewVersion = "/secondNewVersion";
   static const String removedAccount = "/removedAccount";
+  static const String myHome = "/myHome";
   static const String homeMainScreen = "/homeMainScreen";
   static const String menuMainScreen = "/menuMainScreen";
   static const String qRMainScreen = "/qRMainScreen";
@@ -157,7 +159,9 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const SecondNewVersion());
       case RoutesManager.removedAccount:
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const RemovedAccount());
-      case RoutesManager.homeMainScreen:
+      case RoutesManager.myHome:
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const MyHome());
+        case RoutesManager.homeMainScreen:
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const HomeMainScreen());
       case RoutesManager.menuMainScreen:
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const MenuMainScreen());
