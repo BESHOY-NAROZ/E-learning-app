@@ -116,6 +116,7 @@ class AppStrings {
   static const String kThirdButtonMainScreenMenu = 'الاشعارات';
   static const String kFourthButtonMainScreenMenu = 'إعدادات التطبيق';
   static const String kFifthButtonMainScreenMenu = 'تواصل معنا';
+  static const String kShareButtonMainScreenMenu = 'أدع أصدقائك';
   static const String kSixthButtonMainScreenMenu = 'رأيك يهمنا';
   static const String kSeventhButtonMainScreenMenu = 'مساعدة';
   static const String kEighthButtonMainScreenMenu = 'تسجيل الخروج';

@@ -35,7 +35,11 @@ class MyToast {
           SizedBox(
             width: AppDimensions.getDimensions(requiredWidth: 5),
           ),
-          Icon(myIcon, color: AppColors.kMainButtonText),
+          InkWell(
+              onTap: () {
+                fToast.removeCustomToast();
+              },
+              child: Icon(myIcon, color: AppColors.kMainButtonText)),
           SizedBox(
             width: AppDimensions.getDimensions(requiredWidth: 15),
           )
@@ -44,6 +48,6 @@ class MyToast {
     );
     fToast.showToast( child: toast,
       gravity: ToastGravity.BOTTOM,
-      toastDuration: const Duration(seconds: 2),);
+      toastDuration: const Duration(seconds: 3),);
   }
 }

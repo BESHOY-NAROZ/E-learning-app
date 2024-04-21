@@ -1,6 +1,7 @@
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/conatct_us/contact_us_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/general%20_settings/general%20_settings_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/help/help_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/common_files/invite_friends/invite_friends_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/notifications/notifications_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/your_opinion/add_opinion_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/common_files/your_opinion/your_opinion_screen.dart';
@@ -106,6 +107,7 @@ class RoutesManager {
   static const String addNewTeacherByQR = "/addNewTeacherByQR";
   static const String addNewTeacherDone = "/addNewTeacherDone";
   static const String contactUS = "/contactUS";
+  static const String inviteFriends = "/inviteFriends";
   static const String generalSettings = "/generalSettings";
   static const String notificationsCommon = "/notificationsCommon";
   static const String helpBody = "/helpBody";
@@ -220,6 +222,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const AddNewTeacherDone());
       case RoutesManager.contactUS:
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const ContactUS());
+        case RoutesManager.inviteFriends:
+        return PageRouteBuilder(pageBuilder: (_, __, ___)=> const InviteFriends());
       case RoutesManager.generalSettings:
         return PageRouteBuilder(pageBuilder: (_, __, ___)=> const GeneralSettings());
       case RoutesManager.notificationsCommon:

@@ -16,7 +16,7 @@ class MainButtonMainScreenMenu extends StatelessWidget
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 825, designWidth: 360);
     return Container(
-      height: AppDimensions.getDimensions(requiredHeight: 48),
+      height: AppDimensions.getDimensions(requiredHeight: 45),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       padding: EdgeInsets.only(right: AppDimensions.getDimensions
         (requiredWidth: 10)),

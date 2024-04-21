@@ -49,6 +49,7 @@ class AppAssets{
   static const String kID = 'assets/images/ID.png';
   static const String kUpload = 'assets/images/Upload.png';
   static const String kCamera = 'assets/images/Camera.png';
+  static const String kShare = 'assets/images/Share.png';
 
 
 
