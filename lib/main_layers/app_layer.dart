@@ -2,10 +2,7 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
-import 'presentaion_layer/registration/sign_in/log_in/login_screen.dart';
-
-
-
+import 'presentaion_layer/teacher/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 
 class AppHome extends StatelessWidget {
   const AppHome({Key? key}) : super(key: key);
@@ -13,10 +10,9 @@ class AppHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
-    return   const MaterialApp(
-      debugShowCheckedModeBanner: false,
-        onGenerateRoute: RoutesGenerator.getRoute ,
-      home:  SafeArea(child: LoginScreen())
-    );
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute: RoutesGenerator.getRoute,
+        home: SafeArea(child: HomeMainScreenTeacher()));
   }
 }

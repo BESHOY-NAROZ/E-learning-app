@@ -237,9 +237,9 @@ class AppStrings {
   static const String kStudentSignToClassButtonGroups = 'تسجيل حضور';
   static const String kBackToGroupGroups = 'العودة الى المجموعة';
   static const String kMainRemoveStudentGroups = 'تم حذف الطالب';
-  static const String kHintRemoveStudentGroups = 'تم حذف الطالب “كريم عاطف\nصالح ” من المجموعة';
+  static const String kHintRemoveStudentGroups =
+      'تم حذف الطالب “كريم عاطف\nصالح ” من المجموعة';
   static const String kButtonRemoveStudentGroups = 'العودة الى المجموعة';
-
 
 ///////////////////////////////Teachers/////////////////////
 
@@ -258,6 +258,9 @@ class AppStrings {
       '“كريم عاطف\nصالح ”';
   static const String kBackToTeachersTeachers = 'الذهاب الى المدرسين';
   static const String kMainDeleteTeacherTeachers = 'تم حذف المدرس';
+  static const String kMainRemoveOrderTeacherTeachers = 'تم إلغاء الطلب';
+  static const String kHintRemoveOrderTeacherTeachers =
+      'تم إلغاء طلب إضافة مدرس إلى “كريم عاطف\nصالح ”';
   static const String kHintDeleteTeacherTeachers = 'تم حذف المدرس “ احمد خالد'
       ' “ من قائمة المدرسين';
   static const String kButtonDeleteTeacherTeachers = 'العودة  الى المدرسين';
@@ -368,23 +371,23 @@ class AppStrings {
       'الارقام و طرق التواصل مع المدرس';
   static const String kStillEditProfileEditing = 'استكمال تعديل الحساب';
 
-
-
   ///////////////////// Sin Up ////////////////////////////////
-static const String kAccountRegistrationSignUp = 'تسجيل حساب';
-static const String kAccountTypeSignUp = 'نوع الحساب';
-static const String kChooseAccountTypeSignUp = 'قم بإختيار نوع الحساب المراد إنشاءه';
- static const String kTeacherAccountSignUp = 'حساب المدرس';
- static const String kAccountCapabilitiesSignUp = 'إظهار احد اهم امكانيات الحساب';
- static const String kAssistantAccountSignUp = 'حساب المساعد';
- static const String kHaveAccountSignUp = 'لديك حساب بالفعل ؟';
- static const String kLoginSignUp = 'تسجيل دخول';
- static const String kCreateAccountSignUp = 'تسجيل حساب';
- static const String kAssistantSignUp = 'تسجيل حساب مساعد';
- static const String kMainDetailsSignUp = 'البيانات الأساسية';
- static const String kAssistantHintSignUp = 'أدخل البيانات الأتية لتتم عملية '
-     'إنشاء '
-     'الحساب';
+  static const String kAccountRegistrationSignUp = 'تسجيل حساب';
+  static const String kAccountTypeSignUp = 'نوع الحساب';
+  static const String kChooseAccountTypeSignUp =
+      'قم بإختيار نوع الحساب المراد إنشاءه';
+  static const String kTeacherAccountSignUp = 'حساب المدرس';
+  static const String kAccountCapabilitiesSignUp =
+      'إظهار احد اهم امكانيات الحساب';
+  static const String kAssistantAccountSignUp = 'حساب المساعد';
+  static const String kHaveAccountSignUp = 'لديك حساب بالفعل ؟';
+  static const String kLoginSignUp = 'تسجيل دخول';
+  static const String kCreateAccountSignUp = 'تسجيل حساب';
+  static const String kAssistantSignUp = 'تسجيل حساب مساعد';
+  static const String kMainDetailsSignUp = 'البيانات الأساسية';
+  static const String kAssistantHintSignUp = 'أدخل البيانات الأتية لتتم عملية '
+      'إنشاء '
+      'الحساب';
   static const String kFullNameSignUp = 'الإسم بالكامل';
   static const String kActualFullNameSignUp = 'مثال : محمد أيمن';
   static const String kPhoneNumberSignUp = 'رقم الهاتف';
@@ -413,17 +416,18 @@ static const String kChooseAccountTypeSignUp = 'قم بإختيار نوع ال�
   static const String kButtonDoneSignUp = 'الذهاب الى الرئيسية';
 
 ///////////// Additions ///////////////
-static const String kProfilePhotoBottomSheet = 'الصورة الشخصية';
-static const String kTakePhotoBottomSheet = 'التقاط صورة';
-static const String kFromGallerySheet = 'اضافة من المعرض';
-static const String kMainRemoveSheet = 'حذف رقم الهاتف';
-static const String kHintRemoveSheet = 'هل انت متأكد انك تريد حذف رقم الهاتف '
-    ' ؟';
-static const String kActualRemoveSheet = 'حذف';
-static const String kBackRemoveSheet = 'تراجع';
-static const String kMainLogOutSheet = 'تسجيل خروج';
-static const String kHintLogOutSheet = 'هل انت متأكد انك تريد الخروج من الحساب '
-    ' ؟';
+  static const String kProfilePhotoBottomSheet = 'الصورة الشخصية';
+  static const String kTakePhotoBottomSheet = 'التقاط صورة';
+  static const String kFromGallerySheet = 'اضافة من المعرض';
+  static const String kMainRemoveSheet = 'حذف رقم الهاتف';
+  static const String kHintRemoveSheet = 'هل انت متأكد انك تريد حذف رقم الهاتف '
+      ' ؟';
+  static const String kActualRemoveSheet = 'حذف';
+  static const String kBackRemoveSheet = 'تراجع';
+  static const String kMainLogOutSheet = 'تسجيل خروج';
+  static const String kHintLogOutSheet =
+      'هل انت متأكد انك تريد الخروج من الحساب '
+      ' ؟';
   static const String kActualLogOutSheet = 'خروج';
   static const String kBackLogOutSheet = 'تراجع';
 
@@ -444,12 +448,54 @@ static const String kHintLogOutSheet = 'هل انت متأكد انك تريد �
   static const String kActualDeleteAccount = 'حذف';
   static const String kBackDeleteAccount = 'تراجع';
 
-
 ///////////// Toast ///////////////
-static const String kDeleteToast = 'تم حذف الحساب';
-static const String kCopiedToast = 'تم نسخ الكود';
+  static const String kDeleteToast = 'تم حذف الحساب';
+  static const String kCopiedToast = 'تم نسخ الكود';
 
+  //////////////////////// Teacher Part /////////////////
+  //////////////////////// Teacher Part /////////////////
+  //////////////////////// Teacher Part /////////////////
 
-// static const String kSetProfileEditing = 'تعيين';
+  //////////////// Sign Up ///////////////
+  static const String kMaleToggleButtonSignUp = 'ذكر';
+  static const String kFemaleToggleButtonSignUp = 'انثى';
+  static const String kMainEducationDetailsSignUp = 'البيانات التعليمة';
+  static const String kHintEducationDetailsSignUp = 'أدخل بيانات التعليم '
+      'الخاصة بك';
+  static const String kEducationTypeSignUp = 'نوع التعليم';
+  static const String kActualEducationTypeSignUp = 'عربى';
+  static const String kLevelSignUp = 'المرحلة التعليمية';
+  static const String kActualLevelSignUp = 'الثانوية';
+  static const String kClassSignUp = 'الصف الدراسى';
+  static const String kActualClassSignUp = 'الاول الثانوى';
+  static const String kGovernmentSignUp = 'المحافظة';
+  static const String kActualGovernmentSignUp = 'اسيوط';
+  static const String kStationSignUp = 'المديرية';
+  static const String kActualStationSignUp = 'اسيوط';
+  static const String kSchoolSignUp = 'اسم المدرسة';
+  static const String kActualSchoolSignUp = 'مثال : مدرسة جمال فرغلى';
+  static const String kWorkTypeSignUp = 'نوع العمل الذى يقوم بة';
+  static const String kActualWorkTypeSignUp = 'مدرس';
+  static const String kSubjectsSignUp = 'المواد';
+  static const String kAddSubjectSignUp = 'إضافة مادة';
+  static const String kTeacherSignUp = 'تسجيل حساب مدرس';
+
+  //////////////// Home ///////////////
+
+  static const String kAddQuestionHome = 'اضافة سؤال';
+  static const String kCreateTestHome = 'إنشاء اختبار جديد';
+  static const String kCreateGroupHome = 'إنشاء مجموعة طلاب';
+  static const String kAttachedHome = 'المرفقات';
+  static const String kTransitionalElementsHome = 'العناصر الانتقالية';
+  static const String kElementsLessonHome = 'الأحياء , الباب الأول , الفصل '
+      'الثانى';
+  static const String kTrainingCreatedHome = 'تدريبات تم انشاؤها مسبقا';
+  static const String kHistoryTitleHome = 'حكم محمد على فى مصر';
+  static const String kHistoryHintHome =
+      'مادة الدراسات - الباب الأول - الفصل الثانى - الدرس الأول';
+  static const String kEditHome = 'تعديل';
+  static const String kRemoveHome = 'حذف';
+  static const String kSendToGroupHome = 'ارسال للمجموعة';
+
 // static const String kSetProfileEditing = 'تعيين';
 }

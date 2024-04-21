@@ -1,7 +1,6 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PasswordValidation extends StatelessWidget {
@@ -32,8 +31,11 @@ class PasswordValidation extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(height: AppDimensions.getDimensions(requiredHeight: 4),),
-        const Row(mainAxisAlignment: MainAxisAlignment.end,
+        SizedBox(
+          height: AppDimensions.getDimensions(requiredHeight: 4),
+        ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
               AppStrings.kResetPasswordSecondError,

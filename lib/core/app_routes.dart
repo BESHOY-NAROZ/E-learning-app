@@ -48,6 +48,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/add_new_teacher/add_new_teacher_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/add_new_teacher/add_new_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/add_new_teacher/after_scan_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/add_new_teacher/remove_joining_order_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/teachers_list/remove_teacher/remove_teacher_Done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/teachers_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/forget_password_ways/forget_password_ways_screen.dart';
@@ -56,11 +57,13 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_i
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/log_in/login_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password_registration/reset_password_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/reset_password_registration/reset_password_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/%20assistant_main_details/assistant_main_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/account_type/account_type_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/add_id/add_id_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/confirm_account/confirm_account_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/sign_up_done/sign_up_done_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/%20assistant_main_details/assistant_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/add_id/add_id_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/confirm_account/confirm_account_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class RoutesManager {
@@ -101,6 +104,8 @@ class RoutesManager {
   static const String addNewClassDone = "/addNewClassDone";
   static const String teachers = "/teachers";
   static const String removeTeacherDone = "/removeTeacherDone";
+  static const String removeTeacherJoiningOrderDone =
+      "/removeTeacherJoiningOrderDone";
   static const String addNewTeacher = "/addNewTeacher";
   static const String afterScanTeacher = "/afterScanTeacher";
   static const String addNewTeacherByQR = "/addNewTeacherByQR";
@@ -131,6 +136,9 @@ class RoutesManager {
   static const String addID = "/addID";
   static const String confirmAccount = "/confirmAccount";
   static const String signUpDone = "/signUpDone";
+  static const String addIDTeacher = "/addIDTeacher";
+  static const String confirmAccountTeacher = "/confirmAccountTeacher";
+  static const String teacherMainDetails = "/teacherMainDetails";
 }
 
 class RoutesGenerator {
@@ -149,11 +157,12 @@ class RoutesGenerator {
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const ForgetPasswordWays());
       case RoutesManager.forgetPasswordGetCodeEmail:
-        return MaterialPageRoute(
-            builder: (_) => const ForgetPasswordGetCodeEmail());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const ForgetPasswordGetCodeEmail());
       case RoutesManager.forgetPasswordGetCodePhoneNumber:
-        return MaterialPageRoute(
-            builder: (_) => const ForgetPasswordGetCodePhoneNumber());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) =>
+                const ForgetPasswordGetCodePhoneNumber());
       case RoutesManager.newOffer:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const NewOffer());
       case RoutesManager.firstNewVersion:
@@ -217,8 +226,8 @@ class RoutesGenerator {
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const StudentStatistics());
       case RoutesManager.attendanceAndDeparture:
-        return MaterialPageRoute(
-            builder: (_) => const AttendanceAndDeparture());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AttendanceAndDeparture());
       case RoutesManager.whoAttended:
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const WhoAttended());
@@ -236,6 +245,9 @@ class RoutesGenerator {
       case RoutesManager.removeTeacherDone:
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const RemoveTeacherDone());
+      case RoutesManager.removeTeacherJoiningOrderDone:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const RemoveTeacherJoiningOrderDone());
       case RoutesManager.addNewTeacher:
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const AddNewTeacher());
@@ -286,30 +298,44 @@ class RoutesGenerator {
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const ResetPasswordWays());
       case RoutesManager.resetPasswordGetCodePhoneNumber:
-        return MaterialPageRoute(
-            builder: (_) => const ResetPasswordGetCodePhoneNumber());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) =>
+                const ResetPasswordGetCodePhoneNumber());
       case RoutesManager.resetPasswordGetCodeEmail:
-        return MaterialPageRoute(
-            builder: (_) => const ResetPasswordGetCodeEmail());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const ResetPasswordGetCodeEmail());
       case RoutesManager.setPasswordProfileEditing:
-        return MaterialPageRoute(
-            builder: (_) => const SetPasswordProfileEditing());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SetPasswordProfileEditing());
       case RoutesManager.setPasswordDone:
-        return MaterialPageRoute(builder: (_) => const SetPasswordDone());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SetPasswordDone());
       case RoutesManager.addNewNumber:
-        return MaterialPageRoute(builder: (_) => const AddNewNumber());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AddNewNumber());
       case RoutesManager.addNewNumberDone:
-        return MaterialPageRoute(builder: (_) => const AddNewNumberDone());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AddNewNumberDone());
       case RoutesManager.assistantMainDetails:
-        return MaterialPageRoute(builder: (_) => const AssistantMainDetails());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AssistantMainDetails());
       case RoutesManager.accountType:
-        return MaterialPageRoute(builder: (_) => const AccountType());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AccountType());
       case RoutesManager.addID:
-        return MaterialPageRoute(builder: (_) => const AddID());
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddID());
       case RoutesManager.confirmAccount:
-        return MaterialPageRoute(builder: (_) => const ConfirmAccount());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const ConfirmAccount());
       case RoutesManager.signUpDone:
-        return MaterialPageRoute(builder: (_) => const SignUpDone());
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SignUpDone());
+      case RoutesManager.addIDTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AddIDTeacher());
+      case RoutesManager.teacherMainDetails:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const TeacherMainDetails());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

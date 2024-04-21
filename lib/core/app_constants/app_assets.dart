@@ -1,4 +1,4 @@
-class AppAssets{
+class AppAssets {
   static const String kLogIn = 'assets/images/Group.png';
   static const String kDots = 'assets/images/Dots.png';
   static const String kFaceBook = 'assets/images/Facebook.png';
@@ -50,12 +50,11 @@ class AppAssets{
   static const String kUpload = 'assets/images/Upload.png';
   static const String kCamera = 'assets/images/Camera.png';
   static const String kShare = 'assets/images/Share.png';
-
-
-
+  static const String kAddQuestion = 'assets/images/AddQuestion.png';
+  static const String kAttached = 'assets/images/Attached.png';
+  static const String kPlay = 'assets/images/Play.png';
 
   ///// Lottie
   static const String kCorrectLottie = 'assets/lottie_files/Correct.json';
   static const String kBlueLike = 'assets/lottie_files/BlueLike.json';
-
 }

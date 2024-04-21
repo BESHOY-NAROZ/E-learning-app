@@ -1,12 +1,8 @@
-import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/main_hint_text_registration.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/%20assistant_main_details/change_photo.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/%20assistant_main_details/password_validation.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/account_type/account_main_container.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/shared_components_signup/bottom_text_signup.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
@@ -15,6 +11,9 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
+
+import 'change_photo.dart';
+import 'password_validation.dart';
 
 class AssistantMainDetails extends StatelessWidget {
   const AssistantMainDetails({Key? key}) : super(key: key);
@@ -162,8 +161,10 @@ class AssistantMainDetails extends StatelessWidget {
                         color: AppColors.kDetailsProfileEditing,
                       ),
                     ),
-                    SizedBox(height: AppDimensions.getDimensions(requiredHeight: 7),),
-                  const PasswordValidation(),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 7),
+                    ),
+                    const PasswordValidation(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
@@ -220,9 +221,10 @@ class AssistantMainDetails extends StatelessWidget {
                       height: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
                     MainButtonRed(
-                      buttonName:AppStrings.kCreateAccountSignUp ,
+                      buttonName: AppStrings.kCreateAccountSignUp,
                       onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.confirmAccount);
+                        Navigator.pushNamed(
+                            context, RoutesManager.confirmAccount);
                       },
                     ),
                     SizedBox(
@@ -234,7 +236,6 @@ class AssistantMainDetails extends StatelessWidget {
                     ),
                   ],
                 ),
-
               ),
             ),
           ),
