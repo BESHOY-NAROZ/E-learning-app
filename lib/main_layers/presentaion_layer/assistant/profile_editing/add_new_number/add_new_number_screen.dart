@@ -85,8 +85,7 @@ class _AddNewNumberState extends State<AddNewNumber> {
                                                 requiredHeight: 187),
                                             clipBehavior: Clip.antiAlias,
                                             decoration: BoxDecoration(
-                                                color:
-                                                    AppColors.kMainButtonText,
+                                                color: AppColors.kMainTextWhite,
                                                 borderRadius:
                                                     BorderRadius.circular(20)),
                                             child: Padding(
@@ -210,7 +209,7 @@ class _AddNewNumberState extends State<AddNewNumber> {
                                                                     fontFamily:
                                                                         'Almarai',
                                                                     color: AppColors
-                                                                        .kMainButtonText,
+                                                                        .kMainTextWhite,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w700,

@@ -92,7 +92,7 @@ class _MyHomeState extends State<MyHome> {
           ],
         ),
       ),
-      body: AppLists.myScreens[MyHome.index],
+      body: AppLists.myAssistantScreens[MyHome.index],
     );
   }
 }

@@ -160,7 +160,7 @@ class AfterScan extends StatelessWidget {
                                 AppStrings.kAddButtonGroups,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
-                                    color: AppColors.kMainButtonText,
+                                    color: AppColors.kMainTextWhite,
                                     fontWeight: FontWeight.w700,
                                     fontSize: 16),
                               )),

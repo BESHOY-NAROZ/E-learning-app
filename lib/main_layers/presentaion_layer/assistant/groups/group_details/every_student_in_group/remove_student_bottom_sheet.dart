@@ -26,7 +26,7 @@ class RemoveStudentBottomSheet extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 220),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                  color: AppColors.kMainButtonText,
+                  color: AppColors.kMainTextWhite,
                   borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: EdgeInsets.symmetric(
@@ -74,8 +74,8 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                                     fontSize: 15),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions
-                                  (requiredHeight: 3),
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 3),
                               ),
                               const Text(
                                 AppStrings.kStudentLevelGroups,
@@ -90,13 +90,13 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                           ),
                           SizedBox(
                             width:
-                            AppDimensions.getDimensions(requiredWidth: 12),
+                                AppDimensions.getDimensions(requiredWidth: 12),
                           ),
                           Container(
                             width:
-                            AppDimensions.getDimensions(requiredWidth: 40),
+                                AppDimensions.getDimensions(requiredWidth: 40),
                             height:
-                            AppDimensions.getDimensions(requiredHeight: 40),
+                                AppDimensions.getDimensions(requiredHeight: 40),
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
@@ -104,7 +104,7 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                           ),
                           SizedBox(
                             width:
-                            AppDimensions.getDimensions(requiredWidth: 20),
+                                AppDimensions.getDimensions(requiredWidth: 20),
                           ),
                         ],
                       ),
@@ -130,7 +130,7 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                               style: TextStyle(
                                   fontFamily: 'Almarai',
                                   color:
-                                  AppColors.kMainScreenNewVersionButtonText,
+                                      AppColors.kMainScreenNewVersionButtonText,
                                   fontWeight: FontWeight.w700,
                                   fontSize: 16),
                             )),
@@ -148,14 +148,14 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                             color: AppColors.kMainButton,
                             shape: const RoundedRectangleBorder(),
                             onPressed: () {
-                              Navigator.pushReplacementNamed(context,
-                                  RoutesManager.removeStudentDone);
+                              Navigator.pushReplacementNamed(
+                                  context, RoutesManager.removeStudentDone);
                             },
                             child: const Text(
                               AppStrings.kActualDeleteStudent,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
-                                  color: AppColors.kMainButtonText,
+                                  color: AppColors.kMainTextWhite,
                                   fontWeight: FontWeight.w700,
                                   fontSize: 16),
                             )),

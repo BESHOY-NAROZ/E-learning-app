@@ -64,7 +64,7 @@ class AddIDTeacher extends StatelessWidget {
                       clipBehavior: Clip.antiAliasWithSaveLayer,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: AppColors.kMainButtonText),
+                          color: AppColors.kMainTextWhite),
                       child: ImageFiltered(
                         imageFilter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
                         child: Image.asset(
@@ -158,7 +158,7 @@ class AddIDTeacher extends StatelessWidget {
                       clipBehavior: Clip.antiAliasWithSaveLayer,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: AppColors.kMainButtonText),
+                          color: AppColors.kMainTextWhite),
                       child: ImageFiltered(
                         imageFilter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
                         child: Image.asset(
@@ -253,7 +253,7 @@ class AddIDTeacher extends StatelessWidget {
                         AppStrings.kAddPhotoContinuanceSignUp,
                         style: TextStyle(
                             fontFamily: 'Almarai',
-                            color: AppColors.kMainButtonText,
+                            color: AppColors.kMainTextWhite,
                             fontWeight: FontWeight.w800,
                             fontSize: 16),
                       )),

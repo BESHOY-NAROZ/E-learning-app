@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColors{
+class AppColors {
   static const Color kAppBarLogin = Color(0xff2160A7);
   static const Color kAppBarLoginTitle = Color(0xffFFFFFF);
   static const Color kAppBarLoginBack = Color(0xffFFFFFF);
@@ -16,13 +16,12 @@ class AppColors{
   static const Color kLoginOr = Color(0xff000000);
   static const Color kLoginLinear = Color(0xffF2F3FA);
   static const Color kLoginWays = Color(0xff0F6EAA);
-  static const Color kForgetPasswordToggleSelectedButtonColor = Color(0xff4A88C5);
-  static const Color kForgetPasswordToggleButtonColor = Color
-  (0xffF2F3FA);
-  static const Color kForgetPasswordToggleSelectedButtonText = Color
-    (0xffFFFFFF);
-  static const Color kForgetPasswordToggleButtonText = Color
-  (0xff868E96);
+  static const Color kForgetPasswordToggleSelectedButtonColor =
+      Color(0xff4A88C5);
+  static const Color kForgetPasswordToggleButtonColor = Color(0xffF2F3FA);
+  static const Color kForgetPasswordToggleSelectedButtonText =
+      Color(0xffFFFFFF);
+  static const Color kForgetPasswordToggleButtonText = Color(0xff868E96);
   static const Color kForgetPasswordMainText = Color(0xff4A88C5);
   static const Color kForgetPasswordHintBottomView = Color(0xff868E96);
   static const Color kForgetPasswordErrorFormFiled = Color(0xffDC3434);
@@ -49,13 +48,13 @@ class AppColors{
   static const Color kBottomContainerMainScreenHome = Color(0xFFEDEEF6);
   static const Color kBottomAppBarMainScreenHome = Color(0xffFFFFFF);
 
-  static const Color kBottomNavigationBarUnSelectedMainScreenHome = Color
-    (0xFFCED4DA);
-  static const Color kBottomNavigationBarSelectedMainScreenHome = Color(0xFF495057);
+  static const Color kBottomNavigationBarUnSelectedMainScreenHome =
+      Color(0xFFCED4DA);
+  static const Color kBottomNavigationBarSelectedMainScreenHome =
+      Color(0xFF495057);
   static const Color kBottomBottomListHintMainScreenHome = Color(0xFF808080);
   static const Color kBottomBottomListUsersMainScreenHome = Color(0xff0F6EAA);
   static const Color kContainerMainScreenMenu = Color(0xFFF2F3FA);
-
 
   //Groups
   static const Color kMainTextGroups = Color(0xFF495057);
@@ -81,14 +80,11 @@ class AppColors{
   static const Color kMainContainerNotificationCommon = Color(0xFFEDEEF6);
   static const Color kHintNotificationCommon = Color(0xFFADB5BD);
 
-
-
 ////////////////////// Profile Editing /////////////////////////////////////
   static const Color kMainTextProfileEditing = Color(0xFF2769AC);
   static const Color kBorderProfileEditing = Color(0xff4A88C5);
   static const Color kChangeProfileEditing = Color(0xFFD9D9D9);
   static const Color kDetailsProfileEditing = Color(0xFF7A7A7A);
-
 
   //////////////// Sign Up ///////////
   static const Color kCircleContainerSignUp = Color(0xFF4A88C4);
@@ -96,25 +92,16 @@ class AppColors{
   static const Color kSignUpIconSignUp = Color(0xFF495057);
   static const Color kButtonSignUp = Color(0xFF979797);
 
-
-
-
   //////// Additions ////////////
   static const Color kLineBottomSheet = Color(0xFF999999);
-
-
-
 
   //////////////////////Main/////////////////////
   static const Color kMainButton = Color(0xffDC3434);
   static const Color kMainTextBlack = Color(0xFF495057);
-  static const Color kMainButtonText = Color(0xffFFFFFF);
+  static const Color kMainTextWhite = Color(0xffFFFFFF);
   static const Color kMainTextGreen = Color(0xFF5BCB67);
   static const Color kMainTextYellow = Color(0xFFF6CB5E);
   static const Color kMainTextRed = Color(0xFFDC3434);
   static const Color kMainGery96 = Color(0xFF868E96);
   static const Color kMainContainer = Color(0xFFF2F3FA);
-
-
-
 }

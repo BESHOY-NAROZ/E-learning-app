@@ -6,11 +6,10 @@ import 'app_dimensions.dart';
 
 class MyToast {
   static showMyToast(
-      {BuildContext ? context, String ? myMessage, IconData ? myIcon}) {
+      {BuildContext? context, String? myMessage, IconData? myIcon}) {
     FToast fToast = FToast();
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     fToast.init(context!);
-
 
     Widget toast = Container(
       height: AppDimensions.getDimensions(requiredHeight: 45),
@@ -39,15 +38,17 @@ class MyToast {
               onTap: () {
                 fToast.removeCustomToast();
               },
-              child: Icon(myIcon, color: AppColors.kMainButtonText)),
+              child: Icon(myIcon, color: AppColors.kMainTextWhite)),
           SizedBox(
             width: AppDimensions.getDimensions(requiredWidth: 15),
           )
         ],
       ),
     );
-    fToast.showToast( child: toast,
+    fToast.showToast(
+      child: toast,
       gravity: ToastGravity.BOTTOM,
-      toastDuration: const Duration(seconds: 3),);
+      toastDuration: const Duration(seconds: 3),
+    );
   }
 }

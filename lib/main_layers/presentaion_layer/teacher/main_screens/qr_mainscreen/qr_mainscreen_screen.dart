@@ -5,8 +5,8 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
 import 'package:flutter/material.dart';
 
-class QRMainScreen extends StatelessWidget {
-  const QRMainScreen({Key? key}) : super(key: key);
+class QRMainScreenTeacher extends StatelessWidget {
+  const QRMainScreenTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -14,15 +14,17 @@ class BottomListMainScreenTeacher extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
-    return ListView.builder(
+    return ListView.separated(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       padding: EdgeInsets.zero,
-      itemCount: 4,
+      itemCount: 2,
       scrollDirection: Axis.vertical,
       itemBuilder: (context, index) {
         return Container(
-          height: AppDimensions.getDimensions(requiredHeight: 100),
+          margin: EdgeInsets.only(
+              left: AppDimensions.getDimensions(requiredWidth: 19)),
+          height: AppDimensions.getDimensions(requiredHeight: 85),
           width: AppDimensions.getDimensions(requiredWidth: 320),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
@@ -42,9 +44,6 @@ class BottomListMainScreenTeacher extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              SizedBox(
-                height: AppDimensions.getDimensions(requiredHeight: 5),
-              ),
               Padding(
                 padding: EdgeInsets.only(
                     right: AppDimensions.getDimensions(requiredWidth: 9)),
@@ -60,75 +59,85 @@ class BottomListMainScreenTeacher extends StatelessWidget {
               Container(
                 padding: EdgeInsets.zero,
                 width: double.infinity,
-                height: AppDimensions.getDimensions(requiredHeight: 40),
+                height: AppDimensions.getDimensions(requiredHeight: 35),
                 decoration: const BoxDecoration(
                     color: AppColors.kBottomContainerGroups,
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(8),
                         bottomRight: Radius.circular(8))),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    InkWell(
-                      onTap: () {},
-                      child: SizedBox(
-                        height: AppDimensions.getDimensions(requiredHeight: 50),
-                        width: AppDimensions.getDimensions(requiredWidth: 50),
-                        child: Row(children: [
-                          const MainTextWhite(
-                            myText: AppStrings.kCorrectExamsGroups,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          SizedBox(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 2),
-                          ),
-                          SizedBox(
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 19),
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 19),
-                              child: Image.asset(AppAssets.kCorrectExam)),
-                        ]),
+                    Row(children: [
+                      const MainTextWhite(
+                        myText: AppStrings.kSendToGroupHome,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
                       ),
-                    ),
-                    SizedBox(
-                      width: AppDimensions.getDimensions(requiredWidth: 66),
-                    ),
-                    InkWell(
-                      onTap: () {},
-                      child: SizedBox(
-                        height: AppDimensions.getDimensions(requiredHeight: 50),
-                        width: AppDimensions.getDimensions(requiredWidth: 50),
-                        child: Row(children: [
-                          const MainTextWhite(
-                            myText: AppStrings.kShowExamsGroups,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                          ),
-                          SizedBox(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 2),
-                          ),
-                          SizedBox(
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 19),
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 19),
-                              child: Image.asset(AppAssets.kShowExam)),
-                        ]),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 3),
                       ),
-                    ),
+                      SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 15),
+                          height:
+                              AppDimensions.getDimensions(requiredHeight: 15),
+                          child: Image.asset(
+                            AppAssets.kVector3HomeScreen,
+                            color: AppColors.kMainTextWhite,
+                          )),
+                    ]),
                     SizedBox(
-                      width: AppDimensions.getDimensions(requiredWidth: 53),
+                      width: AppDimensions.getDimensions(requiredWidth: 40),
                     ),
+                    Row(children: [
+                      const MainTextWhite(
+                        myText: AppStrings.kRemoveHome,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 2),
+                      ),
+                      SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 14),
+                          height:
+                              AppDimensions.getDimensions(requiredHeight: 14),
+                          child: Icon(
+                            Icons.delete_sharp,
+                            color: AppColors.kMainTextWhite,
+                            size:
+                                AppDimensions.getDimensions(requiredHeight: 18),
+                          )),
+                    ]),
+                    SizedBox(
+                      width: AppDimensions.getDimensions(requiredWidth: 50),
+                    ),
+                    Row(children: [
+                      const MainTextWhite(
+                        myText: AppStrings.kEditHome,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 3),
+                      ),
+                      Icon(
+                        Icons.edit,
+                        color: AppColors.kMainTextWhite,
+                        size: AppDimensions.getDimensions(requiredHeight: 18),
+                      ),
+                    ]),
                   ],
                 ),
               )
             ],
           ),
         );
+      },
+      separatorBuilder: (context, index) {
+        return SizedBox(
+            height: AppDimensions.getDimensions(requiredHeight: 10));
       },
     );
   }

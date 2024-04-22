@@ -12,8 +12,8 @@ import 'package:flutter/material.dart';
 
 import 'change_photo/change_photo.dart';
 
-class ProfileEditing extends StatelessWidget {
-  const ProfileEditing({Key? key}) : super(key: key);
+class ProfileEditingTeacher extends StatelessWidget {
+  const ProfileEditingTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

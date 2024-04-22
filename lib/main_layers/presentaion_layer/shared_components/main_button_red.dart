@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 
 class MainButtonRed extends StatelessWidget {
   final String? buttonName;
-  final void Function() ? onPressed;
+  final void Function()? onPressed;
 
-  const MainButtonRed({Key? key, this.buttonName, this.onPressed}) : super(key: key);
+  const MainButtonRed({Key? key, this.buttonName, this.onPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,17 +18,17 @@ class MainButtonRed extends StatelessWidget {
       clipBehavior: Clip.antiAliasWithSaveLayer,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
       child: MaterialButton(
-        color: AppColors.kMainButton,
-        shape: const RoundedRectangleBorder(),
-        onPressed: onPressed,
-        child: Text(buttonName!,
-          style: const TextStyle(
-              fontFamily: 'Almarai',
-              color: AppColors.kMainButtonText,
-              fontWeight: FontWeight.w700,
-              fontSize: 16),
-        )
-      ),
+          color: AppColors.kMainButton,
+          shape: const RoundedRectangleBorder(),
+          onPressed: onPressed,
+          child: Text(
+            buttonName!,
+            style: const TextStyle(
+                fontFamily: 'Almarai',
+                color: AppColors.kMainTextWhite,
+                fontWeight: FontWeight.w700,
+                fontSize: 16),
+          )),
     );
   }
 }

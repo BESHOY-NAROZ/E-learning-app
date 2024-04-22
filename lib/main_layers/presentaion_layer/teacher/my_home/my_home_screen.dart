@@ -92,7 +92,7 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
           ],
         ),
       ),
-      body: AppLists.myScreens[MyHomeTeacher.index],
+      body: AppLists.myTeacherScreens[MyHomeTeacher.index],
     );
   }
 }

@@ -1,0 +1,110 @@
+import 'package:assiut_project/core/app_constants/app_assets.dart';
+import 'package:assiut_project/core/app_constants/app_colors.dart';
+import 'package:assiut_project/core/app_constants/app_strings.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:flutter/material.dart';
+
+class AttachedList extends StatelessWidget {
+  const AttachedList({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
+    return SizedBox(
+      height: AppDimensions.getDimensions(requiredHeight: 57),
+      child: ListView.builder(
+        itemCount: 3,
+        shrinkWrap: true,
+        physics: const AlwaysScrollableScrollPhysics(),
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.only(
+              left: AppDimensions.getDimensions(requiredWidth: 10),
+            ),
+            child: Container(
+              decoration: BoxDecoration(
+                color: AppColors.kSmallListMainScreenHome,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              width: AppDimensions.getDimensions(requiredWidth: 211),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(children: [
+                        const Icon(
+                          Icons.photo,
+                          size: 10,
+                        ),
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 2),
+                        ),
+                        const Icon(
+                          Icons.play_circle_fill_rounded,
+                          size: 10,
+                        ),
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 2),
+                        ),
+                        const Icon(
+                          Icons.file_copy_rounded,
+                          size: 10,
+                        ),
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 20),
+                        ),
+                        const Text(
+                          AppStrings.kTransitionalElementsHome,
+                          style: TextStyle(
+                              fontFamily: 'Almarai',
+                              color:
+                                  AppColors.kSmallListFirstTextMainScreenHome,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16),
+                        ),
+                      ]),
+                      SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 4),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          bottom:
+                              AppDimensions.getDimensions(requiredHeight: 1),
+                        ),
+                        child: const Text(
+                          AppStrings.kElementsLessonHome,
+                          style: TextStyle(
+                              fontFamily: 'Almarai',
+                              color:
+                                  AppColors.kSmallListSecondTextMainScreenHome,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 12),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: AppDimensions.getDimensions(requiredWidth: 4),
+                  ),
+                  SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 26),
+                      width: AppDimensions.getDimensions(requiredWidth: 26),
+                      child: Image.asset(AppAssets.kAttached)),
+                  SizedBox(
+                    width: AppDimensions.getDimensions(requiredWidth: 7),
+                  )
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}

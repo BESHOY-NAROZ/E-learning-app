@@ -26,7 +26,7 @@ class ExitBottomSheet extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 195),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                  color: AppColors.kMainButtonText,
+                  color: AppColors.kMainTextWhite,
                   borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: EdgeInsets.symmetric(
@@ -95,7 +95,7 @@ class ExitBottomSheet extends StatelessWidget {
                               AppStrings.kActualLogOutSheet,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
-                                  color: AppColors.kMainButtonText,
+                                  color: AppColors.kMainTextWhite,
                                   fontWeight: FontWeight.w700,
                                   fontSize: 16),
                             )),

@@ -3,6 +3,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/common_fi
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/groups_students/students_groups_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/menu_mainscreen/menu_mainscreen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/home_mainscreen/home_mainscreen_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/menu_mainscreen/menu_mainscreen.dart';
 import 'package:flutter/material.dart';
 
 import 'app_colors.dart';
@@ -36,10 +38,17 @@ class AppLists {
     AppStrings.kSolvePercentageRedGroups,
   ];
 
-  static List<Widget> myScreens = [
+  static List<Widget> myAssistantScreens = [
     const MenuMainScreen(),
     const Notifications(),
     const StudentGroups(),
     const HomeMainScreen(),
+  ];
+
+  static List<Widget> myTeacherScreens = [
+    const MenuMainScreenTeacher(),
+    const Notifications(),
+    const StudentGroups(),
+    const HomeMainScreenTeacher(),
   ];
 }

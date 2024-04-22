@@ -496,6 +496,18 @@ class AppStrings {
   static const String kEditHome = 'تعديل';
   static const String kRemoveHome = 'حذف';
   static const String kSendToGroupHome = 'ارسال للمجموعة';
+  static const String kCreatedExamsHome = 'الامتحانات التى تم إنشائها';
+  static const String kCorrectExamsHome = 'الامتحانات المراد تصحيحها';
+  static const String kAssistantsHome = 'المساعدين';
+  static const String kQuestionsBankHome = 'بنك الاسئلة الخاص بى';
+  static const String kEarlyBuyHome = 'المشتريات السابقة';
+  static const String kPointsProgramHome = 'برنامج النقاط';
+  static const String kStudentsGroupsHome = 'مجموعات الطلاب';
+  static const String kAppSettingsHome = 'إعدادات التطبيق';
+  static const String kYourOpinionHome = 'رأيك يهمنا';
+  static const String kInviteFriendsHome = 'أدع أصدقائك';
+  static const String kHelpHome = 'مساعدة';
+  static const String kLogOutHome = 'تسجيل الخروج';
 
 // static const String kSetProfileEditing = 'تعيين';
 }

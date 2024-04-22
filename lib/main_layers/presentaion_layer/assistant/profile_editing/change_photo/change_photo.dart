@@ -38,113 +38,124 @@ class ChangePhoto extends StatelessWidget {
               ),
               child: InkWell(
                   onTap: () {
-                    showModalBottomSheet(context: context, builder:
-                        (context) {
-                      return Container(
-                        width: AppDimensions.getDimensions(requiredWidth: 360),
-                        height: AppDimensions.getDimensions(requiredHeight: 187),
-                        clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
-                            color: AppColors.kMainButtonText,
-                            borderRadius: BorderRadius.circular(20)
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: AppDimensions.getDimensions(requiredWidth: 68),
-                              height: AppDimensions.getDimensions(requiredHeight: 5),
-                              decoration: BoxDecoration(
-                                  color: AppColors.kLineBottomSheet,
-                                  borderRadius: BorderRadius.circular(10)),
-                            ),
-                            SizedBox(
-                              height: AppDimensions.getDimensions
-                                (requiredHeight: 18),
-                            ),
-                            Padding(
-                              padding:  EdgeInsets.symmetric(
-                                  horizontal: AppDimensions.getDimensions
-                                    (requiredWidth: 20)
+                    showModalBottomSheet(
+                      context: context,
+                      builder: (context) {
+                        return Container(
+                          width:
+                              AppDimensions.getDimensions(requiredWidth: 360),
+                          height:
+                              AppDimensions.getDimensions(requiredHeight: 187),
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(
+                              color: AppColors.kMainTextWhite,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: AppDimensions.getDimensions(
+                                    requiredWidth: 68),
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 5),
+                                decoration: BoxDecoration(
+                                    color: AppColors.kLineBottomSheet,
+                                    borderRadius: BorderRadius.circular(10)),
                               ),
-                              child: const Align(
-                                alignment: Alignment.centerRight,
-                                child: MainTextBlue(
-                                  myText: AppStrings.kProfilePhotoBottomSheet,
-                                  fontSize: 16,
+                              SizedBox(
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 18),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: AppDimensions.getDimensions(
+                                        requiredWidth: 20)),
+                                child: const Align(
+                                  alignment: Alignment.centerRight,
+                                  child: MainTextBlue(
+                                    myText: AppStrings.kProfilePhotoBottomSheet,
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ),
-                            ),
-                            SizedBox(
-                              height: AppDimensions.getDimensions
-                                (requiredHeight: 12),
-                            ),
-                            Container(
-                              width: AppDimensions.getDimensions
-                                (requiredWidth: 320,),
-                              height: AppDimensions.getDimensions(requiredHeight: 45),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: AppColors.kMainContainer
+                              SizedBox(
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 12),
                               ),
-                              child:  Row(
-                                  mainAxisAlignment: MainAxisAlignment.end
-                                  ,children: [
-                                const MainTextGrey(
-                                  myText: AppStrings.kTakePhotoBottomSheet,
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 12,
+                              Container(
+                                width: AppDimensions.getDimensions(
+                                  requiredWidth: 320,
                                 ),
-                                SizedBox(width: AppDimensions.getDimensions
-                                  (requiredWidth: 6),),
-                                Image.asset(AppAssets.kCamera,
-                                    width: AppDimensions.getDimensions
-                                      (requiredWidth: 24),
-                                    height:AppDimensions.getDimensions
-                                      (requiredHeight: 24)
-                                ),
-                                SizedBox(width: AppDimensions.getDimensions
-                                  (requiredWidth: 15),)
-                              ]),
-                            ),
-                            SizedBox(
-                              height: AppDimensions.getDimensions
-                                (requiredHeight: 8),
-                            ),
-                            Container(
-                              width: AppDimensions.getDimensions
-                                (requiredWidth: 320,),
-                              height: AppDimensions.getDimensions(requiredHeight: 45),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: AppColors.kMainContainer
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 45),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: AppColors.kMainContainer),
+                                child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      const MainTextGrey(
+                                        myText:
+                                            AppStrings.kTakePhotoBottomSheet,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 12,
+                                      ),
+                                      SizedBox(
+                                        width: AppDimensions.getDimensions(
+                                            requiredWidth: 6),
+                                      ),
+                                      Image.asset(AppAssets.kCamera,
+                                          width: AppDimensions.getDimensions(
+                                              requiredWidth: 24),
+                                          height: AppDimensions.getDimensions(
+                                              requiredHeight: 24)),
+                                      SizedBox(
+                                        width: AppDimensions.getDimensions(
+                                            requiredWidth: 15),
+                                      )
+                                    ]),
                               ),
-                              child:  Row(
-                                  mainAxisAlignment: MainAxisAlignment.end
-                                  ,children: [
-                                const MainTextGrey(
-                                  myText: AppStrings.kFromGallerySheet,
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 12,
+                              SizedBox(
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 8),
+                              ),
+                              Container(
+                                width: AppDimensions.getDimensions(
+                                  requiredWidth: 320,
                                 ),
-                                SizedBox(width: AppDimensions.getDimensions
-                                  (requiredWidth: 6),),
-                                Image.asset(AppAssets.kUpload,
-                                    width: AppDimensions.getDimensions
-                                      (requiredWidth: 24),
-                                    height:AppDimensions.getDimensions
-                                      (requiredHeight: 24)
-                                ),
-                                SizedBox(width: AppDimensions.getDimensions
-                                  (requiredWidth: 15),)
-                              ]),
-                            ),
-                          ],
-                        ),
-                      );
-                    },
+                                height: AppDimensions.getDimensions(
+                                    requiredHeight: 45),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: AppColors.kMainContainer),
+                                child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      const MainTextGrey(
+                                        myText: AppStrings.kFromGallerySheet,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 12,
+                                      ),
+                                      SizedBox(
+                                        width: AppDimensions.getDimensions(
+                                            requiredWidth: 6),
+                                      ),
+                                      Image.asset(AppAssets.kUpload,
+                                          width: AppDimensions.getDimensions(
+                                              requiredWidth: 24),
+                                          height: AppDimensions.getDimensions(
+                                              requiredHeight: 24)),
+                                      SizedBox(
+                                        width: AppDimensions.getDimensions(
+                                            requiredWidth: 15),
+                                      )
+                                    ]),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
                     );
-
                   },
                   child: const Icon(Icons.edit)),
             ),

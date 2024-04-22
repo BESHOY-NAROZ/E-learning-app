@@ -101,7 +101,7 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                                   requiredHeight: 190),
                               clipBehavior: Clip.antiAlias,
                               decoration: BoxDecoration(
-                                  color: AppColors.kMainButtonText,
+                                  color: AppColors.kMainTextWhite,
                                   borderRadius: BorderRadius.circular(20)),
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
@@ -200,7 +200,7 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                                                   style: TextStyle(
                                                       fontFamily: 'Almarai',
                                                       color: AppColors
-                                                          .kMainButtonText,
+                                                          .kMainTextWhite,
                                                       fontWeight:
                                                           FontWeight.w700,
                                                       fontSize: 16),

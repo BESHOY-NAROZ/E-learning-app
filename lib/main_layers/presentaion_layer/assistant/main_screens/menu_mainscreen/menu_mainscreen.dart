@@ -15,7 +15,7 @@ class MenuMainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 891, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.end,

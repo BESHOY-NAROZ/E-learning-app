@@ -3,24 +3,24 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/app_bar_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/main_button_main_screen_menu.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/shared_components_mainscreen/app_bar_mainscreen_teacher.dart';
 import 'package:flutter/material.dart';
 
 import 'exit_bottom_sheet.dart';
 
-class MenuMainScreen extends StatelessWidget {
-  const MenuMainScreen({Key? key}) : super(key: key);
+class MenuMainScreenTeacher extends StatelessWidget {
+  const MenuMainScreenTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 891, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          const AppBarMainScreen(
+          const AppBarMainScreenTeacher(
             designHeight: 1006,
             designWidth: 360,
           ),
@@ -60,7 +60,7 @@ class MenuMainScreen extends StatelessWidget {
                         InkWell(
                           onTap: () {
                             Navigator.pushNamed(
-                                context, RoutesManager.qRMainScreen);
+                                context, RoutesManager.qRMainScreenTeacher);
                           },
                           child: Container(
                             height:
@@ -102,7 +102,7 @@ class MenuMainScreen extends StatelessWidget {
                         InkWell(
                           onTap: () {
                             Navigator.pushNamed(
-                                context, RoutesManager.profileEditing);
+                                context, RoutesManager.profileEditingTeacher);
                           },
                           child: Container(
                             height:
@@ -160,8 +160,8 @@ class MenuMainScreen extends StatelessWidget {
                         Navigator.pushNamed(context, RoutesManager.teachers);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kFirstButtonMainScreenMenu,
-                        myIcon: AppAssets.kVector2HomeScreen,
+                        myTitle: AppStrings.kCreatedExamsHome,
+                        myIcon: AppAssets.kExamVector,
                       ),
                     ),
                     SizedBox(
@@ -173,8 +173,8 @@ class MenuMainScreen extends StatelessWidget {
                             context, RoutesManager.studentsGroups);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kSecondButtonMainScreenMenu,
-                        myIcon: AppAssets.kVector3HomeScreen,
+                        myTitle: AppStrings.kCorrectExamsHome,
+                        myIcon: AppAssets.kExamVector,
                       ),
                     ),
                     SizedBox(
@@ -186,8 +186,8 @@ class MenuMainScreen extends StatelessWidget {
                             context, RoutesManager.notificationsCommon);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kThirdButtonMainScreenMenu,
-                        myIcon: AppAssets.kBottomNavigationBarItem2HomeScreen,
+                        myTitle: AppStrings.kAssistantsHome,
+                        myIcon: AppAssets.kHand,
                       ),
                     ),
                     SizedBox(
@@ -199,8 +199,8 @@ class MenuMainScreen extends StatelessWidget {
                             context, RoutesManager.generalSettings);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kFourthButtonMainScreenMenu,
-                        myIcon: AppAssets.kSettingsMainScreen,
+                        myTitle: AppStrings.kQuestionsBankHome,
+                        myIcon: AppAssets.kAddQuestion,
                       ),
                     ),
                     SizedBox(
@@ -211,8 +211,8 @@ class MenuMainScreen extends StatelessWidget {
                         Navigator.pushNamed(context, RoutesManager.contactUS);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kFifthButtonMainScreenMenu,
-                        myIcon: AppAssets.kCallMeMainScreen,
+                        myTitle: AppStrings.kEarlyBuyHome,
+                        myIcon: AppAssets.kOrders,
                       ),
                     ),
                     SizedBox(
@@ -224,8 +224,8 @@ class MenuMainScreen extends StatelessWidget {
                             context, RoutesManager.inviteFriends);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kShareButtonMainScreenMenu,
-                        myIcon: AppAssets.kShare,
+                        myTitle: AppStrings.kPointsProgramHome,
+                        myIcon: AppAssets.kPoints,
                       ),
                     ),
                     SizedBox(
@@ -236,7 +236,31 @@ class MenuMainScreen extends StatelessWidget {
                         Navigator.pushNamed(context, RoutesManager.yourOpinion);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kSixthButtonMainScreenMenu,
+                        myTitle: AppStrings.kStudentsGroupsHome,
+                        myIcon: AppAssets.kMenuUserScreen,
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.helpBody);
+                      },
+                      child: const MainButtonMainScreenMenu(
+                        myTitle: AppStrings.kAppSettingsHome,
+                        myIcon: AppAssets.kSettingsMainScreen,
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.helpBody);
+                      },
+                      child: const MainButtonMainScreenMenu(
+                        myTitle: AppStrings.kYourOpinionHome,
                         myIcon: AppAssets.kOpinionMainScreen,
                       ),
                     ),
@@ -248,7 +272,19 @@ class MenuMainScreen extends StatelessWidget {
                         Navigator.pushNamed(context, RoutesManager.helpBody);
                       },
                       child: const MainButtonMainScreenMenu(
-                        myTitle: AppStrings.kSeventhButtonMainScreenMenu,
+                        myTitle: AppStrings.kInviteFriendsHome,
+                        myIcon: AppAssets.kShare,
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.helpBody);
+                      },
+                      child: const MainButtonMainScreenMenu(
+                        myTitle: AppStrings.kHelpHome,
                         myIcon: AppAssets.kHelpMainScreen,
                       ),
                     ),

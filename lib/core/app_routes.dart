@@ -64,6 +64,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing/profile_editing_screen.dart';
 import 'package:flutter/material.dart';
 
 class RoutesManager {
@@ -139,6 +141,8 @@ class RoutesManager {
   static const String addIDTeacher = "/addIDTeacher";
   static const String confirmAccountTeacher = "/confirmAccountTeacher";
   static const String teacherMainDetails = "/teacherMainDetails";
+  static const String qRMainScreenTeacher = "/qRMainScreenTeacher";
+  static const String profileEditingTeacher = "/profileEditingTeacher";
 }
 
 class RoutesGenerator {
@@ -336,6 +340,12 @@ class RoutesGenerator {
       case RoutesManager.teacherMainDetails:
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const TeacherMainDetails());
+      case RoutesManager.qRMainScreenTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const QRMainScreenTeacher());
+      case RoutesManager.profileEditingTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const ProfileEditingTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:
