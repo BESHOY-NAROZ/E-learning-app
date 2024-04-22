@@ -8,8 +8,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
-class ResetEmail extends StatelessWidget {
-  const ResetEmail({Key? key}) : super(key: key);
+class SetEmailNowTeacher extends StatelessWidget {
+  const SetEmailNowTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,30 +34,31 @@ class ResetEmail extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 114),
                   ),
                   const MainTextBlue(
-                    myText: AppStrings.kForgetPasswordMainTextPhone,
+                    myText: AppStrings.kEmailProfileEditing,
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 18),
+                    height: AppDimensions.getDimensions(requiredHeight: 22),
                   ),
                   const MainHintTextRegistration(
-                    myText: AppStrings.kForgetPasswordHintTextPhone,
+                    myText: AppStrings.kHintProfileEditing,
+                    textDirection: TextDirection.rtl,
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 8),
+                    height: AppDimensions.getDimensions(requiredHeight: 15),
                   ),
                   const CustomTextFormFiled(
-                    hintText: AppStrings.kActualPhoneNumberProfileEditing,
-                    keyboardType: TextInputType.phone,
+                    hintText: AppStrings.kActualEmailProfileEditing,
+                    keyboardType: TextInputType.emailAddress,
                     textAlign: TextAlign.start,
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 32),
+                    height: AppDimensions.getDimensions(requiredHeight: 80),
                   ),
                   MainButtonRed(
-                    buttonName: AppStrings.kForgetPasswordMainButtonText,
+                    buttonName: AppStrings.kSetProfileEditing,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context,
-                          RoutesManager.resetEmailGetCode);
+                      Navigator.pushNamed(
+                          context, RoutesManager.setEmailDoneTeacher);
                     },
                   ),
                 ],

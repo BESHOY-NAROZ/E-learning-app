@@ -1,17 +1,19 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class MainAddSmallButton extends StatelessWidget {
-
   final String? myText;
   final double? requiredWidth;
+  final double? requiredHeight;
   final void Function()? onPressed;
 
   const MainAddSmallButton({
     super.key,
-    this.myText, this.requiredWidth, this.onPressed,
+    this.myText,
+    this.requiredWidth,
+    this.onPressed,
+    this.requiredHeight,
   });
 
   @override
@@ -20,9 +22,9 @@ class MainAddSmallButton extends StatelessWidget {
 
     return Container(
         width: AppDimensions.getDimensions(requiredWidth: requiredWidth ?? 98),
-
+        height:
+            AppDimensions.getDimensions(requiredHeight: requiredHeight ?? 45),
         padding: const EdgeInsets.all(0),
-
         decoration: BoxDecoration(
           color: AppColors.kSmallButtonMainScreenHome,
           borderRadius: BorderRadius.circular(20),
@@ -34,11 +36,9 @@ class MainAddSmallButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-
               const Icon(
                 Icons.add_circle_outlined,
                 color: AppColors.kSmallButtonTextMainScreenHome,
-
               ),
               SizedBox(
                 width: AppDimensions.getDimensions(requiredWidth: 3),

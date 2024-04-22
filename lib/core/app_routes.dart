@@ -66,6 +66,10 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing/profile_editing_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing/set_email_profile_editing_teacher/set_email_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing/set_email_profile_editing_teacher/set_email_now.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing/set_password_profile_editing/set_password_done_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing/set_password_profile_editing/set_password_screen.dart';
 import 'package:flutter/material.dart';
 
 class RoutesManager {
@@ -143,6 +147,11 @@ class RoutesManager {
   static const String teacherMainDetails = "/teacherMainDetails";
   static const String qRMainScreenTeacher = "/qRMainScreenTeacher";
   static const String profileEditingTeacher = "/profileEditingTeacher";
+  static const String setPasswordProfileEditingTeacher =
+      "/setPasswordProfileEditingTeacher";
+  static const String setPasswordDoneTeacher = "/setPasswordDoneTeacher";
+  static const String setEmailNowTeacher = "/setEmailNowTeacher";
+  static const String setEmailDoneTeacher = "/setEmailDoneTeacher";
 }
 
 class RoutesGenerator {
@@ -346,6 +355,19 @@ class RoutesGenerator {
       case RoutesManager.profileEditingTeacher:
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const ProfileEditingTeacher());
+      case RoutesManager.setPasswordProfileEditingTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) =>
+                const SetPasswordProfileEditingTeacher());
+      case RoutesManager.setPasswordDoneTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SetPasswordDoneTeacher());
+      case RoutesManager.setEmailNowTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SetEmailNowTeacher());
+      case RoutesManager.setEmailDoneTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SetEmailDoneTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

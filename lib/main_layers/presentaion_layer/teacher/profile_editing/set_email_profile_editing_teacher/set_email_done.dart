@@ -7,9 +7,10 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/c
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
-class SetPasswordDone extends StatelessWidget {
-  const SetPasswordDone({Key? key}) : super(key: key);
+class SetEmailDoneTeacher extends StatelessWidget {
+  const SetEmailDoneTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,29 +26,37 @@ class SetPasswordDone extends StatelessWidget {
               SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 112)),
               SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 154),
-                  width: AppDimensions.getDimensions(requiredWidth: 154),
-                  child: Image.asset(AppAssets.kCorrect)),
+                height: AppDimensions.getDimensions(requiredHeight: 154),
+                width: AppDimensions.getDimensions(requiredWidth: 154),
+                child: Lottie.asset(
+                  AppAssets.kBlueLike,
+                ),
+              ),
               const MainTextBlue(
                 myText: AppStrings.kResetDoneProfileEditing,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-              const Text(
-                AppStrings.kHintResetDoneProfileEditing,
-                textAlign: TextAlign.center,
-                textDirection: TextDirection.rtl,
-                style: TextStyle(
-                    fontFamily: 'Almarai',
-                    color: AppColors.kSignInMainHintText,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 14),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: AppDimensions.getDimensions(requiredWidth: 10)),
+                child: const Text(
+                  AppStrings.kResetDoneHintProfileEditing,
+                  textAlign: TextAlign.center,
+                  textDirection: TextDirection.rtl,
+                  style: TextStyle(
+                      fontFamily: 'Almarai',
+                      color: AppColors.kSignInMainHintText,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 14),
+                ),
               ),
               SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 280)),
+                  height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(
-                buttonName: AppStrings.kResetPasswordDoneMainButtonText,
+                buttonName: AppStrings.kBackToProfileProfileEditingShared,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.loginScreen);
+                  Navigator.pushNamed(
+                      context, RoutesManager.profileEditingTeacher);
                 },
               ),
             ],

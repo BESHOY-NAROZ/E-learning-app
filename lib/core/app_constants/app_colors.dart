@@ -95,6 +95,10 @@ class AppColors {
   //////// Additions ////////////
   static const Color kLineBottomSheet = Color(0xFF999999);
 
+  //////////////// kPhilosophyProfileEditing ///////////
+  static const Color kPhilosophyProfileEditing = Color(0xFFC2CDF1);
+  static const Color kDynamicsProfileEditing = Color(0xFFEEE0C8);
+
   //////////////////////Main/////////////////////
   static const Color kMainButton = Color(0xffDC3434);
   static const Color kMainTextBlack = Color(0xFF495057);

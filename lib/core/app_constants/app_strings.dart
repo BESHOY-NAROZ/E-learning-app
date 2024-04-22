@@ -467,11 +467,11 @@ class AppStrings {
   static const String kLevelSignUp = 'المرحلة التعليمية';
   static const String kActualLevelSignUp = 'الثانوية';
   static const String kClassSignUp = 'الصف الدراسى';
-  static const String kActualClassSignUp = 'الاول الثانوى';
+  static const String kActualClassSignUp = 'الصف الاول الثانوى';
   static const String kGovernmentSignUp = 'المحافظة';
   static const String kActualGovernmentSignUp = 'اسيوط';
   static const String kStationSignUp = 'المديرية';
-  static const String kActualStationSignUp = 'اسيوط';
+  static const String kActualStationSignUp = 'مديرية أسيوط التعليمية';
   static const String kSchoolSignUp = 'اسم المدرسة';
   static const String kActualSchoolSignUp = 'مثال : مدرسة جمال فرغلى';
   static const String kWorkTypeSignUp = 'نوع العمل الذى يقوم بة';
@@ -509,5 +509,32 @@ class AppStrings {
   static const String kHelpHome = 'مساعدة';
   static const String kLogOutHome = 'تسجيل الخروج';
 
+  //////////////// Profile Editing ///////////////
+
+  static const String kAppBarProfileEditingTeacher = 'تعديل  حساب المدرس';
+  static const String kSectionProfileEditingTeacher = 'الشعبة';
+  static const String kActualSectionProfileEditingTeacher = 'علمى علوم';
+  static const String kDynamicsProfileEditingTeacher = 'الديناميكا';
+  static const String kPhilosophyProfileEditingTeacher = 'الفلسفة';
+  static const String kResetDataProfileEditingTeacher = 'إعادة تعيين بيانات '
+      'الدخول';
+  static const String kChooseDataProfileEditingTeacher =
+      'اختر البيانات المراد تعديلها';
+  static const String kSaveDataProfileEditingTeacher = 'حفظ';
+
+//////////////// Profile Editing Shared ///////////////
+  static const String kMainResetProfileEditingShared = 'إعادة التعيين';
+  static const String kHintResetProfileEditingShared = ' يمكنك الأن تعيين كلمة '
+      'المرور الجديدة.\nكلمة المرور الجديدة يجب أن تكون مختلفة عن القديمة';
+  static const String kOldPassProfileEditingShared = 'كلمة المرور القديمة';
+  static const String kNewPassProfileEditingShared = 'كلمة المرور الجديدة';
+  static const String kConfirmNewPassProfileEditingShared =
+      'تأكيد كلمة المرور الجديدة';
+  static const String kSaveProfileEditingShared = 'تعيين';
+  static const String kBackToProfileProfileEditingShared = 'الرجوع الى الملف '
+      'الشخصى';
+
+// static const String kSetProfileEditing = 'تعيين';
+// static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
 }
