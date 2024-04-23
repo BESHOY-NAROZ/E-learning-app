@@ -22,8 +22,7 @@ class AppStrings {
       'بالحساب الخاص بك';
   static const String kForgetPasswordHintTextEmail =
       'أدخل البريد الإلكترونى المتصل بالحساب الخاص بك';
-  static const String kForgetPasswordHint =
-      'أدخل رقم الهاتف المتصل بالحساب الخاص بك';
+  static const String kForgetPasswordHint = 'أدخل رقم الهاتف المتصل بالحساب الخاص بك';
   static const String kForgetPasswordTextFormFiledHintPhone = 'Ex : '
       '012345678910';
   static const String kForgetPasswordTextFormFiledHintEmail = 'example@gmail'
@@ -71,8 +70,7 @@ class AppStrings {
   static const String kHintText2TextMainScreenNewOffer = 'الشرط الأول   •';
   static const String kHintText3TextMainScreenNewOffer = 'المحتوى الثانى   •';
   static const String kHintText4TextMainScreenNewOffer = 'باقى محتوى العرض   •';
-  static const String kHintText5TextMainScreenNewOffer =
-      'فى حال مواجهة المشاكل يمكنك التواصل معنا';
+  static const String kHintText5TextMainScreenNewOffer = 'فى حال مواجهة المشاكل يمكنك التواصل معنا';
   static const String kMainButtonTextMainScreenNewOffer = 'الحصول على العرض';
   static const String kMainFirstButtonTextMainScreenNewVersion = 'تحديث لاحقاً';
   static const String kMainSecondButtonTextMainScreenNewVersion = 'تحديث الأن';
@@ -80,8 +78,7 @@ class AppStrings {
       'لبدء '
       'التطبيق';
   static const String kMainTextMainScreenRemovedAccount = 'تم ايقاف\nالحساب';
-  static const String kMainButtonTextMainScreenRemovedAccount =
-      'تواصل مع الدعم الفنى';
+  static const String kMainButtonTextMainScreenRemovedAccount = 'تواصل مع الدعم الفنى';
   static const String kAppBarTitleMainScreenHome = 'أهلا , مولر مجدى';
   static const String kMainTextMainScreenHome = 'الرئيسية';
   static const String kHintText1MainScreenHome = 'الجديد';
@@ -97,14 +94,10 @@ class AppStrings {
   static const String kBottomNavigationBarHomeMainScreenHome = 'الرئيسية';
   static const String kBottomListFirstTextHomeMainScreenHome = 'مجموعة';
   static const String kBottomListGroupNumberHomeMainScreenHome = '(1)';
-  static const String kBottomListSecondTextHomeMainScreenHome =
-      'مجموعة مادة الكيمياء';
-  static const String kBottomListThirdTextHomeMainScreenHome =
-      'طلاب الصف الثالث الثانوى';
-  static const String kBottomListFirstTeacherHomeMainScreenHome =
-      'أ . احمد خالد';
-  static const String kBottomListSecondTeacherHomeMainScreenHome =
-      'أ . شريف كمال';
+  static const String kBottomListSecondTextHomeMainScreenHome = 'مجموعة مادة الكيمياء';
+  static const String kBottomListThirdTextHomeMainScreenHome = 'طلاب الصف الثالث الثانوى';
+  static const String kBottomListFirstTeacherHomeMainScreenHome = 'أ . احمد خالد';
+  static const String kBottomListSecondTeacherHomeMainScreenHome = 'أ . شريف كمال';
   static const String kBottomListNumberOfUsersHomeMainScreenHome = '+3';
   static const String kMainTextMainScreenMenu = 'القائمة';
   static const String kHintTextFirstMainScreenMenu = 'شخصى';
@@ -126,10 +119,8 @@ class AppStrings {
 
   static const String kAppBarTitleGroupsStudentGroups = 'مجموعات الطلاب';
   static const String kContainerTeachersGroupsStudentGroups = 'المدرسين';
-  static const String kContainerFirstTeacherGroupsStudentGroups =
-      'أ . احمد خالد';
-  static const String kContainerSecondTeacherGroupsStudentGroups =
-      'أ . شريف كمال';
+  static const String kContainerFirstTeacherGroupsStudentGroups = 'أ . احمد خالد';
+  static const String kContainerSecondTeacherGroupsStudentGroups = 'أ . شريف كمال';
   static const String kButtonTextGroupsStudentGroups = 'إنشاء مجموعة جديدة';
   static const String kSmallButtonCreateGroupGroupStudentGroups = 'إضافة طالب ';
   static const String kStudentNameGroups = 'كريم عاطف';
@@ -138,10 +129,8 @@ class AppStrings {
   static const String kSentExamsGroups = 'الامتحانات المرسلة';
   static const String kAttendanceAndDepartureGroups = 'الحضور و الانصراف';
   static const String kAddNewStudentGroups = 'اضافة طالب جديد';
-  static const String kAddStudentEmailGroups =
-      'أدخل البريد الإلكترونى المتصل بحساب الطالب';
-  static const String kAddStudentPhoneGroups =
-      'أدخل رقم الهاتف المتصل بحساب الطالب';
+  static const String kAddStudentEmailGroups = 'أدخل البريد الإلكترونى المتصل بحساب الطالب';
+  static const String kAddStudentPhoneGroups = 'أدخل رقم الهاتف المتصل بحساب الطالب';
   static const String kSentRequestNowGroups = 'أرسل الطلب الأن';
   static const String kORGroups = 'أو';
   static const String kScanButtonTextGroups = 'كود (QR) مسح ال';
@@ -164,9 +153,10 @@ class AppStrings {
   static const String kTestSolvedGroups = 'تم حل الامتحان من قبل';
   static const String kSolvePercentageGroups = 'نسبة حل الأمتحان ';
   static const String kSolvePercentageNumberGroups = '88%';
-  static const String kFailedPercentageGroups = 'نسبة الرسوب';
-  static const String kSucceededPercentageGroups = 'نسبة النجاح';
+  static const String kFailedPercentageGroups = 'نسبة الرسوب •';
+  static const String kSucceededPercentageGroups = 'نسبة النجاح •';
   static const String kSucceededNumberGroups = '12 طالب ناجح من 20';
+  static const String kFailedNumberGroups = '12 طالب راسب من 20';
   static const String kExamsSentToGroupGroups = 'الامتحانات المرسلة '
       'الى المجموعة';
   static const String kExamsSentBlackTextGroups = 'حكم محمد على فى مصر';
@@ -212,10 +202,8 @@ class AppStrings {
   static const String kExamGradesGroups = 'درجات الأمتحانات';
   static const String kResultGroups = 'النتيجة';
   static const String kActualResultGroups = '100/30';
-  static const String kTransitionalElementsGroups =
-      'اختبار: العناصر الانتقالية';
-  static const String kHintTextStatisticsGroups =
-      'الأحياء , الباب الأول , الفصل الثانى';
+  static const String kTransitionalElementsGroups = 'اختبار: العناصر الانتقالية';
+  static const String kHintTextStatisticsGroups = 'الأحياء , الباب الأول , الفصل الثانى';
   static const String kExamsNotSolvedGroups = 'امتحانات لم تحل';
   static const String kDigestiveGroups = ' الجهاز الهضمى';
   static const String kExamsSolvedGroups = 'امتحانات تم حلها';
@@ -237,8 +225,7 @@ class AppStrings {
   static const String kStudentSignToClassButtonGroups = 'تسجيل حضور';
   static const String kBackToGroupGroups = 'العودة الى المجموعة';
   static const String kMainRemoveStudentGroups = 'تم حذف الطالب';
-  static const String kHintRemoveStudentGroups =
-      'تم حذف الطالب “كريم عاطف\nصالح ” من المجموعة';
+  static const String kHintRemoveStudentGroups = 'تم حذف الطالب “كريم عاطف\nصالح ” من المجموعة';
   static const String kButtonRemoveStudentGroups = 'العودة الى المجموعة';
 
 ///////////////////////////////Teachers/////////////////////
@@ -282,11 +269,9 @@ class AppStrings {
   static const String kRemoveAccountCommon = 'حذف  الحساب';
   static const String kAccountSettingsCommon = 'إعدادات الحساب';
   static const String kInviteFriendsCommon = 'أدع أصدقائك';
-  static const String kInviteFriendsMainTextCommon =
-      'دعوة الأصدقاء لزيادة النقاط';
+  static const String kInviteFriendsMainTextCommon = 'دعوة الأصدقاء لزيادة النقاط';
   static const String kFirstUnderMainTextCommon = 'هذا النص هو مثال لنص •';
-  static const String kSecondUnderMainTextCommon =
-      'المساحة، لقد تم توليد هذا النص •';
+  static const String kSecondUnderMainTextCommon = 'المساحة، لقد تم توليد هذا النص •';
   static const String kThirdUnderMainTextCommon = 'من مولد النص العربى •';
   static const String kCodeCommon = 'SDWQGSCZWE';
   static const String kCopyCodeCommon = 'نسخ الكود';
@@ -366,19 +351,16 @@ class AppStrings {
   static const String kAddNewNumberButtonProfileEditing = 'اضافة الرقم';
   static const String kAddNewNumberDoneMainProfileEditing = 'تم اضافة رقم هاتف '
       'جديد';
-  static const String kAddNewNumberDoneHintProfileEditing =
-      'تم اضافة المزيد من '
+  static const String kAddNewNumberDoneHintProfileEditing = 'تم اضافة المزيد من '
       'الارقام و طرق التواصل مع المدرس';
   static const String kStillEditProfileEditing = 'استكمال تعديل الحساب';
 
   ///////////////////// Sin Up ////////////////////////////////
   static const String kAccountRegistrationSignUp = 'تسجيل حساب';
   static const String kAccountTypeSignUp = 'نوع الحساب';
-  static const String kChooseAccountTypeSignUp =
-      'قم بإختيار نوع الحساب المراد إنشاءه';
+  static const String kChooseAccountTypeSignUp = 'قم بإختيار نوع الحساب المراد إنشاءه';
   static const String kTeacherAccountSignUp = 'حساب المدرس';
-  static const String kAccountCapabilitiesSignUp =
-      'إظهار احد اهم امكانيات الحساب';
+  static const String kAccountCapabilitiesSignUp = 'إظهار احد اهم امكانيات الحساب';
   static const String kAssistantAccountSignUp = 'حساب المساعد';
   static const String kHaveAccountSignUp = 'لديك حساب بالفعل ؟';
   static const String kLoginSignUp = 'تسجيل دخول';
@@ -425,8 +407,7 @@ class AppStrings {
   static const String kActualRemoveSheet = 'حذف';
   static const String kBackRemoveSheet = 'تراجع';
   static const String kMainLogOutSheet = 'تسجيل خروج';
-  static const String kHintLogOutSheet =
-      'هل انت متأكد انك تريد الخروج من الحساب '
+  static const String kHintLogOutSheet = 'هل انت متأكد انك تريد الخروج من الحساب '
       ' ؟';
   static const String kActualLogOutSheet = 'خروج';
   static const String kBackLogOutSheet = 'تراجع';
@@ -491,8 +472,7 @@ class AppStrings {
       'الثانى';
   static const String kTrainingCreatedHome = 'تدريبات تم انشاؤها مسبقا';
   static const String kHistoryTitleHome = 'حكم محمد على فى مصر';
-  static const String kHistoryHintHome =
-      'مادة الدراسات - الباب الأول - الفصل الثانى - الدرس الأول';
+  static const String kHistoryHintHome = 'مادة الدراسات - الباب الأول - الفصل الثانى - الدرس الأول';
   static const String kEditHome = 'تعديل';
   static const String kRemoveHome = 'حذف';
   static const String kSendToGroupHome = 'ارسال للمجموعة';
@@ -518,9 +498,42 @@ class AppStrings {
   static const String kPhilosophyProfileEditingTeacher = 'الفلسفة';
   static const String kResetDataProfileEditingTeacher = 'إعادة تعيين بيانات '
       'الدخول';
-  static const String kChooseDataProfileEditingTeacher =
-      'اختر البيانات المراد تعديلها';
+  static const String kChooseDataProfileEditingTeacher = 'اختر البيانات المراد تعديلها';
   static const String kSaveDataProfileEditingTeacher = 'حفظ';
+
+  //////////////// Common Screen ///////////////
+
+  static const String kAppBarPointsProgram = 'برنامج النقاط';
+  static const String kMyPointsPointsProgram = 'نقاطى :';
+  static const String kActualMyPointsPointsProgram = '534 نقطة';
+  static const String kOneHundredPointsProgram = 'يمكنك استخدام 100 نقطة للخصم عند الشراء';
+  static const String kTwoHundredPointsProgram = 'يمكنك استخدام 200 نقطة للخصم '
+      'عند الشراء';
+  static const String kExchangePointsProgram = 'تبديل النقاط';
+  static const String kIncreasePointsProgram = 'ادعى اصدقائك لزيادة النقاط';
+  static const String kCodePointsProgram = 'كود دعوة الاصدقاء';
+  static const String kActualCopyPointsProgram = '4 7 3 6 2 5 4';
+  static const String kCopyPointsProgram = 'نسخ';
+  static const String kAddPointsDoneProgram = 'تمت اضافة نقاط بنجاح';
+  static const String kHintAddPointsDoneProgram =
+      'تم اضافة نقاط الى المحفظة يمكنك استخدامها\nعند الشراء';
+  static const String kBackAddPointsDoneProgram = 'الذهاب الى صفحة النقاط';
+  static const String kAppBarPurchases = 'المشتريات السابقة';
+  static const String kLaterPurchases = 'مؤخراً';
+  static const String kSaturdayPurchases = 'السبت';
+  static const String kDatePurchases = '2024/01/01';
+  static const String kActualPurchases = 'مادة الأحياء - الصف الأول الإعدادى  •';
+  static const String kPricePurchases = '170 ج . م';
+  static const String kDotsPurchases = ' ................................... ';
+  static const String kClassPurchases = 'الفصل الدراسى الأول';
+  static const String kRefPurchases = 'المرجع : 278252451332';
+  static const String kBillPurchases = 'رقم الفاتورة : 278252451332';
+  static const String kCreditCardPurchases = 'بطاقة إئتمان';
+  static const String kCostPurchases = 'المبلغ الأساسى : 135 جنيه مصرى';
+  static const String kDiscountPurchases = 'الخصم : 35 جنيه مصر';
+  static const String kTotalCostPurchases = 'السعر الكلى';
+  static const String kActualCostPurchases = '170';
+  static const String kEGPurchases = 'ج.م';
 
 //////////////// Profile Editing Shared ///////////////
   static const String kMainResetProfileEditingShared = 'إعادة التعيين';
@@ -528,11 +541,23 @@ class AppStrings {
       'المرور الجديدة.\nكلمة المرور الجديدة يجب أن تكون مختلفة عن القديمة';
   static const String kOldPassProfileEditingShared = 'كلمة المرور القديمة';
   static const String kNewPassProfileEditingShared = 'كلمة المرور الجديدة';
-  static const String kConfirmNewPassProfileEditingShared =
-      'تأكيد كلمة المرور الجديدة';
+  static const String kConfirmNewPassProfileEditingShared = 'تأكيد كلمة المرور الجديدة';
   static const String kSaveProfileEditingShared = 'تعيين';
   static const String kBackToProfileProfileEditingShared = 'الرجوع الى الملف '
       'الشخصى';
+
+  ///////    Groups Teacher /////////
+  static const String kAddPhoneOrEmailGroupsTeacher = 'أدخل البريد الإلكترونى أو الهاتف الخاص '
+      'بالطالب '
+      'لإرسال '
+      'طلب الإضافة الأن';
+  static const String kActualAddPhoneOrEmailGroupsTeacher = 'البريد الإلكترونى / رقم الهاتف';
+  static const String kSendToAssistantGroupsTeacher = 'ارسال للمساعد';
+  static const String kCostGroupsTeacher = 'التكلفة';
+  static const String kActualCostGroupsTeacher = '170';
+  static const String kEGGroupsTeacher = 'ج.م';
+  static const String kPurchaseGroupsTeacher = 'تم شراء مادة الاحياء';
+  static const String kDatePurchaseGroupsTeacher = ' تاريخ الشراء : 12 اكتوبر 2024';
 
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';

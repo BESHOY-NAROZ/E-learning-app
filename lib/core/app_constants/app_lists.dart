@@ -3,8 +3,9 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/common_fi
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/groups_students/students_groups_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/menu_mainscreen/menu_mainscreen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/home_mainscreen/home_mainscreen_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens/menu_mainscreen/menu_mainscreen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/notifications_teacher/notifications_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/home_mainscreen/home_mainscreen_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/menu_mainscreen/menu_mainscreen.dart';
 import 'package:flutter/material.dart';
 
 import 'app_colors.dart';
@@ -47,7 +48,7 @@ class AppLists {
 
   static List<Widget> myTeacherScreens = [
     const MenuMainScreenTeacher(),
-    const Notifications(),
+    const NotificationsTeacher(),
     const StudentGroups(),
     const HomeMainScreenTeacher(),
   ];

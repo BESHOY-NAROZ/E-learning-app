@@ -1,15 +1,17 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
-import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class MainButtonGrey extends StatelessWidget {
-  final void Function() ? onPressed;
-  final String  ? buttonName;
+  final void Function()? onPressed;
+  final String? buttonName;
+  final Color? color;
 
   const MainButtonGrey({
-    super.key, this.onPressed, this.buttonName,
+    super.key,
+    this.onPressed,
+    this.buttonName,
+    this.color,
   });
 
   @override
@@ -24,14 +26,14 @@ class MainButtonGrey extends StatelessWidget {
           color: AppColors.kMainScreenNewVersionButton,
           shape: const RoundedRectangleBorder(),
           onPressed: onPressed,
-          child:  Text(buttonName!,
-            style: const TextStyle(
+          child: Text(
+            buttonName!,
+            style: TextStyle(
                 fontFamily: 'Almarai',
-                color: AppColors.kMainScreenNewVersionButtonText,
+                color: color ?? AppColors.kMainScreenNewVersionButtonText,
                 fontWeight: FontWeight.w700,
                 fontSize: 16),
-          )
-      ),
+          )),
     );
   }
 }

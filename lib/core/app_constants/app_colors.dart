@@ -16,11 +16,9 @@ class AppColors {
   static const Color kLoginOr = Color(0xff000000);
   static const Color kLoginLinear = Color(0xffF2F3FA);
   static const Color kLoginWays = Color(0xff0F6EAA);
-  static const Color kForgetPasswordToggleSelectedButtonColor =
-      Color(0xff4A88C5);
+  static const Color kForgetPasswordToggleSelectedButtonColor = Color(0xff4A88C5);
   static const Color kForgetPasswordToggleButtonColor = Color(0xffF2F3FA);
-  static const Color kForgetPasswordToggleSelectedButtonText =
-      Color(0xffFFFFFF);
+  static const Color kForgetPasswordToggleSelectedButtonText = Color(0xffFFFFFF);
   static const Color kForgetPasswordToggleButtonText = Color(0xff868E96);
   static const Color kForgetPasswordMainText = Color(0xff4A88C5);
   static const Color kForgetPasswordHintBottomView = Color(0xff868E96);
@@ -48,10 +46,8 @@ class AppColors {
   static const Color kBottomContainerMainScreenHome = Color(0xFFEDEEF6);
   static const Color kBottomAppBarMainScreenHome = Color(0xffFFFFFF);
 
-  static const Color kBottomNavigationBarUnSelectedMainScreenHome =
-      Color(0xFFCED4DA);
-  static const Color kBottomNavigationBarSelectedMainScreenHome =
-      Color(0xFF495057);
+  static const Color kBottomNavigationBarUnSelectedMainScreenHome = Color(0xFFCED4DA);
+  static const Color kBottomNavigationBarSelectedMainScreenHome = Color(0xFF495057);
   static const Color kBottomBottomListHintMainScreenHome = Color(0xFF808080);
   static const Color kBottomBottomListUsersMainScreenHome = Color(0xff0F6EAA);
   static const Color kContainerMainScreenMenu = Color(0xFFF2F3FA);
@@ -108,4 +104,8 @@ class AppColors {
   static const Color kMainTextRed = Color(0xFFDC3434);
   static const Color kMainGery96 = Color(0xFF868E96);
   static const Color kMainContainer = Color(0xFFF2F3FA);
+  static const Color kMainGery6E = Color(0xFF62686E);
+  static const Color kMainGery81 = Color(0xFF818181);
+  static const Color kMainGeryD9 = Color(0xFFD9D9D9);
+  static const Color kMainGery8D = Color(0xFFADB5BD);
 }

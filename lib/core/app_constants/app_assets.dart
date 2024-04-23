@@ -58,6 +58,9 @@ class AppAssets {
   static const String kOrders = 'assets/images/Orders.png';
   static const String kDynamics = 'assets/images/Dynamics.png';
   static const String kPhilosophy = 'assets/images/Philosophy.png';
+  static const String kStar = 'assets/images/Star.png';
+  static const String kGift = 'assets/images/Gift.png';
+  static const String kShake = 'assets/images/Shake.png';
 
   ///// Lottie
   static const String kCorrectLottie = 'assets/lottie_files/Correct.json';
