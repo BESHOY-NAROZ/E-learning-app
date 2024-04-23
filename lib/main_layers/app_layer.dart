@@ -1,6 +1,6 @@
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/my_home/my_home_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/log_in/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppHome extends StatelessWidget {
@@ -12,6 +12,6 @@ class AppHome extends StatelessWidget {
     return const MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesGenerator.getRoute,
-        home: SafeArea(child: MyHome()));
+        home: SafeArea(child: LoginScreen()));
   }
 }
