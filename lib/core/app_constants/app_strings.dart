@@ -559,6 +559,61 @@ class AppStrings {
   static const String kPurchaseGroupsTeacher = 'تم شراء مادة الاحياء';
   static const String kDatePurchaseGroupsTeacher = ' تاريخ الشراء : 12 اكتوبر 2024';
 
+  //////////////// Exams Teacher ///////////////////////
+  static const String kExamsCreatedExams = 'امتحانات تم انشاؤها';
+  static const String kEditExams = 'تعديل';
+  static const String kDeleteExams = 'حذف';
+  static const String kSentExams = 'ارسال للمجموعة';
+  static const String kSentExamsExams = 'ارسال الامتحان';
+  static const String kSelectGroupExams = 'اختيار المجموعات';
+  static const String kChemistryGroupExams = 'مجموعة مادة الكيمياء';
+  static const String kClassExams = 'طلاب الصف الثالث الثانوى';
+  static const String kSentButtonExams = 'ارسال';
+  static const String kSentDoneExams = 'تم إرسال الامتحان بنجاح';
+  static const String kSentDoneHintExams = 'تم إرسال الامتحان الى مجموعة ( أ ) و مجموعة ( ب )';
+  static const String kBackToExamExams = 'الذهاب الى الامتحان';
+  static const String kExamsSolvedExams = 'امتحانات محلولة';
+  static const String kMainExamsSolvedExams = 'الامتحانات تم حلها من قبل الطلاب';
+  static const String kExamsCorrectedExams = 'امتحانات  تم تصحيحها';
+  static const String kExamsNotCorrectedExams = 'امتحانات  لم يتم تصحيحها';
+  static const String kOpenExams = 'فتح';
+  static const String kSendToAssiExams = 'ارسال للمساعد';
+  static const String kSendExams = 'ارسال الامتحان';
+  static const String kMainSendExamsExams = 'إرسال الامتحان الى  المساعد الأن';
+  static const String kEnterWaysExams = 'أدخل البريد الإلكترونى أو الهاتف الخاص بالمساعد لإرسال '
+      'الامتحان';
+  static const String kActualEnterWaysExams = 'البريد الإلكترونى / رقم الهاتف';
+  static const String kSendExamNowExams = 'أرسال الامتحان الأن';
+  static const String kSendExamQRExams = 'مسح ال ( QR )  المتصل بحساب المساعد';
+  static const String kSendExamDoneExams = 'تم إرسال الامتحان';
+  static const String kHintSendExamDoneExams = 'تم إرسال الامتحان اإلى المدرس المصحح\n“ عاطف سمير '
+      '“ ';
+  static const String kButtonSendExamDoneExams = 'الذهااب الى الامتحان';
+  static const String kPhilosophyTestExams = 'إختبار الفلسفة';
+  static const String kTestAddressExams = 'عنوان الإختبار';
+  static const String kActualTestAddressExams = 'اللغة العربية >> الباب الأول >> الدرس الأول';
+  static const String kRemainingTimeExams = 'الوقت المتبقى';
+  static const String kActualRemainingTimeExams = '20:00';
+  static const String kMandatoryQExams = 'الاسئلة الاجبارية';
+  static const String kFirstQExams = 'السؤال الاول : اختر الاجابة الصحيحة';
+  static const String kActualFirstQExams =
+      'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.';
+  static const String kFirstChoiceExams = 'أسيوط .أ';
+  static const String kSecondChoiceExams = 'القاهرة .ب';
+  static const String kThirdChoiceExams = 'الفيوم .ج';
+  static const String kEditQExams = 'تعديل السؤال';
+  static const String kDeleteQExams = 'مسح السؤال';
+  static const String kShowAnswerExams = 'اظهار الاجابة';
+  static const String kAnswerVideoExams = 'فيديو الاجابة';
+  static const String kSolutionIdeaExams = 'فكرة الحل';
+  static const String kSolutionWayExams = 'طريقة الحل';
+  static const String kPreviousQExams = 'السؤال السابق';
+  static const String kNextQExams = 'السؤال التالى';
+  static const String kArrangeQsExams = 'اعادة ترتيب االاسئلة';
+  static const String kAddQExams = 'اضافة سؤال';
+
+// static const String kOpenExams = 'فتح';
+
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';

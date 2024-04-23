@@ -9,8 +9,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class AddNewNumberDone extends StatelessWidget {
-  const AddNewNumberDone({Key? key}) : super(key: key);
+class SentExamDoneTeacher extends StatelessWidget {
+  const SentExamDoneTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,19 +23,20 @@ class AddNewNumberDone extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CloseSign(),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
               SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 112)),
-              SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 154),
-                  width: AppDimensions.getDimensions(requiredWidth: 154),
-                  child: Lottie.asset(AppAssets.kBlueLike,
-                  ),),
+                height: AppDimensions.getDimensions(requiredHeight: 154),
+                width: AppDimensions.getDimensions(requiredWidth: 154),
+                child: Lottie.asset(
+                  AppAssets.kBlueLike,
+                ),
+              ),
               const MainTextBlue(
-                myText: AppStrings.kAddNewNumberDoneMainProfileEditing,
+                myText: AppStrings.kSentDoneExams,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
               const Text(
-                AppStrings.kAddNewNumberDoneHintProfileEditing,
+                AppStrings.kSentDoneHintExams,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
                 style: TextStyle(
@@ -44,10 +45,9 @@ class AddNewNumberDone extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     fontSize: 14),
               ),
-              SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 280)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
               MainButtonRed(
-                buttonName: AppStrings.kStillEditProfileEditing,
+                buttonName: AppStrings.kBackToExamExams,
                 onPressed: () {
                   Navigator.pushNamed(context, RoutesManager.profileEditing);
                 },

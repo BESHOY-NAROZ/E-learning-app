@@ -144,7 +144,7 @@ class MenuMainScreenTeacher extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, RoutesManager.teachers);
+                        Navigator.pushNamed(context, RoutesManager.examsTeacher);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kCreatedExamsHome,
@@ -156,7 +156,7 @@ class MenuMainScreenTeacher extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, RoutesManager.studentsGroups);
+                        Navigator.pushNamed(context, RoutesManager.correctionExamsTeacher);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kCorrectExamsHome,

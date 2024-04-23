@@ -73,6 +73,13 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_file
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/purchases_teacher/purchases_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/add_opinion_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/your_opinion_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/correction%20_exams_teacher/correction%20_exams_screen_teacher.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/send_to_assistant_teacher/adding_assistant_by_qr_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/send_to_assistant_teacher/adding_assistant_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/send_to_assistant_teacher/send_to_assistant_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/exams_teacher/exams_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/sent_exams_to_groups_teacher/select_group_teacher/select_group_screen_teacher.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/sent_exams_to_groups_teacher/select_group_teacher/sent_exam_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/add_new_student_teacher/add_new_student_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/add_new_student_teacher/add_new_student_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/add_new_student_teacher/add_new_student_screen.dart';
@@ -90,12 +97,16 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teac
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/students_profile_teacher/student_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/qr_mainscreen/qr_mainscreen_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/profile_editing_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/add_new_number_teacher/add_new_number_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/add_new_number_teacher/add_new_number_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/profile_editing_teacher/profile_editing_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/set_email_profile_editing_teacher/set_email_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/set_email_profile_editing_teacher/set_email_now.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/set_password_profile_editing/set_password_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/set_password_profile_editing/set_password_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../main_layers/presentaion_layer/teacher/exams_teacher/correction _exams_teacher/send_to_assistant_teacher/after_adding_screen_teacher.dart';
 
 class RoutesManager {
   static const String loginScreen = "/";
@@ -196,6 +207,16 @@ class RoutesManager {
   static const String sentExamsTeacher = "/sentExamsTeacher";
   static const String studentProfileTeacher = "/studentProfileTeacher";
   static const String studentStatisticsTeacher = "/studentStatisticsTeacher";
+  static const String addNewNumberTeacher = "/addNewNumberTeacher";
+  static const String addNewNumberDoneTeacher = "/addNewNumberDoneTeacher";
+  static const String selectGroupTeacher = "/selectGroupTeacher";
+  static const String sentExamDoneTeacher = "/sentExamDoneTeacher";
+  static const String afterAddingAssistantTeacher = "/afterAddingAssistantTeacher";
+  static const String addingAssistantDoneTeacher = "/addingAssistantDoneTeacher";
+  static const String addingAssistantByQRTeacher = "/addingAssistantByQRTeacher";
+  static const String sendToAssistantTeacher = "/sendToAssistantTeacher";
+  static const String correctionExamsTeacher = "/correctionExamsTeacher";
+  static const String examsTeacher = "/examsTeacher";
 }
 
 class RoutesGenerator {
@@ -394,6 +415,26 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const StudentProfileTeacher());
       case RoutesManager.studentStatisticsTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const StudentStatisticsTeacher());
+      case RoutesManager.addNewNumberTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewNumberTeacher());
+      case RoutesManager.addNewNumberDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewNumberDoneTeacher());
+      case RoutesManager.selectGroupTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SelectGroupTeacher());
+      case RoutesManager.sentExamDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SentExamDoneTeacher());
+      case RoutesManager.afterAddingAssistantTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AfterAddingAssistantTeacher());
+      case RoutesManager.addingAssistantDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddingAssistantDoneTeacher());
+      case RoutesManager.addingAssistantByQRTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddingAssistantByQRTeacher());
+      case RoutesManager.sendToAssistantTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SendToAssistantTeacher());
+      case RoutesManager.correctionExamsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const CorrectionExamsTeacher());
+      case RoutesManager.examsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ExamsTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:
