@@ -7,8 +7,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/sh
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
-class AfterAddingAssistantTeacher extends StatelessWidget {
-  const AfterAddingAssistantTeacher({Key? key}) : super(key: key);
+class AfterAddingNewAssistantOfTeacher extends StatelessWidget {
+  const AfterAddingNewAssistantOfTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class AfterAddingAssistantTeacher extends StatelessWidget {
           const MainAppBar(
             designHeight: 1006,
             designWidth: 360,
-            myTitle: AppStrings.kSendExams,
+            myTitle: AppStrings.kAddNewAssistantAssistantOfTeacher,
           ),
           Padding(
             padding:
@@ -32,7 +32,7 @@ class AfterAddingAssistantTeacher extends StatelessWidget {
                   height: AppDimensions.getDimensions(requiredHeight: 20),
                 ),
                 const MainTextGroups(
-                  myText: AppStrings.kMainSendExamsExams,
+                  myText: AppStrings.kAddNewAssistantNowAssistantOfTeacher,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 90),
@@ -101,10 +101,10 @@ class AfterAddingAssistantTeacher extends StatelessWidget {
                               shape: const RoundedRectangleBorder(),
                               onPressed: () {
                                 Navigator.pushNamed(
-                                    context, RoutesManager.addingAssistantDoneTeacher);
+                                    context, RoutesManager.addNewAssistantDoneTeacher);
                               },
                               child: const Text(
-                                AppStrings.kSendExamNowExams,
+                                AppStrings.kAddButtonAssistantOfTeacher,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
                                     color: AppColors.kMainTextWhite,

@@ -45,7 +45,7 @@ class SentExamDoneTeacher extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     fontSize: 14),
               ),
-              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(
                 buttonName: AppStrings.kBackToExamExams,
                 onPressed: () {

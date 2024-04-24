@@ -641,6 +641,23 @@ class AppStrings {
   static const String kCreateGroupsAssistantOfTeacher = 'عمل مجموعات';
   static const String kTakeAttendanceAssistantOfTeacher = 'اخد الغياب و الحضور';
   static const String kSendNotificationsAssistantOfTeacher = 'ارسال اشعارات لاولياء الامور';
+  static const String kAddNewAssistantAssistantOfTeacher = 'اضافة مساعد جديد';
+  static const String kAddNewAssistantNowAssistantOfTeacher = 'إضافة مساعد الأن';
+  static const String kEnterWaysAssistantOfTeacher = 'أدخل البريد الإلكترونى أو الهاتف الخاص '
+      'بالمساعد لإرسال طلب الإضافة الأن';
+  static const String kAddButtonAssistantOfTeacher = 'اضافة';
+  static const String kAddingDoneAssistantOfTeacher = 'تم إرسال طلب إضافة مساعد إلى “كريم عاطف'
+      '\nصالح ”';
+  static const String kRemoveAssistantOfTeacher = 'تم إلغاء طلب إضافة مساعد إلى “كريم عاطف\nصالح'
+      ' ”';
+  static const String kBackToAssistantsOfTeacher = 'الذهاب الى المساعدين';
+  static const String kScanAssistantOfTeacher = 'مسح ال ( QR )  المتصل بحساب المساعد';
+  static const String kSentApprovalsAssistantOfTeacher = 'الموافقات المرسلة';
+  static const String kSentApprovalsMainAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';
+  static const String kSentApprovalsHintAssistantOfTeacher = 'الاجزاء التى قام المدرس بشرحها';
+  static const String kApprovalsNameHintAssistantOfTeacher = 'وفيق رمزى';
+  static const String kActualApprovalsHintAssistantOfTeacher =
+      'الموافقة على قبول طالب فى مجموعة ( أ ) ';
 
 // static const String kDeleteAssistantHintOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
   // static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';

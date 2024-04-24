@@ -1,6 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_add_small_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
@@ -52,32 +53,39 @@ class AssistantOfTeacher extends StatelessWidget {
                       child: MainAddSmallButton(
                         myText: AppStrings.kAddAssistantAssistantOfTeacher,
                         requiredWidth: AppDimensions.getDimensions(requiredWidth: 120),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, RoutesManager.addNewAssistantOfTeacher);
+                        },
                       ),
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 24),
                     ),
-                    Container(
-                      height: AppDimensions.getDimensions(requiredHeight: 45),
-                      width: AppDimensions.getDimensions(requiredWidth: 320),
-                      padding: const EdgeInsets.symmetric(horizontal: 15),
-                      decoration: BoxDecoration(
-                          color: AppColors.kMainGeryFA, borderRadius: BorderRadius.circular(10)),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.arrow_left_rounded,
-                            size: AppDimensions.getDimensions(requiredWidth: 25),
-                          ),
-                          const Spacer(),
-                          const MainTextBlack(
-                            myText: AppStrings.kAcceptedAssistantOfTeacher,
-                            fontSize: 16,
-                          )
-                        ],
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.sentApprovalsTeacher);
+                      },
+                      child: Container(
+                        height: AppDimensions.getDimensions(requiredHeight: 45),
+                        width: AppDimensions.getDimensions(requiredWidth: 320),
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        decoration: BoxDecoration(
+                            color: AppColors.kMainGeryFA, borderRadius: BorderRadius.circular(10)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.arrow_left_rounded,
+                              size: AppDimensions.getDimensions(requiredWidth: 25),
+                            ),
+                            const Spacer(),
+                            const MainTextBlack(
+                              myText: AppStrings.kAcceptedAssistantOfTeacher,
+                              fontSize: 16,
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],

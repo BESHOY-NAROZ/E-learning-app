@@ -64,9 +64,15 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_by_qr_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/after_adding_new_assistant_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/remove_order_joining_assistant_of_teacher.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/assistant_of_teacher/assistant_of_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/assistant_of_teacher/remove_assistant_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/every_assistant_specific_details/every_assistant_specific_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/sent_approvals_teacher/sent_approvals_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/conatct_us_teacher/contact_us_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/general%20_settings_teacher/general%20_settings_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/help_teacher/help_screen.dart';
@@ -225,6 +231,13 @@ class RoutesManager {
   static const String assistantOfTeacher = "/assistantOfTeacher";
   static const String removeAssistantOfTeacherDone = "/removeAssistantOfTeacherDone";
   static const String everyAssistantSpecificDetails = "/everyAssistantSpecificDetails";
+  static const String afterAddingNewAssistantOfTeacher = "/afterAddingNewAssistantOfTeacher";
+  static const String addNewAssistantDoneTeacher = "/addNewAssistantDoneTeacher";
+  static const String removeOrderAssistantJoiningDoneTeacher =
+      "/removeOrderAssistantJoiningDoneTeacher";
+  static const String addNewAssistantByQRTeacher = "/addNewAssistantByQRTeacher";
+  static const String sentApprovalsTeacher = "/sentApprovalsTeacher";
+  static const String addNewAssistantOfTeacher = "/addNewAssistantOfTeacher";
 }
 
 class RoutesGenerator {
@@ -451,6 +464,20 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const RemoveAssistantOfTeacherDone());
       case RoutesManager.everyAssistantSpecificDetails:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const EveryAssistantSpecificDetails());
+      case RoutesManager.afterAddingNewAssistantOfTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AfterAddingNewAssistantOfTeacher());
+      case RoutesManager.addNewAssistantDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewAssistantDoneTeacher());
+      case RoutesManager.removeOrderAssistantJoiningDoneTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const RemoveOrderAssistantJoiningDoneTeacher());
+      case RoutesManager.addNewAssistantByQRTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewAssistantByQRTeacher());
+      case RoutesManager.sentApprovalsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SentApprovalsTeacher());
+      case RoutesManager.addNewAssistantOfTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewAssistantOfTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:
