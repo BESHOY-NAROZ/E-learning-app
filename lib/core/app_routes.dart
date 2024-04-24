@@ -73,6 +73,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_file
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/purchases_teacher/purchases_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/add_opinion_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/your_opinion_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/actual_exam_teacher/actual_exam_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/correction%20_exams_teacher/correction%20_exams_screen_teacher.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/send_to_assistant_teacher/adding_assistant_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/send_to_assistant_teacher/adding_assistant_done.dart';
@@ -217,6 +218,7 @@ class RoutesManager {
   static const String sendToAssistantTeacher = "/sendToAssistantTeacher";
   static const String correctionExamsTeacher = "/correctionExamsTeacher";
   static const String examsTeacher = "/examsTeacher";
+  static const String actualExamTeacher = "/actualExamTeacher";
 }
 
 class RoutesGenerator {
@@ -435,6 +437,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const CorrectionExamsTeacher());
       case RoutesManager.examsTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ExamsTeacher());
+      case RoutesManager.actualExamTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ActualExamTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

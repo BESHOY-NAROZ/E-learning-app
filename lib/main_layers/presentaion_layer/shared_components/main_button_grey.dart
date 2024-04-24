@@ -7,6 +7,7 @@ class MainButtonGrey extends StatelessWidget {
   final String? buttonName;
   final Color? color;
 
+  //   Main:FA   ,Text: 57   ,16   ,700
   const MainButtonGrey({
     super.key,
     this.onPressed,

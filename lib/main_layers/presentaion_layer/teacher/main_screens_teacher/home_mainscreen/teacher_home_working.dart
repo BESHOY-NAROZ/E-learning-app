@@ -24,11 +24,9 @@ class TeacherHomeWorking extends StatelessWidget {
       width: AppDimensions.getDimensions(
         requiredHeight: 91,
       ),
-      padding: EdgeInsets.symmetric(
-          horizontal: AppDimensions.getDimensions(requiredWidth: 5)),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          color: AppColors.kMainContainer),
+      padding: EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 5)),
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,

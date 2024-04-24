@@ -49,7 +49,7 @@ class SentExamDoneTeacher extends StatelessWidget {
               MainButtonRed(
                 buttonName: AppStrings.kBackToExamExams,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.profileEditing);
+                  Navigator.pushNamed(context, RoutesManager.actualExamTeacher);
                 },
               ),
             ],

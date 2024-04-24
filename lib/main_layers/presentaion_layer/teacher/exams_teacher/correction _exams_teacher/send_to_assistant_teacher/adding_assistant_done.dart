@@ -47,7 +47,7 @@ class AddingAssistantDoneTeacher extends StatelessWidget {
             MainButtonRed(
               buttonName: AppStrings.kButtonSendExamDoneExams,
               onPressed: () {
-                Navigator.pushNamed(context, RoutesManager.groupDetails);
+                Navigator.pushNamed(context, RoutesManager.actualExamTeacher);
               },
             ),
           ],

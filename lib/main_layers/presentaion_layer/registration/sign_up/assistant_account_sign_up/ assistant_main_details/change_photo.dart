@@ -22,8 +22,7 @@ class ChangePhotoSignUp extends StatelessWidget {
             width: AppDimensions.getDimensions(requiredWidth: 150),
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                border: Border.all(
-                    color: AppColors.kBorderProfileEditing, width: 3)),
+                border: Border.all(color: AppColors.kBorderProfileEditing, width: 3)),
             child: Image.asset(AppAssets.kStudentGroupsScreen),
           ),
           Positioned(
@@ -42,10 +41,8 @@ class ChangePhotoSignUp extends StatelessWidget {
                       context: context,
                       builder: (context) {
                         return Container(
-                          width:
-                              AppDimensions.getDimensions(requiredWidth: 360),
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 187),
+                          width: AppDimensions.getDimensions(requiredWidth: 360),
+                          height: AppDimensions.getDimensions(requiredHeight: 187),
                           clipBehavior: Clip.antiAlias,
                           decoration: BoxDecoration(
                               color: AppColors.kMainTextWhite,
@@ -54,22 +51,18 @@ class ChangePhotoSignUp extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Container(
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 68),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 5),
+                                width: AppDimensions.getDimensions(requiredWidth: 68),
+                                height: AppDimensions.getDimensions(requiredHeight: 5),
                                 decoration: BoxDecoration(
                                     color: AppColors.kLineBottomSheet,
                                     borderRadius: BorderRadius.circular(10)),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 18),
+                                height: AppDimensions.getDimensions(requiredHeight: 18),
                               ),
                               Padding(
                                 padding: EdgeInsets.symmetric(
-                                    horizontal: AppDimensions.getDimensions(
-                                        requiredWidth: 20)),
+                                    horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
                                 child: const Align(
                                   alignment: Alignment.centerRight,
                                   child: MainTextBlue(
@@ -79,77 +72,60 @@ class ChangePhotoSignUp extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 12),
+                                height: AppDimensions.getDimensions(requiredHeight: 12),
                               ),
                               Container(
                                 width: AppDimensions.getDimensions(
                                   requiredWidth: 320,
                                 ),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 45),
+                                height: AppDimensions.getDimensions(requiredHeight: 45),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    color: AppColors.kMainContainer),
-                                child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      const MainTextGrey(
-                                        myText:
-                                            AppStrings.kTakePhotoBottomSheet,
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 12,
-                                      ),
-                                      SizedBox(
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 6),
-                                      ),
-                                      Image.asset(AppAssets.kCamera,
-                                          width: AppDimensions.getDimensions(
-                                              requiredWidth: 24),
-                                          height: AppDimensions.getDimensions(
-                                              requiredHeight: 24)),
-                                      SizedBox(
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 15),
-                                      )
-                                    ]),
+                                    color: AppColors.kMainGeryFA),
+                                child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+                                  const MainTextGrey(
+                                    myText: AppStrings.kTakePhotoBottomSheet,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 12,
+                                  ),
+                                  SizedBox(
+                                    width: AppDimensions.getDimensions(requiredWidth: 6),
+                                  ),
+                                  Image.asset(AppAssets.kCamera,
+                                      width: AppDimensions.getDimensions(requiredWidth: 24),
+                                      height: AppDimensions.getDimensions(requiredHeight: 24)),
+                                  SizedBox(
+                                    width: AppDimensions.getDimensions(requiredWidth: 15),
+                                  )
+                                ]),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 8),
+                                height: AppDimensions.getDimensions(requiredHeight: 8),
                               ),
                               Container(
                                 width: AppDimensions.getDimensions(
                                   requiredWidth: 320,
                                 ),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 45),
+                                height: AppDimensions.getDimensions(requiredHeight: 45),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    color: AppColors.kMainContainer),
-                                child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      const MainTextGrey(
-                                        myText: AppStrings.kFromGallerySheet,
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 12,
-                                      ),
-                                      SizedBox(
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 6),
-                                      ),
-                                      Image.asset(AppAssets.kUpload,
-                                          width: AppDimensions.getDimensions(
-                                              requiredWidth: 24),
-                                          height: AppDimensions.getDimensions(
-                                              requiredHeight: 24)),
-                                      SizedBox(
-                                        width: AppDimensions.getDimensions(
-                                            requiredWidth: 15),
-                                      )
-                                    ]),
+                                    color: AppColors.kMainGeryFA),
+                                child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+                                  const MainTextGrey(
+                                    myText: AppStrings.kFromGallerySheet,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 12,
+                                  ),
+                                  SizedBox(
+                                    width: AppDimensions.getDimensions(requiredWidth: 6),
+                                  ),
+                                  Image.asset(AppAssets.kUpload,
+                                      width: AppDimensions.getDimensions(requiredWidth: 24),
+                                      height: AppDimensions.getDimensions(requiredHeight: 24)),
+                                  SizedBox(
+                                    width: AppDimensions.getDimensions(requiredWidth: 15),
+                                  )
+                                ]),
                               ),
                             ],
                           ),

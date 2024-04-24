@@ -7,11 +7,13 @@ import 'package:flutter/material.dart';
 
 class AccountMainContainer extends StatelessWidget {
   const AccountMainContainer({
-    super.key, this.myAccount, this.myIcon,
+    super.key,
+    this.myAccount,
+    this.myIcon,
   });
 
-  final String ? myAccount;
-  final String ? myIcon;
+  final String? myAccount;
+  final String? myIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +22,10 @@ class AccountMainContainer extends StatelessWidget {
       child: Container(
         width: AppDimensions.getDimensions(requiredWidth: 315),
         height: AppDimensions.getDimensions(requiredHeight: 107),
-        decoration: BoxDecoration(
-            color: AppColors.kMainContainer,
-            borderRadius: BorderRadius.circular(8)),
+        decoration:
+            BoxDecoration(color: AppColors.kMainGeryFA, borderRadius: BorderRadius.circular(8)),
         child: Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: AppDimensions.getDimensions(requiredWidth: 15)),
+          padding: EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 15)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -72,8 +72,7 @@ class AccountMainContainer extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: AppColors.kCircleContainerSignUp,
                 ),
-                padding: EdgeInsets.all(
-                    AppDimensions.getDimensions(requiredHeight: 10)),
+                padding: EdgeInsets.all(AppDimensions.getDimensions(requiredHeight: 10)),
                 child: Image.asset(
                   myIcon!,
                 ),

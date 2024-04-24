@@ -103,10 +103,11 @@ class AppColors {
   static const Color kMainTextYellow = Color(0xFFF6CB5E);
   static const Color kMainTextRed = Color(0xFFDC3434);
   static const Color kMainGery96 = Color(0xFF868E96);
-  static const Color kMainContainer = Color(0xFFF2F3FA);
+  static const Color kMainGeryFA = Color(0xFFF2F3FA);
   static const Color kMainGery6E = Color(0xFF62686E);
   static const Color kMainGery81 = Color(0xFF818181);
   static const Color kMainGeryD9 = Color(0xFFD9D9D9);
   static const Color kMainGery8D = Color(0xFFADB5BD);
   static const Color kMainBlueAA = Color(0xff0F6EAA);
+  static const Color kMainBlueC4 = Color(0xFF4A88C4);
 }

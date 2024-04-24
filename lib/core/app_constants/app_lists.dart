@@ -52,4 +52,6 @@ class AppLists {
     const StudentGroups(),
     const HomeMainScreenTeacher(),
   ];
+
+  static List<int> timeSlot = [1, 2, 3];
 }

@@ -598,9 +598,12 @@ class AppStrings {
   static const String kFirstQExams = 'السؤال الاول : اختر الاجابة الصحيحة';
   static const String kActualFirstQExams =
       'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.';
-  static const String kFirstChoiceExams = 'أسيوط .أ';
-  static const String kSecondChoiceExams = 'القاهرة .ب';
-  static const String kThirdChoiceExams = 'الفيوم .ج';
+  static const String kFirstChoiceExams = 'أ.';
+  static const String kActualFirstChoiceExams = 'أسيوط';
+  static const String kSecondChoiceExams = 'ب.';
+  static const String kActualSecondChoiceExams = 'القاهرة';
+  static const String kThirdChoiceExams = 'ج.';
+  static const String kActualThirdChoiceExams = 'الفيوم';
   static const String kEditQExams = 'تعديل السؤال';
   static const String kDeleteQExams = 'مسح السؤال';
   static const String kShowAnswerExams = 'اظهار الاجابة';
@@ -611,6 +614,9 @@ class AppStrings {
   static const String kNextQExams = 'السؤال التالى';
   static const String kArrangeQsExams = 'اعادة ترتيب االاسئلة';
   static const String kAddQExams = 'اضافة سؤال';
+  static const String kBottomSheetMainExams = 'حذف الامتحان';
+  static const String kBottomSheetHintExams = 'هل انت متأكد انك تريد حذف الامتحان ؟';
+  static const String kBottomSheetToastExams = 'تم حذف الامتحان';
 
 // static const String kOpenExams = 'فتح';
 
