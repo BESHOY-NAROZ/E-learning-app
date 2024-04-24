@@ -168,7 +168,7 @@ class MenuMainScreenTeacher extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, RoutesManager.notificationsCommon);
+                        Navigator.pushNamed(context, RoutesManager.assistantOfTeacher);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kAssistantsHome,

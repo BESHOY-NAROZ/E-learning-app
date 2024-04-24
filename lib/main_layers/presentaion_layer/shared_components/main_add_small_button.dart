@@ -22,8 +22,7 @@ class MainAddSmallButton extends StatelessWidget {
 
     return Container(
         width: AppDimensions.getDimensions(requiredWidth: requiredWidth ?? 98),
-        height:
-            AppDimensions.getDimensions(requiredHeight: requiredHeight ?? 45),
+        height: AppDimensions.getDimensions(requiredHeight: requiredHeight ?? 45),
         padding: const EdgeInsets.all(0),
         decoration: BoxDecoration(
           color: AppColors.kSmallButtonMainScreenHome,
@@ -36,8 +35,9 @@ class MainAddSmallButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Icon(
+              Icon(
                 Icons.add_circle_outlined,
+                size: AppDimensions.getDimensions(requiredWidth: 18),
                 color: AppColors.kSmallButtonTextMainScreenHome,
               ),
               SizedBox(

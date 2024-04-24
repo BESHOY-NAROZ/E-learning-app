@@ -64,6 +64,9 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/assistant_of_teacher/assistant_of_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/assistant_of_teacher/remove_assistant_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/every_assistant_specific_details/every_assistant_specific_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/conatct_us_teacher/contact_us_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/general%20_settings_teacher/general%20_settings_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/help_teacher/help_screen.dart';
@@ -219,6 +222,9 @@ class RoutesManager {
   static const String correctionExamsTeacher = "/correctionExamsTeacher";
   static const String examsTeacher = "/examsTeacher";
   static const String actualExamTeacher = "/actualExamTeacher";
+  static const String assistantOfTeacher = "/assistantOfTeacher";
+  static const String removeAssistantOfTeacherDone = "/removeAssistantOfTeacherDone";
+  static const String everyAssistantSpecificDetails = "/everyAssistantSpecificDetails";
 }
 
 class RoutesGenerator {
@@ -439,6 +445,12 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ExamsTeacher());
       case RoutesManager.actualExamTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ActualExamTeacher());
+      case RoutesManager.assistantOfTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AssistantOfTeacher());
+      case RoutesManager.removeAssistantOfTeacherDone:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const RemoveAssistantOfTeacherDone());
+      case RoutesManager.everyAssistantSpecificDetails:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const EveryAssistantSpecificDetails());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

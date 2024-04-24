@@ -618,7 +618,32 @@ class AppStrings {
   static const String kBottomSheetHintExams = 'هل انت متأكد انك تريد حذف الامتحان ؟';
   static const String kBottomSheetToastExams = 'تم حذف الامتحان';
 
-// static const String kOpenExams = 'فتح';
+  /////////////////// Assistant Of Teacher //////////////////////
+  static const String kAssistantsOfTeacher = 'المساعدين';
+  static const String kAssistantNameAssistantOfTeacher = 'أحمد كامل';
+  static const String kAssistantEmailAssistantOfTeacher = 'ِAhmed23@gmail.com';
+  static const String kAssistantNumberAssistantOfTeacher = 'ِ012364595846';
+  static const String kAddAssistantAssistantOfTeacher = 'إضافة مساعد جديد';
+  static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';
+  static const String kDeleteAssistantOfTeacher = 'حذف مساعد';
+  static const String kDeleteMainAssistantOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
+  static const String kDeleteDoneMainAssistantOfTeacher = 'تم حذف المساعد';
+  static const String kDeleteDoneHintAssistantOfTeacher = 'تم حذف المساعد “ احمد خالد “ من قائمة '
+      'المساعدين';
+  static const String kBackToAssistantOfTeacher = 'العودة  الى المساعدين';
+  static const String kNameAssistantOfTeacher = 'مولر مجدى نمر';
+
+  static const String kEmailAssistantOfTeacher = 'البريد الالكترونى';
+  static const String kActualEmailAssistantOfTeacher = 'mollermagdy@gmail.com';
+  static const String kAssistantJobAssistantOfTeacher = 'وظائف المساعد';
+  static const String kAddStudentsAssistantOfTeacher = 'اضافة الطلاب';
+  static const String kRemoveStudentsAssistantOfTeacher = 'حذف الطلاب';
+  static const String kCreateGroupsAssistantOfTeacher = 'عمل مجموعات';
+  static const String kTakeAttendanceAssistantOfTeacher = 'اخد الغياب و الحضور';
+  static const String kSendNotificationsAssistantOfTeacher = 'ارسال اشعارات لاولياء الامور';
+
+// static const String kDeleteAssistantHintOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
+  // static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';
 
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';

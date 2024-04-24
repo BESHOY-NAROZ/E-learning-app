@@ -34,14 +34,14 @@ class StudentsGroupsListExams extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: Checkbox(
                 value: true,
-                side: BorderSide(
+                side: const BorderSide(
                   color: AppColors.kMainBlueAA,
                 ),
                 activeColor: AppColors.kMainBlueAA,
                 onChanged: (value) {},
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Padding(
               padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
               child: Column(
