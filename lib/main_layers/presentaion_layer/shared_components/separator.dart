@@ -5,8 +5,7 @@ import 'package:flutter/material.dart';
 class Separator extends StatelessWidget {
   final double? designHeight;
   final double? designWidth;
-  const Separator({Key? key, this.designHeight, this.designWidth})
-      : super(key: key);
+  const Separator({Key? key, this.designHeight, this.designWidth}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +19,9 @@ class Separator extends StatelessWidget {
       ),
       child: Container(
         width: AppDimensions.getDimensions(
-          requiredWidth: 328,
+          requiredWidth: designWidth ?? 328,
         ),
-        height: AppDimensions.getDimensions(requiredHeight: 3),
+        height: AppDimensions.getDimensions(requiredHeight: designHeight ?? 3),
         color: AppColors.kSplitterMainScreenHome,
       ),
     );

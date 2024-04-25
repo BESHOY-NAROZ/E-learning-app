@@ -3,39 +3,56 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormFiled extends StatelessWidget {
-  final Icon ? suffixIcon;
-  final Icon ? prefixIcon;
-  final String ? hintText;
-  final TextStyle ? hintStyle;
-  final bool ? obscureText;
-  final TextInputType ? keyboardType;
-  final String? Function(String?)?  validator;
-  final String? Function(String?)?  onChanged;
-  final TextEditingController ? controller;
-  final TextDirection ? textDirection;
-  final int ? maxLines;
-  final bool ? enabled;
-  final double ? height;
-  final TextAlign ? textAlign;
+  final Icon? suffixIcon;
+  final Icon? prefixIcon;
+  final String? hintText;
+  final TextStyle? hintStyle;
+  final bool? obscureText;
+  final TextInputType? keyboardType;
+  final String? Function(String?)? validator;
+  final String? Function(String?)? onChanged;
+  final TextEditingController? controller;
+  final TextDirection? textDirection;
+  final int? maxLines;
+  final bool? enabled;
+  final double? height;
+  final double? width;
+  final TextAlign? textAlign;
 
-
-
-  const CustomTextFormFiled({Key? key, this.suffixIcon, this.prefixIcon, this.hintText, this.hintStyle, this.obscureText, this.controller, this.validator, this.keyboardType, this.textDirection, this.enabled, this.onChanged, this.height, this.maxLines, this.textAlign}) : super(key: key);
+  const CustomTextFormFiled(
+      {Key? key,
+      this.suffixIcon,
+      this.prefixIcon,
+      this.hintText,
+      this.hintStyle,
+      this.obscureText,
+      this.controller,
+      this.validator,
+      this.keyboardType,
+      this.textDirection,
+      this.enabled,
+      this.onChanged,
+      this.height,
+      this.maxLines,
+      this.textAlign,
+      this.width})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
-    return  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-    height ?? 45),
-      width: AppDimensions.getDimensions(requiredWidth: 320),
-      child: TextFormField(textDirection: textDirection ?? TextDirection.ltr,
+    return SizedBox(
+      height: AppDimensions.getDimensions(requiredHeight: height ?? 45),
+      width: AppDimensions.getDimensions(requiredWidth: width ?? 320),
+      child: TextFormField(
+        textDirection: textDirection ?? TextDirection.ltr,
         onChanged: onChanged,
         controller: controller,
         validator: validator,
         keyboardType: keyboardType,
         obscureText: obscureText ?? false,
-        textAlign: textAlign??TextAlign.right,
+        textAlign: textAlign ?? TextAlign.right,
         maxLines: maxLines ?? 1,
         enableSuggestions: false,
         autocorrect: false,
@@ -45,20 +62,21 @@ class CustomTextFormFiled extends StatelessWidget {
           enabled: enabled ?? true,
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)
-          ),
+              borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           ),
           suffixIcon: suffixIcon,
           prefixIcon: prefixIcon,
           hintText: hintText,
-          hintStyle: hintStyle ?? const TextStyle(
-            fontWeight: FontWeight.w400,
-            color: AppColors.kFormFiledHint,
-            fontSize: 14,
-            fontFamily: 'Almarai',
-          ),      ),
+          hintStyle: hintStyle ??
+              const TextStyle(
+                fontWeight: FontWeight.w400,
+                color: AppColors.kFormFiledHint,
+                fontSize: 14,
+                fontFamily: 'Almarai',
+              ),
+        ),
       ),
     );
   }

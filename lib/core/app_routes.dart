@@ -82,6 +82,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_file
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/purchases_teacher/purchases_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/add_opinion_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/your_opinion_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_specific_subject_teacher/create_exam_specific_subject_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_teacher/create_exam_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/actual_exam_teacher/actual_exam_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/correction%20_exams_teacher/correction%20_exams_screen_teacher.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/correction%20_exams_teacher/send_to_assistant_teacher/adding_assistant_by_qr_screen.dart';
@@ -238,6 +240,8 @@ class RoutesManager {
   static const String addNewAssistantByQRTeacher = "/addNewAssistantByQRTeacher";
   static const String sentApprovalsTeacher = "/sentApprovalsTeacher";
   static const String addNewAssistantOfTeacher = "/addNewAssistantOfTeacher";
+  static const String createExamTeacher = "/createExamTeacher";
+  static const String createExamSpecificSubjectTeacher = "/createExamSpecificSubjectTeacher";
 }
 
 class RoutesGenerator {
@@ -478,6 +482,11 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SentApprovalsTeacher());
       case RoutesManager.addNewAssistantOfTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewAssistantOfTeacher());
+      case RoutesManager.createExamTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const CreateExamTeacher());
+      case RoutesManager.createExamSpecificSubjectTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const CreateExamSpecificSubjectTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

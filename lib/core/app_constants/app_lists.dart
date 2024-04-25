@@ -54,4 +54,11 @@ class AppLists {
   ];
 
   static List<int> timeSlot = [1, 2, 3];
+
+  static List<String> kUnitsForExams = [
+    AppStrings.kFirstUnitCreateExam,
+    AppStrings.kSecondUnitCreateExam,
+    AppStrings.kThirdUnitCreateExam,
+    AppStrings.kFourthUnitCreateExam,
+  ];
 }

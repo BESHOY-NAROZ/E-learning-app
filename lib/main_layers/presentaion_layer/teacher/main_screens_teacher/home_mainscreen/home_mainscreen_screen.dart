@@ -2,6 +2,7 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/more_row_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/shared_components_mainscreen/app_bar_mainscreen_teacher.dart';
@@ -31,8 +32,7 @@ class HomeMainScreenTeacher extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(
-                  right: AppDimensions.getDimensions(requiredWidth: 19)),
+              padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 19)),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -40,8 +40,7 @@ class HomeMainScreenTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),
                     ),
-                    const MainTextMainScreen(
-                        myText: AppStrings.kMainTextMainScreenHome),
+                    const MainTextMainScreen(myText: AppStrings.kMainTextMainScreenHome),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 7),
                     ),
@@ -58,12 +57,10 @@ class HomeMainScreenTeacher extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return SizedBox(
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 333),
+                              width: AppDimensions.getDimensions(requiredWidth: 333),
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
-                                    horizontal: AppDimensions.getDimensions(
-                                        requiredWidth: 3)),
+                                    horizontal: AppDimensions.getDimensions(requiredWidth: 3)),
                                 child: Image.asset(
                                   AppAssets.kListImageHomeScreen,
                                   fit: BoxFit.fill,
@@ -108,16 +105,19 @@ class HomeMainScreenTeacher extends StatelessWidget {
                             myIcon: AppAssets.kVector3HomeScreen,
                           ),
                           SizedBox(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 15),
+                            width: AppDimensions.getDimensions(requiredWidth: 15),
                           ),
-                          const TeacherHomeWorking(
-                            myText: AppStrings.kCreateTestHome,
-                            myIcon: AppAssets.kExamVector,
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, RoutesManager.createExamTeacher);
+                            },
+                            child: const TeacherHomeWorking(
+                              myText: AppStrings.kCreateTestHome,
+                              myIcon: AppAssets.kExamVector,
+                            ),
                           ),
                           SizedBox(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 15),
+                            width: AppDimensions.getDimensions(requiredWidth: 15),
                           ),
                           const TeacherHomeWorking(
                             myText: AppStrings.kAddQuestionHome,
@@ -150,8 +150,7 @@ class HomeMainScreenTeacher extends StatelessWidget {
                       ),
                     ),
                     const MoreRowMainScreen(
-                        title: AppStrings.kAttachedHome,
-                        vectorIcon: AppAssets.kPlay),
+                        title: AppStrings.kAttachedHome, vectorIcon: AppAssets.kPlay),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),
@@ -181,8 +180,7 @@ class HomeMainScreenTeacher extends StatelessWidget {
                       ),
                     ),
                     const MoreRowMainScreen(
-                        title: AppStrings.kTrainingCreatedHome,
-                        vectorIcon: AppAssets.kExamVector),
+                        title: AppStrings.kTrainingCreatedHome, vectorIcon: AppAssets.kExamVector),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),

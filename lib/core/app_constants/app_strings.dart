@@ -659,6 +659,39 @@ class AppStrings {
   static const String kActualApprovalsHintAssistantOfTeacher =
       'الموافقة على قبول طالب فى مجموعة ( أ ) ';
 
+  //////////  Create Exam ////////////
+
+  static const String kCreateExam = 'إنشاء امتحان';
+  static const String kTestNameCreateExam = 'اسم الاختبار';
+  static const String kActualTestNameCreateExam = 'الاختبار الاول';
+  static const String kStartDateCreateExam = 'بداية الامتحان';
+  static const String kActualStartDateCreateExam = '12 / 4 / 2024';
+  static const String kEndDateCreateExam = 'نهاية الامتحان';
+  static const String kActualEndDateCreateExam = '12 / 4 / 2024';
+  static const String kDurationCreateExam = 'المدة الزمنية';
+  static const String kHoursCreateExam = 'ساعة';
+  static const String kMinuteCreateExam = 'دقيقة';
+  static const String kSecondCreateExam = 'ثانية';
+  static const String kLevelCreateExam = 'المرحلة التعليمية';
+  static const String kActualLevelCreateExam = 'المرحلة الثانوية';
+  static const String kClassCreateExam = 'الصف الدراسى';
+  static const String kActualClassCreateExam = 'الصف الثالث الثانوى';
+  static const String kSubjectCreateExam = 'اختر المادة';
+  static const String kActualSubjectCreateExam = 'الكيمياء';
+  static const String kResumptionCreateExam = 'متابعة';
+  static const String kPhilosophyCreateExam = 'الفلسفة';
+  static const String kFourUnitsCreateExam = '4 أبواب';
+  static const String kContentsCreateExam = 'المحتويات';
+  static const String kFirstUnitCreateExam = 'الباب الأول : عنوان الباب';
+  static const String kSecondUnitCreateExam = 'الباب الثانى : عنوان الباب';
+  static const String kThirdUnitCreateExam = 'الباب الثالث : عنوان الباب';
+  static const String kFourthUnitCreateExam = 'الباب الرابع : عنوان الباب';
+  static const String kFirstClassCreateExam = 'الفصل الأول : عنوان الفصل';
+  static const String kFirstPartCreateExam = 'الوحدة الأولى : عنوان الوحدة';
+  static const String kSecondPartCreateExam = 'الوحدة الثاني : عنوان الوحدة';
+  static const String kFirstLessonCreateExam = 'الدرس الأول : عنوان الدرس';
+  static const String kSecondLessonCreateExam = 'الدرس الثاني : عنوان الدرس';
+
 // static const String kDeleteAssistantHintOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
   // static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';
 
