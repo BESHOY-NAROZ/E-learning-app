@@ -2,16 +2,23 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
-class MainButtonRed extends StatelessWidget {
-  final String? buttonName;
-  final double? requiredWidth;
-  final double? requiredHeight;
+class MainButtonBlue extends StatelessWidget {
   final void Function()? onPressed;
+  final String? buttonName;
+  final Color? color;
+  final double? requiredHeight;
+  final double? requiredWidth;
 
-  const MainButtonRed(
-      {Key? key, this.buttonName, this.onPressed, this.requiredWidth, this.requiredHeight})
-      : super(key: key);
-
+  //   Main:FA   ,Text: 57   ,16   ,700
+  const MainButtonBlue({
+    super.key,
+    this.onPressed,
+    this.buttonName,
+    this.color,
+    this.requiredHeight,
+    this.requiredWidth,
+  });
+////   C4
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -21,14 +28,14 @@ class MainButtonRed extends StatelessWidget {
       clipBehavior: Clip.antiAliasWithSaveLayer,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
       child: MaterialButton(
-          color: AppColors.kMainButton,
+          color: AppColors.kMainBlueC4,
           shape: const RoundedRectangleBorder(),
           onPressed: onPressed,
           child: Text(
             buttonName!,
-            style: const TextStyle(
+            style: TextStyle(
                 fontFamily: 'Almarai',
-                color: AppColors.kMainTextWhite,
+                color: color ?? AppColors.kMainTextWhite,
                 fontWeight: FontWeight.w700,
                 fontSize: 16),
           )),

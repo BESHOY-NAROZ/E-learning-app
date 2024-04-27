@@ -4,7 +4,9 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_white.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/actual_exam_teacher/main_four_buttons_actual_exam.dart';
@@ -12,8 +14,8 @@ import 'package:flutter/material.dart';
 
 import 'select_answer_radio.dart';
 
-class ActualExamTeacher extends StatelessWidget {
-  const ActualExamTeacher({Key? key}) : super(key: key);
+class CreateActualExamTeacher extends StatelessWidget {
+  const CreateActualExamTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -94,9 +96,22 @@ class ActualExamTeacher extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 14),
                   ),
-                  const MainTextBlack(
-                    myText: AppStrings.kMandatoryQExams,
-                    fontSize: 16,
+                  Row(
+                    children: [
+                      const MainTextBlue(
+                        myText: AppStrings.kDegreeCreateExam,
+                        color: AppColors.kMainBlueC4,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w400,
+                      ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 2),
+                      ),
+                      const MainTextBlue(
+                        myText: AppStrings.kActualDegreeCreateExam,
+                        color: AppColors.kMainBlueC4,
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -183,7 +198,7 @@ class ActualExamTeacher extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      MainTextGrey(
+                      const MainTextGrey(
                         myText: AppStrings.kQPercentageCreateExam,
                         color: AppColors.kMainGery8D,
                         textDirection: TextDirection.rtl,
@@ -261,7 +276,14 @@ class ActualExamTeacher extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 30),
+                    height: AppDimensions.getDimensions(requiredHeight: 37),
+                  ),
+                  MainButtonRed(
+                    buttonName: AppStrings.kSendExamCreateExam,
+                    onPressed: () {},
+                  ),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 22),
                   ),
                   MainButtonGrey(
                     buttonName: AppStrings.kArrangeQsExams,

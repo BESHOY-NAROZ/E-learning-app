@@ -2,7 +2,9 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:flutter/material.dart';
 
@@ -100,7 +102,22 @@ class CreateExamSpecificSubjectTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),
                     ),
-                    const CustomExpandedUnits()
+                    const CustomExpandedUnits(),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 30),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: MainButtonRed(
+                        buttonName: AppStrings.kResumptionCreateExam,
+                        onPressed: () {
+                          Navigator.pushNamed(context, RoutesManager.questionClassificationTeacher);
+                        },
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 30),
+                    ),
                   ],
                 ),
               ),

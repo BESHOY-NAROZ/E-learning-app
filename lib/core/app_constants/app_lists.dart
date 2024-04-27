@@ -61,4 +61,60 @@ class AppLists {
     AppStrings.kThirdUnitCreateExam,
     AppStrings.kFourthUnitCreateExam,
   ];
+
+  static List<bool> kBoolUnitsForExams = [
+    false,
+    false,
+    false,
+    false,
+  ];
+
+  static List<String> kClassesForExams = [
+    AppStrings.kFirstClassCreateExam,
+    AppStrings.kSecondClassCreateExam,
+  ];
+  static List<bool> kBoolClassesForExams = [
+    false,
+    false,
+    false,
+    false,
+  ];
+
+  static List<String> kPartsForExams = [
+    AppStrings.kFirstPartCreateExam,
+    AppStrings.kSecondPartCreateExam,
+  ];
+
+  static List<bool> kBoolPartsForExams = [
+    false,
+    false,
+    false,
+    false,
+  ];
+
+  static List<String> kLessonsForExams = [
+    AppStrings.kFirstLessonCreateExam,
+    AppStrings.kSecondLessonCreateExam,
+  ];
+
+  static List<String> kCreateQuestionList = [
+    AppStrings.kQuestionBankMineBottomSheet,
+    AppStrings.kQuestionBankGPSBottomSheet,
+    AppStrings.kCreateNewQuestionBottomSheet,
+  ];
+  static List<String> kPaymentMethodsList = [
+    AppStrings.kFawryPayment,
+    AppStrings.kEWalletPayment,
+    AppStrings.kCreditCardPayment,
+  ];
+  static List<String> kPaymentMethodsHintList = [
+    AppStrings.kEnterNumberPayment,
+    AppStrings.kEnterNumberPayment,
+    AppStrings.kEnterDetailsPayment,
+  ];
+  static List<String> kPaymentMethodsImagesList = [
+    AppAssets.kFawry,
+    AppAssets.kWallet,
+    AppAssets.kCreditCard,
+  ];
 }

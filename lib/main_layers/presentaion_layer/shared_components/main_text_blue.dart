@@ -6,14 +6,16 @@ class MainTextBlue extends StatelessWidget {
   final FontWeight? fontWeight;
   final double? fontSize;
   final Color? color;
+  final TextDirection? textDirection;
 
   //   0xff4A88C5     700     24
   const MainTextBlue(
-      {super.key, this.myText, this.fontWeight, this.fontSize, this.color});
+      {super.key, this.myText, this.fontWeight, this.fontSize, this.color, this.textDirection});
   @override
   Widget build(BuildContext context) {
     return Text(
       myText!,
+      textDirection: textDirection ?? TextDirection.ltr,
       style: TextStyle(
           fontFamily: 'Almarai',
           color: color ?? AppColors.kForgetPasswordMainText,

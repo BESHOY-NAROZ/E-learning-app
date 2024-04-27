@@ -2,7 +2,7 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextFormFiled extends StatelessWidget {
+class ExpandedCustomTextFormFiled extends StatelessWidget {
   final Icon? suffixIcon;
   final Icon? prefixIcon;
   final String? hintText;
@@ -13,14 +13,12 @@ class CustomTextFormFiled extends StatelessWidget {
   final String? Function(String?)? onChanged;
   final TextEditingController? controller;
   final TextDirection? textDirection;
-  final Color? borderColor;
-
   final bool? enabled;
   final double? height;
   final double? width;
   final TextAlign? textAlign;
 
-  const CustomTextFormFiled(
+  const ExpandedCustomTextFormFiled(
       {Key? key,
       this.suffixIcon,
       this.prefixIcon,
@@ -35,8 +33,7 @@ class CustomTextFormFiled extends StatelessWidget {
       this.onChanged,
       this.height,
       this.textAlign,
-      this.width,
-      this.borderColor})
+      this.width})
       : super(key: key);
 
   @override
@@ -54,18 +51,17 @@ class CustomTextFormFiled extends StatelessWidget {
         keyboardType: keyboardType,
         obscureText: obscureText ?? false,
         textAlign: textAlign ?? TextAlign.right,
+        maxLines: null,
+        minLines: 10,
         enableSuggestions: false,
         autocorrect: false,
         decoration: InputDecoration(
           errorStyle: const TextStyle(height: 0),
           isDense: true,
           enabled: enabled ?? true,
-          disabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(color: borderColor ?? AppColors.kLoginFormFiledBorder)),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(color: borderColor ?? AppColors.kLoginFormFiledBorder)),
+              borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           ),

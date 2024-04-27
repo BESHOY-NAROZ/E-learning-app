@@ -2,11 +2,11 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/expanded_text_form_filed.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 import 'package:rate/rate.dart';
 
@@ -63,8 +63,7 @@ class YourOpinion extends StatelessWidget {
                         color: AppColors.kMainContainerNotificationCommon),
                     child: Center(
                       child: Rate(
-                        iconSize:
-                            AppDimensions.getDimensions(requiredWidth: 40),
+                        iconSize: AppDimensions.getDimensions(requiredWidth: 40),
                         color: AppColors.kMainTextYellow,
                         allowHalf: true,
                         allowClear: true,
@@ -105,9 +104,8 @@ class YourOpinion extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
                   ),
-                  CustomTextFormFiled(
+                  ExpandedCustomTextFormFiled(
                     height: AppDimensions.getDimensions(requiredHeight: 119),
-                    maxLines: null,
                     hintText: AppStrings.kExampleCommon,
                   ),
                   SizedBox(
@@ -116,8 +114,7 @@ class YourOpinion extends StatelessWidget {
                   MainButtonRed(
                     buttonName: AppStrings.kSentOpinionCommon,
                     onPressed: () {
-                      Navigator.pushNamed(
-                          context, RoutesManager.addOpinionDone);
+                      Navigator.pushNamed(context, RoutesManager.addOpinionDone);
                     },
                   ),
                 ],
