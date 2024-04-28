@@ -4,13 +4,15 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class CreateExamDoneTeacher extends StatelessWidget {
-  const CreateExamDoneTeacher({Key? key}) : super(key: key);
+class PaymentFailedTeacher extends StatelessWidget {
+  const PaymentFailedTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,11 +34,17 @@ class CreateExamDoneTeacher extends StatelessWidget {
                 ),
               ),
               const MainTextBlue(
-                myText: AppStrings.kDoneMainCreateExam,
+                myText: AppStrings.kWrongPaymentPayment,
+                color: AppColors.kMainOrange47,
               ),
-              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 5)),
+              const MainTextBlack(
+                myText: AppStrings.kPaymentBlackPayment,
+                fontSize: 16,
+              ),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 10)),
               const Text(
-                AppStrings.kDoneHintCreateExam,
+                AppStrings.kPaymentHintPayment,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
                 style: TextStyle(
@@ -45,11 +53,21 @@ class CreateExamDoneTeacher extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     fontSize: 14),
               ),
-              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
+              MainButtonGrey(
+                buttonName: AppStrings.kRePayPayment,
+                onPressed: () {},
+              ),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 8)),
+              MainButtonGrey(
+                buttonName: AppStrings.kChooseWayPayment,
+                onPressed: () {},
+              ),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 110)),
               MainButtonRed(
-                buttonName: AppStrings.kDoneButtonCreateExam,
+                buttonName: AppStrings.kFawryCodeSentButtonPayment,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.createActualExamTeacher);
+                  Navigator.pushNamed(context, RoutesManager.paymentTeacher);
                 },
               ),
             ],

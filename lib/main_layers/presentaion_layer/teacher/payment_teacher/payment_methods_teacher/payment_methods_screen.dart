@@ -110,7 +110,6 @@ class PaymentMethodsTeacher extends StatelessWidget {
                 MainButtonRed(
                   buttonName: AppStrings.kContinuePayment,
                   onPressed: () {
-                    print((PaymentMethodsList.myIndex));
                     if (PaymentMethodsList.myIndex == 0) {
                       Navigator.pushNamed(context, RoutesManager.fawryDoneTeacher);
                     }

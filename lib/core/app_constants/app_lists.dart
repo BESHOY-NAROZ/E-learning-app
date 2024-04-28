@@ -117,4 +117,53 @@ class AppLists {
     AppAssets.kWallet,
     AppAssets.kCreditCard,
   ];
+
+  static List<String> kQuestionTypeList = [
+    AppStrings.kChooseQCreateExam,
+    AppStrings.kCompleteQCreateExam,
+    AppStrings.kArticleQCreateExam,
+    AppStrings.kTrueOrFalseQCreateExam,
+    AppStrings.kDecideLaterCreateExam,
+  ];
+  static List<String> kExamWithoutTypeList = [
+    AppStrings.kQChooseCreateExam,
+    AppStrings.kQCompleteCreateExam,
+    AppStrings.kQTrueOrFalseCreateExam,
+    AppStrings.kQArticleCreateExam,
+  ];
+  static List<String> kMainExamWithoutTypeList = [
+    AppStrings.kMainChooseCreateExam,
+    AppStrings.kMainCompleteCreateExam,
+    AppStrings.kMainTrueOrFalseCreateExam,
+    AppStrings.kMainArticleCreateExam,
+  ];
+  static List<String> kDifficultyList = [
+    AppStrings.kEasyDifficultyDegreeCreateExam,
+    AppStrings.kNormalDifficultyDegreeCreateExam,
+    AppStrings.kDifficultDifficultyDegreeCreateExam,
+  ];
+  static List<String> kBloomList = [
+    AppStrings.kUnderStandClassificationCreateExam,
+    AppStrings.kSaveClassificationCreateExam,
+    AppStrings.kBothClassificationCreateExam,
+  ];
+  static List<String> kLevelList = [
+    AppStrings.kLevelOneCreateExam,
+    AppStrings.kLevelTwoCreateExam,
+    AppStrings.kLevelThreeCreateExam,
+  ];
+  static List<String> kClassRoomList = [
+    AppStrings.kClassRoomOneCreateExam,
+    AppStrings.kClassRoomTwoCreateExam,
+    AppStrings.kClassRoomThreeCreateExam,
+  ];
+  static List<String> kLanguagesList = [
+    AppStrings.kArabicCreateExam,
+    AppStrings.kGeologyCreateExam,
+    AppStrings.kPPhilosophyCreateExam,
+    AppStrings.kChemistryCreateExam,
+    AppStrings.kPhysicsCreateExam,
+    AppStrings.kBiologyCreateExam,
+    AppStrings.kFrenchCreateExam,
+  ];
 }

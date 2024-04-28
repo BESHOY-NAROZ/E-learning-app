@@ -9,8 +9,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class CreateExamDoneTeacher extends StatelessWidget {
-  const CreateExamDoneTeacher({Key? key}) : super(key: key);
+class SentExamDoneToMenuGroupsTeacher extends StatelessWidget {
+  const SentExamDoneToMenuGroupsTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,11 +32,11 @@ class CreateExamDoneTeacher extends StatelessWidget {
                 ),
               ),
               const MainTextBlue(
-                myText: AppStrings.kDoneMainCreateExam,
+                myText: AppStrings.kSentDoneExams,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
               const Text(
-                AppStrings.kDoneHintCreateExam,
+                AppStrings.kSentMenuGroupsExamEditing,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
                 style: TextStyle(
@@ -47,9 +47,9 @@ class CreateExamDoneTeacher extends StatelessWidget {
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(
-                buttonName: AppStrings.kDoneButtonCreateExam,
+                buttonName: AppStrings.kBackToMenuExamEditing,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.createActualExamTeacher);
+                  Navigator.pushNamed(context, RoutesManager.examsTeacher);
                 },
               ),
             ],

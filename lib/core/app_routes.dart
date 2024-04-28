@@ -83,10 +83,19 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_file
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/add_opinion_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/your_opinion_teacher/your_opinion_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_actual_exam_teacher/create_actual_exam_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_custom_exam_teacher/exam_with_specific_type/exam_with_specific_type_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_custom_exam_teacher/exam_without_specific_type/exam_without_specific_type_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_done/create_exam_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_specific_subject_teacher/create_exam_specific_subject_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_teacher/create_exam_teacher_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/question_bank_teacher/question_bank_create_question.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/question_bank_teacher/question_bank_gps_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/arrange_questions_teacher_screen/arrange_questions_teacher.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/edit_questions_in_exam/edit_questions_in_exam_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/send_exam_teacher/send_exam_screen_teacher.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher'
+    '/exam_editing_teacher/send_exam_teacher/sent_exam_done_to_groups.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/send_exam_teacher/sent_exam_done_to_menu_groups.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/question_bank_teacher/question_bank_create_question/question_bank_create_question.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/question_bank_teacher/question_bank_gps/question_bank_gps_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/question_bank_teacher/question_bank_teacher.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/question_classification_teacher/question_classification_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/actual_exam_teacher/actual_exam_screen.dart';
@@ -117,6 +126,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screen
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/discount_done/discount_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/payment_after_discount_teacher/payment_after_discount_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/payment_methods_teacher/fawry_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/payment_methods_teacher/payment_methods_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/payment_teacher/payment_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/select_group_payment_teacher/select_group_payment_screen_teacher.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/add_new_number_teacher/add_new_number_done.dart';
@@ -257,11 +267,21 @@ class RoutesManager {
   static const String teacherQuestionBankTeacher = "/teacherQuestionBankTeacher";
   static const String createActualExamTeacher = "/createActualExamTeacher";
   static const String createQuestionBankTeacher = "/createQuestionBankTeacher";
+  static const String createExamDoneTeacher = "/createExamDoneTeacher";
   static const String paymentTeacher = "/paymentTeacher";
   static const String discountDoneTeacher = "/discountDoneTeacher";
   static const String paymentAfterDiscountTeacher = "/paymentAfterDiscountTeacher";
   static const String selectGroupPaymentTeacher = "/selectGroupPaymentTeacher";
   static const String fawryDoneTeacher = "/fawryDoneTeacher";
+  static const String paymentMethodsTeacher = "/paymentMethodsTeacher";
+  static const String createCustomExamTeacher = "/createCustomExamTeacher";
+  static const String customExamWithOutSpecificTypeTeacher =
+      "/customExamWithOutSpecificTypeTeacher";
+  static const String editQuestionsTeacher = "/editQuestionsTeacher";
+  static const String sendExamTeacher = "/sendExamTeacher";
+  static const String sentExamEditingDoneTeacher = "/sentExamEditingDoneTeacher";
+  static const String sentExamDoneToMenuGroupsTeacher = "/sentExamDoneToMenuGroupsTeacher";
+  static const String arrangeQuestionsTeacher = "/arrangeQuestionsTeacher";
 }
 
 class RoutesGenerator {
@@ -517,6 +537,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const CreateActualExamTeacher());
       case RoutesManager.createQuestionBankTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const CreateQuestionBankTeacher());
+      case RoutesManager.createExamDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const CreateExamDoneTeacher());
       case RoutesManager.paymentTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const PaymentTeacher());
       case RoutesManager.discountDoneTeacher:
@@ -527,6 +549,25 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SelectGroupPaymentTeacher());
       case RoutesManager.fawryDoneTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const FawryDoneTeacher());
+      case RoutesManager.paymentMethodsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const PaymentMethodsTeacher());
+      case RoutesManager.createCustomExamTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const CustomExamWithSpecificTypeTeacher());
+      case RoutesManager.customExamWithOutSpecificTypeTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const CustomExamWithOutSpecificTypeTeacher());
+      case RoutesManager.editQuestionsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const EditQuestionsTeacher());
+      case RoutesManager.sendExamTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SendExamTeacher());
+      case RoutesManager.sentExamEditingDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SentExamDoneToGroupsTeacher());
+      case RoutesManager.sentExamDoneToMenuGroupsTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SentExamDoneToMenuGroupsTeacher());
+      case RoutesManager.arrangeQuestionsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ArrangeQuestionsTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

@@ -117,4 +117,5 @@ class AppColors {
   static const Color kMainGreenCD = Color(0xFFD4F4CD);
   static const Color kMainGreen45 = Color(0xFF549845);
   static const Color kMainGreen67 = Color(0xFF5FAD67);
+  static const Color kMainOrange47 = Color(0xFFFF6347);
 }

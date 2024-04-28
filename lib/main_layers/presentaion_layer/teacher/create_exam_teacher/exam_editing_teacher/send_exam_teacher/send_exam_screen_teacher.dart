@@ -2,15 +2,18 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/send_exam_teacher/my_exams_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 
-class CreateQuestionBankTeacher extends StatelessWidget {
-  const CreateQuestionBankTeacher({Key? key}) : super(key: key);
+import 'groups_list_send_exam.dart';
+
+class SendExamTeacher extends StatelessWidget {
+  const SendExamTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +24,7 @@ class CreateQuestionBankTeacher extends StatelessWidget {
           const MainAppBar(
             designHeight: 1006,
             designWidth: 360,
-            myTitle: AppStrings.kCreateQuestionCreateExam,
+            myTitle: AppStrings.kSentExamsExams,
           ),
           Expanded(
             child: Padding(
@@ -31,7 +34,7 @@ class CreateQuestionBankTeacher extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 20),
+                      height: AppDimensions.getDimensions(requiredHeight: 22),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -59,34 +62,41 @@ class CreateQuestionBankTeacher extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 37),
+                      height: AppDimensions.getDimensions(requiredHeight: 10),
                     ),
-                    const MainTextGrey(
-                      myText: AppStrings.kQuestionTypeCreateExam,
-                      color: AppColors.kMainGery7A,
-                      fontSize: 12,
+                    const MainTextBlack(
+                      myText: AppStrings.kSelectGroupExams,
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 37),
+                      height: AppDimensions.getDimensions(requiredHeight: 17),
                     ),
-                    const CustomTextFormFiled(
-                      hintText: AppStrings.kActualQuestionTypeCreateExam,
-                      textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
-                      enabled: false,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Almarai',
-                        color: AppColors.kDetailsProfileEditing,
-                      ),
-                    ),
+                    ListView.separated(
+                        padding: EdgeInsets.zero,
+                        shrinkWrap: true,
+                        scrollDirection: Axis.vertical,
+                        physics: const NeverScrollableScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return const SendExamTeacherList();
+                        },
+                        separatorBuilder: (context, index) {
+                          return SizedBox(height: AppDimensions.getDimensions(requiredHeight: 16));
+                        },
+                        itemCount: 7),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 360),
+                      height: AppDimensions.getDimensions(requiredHeight: 45),
                     ),
                     MainButtonRed(
-                      buttonName: AppStrings.kResumptionCreateExam,
-                      onPressed: () {},
+                      buttonName: AppStrings.kSentButtonExams,
+                      onPressed: () {
+                        Navigator.pushNamed(context, RoutesManager.sentExamEditingDoneTeacher);
+                      },
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 15),
+                    ),
+                    const MyExamsBottomSheet(),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 25),
                     ),
                   ],
                 ),

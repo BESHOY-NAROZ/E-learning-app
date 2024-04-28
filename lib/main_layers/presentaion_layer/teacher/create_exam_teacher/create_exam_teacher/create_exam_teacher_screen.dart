@@ -6,6 +6,9 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_teacher/exam_class_room_bottom_sheet.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_teacher/exam_languages_bottom_sheet.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_exam_teacher/exam_level_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 
 import 'my_duration_time.dart';
@@ -117,18 +120,7 @@ class CreateExamTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
-                      hintText: AppStrings.kActualLevelCreateExam,
-                      textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
-                      enabled: false,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Almarai',
-                        color: AppColors.kDetailsProfileEditing,
-                      ),
-                    ),
+                    const ExamLevelBottomSheet(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
@@ -139,18 +131,7 @@ class CreateExamTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
-                      hintText: AppStrings.kActualClassCreateExam,
-                      textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
-                      enabled: false,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Almarai',
-                        color: AppColors.kDetailsProfileEditing,
-                      ),
-                    ),
+                    const ExamClassRoomBottomSheet(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
@@ -161,18 +142,7 @@ class CreateExamTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
-                      hintText: AppStrings.kActualSubjectCreateExam,
-                      textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
-                      enabled: false,
-                      hintStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Almarai',
-                        color: AppColors.kDetailsProfileEditing,
-                      ),
-                    ),
+                    const ExamLanguagesBottomSheet(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 22),
                     ),

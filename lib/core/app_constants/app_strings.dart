@@ -705,9 +705,13 @@ class AppStrings {
   static const String kSpecificFirstTestCreateExam =
       'اللغة العربية >> الباب الأول >> الدرس الأول>>نظرية فيثاغورث';
   static const String kDifficultyDegreeCreateExam = 'درجة الصعوبة';
-  static const String kActualDifficultyDegreeCreateExam = 'سهل';
+  static const String kEasyDifficultyDegreeCreateExam = 'سهل';
+  static const String kNormalDifficultyDegreeCreateExam = 'متوسط';
+  static const String kDifficultDifficultyDegreeCreateExam = 'صعب';
   static const String kClassificationCreateExam = 'تصنيف بلوم';
-  static const String kActualClassificationCreateExam = 'الفهم';
+  static const String kUnderStandClassificationCreateExam = 'الفهم';
+  static const String kSaveClassificationCreateExam = 'الحفظ';
+  static const String kBothClassificationCreateExam = 'الفهم و الحفظ';
   static const String kAddQuestionsCreateExam = 'اضافة الاسئلة';
   static const String kQuestionBankCreateExam = 'بنك الاسئلة';
   static const String kGPSQuestionBankCreateExam = 'بنك اسئلة GPS';
@@ -740,10 +744,41 @@ class AppStrings {
   static const String kQDegreeCreateCustomExam = 'درجة السؤال';
   static const String kDownLoadVideoCreateCustomExam = 'تحميل فيديو';
   static const String kDownLoadPicCreateCustomExam = 'تحميل صورة';
-  static const String kAddQCreateCustomExam = 'اضافــــة سؤال';
+  static const String kCreateExamCustomExam = 'إنشاء امتحان';
   static const String kDoneMainCreateExam = 'تم انشاء امتحان بنجاح';
   static const String kDoneHintCreateExam = 'تم انشاء امتحان بنجاح';
   static const String kDoneButtonCreateExam = 'الذهاب الى الامتحان';
+  static const String kChooseQCreateExam = 'اختر الاجابة الصحيحة';
+  static const String kCompleteQCreateExam = 'اكمل';
+  static const String kArticleQCreateExam = 'مقالى';
+  static const String kTrueOrFalseQCreateExam = 'صح ام خطأ';
+  static const String kCreateQCreateExam = 'تنفيذ';
+  static const String kBackQCreateExam = 'تراجع';
+  static const String kQuestionsTypeCreateExam = 'انواع الاسئلة';
+  static const String kDecideLaterCreateExam = 'تحديد عند الاضافة';
+  static const String kQChooseCreateExam = 'اختر الاجابة';
+  static const String kQCompleteCreateExam = 'اكمل';
+  static const String kQTrueOrFalseCreateExam = 'صح ام خطأ';
+  static const String kQArticleCreateExam = 'مقالى';
+  static const String kMainChooseCreateExam = 'السؤال الاول : اختر الاجابة الصحيحة';
+  static const String kMainCompleteCreateExam = 'السؤال الاول : اكمل';
+  static const String kMainTrueOrFalseCreateExam = 'السؤال الاول : صح ام خطأ';
+  static const String kMainArticleCreateExam = 'السؤال الاول : مقالى';
+  static const String kCorrectAnswerCreateExam = 'صحة الاجابة';
+  static const String kLevelOneCreateExam = 'الابتدائية';
+  static const String kLevelTwoCreateExam = 'الاعدادية';
+  static const String kLevelThreeCreateExam = 'الثانوية';
+  static const String kClassRoomOneCreateExam = 'الاول';
+  static const String kClassRoomTwoCreateExam = 'الثانى';
+  static const String kClassRoomThreeCreateExam = 'الثالث';
+  static const String kArabicCreateExam = 'اللغة العربية';
+  static const String kGeologyCreateExam = 'الجيولوجيا';
+  static const String kPPhilosophyCreateExam = 'الفلسفة';
+  static const String kChemistryCreateExam = 'الكيمياء';
+  static const String kPhysicsCreateExam = 'الفيزياء';
+  static const String kBiologyCreateExam = 'الاحياء';
+  static const String kFrenchCreateExam = 'اللغة الفرنسية';
+
 // static const String kCreateExamCreateExam = 'أنشاء امتحان';
 
 ////////////////////////////// payment /////////////////////
@@ -814,6 +849,36 @@ class AppStrings {
   static const String kPaymentHintPayment = 'مادة الأحياء\nمادة الدراسات';
   static const String kCreditConfirmationPayment = 'تأكيد البطاقة';
   static const String kPaymentConfirmationPayment = 'تأكيد عملية الدفع';
+  static const String kWrongPaymentPayment = 'خطأ خلال عملية الدفع';
+  static const String kRePayPayment = 'إعادة عملية الدفع';
+  static const String kChooseWayPayment = 'إختيار طريقة أخرى';
+
+  ////////////// Exam Editing /////////////////////////
+  static const String kSolvingIdeaExamEditing = 'فكرة الحل';
+  static const String kActualSolvingIdeaExamEditing = 'هذا النص هو مثال لنص يمكن أن يستبدل في نفس '
+      'المساحة، لقد تم توليد هذا النص من مولد النص العربى.';
+  static const String kCompleteExamEditing = 'حسناً, فهمت';
+  static const String kSolvingVideoExamEditing = 'فيديو شرح';
+  static const String kSolvingWayExamEditing = 'طريقة الحل';
+  static const String kDeleteQExamEditing = 'حذف السؤال';
+  static const String kActualDeleteQExamEditing = 'هل انت متأكد انك تريد حذف السؤال ؟';
+  static const String kButtonDeleteQExamEditing = 'حذف';
+  static const String kButtonBackDeleteQExamEditing = 'تراجع';
+  static const String kMineExamExamEditing = 'الامتحانات الخاصة بى';
+  static const String kExamsCreatedQExamEditing = 'الامتحانات التى تم انشاؤها';
+  static const String kExamsSolvedExamEditing = 'الامتحانات المحلولة';
+  static const String kMineExamButtonExamEditing = 'ارسال';
+  static const String kSaveButtonExamEditing = 'حفظ';
+  static const String kQNumberButtonExamEditing = '10 /';
+  static const String kActualQNumberButtonExamEditing = '8';
+  static const String kTheQButtonExamEditing = 'السؤال:';
+  static const String kSavedExamEditing = 'تم حفظ السؤال';
+  static const String kSendToMeExamEditing = 'ارسال الاختبار الى الامتحانات الخاصة بك';
+  static const String kBackToGroupsExamEditing = 'الذهاب الى المجموعات';
+  static const String kSentMenuGroupsExamEditing = 'تم ارسال الامتحان الى قائمة الامتحانات\nالتى '
+      'انشأها المدرس';
+  static const String kBackToMenuExamEditing = 'الذهاب الى قائمة الامتحانات';
+  static const String kSaveArrangeExamEditing = 'حفظ الترتيب';
 
 // static const String kDeleteAssistantHintOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
   // static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';

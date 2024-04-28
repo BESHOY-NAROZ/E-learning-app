@@ -2,66 +2,70 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_lists.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/separator.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
-class BottomSheetForCreationQuestion extends StatefulWidget {
-  const BottomSheetForCreationQuestion({Key? key, required this.buttonName}) : super(key: key);
-  final String buttonName;
+class ExamLanguagesBottomSheet extends StatefulWidget {
+  static String currentRadio = AppStrings.kArabicCreateExam;
+
+  const ExamLanguagesBottomSheet({
+    super.key,
+  });
 
   @override
-  State<BottomSheetForCreationQuestion> createState() => _BottomSheetForCreationQuestionState();
+  State<ExamLanguagesBottomSheet> createState() => _ExamLanguagesBottomSheetState();
 }
 
-class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQuestion> {
-  String currentRadio = '';
+class _ExamLanguagesBottomSheetState extends State<ExamLanguagesBottomSheet> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
-    return MainButtonGrey(
-      buttonName: widget.buttonName,
-      onPressed: () {
-        showModalBottomSheet(
-          context: context,
-          builder: (context) {
-            return StatefulBuilder(
-              builder: (context, setState) {
-                return Container(
-                  height: AppDimensions.getDimensions(requiredHeight: 318),
-                  width: AppDimensions.getDimensions(requiredWidth: 360),
-                  decoration: BoxDecoration(
-                      color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
-                  child: Padding(
+
+    return StatefulBuilder(
+      builder: (BuildContext context, void Function(void Function()) setState) {
+        return InkWell(
+            onTap: () {
+              showModalBottomSheet(
+                isScrollControlled: true,
+                context: context,
+                builder: (context) {
+                  return Container(
+                    width: AppDimensions.getDimensions(requiredWidth: 360),
+                    height: AppDimensions.getDimensions(requiredHeight: 470),
+                    clipBehavior: Clip.antiAlias,
+                    decoration: BoxDecoration(
+                        color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
+                    child: Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: AppDimensions.getDimensions(requiredWidth: 20),
                       ),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 14),
                           ),
-                          const Separator(
-                            designHeight: 4,
-                            designWidth: 68,
+                          const Align(
+                            alignment: Alignment.center,
+                            child: Separator(
+                              designHeight: 4,
+                              designWidth: 68,
+                            ),
                           ),
                           SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 6),
                           ),
-                          const Align(
-                            alignment: Alignment.topRight,
-                            child: MainTextBlue(
-                              myText: AppStrings.kAddQuestionBottomSheet,
-                              color: AppColors.kMainBlueC4,
-                              fontSize: 16,
-                            ),
+                          const MainTextBlue(
+                            myText: AppStrings.kSubjectCreateExam,
+                            color: AppColors.kMainBlueC4,
+                            fontSize: 16,
                           ),
                           SizedBox(
-                            height: AppDimensions.getDimensions(requiredHeight: 13),
+                            height: AppDimensions.getDimensions(requiredHeight: 3),
                           ),
                           ListView.separated(
                               shrinkWrap: true,
@@ -79,9 +83,8 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                       MainTextGrey(
-                                        myText: AppLists.kCreateQuestionList[index],
+                                        myText: AppLists.kLanguagesList[index],
                                         fontSize: 12,
-                                        fontWeight: FontWeight.w400,
                                         textDirection: TextDirection.rtl,
                                       ),
                                       SizedBox(
@@ -91,8 +94,8 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
                                         height: AppDimensions.getDimensions(requiredHeight: 23),
                                         width: AppDimensions.getDimensions(requiredWidth: 23),
                                         child: Radio(
-                                          value: AppLists.kCreateQuestionList[index],
-                                          groupValue: currentRadio,
+                                          value: AppLists.kLanguagesList[index],
+                                          groupValue: ExamLanguagesBottomSheet.currentRadio,
                                           visualDensity: const VisualDensity(
                                               horizontal: VisualDensity.minimumDensity,
                                               vertical: VisualDensity.minimumDensity),
@@ -100,7 +103,10 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
                                               (states) => AppColors.kMainBlueC4),
                                           onChanged: (value) {
                                             setState(() {
-                                              currentRadio = value.toString();
+                                              ExamLanguagesBottomSheet.currentRadio =
+                                                  value.toString();
+
+                                              Navigator.pop(context);
                                             });
                                           },
                                         ),
@@ -111,32 +117,29 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
                               },
                               separatorBuilder: (context, index) {
                                 return SizedBox(
-                                    height: AppDimensions.getDimensions(requiredHeight: 8));
+                                    height: AppDimensions.getDimensions(requiredHeight: 12));
                               },
-                              itemCount: AppLists.kCreateQuestionList.length),
-                          SizedBox(height: AppDimensions.getDimensions(requiredHeight: 23)),
-                          MainButtonRed(
-                            buttonName: AppStrings.kCreateNewQuestionButtonBottomSheet,
-                            onPressed: () {
-                              if (currentRadio == AppLists.kCreateQuestionList[0]) {
-                                Navigator.pushNamed(
-                                    context, RoutesManager.teacherQuestionBankTeacher);
-                              } else if (currentRadio == AppLists.kCreateQuestionList[1]) {
-                                Navigator.pushNamed(context, RoutesManager.questionBankGPSTeacher);
-                              } else if (currentRadio == AppLists.kCreateQuestionList[2]) {
-                                Navigator.pushNamed(
-                                    context, RoutesManager.createQuestionBankTeacher);
-                              }
-                            },
-                          ),
-                          const Spacer()
+                              itemCount: AppLists.kLanguagesList.length),
+                          const Spacer(),
                         ],
-                      )),
-                );
-              },
-            );
-          },
-        );
+                      ),
+                    ),
+                  );
+                },
+              );
+            },
+            child: CustomTextFormFiled(
+              hintText: ExamLanguagesBottomSheet.currentRadio,
+              textDirection: TextDirection.rtl,
+              prefixIcon: const Icon(Icons.arrow_left_rounded),
+              enabled: false,
+              hintStyle: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
+                fontFamily: 'Almarai',
+                color: AppColors.kDetailsProfileEditing,
+              ),
+            ));
       },
     );
   }

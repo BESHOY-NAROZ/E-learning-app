@@ -1,4 +1,3 @@
-import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
@@ -7,7 +6,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:flutter/material.dart';
 
-import 'question_bank_list.dart';
+import '../question_bank_list.dart';
+import 'bank_gps_bottom_sheet.dart';
 
 class QuestionBankGPSTeacher extends StatelessWidget {
   const QuestionBankGPSTeacher({Key? key}) : super(key: key);
@@ -33,16 +33,12 @@ class QuestionBankGPSTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
-                    Row(
+                    const Row(
                       children: [
-                        Image.asset(
-                          AppAssets.kMixer,
-                          height: AppDimensions.getDimensions(requiredHeight: 24),
-                          width: AppDimensions.getDimensions(requiredWidth: 24),
-                        ),
-                        const Spacer(),
-                        const MainTextBlack(
-                          myText: AppStrings.kQuestionBankCreateExam,
+                        BankGPSBottomSheet(),
+                        Spacer(),
+                        MainTextBlack(
+                          myText: AppStrings.kGPSQuestionBankCreateExam,
                           textDirection: TextDirection.rtl,
                         )
                       ],

@@ -4,21 +4,18 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_white.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_actual_exam_teacher/main_four_buttons_create_actual_exam.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/create_actual_exam_teacher/select_answer_radio.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/delete_question_bottom_sheet.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/teacher/shared_components_teacher/bottom_sheet_for_creation_question_teacher/bottom_sheet_for_creation_question_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'main_four_buttons_create_actual_exam.dart';
-import 'select_answer_radio.dart';
-
-class CreateActualExamTeacher extends StatelessWidget {
-  const CreateActualExamTeacher({Key? key}) : super(key: key);
+class ArrangeQuestionsTeacher extends StatelessWidget {
+  const ArrangeQuestionsTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -180,114 +177,129 @@ class CreateActualExamTeacher extends StatelessWidget {
                   ),
                   const MainFourButtonsCreateActualExam(),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 40),
-                  ),
-                  Row(
-                    children: [
-                      const MainTextGrey(
-                        myText: AppStrings.kQPercentageCreateExam,
-                        color: AppColors.kMainGery8D,
-                        textDirection: TextDirection.rtl,
-                        fontSize: 10,
-                      ),
-                      SizedBox(
-                        width: AppDimensions.getDimensions(requiredWidth: 24),
-                      ),
-                      Expanded(
-                        child: RotatedBox(
-                          quarterTurns: 90,
-                          child: LinearProgressIndicator(
-                            color: AppColors.kMainBlueC4,
-                            backgroundColor: AppColors.kMainGeryFA,
-                            value: 0.4,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 20),
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        height: AppDimensions.getDimensions(requiredHeight: 45),
-                        width: AppDimensions.getDimensions(requiredWidth: 156),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8), color: AppColors.kMainTextRed),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Icon(
-                              Icons.arrow_back_ios_new_outlined,
-                              color: AppColors.kMainTextWhite,
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 5),
-                            ),
-                            const MainTextWhite(
-                              myText: AppStrings.kNextQExams,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: AppDimensions.getDimensions(requiredWidth: 9),
-                      ),
-                      Container(
-                        height: AppDimensions.getDimensions(requiredHeight: 45),
-                        width: AppDimensions.getDimensions(requiredWidth: 156),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const MainTextGrey(
-                              myText: AppStrings.kPreviousQuestionCreateExam,
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 5),
-                            ),
-                            const Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: AppColors.kMainGery96,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 37),
-                  ),
-                  MainButtonRed(
-                    buttonName: AppStrings.kSendExamCreateExam,
-                    onPressed: () {
-                      Navigator.pushNamed(context, RoutesManager.sendExamTeacher);
-                    },
-                  ),
-                  SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 22),
-                  ),
-                  MainButtonGrey(
-                    buttonName: AppStrings.kArrangeQsExams,
-                    onPressed: () {
-                      Navigator.pushNamed(context, RoutesManager.arrangeQuestionsTeacher);
-                    },
-                  ),
-                  SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 16),
-                  ),
-                  const BottomSheetForCreationQuestion(buttonName: AppStrings.kAddQExams),
-                  SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 30),
                   ),
                 ]),
               ),
+            ),
+          ),
+          Container(
+            height: AppDimensions.getDimensions(requiredHeight: 180),
+            width: AppDimensions.getDimensions(requiredWidth: 360),
+            decoration: BoxDecoration(
+              color: AppColors.kMainTextWhite,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withAlpha(20),
+                  spreadRadius: 3,
+                  blurRadius: 7,
+                  offset: const Offset(0,
+                      -7), // changes position of shadow, negative value on y makes it appering on the top
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const MainTextBlack(
+                      myText: AppStrings.kQNumberButtonExamEditing,
+                      fontSize: 12,
+                    ),
+                    SizedBox(
+                      width: AppDimensions.getDimensions(requiredWidth: 3),
+                    ),
+                    Container(
+                      height: AppDimensions.getDimensions(requiredHeight: 30),
+                      width: AppDimensions.getDimensions(requiredWidth: 30),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(width: 2, color: AppColors.kMainGeryD9)),
+                      child: const Center(
+                        child: MainTextBlack(
+                          myText: AppStrings.kActualQNumberButtonExamEditing,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: AppDimensions.getDimensions(requiredWidth: 5),
+                    ),
+                    const MainTextGrey(
+                      myText: AppStrings.kTheQButtonExamEditing,
+                      fontSize: 10,
+                      textDirection: TextDirection.rtl,
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: AppDimensions.getDimensions(requiredHeight: 45),
+                      width: AppDimensions.getDimensions(requiredWidth: 156),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8), color: AppColors.kMainTextRed),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(
+                            Icons.arrow_back_ios_new_outlined,
+                            color: AppColors.kMainTextWhite,
+                          ),
+                          SizedBox(
+                            width: AppDimensions.getDimensions(requiredWidth: 5),
+                          ),
+                          const MainTextWhite(
+                            myText: AppStrings.kNextQExams,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: AppDimensions.getDimensions(requiredWidth: 9),
+                    ),
+                    Container(
+                      height: AppDimensions.getDimensions(requiredHeight: 45),
+                      width: AppDimensions.getDimensions(requiredWidth: 156),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const MainTextGrey(
+                            myText: AppStrings.kPreviousQuestionCreateExam,
+                          ),
+                          SizedBox(
+                            width: AppDimensions.getDimensions(requiredWidth: 5),
+                          ),
+                          const Icon(
+                            Icons.arrow_forward_ios_outlined,
+                            color: AppColors.kMainGery96,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 18),
+                ),
+                MainButtonRed(
+                  buttonName: AppStrings.kSaveArrangeExamEditing,
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
             ),
           )
         ],
