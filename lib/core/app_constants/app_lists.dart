@@ -125,6 +125,18 @@ class AppLists {
     AppStrings.kTrueOrFalseQCreateExam,
     AppStrings.kDecideLaterCreateExam,
   ];
+  static List<String> kAddQuestionTypeList = [
+    AppStrings.kChooseQCreateExam,
+    AppStrings.kCompleteQCreateExam,
+    AppStrings.kArticleQCreateExam,
+    AppStrings.kTrueOrFalseQCreateExam,
+  ];
+  static List<String> kMainAddQuestionTypeList = [
+    AppStrings.kMainChooseCreateExam,
+    AppStrings.kMainCompleteCreateExam,
+    AppStrings.kMainArticleCreateExam,
+    AppStrings.kMainTrueOrFalseCreateExam,
+  ];
   static List<String> kExamWithoutTypeList = [
     AppStrings.kQChooseCreateExam,
     AppStrings.kQCompleteCreateExam,

@@ -119,9 +119,14 @@ class HomeMainScreenTeacher extends StatelessWidget {
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 15),
                           ),
-                          const TeacherHomeWorking(
-                            myText: AppStrings.kAddQuestionHome,
-                            myIcon: AppAssets.kAddQuestion,
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, RoutesManager.addQuestionTeacher);
+                            },
+                            child: const TeacherHomeWorking(
+                              myText: AppStrings.kAddQuestionHome,
+                              myIcon: AppAssets.kAddQuestion,
+                            ),
                           ),
                         ],
                       ),

@@ -880,6 +880,19 @@ class AppStrings {
   static const String kBackToMenuExamEditing = 'الذهاب الى قائمة الامتحانات';
   static const String kSaveArrangeExamEditing = 'حفظ الترتيب';
 
+  ////////////////////// Add Question //////////////////////////////////
+  static const String kAddQuestion = 'إضافة سؤال';
+  static const String kLevelAddQuestion = 'المرحلة التعليمية';
+  static const String kActualLevelAddQuestion = 'المرحلة التعليمية';
+  static const String kClassRoomAddQuestion = 'الصف الدراسى';
+  static const String kActualClassRoomAddQuestion = 'الصف الدراسى';
+  static const String kSubjectAddQuestion = 'المادة';
+  static const String kActualSubjectAddQuestion = 'المادة';
+  static const String kContentsAddQuestion = 'الفهرس';
+  static const String kTheQuestionAddQuestion = 'السؤال';
+  static const String kQuestionTypeAddQuestion = 'نوع السؤال';
+  static const String kAddingQAddQuestion = 'إضافة';
+
 // static const String kDeleteAssistantHintOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
   // static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';
 

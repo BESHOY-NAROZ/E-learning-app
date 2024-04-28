@@ -64,6 +64,10 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_question_specific_subject_teacher/add_question_specific_subject_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_question_teacher/add_question_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_specific_question_type/add_specific_question_type_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/question_type_teacher/question_type_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_screen.dart';
@@ -282,6 +286,10 @@ class RoutesManager {
   static const String sentExamEditingDoneTeacher = "/sentExamEditingDoneTeacher";
   static const String sentExamDoneToMenuGroupsTeacher = "/sentExamDoneToMenuGroupsTeacher";
   static const String arrangeQuestionsTeacher = "/arrangeQuestionsTeacher";
+  static const String addQuestionTeacher = "/addQuestionTeacher";
+  static const String addQuestionSpecificSubjectTeacher = "/addQuestionSpecificSubjectTeacher";
+  static const String questionTypeTeacher = "/questionTypeTeacher";
+  static const String addSpecificQuestionTypeTeacher = "/addSpecificQuestionTypeTeacher";
 }
 
 class RoutesGenerator {
@@ -568,6 +576,16 @@ class RoutesGenerator {
             pageBuilder: (_, __, ___) => const SentExamDoneToMenuGroupsTeacher());
       case RoutesManager.arrangeQuestionsTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ArrangeQuestionsTeacher());
+      case RoutesManager.addQuestionTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddQuestionTeacher());
+      case RoutesManager.addQuestionSpecificSubjectTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AddQuestionSpecificSubjectTeacher());
+      case RoutesManager.questionTypeTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const QuestionTypeTeacher());
+      case RoutesManager.addSpecificQuestionTypeTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AddSpecificQuestionTypeTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:
