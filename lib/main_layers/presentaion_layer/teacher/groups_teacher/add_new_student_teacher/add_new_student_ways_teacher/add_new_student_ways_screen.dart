@@ -24,9 +24,9 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        const HintTextGroups(
+        HintTextGroups(
           myText: AppStrings.kAddPhoneOrEmailGroupsTeacher,
-          fontSize: 12,
+          fontSize: AppDimensions.defaultSize * 12,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(
@@ -57,9 +57,9 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
             Padding(
               padding:
                   EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
-              child: const HintTextGroups(
+              child: HintTextGroups(
                 myText: AppStrings.kORGroups,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontWeight: FontWeight.w700,
               ),
             ),

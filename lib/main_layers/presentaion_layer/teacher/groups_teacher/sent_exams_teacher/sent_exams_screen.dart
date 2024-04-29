@@ -44,18 +44,18 @@ class SentExamsTeacher extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const HintTextGroups(
+                    HintTextGroups(
                       myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 4),
                     ),
-                    const HintTextGroups(
+                    HintTextGroups(
                       myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                   ],
                 ),

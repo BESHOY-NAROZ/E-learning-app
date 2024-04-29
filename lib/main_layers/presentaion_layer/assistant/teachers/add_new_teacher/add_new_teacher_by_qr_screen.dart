@@ -22,8 +22,8 @@ class AddNewTeacherByQR extends StatelessWidget {
             myTitle: AppStrings.kAddTeacherAppBarTeachers,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -36,10 +36,10 @@ class AddNewTeacherByQR extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 55),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kAfterScanHintTeachers,
                   textDirection: TextDirection.rtl,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                 ),
                 SizedBox(

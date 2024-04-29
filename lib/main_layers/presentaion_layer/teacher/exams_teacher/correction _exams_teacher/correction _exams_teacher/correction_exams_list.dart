@@ -16,7 +16,7 @@ class CorrectionExamsListTeacher extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Container(
-      height: AppDimensions.getDimensions(requiredHeight: 100),
+      height: AppDimensions.getDimensions(requiredHeight: 120),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8), color: AppColors.kSentExamsContainerGroups),
@@ -28,9 +28,9 @@ class CorrectionExamsListTeacher extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
-            child: const MainTextBlack(
+            child: MainTextBlack(
               myText: AppStrings.kExamsSentBlackTextGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -39,10 +39,12 @@ class CorrectionExamsListTeacher extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
-            child: const Text(
+            child: Text(
               AppStrings.kExamsSentGreyTextGroups,
               style: TextStyle(
-                  fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.kSentGreyTextGroups),
+                  fontSize: AppDimensions.defaultSize * 12,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.kSentGreyTextGroups),
             ),
           ),
           const Spacer(),
@@ -62,9 +64,9 @@ class CorrectionExamsListTeacher extends StatelessWidget {
                     Navigator.pushNamed(context, RoutesManager.sendToAssistantTeacher);
                   },
                   child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-                    const MainTextWhite(
+                    MainTextWhite(
                       myText: AppStrings.kSendToAssiExams,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       fontWeight: FontWeight.w700,
                     ),
                     SizedBox(
@@ -83,9 +85,9 @@ class CorrectionExamsListTeacher extends StatelessWidget {
                 InkWell(
                   onTap: () {},
                   child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-                    const MainTextWhite(
+                    MainTextWhite(
                       myText: AppStrings.kOpenExams,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       fontWeight: FontWeight.w700,
                     ),
                     SizedBox(

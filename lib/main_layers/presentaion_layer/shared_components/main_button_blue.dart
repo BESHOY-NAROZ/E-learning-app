@@ -37,7 +37,7 @@ class MainButtonBlue extends StatelessWidget {
                 fontFamily: 'Almarai',
                 color: color ?? AppColors.kMainTextWhite,
                 fontWeight: FontWeight.w700,
-                fontSize: 16),
+                fontSize: AppDimensions.defaultSize * 16),
           )),
     );
   }

@@ -3,16 +3,9 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_green.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:flutter/material.dart';
 
-
 class ExamsNotSolved extends StatelessWidget {
-
-
-
-
   const ExamsNotSolved({
     super.key,
   });
@@ -26,9 +19,9 @@ class ExamsNotSolved extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kExamsNotSolvedGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
             ),
             SizedBox(
               width: AppDimensions.getDimensions(requiredWidth: 4.42),
@@ -48,7 +41,7 @@ class ExamsNotSolved extends StatelessWidget {
           child: ListView.separated(
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
-                return  Container(
+                return Container(
                   padding: EdgeInsets.zero,
                   height: AppDimensions.getDimensions(requiredHeight: 80),
                   width: AppDimensions.getDimensions(requiredWidth: 320),
@@ -60,39 +53,39 @@ class ExamsNotSolved extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding:  EdgeInsets.only(right: AppDimensions.getDimensions
-                          (requiredWidth: 9)),
-                        child: const MainTextBlack(
+                        padding:
+                            EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
+                        child: MainTextBlack(
                           myText: AppStrings.kDigestiveGroups,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                       ),
                       SizedBox(
-                        height:
-                        AppDimensions.getDimensions(requiredHeight: 4),
+                        height: AppDimensions.getDimensions(requiredHeight: 4),
                       ),
                       Padding(
-                        padding:  EdgeInsets.only(right: AppDimensions.getDimensions
-                          (requiredWidth: 12)),
-                        child: const Text(
+                        padding:
+                            EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 12)),
+                        child: Text(
                           AppStrings.kHintTextStatisticsGroups,
                           style: TextStyle(
-                              fontSize: 11,
+                              fontSize: AppDimensions.defaultSize * 11,
                               fontWeight: FontWeight.w700,
                               color: AppColors.kSentGreyTextGroups),
                         ),
                       ),
                     ],
                   ),
-
                 );
-              }, separatorBuilder: (context, index) {
-            return SizedBox(height: AppDimensions.getDimensions
-              (requiredHeight: 8),);
-          }, itemCount: 2),
+              },
+              separatorBuilder: (context, index) {
+                return SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
+                );
+              },
+              itemCount: 2),
         ),
       ],
-    ) ;
+    );
   }
 }
-

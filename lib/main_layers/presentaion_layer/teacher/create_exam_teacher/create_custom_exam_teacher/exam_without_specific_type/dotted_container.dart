@@ -37,10 +37,10 @@ class DottedContainers extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 10),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kDownLoadVideoCreateCustomExam,
                   color: AppColors.kMainGery7A,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 )
               ],
             ),
@@ -72,10 +72,10 @@ class DottedContainers extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 10),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kDownLoadPicCreateCustomExam,
                   color: AppColors.kMainGery7A,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 )
               ],
             ),

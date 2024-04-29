@@ -22,21 +22,20 @@ class SignUpDone extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-
               const CloseSign(),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
               SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 154),
-                  width: AppDimensions.getDimensions(requiredWidth: 154),
-                  child: Lottie.asset(AppAssets.kBlueLike,
-                  ),),
-
+                height: AppDimensions.getDimensions(requiredHeight: 154),
+                width: AppDimensions.getDimensions(requiredWidth: 154),
+                child: Lottie.asset(
+                  AppAssets.kBlueLike,
+                ),
+              ),
               const MainTextBlue(
                 myText: AppStrings.kSignUpDoneSignUp,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-
-              const Text(
+              Text(
                 AppStrings.kHintDoneSignUp,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
@@ -44,23 +43,19 @@ class SignUpDone extends StatelessWidget {
                     fontFamily: 'Almarai',
                     color: AppColors.kSignInMainHintText,
                     fontWeight: FontWeight.w400,
-                    fontSize: 14),
+                    fontSize: AppDimensions.defaultSize * 14),
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
-
               MainButtonRed(
                 buttonName: AppStrings.kButtonDoneSignUp,
                 onPressed: () {
                   Navigator.pushNamed(context, RoutesManager.myHome);
                 },
               ),
-
-
             ],
           ),
         ),
       ),
     );
-
   }
 }

@@ -22,21 +22,20 @@ class ResetPasswordDone extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-          
               const CloseSign(),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
               SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 154),
-                  width: AppDimensions.getDimensions(requiredWidth: 154),
-                  child: Lottie.asset(AppAssets.kBlueLike,
-                  ),),
-          
+                height: AppDimensions.getDimensions(requiredHeight: 154),
+                width: AppDimensions.getDimensions(requiredWidth: 154),
+                child: Lottie.asset(
+                  AppAssets.kBlueLike,
+                ),
+              ),
               const MainTextBlue(
                 myText: AppStrings.kResetPasswordDoneMainText,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-          
-              const Text(
+              Text(
                 AppStrings.kResetPasswordDoneHintText,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
@@ -44,23 +43,19 @@ class ResetPasswordDone extends StatelessWidget {
                     fontFamily: 'Almarai',
                     color: AppColors.kSignInMainHintText,
                     fontWeight: FontWeight.w400,
-                    fontSize: 14),
+                    fontSize: AppDimensions.defaultSize * 14),
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
-          
               MainButtonRed(
                 buttonName: AppStrings.kResetPasswordDoneMainButtonText,
                 onPressed: () {
-          Navigator.pushNamed(context, RoutesManager.loginScreen);
+                  Navigator.pushNamed(context, RoutesManager.loginScreen);
                 },
               ),
-          
-          
             ],
           ),
         ),
       ),
     );
-
   }
 }

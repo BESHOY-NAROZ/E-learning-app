@@ -2,7 +2,6 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/main_hint_text_registration.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
@@ -25,33 +24,34 @@ class ResetPasswordGetCodeEmail extends StatelessWidget {
               designHeight: 1006,
               designWidth: 360,
             ),
-            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 75),),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 75),
+            ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   const MainTextBlue(
                     myText: AppStrings.kForgetPasswordGetCodeEmailMainText,
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  11),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 11),
+                  ),
                   const MainHintTextRegistration(
                     myText: AppStrings.kForgetPasswordGetCodeEmailHintText,
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  50),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 50),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: List.generate(
                       6,
                       (index) {
                         return Container(
-                          height:
-                              AppDimensions.getDimensions(requiredWidth: 45),
+                          height: AppDimensions.getDimensions(requiredWidth: 45),
                           width: AppDimensions.getDimensions(requiredWidth: 40),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -67,7 +67,7 @@ class ResetPasswordGetCodeEmail extends StatelessWidget {
                             maxLength: 1,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(fontSize: 42),
+                            style: TextStyle(fontSize: AppDimensions.defaultSize * 42),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               counterText: '',
@@ -82,9 +82,9 @@ class ResetPasswordGetCodeEmail extends StatelessWidget {
                       },
                     ),
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.67),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.67),
+                  ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,19 +97,15 @@ class ResetPasswordGetCodeEmail extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.33),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.33),
+                  ),
                   MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(
-
-                          context, RoutesManager.setPasswordProfileEditing);
-
+                      Navigator.pushNamed(context, RoutesManager.setPasswordProfileEditing);
                     },
                     buttonName: AppStrings.kForgetPasswordGetCodeMainButtonText,
                   ),
-
                 ],
               ),
             )

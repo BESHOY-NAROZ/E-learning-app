@@ -69,24 +69,24 @@ class AfterAddingAssistantTeacher extends StatelessWidget {
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 20),
                         ),
-                        const Text(
+                        Text(
                           AppStrings.kStudentNameGroups,
                           style: TextStyle(
                               fontFamily: 'Almarai',
                               color: AppColors.kAfterQRGroups,
                               fontWeight: FontWeight.w700,
-                              fontSize: 15),
+                              fontSize: AppDimensions.defaultSize * 15),
                         ),
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 15),
                         ),
-                        const Text(
+                        Text(
                           AppStrings.kStudentNumberGroups,
                           style: TextStyle(
                               fontFamily: 'Almarai',
                               color: AppColors.kAfterQRGroups,
                               fontWeight: FontWeight.w400,
-                              fontSize: 12),
+                              fontSize: AppDimensions.defaultSize * 12),
                         ),
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 30),
@@ -103,13 +103,13 @@ class AfterAddingAssistantTeacher extends StatelessWidget {
                                 Navigator.pushNamed(
                                     context, RoutesManager.addingAssistantDoneTeacher);
                               },
-                              child: const Text(
+                              child: Text(
                                 AppStrings.kSendExamNowExams,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
                                     color: AppColors.kMainTextWhite,
                                     fontWeight: FontWeight.w700,
-                                    fontSize: 16),
+                                    fontSize: AppDimensions.defaultSize * 16),
                               )),
                         )
                       ],

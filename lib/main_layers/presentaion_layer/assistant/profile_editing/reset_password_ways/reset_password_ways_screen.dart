@@ -1,14 +1,11 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/app_bar_signin.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'reset_password_with_email/reset_password_with_email_screen.dart';
 import 'reset_password_with_phone/reset_password_with_phone_number_screen.dart';
-
 
 class ResetPasswordWays extends StatefulWidget {
   const ResetPasswordWays({Key? key}) : super(key: key);
@@ -37,8 +34,8 @@ class _ResetPasswordWaysState extends State<ResetPasswordWays> {
               height: AppDimensions.getDimensions(requiredHeight: 70),
             ),
             Padding(
-              padding:  EdgeInsets.symmetric(horizontal: AppDimensions
-                  .getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 children: [
                   Center(
@@ -46,13 +43,11 @@ class _ResetPasswordWaysState extends State<ResetPasswordWays> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 34.16),
+                          height: AppDimensions.getDimensions(requiredHeight: 34.16),
                           width: AppDimensions.getDimensions(requiredWidth: 99.94),
                           decoration: BoxDecoration(
                               color: ResetPasswordWays.myIndex == 0
-                                  ? AppColors
-                                      .kForgetPasswordToggleSelectedButtonColor
+                                  ? AppColors.kForgetPasswordToggleSelectedButtonColor
                                   : AppColors.kForgetPasswordToggleButtonColor,
                               borderRadius: BorderRadius.circular(10)),
                           child: MaterialButton(
@@ -63,10 +58,9 @@ class _ResetPasswordWaysState extends State<ResetPasswordWays> {
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: ResetPasswordWays.myIndex == 0
-                                    ? AppColors
-                                        .kForgetPasswordToggleSelectedButtonText
+                                    ? AppColors.kForgetPasswordToggleSelectedButtonText
                                     : AppColors.kForgetPasswordToggleButtonText,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                                 fontFamily: 'Almarai',
                               ),
                             ),
@@ -79,13 +73,11 @@ class _ResetPasswordWaysState extends State<ResetPasswordWays> {
                         ),
                         //AppColors.kForgetPasswordToggleSelectedButtonColor
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 34.16),
+                          height: AppDimensions.getDimensions(requiredHeight: 34.16),
                           width: AppDimensions.getDimensions(requiredWidth: 99.94),
                           decoration: BoxDecoration(
                               color: ResetPasswordWays.myIndex == 1
-                                  ? AppColors
-                                      .kForgetPasswordToggleSelectedButtonColor
+                                  ? AppColors.kForgetPasswordToggleSelectedButtonColor
                                   : AppColors.kForgetPasswordToggleButtonColor,
                               borderRadius: BorderRadius.circular(10)),
                           child: MaterialButton(
@@ -96,10 +88,9 @@ class _ResetPasswordWaysState extends State<ResetPasswordWays> {
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: ResetPasswordWays.myIndex == 1
-                                    ? AppColors
-                                        .kForgetPasswordToggleSelectedButtonText
+                                    ? AppColors.kForgetPasswordToggleSelectedButtonText
                                     : AppColors.kForgetPasswordToggleButtonText,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                                 fontFamily: 'Almarai',
                               ),
                             ),
@@ -119,8 +110,6 @@ class _ResetPasswordWaysState extends State<ResetPasswordWays> {
                   ResetPasswordWays.myIndex == 0
                       ? const ResetPasswordWithEmail()
                       : const ResetPasswordWithPhoneNumber(),
-
-
                 ],
               ),
             )

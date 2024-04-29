@@ -37,18 +37,18 @@ class ActualExamTeacher extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kRemainingTimeExams,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       fontWeight: FontWeight.w400,
                       color: AppColors.kMainGery8D,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 3),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualRemainingTimeExams,
-                      fontSize: 24,
+                      fontSize: AppDimensions.defaultSize * 24,
                       fontWeight: FontWeight.w700,
                       color: AppColors.kMainGery8D,
                     ),
@@ -62,9 +62,9 @@ class ActualExamTeacher extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kTestAddressExams,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 24),
@@ -75,9 +75,9 @@ class ActualExamTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 3),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualTestAddressExams,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       fontWeight: FontWeight.w700,
                       color: AppColors.kMainGery8D,
                     ),
@@ -94,24 +94,24 @@ class ActualExamTeacher extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 14),
                   ),
-                  const MainTextBlack(
+                  MainTextBlack(
                     myText: AppStrings.kMandatoryQExams,
-                    fontSize: 16,
+                    fontSize: AppDimensions.defaultSize * 16,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
                   ),
-                  const MainTextBlack(
+                  MainTextBlack(
                     myText: AppStrings.kFirstQExams,
-                    fontSize: 16,
+                    fontSize: AppDimensions.defaultSize * 16,
                     fontWeight: FontWeight.w400,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 20),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kActualFirstQExams,
-                    fontSize: 14,
+                    fontSize: AppDimensions.defaultSize * 14,
                     fontWeight: FontWeight.w400,
                   ),
                   SizedBox(
@@ -187,7 +187,7 @@ class ActualExamTeacher extends StatelessWidget {
                         myText: AppStrings.kQPercentageCreateExam,
                         color: AppColors.kMainGery8D,
                         textDirection: TextDirection.rtl,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 24),
@@ -226,9 +226,9 @@ class ActualExamTeacher extends StatelessWidget {
                             SizedBox(
                               width: AppDimensions.getDimensions(requiredWidth: 5),
                             ),
-                            const MainTextWhite(
+                            MainTextWhite(
                               myText: AppStrings.kNextQExams,
-                              fontSize: 16,
+                              fontSize: AppDimensions.defaultSize * 16,
                               fontWeight: FontWeight.w700,
                             ),
                           ],

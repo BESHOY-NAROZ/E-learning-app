@@ -1,4 +1,3 @@
-import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
@@ -20,8 +19,7 @@ class TeachersList extends StatelessWidget {
       height: AppDimensions.getDimensions(requiredHeight: 57),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       decoration: BoxDecoration(
-          color: AppColors.kSentExamsContainerGroups,
-          borderRadius: BorderRadius.circular(8)),
+          color: AppColors.kSentExamsContainerGroups, borderRadius: BorderRadius.circular(8)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -34,23 +32,21 @@ class TeachersList extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(
-                    right: AppDimensions.getDimensions(requiredWidth: 9)),
-                child: const MainTextBlack(
+                padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
+                child: MainTextBlack(
                   myText: AppStrings.kTeacherNameTeachers,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
               ),
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 4),
               ),
               Padding(
-                padding: EdgeInsets.only(
-                    right: AppDimensions.getDimensions(requiredWidth: 12)),
-                child: const Text(
+                padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 12)),
+                child: Text(
                   AppStrings.kTeacherSubjectsTeachers,
                   style: TextStyle(
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       fontWeight: FontWeight.w700,
                       color: AppColors.kSentGreyTextGroups),
                 ),
@@ -73,13 +69,10 @@ class TeachersList extends StatelessWidget {
             decoration: BoxDecoration(
                 color: AppColors.kAppBarPhotoMainScreenHome,
                 shape: BoxShape.circle,
-                border: Border.all(
-                    color: AppColors.kAppBarBorderMainScreenHome, width: 3)),
+                border: Border.all(color: AppColors.kAppBarBorderMainScreenHome, width: 3)),
           ),
         ],
       ),
     );
   }
 }
-
-

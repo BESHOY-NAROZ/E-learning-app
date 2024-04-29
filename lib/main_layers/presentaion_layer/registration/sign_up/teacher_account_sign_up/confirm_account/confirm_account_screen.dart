@@ -40,8 +40,8 @@ class _ConfirmAccountTeacherState extends State<ConfirmAccountTeacher> {
               height: AppDimensions.getDimensions(requiredHeight: 75),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -63,8 +63,7 @@ class _ConfirmAccountTeacherState extends State<ConfirmAccountTeacher> {
                       6,
                       (index) {
                         return Container(
-                          height:
-                              AppDimensions.getDimensions(requiredWidth: 45),
+                          height: AppDimensions.getDimensions(requiredWidth: 45),
                           width: AppDimensions.getDimensions(requiredWidth: 40),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -80,7 +79,7 @@ class _ConfirmAccountTeacherState extends State<ConfirmAccountTeacher> {
                             cursorHeight: 0,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(fontSize: 42),
+                            style: TextStyle(fontSize: AppDimensions.defaultSize * 42),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               counterText: '',
@@ -101,8 +100,7 @@ class _ConfirmAccountTeacherState extends State<ConfirmAccountTeacher> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      if (ConfirmAccountTeacher.startCuntDown)
-                        const ConfirmAccountCountDownTimer(),
+                      if (ConfirmAccountTeacher.startCuntDown) const ConfirmAccountCountDownTimer(),
                       InkWell(
                         onTap: () {
                           setState(() {

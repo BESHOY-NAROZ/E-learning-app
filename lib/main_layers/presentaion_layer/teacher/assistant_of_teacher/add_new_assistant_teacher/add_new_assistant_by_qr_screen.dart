@@ -36,9 +36,9 @@ class AddNewAssistantByQRTeacher extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 20),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kScanAssistantOfTeacher,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                   textDirection: TextDirection.rtl,
                 ),

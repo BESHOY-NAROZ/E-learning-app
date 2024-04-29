@@ -34,14 +34,14 @@ class AddingAssistantDoneTeacher extends StatelessWidget {
               myText: AppStrings.kSendExamDoneExams,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-            const Text(
+            Text(
               AppStrings.kHintSendExamDoneExams,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Almarai',
                   color: AppColors.kSignInMainHintText,
                   fontWeight: FontWeight.w400,
-                  fontSize: 14),
+                  fontSize: AppDimensions.defaultSize * 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
             MainButtonRed(

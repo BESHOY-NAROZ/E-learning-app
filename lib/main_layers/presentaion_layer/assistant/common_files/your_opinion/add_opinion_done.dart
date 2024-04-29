@@ -3,9 +3,7 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:flutter/material.dart';
@@ -28,15 +26,14 @@ class AddOpinionDone extends StatelessWidget {
             SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 154),
                 width: AppDimensions.getDimensions(requiredWidth: 154),
-                child: Lottie.asset(AppAssets.kBlueLike,
-                )
-
-            ),
+                child: Lottie.asset(
+                  AppAssets.kBlueLike,
+                )),
             const MainTextBlue(
               myText: AppStrings.kOpinionDoneCommon,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-            const Text(
+            Text(
               AppStrings.kOpinionDoneHintCommon,
               textAlign: TextAlign.center,
               textDirection: TextDirection.rtl,
@@ -44,7 +41,7 @@ class AddOpinionDone extends StatelessWidget {
                   fontFamily: 'Almarai',
                   color: AppColors.kSignInMainHintText,
                   fontWeight: FontWeight.w400,
-                  fontSize: 14),
+                  fontSize: AppDimensions.defaultSize * 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 214)),
             MainButtonRed(

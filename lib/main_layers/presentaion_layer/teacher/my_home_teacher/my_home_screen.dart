@@ -13,13 +13,14 @@ class MyHomeTeacher extends StatefulWidget {
   State<MyHomeTeacher> createState() => _MyHomeTeacherState();
 }
 
+//AppLists.myTeacherScreens
 class _MyHomeTeacherState extends State<MyHomeTeacher> {
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
       bottomNavigationBar: SizedBox(
-        height: AppDimensions.getDimensions(requiredHeight: 57.6),
+        height: AppDimensions.getDimensions(requiredHeight: 64),
         width: AppDimensions.getDimensions(requiredWidth: 305),
         child: BottomNavigationBar(
           onTap: (value) {
@@ -31,14 +32,16 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
           currentIndex: MyHomeTeacher.index,
           type: BottomNavigationBarType.fixed,
           backgroundColor: AppColors.kBottomAppBarMainScreenHome,
-          unselectedItemColor:
-              AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
-          selectedItemColor:
-              AppColors.kBottomNavigationBarSelectedMainScreenHome,
-          selectedLabelStyle: const TextStyle(
-              fontFamily: 'Almarai', fontWeight: FontWeight.w700, fontSize: 11),
-          unselectedLabelStyle: const TextStyle(
-              fontFamily: 'Almarai', fontWeight: FontWeight.w700, fontSize: 11),
+          unselectedItemColor: AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
+          selectedItemColor: AppColors.kBottomNavigationBarSelectedMainScreenHome,
+          selectedLabelStyle: TextStyle(
+              fontFamily: 'Almarai',
+              fontWeight: FontWeight.w700,
+              fontSize: AppDimensions.defaultSize * 11),
+          unselectedLabelStyle: TextStyle(
+              fontFamily: 'Almarai',
+              fontWeight: FontWeight.w700,
+              fontSize: AppDimensions.defaultSize * 11),
           items: [
             BottomNavigationBarItem(
                 icon: SizedBox(
@@ -48,8 +51,7 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
                       AppAssets.kBottomNavigationBarItem1HomeScreen,
                       color: MyHomeTeacher.index == 0
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
                 label: AppStrings.kBottomNavigationBarMenuMainScreenHome),
             BottomNavigationBarItem(
@@ -60,11 +62,9 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
                       AppAssets.kBottomNavigationBarItem2HomeScreen,
                       color: MyHomeTeacher.index == 1
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
-                label:
-                    AppStrings.kBottomNavigationBarNotificationMainScreenHome),
+                label: AppStrings.kBottomNavigationBarNotificationMainScreenHome),
             BottomNavigationBarItem(
                 icon: SizedBox(
                     width: AppDimensions.getDimensions(requiredWidth: 24),
@@ -73,26 +73,30 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
                       AppAssets.kVector3HomeScreen,
                       color: MyHomeTeacher.index == 2
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
                 label: AppStrings.kBottomNavigationBarUsersMainScreenHome),
             BottomNavigationBarItem(
                 icon: SizedBox(
+                  width: AppDimensions.getDimensions(requiredWidth: 24),
+                  height: AppDimensions.getDimensions(requiredHeight: 24),
+                  child: Image.asset(
+                    AppAssets.kBottomNavigationBarItem4HomeScreen,
+                    color: MyHomeTeacher.index == 3
+                        ? AppColors.kBottomNavigationBarSelectedMainScreenHome
+                        : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     width: AppDimensions.getDimensions(requiredWidth: 24),
                     height: AppDimensions.getDimensions(requiredHeight: 24),
-                    child: Image.asset(
-                      AppAssets.kBottomNavigationBarItem4HomeScreen,
-                      color: MyHomeTeacher.index == 3
-                          ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
-                    )),
+                  ),
+                ),
                 label: AppStrings.kBottomNavigationBarHomeMainScreenHome),
           ],
         ),
       ),
-      body: AppLists.myTeacherScreens[MyHomeTeacher.index],
+      body: IndexedStack(
+        index: MyHomeTeacher.index,
+        children: AppLists.myTeacherScreens,
+      ),
     );
   }
 }

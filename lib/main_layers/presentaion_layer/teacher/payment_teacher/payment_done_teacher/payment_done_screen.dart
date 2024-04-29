@@ -36,12 +36,12 @@ class PaymentDoneTeacher extends StatelessWidget {
                 myText: AppStrings.kPaymentPayment,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 5)),
-              const MainTextBlack(
+              MainTextBlack(
                 myText: AppStrings.kPaymentBlackPayment,
-                fontSize: 16,
+                fontSize: AppDimensions.defaultSize * 16,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 10)),
-              const Text(
+              Text(
                 AppStrings.kPaymentHintPayment,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
@@ -49,7 +49,7 @@ class PaymentDoneTeacher extends StatelessWidget {
                     fontFamily: 'Almarai',
                     color: AppColors.kSignInMainHintText,
                     fontWeight: FontWeight.w400,
-                    fontSize: 14),
+                    fontSize: AppDimensions.defaultSize * 14),
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 220)),
               MainButtonRed(

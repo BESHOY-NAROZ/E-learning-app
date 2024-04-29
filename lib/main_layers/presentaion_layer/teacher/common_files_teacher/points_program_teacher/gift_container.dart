@@ -26,10 +26,10 @@ class GiftContainerPointsProgram extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kIncreasePointsProgram,
               textDirection: TextDirection.rtl,
-              fontSize: 18,
+              fontSize: AppDimensions.defaultSize * 18,
             ),
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 4),
@@ -47,7 +47,9 @@ class GiftContainerPointsProgram extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const MainTextGrey(myText: AppStrings.kCopyPointsProgram, fontSize: 14),
+                    MainTextGrey(
+                        myText: AppStrings.kCopyPointsProgram,
+                        fontSize: AppDimensions.defaultSize * 14),
                     SizedBox(width: AppDimensions.getDimensions(requiredWidth: 8)),
                     Container(
                       width: AppDimensions.getDimensions(requiredWidth: 2),
@@ -55,10 +57,14 @@ class GiftContainerPointsProgram extends StatelessWidget {
                       color: AppColors.kLoginEmailOrPhone,
                     ),
                     SizedBox(width: AppDimensions.getDimensions(requiredWidth: 22)),
-                    const Column(
+                    Column(
                       children: [
-                        MainTextGrey(myText: AppStrings.kCodePointsProgram, fontSize: 12),
-                        MainTextGrey(myText: AppStrings.kActualCopyPointsProgram, fontSize: 14),
+                        MainTextGrey(
+                            myText: AppStrings.kCodePointsProgram,
+                            fontSize: AppDimensions.defaultSize * 12),
+                        MainTextGrey(
+                            myText: AppStrings.kActualCopyPointsProgram,
+                            fontSize: AppDimensions.defaultSize * 14),
                       ],
                     )
                   ],

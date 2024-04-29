@@ -22,18 +22,18 @@ class SelectAnswerRadio extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const Row(
+            Row(
               children: [
                 MainTextGrey(
                   myText: AppStrings.kActualFirstChoiceExams,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w400,
                   textDirection: TextDirection.rtl,
                 ),
                 Text('   '),
                 MainTextGrey(
                   myText: AppStrings.kFirstChoiceExams,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w800,
                   textDirection: TextDirection.rtl,
                 ),
@@ -67,18 +67,18 @@ class SelectAnswerRadio extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const Row(
+            Row(
               children: [
                 MainTextGrey(
                   myText: AppStrings.kActualSecondChoiceExams,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w400,
                   textDirection: TextDirection.rtl,
                 ),
                 Text('  '),
                 MainTextGrey(
                   myText: AppStrings.kSecondChoiceExams,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w800,
                   textDirection: TextDirection.rtl,
                 ),
@@ -112,18 +112,18 @@ class SelectAnswerRadio extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const Row(
+            Row(
               children: [
                 MainTextGrey(
                   myText: AppStrings.kActualThirdChoiceExams,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w400,
                   textDirection: TextDirection.rtl,
                 ),
                 Text('   '),
                 MainTextGrey(
                   myText: AppStrings.kThirdChoiceExams,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w800,
                   textDirection: TextDirection.rtl,
                 ),

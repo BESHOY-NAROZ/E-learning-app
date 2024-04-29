@@ -34,17 +34,17 @@ class PaymentMethodsTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 26),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kPaymentMethodPayment,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 6),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kChoosePaymentMethodPayment,
                       color: AppColors.kMainGery7A,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 18),
@@ -74,33 +74,33 @@ class PaymentMethodsTeacher extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Row(
+                Row(
                   children: [
                     MainTextGrey(
                       myText: AppStrings.kTotalPricesPayment,
                       color: AppColors.kMainGery8D,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                     ),
                     Spacer(),
                     MainTextGrey(
                       myText: AppStrings.kMajorPricePayment,
                       color: AppColors.kMainGery8D,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     )
                   ],
                 ),
                 Row(
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kActualTotalPricesPayment,
-                      fontSize: 20,
+                      fontSize: AppDimensions.defaultSize * 20,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 3),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kEGPPayment,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                     )
                   ],
                 ),

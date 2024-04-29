@@ -23,9 +23,9 @@ class SentApprovalsList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          const MainTextBlack(
+          MainTextBlack(
             myText: AppStrings.kApprovalsNameHintAssistantOfTeacher,
-            fontSize: 16,
+            fontSize: AppDimensions.defaultSize * 16,
           ),
           SizedBox(
             height: AppDimensions.getDimensions(requiredHeight: 10),
@@ -33,9 +33,9 @@ class SentApprovalsList extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const MainTextGrey(
+              MainTextGrey(
                 myText: AppStrings.kActualApprovalsHintAssistantOfTeacher,
-                fontSize: 10,
+                fontSize: AppDimensions.defaultSize * 10,
                 color: AppColors.kMainGery8D,
               ),
               SizedBox(
@@ -55,9 +55,9 @@ class SentApprovalsList extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const MainTextGrey(
+              MainTextGrey(
                 myText: AppStrings.kActualApprovalsHintAssistantOfTeacher,
-                fontSize: 10,
+                fontSize: AppDimensions.defaultSize * 10,
                 color: AppColors.kMainGery8D,
               ),
               SizedBox(

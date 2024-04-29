@@ -37,9 +37,9 @@ class BigContainerPaymentTeacher extends StatelessWidget {
                 width: AppDimensions.getDimensions(requiredWidth: 20),
               ),
               const Spacer(),
-              const MainTextBlack(
+              MainTextBlack(
                 myText: AppStrings.kFirstTestPayment,
-                fontSize: 16,
+                fontSize: AppDimensions.defaultSize * 16,
               ),
             ],
           ),
@@ -58,22 +58,22 @@ class BigContainerPaymentTeacher extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kGroupsPayment,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       color: AppColors.kMainGery8D,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 3),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kActualGroupsPayment,
-                      fontSize: 30,
+                      fontSize: AppDimensions.defaultSize * 30,
                     ),
                     const Spacer(),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kGroupsNumberPayment,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     )
                   ],
                 ),
@@ -91,9 +91,9 @@ class BigContainerPaymentTeacher extends StatelessWidget {
                       },
                     ),
                     const Spacer(),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualGroupsNumberPayment,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       color: AppColors.kMainGery8D,
                     )
                   ],
@@ -111,20 +111,20 @@ class BigContainerPaymentTeacher extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kActualStudentsNumberPayment,
                         color: AppColors.kMainBlueC4,
                         textDirection: TextDirection.rtl,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 3),
                       ),
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kStudentsNumberPayment,
                         color: AppColors.kMainGery7A,
                         textDirection: TextDirection.rtl,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ],
                   ),
@@ -133,20 +133,20 @@ class BigContainerPaymentTeacher extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kActualStudentsNumberPayment,
                         color: AppColors.kMainBlueC4,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         textDirection: TextDirection.rtl,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 3),
                       ),
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kStudentsPayedNumberPayment,
                         color: AppColors.kMainGery7A,
                         textDirection: TextDirection.rtl,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ],
                   ),
@@ -155,46 +155,46 @@ class BigContainerPaymentTeacher extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kActualStudentsPayedNumberPayment,
                         color: AppColors.kMainBlueC4,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         textDirection: TextDirection.rtl,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 3),
                       ),
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kStudentsWillPayNumberPayment,
                         color: AppColors.kMainGery7A,
                         textDirection: TextDirection.rtl,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ],
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 14),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kCostPayment,
                     color: AppColors.kMainGery8D,
-                    fontSize: 10,
+                    fontSize: AppDimensions.defaultSize * 10,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 2),
                   ),
                   Row(
                     children: [
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kPricePayment,
-                        fontSize: 30,
+                        fontSize: AppDimensions.defaultSize * 30,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 3),
                       ),
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kEGPPayment,
-                        fontSize: 14,
+                        fontSize: AppDimensions.defaultSize * 14,
                       ),
                     ],
                   )

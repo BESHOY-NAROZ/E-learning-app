@@ -28,72 +28,76 @@ class NotificationsTeacher extends StatelessWidget {
           SizedBox(
             height: AppDimensions.getDimensions(requiredHeight: 16),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                const MainTextBlue(
-                  myText: AppStrings.kNotificationsMainTextCommon,
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    const MainTextBlue(
+                      myText: AppStrings.kNotificationsMainTextCommon,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 14),
+                    ),
+                    MainTextBlack(
+                      myText: AppStrings.kRecentlyCommon,
+                      fontSize: AppDimensions.defaultSize * 16,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 12),
+                    ),
+                    const MainContainerNotifications(
+                      time: AppStrings.kSixMinCommon,
+                      title: AppStrings.kFirstGroupCommon,
+                      description: AppStrings.kFDescriptionNotificationsCommon,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    const MainContainerNotifications(
+                      time: AppStrings.kThreeHoursCommon,
+                      title: AppStrings.kGroupStaticsCommon,
+                      description: AppStrings.kSDescriptionNotificationsCommon,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    const MainContainerNotifications(
+                      time: AppStrings.kThreeHoursCommon,
+                      title: AppStrings.kGroupStaticsCommon,
+                      description: AppStrings.kSDescriptionNotificationsCommon,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 12),
+                    ),
+                    MainTextBlack(
+                      myText: AppStrings.kLaterCommon,
+                      fontSize: AppDimensions.defaultSize * 16,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 12),
+                    ),
+                    const MainContainerNotifications(
+                      time: AppStrings.kThreeHoursCommon,
+                      title: AppStrings.kGroupStaticsCommon,
+                      description: AppStrings.kSDescriptionNotificationsCommon,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    const MainContainerNotifications(
+                      time: AppStrings.kThreeHoursCommon,
+                      title: AppStrings.kGroupStaticsCommon,
+                      description: AppStrings.kSDescriptionNotificationsCommon,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                  ],
                 ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 14),
-                ),
-                const MainTextBlack(
-                  myText: AppStrings.kRecentlyCommon,
-                  fontSize: 16,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 12),
-                ),
-                const MainContainerNotifications(
-                  time: AppStrings.kSixMinCommon,
-                  title: AppStrings.kFirstGroupCommon,
-                  description: AppStrings.kFDescriptionNotificationsCommon,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                const MainContainerNotifications(
-                  time: AppStrings.kThreeHoursCommon,
-                  title: AppStrings.kGroupStaticsCommon,
-                  description: AppStrings.kSDescriptionNotificationsCommon,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                const MainContainerNotifications(
-                  time: AppStrings.kThreeHoursCommon,
-                  title: AppStrings.kGroupStaticsCommon,
-                  description: AppStrings.kSDescriptionNotificationsCommon,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 12),
-                ),
-                const MainTextBlack(
-                  myText: AppStrings.kLaterCommon,
-                  fontSize: 16,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 12),
-                ),
-                const MainContainerNotifications(
-                  time: AppStrings.kThreeHoursCommon,
-                  title: AppStrings.kGroupStaticsCommon,
-                  description: AppStrings.kSDescriptionNotificationsCommon,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                const MainContainerNotifications(
-                  time: AppStrings.kThreeHoursCommon,
-                  title: AppStrings.kGroupStaticsCommon,
-                  description: AppStrings.kSDescriptionNotificationsCommon,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-              ],
+              ),
             ),
           )
         ],

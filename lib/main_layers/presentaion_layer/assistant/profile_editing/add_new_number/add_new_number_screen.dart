@@ -43,17 +43,17 @@ class _AddNewNumberState extends State<AddNewNumber> {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 50),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kAddNewNumberMainProfileEditing,
                       color: AppColors.kMainTextProfileEditing,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 5),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kAddNewNumberHintProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
@@ -69,8 +69,7 @@ class _AddNewNumberState extends State<AddNewNumber> {
                           children: [
                             Padding(
                               padding: EdgeInsets.symmetric(
-                                  horizontal: AppDimensions.getDimensions(
-                                      requiredWidth: 8)),
+                                  horizontal: AppDimensions.getDimensions(requiredWidth: 8)),
                               child: Row(
                                 children: [
                                   InkWell(
@@ -79,149 +78,107 @@ class _AddNewNumberState extends State<AddNewNumber> {
                                         context: context,
                                         builder: (context) {
                                           return Container(
-                                            width: AppDimensions.getDimensions(
-                                                requiredWidth: 360),
-                                            height: AppDimensions.getDimensions(
-                                                requiredHeight: 187),
+                                            width: AppDimensions.getDimensions(requiredWidth: 360),
+                                            height:
+                                                AppDimensions.getDimensions(requiredHeight: 187),
                                             clipBehavior: Clip.antiAlias,
                                             decoration: BoxDecoration(
                                                 color: AppColors.kMainTextWhite,
-                                                borderRadius:
-                                                    BorderRadius.circular(20)),
+                                                borderRadius: BorderRadius.circular(20)),
                                             child: Padding(
                                               padding: EdgeInsets.symmetric(
                                                 horizontal:
-                                                    AppDimensions.getDimensions(
-                                                        requiredWidth: 20),
+                                                    AppDimensions.getDimensions(requiredWidth: 20),
                                               ),
                                               child: Column(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.end,
                                                 children: [
-                                                  const MainTextBlack(
-                                                    myText: AppStrings
-                                                        .kMainRemoveSheet,
-                                                    fontSize: 18,
+                                                  MainTextBlack(
+                                                    myText: AppStrings.kMainRemoveSheet,
+                                                    fontSize: AppDimensions.defaultSize * 18,
                                                   ),
                                                   SizedBox(
-                                                    height: AppDimensions
-                                                        .getDimensions(
-                                                            requiredHeight: 14),
+                                                    height: AppDimensions.getDimensions(
+                                                        requiredHeight: 14),
                                                   ),
-                                                  const MainTextGrey(
-                                                    myText: AppStrings
-                                                        .kHintRemoveSheet,
-                                                    color: AppColors
-                                                        .kDetailsProfileEditing,
-                                                    fontSize: 14,
+                                                  MainTextGrey(
+                                                    myText: AppStrings.kHintRemoveSheet,
+                                                    color: AppColors.kDetailsProfileEditing,
+                                                    fontSize: AppDimensions.defaultSize * 14,
                                                     fontWeight: FontWeight.w400,
                                                   ),
                                                   SizedBox(
-                                                    height: AppDimensions
-                                                        .getDimensions(
-                                                            requiredHeight: 12),
+                                                    height: AppDimensions.getDimensions(
+                                                        requiredHeight: 12),
                                                   ),
                                                   Row(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
+                                                      mainAxisAlignment: MainAxisAlignment.center,
                                                       children: [
                                                         Container(
-                                                          height: AppDimensions
-                                                              .getDimensions(
-                                                                  requiredHeight:
-                                                                      45),
-                                                          width: AppDimensions
-                                                              .getDimensions(
-                                                                  requiredWidth:
-                                                                      136),
-                                                          clipBehavior: Clip
-                                                              .antiAliasWithSaveLayer,
+                                                          height: AppDimensions.getDimensions(
+                                                              requiredHeight: 45),
+                                                          width: AppDimensions.getDimensions(
+                                                              requiredWidth: 136),
+                                                          clipBehavior: Clip.antiAliasWithSaveLayer,
                                                           decoration: BoxDecoration(
                                                               borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          10)),
+                                                                  BorderRadius.circular(10)),
                                                           child: MaterialButton(
                                                               color: AppColors
                                                                   .kMainScreenNewVersionButton,
-                                                              shape:
-                                                                  const RoundedRectangleBorder(),
+                                                              shape: const RoundedRectangleBorder(),
                                                               onPressed: () {
-                                                                Navigator.pop(
-                                                                    context);
+                                                                Navigator.pop(context);
                                                               },
-                                                              child: const Text(
-                                                                AppStrings
-                                                                    .kBackRemoveSheet,
+                                                              child: Text(
+                                                                AppStrings.kBackRemoveSheet,
                                                                 style: TextStyle(
-                                                                    fontFamily:
-                                                                        'Almarai',
+                                                                    fontFamily: 'Almarai',
                                                                     color: AppColors
                                                                         .kMainScreenNewVersionButtonText,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w700,
+                                                                    fontWeight: FontWeight.w700,
                                                                     fontSize:
-                                                                        16),
+                                                                        AppDimensions.defaultSize *
+                                                                            16),
                                                               )),
                                                         ),
                                                         SizedBox(
-                                                          width: AppDimensions
-                                                              .getDimensions(
-                                                                  requiredWidth:
-                                                                      10),
+                                                          width: AppDimensions.getDimensions(
+                                                              requiredWidth: 10),
                                                         ),
                                                         Container(
-                                                          height: AppDimensions
-                                                              .getDimensions(
-                                                                  requiredHeight:
-                                                                      45),
-                                                          width: AppDimensions
-                                                              .getDimensions(
-                                                                  requiredWidth:
-                                                                      136),
-                                                          clipBehavior: Clip
-                                                              .antiAliasWithSaveLayer,
+                                                          height: AppDimensions.getDimensions(
+                                                              requiredHeight: 45),
+                                                          width: AppDimensions.getDimensions(
+                                                              requiredWidth: 136),
+                                                          clipBehavior: Clip.antiAliasWithSaveLayer,
                                                           decoration: BoxDecoration(
                                                               borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          10)),
+                                                                  BorderRadius.circular(10)),
                                                           child: MaterialButton(
-                                                              color: AppColors
-                                                                  .kMainButton,
-                                                              shape:
-                                                                  const RoundedRectangleBorder(),
+                                                              color: AppColors.kMainButton,
+                                                              shape: const RoundedRectangleBorder(),
                                                               onPressed: () {
                                                                 setState(() {
                                                                   myCount--;
                                                                 });
-                                                                Navigator.pop(
-                                                                    context);
+                                                                Navigator.pop(context);
                                                               },
-                                                              child: const Text(
-                                                                AppStrings
-                                                                    .kActualRemoveSheet,
+                                                              child: Text(
+                                                                AppStrings.kActualRemoveSheet,
                                                                 style: TextStyle(
-                                                                    fontFamily:
-                                                                        'Almarai',
-                                                                    color: AppColors
-                                                                        .kMainTextWhite,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w700,
+                                                                    fontFamily: 'Almarai',
+                                                                    color: AppColors.kMainTextWhite,
+                                                                    fontWeight: FontWeight.w700,
                                                                     fontSize:
-                                                                        16),
+                                                                        AppDimensions.defaultSize *
+                                                                            16),
                                                               )),
                                                         ),
                                                         SizedBox(
-                                                          width: AppDimensions
-                                                              .getDimensions(
-                                                                  requiredWidth:
-                                                                      15),
+                                                          width: AppDimensions.getDimensions(
+                                                              requiredWidth: 15),
                                                         )
                                                       ]),
                                                 ],
@@ -236,23 +193,20 @@ class _AddNewNumberState extends State<AddNewNumber> {
                                     ),
                                   ),
                                   const Spacer(),
-                                  const MainTextGrey(
-                                    myText: AppStrings
-                                        .kPhoneNumberHintProfileEditing,
-                                    fontSize: 12,
+                                  MainTextGrey(
+                                    myText: AppStrings.kPhoneNumberHintProfileEditing,
+                                    fontSize: AppDimensions.defaultSize * 12,
                                     color: AppColors.kDetailsProfileEditing,
                                   ),
                                 ],
                               ),
                             ),
                             SizedBox(
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 8),
+                              height: AppDimensions.getDimensions(requiredHeight: 8),
                             ),
                             const CustomTextFormFiled(),
                             SizedBox(
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 15),
+                              height: AppDimensions.getDimensions(requiredHeight: 15),
                             ),
                           ],
                         );
@@ -261,8 +215,7 @@ class _AddNewNumberState extends State<AddNewNumber> {
                     Align(
                       alignment: Alignment.topLeft,
                       child: MainAddSmallButton(
-                        myText:
-                            AppStrings.kAddNewNumberSmallButtonProfileEditing,
+                        myText: AppStrings.kAddNewNumberSmallButtonProfileEditing,
                         requiredWidth: 126,
                         onPressed: () {
                           setState(() {
@@ -277,8 +230,7 @@ class _AddNewNumberState extends State<AddNewNumber> {
                     MainButtonRed(
                       buttonName: AppStrings.kAddNewNumberButtonProfileEditing,
                       onPressed: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.addNewNumberDone);
+                        Navigator.pushNamed(context, RoutesManager.addNewNumberDone);
                       },
                     )
                   ],

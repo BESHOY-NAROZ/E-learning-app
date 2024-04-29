@@ -31,10 +31,10 @@ class PurchasesTeacher extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kLaterPurchases,
                       textDirection: TextDirection.rtl,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 7),
@@ -57,17 +57,17 @@ class PurchasesTeacher extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.end,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                const MainTextGrey(
+                                MainTextGrey(
                                   myText: AppStrings.kDatePurchases,
                                   color: AppColors.kSentGreyTextGroups,
-                                  fontSize: 10,
+                                  fontSize: AppDimensions.defaultSize * 10,
                                 ),
                                 SizedBox(
                                   width: AppDimensions.getDimensions(requiredWidth: 5),
                                 ),
-                                const MainTextBlack(
+                                MainTextBlack(
                                   myText: AppStrings.kSaturdayPurchases,
-                                  fontSize: 16,
+                                  fontSize: AppDimensions.defaultSize * 16,
                                 ),
                               ],
                             ),
@@ -81,33 +81,33 @@ class PurchasesTeacher extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     MainTextBlack(
                                       myText: AppStrings.kPricePurchases,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kDotsPurchases,
                                       color: AppColors.kSentGreyTextGroups,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kActualPurchases,
                                       color: AppColors.kMainGery96,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                   ],
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 6)),
-                                  child: const MainTextGrey(
+                                  child: MainTextGrey(
                                     myText: AppStrings.kClassPurchases,
                                     color: AppColors.kMainGery96,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                   ),
                                 ),
                               ],
@@ -122,33 +122,33 @@ class PurchasesTeacher extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     MainTextBlack(
                                       myText: AppStrings.kPricePurchases,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kDotsPurchases,
                                       color: AppColors.kSentGreyTextGroups,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kActualPurchases,
                                       color: AppColors.kMainGery96,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                   ],
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 6)),
-                                  child: const MainTextGrey(
+                                  child: MainTextGrey(
                                     myText: AppStrings.kClassPurchases,
                                     color: AppColors.kMainGery96,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                   ),
                                 ),
                               ],
@@ -163,33 +163,33 @@ class PurchasesTeacher extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     MainTextBlack(
                                       myText: AppStrings.kPricePurchases,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kDotsPurchases,
                                       color: AppColors.kSentGreyTextGroups,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kActualPurchases,
                                       color: AppColors.kMainGery96,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                   ],
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 6)),
-                                  child: const MainTextGrey(
+                                  child: MainTextGrey(
                                     myText: AppStrings.kClassPurchases,
                                     color: AppColors.kMainGery96,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                   ),
                                 ),
                               ],
@@ -210,17 +210,17 @@ class PurchasesTeacher extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 12)),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       MainTextWhite(
                                         myText: AppStrings.kRefPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       Spacer(),
                                       MainTextWhite(
                                         myText: AppStrings.kBillPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ],
@@ -247,9 +247,9 @@ class PurchasesTeacher extends StatelessWidget {
                                       child: Row(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
-                                            const MainTextBlack(
+                                            MainTextBlack(
                                               myText: AppStrings.kCreditCardPurchases,
-                                              fontSize: 12,
+                                              fontSize: AppDimensions.defaultSize * 12,
                                             ),
                                             SizedBox(
                                               width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -272,17 +272,17 @@ class PurchasesTeacher extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 12)),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       MainTextWhite(
                                         myText: AppStrings.kTotalCostPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       Spacer(),
                                       MainTextWhite(
                                         myText: AppStrings.kCostPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ],
@@ -291,22 +291,22 @@ class PurchasesTeacher extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 12)),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       MainTextWhite(
                                         myText: AppStrings.kActualCostPurchases,
-                                        fontSize: 20,
+                                        fontSize: AppDimensions.defaultSize * 20,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       MainTextWhite(
                                         myText: AppStrings.kEGPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       Spacer(),
                                       MainTextWhite(
                                         myText: AppStrings.kDiscountPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ],
@@ -339,17 +339,17 @@ class PurchasesTeacher extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.end,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                const MainTextGrey(
+                                MainTextGrey(
                                   myText: AppStrings.kDatePurchases,
                                   color: AppColors.kSentGreyTextGroups,
-                                  fontSize: 10,
+                                  fontSize: AppDimensions.defaultSize * 10,
                                 ),
                                 SizedBox(
                                   width: AppDimensions.getDimensions(requiredWidth: 5),
                                 ),
-                                const MainTextBlack(
+                                MainTextBlack(
                                   myText: AppStrings.kSaturdayPurchases,
-                                  fontSize: 16,
+                                  fontSize: AppDimensions.defaultSize * 16,
                                 ),
                               ],
                             ),
@@ -363,33 +363,33 @@ class PurchasesTeacher extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     MainTextBlack(
                                       myText: AppStrings.kPricePurchases,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kDotsPurchases,
                                       color: AppColors.kSentGreyTextGroups,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kActualPurchases,
                                       color: AppColors.kMainGery96,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                   ],
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 6)),
-                                  child: const MainTextGrey(
+                                  child: MainTextGrey(
                                     myText: AppStrings.kClassPurchases,
                                     color: AppColors.kMainGery96,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                   ),
                                 ),
                               ],
@@ -404,33 +404,33 @@ class PurchasesTeacher extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     MainTextBlack(
                                       myText: AppStrings.kPricePurchases,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kDotsPurchases,
                                       color: AppColors.kSentGreyTextGroups,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kActualPurchases,
                                       color: AppColors.kMainGery96,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                   ],
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 6)),
-                                  child: const MainTextGrey(
+                                  child: MainTextGrey(
                                     myText: AppStrings.kClassPurchases,
                                     color: AppColors.kMainGery96,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                   ),
                                 ),
                               ],
@@ -445,33 +445,33 @@ class PurchasesTeacher extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const Row(
+                                Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     MainTextBlack(
                                       myText: AppStrings.kPricePurchases,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kDotsPurchases,
                                       color: AppColors.kSentGreyTextGroups,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                     MainTextGrey(
                                       myText: AppStrings.kActualPurchases,
                                       color: AppColors.kMainGery96,
-                                      fontSize: 10,
+                                      fontSize: AppDimensions.defaultSize * 10,
                                     ),
                                   ],
                                 ),
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 6)),
-                                  child: const MainTextGrey(
+                                  child: MainTextGrey(
                                     myText: AppStrings.kClassPurchases,
                                     color: AppColors.kMainGery96,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                   ),
                                 ),
                               ],
@@ -492,17 +492,17 @@ class PurchasesTeacher extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 12)),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       MainTextWhite(
                                         myText: AppStrings.kRefPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       Spacer(),
                                       MainTextWhite(
                                         myText: AppStrings.kBillPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ],
@@ -529,9 +529,9 @@ class PurchasesTeacher extends StatelessWidget {
                                       child: Row(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
-                                            const MainTextBlack(
+                                            MainTextBlack(
                                               myText: AppStrings.kCreditCardPurchases,
-                                              fontSize: 12,
+                                              fontSize: AppDimensions.defaultSize * 12,
                                             ),
                                             SizedBox(
                                               width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -554,17 +554,17 @@ class PurchasesTeacher extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 12)),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       MainTextWhite(
                                         myText: AppStrings.kTotalCostPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       Spacer(),
                                       MainTextWhite(
                                         myText: AppStrings.kCostPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ],
@@ -573,22 +573,22 @@ class PurchasesTeacher extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: AppDimensions.getDimensions(requiredWidth: 12)),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       MainTextWhite(
                                         myText: AppStrings.kActualCostPurchases,
-                                        fontSize: 20,
+                                        fontSize: AppDimensions.defaultSize * 20,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       MainTextWhite(
                                         myText: AppStrings.kEGPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                       Spacer(),
                                       MainTextWhite(
                                         myText: AppStrings.kDiscountPurchases,
-                                        fontSize: 10,
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                       ),
                                     ],

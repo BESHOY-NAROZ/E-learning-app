@@ -17,9 +17,9 @@ class ExamsGrades extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kExamGradesGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
             ),
             SizedBox(
               width: AppDimensions.getDimensions(requiredWidth: 4.42),

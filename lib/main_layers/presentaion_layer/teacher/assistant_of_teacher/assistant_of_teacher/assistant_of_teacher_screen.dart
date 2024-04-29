@@ -35,6 +35,7 @@ class AssistantOfTeacher extends StatelessWidget {
                     ),
                     ListView.separated(
                         shrinkWrap: true,
+                        padding: EdgeInsets.zero,
                         physics: const BouncingScrollPhysics(),
                         itemBuilder: (context, index) {
                           return const AssistantsDetailsOfTeacherList();
@@ -80,9 +81,9 @@ class AssistantOfTeacher extends StatelessWidget {
                               size: AppDimensions.getDimensions(requiredWidth: 25),
                             ),
                             const Spacer(),
-                            const MainTextBlack(
+                            MainTextBlack(
                               myText: AppStrings.kAcceptedAssistantOfTeacher,
-                              fontSize: 16,
+                              fontSize: AppDimensions.defaultSize * 16,
                             )
                           ],
                         ),

@@ -39,9 +39,9 @@ class SendExamTeacher extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kFirstTestCreateExam,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 24),
@@ -55,10 +55,10 @@ class SendExamTeacher extends StatelessWidget {
                     Padding(
                       padding:
                           EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 24)),
-                      child: const MainTextGrey(
+                      child: MainTextGrey(
                         myText: AppStrings.kSpecificFirstTestCreateExam,
                         color: AppColors.kMainGery8D,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ),
                     SizedBox(

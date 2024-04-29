@@ -35,7 +35,7 @@ class RemoveOrderAssistantJoiningDoneTeacher extends StatelessWidget {
               myText: AppStrings.kMainCancelOrderGroups,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-            const Text(
+            Text(
               AppStrings.kRemoveAssistantOfTeacher,
               textAlign: TextAlign.center,
               textDirection: TextDirection.rtl,
@@ -43,7 +43,7 @@ class RemoveOrderAssistantJoiningDoneTeacher extends StatelessWidget {
                   fontFamily: 'Almarai',
                   color: AppColors.kSignInMainHintText,
                   fontWeight: FontWeight.w400,
-                  fontSize: 14),
+                  fontSize: AppDimensions.defaultSize * 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
             MainButtonRed(

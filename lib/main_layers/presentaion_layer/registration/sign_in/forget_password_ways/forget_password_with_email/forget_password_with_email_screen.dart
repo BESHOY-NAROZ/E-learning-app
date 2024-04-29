@@ -16,8 +16,7 @@ class ForgetPasswordWithEmail extends StatefulWidget {
   static bool validate = true;
 
   @override
-  State<ForgetPasswordWithEmail> createState() =>
-      _ForgetPasswordWithEmailState();
+  State<ForgetPasswordWithEmail> createState() => _ForgetPasswordWithEmailState();
 }
 
 class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
@@ -48,12 +47,12 @@ class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const Text(
+                      Text(
                         AppStrings.kForgetPasswordErrorFormFiled,
                         style: TextStyle(
                           fontWeight: FontWeight.w700,
                           color: AppColors.kForgetPasswordErrorFormFiled,
-                          fontSize: 10,
+                          fontSize: AppDimensions.defaultSize * 10,
                           fontFamily: 'Almarai',
                         ),
                       ),
@@ -93,13 +92,11 @@ class _ForgetPasswordWithEmailState extends State<ForgetPasswordWithEmail> {
             MainButtonRed(
                 buttonName: AppStrings.kForgetPasswordMainButtonText,
                 onPressed: () {
-                  if (ForgetPasswordWithEmail._formKey.currentState!
-                      .validate()) {
+                  if (ForgetPasswordWithEmail._formKey.currentState!.validate()) {
                     setState(() {
                       ForgetPasswordWithEmail.validate = true;
                     });
-                    Navigator.pushNamed(
-                        context, RoutesManager.forgetPasswordGetCodeEmail);
+                    Navigator.pushNamed(context, RoutesManager.forgetPasswordGetCodeEmail);
                   } else {
                     setState(() {
                       ForgetPasswordWithEmail.validate = false;

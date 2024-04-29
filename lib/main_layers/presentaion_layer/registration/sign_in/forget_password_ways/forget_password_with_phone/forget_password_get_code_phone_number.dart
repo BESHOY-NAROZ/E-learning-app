@@ -2,7 +2,6 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/app_bar_signin.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/main_hint_text_registration.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
@@ -20,12 +19,10 @@ class ForgetPasswordGetCodePhoneNumber extends StatefulWidget {
   static bool startCuntDown = false;
 
   @override
-  State<ForgetPasswordGetCodePhoneNumber> createState() =>
-      _ForgetPasswordGetCodePhoneNumberState();
+  State<ForgetPasswordGetCodePhoneNumber> createState() => _ForgetPasswordGetCodePhoneNumberState();
 }
 
-class _ForgetPasswordGetCodePhoneNumberState
-    extends State<ForgetPasswordGetCodePhoneNumber> {
+class _ForgetPasswordGetCodePhoneNumberState extends State<ForgetPasswordGetCodePhoneNumber> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -44,8 +41,8 @@ class _ForgetPasswordGetCodePhoneNumberState
               height: AppDimensions.getDimensions(requiredHeight: 75),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -67,8 +64,7 @@ class _ForgetPasswordGetCodePhoneNumberState
                       6,
                       (index) {
                         return Container(
-                          height:
-                              AppDimensions.getDimensions(requiredWidth: 45),
+                          height: AppDimensions.getDimensions(requiredWidth: 45),
                           width: AppDimensions.getDimensions(requiredWidth: 40),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -84,7 +80,7 @@ class _ForgetPasswordGetCodePhoneNumberState
                             cursorHeight: 0,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(fontSize: 42),
+                            style: TextStyle(fontSize: AppDimensions.defaultSize * 42),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               counterText: '',
@@ -99,13 +95,13 @@ class _ForgetPasswordGetCodePhoneNumberState
                       },
                     ),
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.67),),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.67),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      if (ForgetPasswordGetCodePhoneNumber.startCuntDown)
-                        const CountDownTimer(),
+                      if (ForgetPasswordGetCodePhoneNumber.startCuntDown) const CountDownTimer(),
                       InkWell(
                         onTap: () {
                           setState(() {
@@ -122,24 +118,24 @@ class _ForgetPasswordGetCodePhoneNumberState
                               : AppColors.kForgetPasswordGetCodeSecondHintText,
                         ),
                       ),
-        
+
                       const MainHintTextRegistration(
                         myText: AppStrings.kForgetPasswordGetCodeSecondHintText,
                       ),
                       // const CountDownTimer()
                     ],
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.33),),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.33),
+                  ),
                   MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(
-                          context, RoutesManager.resetPassword);
+                      Navigator.pushNamed(context, RoutesManager.resetPassword);
                     },
                     buttonName: AppStrings.kForgetPasswordGetCodeMainButtonText,
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight:269),
+                    height: AppDimensions.getDimensions(requiredHeight: 269),
                   ),
                   const ForgetPasswordBottomView(
                     hintText: AppStrings.kForgetPasswordHintBottomView,

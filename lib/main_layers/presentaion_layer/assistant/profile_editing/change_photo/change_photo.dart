@@ -63,11 +63,11 @@ class ChangePhoto extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
-                                child: const Align(
+                                child: Align(
                                   alignment: Alignment.centerRight,
                                   child: MainTextBlue(
                                     myText: AppStrings.kProfilePhotoBottomSheet,
-                                    fontSize: 16,
+                                    fontSize: AppDimensions.defaultSize * 16,
                                   ),
                                 ),
                               ),
@@ -83,10 +83,10 @@ class ChangePhoto extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(10),
                                     color: AppColors.kMainGeryFA),
                                 child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-                                  const MainTextGrey(
+                                  MainTextGrey(
                                     myText: AppStrings.kTakePhotoBottomSheet,
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 12,
+                                    fontSize: AppDimensions.defaultSize * 12,
                                   ),
                                   SizedBox(
                                     width: AppDimensions.getDimensions(requiredWidth: 6),
@@ -111,10 +111,10 @@ class ChangePhoto extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(10),
                                     color: AppColors.kMainGeryFA),
                                 child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-                                  const MainTextGrey(
+                                  MainTextGrey(
                                     myText: AppStrings.kFromGallerySheet,
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 12,
+                                    fontSize: AppDimensions.defaultSize * 12,
                                   ),
                                   SizedBox(
                                     width: AppDimensions.getDimensions(requiredWidth: 6),

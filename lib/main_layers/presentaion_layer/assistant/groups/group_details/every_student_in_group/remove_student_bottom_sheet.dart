@@ -26,8 +26,7 @@ class RemoveStudentBottomSheet extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 220),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                  color: AppColors.kMainTextWhite,
-                  borderRadius: BorderRadius.circular(20)),
+                  color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: AppDimensions.getDimensions(requiredWidth: 20),
@@ -36,17 +35,17 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kMainDeleteStudent,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kHintDeleteStudent,
                       color: AppColors.kDetailsProfileEditing,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                       fontWeight: FontWeight.w400,
                     ),
                     SizedBox(
@@ -64,47 +63,40 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 AppStrings.kStudentNameGroups,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
-                                    color: AppColors
-                                        .kSmallListFirstTextMainScreenHome,
+                                    color: AppColors.kSmallListFirstTextMainScreenHome,
                                     fontWeight: FontWeight.w700,
-                                    fontSize: 15),
+                                    fontSize: AppDimensions.defaultSize * 15),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 3),
+                                height: AppDimensions.getDimensions(requiredHeight: 3),
                               ),
-                              const Text(
+                              Text(
                                 AppStrings.kStudentLevelGroups,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
-                                    color: AppColors
-                                        .kSmallListFirstTextMainScreenHome,
+                                    color: AppColors.kSmallListFirstTextMainScreenHome,
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 12),
+                                    fontSize: AppDimensions.defaultSize * 12),
                               ),
                             ],
                           ),
                           SizedBox(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 12),
+                            width: AppDimensions.getDimensions(requiredWidth: 12),
                           ),
                           Container(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 40),
-                            height:
-                                AppDimensions.getDimensions(requiredHeight: 40),
+                            width: AppDimensions.getDimensions(requiredWidth: 40),
+                            height: AppDimensions.getDimensions(requiredHeight: 40),
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(AppAssets.kStudentGroupsScreen),
                           ),
                           SizedBox(
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 20),
+                            width: AppDimensions.getDimensions(requiredWidth: 20),
                           ),
                         ],
                       ),
@@ -117,22 +109,20 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 48),
                         width: AppDimensions.getDimensions(requiredWidth: 136),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                         child: MaterialButton(
                             color: AppColors.kMainScreenNewVersionButton,
                             shape: const RoundedRectangleBorder(),
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: const Text(
+                            child: Text(
                               AppStrings.kBackDeleteStudent,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
-                                  color:
-                                      AppColors.kMainScreenNewVersionButtonText,
+                                  color: AppColors.kMainScreenNewVersionButtonText,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: AppDimensions.defaultSize * 16),
                             )),
                       ),
                       SizedBox(
@@ -142,8 +132,7 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 48),
                         width: AppDimensions.getDimensions(requiredWidth: 136),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                         child: MaterialButton(
                             color: AppColors.kMainButton,
                             shape: const RoundedRectangleBorder(),
@@ -151,13 +140,13 @@ class RemoveStudentBottomSheet extends StatelessWidget {
                               Navigator.pushReplacementNamed(
                                   context, RoutesManager.removeStudentDone);
                             },
-                            child: const Text(
+                            child: Text(
                               AppStrings.kActualDeleteStudent,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
                                   color: AppColors.kMainTextWhite,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: AppDimensions.defaultSize * 16),
                             )),
                       ),
                       SizedBox(

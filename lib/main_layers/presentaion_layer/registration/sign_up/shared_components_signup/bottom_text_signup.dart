@@ -1,5 +1,6 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/uderlined_text.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class BottomTextSignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
@@ -20,17 +21,18 @@ class BottomTextSignUp extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, RoutesManager.loginScreen);
               },
-              child: const CustomUnderLinedText(
-                myText: AppStrings.kLoginSignUp,fontSize: 12,
+              child: CustomUnderLinedText(
+                myText: AppStrings.kLoginSignUp,
+                fontSize: AppDimensions.defaultSize * 12,
               ),
             )),
-        const Text(
+        Text(
           AppStrings.kHaveAccountSignUp,
           style: TextStyle(
               fontFamily: 'Almarai',
               color: AppColors.kLoginWithoutAccount,
               fontWeight: FontWeight.w700,
-              fontSize: 12),
+              fontSize: AppDimensions.defaultSize * 12),
         ),
       ],
     );

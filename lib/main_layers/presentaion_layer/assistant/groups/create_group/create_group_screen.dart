@@ -28,8 +28,8 @@ class CreateGroup extends StatelessWidget {
             myTitle: AppStrings.kCreateGroupGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -42,36 +42,36 @@ class CreateGroup extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 20),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kCreateGroupHintTextGroups,
                   fontWeight: FontWeight.w700,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const CustomTextFormFiled(
+                CustomTextFormFiled(
                   hintText: AppStrings.kCreateGroupHintTextFormGroups,
                   textDirection: TextDirection.rtl,
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     color: AppColors.kFormFiledHint,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kEducationalLevelHintTextGroups,
                   fontWeight: FontWeight.w700,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const CustomTextFormFiled(
+                CustomTextFormFiled(
                   hintText: AppStrings.kHighSchoolHintTextFormGroups,
                   textDirection: TextDirection.rtl,
                   prefixIcon: Icon(Icons.arrow_left_rounded),
@@ -79,22 +79,22 @@ class CreateGroup extends StatelessWidget {
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     color: AppColors.kFormFiledHint,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kClassRoomHintTextGroups,
                   fontWeight: FontWeight.w700,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const CustomTextFormFiled(
+                CustomTextFormFiled(
                   hintText: AppStrings.kClassRoomHintTextFiledGroups,
                   textDirection: TextDirection.rtl,
                   prefixIcon: Icon(Icons.arrow_left_rounded),
@@ -102,22 +102,22 @@ class CreateGroup extends StatelessWidget {
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     color: AppColors.kFormFiledHint,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kSubjectsHintTextGroups,
                   fontWeight: FontWeight.w700,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const CustomTextFormFiled(
+                CustomTextFormFiled(
                   hintText: AppStrings.kSubjectsTextFiledGroups,
                   textDirection: TextDirection.rtl,
                   prefixIcon: Icon(Icons.arrow_left_rounded),
@@ -125,7 +125,7 @@ class CreateGroup extends StatelessWidget {
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     color: AppColors.kFormFiledHint,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),

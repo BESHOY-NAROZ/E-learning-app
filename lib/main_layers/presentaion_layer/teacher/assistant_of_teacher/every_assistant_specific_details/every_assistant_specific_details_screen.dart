@@ -31,19 +31,19 @@ class EveryAssistantSpecificDetails extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 32),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kFullNameSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kNameAssistantOfTeacher,
                       textDirection: TextDirection.rtl,
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: AppDimensions.defaultSize * 14,
                         fontWeight: FontWeight.w400,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -52,20 +52,20 @@ class EveryAssistantSpecificDetails extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kPhoneNumberSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualPhoneNumberSignUp,
                       textDirection: TextDirection.ltr,
                       textAlign: TextAlign.end,
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: AppDimensions.defaultSize * 14,
                         fontWeight: FontWeight.w400,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -74,19 +74,19 @@ class EveryAssistantSpecificDetails extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kEmailAssistantOfTeacher,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualEmailAssistantOfTeacher,
                       textDirection: TextDirection.rtl,
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,

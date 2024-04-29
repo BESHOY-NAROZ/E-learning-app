@@ -40,8 +40,7 @@ class NewOffer extends StatelessWidget {
                       top: AppDimensions.getDimensions(requiredHeight: 60),
                     ),
                     child: SizedBox(
-                        height:
-                            AppDimensions.getDimensions(requiredHeight: 308),
+                        height: AppDimensions.getDimensions(requiredHeight: 308),
                         width: AppDimensions.getDimensions(requiredWidth: 220),
                         child: Image.asset(AppAssets.kMan)),
                   ),
@@ -50,19 +49,19 @@ class NewOffer extends StatelessWidget {
                       padding: EdgeInsets.only(
                         top: AppDimensions.getDimensions(requiredHeight: 300),
                       ),
-                      child: const MainTextMainScreen(
-                          myText: AppStrings.kMainTextMainScreenNewOffer))
+                      child:
+                          const MainTextMainScreen(myText: AppStrings.kMainTextMainScreenNewOffer))
                 ],
               ),
-              const Padding(
-                padding: EdgeInsets.only(top: 10),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
                 child: Text(
                   AppStrings.kUnderMainTextMainScreenNewOffer,
                   style: TextStyle(
                     fontFamily: 'Almarai',
                     color: AppColors.kUnderMainTextMainScreenNewOffer,
                     fontWeight: FontWeight.w700,
-                    fontSize: 18,
+                    fontSize: AppDimensions.defaultSize * 18,
                   ),
                 ),
               ),
@@ -82,8 +81,7 @@ class NewOffer extends StatelessWidget {
                 child: Center(
                   child: MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(
-                          context, RoutesManager.firstNewVersion);
+                      Navigator.pushNamed(context, RoutesManager.firstNewVersion);
                     },
                     buttonName: AppStrings.kMainButtonTextMainScreenNewOffer,
                   ),

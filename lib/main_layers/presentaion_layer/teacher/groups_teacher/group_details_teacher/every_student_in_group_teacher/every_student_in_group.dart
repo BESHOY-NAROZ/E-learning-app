@@ -39,24 +39,24 @@ class EveryStudentInGroupListTeacher extends StatelessWidget {
               ),
               Column(
                 children: [
-                  const Text(
+                  Text(
                     AppStrings.kStudentNameGroups,
                     style: TextStyle(
                         fontFamily: 'Almarai',
                         color: AppColors.kMainGery81,
                         fontWeight: FontWeight.w700,
-                        fontSize: 15),
+                        fontSize: AppDimensions.defaultSize * 15),
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 10),
                   ),
-                  const Text(
+                  Text(
                     AppStrings.kStudentLevelGroups,
                     style: TextStyle(
                         fontFamily: 'Almarai',
                         color: AppColors.kMainGery81,
                         fontWeight: FontWeight.w400,
-                        fontSize: 12),
+                        fontSize: AppDimensions.defaultSize * 12),
                   ),
                 ],
               ),

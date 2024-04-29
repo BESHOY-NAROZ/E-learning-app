@@ -27,8 +27,8 @@ class AddNewClassDone extends StatelessWidget {
             myTitle: AppStrings.kAttendanceAndDepartureAppBarGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -44,28 +44,27 @@ class AddNewClassDone extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const HintTextGroups(
-                      myText:
-                          AppStrings.kBottomListGroupNumberHomeMainScreenHome,
+                    HintTextGroups(
+                      myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 4),
                     ),
-                    const HintTextGroups(
+                    HintTextGroups(
                       myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                   ],
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 45),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kScanTextGroups,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                 ),
                 SizedBox(
@@ -83,74 +82,65 @@ class AddNewClassDone extends StatelessWidget {
                           color: Colors.grey.withOpacity(0.5),
                           spreadRadius: 5,
                           blurRadius: 7,
-                          offset:
-                              const Offset(0, 3), // changes position of shadow
+                          offset: const Offset(0, 3), // changes position of shadow
                         ),
                       ],
                     ),
                     child: Column(
                       children: [
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 30),
+                          height: AppDimensions.getDimensions(requiredHeight: 30),
                         ),
                         Container(
-                          width:
-                              AppDimensions.getDimensions(requiredWidth: 105),
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 105),
+                          width: AppDimensions.getDimensions(requiredWidth: 105),
+                          height: AppDimensions.getDimensions(requiredHeight: 105),
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
                           child: Image.asset(AppAssets.kStudentGroupsScreen),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 15),
+                          height: AppDimensions.getDimensions(requiredHeight: 15),
                         ),
-                        const Text(
+                        Text(
                           AppStrings.kStudentNameGroups,
                           style: TextStyle(
                               fontFamily: 'Almarai',
                               color: AppColors.kAfterQRGroups,
                               fontWeight: FontWeight.w700,
-                              fontSize: 15),
+                              fontSize: AppDimensions.defaultSize * 15),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
-                        const Text(
+                        Text(
                           AppStrings.kStudentLevelGroups,
                           style: TextStyle(
                               fontFamily: 'Almarai',
                               color: AppColors.kAfterQRGroups,
                               fontWeight: FontWeight.w400,
-                              fontSize: 12),
+                              fontSize: AppDimensions.defaultSize * 12),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
-                        const Text(
+                        Text(
                           AppStrings.kStudentNumberGroups,
                           style: TextStyle(
                               fontFamily: 'Almarai',
                               color: AppColors.kAfterQRGroups,
                               fontWeight: FontWeight.w400,
-                              fontSize: 12),
+                              fontSize: AppDimensions.defaultSize * 12),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
-                        const MainTextGreen(
+                        MainTextGreen(
                           myText: AppStrings.kAttendedGroups,
-                          fontSize: 24,
+                          fontSize: AppDimensions.defaultSize * 24,
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
                         const MainTextGrey(
                           myText: AppStrings.kAttendedTimeGroups,
@@ -165,8 +155,7 @@ class AddNewClassDone extends StatelessWidget {
                 MainButtonRed(
                   buttonName: AppStrings.kBackToGroupGroups,
                   onPressed: () {
-                    Navigator.pushReplacementNamed(
-                        context, RoutesManager.studentsGroups);
+                    Navigator.pushReplacementNamed(context, RoutesManager.studentsGroups);
                   },
                 )
               ],

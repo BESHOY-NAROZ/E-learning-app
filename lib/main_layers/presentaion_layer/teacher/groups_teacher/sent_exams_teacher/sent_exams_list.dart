@@ -27,9 +27,9 @@ class ExamsSentListTeacher extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
-            child: const MainTextBlack(
+            child: MainTextBlack(
               myText: AppStrings.kExamsSentBlackTextGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -38,10 +38,12 @@ class ExamsSentListTeacher extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
-            child: const Text(
+            child: Text(
               AppStrings.kExamsSentGreyTextGroups,
               style: TextStyle(
-                  fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.kSentGreyTextGroups),
+                  fontSize: AppDimensions.defaultSize * 12,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.kSentGreyTextGroups),
             ),
           ),
           const Spacer(),
@@ -62,9 +64,9 @@ class ExamsSentListTeacher extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 50),
                     width: AppDimensions.getDimensions(requiredWidth: 100),
                     child: Row(children: [
-                      const MainTextWhite(
+                      MainTextWhite(
                         myText: AppStrings.kSendToAssistantGroupsTeacher,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                         fontWeight: FontWeight.w700,
                       ),
                       SizedBox(
@@ -86,9 +88,9 @@ class ExamsSentListTeacher extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 50),
                     width: AppDimensions.getDimensions(requiredWidth: 50),
                     child: Row(children: [
-                      const MainTextWhite(
+                      MainTextWhite(
                         myText: AppStrings.kShowExamsGroups,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                         fontWeight: FontWeight.w700,
                       ),
                       SizedBox(

@@ -40,22 +40,22 @@ class _GeneralSettingsTeacherState extends State<GeneralSettingsTeacher> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kAppSettingsCommon,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 18),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kLanguageCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 14,
+                  fontSize: AppDimensions.defaultSize * 14,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const CustomTextFormFiled(
+                CustomTextFormFiled(
                   hintText: AppStrings.kArabicCommon,
                   textDirection: TextDirection.rtl,
                   prefixIcon: Icon(Icons.arrow_left_rounded),
@@ -63,7 +63,7 @@ class _GeneralSettingsTeacherState extends State<GeneralSettingsTeacher> {
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w500,
                     color: AppColors.kHintCommon,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
@@ -74,9 +74,9 @@ class _GeneralSettingsTeacherState extends State<GeneralSettingsTeacher> {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 40),
                 ),
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kAccountSettingsCommon,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 18),
@@ -85,8 +85,7 @@ class _GeneralSettingsTeacherState extends State<GeneralSettingsTeacher> {
                   height: AppDimensions.getDimensions(requiredHeight: 45),
                   width: AppDimensions.getDimensions(requiredWidth: 320),
                   clipBehavior: Clip.antiAliasWithSaveLayer,
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                   child: MaterialButton(
                       color: AppColors.kButtonCommon,
                       shape: const RoundedRectangleBorder(),
@@ -95,122 +94,92 @@ class _GeneralSettingsTeacherState extends State<GeneralSettingsTeacher> {
                           context: context,
                           builder: (context) {
                             return Container(
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 360),
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 190),
+                              width: AppDimensions.getDimensions(requiredWidth: 360),
+                              height: AppDimensions.getDimensions(requiredHeight: 190),
                               clipBehavior: Clip.antiAlias,
                               decoration: BoxDecoration(
                                   color: AppColors.kMainTextWhite,
                                   borderRadius: BorderRadius.circular(20)),
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
-                                  horizontal: AppDimensions.getDimensions(
-                                      requiredWidth: 20),
+                                  horizontal: AppDimensions.getDimensions(requiredWidth: 20),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
-                                    const MainTextBlack(
+                                    MainTextBlack(
                                       myText: AppStrings.kMainDeleteAccount,
-                                      fontSize: 18,
+                                      fontSize: AppDimensions.defaultSize * 18,
                                     ),
                                     SizedBox(
-                                      height: AppDimensions.getDimensions(
-                                          requiredHeight: 14),
+                                      height: AppDimensions.getDimensions(requiredHeight: 14),
                                     ),
-                                    const MainTextGrey(
+                                    MainTextGrey(
                                       myText: AppStrings.kHintDeleteAccount,
                                       color: AppColors.kDetailsProfileEditing,
-                                      fontSize: 14,
+                                      fontSize: AppDimensions.defaultSize * 14,
                                       fontWeight: FontWeight.w400,
                                     ),
                                     SizedBox(
-                                      height: AppDimensions.getDimensions(
-                                          requiredHeight: 12),
+                                      height: AppDimensions.getDimensions(requiredHeight: 12),
                                     ),
-                                    Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            height: AppDimensions.getDimensions(
-                                                requiredHeight: 48),
-                                            width: AppDimensions.getDimensions(
-                                                requiredWidth: 136),
-                                            clipBehavior:
-                                                Clip.antiAliasWithSaveLayer,
-                                            decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            child: MaterialButton(
-                                                color: AppColors
-                                                    .kMainScreenNewVersionButton,
-                                                shape:
-                                                    const RoundedRectangleBorder(),
-                                                onPressed: () {
-                                                  Navigator.pop(context);
-                                                },
-                                                child: const Text(
-                                                  AppStrings.kBackDeleteAccount,
-                                                  style: TextStyle(
-                                                      fontFamily: 'Almarai',
-                                                      color: AppColors
-                                                          .kMainScreenNewVersionButtonText,
-                                                      fontWeight:
-                                                          FontWeight.w700,
-                                                      fontSize: 16),
-                                                )),
-                                          ),
-                                          SizedBox(
-                                            width: AppDimensions.getDimensions(
-                                                requiredWidth: 10),
-                                          ),
-                                          Container(
-                                            height: AppDimensions.getDimensions(
-                                                requiredHeight: 48),
-                                            width: AppDimensions.getDimensions(
-                                                requiredWidth: 136),
-                                            clipBehavior:
-                                                Clip.antiAliasWithSaveLayer,
-                                            decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            child: MaterialButton(
-                                                color: AppColors.kMainButton,
-                                                shape:
-                                                    const RoundedRectangleBorder(),
-                                                onPressed: () {
-                                                  Navigator
-                                                      .pushReplacementNamed(
-                                                          context,
-                                                          RoutesManager
-                                                              .accountType);
-                                                  MyToast.showMyToast(
-                                                    context: context,
-                                                    myMessage:
-                                                        AppStrings.kDeleteToast,
-                                                    myIcon: Icons.close_rounded,
-                                                  );
-                                                },
-                                                child: const Text(
-                                                  AppStrings
-                                                      .kActualDeleteAccount,
-                                                  style: TextStyle(
-                                                      fontFamily: 'Almarai',
-                                                      color: AppColors
-                                                          .kMainTextWhite,
-                                                      fontWeight:
-                                                          FontWeight.w700,
-                                                      fontSize: 16),
-                                                )),
-                                          ),
-                                          SizedBox(
-                                            width: AppDimensions.getDimensions(
-                                                requiredWidth: 15),
-                                          )
-                                        ]),
+                                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                                      Container(
+                                        height: AppDimensions.getDimensions(requiredHeight: 48),
+                                        width: AppDimensions.getDimensions(requiredWidth: 136),
+                                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                                        decoration:
+                                            BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                                        child: MaterialButton(
+                                            color: AppColors.kMainScreenNewVersionButton,
+                                            shape: const RoundedRectangleBorder(),
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                            child: Text(
+                                              AppStrings.kBackDeleteAccount,
+                                              style: TextStyle(
+                                                  fontFamily: 'Almarai',
+                                                  color: AppColors.kMainScreenNewVersionButtonText,
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: AppDimensions.defaultSize * 16),
+                                            )),
+                                      ),
+                                      SizedBox(
+                                        width: AppDimensions.getDimensions(requiredWidth: 10),
+                                      ),
+                                      Container(
+                                        height: AppDimensions.getDimensions(requiredHeight: 48),
+                                        width: AppDimensions.getDimensions(requiredWidth: 136),
+                                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                                        decoration:
+                                            BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                                        child: MaterialButton(
+                                            color: AppColors.kMainButton,
+                                            shape: const RoundedRectangleBorder(),
+                                            onPressed: () {
+                                              Navigator.pushReplacementNamed(
+                                                  context, RoutesManager.accountType);
+                                              MyToast.showMyToast(
+                                                context: context,
+                                                myMessage: AppStrings.kDeleteToast,
+                                                myIcon: Icons.close_rounded,
+                                              );
+                                            },
+                                            child: Text(
+                                              AppStrings.kActualDeleteAccount,
+                                              style: TextStyle(
+                                                  fontFamily: 'Almarai',
+                                                  color: AppColors.kMainTextWhite,
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: AppDimensions.defaultSize * 16),
+                                            )),
+                                      ),
+                                      SizedBox(
+                                        width: AppDimensions.getDimensions(requiredWidth: 15),
+                                      )
+                                    ]),
                                   ],
                                 ),
                               ),
@@ -218,13 +187,13 @@ class _GeneralSettingsTeacherState extends State<GeneralSettingsTeacher> {
                           },
                         );
                       },
-                      child: const Text(
+                      child: Text(
                         AppStrings.kRemoveAccountCommon,
                         style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kTextButtonCommon,
                             fontWeight: FontWeight.w700,
-                            fontSize: 12),
+                            fontSize: AppDimensions.defaultSize * 12),
                       )),
                 )
               ],

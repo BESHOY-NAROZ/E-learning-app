@@ -40,8 +40,8 @@ class LoginScreen extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 36.37),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -68,8 +68,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   const CustomTextFormFiled(
                     obscureText: true,
-                    prefixIcon: Icon(Icons.visibility_off,
-                        color: AppColors.kLoginFormFiledBorder),
+                    prefixIcon: Icon(Icons.visibility_off, color: AppColors.kLoginFormFiledBorder),
                     hintText: AppStrings.kResetPasswordHintFormFiled,
                   ),
                   SizedBox(
@@ -79,12 +78,11 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       InkWell(
                           onTap: () {
-                            Navigator.pushNamed(
-                                context, RoutesManager.forgetPasswordWays);
+                            Navigator.pushNamed(context, RoutesManager.forgetPasswordWays);
                           },
-                          child: const CustomUnderLinedText(
+                          child: CustomUnderLinedText(
                               myText: AppStrings.kLogInForgetPassword,
-                              fontSize: 12)),
+                              fontSize: AppDimensions.defaultSize * 12)),
                       const Spacer(),
                       const MainHintTextRegistration(
                         myText: AppStrings.kLogInRememberMe,
@@ -96,8 +94,7 @@ class LoginScreen extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 17),
                         width: AppDimensions.getDimensions(requiredWidth: 17),
                         child: Checkbox(
-                          side: const BorderSide(
-                              color: AppColors.kLoginRememberMe),
+                          side: const BorderSide(color: AppColors.kLoginRememberMe),
                           value: false,
                           onChanged: (value) {},
                         ),
@@ -124,13 +121,13 @@ class LoginScreen extends StatelessWidget {
                         width: AppDimensions.getDimensions(requiredWidth: 94),
                         color: AppColors.kLoginLinear,
                       ),
-                      const Text(
+                      Text(
                         AppStrings.kLogInOr,
                         style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kLoginOr,
                             fontWeight: FontWeight.w400,
-                            fontSize: 16),
+                            fontSize: AppDimensions.defaultSize * 16),
                       ),
                       Container(
                         height: AppDimensions.getDimensions(requiredHeight: 2),
@@ -144,18 +141,15 @@ class LoginScreen extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children:
-                        List.generate(AppLists.kLogInWays.length, (index) {
+                    children: List.generate(AppLists.kLogInWays.length, (index) {
                       return Container(
                         height: AppDimensions.getDimensions(requiredHeight: 40),
                         width: AppDimensions.getDimensions(requiredWidth: 40),
                         margin: EdgeInsets.symmetric(
-                            horizontal:
-                                AppDimensions.getDimensions(requiredWidth: 4)),
+                            horizontal: AppDimensions.getDimensions(requiredWidth: 4)),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
                         decoration: BoxDecoration(
-                            color: AppColors.kLoginWays.withOpacity(0.2),
-                            shape: BoxShape.circle),
+                            color: AppColors.kLoginWays.withOpacity(0.2), shape: BoxShape.circle),
                         child: Padding(
                           padding: const EdgeInsets.all(4.0),
                           child: AppLists.kLogInWays[index],
@@ -166,27 +160,26 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 55),
                   ),
-                   Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                           padding: const EdgeInsets.only(top: 8.0),
                           child: InkWell(
                             onTap: () {
-                              Navigator.pushNamed(context, RoutesManager
-                                  .accountType);
+                              Navigator.pushNamed(context, RoutesManager.accountType);
                             },
                             child: const CustomUnderLinedText(
                               myText: AppStrings.kLogInCreateAccount,
                             ),
                           )),
-                      const Text(
+                      Text(
                         AppStrings.kLogInWithoutAccount,
                         style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kLoginWithoutAccount,
                             fontWeight: FontWeight.w700,
-                            fontSize: 14),
+                            fontSize: AppDimensions.defaultSize * 14),
                       ),
                     ],
                   ),

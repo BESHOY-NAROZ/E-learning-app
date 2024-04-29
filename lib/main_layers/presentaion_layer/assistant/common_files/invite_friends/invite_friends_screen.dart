@@ -31,27 +31,27 @@ class InviteFriends extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kInviteFriendsMainTextCommon,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kFirstUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kSecondUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kThirdUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 34),
@@ -69,8 +69,7 @@ class InviteFriends extends StatelessWidget {
                       height: AppDimensions.getDimensions(requiredHeight: 45),
                       width: AppDimensions.getDimensions(requiredWidth: 129),
                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10)),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                       child: MaterialButton(
                           color: AppColors.kMainScreenNewVersionButton,
                           shape: const RoundedRectangleBorder(),
@@ -81,14 +80,13 @@ class InviteFriends extends StatelessWidget {
                               myIcon: Icons.close_rounded,
                             );
                           },
-                          child: const Text(
+                          child: Text(
                             AppStrings.kCopyCodeCommon,
                             style: TextStyle(
                                 fontFamily: 'Almarai',
-                                color:
-                                    AppColors.kMainScreenNewVersionButtonText,
+                                color: AppColors.kMainScreenNewVersionButtonText,
                                 fontWeight: FontWeight.w700,
-                                fontSize: 12),
+                                fontSize: AppDimensions.defaultSize * 12),
                           )),
                     ),
                   ],
@@ -114,9 +112,9 @@ class InviteFriends extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kShareAppCommon,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
@@ -126,19 +124,18 @@ class InviteFriends extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 45),
                     width: AppDimensions.getDimensions(requiredWidth: 320),
                     clipBehavior: Clip.antiAliasWithSaveLayer,
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                     child: MaterialButton(
                         color: AppColors.kMainScreenNewVersionButton,
                         shape: const RoundedRectangleBorder(),
                         onPressed: () {},
-                        child: const Text(
+                        child: Text(
                           AppStrings.kCopyAppLinkCommon,
                           style: TextStyle(
                               fontFamily: 'Almarai',
                               color: AppColors.kMainScreenNewVersionButtonText,
                               fontWeight: FontWeight.w700,
-                              fontSize: 12),
+                              fontSize: AppDimensions.defaultSize * 12),
                         )),
                   ),
                 ),
@@ -152,12 +149,10 @@ class InviteFriends extends StatelessWidget {
                       height: AppDimensions.getDimensions(requiredHeight: 40),
                       width: AppDimensions.getDimensions(requiredWidth: 40),
                       margin: EdgeInsets.symmetric(
-                          horizontal:
-                              AppDimensions.getDimensions(requiredWidth: 4)),
+                          horizontal: AppDimensions.getDimensions(requiredWidth: 4)),
                       clipBehavior: Clip.antiAliasWithSaveLayer,
                       decoration: BoxDecoration(
-                          color: AppColors.kLoginWays.withOpacity(0.2),
-                          shape: BoxShape.circle),
+                          color: AppColors.kLoginWays.withOpacity(0.2), shape: BoxShape.circle),
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
                         child: AppLists.kSocialMedia[index],

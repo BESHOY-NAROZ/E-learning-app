@@ -6,10 +6,14 @@ import 'package:flutter/material.dart';
 import 'small_button_mainscreen.dart';
 
 class MoreRowMainScreen extends StatelessWidget {
-  final String ? vectorIcon;
-  final String ? title;
+  final String? vectorIcon;
+  final String? title;
+  final void Function()? onTap;
   const MoreRowMainScreen({
-    super.key, this.vectorIcon, this.title,
+    super.key,
+    this.vectorIcon,
+    this.title,
+    this.onTap,
   });
 
   @override
@@ -18,18 +22,19 @@ class MoreRowMainScreen extends StatelessWidget {
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
-
       children: [
-        const SmallButtonMainScreen(
+        SmallButtonMainScreen(
           myText: AppStrings.kSmallButtonMainScreenHome,
+          onPressed: onTap,
         ),
         const Spacer(),
-         Text(title!,
-          style: const TextStyle(
+        Text(
+          title!,
+          style: TextStyle(
               fontFamily: 'Almarai',
               color: AppColors.kHintTextMainScreenHome,
               fontWeight: FontWeight.w700,
-              fontSize: 16),
+              fontSize: AppDimensions.defaultSize * 16),
         ),
         SizedBox(
           width: AppDimensions.getDimensions(requiredWidth: 3.42),
@@ -37,7 +42,11 @@ class MoreRowMainScreen extends StatelessWidget {
         SizedBox(
           width: AppDimensions.getDimensions(requiredWidth: 23.3),
           height: AppDimensions.getDimensions(requiredHeight: 19.3),
-          child: Image.asset(vectorIcon!),
+          child: Image.asset(
+            vectorIcon!,
+            height: AppDimensions.getDimensions(requiredHeight: 19.3),
+            width: AppDimensions.getDimensions(requiredWidth: 23.3),
+          ),
         ),
       ],
     );

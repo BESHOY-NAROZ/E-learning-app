@@ -52,10 +52,10 @@ class MyExamsBottomSheet extends StatelessWidget {
                       SizedBox(
                         height: AppDimensions.getDimensions(requiredHeight: 10),
                       ),
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kMineExamExamEditing,
                         color: AppColors.kMainBlueC4,
-                        fontSize: 16,
+                        fontSize: AppDimensions.defaultSize * 16,
                       ),
                       SizedBox(
                         height: AppDimensions.getDimensions(requiredHeight: 11),
@@ -70,9 +70,9 @@ class MyExamsBottomSheet extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            const MainTextGrey(
+                            MainTextGrey(
                               myText: AppStrings.kExamsCreatedQExamEditing,
-                              fontSize: 12,
+                              fontSize: AppDimensions.defaultSize * 12,
                               textDirection: TextDirection.rtl,
                             ),
                             SizedBox(
@@ -108,9 +108,9 @@ class MyExamsBottomSheet extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            const MainTextGrey(
+                            MainTextGrey(
                               myText: AppStrings.kExamsSolvedExamEditing,
-                              fontSize: 12,
+                              fontSize: AppDimensions.defaultSize * 12,
                               textDirection: TextDirection.rtl,
                             ),
                             SizedBox(

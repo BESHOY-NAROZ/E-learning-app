@@ -35,7 +35,7 @@ class AddNewTeacherDone extends StatelessWidget {
               myText: AppStrings.kRequestSentGroups,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-            const Text(
+            Text(
               AppStrings.kAddTeacherDoneTeachers,
               textAlign: TextAlign.center,
               textDirection: TextDirection.rtl,
@@ -43,7 +43,7 @@ class AddNewTeacherDone extends StatelessWidget {
                   fontFamily: 'Almarai',
                   color: AppColors.kSignInMainHintText,
                   fontWeight: FontWeight.w400,
-                  fontSize: 14),
+                  fontSize: AppDimensions.defaultSize * 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 214)),
             MainButtonRed(
@@ -56,8 +56,7 @@ class AddNewTeacherDone extends StatelessWidget {
             MainButtonGrey(
               buttonName: AppStrings.kCancelJoinRequestGroups,
               onPressed: () {
-                Navigator.pushNamed(
-                    context, RoutesManager.removeTeacherJoiningOrderDone);
+                Navigator.pushNamed(context, RoutesManager.removeTeacherJoiningOrderDone);
               },
             )
           ],

@@ -1,5 +1,4 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
-import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
@@ -17,8 +16,7 @@ class MainAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(
-        context: context, designHeight: designHeight, designWidth: designWidth);
+    AppDimensions.init(context: context, designHeight: designHeight, designWidth: designWidth);
     return SafeArea(
       child: SizedBox(
         width: AppDimensions.getDimensions(requiredWidth: 360),
@@ -42,11 +40,11 @@ class MainAppBar extends StatelessWidget {
                       child: Text(
                         myTitle!,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kAppBarTitleMainScreenHome,
                             fontWeight: FontWeight.w700,
-                            fontSize: 20),
+                            fontSize: AppDimensions.defaultSize * 20),
                       ),
                     ),
                   ),
@@ -57,15 +55,13 @@ class MainAppBar extends StatelessWidget {
                     ),
                     child: InkWell(
                       onTap: () {
-                          Navigator.pop(context);
-
+                        Navigator.pop(context);
                       },
                       child: Container(
                         width: AppDimensions.getDimensions(requiredWidth: 45),
                         height: AppDimensions.getDimensions(requiredHeight: 45),
                         decoration: BoxDecoration(
-                            color: AppColors.kBottomAppBarMainScreenHome
-                                .withOpacity(0.1),
+                            color: AppColors.kBottomAppBarMainScreenHome.withOpacity(0.1),
                             shape: BoxShape.circle),
                         child: const Icon(
                           Icons.arrow_forward_ios_outlined,

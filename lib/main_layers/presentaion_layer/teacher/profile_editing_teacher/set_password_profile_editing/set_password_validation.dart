@@ -31,16 +31,15 @@ class SetPasswordValidationTeacher extends StatelessWidget {
               isDense: true,
               enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide:
-                      const BorderSide(color: AppColors.kLoginFormFiledBorder)),
+                  borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
               hintText: AppStrings.kResetPasswordHintFormFiled,
-              hintStyle: const TextStyle(
+              hintStyle: TextStyle(
                 fontWeight: FontWeight.w400,
                 color: AppColors.kFormFiledHint,
-                fontSize: 14,
+                fontSize: AppDimensions.defaultSize * 14,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -66,16 +65,15 @@ class SetPasswordValidationTeacher extends StatelessWidget {
               isDense: true,
               enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide:
-                      const BorderSide(color: AppColors.kLoginFormFiledBorder)),
+                  borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
               hintText: AppStrings.kResetPasswordHintFormFiled,
-              hintStyle: const TextStyle(
+              hintStyle: TextStyle(
                 fontWeight: FontWeight.w400,
                 color: AppColors.kFormFiledHint,
-                fontSize: 14,
+                fontSize: AppDimensions.defaultSize * 14,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -101,16 +99,15 @@ class SetPasswordValidationTeacher extends StatelessWidget {
               isDense: true,
               enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide:
-                      const BorderSide(color: AppColors.kLoginFormFiledBorder)),
+                  borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
               hintText: AppStrings.kResetPasswordHintFormFiled,
-              hintStyle: const TextStyle(
+              hintStyle: TextStyle(
                 fontWeight: FontWeight.w400,
                 color: AppColors.kFormFiledHint,
-                fontSize: 14,
+                fontSize: AppDimensions.defaultSize * 14,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -123,12 +120,12 @@ class SetPasswordValidationTeacher extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const Text(
+              Text(
                 AppStrings.kResetPasswordFirstError,
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                   color: AppColors.kResetPasswordError,
-                  fontSize: 10,
+                  fontSize: AppDimensions.defaultSize * 10,
                   fontFamily: 'Almarai',
                 ),
               ),
@@ -148,12 +145,12 @@ class SetPasswordValidationTeacher extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const Text(
+              Text(
                 AppStrings.kResetPasswordSecondError,
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                   color: AppColors.kResetPasswordError,
-                  fontSize: 10,
+                  fontSize: AppDimensions.defaultSize * 10,
                   fontFamily: 'Almarai',
                 ),
               ),

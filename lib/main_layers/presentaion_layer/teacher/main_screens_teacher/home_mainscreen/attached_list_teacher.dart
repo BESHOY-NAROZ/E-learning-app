@@ -17,6 +17,7 @@ class AttachedList extends StatelessWidget {
       child: ListView.builder(
         itemCount: 3,
         shrinkWrap: true,
+        padding: EdgeInsets.zero,
         physics: const AlwaysScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
@@ -38,35 +39,34 @@ class AttachedList extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Row(children: [
-                        const Icon(
+                        Icon(
                           Icons.photo,
-                          size: 10,
+                          size: AppDimensions.defaultSize * 10,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 2),
                         ),
-                        const Icon(
+                        Icon(
                           Icons.play_circle_fill_rounded,
-                          size: 10,
+                          size: AppDimensions.defaultSize * 10,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 2),
                         ),
-                        const Icon(
+                        Icon(
                           Icons.file_copy_rounded,
-                          size: 10,
+                          size: AppDimensions.defaultSize * 10,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 20),
                         ),
-                        const Text(
+                        Text(
                           AppStrings.kTransitionalElementsHome,
                           style: TextStyle(
                               fontFamily: 'Almarai',
-                              color:
-                                  AppColors.kSmallListFirstTextMainScreenHome,
+                              color: AppColors.kSmallListFirstTextMainScreenHome,
                               fontWeight: FontWeight.w700,
-                              fontSize: 16),
+                              fontSize: AppDimensions.defaultSize * 14),
                         ),
                       ]),
                       SizedBox(
@@ -74,17 +74,15 @@ class AttachedList extends StatelessWidget {
                       ),
                       Padding(
                         padding: EdgeInsets.only(
-                          bottom:
-                              AppDimensions.getDimensions(requiredHeight: 1),
+                          bottom: AppDimensions.getDimensions(requiredHeight: 1),
                         ),
-                        child: const Text(
+                        child: Text(
                           AppStrings.kElementsLessonHome,
                           style: TextStyle(
                               fontFamily: 'Almarai',
-                              color:
-                                  AppColors.kSmallListSecondTextMainScreenHome,
+                              color: AppColors.kSmallListSecondTextMainScreenHome,
                               fontWeight: FontWeight.w700,
-                              fontSize: 12),
+                              fontSize: AppDimensions.defaultSize * 11),
                         ),
                       ),
                     ],

@@ -1,7 +1,6 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/app_bar_signin.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/forget_password_bottom_view.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +27,7 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             const MainAppBar(
-              myTitle:AppStrings.kForgetPasswordAppbarTitle,
+              myTitle: AppStrings.kForgetPasswordAppbarTitle,
               designHeight: 1006,
               designWidth: 360,
             ),
@@ -36,8 +35,8 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
               height: AppDimensions.getDimensions(requiredHeight: 70),
             ),
             Padding(
-              padding:  EdgeInsets.symmetric(horizontal: AppDimensions
-                  .getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 children: [
                   Center(
@@ -45,13 +44,11 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 34.16),
+                          height: AppDimensions.getDimensions(requiredHeight: 34.16),
                           width: AppDimensions.getDimensions(requiredWidth: 99.94),
                           decoration: BoxDecoration(
                               color: ForgetPasswordWays.myIndex == 0
-                                  ? AppColors
-                                      .kForgetPasswordToggleSelectedButtonColor
+                                  ? AppColors.kForgetPasswordToggleSelectedButtonColor
                                   : AppColors.kForgetPasswordToggleButtonColor,
                               borderRadius: BorderRadius.circular(10)),
                           child: MaterialButton(
@@ -62,10 +59,9 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: ForgetPasswordWays.myIndex == 0
-                                    ? AppColors
-                                        .kForgetPasswordToggleSelectedButtonText
+                                    ? AppColors.kForgetPasswordToggleSelectedButtonText
                                     : AppColors.kForgetPasswordToggleButtonText,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                                 fontFamily: 'Almarai',
                               ),
                             ),
@@ -78,13 +74,11 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
                         ),
                         //AppColors.kForgetPasswordToggleSelectedButtonColor
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 34.16),
+                          height: AppDimensions.getDimensions(requiredHeight: 34.16),
                           width: AppDimensions.getDimensions(requiredWidth: 99.94),
                           decoration: BoxDecoration(
                               color: ForgetPasswordWays.myIndex == 1
-                                  ? AppColors
-                                      .kForgetPasswordToggleSelectedButtonColor
+                                  ? AppColors.kForgetPasswordToggleSelectedButtonColor
                                   : AppColors.kForgetPasswordToggleButtonColor,
                               borderRadius: BorderRadius.circular(10)),
                           child: MaterialButton(
@@ -95,10 +89,9 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 color: ForgetPasswordWays.myIndex == 1
-                                    ? AppColors
-                                        .kForgetPasswordToggleSelectedButtonText
+                                    ? AppColors.kForgetPasswordToggleSelectedButtonText
                                     : AppColors.kForgetPasswordToggleButtonText,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                                 fontFamily: 'Almarai',
                               ),
                             ),
@@ -119,7 +112,7 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
                       ? const ForgetPasswordWithEmail()
                       : const ForgetPasswordWithPhoneNumber(),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight:269),
+                    height: AppDimensions.getDimensions(requiredHeight: 269),
                   ),
                   const ForgetPasswordBottomView(
                     hintText: AppStrings.kForgetPasswordHintBottomView,

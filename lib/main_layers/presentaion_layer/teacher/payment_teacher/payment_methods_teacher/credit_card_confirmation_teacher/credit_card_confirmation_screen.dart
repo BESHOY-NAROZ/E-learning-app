@@ -79,7 +79,7 @@ class _CreditCardConfirmationTeacherState extends State<CreditCardConfirmationTe
                             cursorHeight: 0,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(fontSize: 42),
+                            style: TextStyle(fontSize: AppDimensions.defaultSize * 42),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               counterText: '',

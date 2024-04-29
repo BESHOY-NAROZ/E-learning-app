@@ -39,18 +39,18 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kRemainingTimeExams,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       fontWeight: FontWeight.w400,
                       color: AppColors.kMainGery8D,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 3),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualRemainingTimeExams,
-                      fontSize: 24,
+                      fontSize: AppDimensions.defaultSize * 24,
                       fontWeight: FontWeight.w700,
                       color: AppColors.kMainGery8D,
                     ),
@@ -64,9 +64,9 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kTestAddressExams,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 24),
@@ -77,9 +77,9 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 3),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualTestAddressExams,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       fontWeight: FontWeight.w700,
                       color: AppColors.kMainGery8D,
                     ),
@@ -98,10 +98,10 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      const MainTextBlue(
+                      MainTextBlue(
                         myText: AppStrings.kDegreeCreateExam,
                         color: AppColors.kMainBlueC4,
-                        fontSize: 11,
+                        fontSize: AppDimensions.defaultSize * 11,
                         fontWeight: FontWeight.w400,
                       ),
                       SizedBox(
@@ -116,17 +116,17 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
                   ),
-                  const MainTextBlack(
+                  MainTextBlack(
                     myText: AppStrings.kFirstQExams,
-                    fontSize: 16,
+                    fontSize: AppDimensions.defaultSize * 16,
                     fontWeight: FontWeight.w400,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 20),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kActualFirstQExams,
-                    fontSize: 14,
+                    fontSize: AppDimensions.defaultSize * 14,
                     fontWeight: FontWeight.w400,
                   ),
                   SizedBox(
@@ -205,9 +205,9 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kQNumberButtonExamEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 3),
@@ -218,19 +218,19 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(width: 2, color: AppColors.kMainGeryD9)),
-                      child: const Center(
+                      child: Center(
                         child: MainTextBlack(
                           myText: AppStrings.kActualQNumberButtonExamEditing,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                       ),
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 5),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kTheQButtonExamEditing,
-                      fontSize: 10,
+                      fontSize: AppDimensions.defaultSize * 10,
                       textDirection: TextDirection.rtl,
                     )
                   ],
@@ -256,9 +256,9 @@ class ArrangeQuestionsTeacher extends StatelessWidget {
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 5),
                           ),
-                          const MainTextWhite(
+                          MainTextWhite(
                             myText: AppStrings.kNextQExams,
-                            fontSize: 16,
+                            fontSize: AppDimensions.defaultSize * 16,
                             fontWeight: FontWeight.w700,
                           ),
                         ],

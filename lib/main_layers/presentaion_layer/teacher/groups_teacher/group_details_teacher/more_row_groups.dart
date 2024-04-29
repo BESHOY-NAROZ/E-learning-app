@@ -30,24 +30,24 @@ class MoreRowGroupsTeacher extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const Text(
+              Text(
                 AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                 style: TextStyle(
                     fontFamily: 'Almarai',
                     color: AppColors.kSmallListFirstTextMainScreenHome,
                     fontWeight: FontWeight.w700,
-                    fontSize: 20),
+                    fontSize: AppDimensions.defaultSize * 20),
               ),
               SizedBox(
                 width: AppDimensions.getDimensions(requiredWidth: 8),
               ),
-              const Text(
+              Text(
                 AppStrings.kBottomListFirstTextHomeMainScreenHome,
                 style: TextStyle(
                     fontFamily: 'Almarai',
                     color: AppColors.kSmallListFirstTextMainScreenHome,
                     fontWeight: FontWeight.w700,
-                    fontSize: 20),
+                    fontSize: AppDimensions.defaultSize * 20),
               ),
             ],
           ),

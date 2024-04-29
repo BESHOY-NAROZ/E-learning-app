@@ -7,8 +7,7 @@ class TeacherGenderToggleButton extends StatefulWidget {
   const TeacherGenderToggleButton({Key? key}) : super(key: key);
 
   @override
-  State<TeacherGenderToggleButton> createState() =>
-      _TeacherGenderToggleButtonState();
+  State<TeacherGenderToggleButton> createState() => _TeacherGenderToggleButtonState();
 }
 
 class _TeacherGenderToggleButtonState extends State<TeacherGenderToggleButton> {
@@ -37,7 +36,7 @@ class _TeacherGenderToggleButtonState extends State<TeacherGenderToggleButton> {
                 color: myIndex == 0
                     ? AppColors.kForgetPasswordToggleSelectedButtonText
                     : AppColors.kForgetPasswordToggleButtonText,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -68,7 +67,7 @@ class _TeacherGenderToggleButtonState extends State<TeacherGenderToggleButton> {
                 color: myIndex == 1
                     ? AppColors.kForgetPasswordToggleSelectedButtonText
                     : AppColors.kForgetPasswordToggleButtonText,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontFamily: 'Almarai',
               ),
             ),

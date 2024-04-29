@@ -31,16 +31,16 @@ class SentApprovalsTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 21),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kSentApprovalsMainAssistantOfTeacher,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 5),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSentApprovalsHintAssistantOfTeacher,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),

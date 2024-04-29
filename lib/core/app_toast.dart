@@ -5,8 +5,7 @@ import 'app_constants/app_colors.dart';
 import 'app_dimensions.dart';
 
 class MyToast {
-  static showMyToast(
-      {BuildContext? context, String? myMessage, IconData? myIcon}) {
+  static showMyToast({BuildContext? context, String? myMessage, IconData? myIcon}) {
     FToast fToast = FToast();
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     fToast.init(context!);
@@ -14,18 +13,17 @@ class MyToast {
     Widget toast = Container(
       height: AppDimensions.getDimensions(requiredHeight: 45),
       width: AppDimensions.getDimensions(requiredWidth: 320),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: AppColors.kMainTextBlack),
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(10), color: AppColors.kMainTextBlack),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Text(
             myMessage!,
             textAlign: TextAlign.right,
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.white,
-              fontSize: 14,
+              fontSize: AppDimensions.defaultSize * 14,
               fontFamily: 'Almarai',
               fontWeight: FontWeight.w400,
               height: 0.10,

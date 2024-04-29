@@ -42,9 +42,9 @@ class SolvingIdeaBottomSheet extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kSolvingIdeaExamEditing,
-                          fontSize: 18,
+                          fontSize: AppDimensions.defaultSize * 18,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -61,18 +61,18 @@ class SolvingIdeaBottomSheet extends StatelessWidget {
                         requiredHeight: 10,
                       ),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualSolvingIdeaExamEditing,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(
                         requiredHeight: 10,
                       ),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualSolvingIdeaExamEditing,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                     ),
                     Spacer(),
                     MainButtonRed(

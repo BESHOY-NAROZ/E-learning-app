@@ -37,17 +37,17 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 28),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kOrdersPayment,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 5),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kConfirmationPayment,
                       color: AppColors.kMainGery7A,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),
@@ -70,9 +70,9 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                                 width: AppDimensions.getDimensions(requiredWidth: 20),
                               ),
                               const Spacer(),
-                              const MainTextBlack(
+                              MainTextBlack(
                                 myText: AppStrings.kSubjectPayment,
-                                fontSize: 16,
+                                fontSize: AppDimensions.defaultSize * 16,
                               ),
                             ],
                           ),
@@ -81,28 +81,28 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              const MainTextBlue(
+                              MainTextBlue(
                                 myText: AppStrings.kPricePayment,
-                                fontSize: 30,
+                                fontSize: AppDimensions.defaultSize * 30,
                               ),
                               SizedBox(
                                 width: AppDimensions.getDimensions(requiredWidth: 3),
                               ),
-                              const MainTextBlue(
+                              MainTextBlue(
                                 myText: AppStrings.kEGPPayment,
-                                fontSize: 14,
+                                fontSize: AppDimensions.defaultSize * 14,
                               ),
                               const Spacer(),
-                              const Column(
+                              Column(
                                 children: [
                                   MainTextGrey(
                                     myText: AppStrings.kClassPayment,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                     color: AppColors.kMainGery8D,
                                   ),
                                   MainTextGrey(
                                     myText: AppStrings.kSemesterPayment,
-                                    fontSize: 10,
+                                    fontSize: AppDimensions.defaultSize * 10,
                                     color: AppColors.kMainGery8D,
                                   ),
                                 ],
@@ -119,9 +119,9 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 22),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kTotalPricePayment,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 25),
@@ -136,10 +136,10 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            const MainTextGrey(
+                            MainTextGrey(
                               myText: AppStrings.kDiscountCodePayment,
                               color: AppColors.kMainGery7A,
-                              fontSize: 12,
+                              fontSize: AppDimensions.defaultSize * 12,
                             ),
                             SizedBox(
                               width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -161,14 +161,14 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualDiscountCodePayment,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.check_circle_rounded, color: AppColors.kMainGreen67),
                       enabled: false,
                       borderColor: AppColors.kMainGreen67,
                       hintStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: AppDimensions.defaultSize * 14,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kMainGreen67,
@@ -177,17 +177,17 @@ class PaymentAfterDiscountTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 25),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kUsePointsCodePayment,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kDiscountPayment,
                       color: AppColors.kMainBlueAA,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 35),

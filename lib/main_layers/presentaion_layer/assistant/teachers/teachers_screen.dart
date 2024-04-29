@@ -1,4 +1,3 @@
-import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
@@ -38,17 +37,17 @@ class Teachers extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kTeachersMenu,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 5),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kHintTeachers,
                   color: AppColors.kHintTeachers,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 25),
@@ -62,8 +61,7 @@ class Teachers extends StatelessWidget {
                       },
                       separatorBuilder: (context, index) {
                         return SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 8),
+                          height: AppDimensions.getDimensions(requiredHeight: 8),
                         );
                       },
                       itemCount: 7),

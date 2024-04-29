@@ -21,8 +21,7 @@ class AddNewClass extends StatelessWidget {
           myTitle: AppStrings.kAttendanceAndDepartureAppBarGroups,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+          padding: EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -38,18 +37,18 @@ class AddNewClass extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  const HintTextGroups(
+                  HintTextGroups(
                     myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                     fontWeight: FontWeight.w700,
-                    fontSize: 16,
+                    fontSize: AppDimensions.defaultSize * 16,
                   ),
                   SizedBox(
                     width: AppDimensions.getDimensions(requiredWidth: 4),
                   ),
-                  const HintTextGroups(
+                  HintTextGroups(
                     myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                     fontWeight: FontWeight.w700,
-                    fontSize: 16,
+                    fontSize: AppDimensions.defaultSize * 16,
                   ),
                 ],
               ),

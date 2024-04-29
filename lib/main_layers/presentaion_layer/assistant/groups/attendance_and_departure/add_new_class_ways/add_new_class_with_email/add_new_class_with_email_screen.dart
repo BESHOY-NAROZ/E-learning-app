@@ -15,9 +15,9 @@ class AddNewClassWithEmail extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        const HintTextGroups(
+        HintTextGroups(
           myText: AppStrings.kAddStudentEmailGroups,
-          fontSize: 12,
+          fontSize: AppDimensions.defaultSize * 12,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(

@@ -31,9 +31,9 @@ class ContactUS extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kContactUsMainTextCommon,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 20),
@@ -57,31 +57,27 @@ class ContactUS extends StatelessWidget {
                   myTitle: AppStrings.kWebSiteCommon,
                   imagePath: AppAssets.kWebSite,
                 ),
-
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 30),
                 ),
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kSocialMediaCommon,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 20),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children:
-                  List.generate(AppLists.kLogInWays.length, (index) {
+                  children: List.generate(AppLists.kLogInWays.length, (index) {
                     return Container(
                       height: AppDimensions.getDimensions(requiredHeight: 40),
                       width: AppDimensions.getDimensions(requiredWidth: 40),
                       margin: EdgeInsets.symmetric(
-                          horizontal:
-                          AppDimensions.getDimensions(requiredWidth: 4)),
+                          horizontal: AppDimensions.getDimensions(requiredWidth: 4)),
                       clipBehavior: Clip.antiAliasWithSaveLayer,
                       decoration: BoxDecoration(
-                          color: AppColors.kLoginWays.withOpacity(0.2),
-                          shape: BoxShape.circle),
+                          color: AppColors.kLoginWays.withOpacity(0.2), shape: BoxShape.circle),
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
                         child: AppLists.kSocialMedia[index],

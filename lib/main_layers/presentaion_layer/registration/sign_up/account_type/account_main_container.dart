@@ -40,24 +40,24 @@ class AccountMainContainer extends StatelessWidget {
                 children: [
                   MainTextBlue(
                     myText: myAccount,
-                    fontSize: 14,
+                    fontSize: AppDimensions.defaultSize * 14,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 5),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kAccountCapabilitiesSignUp,
-                    fontSize: 10,
+                    fontSize: AppDimensions.defaultSize * 10,
                     fontWeight: FontWeight.w400,
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kAccountCapabilitiesSignUp,
-                    fontSize: 10,
+                    fontSize: AppDimensions.defaultSize * 10,
                     fontWeight: FontWeight.w400,
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kAccountCapabilitiesSignUp,
-                    fontSize: 10,
+                    fontSize: AppDimensions.defaultSize * 10,
                     fontWeight: FontWeight.w400,
                   )
                 ],

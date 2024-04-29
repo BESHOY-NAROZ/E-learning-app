@@ -5,28 +5,29 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/u
 import 'package:flutter/material.dart';
 
 class ForgetPasswordBottomView extends StatelessWidget {
-  final String ? hintText;
+  final String? hintText;
   const ForgetPasswordBottomView({Key? key, this.hintText}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
-    return  Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-      Text(
-      hintText!,
-      style: const TextStyle(
-          fontFamily: 'Almarai',
-          color: AppColors.kForgetPasswordHintBottomView,
-          fontWeight: FontWeight.w400,
-          fontSize: 10),
-    ),
+        Text(
+          hintText!,
+          style: TextStyle(
+              fontFamily: 'Almarai',
+              color: AppColors.kForgetPasswordHintBottomView,
+              fontWeight: FontWeight.w400,
+              fontSize: AppDimensions.defaultSize * 10),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const CustomUnderLinedText(myText:
-            AppStrings.kForgetPasswordLeftBottomView,),
+            const CustomUnderLinedText(
+              myText: AppStrings.kForgetPasswordLeftBottomView,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Container(
@@ -35,9 +36,9 @@ class ForgetPasswordBottomView extends StatelessWidget {
                 color: AppColors.kLoginCreateAccount,
               ),
             ),
-            const CustomUnderLinedText(myText:  AppStrings
-                .kForgetPasswordRightBottomView,)
-
+            const CustomUnderLinedText(
+              myText: AppStrings.kForgetPasswordRightBottomView,
+            )
           ],
         )
       ],

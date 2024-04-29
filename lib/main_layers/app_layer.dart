@@ -10,8 +10,11 @@ class AppHome extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        onGenerateRoute: RoutesGenerator.getRoute,
-        home: SafeArea(child: LoginScreen()));
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: RoutesGenerator.getRoute,
+      home: SafeArea(
+        child: LoginScreen(),
+      ),
+    );
   }
 }

@@ -69,7 +69,7 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
                           color: PaymentMethodsList.myIndex == index
                               ? AppColors.kMainTextWhite
                               : AppColors.kMainGery96,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         )
                       ],
                     ),
@@ -92,7 +92,7 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
         ),
         MainTextBlack(
           myText: AppLists.kPaymentMethodsList[PaymentMethodsList.myIndex],
-          fontSize: 16,
+          fontSize: AppDimensions.defaultSize * 16,
         ),
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 12),
@@ -100,18 +100,18 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
         MainTextGrey(
           myText: AppLists.kPaymentMethodsHintList[PaymentMethodsList.myIndex],
           color: AppColors.kMainGery7A,
-          fontSize: 12,
+          fontSize: AppDimensions.defaultSize * 12,
         ),
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 12),
         ),
         if (PaymentMethodsList.myIndex == 0 || PaymentMethodsList.myIndex == 1)
-          const CustomTextFormFiled(
+          CustomTextFormFiled(
             hintText: AppStrings.kExPhonePayment,
             textDirection: TextDirection.rtl,
             keyboardType: TextInputType.phone,
             hintStyle: TextStyle(
-              fontSize: 12,
+              fontSize: AppDimensions.defaultSize * 12,
               fontWeight: FontWeight.w700,
               fontFamily: 'Almarai',
               color: AppColors.kDetailsProfileEditing,
@@ -121,19 +121,19 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              const MainTextGrey(
+              MainTextGrey(
                 myText: AppStrings.kEnterNamePayment,
                 color: AppColors.kMainGery7A,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
               ),
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 8),
               ),
-              const CustomTextFormFiled(
+              CustomTextFormFiled(
                 hintText: AppStrings.kExampleCommon,
                 textDirection: TextDirection.rtl,
                 hintStyle: TextStyle(
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Almarai',
                   color: AppColors.kDetailsProfileEditing,
@@ -142,20 +142,20 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 9),
               ),
-              const MainTextGrey(
+              MainTextGrey(
                 myText: AppStrings.kCardNumberPayment,
                 color: AppColors.kMainGery7A,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
               ),
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 8),
               ),
-              const CustomTextFormFiled(
+              CustomTextFormFiled(
                 hintText: AppStrings.kActualCardNumberPayment,
                 textDirection: TextDirection.rtl,
                 keyboardType: TextInputType.number,
                 hintStyle: TextStyle(
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Almarai',
                   color: AppColors.kDetailsProfileEditing,
@@ -169,21 +169,21 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kExpiredDatePayment,
                         color: AppColors.kMainGery7A,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         height: AppDimensions.getDimensions(requiredHeight: 8),
                       ),
-                      const CustomTextFormFiled(
+                      CustomTextFormFiled(
                         hintText: AppStrings.kActualExpiredDatePayment,
                         width: 150,
                         textDirection: TextDirection.rtl,
                         keyboardType: TextInputType.number,
                         hintStyle: TextStyle(
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Almarai',
                           color: AppColors.kDetailsProfileEditing,
@@ -195,22 +195,22 @@ class PaymentMethodsListState extends State<PaymentMethodsList> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kCVVPayment,
                         color: AppColors.kMainGery7A,
                         textDirection: TextDirection.rtl,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         height: AppDimensions.getDimensions(requiredHeight: 8),
                       ),
-                      const CustomTextFormFiled(
+                      CustomTextFormFiled(
                         hintText: AppStrings.kActualCVVPayment,
                         width: 150,
                         textDirection: TextDirection.rtl,
                         keyboardType: TextInputType.number,
                         hintStyle: TextStyle(
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Almarai',
                           color: AppColors.kDetailsProfileEditing,

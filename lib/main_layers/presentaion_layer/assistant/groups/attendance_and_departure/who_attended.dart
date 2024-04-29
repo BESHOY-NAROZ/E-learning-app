@@ -28,8 +28,8 @@ class WhoAttended extends StatelessWidget {
             myTitle: AppStrings.kAttendanceAndDepartureAppBarGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -45,19 +45,18 @@ class WhoAttended extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const HintTextGroups(
-                      myText:
-                          AppStrings.kBottomListGroupNumberHomeMainScreenHome,
+                    HintTextGroups(
+                      myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 4),
                     ),
-                    const HintTextGroups(
+                    HintTextGroups(
                       myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                   ],
                 ),
@@ -71,10 +70,8 @@ class WhoAttended extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return Container(
                           padding: EdgeInsets.zero,
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 80),
-                          width:
-                              AppDimensions.getDimensions(requiredWidth: 320),
+                          height: AppDimensions.getDimensions(requiredHeight: 80),
+                          width: AppDimensions.getDimensions(requiredWidth: 320),
                           decoration: BoxDecoration(
                               color: AppColors.kSentExamsContainerGroups,
                               borderRadius: BorderRadius.circular(8)),
@@ -85,39 +82,34 @@ class WhoAttended extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  const MainTextGreen(
+                                  MainTextGreen(
                                     myText: AppStrings.kAttendedGroups,
-                                    fontSize: 14,
+                                    fontSize: AppDimensions.defaultSize * 14,
                                     fontWeight: FontWeight.w400,
                                   ),
                                   SizedBox(
-                                    height: AppDimensions.getDimensions(
-                                        requiredHeight: 3),
+                                    height: AppDimensions.getDimensions(requiredHeight: 3),
                                   ),
-                                  const MainTextGrey(
+                                  MainTextGrey(
                                     myText: AppStrings.kAttendedTimeGroups,
-                                    fontSize: 12,
+                                    fontSize: AppDimensions.defaultSize * 12,
                                   ),
                                 ],
                               ),
                               SizedBox(
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 80),
+                                width: AppDimensions.getDimensions(requiredWidth: 80),
                               ),
-                              const MainTextBlack(
+                              MainTextBlack(
                                 myText: AppStrings.kProfileStudentNameGroups,
-                                fontSize: 16,
+                                fontSize: AppDimensions.defaultSize * 16,
                               ),
                               SizedBox(
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 8),
+                                width: AppDimensions.getDimensions(requiredWidth: 8),
                               ),
                               Container(
                                 margin: EdgeInsets.only(
-                                    left: AppDimensions.getDimensions(
-                                        requiredWidth: 17),
-                                    right: AppDimensions.getDimensions(
-                                        requiredWidth: 13)),
+                                    left: AppDimensions.getDimensions(requiredWidth: 17),
+                                    right: AppDimensions.getDimensions(requiredWidth: 13)),
                                 width: AppDimensions.getDimensions(
                                   requiredWidth: 46.33,
                                 ),
@@ -128,9 +120,7 @@ class WhoAttended extends StatelessWidget {
                                     color: AppColors.kAppBarPhotoMainScreenHome,
                                     shape: BoxShape.circle,
                                     border: Border.all(
-                                        color: AppColors
-                                            .kAppBarBorderMainScreenHome,
-                                        width: 3)),
+                                        color: AppColors.kAppBarBorderMainScreenHome, width: 3)),
                               ),
                             ],
                           ),
@@ -138,8 +128,7 @@ class WhoAttended extends StatelessWidget {
                       },
                       separatorBuilder: (context, index) {
                         return SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 9),
+                          height: AppDimensions.getDimensions(requiredHeight: 9),
                         );
                       },
                       itemCount: 9),

@@ -58,10 +58,10 @@ class _ExamLevelBottomSheetState extends State<ExamLevelBottomSheet> {
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
-                        const MainTextBlue(
+                        MainTextBlue(
                           myText: AppStrings.kLevelCreateExam,
                           color: AppColors.kMainBlueC4,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 11),
@@ -83,7 +83,7 @@ class _ExamLevelBottomSheetState extends State<ExamLevelBottomSheet> {
                                   children: [
                                     MainTextGrey(
                                       myText: AppLists.kLevelList[index],
-                                      fontSize: 12,
+                                      fontSize: AppDimensions.defaultSize * 12,
                                       textDirection: TextDirection.rtl,
                                     ),
                                     SizedBox(
@@ -132,7 +132,7 @@ class _ExamLevelBottomSheetState extends State<ExamLevelBottomSheet> {
             prefixIcon: Icon(Icons.arrow_left_rounded),
             enabled: false,
             hintStyle: TextStyle(
-              fontSize: 12,
+              fontSize: AppDimensions.defaultSize * 12,
               fontWeight: FontWeight.w700,
               fontFamily: 'Almarai',
               color: AppColors.kDetailsProfileEditing,

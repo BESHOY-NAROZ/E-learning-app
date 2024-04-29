@@ -33,11 +33,15 @@ class AddOpinionDoneTeacher extends StatelessWidget {
               myText: AppStrings.kOpinionDoneCommon,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-            const Text(
+            Text(
               AppStrings.kOpinionDoneHintCommon,
               textAlign: TextAlign.center,
               textDirection: TextDirection.rtl,
-              style: TextStyle(fontFamily: 'Almarai', color: AppColors.kSignInMainHintText, fontWeight: FontWeight.w400, fontSize: 14),
+              style: TextStyle(
+                  fontFamily: 'Almarai',
+                  color: AppColors.kSignInMainHintText,
+                  fontWeight: FontWeight.w400,
+                  fontSize: AppDimensions.defaultSize * 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 214)),
             MainButtonRed(

@@ -43,13 +43,13 @@ class MenuMainScreen extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),
                     ),
-                    const Text(
+                    Text(
                       AppStrings.kHintTextFirstMainScreenMenu,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kHintTextMainScreenHome,
                           fontWeight: FontWeight.w700,
-                          fontSize: 16),
+                          fontSize: AppDimensions.defaultSize * 16),
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),
@@ -59,38 +59,32 @@ class MenuMainScreen extends StatelessWidget {
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(
-                                context, RoutesManager.qRMainScreen);
+                            Navigator.pushNamed(context, RoutesManager.qRMainScreen);
                           },
                           child: Container(
-                            height:
-                                AppDimensions.getDimensions(requiredHeight: 63),
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 156),
+                            height: AppDimensions.getDimensions(requiredHeight: 63),
+                            width: AppDimensions.getDimensions(requiredWidth: 156),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 color: AppColors.kContainerMainScreenMenu),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Text(
+                                Text(
                                   AppStrings.kSecondContainerMainScreenMenu,
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                       fontFamily: 'Almarai',
                                       color: AppColors.kHintTextMainScreenHome,
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 12),
+                                      fontSize: AppDimensions.defaultSize * 12),
                                 ),
                                 SizedBox(
-                                  width: AppDimensions.getDimensions(
-                                      requiredWidth: 5),
+                                  width: AppDimensions.getDimensions(requiredWidth: 5),
                                 ),
                                 SizedBox(
-                                    width: AppDimensions.getDimensions(
-                                        requiredWidth: 34),
-                                    height: AppDimensions.getDimensions(
-                                        requiredHeight: 34),
+                                    width: AppDimensions.getDimensions(requiredWidth: 34),
+                                    height: AppDimensions.getDimensions(requiredHeight: 34),
                                     child: Image.asset(AppAssets.kMenuQRScreen))
                               ],
                             ),
@@ -101,40 +95,33 @@ class MenuMainScreen extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(
-                                context, RoutesManager.profileEditing);
+                            Navigator.pushNamed(context, RoutesManager.profileEditing);
                           },
                           child: Container(
-                            height:
-                                AppDimensions.getDimensions(requiredHeight: 63),
-                            width:
-                                AppDimensions.getDimensions(requiredWidth: 156),
+                            height: AppDimensions.getDimensions(requiredHeight: 63),
+                            width: AppDimensions.getDimensions(requiredWidth: 156),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 color: AppColors.kContainerMainScreenMenu),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Text(
+                                Text(
                                   AppStrings.kFirstContainerMainScreenMenu,
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                       fontFamily: 'Almarai',
                                       color: AppColors.kHintTextMainScreenHome,
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 12),
+                                      fontSize: AppDimensions.defaultSize * 12),
                                 ),
                                 SizedBox(
-                                  width: AppDimensions.getDimensions(
-                                      requiredWidth: 5),
+                                  width: AppDimensions.getDimensions(requiredWidth: 5),
                                 ),
                                 SizedBox(
-                                    width: AppDimensions.getDimensions(
-                                        requiredWidth: 34),
-                                    height: AppDimensions.getDimensions(
-                                        requiredHeight: 34),
-                                    child:
-                                        Image.asset(AppAssets.kMenuUserScreen))
+                                    width: AppDimensions.getDimensions(requiredWidth: 34),
+                                    height: AppDimensions.getDimensions(requiredHeight: 34),
+                                    child: Image.asset(AppAssets.kMenuUserScreen))
                               ],
                             ),
                           ),
@@ -144,13 +131,13 @@ class MenuMainScreen extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),
                     ),
-                    const Text(
+                    Text(
                       AppStrings.kHintTextSecondMainScreenMenu,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kHintTextMainScreenHome,
                           fontWeight: FontWeight.w700,
-                          fontSize: 16),
+                          fontSize: AppDimensions.defaultSize * 16),
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),
@@ -169,8 +156,7 @@ class MenuMainScreen extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.studentsGroups);
+                        Navigator.pushNamed(context, RoutesManager.studentsGroups);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kSecondButtonMainScreenMenu,
@@ -182,8 +168,7 @@ class MenuMainScreen extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.notificationsCommon);
+                        Navigator.pushNamed(context, RoutesManager.notificationsCommon);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kThirdButtonMainScreenMenu,
@@ -195,8 +180,7 @@ class MenuMainScreen extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.generalSettings);
+                        Navigator.pushNamed(context, RoutesManager.generalSettings);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kFourthButtonMainScreenMenu,
@@ -220,8 +204,7 @@ class MenuMainScreen extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.inviteFriends);
+                        Navigator.pushNamed(context, RoutesManager.inviteFriends);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kShareButtonMainScreenMenu,

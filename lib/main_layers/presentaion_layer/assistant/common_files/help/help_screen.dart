@@ -29,27 +29,27 @@ class HelpBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kProgramDescCommon,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kFirstUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kSecondUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kThirdUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 28),
@@ -84,27 +84,27 @@ class HelpBody extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 11),
                 ),
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kProgramPointsDescCommon,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kFirstUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kSecondUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kThirdUnderMainTextCommon,
                   color: AppColors.kHintCommon,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 28),

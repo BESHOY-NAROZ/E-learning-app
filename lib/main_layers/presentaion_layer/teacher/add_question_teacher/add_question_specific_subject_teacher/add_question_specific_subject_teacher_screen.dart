@@ -32,7 +32,7 @@ class AddQuestionSpecificSubjectTeacher extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Column(
+                Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
@@ -43,11 +43,11 @@ class AddQuestionSpecificSubjectTeacher extends StatelessWidget {
                           fontFamily: 'Almarai',
                           color: AppColors.kMainGreen45,
                           fontWeight: FontWeight.w700,
-                          fontSize: 20),
+                          fontSize: AppDimensions.defaultSize * 20),
                     ),
                     MainTextBlack(
                       myText: AppStrings.kFourUnitsCreateExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       fontWeight: FontWeight.w400,
                       textDirection: TextDirection.rtl,
                     ),
@@ -95,9 +95,9 @@ class AddQuestionSpecificSubjectTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 23),
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kContentsCreateExam,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),

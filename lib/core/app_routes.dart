@@ -64,10 +64,24 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/add_attached_specific_subject_teacher/add_attached_specific_subject_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/add_new_attached_teacher/add_new_attached_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/all_attachments_teacher/all_attachments_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/edit_attachments_teacher/edit_attachments_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/upload_new_attached_teacher/upload_attached_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/upload_new_attached_teacher/upload_new_attached_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_question_specific_subject_teacher/add_question_specific_subject_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_question_teacher/add_question_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_specific_question_type/add_specific_question_type_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/exams_created_teacher/exams_created_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/exams_created_teacher/sent_exam_created_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/question_type_teacher/question_type_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/sent_the_question_teacher/sent_question_done_to_both.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher'
+    '/sent_the_question_teacher/sent_question_done_to_me.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/specific_question_details_teacher/specific_question_details/specific_question_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/teacher_bank_teacher/teacher_bank_teacher/teacher_bank_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/the_question_teacher/the_question_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_by_qr_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_screen.dart';
@@ -290,6 +304,19 @@ class RoutesManager {
   static const String addQuestionSpecificSubjectTeacher = "/addQuestionSpecificSubjectTeacher";
   static const String questionTypeTeacher = "/questionTypeTeacher";
   static const String addSpecificQuestionTypeTeacher = "/addSpecificQuestionTypeTeacher";
+  static const String theQuestionTeacher = "/theQuestionTeacher";
+  static const String sentTheQuestionDoneToMeTeacher = "/sentTheQuestionDoneToMeTeacher";
+  static const String sentTheQuestionDoneToBothTeacher = "/sentTheQuestionDoneToBothTeacher";
+  static const String teacherBankTeacher = "/teacherBankTeacher";
+  static const String specificQuestionDetailsTeacher = "/specificQuestionDetailsTeacher";
+  static const String examsCreatedTeacher = "/examsCreatedTeacher";
+  static const String sentCreatedDoneTeacher = "/sentCreatedDoneTeacher";
+  static const String addNewAttachedTeacher = "/addNewAttachedTeacher";
+  static const String addAttachedSpecificSubjectTeacher = "/addAttachedSpecificSubjectTeacher";
+  static const String uploadNewAttachedTeacher = "/uploadNewAttachedTeacher";
+  static const String uploadAttachedDoneTeacher = "/uploadAttachedDoneTeacher";
+  static const String allAttachmentsTeacher = "/allAttachmentsTeacher";
+  static const String editAttachmentsTeacher = "/editAttachmentsTeacher";
 }
 
 class RoutesGenerator {
@@ -586,6 +613,36 @@ class RoutesGenerator {
       case RoutesManager.addSpecificQuestionTypeTeacher:
         return PageRouteBuilder(
             pageBuilder: (_, __, ___) => const AddSpecificQuestionTypeTeacher());
+      case RoutesManager.theQuestionTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const TheQuestionTeacher());
+      case RoutesManager.sentTheQuestionDoneToMeTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SentTheQuestionDoneToMeTeacher());
+      case RoutesManager.sentTheQuestionDoneToBothTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SentTheQuestionDoneToBothTeacher());
+      case RoutesManager.teacherBankTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const TeacherBankTeacher());
+      case RoutesManager.specificQuestionDetailsTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const SpecificQuestionDetailsTeacher());
+      case RoutesManager.examsCreatedTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ExamsCreatedTeacher());
+      case RoutesManager.sentCreatedDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SentCreatedDoneTeacher());
+      case RoutesManager.addNewAttachedTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewAttachedTeacher());
+      case RoutesManager.addAttachedSpecificSubjectTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const AddAttachedSpecificSubjectTeacher());
+      case RoutesManager.uploadNewAttachedTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const UploadNewAttachedTeacher());
+      case RoutesManager.uploadAttachedDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const UploadAttachedDoneTeacher());
+      case RoutesManager.allAttachmentsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AllAttachmentsTeacher());
+      case RoutesManager.editAttachmentsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const EditAttachmentsTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

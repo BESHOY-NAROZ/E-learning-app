@@ -31,14 +31,16 @@ class _MyHomeState extends State<MyHome> {
           currentIndex: MyHome.index,
           type: BottomNavigationBarType.fixed,
           backgroundColor: AppColors.kBottomAppBarMainScreenHome,
-          unselectedItemColor:
-              AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
-          selectedItemColor:
-              AppColors.kBottomNavigationBarSelectedMainScreenHome,
-          selectedLabelStyle: const TextStyle(
-              fontFamily: 'Almarai', fontWeight: FontWeight.w700, fontSize: 11),
-          unselectedLabelStyle: const TextStyle(
-              fontFamily: 'Almarai', fontWeight: FontWeight.w700, fontSize: 11),
+          unselectedItemColor: AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
+          selectedItemColor: AppColors.kBottomNavigationBarSelectedMainScreenHome,
+          selectedLabelStyle: TextStyle(
+              fontFamily: 'Almarai',
+              fontWeight: FontWeight.w700,
+              fontSize: AppDimensions.defaultSize * 11),
+          unselectedLabelStyle: TextStyle(
+              fontFamily: 'Almarai',
+              fontWeight: FontWeight.w700,
+              fontSize: AppDimensions.defaultSize * 11),
           items: [
             BottomNavigationBarItem(
                 icon: SizedBox(
@@ -48,8 +50,7 @@ class _MyHomeState extends State<MyHome> {
                       AppAssets.kBottomNavigationBarItem1HomeScreen,
                       color: MyHome.index == 0
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
                 label: AppStrings.kBottomNavigationBarMenuMainScreenHome),
             BottomNavigationBarItem(
@@ -60,11 +61,9 @@ class _MyHomeState extends State<MyHome> {
                       AppAssets.kBottomNavigationBarItem2HomeScreen,
                       color: MyHome.index == 1
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
-                label:
-                    AppStrings.kBottomNavigationBarNotificationMainScreenHome),
+                label: AppStrings.kBottomNavigationBarNotificationMainScreenHome),
             BottomNavigationBarItem(
                 icon: SizedBox(
                     width: AppDimensions.getDimensions(requiredWidth: 24),
@@ -73,8 +72,7 @@ class _MyHomeState extends State<MyHome> {
                       AppAssets.kVector3HomeScreen,
                       color: MyHome.index == 2
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
                 label: AppStrings.kBottomNavigationBarUsersMainScreenHome),
             BottomNavigationBarItem(
@@ -85,8 +83,7 @@ class _MyHomeState extends State<MyHome> {
                       AppAssets.kBottomNavigationBarItem4HomeScreen,
                       color: MyHome.index == 3
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
-                          : AppColors
-                              .kBottomNavigationBarUnSelectedMainScreenHome,
+                          : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
                 label: AppStrings.kBottomNavigationBarHomeMainScreenHome),
           ],

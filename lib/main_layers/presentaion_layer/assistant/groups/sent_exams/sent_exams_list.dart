@@ -18,8 +18,7 @@ class ExamsSentList extends StatelessWidget {
       height: AppDimensions.getDimensions(requiredHeight: 100),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          color: AppColors.kSentExamsContainerGroups),
+          borderRadius: BorderRadius.circular(8), color: AppColors.kSentExamsContainerGroups),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
@@ -27,11 +26,10 @@ class ExamsSentList extends StatelessWidget {
             height: AppDimensions.getDimensions(requiredHeight: 5),
           ),
           Padding(
-            padding: EdgeInsets.only(
-                right: AppDimensions.getDimensions(requiredWidth: 9)),
-            child: const MainTextBlack(
+            padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
+            child: MainTextBlack(
               myText: AppStrings.kExamsSentBlackTextGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -39,12 +37,11 @@ class ExamsSentList extends StatelessWidget {
             height: AppDimensions.getDimensions(requiredHeight: 5),
           ),
           Padding(
-            padding: EdgeInsets.only(
-                right: AppDimensions.getDimensions(requiredWidth: 9)),
-            child: const Text(
+            padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
+            child: Text(
               AppStrings.kExamsSentGreyTextGroups,
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                   color: AppColors.kSentGreyTextGroups),
             ),
@@ -57,8 +54,7 @@ class ExamsSentList extends StatelessWidget {
             decoration: const BoxDecoration(
                 color: AppColors.kBottomContainerGroups,
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(8),
-                    bottomRight: Radius.circular(8))),
+                    bottomLeft: Radius.circular(8), bottomRight: Radius.circular(8))),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -68,9 +64,9 @@ class ExamsSentList extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 50),
                     width: AppDimensions.getDimensions(requiredWidth: 50),
                     child: Row(children: [
-                      const MainTextWhite(
+                      MainTextWhite(
                         myText: AppStrings.kCorrectExamsGroups,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                         fontWeight: FontWeight.w700,
                       ),
                       SizedBox(
@@ -78,8 +74,7 @@ class ExamsSentList extends StatelessWidget {
                       ),
                       SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 19),
-                          height:
-                          AppDimensions.getDimensions(requiredHeight: 19),
+                          height: AppDimensions.getDimensions(requiredHeight: 19),
                           child: Image.asset(AppAssets.kCorrectExam)),
                     ]),
                   ),
@@ -93,9 +88,9 @@ class ExamsSentList extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 50),
                     width: AppDimensions.getDimensions(requiredWidth: 50),
                     child: Row(children: [
-                      const MainTextWhite(
+                      MainTextWhite(
                         myText: AppStrings.kShowExamsGroups,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                         fontWeight: FontWeight.w700,
                       ),
                       SizedBox(
@@ -103,8 +98,7 @@ class ExamsSentList extends StatelessWidget {
                       ),
                       SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 19),
-                          height:
-                          AppDimensions.getDimensions(requiredHeight: 19),
+                          height: AppDimensions.getDimensions(requiredHeight: 19),
                           child: Image.asset(AppAssets.kShowExam)),
                     ]),
                   ),

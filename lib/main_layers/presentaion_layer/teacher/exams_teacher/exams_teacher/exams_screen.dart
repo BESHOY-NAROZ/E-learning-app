@@ -38,6 +38,7 @@ class ExamsTeacher extends StatelessWidget {
                     ListView.separated(
                         shrinkWrap: true,
                         scrollDirection: Axis.vertical,
+                        padding: EdgeInsets.zero,
                         physics: const NeverScrollableScrollPhysics(),
                         itemBuilder: (context, index) {
                           return const ExamsListTeacher();
@@ -45,7 +46,10 @@ class ExamsTeacher extends StatelessWidget {
                         separatorBuilder: (context, index) {
                           return SizedBox(height: AppDimensions.getDimensions(requiredHeight: 20));
                         },
-                        itemCount: 7)
+                        itemCount: 7),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 18),
+                    ),
                   ],
                 ),
               ),

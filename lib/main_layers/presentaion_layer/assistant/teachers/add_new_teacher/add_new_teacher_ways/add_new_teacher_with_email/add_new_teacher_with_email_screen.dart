@@ -15,9 +15,9 @@ class AddNewTeacherWithEmail extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        const HintTextGroups(
+        HintTextGroups(
           myText: AppStrings.kAddTeacherHintTeachers,
-          fontSize: 12,
+          fontSize: AppDimensions.defaultSize * 12,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(

@@ -13,9 +13,9 @@ class AddNewStudentWithPhone extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        const HintTextGroups(
+        HintTextGroups(
           myText: AppStrings.kAddStudentPhoneGroups,
-          fontSize: 12,
+          fontSize: AppDimensions.defaultSize * 12,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppDimensions {
-
   static late double? _designHeight;
   static late double? _designWidth;
 
@@ -11,17 +10,22 @@ class AppDimensions {
   static late double _screenHeightFinal;
   static late double _screenWidthFinal;
 
-  static void init({BuildContext? context, double? designHeight, double?
-  designWidth}) {
+  static late double defaultSize;
+  static Orientation? orientation;
+
+  static void init({BuildContext? context, double? designHeight, double? designWidth}) {
     _designHeight = designHeight;
     _designWidth = designWidth;
 
     screenWidth = MediaQuery.of(context!).size.width;
     screenHeight = MediaQuery.of(context).size.height;
+    defaultSize = screenHeight! / 820;
+    // defaultSize = (screenHeight! - screenWidth! / .005);
+    // defaultSize = screenWidth! * .00255;
   }
 
-  static double getDimensions({double? requiredHeight = 0, double?
-  requiredWidth = 0}) {
+//screenWidth! * .00255;
+  static double getDimensions({double? requiredHeight = 0, double? requiredWidth = 0}) {
     double dimension;
 
     _screenHeightFinal = screenHeight! * (requiredHeight! / _designHeight!);

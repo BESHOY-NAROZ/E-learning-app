@@ -35,17 +35,17 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kMainDeleteStudent,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kHintDeleteStudent,
                       color: AppColors.kDetailsProfileEditing,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                       fontWeight: FontWeight.w400,
                     ),
                     SizedBox(
@@ -63,24 +63,24 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text(
+                              Text(
                                 AppStrings.kStudentNameGroups,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
                                     color: AppColors.kSmallListFirstTextMainScreenHome,
                                     fontWeight: FontWeight.w700,
-                                    fontSize: 15),
+                                    fontSize: AppDimensions.defaultSize * 15),
                               ),
                               SizedBox(
                                 height: AppDimensions.getDimensions(requiredHeight: 3),
                               ),
-                              const Text(
+                              Text(
                                 AppStrings.kStudentLevelGroups,
                                 style: TextStyle(
                                     fontFamily: 'Almarai',
                                     color: AppColors.kSmallListFirstTextMainScreenHome,
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 12),
+                                    fontSize: AppDimensions.defaultSize * 12),
                               ),
                             ],
                           ),
@@ -116,13 +116,13 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: const Text(
+                            child: Text(
                               AppStrings.kBackDeleteStudent,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
                                   color: AppColors.kMainScreenNewVersionButtonText,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: AppDimensions.defaultSize * 16),
                             )),
                       ),
                       SizedBox(
@@ -140,13 +140,13 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
                               Navigator.pushReplacementNamed(
                                   context, RoutesManager.removeStudentDone);
                             },
-                            child: const Text(
+                            child: Text(
                               AppStrings.kActualDeleteStudent,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
                                   color: AppColors.kMainTextWhite,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: AppDimensions.defaultSize * 16),
                             )),
                       ),
                       SizedBox(

@@ -56,17 +56,17 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                const MainTextBlack(
+                                MainTextBlack(
                                   myText: AppStrings.kDeleteAssistantOfTeacher,
-                                  fontSize: 18,
+                                  fontSize: AppDimensions.defaultSize * 18,
                                 ),
                                 SizedBox(
                                   height: AppDimensions.getDimensions(requiredHeight: 14),
                                 ),
-                                const MainTextGrey(
+                                MainTextGrey(
                                   myText: AppStrings.kDeleteMainAssistantOfTeacher,
                                   color: AppColors.kDetailsProfileEditing,
-                                  fontSize: 14,
+                                  fontSize: AppDimensions.defaultSize * 14,
                                   fontWeight: FontWeight.w400,
                                 ),
                                 SizedBox(
@@ -85,13 +85,13 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                                         onPressed: () {
                                           Navigator.pop(context);
                                         },
-                                        child: const Text(
+                                        child: Text(
                                           AppStrings.kBackDeleteAccount,
                                           style: TextStyle(
                                               fontFamily: 'Almarai',
                                               color: AppColors.kMainScreenNewVersionButtonText,
                                               fontWeight: FontWeight.w700,
-                                              fontSize: 16),
+                                              fontSize: AppDimensions.defaultSize * 16),
                                         )),
                                   ),
                                   SizedBox(
@@ -110,13 +110,13 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                                           Navigator.pushReplacementNamed(
                                               context, RoutesManager.removeAssistantOfTeacherDone);
                                         },
-                                        child: const Text(
+                                        child: Text(
                                           AppStrings.kActualDeleteAccount,
                                           style: TextStyle(
                                               fontFamily: 'Almarai',
                                               color: AppColors.kMainTextWhite,
                                               fontWeight: FontWeight.w700,
-                                              fontSize: 16),
+                                              fontSize: AppDimensions.defaultSize * 16),
                                         )),
                                   ),
                                   SizedBox(
@@ -143,18 +143,18 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kAssistantNameAssistantOfTeacher,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 13),
                 ),
                 Row(
                   children: [
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kAssistantEmailAssistantOfTeacher,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 3),
@@ -171,9 +171,9 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kAssistantNumberAssistantOfTeacher,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 3),

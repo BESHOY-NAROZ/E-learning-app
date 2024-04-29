@@ -178,4 +178,8 @@ class AppLists {
     AppStrings.kBiologyCreateExam,
     AppStrings.kFrenchCreateExam,
   ];
+  static List<String> kAddQuestionToList = [
+    AppStrings.kSendToMeQuestion,
+    AppStrings.kSendToBothQuestion,
+  ];
 }

@@ -1,4 +1,5 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class MainTextBlue extends StatelessWidget {
@@ -20,7 +21,7 @@ class MainTextBlue extends StatelessWidget {
           fontFamily: 'Almarai',
           color: color ?? AppColors.kForgetPasswordMainText,
           fontWeight: fontWeight ?? FontWeight.w700,
-          fontSize: fontSize ?? 24),
+          fontSize: fontSize ?? AppDimensions.defaultSize * 24),
     );
   }
 }

@@ -35,9 +35,9 @@ class SubjectsList extends StatelessWidget {
                       Icons.close,
                       color: AppColors.kMainTextBlack,
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kPhilosophyProfileEditingTeacher,
-                      fontSize: 11,
+                      fontSize: AppDimensions.defaultSize * 11,
                     ),
                     Image.asset(
                       AppAssets.kPhilosophy,
@@ -71,9 +71,9 @@ class SubjectsList extends StatelessWidget {
                       Icons.close,
                       color: AppColors.kMainTextBlack,
                     ),
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kDynamicsProfileEditingTeacher,
-                      fontSize: 11,
+                      fontSize: AppDimensions.defaultSize * 11,
                     ),
                     Image.asset(
                       AppAssets.kDynamics,

@@ -35,9 +35,9 @@ class AddID extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 24),
                 ),
-                const MainTextBlue(
+                MainTextBlue(
                   myText: AppStrings.kAddPhotoSignUp,
-                  fontSize: 18,
+                  fontSize: AppDimensions.defaultSize * 18,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 9),
@@ -58,13 +58,11 @@ class AddID extends StatelessWidget {
                   alignment: Alignment.center,
                   children: [
                     Container(
-                      height:
-                          AppDimensions.getDimensions(requiredHeight: 152.39),
+                      height: AppDimensions.getDimensions(requiredHeight: 152.39),
                       width: AppDimensions.getDimensions(requiredWidth: 236),
                       clipBehavior: Clip.antiAliasWithSaveLayer,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: AppColors.kMainTextWhite),
+                          borderRadius: BorderRadius.circular(8), color: AppColors.kMainTextWhite),
                       child: ImageFiltered(
                         imageFilter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
                         child: Image.asset(
@@ -77,8 +75,7 @@ class AddID extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 87),
+                          height: AppDimensions.getDimensions(requiredHeight: 87),
                           width: AppDimensions.getDimensions(requiredWidth: 70),
                           decoration: BoxDecoration(
                               color: AppColors.kSignUpContainerSignUp,
@@ -88,18 +85,15 @@ class AddID extends StatelessWidget {
                             children: [
                               Image.asset(
                                 AppAssets.kUpload,
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 24),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 24),
+                                width: AppDimensions.getDimensions(requiredWidth: 24),
+                                height: AppDimensions.getDimensions(requiredHeight: 24),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 5),
+                                height: AppDimensions.getDimensions(requiredHeight: 5),
                               ),
-                              const MainTextGrey(
+                              MainTextGrey(
                                 myText: AppStrings.kUploadImageSignUp,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                               )
                             ],
                           ),
@@ -108,8 +102,7 @@ class AddID extends StatelessWidget {
                           width: AppDimensions.getDimensions(requiredWidth: 17),
                         ),
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 87),
+                          height: AppDimensions.getDimensions(requiredHeight: 87),
                           width: AppDimensions.getDimensions(requiredWidth: 70),
                           decoration: BoxDecoration(
                               color: AppColors.kSignUpContainerSignUp,
@@ -119,18 +112,15 @@ class AddID extends StatelessWidget {
                             children: [
                               Image.asset(
                                 AppAssets.kCamera,
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 24),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 24),
+                                width: AppDimensions.getDimensions(requiredWidth: 24),
+                                height: AppDimensions.getDimensions(requiredHeight: 24),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 5),
+                                height: AppDimensions.getDimensions(requiredHeight: 5),
                               ),
-                              const MainTextGrey(
+                              MainTextGrey(
                                 myText: AppStrings.kTakeImageSignUp,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                               )
                             ],
                           ),
@@ -152,13 +142,11 @@ class AddID extends StatelessWidget {
                   alignment: Alignment.center,
                   children: [
                     Container(
-                      height:
-                          AppDimensions.getDimensions(requiredHeight: 152.39),
+                      height: AppDimensions.getDimensions(requiredHeight: 152.39),
                       width: AppDimensions.getDimensions(requiredWidth: 236),
                       clipBehavior: Clip.antiAliasWithSaveLayer,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: AppColors.kMainTextWhite),
+                          borderRadius: BorderRadius.circular(8), color: AppColors.kMainTextWhite),
                       child: ImageFiltered(
                         imageFilter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
                         child: Image.asset(
@@ -171,8 +159,7 @@ class AddID extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 87),
+                          height: AppDimensions.getDimensions(requiredHeight: 87),
                           width: AppDimensions.getDimensions(requiredWidth: 70),
                           decoration: BoxDecoration(
                               color: AppColors.kSignUpContainerSignUp,
@@ -182,18 +169,15 @@ class AddID extends StatelessWidget {
                             children: [
                               Image.asset(
                                 AppAssets.kUpload,
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 24),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 24),
+                                width: AppDimensions.getDimensions(requiredWidth: 24),
+                                height: AppDimensions.getDimensions(requiredHeight: 24),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 5),
+                                height: AppDimensions.getDimensions(requiredHeight: 5),
                               ),
-                              const MainTextGrey(
+                              MainTextGrey(
                                 myText: AppStrings.kUploadImageSignUp,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                               )
                             ],
                           ),
@@ -202,8 +186,7 @@ class AddID extends StatelessWidget {
                           width: AppDimensions.getDimensions(requiredWidth: 17),
                         ),
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 87),
+                          height: AppDimensions.getDimensions(requiredHeight: 87),
                           width: AppDimensions.getDimensions(requiredWidth: 70),
                           decoration: BoxDecoration(
                               color: AppColors.kSignUpContainerSignUp,
@@ -213,18 +196,15 @@ class AddID extends StatelessWidget {
                             children: [
                               Image.asset(
                                 AppAssets.kCamera,
-                                width: AppDimensions.getDimensions(
-                                    requiredWidth: 24),
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 24),
+                                width: AppDimensions.getDimensions(requiredWidth: 24),
+                                height: AppDimensions.getDimensions(requiredHeight: 24),
                               ),
                               SizedBox(
-                                height: AppDimensions.getDimensions(
-                                    requiredHeight: 5),
+                                height: AppDimensions.getDimensions(requiredHeight: 5),
                               ),
-                              const MainTextGrey(
+                              MainTextGrey(
                                 myText: AppStrings.kTakeImageSignUp,
-                                fontSize: 12,
+                                fontSize: AppDimensions.defaultSize * 12,
                               )
                             ],
                           ),
@@ -240,22 +220,20 @@ class AddID extends StatelessWidget {
                   height: AppDimensions.getDimensions(requiredHeight: 45),
                   width: AppDimensions.getDimensions(requiredWidth: 320),
                   clipBehavior: Clip.antiAliasWithSaveLayer,
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                   child: MaterialButton(
                       color: AppColors.kButtonSignUp,
                       shape: const RoundedRectangleBorder(),
                       onPressed: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.confirmAccount);
+                        Navigator.pushNamed(context, RoutesManager.confirmAccount);
                       },
-                      child: const Text(
+                      child: Text(
                         AppStrings.kAddPhotoContinuanceSignUp,
                         style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kMainTextWhite,
                             fontWeight: FontWeight.w800,
-                            fontSize: 16),
+                            fontSize: AppDimensions.defaultSize * 16),
                       )),
                 ),
               ],

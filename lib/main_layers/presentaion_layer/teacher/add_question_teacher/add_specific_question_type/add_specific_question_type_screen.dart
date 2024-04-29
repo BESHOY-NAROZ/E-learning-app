@@ -43,14 +43,18 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
-                          myText: AppStrings.kFirstTestCreateExam,
-                          fontSize: 16,
+                        MainTextBlack(
+                          myText: AppStrings.kTheQuestionAddQuestion,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
-                            height: AppDimensions.getDimensions(requiredHeight: 24),
-                            width: AppDimensions.getDimensions(requiredWidth: 24),
-                            child: Image.asset(AppAssets.kExamVector))
+                          width: AppDimensions.getDimensions(requiredWidth: 6),
+                        ),
+                        Image.asset(
+                          AppAssets.kAddQuestion,
+                          height: AppDimensions.getDimensions(requiredHeight: 22),
+                          width: AppDimensions.getDimensions(requiredWidth: 22),
+                        )
                       ],
                     ),
                     SizedBox(
@@ -59,10 +63,10 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     Padding(
                       padding:
                           EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 24)),
-                      child: const MainTextGrey(
+                      child: MainTextGrey(
                         myText: AppStrings.kSpecificFirstTestCreateExam,
                         color: AppColors.kMainGery8D,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ),
                     SizedBox(
@@ -78,15 +82,15 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                                       AppLists.kAddQuestionTypeList[2]
                                   ? AppLists.kMainAddQuestionTypeList[2]
                                   : AppLists.kMainAddQuestionTypeList[3],
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                       fontWeight: FontWeight.w400,
                     ),
                     Row(
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kQNumberCreateCustomExam,
                           textDirection: TextDirection.rtl,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 24),
@@ -107,27 +111,27 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 22),
                     ),
-                    const Row(
+                    Row(
                       children: [
                         MainTextGrey(
                           myText: AppStrings.kOptionalCreateCustomExam,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                         Spacer(),
                         MainTextGrey(
                           myText: AppStrings.kWritePartCreateCustomExam,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                       ],
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -136,18 +140,18 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kWriteQCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -171,20 +175,20 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          const MainTextGrey(
+                          MainTextGrey(
                             myText: AppStrings.kCorrectAnswerCreateExam,
-                            fontSize: 12,
+                            fontSize: AppDimensions.defaultSize * 12,
                           ),
                           SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 8),
                           ),
-                          const CustomTextFormFiled(
+                          CustomTextFormFiled(
                             hintText: AppStrings.kCorrectAnswerCreateExam,
                             textDirection: TextDirection.rtl,
                             prefixIcon: Icon(Icons.arrow_left_rounded),
                             enabled: false,
                             hintStyle: TextStyle(
-                              fontSize: 12,
+                              fontSize: AppDimensions.defaultSize * 12,
                               fontWeight: FontWeight.w700,
                               fontFamily: 'Almarai',
                               color: AppColors.kDetailsProfileEditing,
@@ -195,20 +199,20 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                           ),
                         ],
                       ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kCorrectAnswerCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualCorrectAnswerCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -217,19 +221,19 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSolvingIdeaCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const ExpandedCustomTextFormFiled(
+                    ExpandedCustomTextFormFiled(
                       height: 111,
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -238,19 +242,19 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 18),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSolvingWayCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const ExpandedCustomTextFormFiled(
+                    ExpandedCustomTextFormFiled(
                       height: 111,
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -259,18 +263,18 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kQDegreeCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualDegreeCreateExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -303,10 +307,10 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                                 SizedBox(
                                   height: AppDimensions.getDimensions(requiredHeight: 10),
                                 ),
-                                const MainTextGrey(
+                                MainTextGrey(
                                   myText: AppStrings.kDownLoadVideoCreateCustomExam,
                                   color: AppColors.kMainGery7A,
-                                  fontSize: 12,
+                                  fontSize: AppDimensions.defaultSize * 12,
                                 )
                               ],
                             ),
@@ -338,10 +342,10 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                                 SizedBox(
                                   height: AppDimensions.getDimensions(requiredHeight: 10),
                                 ),
-                                const MainTextGrey(
+                                MainTextGrey(
                                   myText: AppStrings.kDownLoadPicCreateCustomExam,
                                   color: AppColors.kMainGery7A,
-                                  fontSize: 12,
+                                  fontSize: AppDimensions.defaultSize * 12,
                                 )
                               ],
                             ),
@@ -355,7 +359,7 @@ class AddSpecificQuestionTypeTeacher extends StatelessWidget {
                     MainButtonRed(
                       buttonName: AppStrings.kAddingQAddQuestion,
                       onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.createExamDoneTeacher);
+                        Navigator.pushNamed(context, RoutesManager.theQuestionTeacher);
                       },
                     ),
                     SizedBox(

@@ -28,8 +28,8 @@ class AttendanceAndDeparture extends StatelessWidget {
             myTitle: AppStrings.kAttendanceAndDepartureAppBarGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -45,19 +45,18 @@ class AttendanceAndDeparture extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const HintTextGroups(
-                      myText:
-                          AppStrings.kBottomListGroupNumberHomeMainScreenHome,
+                    HintTextGroups(
+                      myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 4),
                     ),
-                    const HintTextGroups(
+                    HintTextGroups(
                       myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                   ],
                 ),
@@ -71,14 +70,12 @@ class AttendanceAndDeparture extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return InkWell(
                           onTap: () {
-                            Navigator.pushNamed(
-                                context, RoutesManager.whoAttended);
+                            Navigator.pushNamed(context, RoutesManager.whoAttended);
                           },
                           child: const MainResultContainer(
                             widthSpacer: 100,
                             topLeftText: AppStrings.kStudentAttendanceGroups,
-                            bottomLeftText:
-                                AppStrings.kActualStudentAttendanceGroups,
+                            bottomLeftText: AppStrings.kActualStudentAttendanceGroups,
                             topRightText: AppStrings.kFirstSessionGroups,
                             bottomRightText: AppStrings.kBiologyGroups,
                           ),
@@ -86,8 +83,7 @@ class AttendanceAndDeparture extends StatelessWidget {
                       },
                       separatorBuilder: (context, index) {
                         return SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 9),
+                          height: AppDimensions.getDimensions(requiredHeight: 9),
                         );
                       },
                       itemCount: 6),

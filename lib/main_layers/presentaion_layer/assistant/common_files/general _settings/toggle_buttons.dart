@@ -16,7 +16,7 @@ class _ToggleButtonState extends State<CustomToggleButton> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
@@ -37,7 +37,7 @@ class _ToggleButtonState extends State<CustomToggleButton> {
                 color: GeneralSettings.myIndex == 0
                     ? AppColors.kForgetPasswordToggleSelectedButtonText
                     : AppColors.kForgetPasswordToggleButtonText,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -67,7 +67,7 @@ class _ToggleButtonState extends State<CustomToggleButton> {
                 color: GeneralSettings.myIndex == 1
                     ? AppColors.kForgetPasswordToggleSelectedButtonText
                     : AppColors.kForgetPasswordToggleButtonText,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontFamily: 'Almarai',
               ),
             ),

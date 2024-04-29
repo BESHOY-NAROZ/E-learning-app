@@ -3,7 +3,7 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class AppBarSignIn extends StatelessWidget implements PreferredSize {
-  final String ? myTitle ;
+  final String? myTitle;
   const AppBarSignIn({Key? key, this.myTitle}) : super(key: key);
 
   @override
@@ -33,12 +33,12 @@ class AppBarSignIn extends StatelessWidget implements PreferredSize {
               ),
             ),
           ],
-          title:  Text(
+          title: Text(
             myTitle!,
-            style: const TextStyle(
+            style: TextStyle(
                 color: AppColors.kAppBarLoginTitle,
                 fontFamily: 'Almarai',
-                fontSize: 20,
+                fontSize: AppDimensions.defaultSize * 20,
                 fontWeight: FontWeight.w700),
           ),
         ));
@@ -46,8 +46,7 @@ class AppBarSignIn extends StatelessWidget implements PreferredSize {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size(
-      AppDimensions.getDimensions(requiredWidth: 360),
+  Size get preferredSize => Size(AppDimensions.getDimensions(requiredWidth: 360),
       AppDimensions.getDimensions(requiredHeight: 100));
 
   @override

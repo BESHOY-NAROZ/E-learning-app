@@ -37,8 +37,8 @@ class _ResetEmailGetCodeState extends State<ResetEmailGetCode> {
               height: AppDimensions.getDimensions(requiredHeight: 114),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -58,10 +58,9 @@ class _ResetEmailGetCodeState extends State<ResetEmailGetCode> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: List.generate(
                       6,
-                          (index) {
+                      (index) {
                         return Container(
-                          height:
-                          AppDimensions.getDimensions(requiredWidth: 45),
+                          height: AppDimensions.getDimensions(requiredWidth: 45),
                           width: AppDimensions.getDimensions(requiredWidth: 40),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -77,7 +76,7 @@ class _ResetEmailGetCodeState extends State<ResetEmailGetCode> {
                             cursorHeight: 0,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(fontSize: 42),
+                            style: TextStyle(fontSize: AppDimensions.defaultSize * 42),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               counterText: '',
@@ -92,13 +91,13 @@ class _ResetEmailGetCodeState extends State<ResetEmailGetCode> {
                       },
                     ),
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.67),),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.67),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      if (ResetEmailGetCode.startCuntDown)
-                        const ResetEmailCountDownTimer(),
+                      if (ResetEmailGetCode.startCuntDown) const ResetEmailCountDownTimer(),
                       InkWell(
                         onTap: () {
                           setState(() {
@@ -122,16 +121,15 @@ class _ResetEmailGetCodeState extends State<ResetEmailGetCode> {
                       // const CountDownTimer()
                     ],
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.33),),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.33),
+                  ),
                   MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(
-                          context, RoutesManager.setEmailNow);
+                      Navigator.pushNamed(context, RoutesManager.setEmailNow);
                     },
                     buttonName: AppStrings.kForgetPasswordMainButtonText,
                   ),
-
                 ],
               ),
             )

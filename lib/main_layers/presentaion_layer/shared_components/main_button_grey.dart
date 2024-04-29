@@ -37,7 +37,7 @@ class MainButtonGrey extends StatelessWidget {
                 fontFamily: 'Almarai',
                 color: color ?? AppColors.kMainScreenNewVersionButtonText,
                 fontWeight: FontWeight.w700,
-                fontSize: 16),
+                fontSize: AppDimensions.defaultSize * 16),
           )),
     );
   }

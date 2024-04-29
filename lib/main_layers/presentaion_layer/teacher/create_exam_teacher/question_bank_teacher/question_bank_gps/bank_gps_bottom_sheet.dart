@@ -50,10 +50,10 @@ class BankGPSBottomSheet extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 10),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kQuestionsTypeCreateExam,
                       color: AppColors.kMainBlueC4,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),
@@ -68,9 +68,9 @@ class BankGPSBottomSheet extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const MainTextGrey(
+                          MainTextGrey(
                             myText: AppStrings.kChooseQCreateExam,
-                            fontSize: 12,
+                            fontSize: AppDimensions.defaultSize * 12,
                           ),
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 6),
@@ -99,9 +99,9 @@ class BankGPSBottomSheet extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const MainTextGrey(
+                          MainTextGrey(
                             myText: AppStrings.kCompleteQCreateExam,
-                            fontSize: 12,
+                            fontSize: AppDimensions.defaultSize * 12,
                           ),
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 6),
@@ -130,9 +130,9 @@ class BankGPSBottomSheet extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const MainTextGrey(
+                          MainTextGrey(
                             myText: AppStrings.kArticleQCreateExam,
-                            fontSize: 12,
+                            fontSize: AppDimensions.defaultSize * 12,
                           ),
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 6),
@@ -161,9 +161,9 @@ class BankGPSBottomSheet extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const MainTextGrey(
+                          MainTextGrey(
                             myText: AppStrings.kTrueOrFalseQCreateExam,
-                            fontSize: 12,
+                            fontSize: AppDimensions.defaultSize * 12,
                           ),
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 6),

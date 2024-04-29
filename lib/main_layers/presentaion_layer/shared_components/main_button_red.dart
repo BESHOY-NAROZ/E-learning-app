@@ -26,11 +26,11 @@ class MainButtonRed extends StatelessWidget {
           onPressed: onPressed,
           child: Text(
             buttonName!,
-            style: const TextStyle(
+            style: TextStyle(
                 fontFamily: 'Almarai',
                 color: AppColors.kMainTextWhite,
                 fontWeight: FontWeight.w700,
-                fontSize: 16),
+                fontSize: AppDimensions.defaultSize * 16),
           )),
     );
   }

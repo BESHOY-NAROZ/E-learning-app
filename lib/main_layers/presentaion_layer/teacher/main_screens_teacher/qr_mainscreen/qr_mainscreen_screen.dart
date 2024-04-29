@@ -10,9 +10,8 @@ class QRMainScreenTeacher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context ,designHeight: 778,designWidth: 360);
-    return  Scaffold(
-
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
+    return Scaffold(
       body: SizedBox(
         height: AppDimensions.getDimensions(requiredHeight: 778),
         width: AppDimensions.getDimensions(requiredWidth: 360),
@@ -23,21 +22,23 @@ class QRMainScreenTeacher extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 38),
             ),
             Padding(
-              padding:  EdgeInsets.only(left: AppDimensions.getDimensions(
-                requiredWidth: 308
-              ),),
+              padding: EdgeInsets.only(
+                left: AppDimensions.getDimensions(requiredWidth: 308),
+              ),
               child: const CloseSign(),
             ),
-            const Text(
+            Text(
               AppStrings.kQRMainScreenFinal,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Almarai',
                   color: AppColors.kResetPasswordDone,
                   fontWeight: FontWeight.w700,
-                  fontSize: 24),
+                  fontSize: AppDimensions.defaultSize * 24),
             ),
-            SizedBox(height:  AppDimensions.getDimensions(requiredHeight: 38.66),),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 38.66),
+            ),
             SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 253.69),
                 width: AppDimensions.getDimensions(requiredWidth: 253.69),

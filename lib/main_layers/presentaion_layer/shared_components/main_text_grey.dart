@@ -1,4 +1,5 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class MainTextGrey extends StatelessWidget {
@@ -30,7 +31,7 @@ class MainTextGrey extends StatelessWidget {
           fontFamily: 'Almarai',
           color: color ?? AppColors.kLoginEmailOrPhone,
           fontWeight: fontWeight ?? FontWeight.w700,
-          fontSize: fontSize ?? 16),
+          fontSize: fontSize ?? AppDimensions.defaultSize * 16),
     );
   }
 }

@@ -22,7 +22,7 @@ class TeacherHomeWorking extends StatelessWidget {
         requiredHeight: 99,
       ),
       width: AppDimensions.getDimensions(
-        requiredHeight: 91,
+        requiredWidth: 91,
       ),
       padding: EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 5)),
       decoration:
@@ -38,7 +38,15 @@ class TeacherHomeWorking extends StatelessWidget {
               width: AppDimensions.getDimensions(
                 requiredHeight: 30,
               ),
-              child: Image.asset(myIcon)),
+              child: Image.asset(
+                myIcon,
+                height: AppDimensions.getDimensions(
+                  requiredHeight: 30,
+                ),
+                width: AppDimensions.getDimensions(
+                  requiredHeight: 30,
+                ),
+              )),
           SizedBox(
             height: AppDimensions.getDimensions(
               requiredHeight: 6,
@@ -46,7 +54,7 @@ class TeacherHomeWorking extends StatelessWidget {
           ),
           MainTextGrey(
             myText: myText,
-            fontSize: 12,
+            fontSize: AppDimensions.defaultSize * 12,
             textAlign: TextAlign.center,
           )
         ],

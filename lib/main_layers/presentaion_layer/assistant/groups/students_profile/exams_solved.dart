@@ -19,9 +19,9 @@ class ExamsSolved extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kExamsSolvedGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
             ),
             SizedBox(
               width: AppDimensions.getDimensions(requiredWidth: 4.42),
@@ -55,21 +55,18 @@ class ExamsSolved extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                             MainTextGreen(
-                              myText: AppLists
-                                  .kStudentStatisticsPercentageList[index],
-                              color: AppLists
-                                  .kStudentStatisticsColorList[index],
-                              fontSize: 20,
+                            MainTextGreen(
+                              myText: AppLists.kStudentStatisticsPercentageList[index],
+                              color: AppLists.kStudentStatisticsColorList[index],
+                              fontSize: AppDimensions.defaultSize * 20,
                             ),
                             SizedBox(
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 3),
+                              height: AppDimensions.getDimensions(requiredHeight: 3),
                             ),
-                            const Text(
+                            Text(
                               AppStrings.kPercentageTextGroups,
                               style: TextStyle(
-                                  fontSize: 11,
+                                  fontSize: AppDimensions.defaultSize * 11,
                                   fontWeight: FontWeight.w700,
                                   color: AppColors.kSentGreyTextGroups),
                             ),
@@ -84,25 +81,22 @@ class ExamsSolved extends StatelessWidget {
                           children: [
                             Padding(
                               padding: EdgeInsets.only(
-                                  right: AppDimensions.getDimensions(
-                                      requiredWidth: 9)),
-                              child: const MainTextBlack(
+                                  right: AppDimensions.getDimensions(requiredWidth: 9)),
+                              child: MainTextBlack(
                                 myText: AppStrings.kDigestiveGroups,
-                                fontSize: 16,
+                                fontSize: AppDimensions.defaultSize * 16,
                               ),
                             ),
                             SizedBox(
-                              height: AppDimensions.getDimensions(
-                                  requiredHeight: 4),
+                              height: AppDimensions.getDimensions(requiredHeight: 4),
                             ),
                             Padding(
                               padding: EdgeInsets.only(
-                                  right: AppDimensions.getDimensions(
-                                      requiredWidth: 12)),
-                              child: const Text(
+                                  right: AppDimensions.getDimensions(requiredWidth: 12)),
+                              child: Text(
                                 AppStrings.kHintTextStatisticsGroups,
                                 style: TextStyle(
-                                    fontSize: 11,
+                                    fontSize: AppDimensions.defaultSize * 11,
                                     fontWeight: FontWeight.w700,
                                     color: AppColors.kSentGreyTextGroups),
                               ),

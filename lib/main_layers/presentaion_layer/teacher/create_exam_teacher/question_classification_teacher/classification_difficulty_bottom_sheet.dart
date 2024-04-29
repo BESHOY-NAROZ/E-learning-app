@@ -58,10 +58,10 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
-                        const MainTextBlue(
+                        MainTextBlue(
                           myText: AppStrings.kDifficultyDegreeCreateExam,
                           color: AppColors.kMainBlueC4,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                           height: AppDimensions.getDimensions(requiredHeight: 11),
@@ -83,7 +83,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                                   children: [
                                     MainTextGrey(
                                       myText: AppLists.kDifficultyList[index],
-                                      fontSize: 12,
+                                      fontSize: AppDimensions.defaultSize * 12,
                                       textDirection: TextDirection.rtl,
                                     ),
                                     SizedBox(
@@ -132,8 +132,8 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
             textDirection: TextDirection.rtl,
             prefixIcon: const Icon(Icons.arrow_left_rounded),
             enabled: false,
-            hintStyle: const TextStyle(
-              fontSize: 12,
+            hintStyle: TextStyle(
+              fontSize: AppDimensions.defaultSize * 12,
               fontWeight: FontWeight.w700,
               fontFamily: 'Almarai',
               color: AppColors.kDetailsProfileEditing,

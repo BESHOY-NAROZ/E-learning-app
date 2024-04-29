@@ -31,8 +31,8 @@ class StudentStatistics extends StatelessWidget {
             myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -48,13 +48,13 @@ class StudentStatistics extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const Text(
+                    Text(
                       AppStrings.kProfileStudentNameGroups,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kStudentNameGroups,
                           fontWeight: FontWeight.w700,
-                          fontSize: 20),
+                          fontSize: AppDimensions.defaultSize * 20),
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 14),
@@ -63,8 +63,7 @@ class StudentStatistics extends StatelessWidget {
                       height: AppDimensions.getDimensions(requiredHeight: 70),
                       width: AppDimensions.getDimensions(requiredHeight: 70),
                       decoration: const BoxDecoration(shape: BoxShape.circle),
-                      child: Image.asset(AppAssets.kStudentGroupsScreen,
-                          fit: BoxFit.fill),
+                      child: Image.asset(AppAssets.kStudentGroupsScreen, fit: BoxFit.fill),
                     ),
                   ],
                 ),

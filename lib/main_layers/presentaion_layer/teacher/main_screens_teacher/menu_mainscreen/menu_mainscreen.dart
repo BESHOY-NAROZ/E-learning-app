@@ -43,13 +43,13 @@ class MenuMainScreenTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),
                     ),
-                    const Text(
+                    Text(
                       AppStrings.kHintTextFirstMainScreenMenu,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kHintTextMainScreenHome,
                           fontWeight: FontWeight.w700,
-                          fontSize: 16),
+                          fontSize: AppDimensions.defaultSize * 16),
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 11),
@@ -70,14 +70,14 @@ class MenuMainScreenTeacher extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Text(
+                                Text(
                                   AppStrings.kSecondContainerMainScreenMenu,
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                       fontFamily: 'Almarai',
                                       color: AppColors.kHintTextMainScreenHome,
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 12),
+                                      fontSize: AppDimensions.defaultSize * 12),
                                 ),
                                 SizedBox(
                                   width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -106,14 +106,14 @@ class MenuMainScreenTeacher extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Text(
+                                Text(
                                   AppStrings.kFirstContainerMainScreenMenu,
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                       fontFamily: 'Almarai',
                                       color: AppColors.kHintTextMainScreenHome,
                                       fontWeight: FontWeight.w700,
-                                      fontSize: 12),
+                                      fontSize: AppDimensions.defaultSize * 12),
                                 ),
                                 SizedBox(
                                   width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -131,13 +131,13 @@ class MenuMainScreenTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),
                     ),
-                    const Text(
+                    Text(
                       AppStrings.kHintTextSecondMainScreenMenu,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kHintTextMainScreenHome,
                           fontWeight: FontWeight.w700,
-                          fontSize: 16),
+                          fontSize: AppDimensions.defaultSize * 16),
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 12),

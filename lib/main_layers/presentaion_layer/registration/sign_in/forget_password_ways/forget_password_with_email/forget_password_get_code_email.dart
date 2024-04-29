@@ -25,33 +25,34 @@ class ForgetPasswordGetCodeEmail extends StatelessWidget {
               designHeight: 1006,
               designWidth: 360,
             ),
-            SizedBox(height: AppDimensions.getDimensions(requiredHeight: 75),),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 75),
+            ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   const MainTextBlue(
                     myText: AppStrings.kForgetPasswordGetCodeEmailMainText,
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  11),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 11),
+                  ),
                   const MainHintTextRegistration(
                     myText: AppStrings.kForgetPasswordGetCodeEmailHintText,
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  50),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 50),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: List.generate(
                       6,
                       (index) {
                         return Container(
-                          height:
-                              AppDimensions.getDimensions(requiredWidth: 45),
+                          height: AppDimensions.getDimensions(requiredWidth: 45),
                           width: AppDimensions.getDimensions(requiredWidth: 40),
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -67,7 +68,7 @@ class ForgetPasswordGetCodeEmail extends StatelessWidget {
                             maxLength: 1,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
-                            style: const TextStyle(fontSize: 42),
+                            style: TextStyle(fontSize: AppDimensions.defaultSize * 42),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
                               counterText: '',
@@ -82,9 +83,9 @@ class ForgetPasswordGetCodeEmail extends StatelessWidget {
                       },
                     ),
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.67),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.67),
+                  ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,18 +98,17 @@ class ForgetPasswordGetCodeEmail extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: AppDimensions.getDimensions(requiredHeight:
-                  18.33),),
-        
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 18.33),
+                  ),
                   MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(
-                          context, RoutesManager.resetPassword);
+                      Navigator.pushNamed(context, RoutesManager.resetPassword);
                     },
                     buttonName: AppStrings.kForgetPasswordGetCodeMainButtonText,
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight:269),
+                    height: AppDimensions.getDimensions(requiredHeight: 269),
                   ),
                   const ForgetPasswordBottomView(
                     hintText: AppStrings.kForgetPasswordHintBottomView,

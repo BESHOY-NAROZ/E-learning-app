@@ -47,7 +47,7 @@ class _AddNewStudentWaysState extends State<AddNewClassWays> {
                     color: AddNewClassWays.myIndex == 0
                         ? AppColors.kForgetPasswordToggleSelectedButtonText
                         : AppColors.kForgetPasswordToggleButtonText,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
@@ -77,7 +77,7 @@ class _AddNewStudentWaysState extends State<AddNewClassWays> {
                     color: AddNewClassWays.myIndex == 1
                         ? AppColors.kForgetPasswordToggleSelectedButtonText
                         : AppColors.kForgetPasswordToggleButtonText,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
@@ -93,14 +93,11 @@ class _AddNewStudentWaysState extends State<AddNewClassWays> {
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 25),
         ),
-        AddNewClassWays.myIndex == 0
-            ? const AddNewClassWithEmail()
-            : const AddNewClassWithPhone(),
+        AddNewClassWays.myIndex == 0 ? const AddNewClassWithEmail() : const AddNewClassWithPhone(),
         MainButtonRed(
           buttonName: AppStrings.kStudentSignToClassButtonGroups,
           onPressed: () {
-            Navigator.pushReplacementNamed(
-                context, RoutesManager.addNewClassDone);
+            Navigator.pushReplacementNamed(context, RoutesManager.addNewClassDone);
           },
         ),
         SizedBox(
@@ -114,11 +111,11 @@ class _AddNewStudentWaysState extends State<AddNewClassWays> {
               color: AppColors.kSplitterMainScreenHome,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
-              child: const HintTextGroups(
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
+              child: HintTextGroups(
                 myText: AppStrings.kORGroups,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontWeight: FontWeight.w700,
               ),
             ),

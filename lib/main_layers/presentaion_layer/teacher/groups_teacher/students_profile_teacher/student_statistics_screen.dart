@@ -48,13 +48,13 @@ class StudentStatisticsTeacher extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const Text(
+                    Text(
                       AppStrings.kProfileStudentNameGroups,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kStudentNameGroups,
                           fontWeight: FontWeight.w700,
-                          fontSize: 20),
+                          fontSize: AppDimensions.defaultSize * 20),
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 14),

@@ -33,10 +33,10 @@ class AddQuestionTeacher extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 33),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kLevelCreateExam,
                     color: AppColors.kMainGery7A,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -45,10 +45,10 @@ class AddQuestionTeacher extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 14),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kClassRoomAddQuestion,
                     color: AppColors.kMainGery7A,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -57,10 +57,10 @@ class AddQuestionTeacher extends StatelessWidget {
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 14),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kSubjectAddQuestion,
                     color: AppColors.kMainGery7A,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),

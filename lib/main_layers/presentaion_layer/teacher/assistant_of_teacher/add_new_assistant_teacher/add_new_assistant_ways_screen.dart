@@ -24,9 +24,9 @@ class _AddNewAssistantWaysState extends State<AddNewAssistantWays> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        const HintTextGroups(
+        HintTextGroups(
           myText: AppStrings.kEnterWaysAssistantOfTeacher,
-          fontSize: 12,
+          fontSize: AppDimensions.defaultSize * 12,
           fontWeight: FontWeight.w700,
         ),
         SizedBox(
@@ -57,9 +57,9 @@ class _AddNewAssistantWaysState extends State<AddNewAssistantWays> {
             Padding(
               padding:
                   EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
-              child: const HintTextGroups(
+              child: HintTextGroups(
                 myText: AppStrings.kORGroups,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontWeight: FontWeight.w700,
               ),
             ),

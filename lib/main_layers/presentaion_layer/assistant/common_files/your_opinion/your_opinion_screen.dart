@@ -33,24 +33,24 @@ class YourOpinion extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const MainTextBlack(
+                  MainTextBlack(
                     myText: AppStrings.kUserOpinionCommon,
-                    fontSize: 18,
+                    fontSize: AppDimensions.defaultSize * 18,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kUserOpinionDescCommon,
                     color: AppColors.kHintCommon,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 25),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kAppRateCommon,
-                    fontSize: 13,
+                    fontSize: AppDimensions.defaultSize * 13,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 20),
@@ -78,28 +78,28 @@ class YourOpinion extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kRatingCommon,
                         color: AppColors.kHintCommon,
-                        fontSize: 15,
+                        fontSize: AppDimensions.defaultSize * 15,
                         fontWeight: FontWeight.w400,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 4),
                       ),
-                      const Icon(
+                      Icon(
                         Icons.star,
                         color: AppColors.kMainTextYellow,
-                        size: 30,
+                        size: AppDimensions.defaultSize * 30,
                       )
                     ],
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 20),
                   ),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kUserOpinionCommon,
-                    fontSize: 13,
+                    fontSize: AppDimensions.defaultSize * 13,
                   ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 8),

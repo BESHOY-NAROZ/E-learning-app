@@ -37,9 +37,9 @@ class QuestionTypeTeacher extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kTheQuestionAddQuestion,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 6),
@@ -57,20 +57,20 @@ class QuestionTypeTeacher extends StatelessWidget {
                     Padding(
                       padding:
                           EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 18)),
-                      child: const MainTextGrey(
+                      child: MainTextGrey(
                         myText: AppStrings.kSpecificFirstTestCreateExam,
                         color: AppColors.kMainGery8D,
                         textDirection: TextDirection.rtl,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 28),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kQuestionTypeAddQuestion,
                       color: AppColors.kMainGery7A,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),

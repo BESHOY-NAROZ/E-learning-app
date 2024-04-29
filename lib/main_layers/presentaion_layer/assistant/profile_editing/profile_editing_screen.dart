@@ -36,10 +36,10 @@ class ProfileEditing extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 27),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kBasicInformationProfileEditing,
                       color: AppColors.kMainTextProfileEditing,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 28),
@@ -48,19 +48,19 @@ class ProfileEditing extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 27),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kFullNameProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualFullNameProfileEditing,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -69,19 +69,19 @@ class ProfileEditing extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kPhoneNumberProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualPhoneNumberProfileEditing,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -90,21 +90,21 @@ class ProfileEditing extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kGenderProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualGenderProfileEditing,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -113,17 +113,17 @@ class ProfileEditing extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 24),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kResetDataProfileEditing,
                       color: AppColors.kMainTextProfileEditing,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 5),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kChooseDataProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
@@ -141,8 +141,7 @@ class ProfileEditing extends StatelessWidget {
                     MainButtonGrey(
                       buttonName: AppStrings.kResetPasswordProfileEditing,
                       onPressed: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.resetPasswordWays);
+                        Navigator.pushNamed(context, RoutesManager.resetPasswordWays);
                       },
                     ),
                     SizedBox(
@@ -151,8 +150,7 @@ class ProfileEditing extends StatelessWidget {
                     MainButtonGrey(
                       buttonName: AppStrings.kAddNewNumberProfileEditing,
                       onPressed: () {
-                        Navigator.pushNamed(
-                            context, RoutesManager.addNewNumber);
+                        Navigator.pushNamed(context, RoutesManager.addNewNumber);
                       },
                     ),
                     SizedBox(

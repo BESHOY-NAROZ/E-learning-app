@@ -28,8 +28,8 @@ class GroupStatistics extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -46,20 +46,18 @@ class GroupStatistics extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const HintTextGroups(
-                          myText: AppStrings
-                              .kBottomListGroupNumberHomeMainScreenHome,
+                        HintTextGroups(
+                          myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                           fontWeight: FontWeight.w700,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 4),
                         ),
-                        const HintTextGroups(
-                          myText:
-                              AppStrings.kBottomListFirstTextHomeMainScreenHome,
+                        HintTextGroups(
+                          myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                           fontWeight: FontWeight.w700,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                       ],
                     ),
@@ -75,8 +73,7 @@ class GroupStatistics extends StatelessWidget {
                         },
                         separatorBuilder: (context, index) {
                           return SizedBox(
-                            height:
-                                AppDimensions.getDimensions(requiredHeight: 15),
+                            height: AppDimensions.getDimensions(requiredHeight: 15),
                           );
                         },
                         itemCount: 9)

@@ -35,7 +35,7 @@ class CreateExamDoneTeacher extends StatelessWidget {
                 myText: AppStrings.kDoneMainCreateExam,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-              const Text(
+              Text(
                 AppStrings.kDoneHintCreateExam,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
@@ -43,7 +43,7 @@ class CreateExamDoneTeacher extends StatelessWidget {
                     fontFamily: 'Almarai',
                     color: AppColors.kSignInMainHintText,
                     fontWeight: FontWeight.w400,
-                    fontSize: 14),
+                    fontSize: AppDimensions.defaultSize * 14),
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(

@@ -38,7 +38,7 @@ class _CustomToggleButtonCorrectionTeacherState extends State<CustomToggleButton
                 color: myIndex == 0
                     ? AppColors.kForgetPasswordToggleSelectedButtonText
                     : AppColors.kForgetPasswordToggleButtonText,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -71,7 +71,7 @@ class _CustomToggleButtonCorrectionTeacherState extends State<CustomToggleButton
                 color: myIndex == 1
                     ? AppColors.kForgetPasswordToggleSelectedButtonText
                     : AppColors.kForgetPasswordToggleButtonText,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontFamily: 'Almarai',
               ),
             ),

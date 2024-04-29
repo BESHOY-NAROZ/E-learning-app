@@ -28,8 +28,7 @@ class HomeMainScreen extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(
-                  right: AppDimensions.getDimensions(requiredWidth: 19)),
+              padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 19)),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -37,8 +36,7 @@ class HomeMainScreen extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 15),
                     ),
-                    const MainTextMainScreen(
-                        myText: AppStrings.kMainTextMainScreenHome),
+                    const MainTextMainScreen(myText: AppStrings.kMainTextMainScreenHome),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 10),
                     ),
@@ -55,12 +53,10 @@ class HomeMainScreen extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return SizedBox(
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 333),
+                              width: AppDimensions.getDimensions(requiredWidth: 333),
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
-                                    horizontal: AppDimensions.getDimensions(
-                                        requiredWidth: 3)),
+                                    horizontal: AppDimensions.getDimensions(requiredWidth: 3)),
                                 child: Image.asset(
                                   AppAssets.kListImageHomeScreen,
                                   fit: BoxFit.fill,
@@ -106,16 +102,14 @@ class HomeMainScreen extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: EdgeInsets.only(
-                              left: AppDimensions.getDimensions(
-                                  requiredWidth: 10),
+                              left: AppDimensions.getDimensions(requiredWidth: 10),
                             ),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: AppColors.kSmallListMainScreenHome,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              width: AppDimensions.getDimensions(
-                                  requiredWidth: 194),
+                              width: AppDimensions.getDimensions(requiredWidth: 194),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
@@ -123,44 +117,36 @@ class HomeMainScreen extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      const Text(
-                                        AppStrings
-                                            .kSmallListFirstTextMainScreenHome,
+                                      Text(
+                                        AppStrings.kSmallListFirstTextMainScreenHome,
                                         style: TextStyle(
                                             fontFamily: 'Almarai',
-                                            color: AppColors
-                                                .kSmallListFirstTextMainScreenHome,
+                                            color: AppColors.kSmallListFirstTextMainScreenHome,
                                             fontWeight: FontWeight.w700,
-                                            fontSize: 16),
+                                            fontSize: AppDimensions.defaultSize * 16),
                                       ),
                                       SizedBox(
-                                        height: AppDimensions.getDimensions(
-                                            requiredHeight: 4),
+                                        height: AppDimensions.getDimensions(requiredHeight: 4),
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
-                                          bottom: AppDimensions.getDimensions(
-                                              requiredHeight: 1),
+                                          bottom: AppDimensions.getDimensions(requiredHeight: 1),
                                         ),
-                                        child: const Text(
-                                          AppStrings
-                                              .kSmallListSecondTextMainScreenHome,
+                                        child: Text(
+                                          AppStrings.kSmallListSecondTextMainScreenHome,
                                           style: TextStyle(
                                               fontFamily: 'Almarai',
-                                              color: AppColors
-                                                  .kSmallListSecondTextMainScreenHome,
+                                              color: AppColors.kSmallListSecondTextMainScreenHome,
                                               fontWeight: FontWeight.w700,
-                                              fontSize: 12),
+                                              fontSize: AppDimensions.defaultSize * 12),
                                         ),
                                       ),
                                     ],
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(
-                                        left: AppDimensions.getDimensions(
-                                            requiredWidth: 17),
-                                        right: AppDimensions.getDimensions(
-                                            requiredWidth: 13)),
+                                        left: AppDimensions.getDimensions(requiredWidth: 17),
+                                        right: AppDimensions.getDimensions(requiredWidth: 13)),
                                     width: AppDimensions.getDimensions(
                                       requiredWidth: 46.33,
                                     ),
@@ -168,12 +154,10 @@ class HomeMainScreen extends StatelessWidget {
                                       requiredHeight: 46.33,
                                     ),
                                     decoration: BoxDecoration(
-                                        color: AppColors
-                                            .kAppBarPhotoMainScreenHome,
+                                        color: AppColors.kAppBarPhotoMainScreenHome,
                                         shape: BoxShape.circle,
                                         border: Border.all(
-                                            color: AppColors
-                                                .kAppBarBorderMainScreenHome,
+                                            color: AppColors.kAppBarBorderMainScreenHome,
                                             width: 3)),
                                   ),
                                 ],

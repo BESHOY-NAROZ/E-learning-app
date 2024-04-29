@@ -40,8 +40,7 @@ class SecondNewVersion extends StatelessWidget {
                       top: AppDimensions.getDimensions(requiredHeight: 60),
                     ),
                     child: SizedBox(
-                        height:
-                            AppDimensions.getDimensions(requiredHeight: 308),
+                        height: AppDimensions.getDimensions(requiredHeight: 308),
                         child: Image.asset(AppAssets.kPhone)),
                   ),
                   const Spacer(),
@@ -61,13 +60,13 @@ class SecondNewVersion extends StatelessWidget {
                 myText5: AppStrings.kHintText5TextMainScreenNewOffer,
               ),
               const Spacer(),
-              const Text(
+              Text(
                 AppStrings.kHintTextMainScreenUpperMainButton,
                 style: TextStyle(
                     fontFamily: 'Almarai',
                     color: AppColors.kSignInMainHintText,
                     fontWeight: FontWeight.w700,
-                    fontSize: 12),
+                    fontSize: AppDimensions.defaultSize * 12),
               ),
               Padding(
                 padding: EdgeInsets.only(
@@ -81,8 +80,7 @@ class SecondNewVersion extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, RoutesManager.removedAccount);
                   },
-                  buttonName:
-                      AppStrings.kMainSecondButtonTextMainScreenNewVersion,
+                  buttonName: AppStrings.kMainSecondButtonTextMainScreenNewVersion,
                 ),
               ),
             ],

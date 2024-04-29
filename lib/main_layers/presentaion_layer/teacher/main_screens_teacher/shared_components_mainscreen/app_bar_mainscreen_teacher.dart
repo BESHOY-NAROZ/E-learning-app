@@ -66,9 +66,10 @@ class AppBarMainScreenTeacher extends StatelessWidget {
                                 margin: EdgeInsets.zero,
                                 decoration: const BoxDecoration(
                                     shape: BoxShape.circle, color: AppColors.kMainTextRed),
-                                child: const Text('1',
+                                child: Text('1',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
+                                        fontSize: AppDimensions.defaultSize * 10,
                                         fontWeight: FontWeight.w700,
                                         color: AppColors.kMainTextWhite)),
                               ),
@@ -79,13 +80,13 @@ class AppBarMainScreenTeacher extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  const Text(
+                  Text(
                     AppStrings.kAppBarTitleMainScreenHome,
                     style: TextStyle(
                         fontFamily: 'Almarai',
                         color: AppColors.kAppBarTitleMainScreenHome,
                         fontWeight: FontWeight.w700,
-                        fontSize: 20),
+                        fontSize: AppDimensions.defaultSize * 20),
                   ),
                   SizedBox(
                     width: AppDimensions.getDimensions(requiredWidth: 12),

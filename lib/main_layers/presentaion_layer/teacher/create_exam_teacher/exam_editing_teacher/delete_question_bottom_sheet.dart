@@ -33,17 +33,17 @@ class DeleteQuestionBottomSheet extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kDeleteQExamEditing,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kActualDeleteQExamEditing,
                       color: AppColors.kDetailsProfileEditing,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                       textDirection: TextDirection.rtl,
                       fontWeight: FontWeight.w400,
                     ),

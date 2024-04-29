@@ -50,9 +50,9 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kFirstTestCreateExam,
-                          fontSize: 16,
+                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 24),
@@ -66,10 +66,10 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     Padding(
                       padding:
                           EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 24)),
-                      child: const MainTextGrey(
+                      child: MainTextGrey(
                         myText: AppStrings.kSpecificFirstTestCreateExam,
                         color: AppColors.kMainGery8D,
-                        fontSize: 10,
+                        fontSize: AppDimensions.defaultSize * 10,
                       ),
                     ),
                     SizedBox(
@@ -99,7 +99,7 @@ class _CustomExamWithOutSpecificTypeTeacherState
                               children: [
                                 MainTextGrey(
                                   myText: AppLists.kExamWithoutTypeList[index],
-                                  fontSize: 12,
+                                  fontSize: AppDimensions.defaultSize * 12,
                                   color: myIndex == index ? AppColors.kMainBlueC4 : null,
                                 ),
                                 if (myIndex == index)
@@ -128,15 +128,15 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     ),
                     MainTextBlack(
                       myText: AppLists.kMainExamWithoutTypeList[myIndex],
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                       fontWeight: FontWeight.w400,
                     ),
                     Row(
                       children: [
-                        const MainTextBlack(
+                        MainTextBlack(
                           myText: AppStrings.kQNumberCreateCustomExam,
                           textDirection: TextDirection.rtl,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 24),
@@ -157,27 +157,27 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 22),
                     ),
-                    const Row(
+                    Row(
                       children: [
                         MainTextGrey(
                           myText: AppStrings.kOptionalCreateCustomExam,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                         Spacer(),
                         MainTextGrey(
                           myText: AppStrings.kWritePartCreateCustomExam,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                       ],
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -186,18 +186,18 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kWriteQCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -221,20 +221,20 @@ class _CustomExamWithOutSpecificTypeTeacherState
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          const MainTextGrey(
+                          MainTextGrey(
                             myText: AppStrings.kCorrectAnswerCreateExam,
-                            fontSize: 12,
+                            fontSize: AppDimensions.defaultSize * 12,
                           ),
                           SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 8),
                           ),
-                          const CustomTextFormFiled(
+                          CustomTextFormFiled(
                             hintText: AppStrings.kCorrectAnswerCreateExam,
                             textDirection: TextDirection.rtl,
                             prefixIcon: Icon(Icons.arrow_left_rounded),
                             enabled: false,
                             hintStyle: TextStyle(
-                              fontSize: 12,
+                              fontSize: AppDimensions.defaultSize * 12,
                               fontWeight: FontWeight.w700,
                               fontFamily: 'Almarai',
                               color: AppColors.kDetailsProfileEditing,
@@ -245,20 +245,20 @@ class _CustomExamWithOutSpecificTypeTeacherState
                           ),
                         ],
                       ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kCorrectAnswerCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualCorrectAnswerCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -267,19 +267,19 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSolvingIdeaCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const ExpandedCustomTextFormFiled(
+                    ExpandedCustomTextFormFiled(
                       height: 111,
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -288,19 +288,19 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 18),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSolvingWayCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const ExpandedCustomTextFormFiled(
+                    ExpandedCustomTextFormFiled(
                       height: 111,
                       hintText: AppStrings.kFirstTestCreateCustomExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -309,18 +309,18 @@ class _CustomExamWithOutSpecificTypeTeacherState
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kQDegreeCreateCustomExam,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualDegreeCreateExam,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,

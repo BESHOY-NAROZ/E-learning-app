@@ -26,8 +26,7 @@ class ExitBottomSheet extends StatelessWidget {
               height: AppDimensions.getDimensions(requiredHeight: 195),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                  color: AppColors.kMainTextWhite,
-                  borderRadius: BorderRadius.circular(20)),
+                  color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: AppDimensions.getDimensions(requiredWidth: 20),
@@ -36,17 +35,17 @@ class ExitBottomSheet extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const MainTextBlack(
+                    MainTextBlack(
                       myText: AppStrings.kMainLogOutSheet,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kHintLogOutSheet,
                       color: AppColors.kDetailsProfileEditing,
-                      fontSize: 14,
+                      fontSize: AppDimensions.defaultSize * 14,
                       fontWeight: FontWeight.w400,
                     ),
                     SizedBox(
@@ -57,22 +56,20 @@ class ExitBottomSheet extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 52),
                         width: AppDimensions.getDimensions(requiredWidth: 136),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                         child: MaterialButton(
                             color: AppColors.kMainScreenNewVersionButton,
                             shape: const RoundedRectangleBorder(),
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: const Text(
+                            child: Text(
                               AppStrings.kBackLogOutSheet,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
-                                  color:
-                                      AppColors.kMainScreenNewVersionButtonText,
+                                  color: AppColors.kMainScreenNewVersionButtonText,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: AppDimensions.defaultSize * 16),
                             )),
                       ),
                       SizedBox(
@@ -82,22 +79,20 @@ class ExitBottomSheet extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 52),
                         width: AppDimensions.getDimensions(requiredWidth: 136),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                         child: MaterialButton(
                             color: AppColors.kMainButton,
                             shape: const RoundedRectangleBorder(),
                             onPressed: () {
-                              Navigator.popAndPushNamed(
-                                  context, RoutesManager.loginScreen);
+                              Navigator.popAndPushNamed(context, RoutesManager.loginScreen);
                             },
-                            child: const Text(
+                            child: Text(
                               AppStrings.kActualLogOutSheet,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
                                   color: AppColors.kMainTextWhite,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16),
+                                  fontSize: AppDimensions.defaultSize * 16),
                             )),
                       ),
                       SizedBox(

@@ -22,8 +22,8 @@ class AddNewStudentByQR extends StatelessWidget {
             myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -39,28 +39,27 @@ class AddNewStudentByQR extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const HintTextGroups(
-                      myText:
-                          AppStrings.kBottomListGroupNumberHomeMainScreenHome,
+                    HintTextGroups(
+                      myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 4),
                     ),
-                    const HintTextGroups(
+                    HintTextGroups(
                       myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16,
+                      fontSize: AppDimensions.defaultSize * 16,
                     ),
                   ],
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 45),
                 ),
-                const HintTextGroups(
+                HintTextGroups(
                   myText: AppStrings.kScanTextGroups,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w700,
                 ),
                 SizedBox(

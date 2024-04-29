@@ -40,10 +40,10 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 35),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kBasicInformationProfileEditing,
                       color: AppColors.kMainTextProfileEditing,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 28),
@@ -52,19 +52,19 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 27),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kFullNameProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualFullNameProfileEditing,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -73,19 +73,19 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kPhoneNumberProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualPhoneNumberProfileEditing,
                       textDirection: TextDirection.rtl,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -98,9 +98,9 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 35),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kMainEducationDetailsSignUp,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 4),
@@ -111,20 +111,20 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kEducationTypeSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualEducationTypeSignUp,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -133,20 +133,20 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kClassSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualClassSignUp,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -155,20 +155,20 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSectionProfileEditingTeacher,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualSectionProfileEditingTeacher,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -177,20 +177,20 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kGovernmentSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualGovernmentSignUp,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -199,20 +199,20 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kStationSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualStationSignUp,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -221,20 +221,20 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kSchoolSignUp,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    const CustomTextFormFiled(
+                    CustomTextFormFiled(
                       hintText: AppStrings.kActualSchoolSignUp,
                       textDirection: TextDirection.rtl,
                       prefixIcon: Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Almarai',
                         color: AppColors.kDetailsProfileEditing,
@@ -250,9 +250,9 @@ class ProfileEditingTeacher extends StatelessWidget {
                           onPressed: () {},
                         ),
                         const Spacer(),
-                        const MainTextGrey(
+                        MainTextGrey(
                           myText: AppStrings.kSubjectsSignUp,
-                          fontSize: 12,
+                          fontSize: AppDimensions.defaultSize * 12,
                         ),
                       ],
                     ),
@@ -263,9 +263,9 @@ class ProfileEditingTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 35),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kResetDataProfileEditingTeacher,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 4),

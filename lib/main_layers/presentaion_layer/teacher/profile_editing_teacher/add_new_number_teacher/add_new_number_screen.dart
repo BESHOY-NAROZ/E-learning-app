@@ -43,17 +43,17 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 50),
                     ),
-                    const MainTextBlue(
+                    MainTextBlue(
                       myText: AppStrings.kAddNewNumberMainProfileEditing,
                       color: AppColors.kMainTextProfileEditing,
-                      fontSize: 18,
+                      fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 5),
                     ),
-                    const MainTextGrey(
+                    MainTextGrey(
                       myText: AppStrings.kAddNewNumberHintProfileEditing,
-                      fontSize: 12,
+                      fontSize: AppDimensions.defaultSize * 12,
                       color: AppColors.kDetailsProfileEditing,
                     ),
                     SizedBox(
@@ -94,18 +94,18 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                                 mainAxisAlignment: MainAxisAlignment.center,
                                                 crossAxisAlignment: CrossAxisAlignment.end,
                                                 children: [
-                                                  const MainTextBlack(
+                                                  MainTextBlack(
                                                     myText: AppStrings.kMainRemoveSheet,
-                                                    fontSize: 18,
+                                                    fontSize: AppDimensions.defaultSize * 18,
                                                   ),
                                                   SizedBox(
                                                     height: AppDimensions.getDimensions(
                                                         requiredHeight: 14),
                                                   ),
-                                                  const MainTextGrey(
+                                                  MainTextGrey(
                                                     myText: AppStrings.kHintRemoveSheet,
                                                     color: AppColors.kDetailsProfileEditing,
-                                                    fontSize: 14,
+                                                    fontSize: AppDimensions.defaultSize * 14,
                                                     fontWeight: FontWeight.w400,
                                                   ),
                                                   SizedBox(
@@ -131,14 +131,16 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                                               onPressed: () {
                                                                 Navigator.pop(context);
                                                               },
-                                                              child: const Text(
+                                                              child: Text(
                                                                 AppStrings.kBackRemoveSheet,
                                                                 style: TextStyle(
                                                                     fontFamily: 'Almarai',
                                                                     color: AppColors
                                                                         .kMainScreenNewVersionButtonText,
                                                                     fontWeight: FontWeight.w700,
-                                                                    fontSize: 16),
+                                                                    fontSize:
+                                                                        AppDimensions.defaultSize *
+                                                                            16),
                                                               )),
                                                         ),
                                                         SizedBox(
@@ -163,13 +165,15 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                                                 });
                                                                 Navigator.pop(context);
                                                               },
-                                                              child: const Text(
+                                                              child: Text(
                                                                 AppStrings.kActualRemoveSheet,
                                                                 style: TextStyle(
                                                                     fontFamily: 'Almarai',
                                                                     color: AppColors.kMainTextWhite,
                                                                     fontWeight: FontWeight.w700,
-                                                                    fontSize: 16),
+                                                                    fontSize:
+                                                                        AppDimensions.defaultSize *
+                                                                            16),
                                                               )),
                                                         ),
                                                         SizedBox(
@@ -189,9 +193,9 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                     ),
                                   ),
                                   const Spacer(),
-                                  const MainTextGrey(
+                                  MainTextGrey(
                                     myText: AppStrings.kPhoneNumberHintProfileEditing,
-                                    fontSize: 12,
+                                    fontSize: AppDimensions.defaultSize * 12,
                                     color: AppColors.kDetailsProfileEditing,
                                   ),
                                 ],

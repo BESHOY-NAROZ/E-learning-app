@@ -1,32 +1,31 @@
 import 'dart:async';
 
 import 'package:assiut_project/core/app_constants/app_colors.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class ConfirmAccountCountDownTimer extends StatefulWidget {
   const ConfirmAccountCountDownTimer({Key? key}) : super(key: key);
 
-
   @override
   State<ConfirmAccountCountDownTimer> createState() => ConfirmAccountCountDownTimerState();
 }
 
-
-
 class ConfirmAccountCountDownTimerState extends State<ConfirmAccountCountDownTimer> {
-  static Timer ? _timer;
-  static  int _start = 60;
+  static Timer? _timer;
+  static int _start = 60;
 
   @override
   void initState() {
     startTimer();
     super.initState();
   }
-   void startTimer() {
+
+  void startTimer() {
     const oneSec = Duration(seconds: 1);
     _timer = Timer.periodic(
       oneSec,
-          (Timer timer) {
+      (Timer timer) {
         if (_start == 0) {
           setState(() {
             timer.cancel();
@@ -48,15 +47,13 @@ class ConfirmAccountCountDownTimerState extends State<ConfirmAccountCountDownTim
 
   @override
   Widget build(BuildContext context) {
-    return
-    Text('$_start',
-      style:  const TextStyle(
+    return Text(
+      '$_start',
+      style: TextStyle(
           fontFamily: 'Almarai',
           color: AppColors.kSignInMainHintText,
           fontWeight: FontWeight.w700,
-          fontSize: 12),
+          fontSize: AppDimensions.defaultSize * 12),
     );
-
-
   }
 }

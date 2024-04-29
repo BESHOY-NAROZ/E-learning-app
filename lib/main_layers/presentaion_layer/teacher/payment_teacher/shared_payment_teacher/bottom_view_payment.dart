@@ -35,33 +35,33 @@ class BottomViewPayment extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Row(
+          Row(
             children: [
               MainTextGrey(
                 myText: AppStrings.kTotalPricesPayment,
                 color: AppColors.kMainGery8D,
-                fontSize: 10,
+                fontSize: AppDimensions.defaultSize * 10,
               ),
               Spacer(),
               MainTextGrey(
                 myText: AppStrings.kMajorPricePayment,
                 color: AppColors.kMainGery8D,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
               )
             ],
           ),
           Row(
             children: [
-              const MainTextBlack(
+              MainTextBlack(
                 myText: AppStrings.kActualTotalPricesPayment,
-                fontSize: 20,
+                fontSize: AppDimensions.defaultSize * 20,
               ),
               SizedBox(
                 width: AppDimensions.getDimensions(requiredWidth: 3),
               ),
-              const MainTextBlack(
+              MainTextBlack(
                 myText: AppStrings.kEGPPayment,
-                fontSize: 10,
+                fontSize: AppDimensions.defaultSize * 10,
               )
             ],
           ),

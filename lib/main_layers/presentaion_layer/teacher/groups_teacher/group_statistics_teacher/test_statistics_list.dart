@@ -26,39 +26,39 @@ class TestStatisticsListTeacher extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kFirstTestGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
             ),
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 4),
             ),
-            const Row(
+            Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 MainTextBlack(
                   myText: AppStrings.kTwelveStudentsGroups,
                   textDirection: TextDirection.rtl,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w400,
                 ),
                 MainTextGrey(
                   myText: AppStrings.kFromAllGroups,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w300,
                 ),
                 Text(' '),
                 MainTextBlack(
                   myText: AppStrings.kSixStudentsGroups,
                   textDirection: TextDirection.rtl,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w400,
                 ),
                 MainTextGrey(
                   myText: AppStrings.kTestSolvedGroups,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w300,
                 ),
               ],
@@ -66,7 +66,7 @@ class TestStatisticsListTeacher extends StatelessWidget {
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 5),
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
@@ -76,7 +76,7 @@ class TestStatisticsListTeacher extends StatelessWidget {
                       fontFamily: 'Almarai',
                       color: AppColors.kSolvePercentageGroups,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16),
+                      fontSize: AppDimensions.defaultSize * 16),
                 ),
                 Text(
                   AppStrings.kSolvePercentageGroups,
@@ -85,7 +85,7 @@ class TestStatisticsListTeacher extends StatelessWidget {
                       fontFamily: 'Almarai',
                       color: AppColors.kSolvePercentageGroups,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16),
+                      fontSize: AppDimensions.defaultSize * 16),
                 ),
               ],
             ),
@@ -95,31 +95,31 @@ class TestStatisticsListTeacher extends StatelessWidget {
 
             //////////////////////////
 
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kSucceededPercentageGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
             ),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kSucceededNumberGroups,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w300,
                   textDirection: TextDirection.rtl,
                 ),
                 SizedBox(
                   width: AppDimensions.getDimensions(requiredWidth: 20),
                 ),
-                const Text(
+                Text(
                   AppStrings.kSolvePercentageNumberGroups,
                   style: TextStyle(
                       fontFamily: 'Almarai',
                       color: AppColors.kSucceededPercentageNumberGroups,
                       fontWeight: FontWeight.w700,
-                      fontSize: 20),
+                      fontSize: AppDimensions.defaultSize * 20),
                 ),
               ],
             ),
@@ -140,30 +140,30 @@ class TestStatisticsListTeacher extends StatelessWidget {
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 5),
             ),
-            const MainTextBlack(
+            MainTextBlack(
               myText: AppStrings.kFailedPercentageGroups,
-              fontSize: 16,
+              fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                const MainTextGrey(
+                MainTextGrey(
                   myText: AppStrings.kFailedNumberGroups,
-                  fontSize: 12,
+                  fontSize: AppDimensions.defaultSize * 12,
                   fontWeight: FontWeight.w300,
                   textDirection: TextDirection.rtl,
                 ),
                 SizedBox(
                   width: AppDimensions.getDimensions(requiredWidth: 20),
                 ),
-                const Text(
+                Text(
                   AppStrings.kSolvePercentageNumberGroups,
                   style: TextStyle(
                       fontFamily: 'Almarai',
                       color: AppColors.kFailedPercentageNumberGroups,
                       fontWeight: FontWeight.w700,
-                      fontSize: 20),
+                      fontSize: AppDimensions.defaultSize * 20),
                 ),
               ],
             )

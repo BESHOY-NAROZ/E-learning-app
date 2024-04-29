@@ -154,8 +154,12 @@ class HomeMainScreenTeacher extends StatelessWidget {
                         requiredHeight: 16,
                       ),
                     ),
-                    const MoreRowMainScreen(
-                        title: AppStrings.kAttachedHome, vectorIcon: AppAssets.kPlay),
+                    MoreRowMainScreen(
+                        onTap: () {
+                          Navigator.pushNamed(context, RoutesManager.addNewAttachedTeacher);
+                        },
+                        title: AppStrings.kAttachedHome,
+                        vectorIcon: AppAssets.kPlay),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),

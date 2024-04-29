@@ -1,4 +1,5 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
+import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class MainTextBlack extends StatelessWidget {
@@ -6,14 +7,11 @@ class MainTextBlack extends StatelessWidget {
   final FontWeight? fontWeight;
   final double? fontSize;
   final TextDirection? textDirection;
+  final Color? color;
 
   //  0xFF495057  700    20
   const MainTextBlack(
-      {Key? key,
-      this.myText,
-      this.fontWeight,
-      this.fontSize,
-      this.textDirection})
+      {Key? key, this.myText, this.fontWeight, this.fontSize, this.textDirection, this.color})
       : super(key: key);
 
   @override
@@ -24,9 +22,9 @@ class MainTextBlack extends StatelessWidget {
       textDirection: textDirection ?? TextDirection.ltr,
       style: TextStyle(
           fontFamily: 'Almarai',
-          color: AppColors.kMainTextBlack,
+          color: color ?? AppColors.kMainTextBlack,
           fontWeight: fontWeight ?? FontWeight.w700,
-          fontSize: fontSize ?? 20),
+          fontSize: fontSize ?? AppDimensions.defaultSize * 20),
     );
   }
 }

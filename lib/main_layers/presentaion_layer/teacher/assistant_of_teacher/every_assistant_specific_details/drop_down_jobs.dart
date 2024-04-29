@@ -40,10 +40,10 @@ class _DropDownJobsState extends State<DropDownJobs> {
                     size: AppDimensions.getDimensions(requiredWidth: 20),
                   ),
                   const Spacer(),
-                  const MainTextGrey(
+                  MainTextGrey(
                     myText: AppStrings.kAssistantJobAssistantOfTeacher,
                     color: AppColors.kMainGery6E,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                   ),
                 ],
               ),
@@ -69,10 +69,10 @@ class _DropDownJobsState extends State<DropDownJobs> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kAddStudentsAssistantOfTeacher,
                         color: AppColors.kMainGery7A,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 8),
@@ -94,10 +94,10 @@ class _DropDownJobsState extends State<DropDownJobs> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kRemoveStudentsAssistantOfTeacher,
                         color: AppColors.kMainGery7A,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 8),
@@ -119,10 +119,10 @@ class _DropDownJobsState extends State<DropDownJobs> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kCreateGroupsAssistantOfTeacher,
                         color: AppColors.kMainGery7A,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 8),
@@ -144,10 +144,10 @@ class _DropDownJobsState extends State<DropDownJobs> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kTakeAttendanceAssistantOfTeacher,
                         color: AppColors.kMainGery7A,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 8),
@@ -169,10 +169,10 @@ class _DropDownJobsState extends State<DropDownJobs> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const MainTextGrey(
+                      MainTextGrey(
                         myText: AppStrings.kSendNotificationsAssistantOfTeacher,
                         color: AppColors.kMainGery7A,
-                        fontSize: 12,
+                        fontSize: AppDimensions.defaultSize * 12,
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 8),

@@ -6,6 +6,7 @@ class MainAddSmallButton extends StatelessWidget {
   final String? myText;
   final double? requiredWidth;
   final double? requiredHeight;
+  final Color? textColor;
   final void Function()? onPressed;
 
   const MainAddSmallButton({
@@ -14,6 +15,7 @@ class MainAddSmallButton extends StatelessWidget {
     this.requiredWidth,
     this.onPressed,
     this.requiredHeight,
+    this.textColor,
   });
 
   @override
@@ -45,11 +47,11 @@ class MainAddSmallButton extends StatelessWidget {
               ),
               Text(
                 myText!,
-                style: const TextStyle(
+                style: TextStyle(
                     fontFamily: 'Almarai',
-                    color: AppColors.kSmallButtonTextMainScreenHome,
+                    color: textColor ?? AppColors.kSmallButtonTextMainScreenHome,
                     fontWeight: FontWeight.w700,
-                    fontSize: 10),
+                    fontSize: AppDimensions.defaultSize * 10),
               ),
             ],
           ),

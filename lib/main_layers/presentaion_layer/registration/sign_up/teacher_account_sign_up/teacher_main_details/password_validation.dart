@@ -12,7 +12,7 @@ class PasswordValidation extends StatelessWidget {
 
     return Column(
       children: [
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
@@ -20,7 +20,7 @@ class PasswordValidation extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: AppColors.kResetPasswordError,
-                fontSize: 10,
+                fontSize: AppDimensions.defaultSize * 10,
                 fontFamily: 'Almarai',
               ),
             ),
@@ -34,7 +34,7 @@ class PasswordValidation extends StatelessWidget {
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 4),
         ),
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
@@ -42,14 +42,14 @@ class PasswordValidation extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: AppColors.kResetPasswordError,
-                fontSize: 10,
+                fontSize: AppDimensions.defaultSize * 10,
                 fontFamily: 'Almarai',
               ),
             ),
             Icon(
               Icons.cancel_rounded,
               color: AppColors.kResetPasswordError,
-              size: 14,
+              size: AppDimensions.defaultSize * 14,
             )
           ],
         ),

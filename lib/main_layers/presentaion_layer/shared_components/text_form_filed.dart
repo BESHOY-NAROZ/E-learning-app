@@ -73,10 +73,10 @@ class CustomTextFormFiled extends StatelessWidget {
           prefixIcon: prefixIcon,
           hintText: hintText,
           hintStyle: hintStyle ??
-              const TextStyle(
+              TextStyle(
                 fontWeight: FontWeight.w400,
                 color: AppColors.kFormFiledHint,
-                fontSize: 14,
+                fontSize: AppDimensions.defaultSize * 14,
                 fontFamily: 'Almarai',
               ),
         ),

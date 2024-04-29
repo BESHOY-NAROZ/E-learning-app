@@ -50,47 +50,47 @@ class SendExamTeacherList extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const Text(
+                      Text(
                         AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                         style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kSmallListFirstTextMainScreenHome,
                             fontWeight: FontWeight.w700,
-                            fontSize: 16),
+                            fontSize: AppDimensions.defaultSize * 16),
                       ),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 8),
                       ),
-                      const Text(
+                      Text(
                         AppStrings.kBottomListFirstTextHomeMainScreenHome,
                         style: TextStyle(
                             fontFamily: 'Almarai',
                             color: AppColors.kSmallListFirstTextMainScreenHome,
                             fontWeight: FontWeight.w700,
-                            fontSize: 16),
+                            fontSize: AppDimensions.defaultSize * 16),
                       ),
                     ],
                   ),
                   Padding(
                     padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 6)),
-                    child: const Text(
+                    child: Text(
                       AppStrings.kBottomListSecondTextHomeMainScreenHome,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kBottomBottomListHintMainScreenHome,
                           fontWeight: FontWeight.w400,
-                          fontSize: 14),
+                          fontSize: AppDimensions.defaultSize * 14),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 6)),
-                    child: const Text(
+                    child: Text(
                       AppStrings.kBottomListThirdTextHomeMainScreenHome,
                       style: TextStyle(
                           fontFamily: 'Almarai',
                           color: AppColors.kBottomBottomListHintMainScreenHome,
                           fontWeight: FontWeight.w400,
-                          fontSize: 14),
+                          fontSize: AppDimensions.defaultSize * 14),
                     ),
                   ),
                   SizedBox(

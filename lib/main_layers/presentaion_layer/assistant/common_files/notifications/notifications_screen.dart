@@ -39,9 +39,9 @@ class Notifications extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 14),
                 ),
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kRecentlyCommon,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 12),
@@ -70,9 +70,9 @@ class Notifications extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 12),
                 ),
-                const MainTextBlack(
+                MainTextBlack(
                   myText: AppStrings.kLaterCommon,
-                  fontSize: 16,
+                  fontSize: AppDimensions.defaultSize * 16,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 12),

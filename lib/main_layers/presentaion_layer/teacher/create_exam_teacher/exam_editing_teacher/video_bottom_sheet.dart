@@ -37,9 +37,9 @@ class VideoBottomSheet extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const MainTextBlack(
+                          MainTextBlack(
                             myText: AppStrings.kSolvingVideoExamEditing,
-                            fontSize: 18,
+                            fontSize: AppDimensions.defaultSize * 18,
                           ),
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 5),

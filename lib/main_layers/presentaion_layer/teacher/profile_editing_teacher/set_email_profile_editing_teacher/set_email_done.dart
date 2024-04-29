@@ -23,8 +23,7 @@ class SetEmailDoneTeacher extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CloseSign(),
-              SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 112)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 154),
                 width: AppDimensions.getDimensions(requiredWidth: 154),
@@ -39,7 +38,7 @@ class SetEmailDoneTeacher extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: AppDimensions.getDimensions(requiredWidth: 10)),
-                child: const Text(
+                child: Text(
                   AppStrings.kResetDoneHintProfileEditing,
                   textAlign: TextAlign.center,
                   textDirection: TextDirection.rtl,
@@ -47,16 +46,14 @@ class SetEmailDoneTeacher extends StatelessWidget {
                       fontFamily: 'Almarai',
                       color: AppColors.kSignInMainHintText,
                       fontWeight: FontWeight.w400,
-                      fontSize: 14),
+                      fontSize: AppDimensions.defaultSize * 14),
                 ),
               ),
-              SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 250)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(
                 buttonName: AppStrings.kBackToProfileProfileEditingShared,
                 onPressed: () {
-                  Navigator.pushNamed(
-                      context, RoutesManager.profileEditingTeacher);
+                  Navigator.pushNamed(context, RoutesManager.profileEditingTeacher);
                 },
               ),
             ],

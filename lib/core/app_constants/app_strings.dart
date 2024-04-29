@@ -615,6 +615,7 @@ class AppStrings {
   static const String kEditQExams = 'تعديل السؤال';
   static const String kDeleteQExams = 'مسح السؤال';
   static const String kShowAnswerExams = 'اظهار الاجابة';
+  static const String kShowTheAnswerExams = 'إظهار الاجابة';
   static const String kAnswerVideoExams = 'فيديو الاجابة';
   static const String kSolutionIdeaExams = 'فكرة الحل';
   static const String kSolutionWayExams = 'طريقة الحل';
@@ -892,11 +893,53 @@ class AppStrings {
   static const String kTheQuestionAddQuestion = 'السؤال';
   static const String kQuestionTypeAddQuestion = 'نوع السؤال';
   static const String kAddingQAddQuestion = 'إضافة';
+  static const String kAddingQQuestion = 'إضافة سؤال';
+  static const String kSendTheQuestion = 'ارسال السؤال';
+  static const String kSendQuestion = 'ارسال';
+  static const String kSendToMeQuestion = 'اضافة الى بنك الاسئلة الخاص بى';
+  static const String kSendToBothQuestion = 'اضافة الى بنك اسئلة GPS و بنك الاسئلة الخاص بى';
+  static const String kMainSentDoneToMeQuestion = 'تم ارسال السؤال';
+  static const String kHintSentDoneToMeQuestion = 'تم اضافة سؤال الى بنك اسئلة الخاص بى';
+  static const String kButtonSentDoneToMeQuestion = 'الذهاب الى بنك الاسئلة'; // static const String
+  static const String kMainSentDoneToBothQuestion = 'مبروووووووك'; // static const String
+  static const String kHintSentDoneToBothQuestion =
+      'لقد حصلت على 100 نقطة الى محفظة النقاط و ذلك لاضافة\nسؤال جديد الى بنك اسئلة GPS'; //
+  // static const String
+  static const String kButtonSentDoneToBothQuestion = 'الذهاب الى النقاط'; // static const String
+  static const String kAddQToExamQuestion = 'إضافة سؤال الى الامتحان'; // static const String
+  static const String kSentExamDoneQuestion = 'تم ارسال السؤال'; // static const String
+  static const String kSentExamDoneHintQuestion = 'تم اضافة سؤال الى بعض الامتحانات'; // static
+  static const String kSentExamDoneButtonQuestion = 'الذهاب الى قائمة الامتحانات'; // static
+// const String
 
-// static const String kDeleteAssistantHintOfTeacher = 'هل انت متأكد انك تريد حذف المساعد ؟';
-  // static const String kAcceptedAssistantOfTeacher = 'الموافقات المرسلة من المساعدين';
+/////////////   Add New Attached ///////////////////////
+  static const String kAddNewAttached = 'اضافة مرفقات جديدة';
+  static const String kUploadAttachedAddNewAttached = 'رفع مرفقات جديدة';
+  static const String kExplainingAddNewAttached = 'الشرح';
+  static const String kActualExplainingAddNewAttached = 'نص الشرح';
+  static const String kActualFirstQExam =
+      'هذا النص هو مثال لنص يمكن أن يستبدل في \nنفس المساحة، لقد تم توليد هذا النص من مولد \nالنص العربى، ';
+  static const String kUploadNewAttached = 'رفع مرفق';
+  static const String kUploadDoneNewAttached = 'تم اضافة مرفق جديد';
+  static const String kUploadDoneHintNewAttached =
+      'تم اضافة شرح الى مادة الكيمياء بعنوان “ العناصر الانتقالية “';
+  static const String kUploadDoneButtonNewAttached = 'الذهاب الى قائمة المرفقات';
+  static const String attachmentsNewAttached = 'المرفقات';
+  static const String teacherMenuNewAttached = 'قائمة شرح المدرس';
+  static const String teacherPartsNewAttached = 'الاجزاء التى قام المدرس بشرحها';
+  static const String transitionalElementsNewAttached = 'العناصر الانتقالية';
+  static const String biologyNewAttached = 'الأحياء , الباب الأول , الفصل الثانى';
+  static const String addNewAttached = 'إضافة مرفق  جديد';
+  static const String explainingTextAttached = 'نص الشرح';
+  static const String explainingTextActualAttached =
+      'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.';
+  static const String explainingVideoAttached = 'فيديو الشرح';
+  static const String explainingFileAttached = 'ملف الشرح';
+  static const String scheduleAttached = 'الجدول_الدورى';
+  static const String sizeAttached = '1MB';
+  static const String dateAttached = '12/07/2024';
 
-// static const String kSetProfileEditing = 'تعيين';
+  // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
 }

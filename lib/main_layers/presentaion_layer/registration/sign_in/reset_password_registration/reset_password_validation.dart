@@ -5,14 +5,12 @@ import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:flutter/material.dart';
 
-
 class ResetPasswordValidation extends StatefulWidget {
   const ResetPasswordValidation({Key? key}) : super(key: key);
 
   static final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   static final TextEditingController passController = TextEditingController();
-  static final TextEditingController confirmPassController =
-  TextEditingController();
+  static final TextEditingController confirmPassController = TextEditingController();
   static bool validate = true;
 
   @override
@@ -35,9 +33,7 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
               obscureText: true,
               controller: ResetPasswordValidation.passController,
               validator: (value) {
-                if (value == null ||
-                    value.isEmpty ||
-                    value.length < 6 ) {
+                if (value == null || value.isEmpty || value.length < 6) {
                   return '';
                 }
                 return null;
@@ -47,16 +43,15 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
                 isDense: true,
                 enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: const BorderSide(
-                        color: AppColors.kLoginFormFiledBorder)),
+                    borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
                 hintText: AppStrings.kResetPasswordHintFormFiled,
-                hintStyle: const TextStyle(
+                hintStyle: TextStyle(
                   fontWeight: FontWeight.w400,
                   color: AppColors.kFormFiledHint,
-                  fontSize: 14,
+                  fontSize: AppDimensions.defaultSize * 14,
                   fontFamily: 'Almarai',
                 ),
               ),
@@ -82,104 +77,108 @@ class _ResetPasswordValidationState extends State<ResetPasswordValidation> {
                 isDense: true,
                 enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: const BorderSide(
-                        color: AppColors.kLoginFormFiledBorder)),
+                    borderSide: const BorderSide(color: AppColors.kLoginFormFiledBorder)),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
                 hintText: AppStrings.kResetPasswordHintFormFiled,
-                hintStyle: const TextStyle(
+                hintStyle: TextStyle(
                   fontWeight: FontWeight.w400,
                   color: AppColors.kFormFiledHint,
-                  fontSize: 14,
+                  fontSize: AppDimensions.defaultSize * 14,
                   fontFamily: 'Almarai',
                 ),
               ),
             ),
           ),
           if (!ResetPasswordValidation.validate)
-          Column(
-           crossAxisAlignment: CrossAxisAlignment.end,
-           children: [
-             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 7),),
-             const Row(
-             mainAxisAlignment: MainAxisAlignment.end,
-             children: [
-               Text(
-                 AppStrings.kResetPasswordFirstError,
-                 style: TextStyle(
-                   fontWeight: FontWeight.w700,
-                   color: AppColors.kResetPasswordError,
-                   fontSize: 10,
-                   fontFamily: 'Almarai',
-                 ),
-               ),
-               Icon(
-                 Icons.check_circle_rounded,
-                 color: AppColors.kResetPasswordError,
-                 size: 14,
-               )
-             ],
-           ),
-             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 4),),
-             const Row(mainAxisAlignment: MainAxisAlignment.end,
-               children: [
-                 Text(
-                   AppStrings.kResetPasswordSecondError,
-                   style: TextStyle(
-                     fontWeight: FontWeight.w700,
-                     color: AppColors.kResetPasswordError,
-                     fontSize: 10,
-                     fontFamily: 'Almarai',
-                   ),
-                 ),
-                 Icon(
-                   Icons.cancel_rounded,
-                   color: AppColors.kResetPasswordError,
-                   size: 14,
-                 )
-               ],
-             ),
-             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 4),),
-             const Row(
-               mainAxisAlignment: MainAxisAlignment.end,
-               children: [
-                 Text(
-                   AppStrings.kResetPasswordThirdError,
-                   style: TextStyle(
-                     fontWeight: FontWeight.w700,
-                     color: AppColors.kForgetPasswordErrorFormFiled,
-                     fontSize: 10,
-                     fontFamily: 'Almarai',
-                   ),
-                 ),
-                 Icon(
-                   Icons.cancel_rounded,
-                   color: AppColors.kForgetPasswordErrorFormFiled,
-                   size: 14,
-                 )
-               ],
-             ),],
-         ),
-          SizedBox(height: AppDimensions.getDimensions(requiredHeight: 19),),
-
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 7),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      AppStrings.kResetPasswordFirstError,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.kResetPasswordError,
+                        fontSize: AppDimensions.defaultSize * 10,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    Icon(
+                      Icons.check_circle_rounded,
+                      color: AppColors.kResetPasswordError,
+                      size: AppDimensions.defaultSize * 14,
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 4),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      AppStrings.kResetPasswordSecondError,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.kResetPasswordError,
+                        fontSize: AppDimensions.defaultSize * 10,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    Icon(
+                      Icons.cancel_rounded,
+                      color: AppColors.kResetPasswordError,
+                      size: AppDimensions.defaultSize * 14,
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: AppDimensions.getDimensions(requiredHeight: 4),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      AppStrings.kResetPasswordThirdError,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.kForgetPasswordErrorFormFiled,
+                        fontSize: AppDimensions.defaultSize * 10,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    Icon(
+                      Icons.cancel_rounded,
+                      color: AppColors.kForgetPasswordErrorFormFiled,
+                      size: AppDimensions.defaultSize * 14,
+                    )
+                  ],
+                ),
+              ],
+            ),
+          SizedBox(
+            height: AppDimensions.getDimensions(requiredHeight: 19),
+          ),
           MainButtonRed(
             buttonName: AppStrings.kResetPasswordMainButtonText,
             onPressed: () {
-
               if (ResetPasswordValidation._formKey.currentState!.validate()) {
                 setState(() {
                   ResetPasswordValidation.validate = true;
-
                 });
                 Navigator.pushNamed(context, RoutesManager.resetPasswordDone);
-              }else
-             {
-               setState(() {
-                 ResetPasswordValidation.validate = false;
-
-               });
-             }
+              } else {
+                setState(() {
+                  ResetPasswordValidation.validate = false;
+                });
+              }
             },
           ),
         ],

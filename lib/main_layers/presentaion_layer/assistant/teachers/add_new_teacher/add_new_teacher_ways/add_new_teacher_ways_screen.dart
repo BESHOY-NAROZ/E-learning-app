@@ -47,7 +47,7 @@ class _AddNewStudentWaysState extends State<AddNewTeacherWays> {
                     color: AddNewTeacherWays.myIndex == 0
                         ? AppColors.kForgetPasswordToggleSelectedButtonText
                         : AppColors.kForgetPasswordToggleButtonText,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
@@ -77,7 +77,7 @@ class _AddNewStudentWaysState extends State<AddNewTeacherWays> {
                     color: AddNewTeacherWays.myIndex == 1
                         ? AppColors.kForgetPasswordToggleSelectedButtonText
                         : AppColors.kForgetPasswordToggleButtonText,
-                    fontSize: 12,
+                    fontSize: AppDimensions.defaultSize * 12,
                     fontFamily: 'Almarai',
                   ),
                 ),
@@ -113,11 +113,11 @@ class _AddNewStudentWaysState extends State<AddNewTeacherWays> {
               color: AppColors.kSplitterMainScreenHome,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
-              child: const HintTextGroups(
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
+              child: HintTextGroups(
                 myText: AppStrings.kORGroups,
-                fontSize: 12,
+                fontSize: AppDimensions.defaultSize * 12,
                 fontWeight: FontWeight.w700,
               ),
             ),
