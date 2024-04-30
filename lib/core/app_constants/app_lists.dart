@@ -182,4 +182,14 @@ class AppLists {
     AppStrings.kSendToMeQuestion,
     AppStrings.kSendToBothQuestion,
   ];
+  static List<String> kOnBoardingList = [
+    AppAssets.kOnBoarding1,
+    AppAssets.kOnBoarding2,
+    AppAssets.kOnBoarding3,
+  ];
+  static List<String> kMainOnBoardingList = [
+    AppStrings.kMainOnBoarding1,
+    AppStrings.kMainOnBoarding2,
+    AppStrings.kMainOnBoarding3,
+  ];
 }

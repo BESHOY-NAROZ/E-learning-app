@@ -26,11 +26,16 @@ class MainAttachmentsList extends StatelessWidget {
         decoration:
             BoxDecoration(borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
         child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-          Image.asset(
-            AppAssets.kRemoveGroupsScreen,
-            color: AppColors.kMainGeryD9,
-            height: AppDimensions.getDimensions(requiredHeight: 18),
-            width: AppDimensions.getDimensions(requiredWidth: 18),
+          InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, RoutesManager.removeAttachmentsDoneTeacher);
+            },
+            child: Image.asset(
+              AppAssets.kRemoveGroupsScreen,
+              color: AppColors.kMainGeryD9,
+              height: AppDimensions.getDimensions(requiredHeight: 18),
+              width: AppDimensions.getDimensions(requiredWidth: 18),
+            ),
           ),
           const Spacer(),
           Column(

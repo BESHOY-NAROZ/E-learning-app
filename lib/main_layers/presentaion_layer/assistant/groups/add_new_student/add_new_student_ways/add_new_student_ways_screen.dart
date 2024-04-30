@@ -109,12 +109,12 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
           children: [
             Container(
               height: AppDimensions.getDimensions(requiredHeight: 3),
-              width: AppDimensions.getDimensions(requiredWidth: 144),
+              width: AppDimensions.getDimensions(requiredWidth: 140),
               color: AppColors.kSplitterMainScreenHome,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(
-                  horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 11)),
               child: const HintTextGroups(
                 myText: AppStrings.kORGroups,
                 fontSize: 12,
@@ -123,7 +123,7 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
             ),
             Container(
               height: AppDimensions.getDimensions(requiredHeight: 3),
-              width: AppDimensions.getDimensions(requiredWidth: 144),
+              width: AppDimensions.getDimensions(requiredWidth: 140),
               color: AppColors.kSplitterMainScreenHome,
             ),
           ],

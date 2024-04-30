@@ -13,7 +13,7 @@ class HomeMainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
       // bottomNavigationBar:  const MainBottomNavigationBar(
       //   designHeight: 1006,
@@ -97,6 +97,8 @@ class HomeMainScreen extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 57),
                       child: ListView.builder(
+                        shrinkWrap: true,
+                        padding: EdgeInsets.zero,
                         itemCount: 3,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -125,12 +127,10 @@ class HomeMainScreen extends StatelessWidget {
                                             fontWeight: FontWeight.w700,
                                             fontSize: AppDimensions.defaultSize * 16),
                                       ),
-                                      SizedBox(
-                                        height: AppDimensions.getDimensions(requiredHeight: 4),
-                                      ),
+                                      Spacer(),
                                       Padding(
                                         padding: EdgeInsets.only(
-                                          bottom: AppDimensions.getDimensions(requiredHeight: 1),
+                                          bottom: AppDimensions.getDimensions(requiredHeight: 3),
                                         ),
                                         child: Text(
                                           AppStrings.kSmallListSecondTextMainScreenHome,
@@ -158,7 +158,7 @@ class HomeMainScreen extends StatelessWidget {
                                         shape: BoxShape.circle,
                                         border: Border.all(
                                             color: AppColors.kAppBarBorderMainScreenHome,
-                                            width: 3)),
+                                            width: AppDimensions.defaultSize * 3)),
                                   ),
                                 ],
                               ),

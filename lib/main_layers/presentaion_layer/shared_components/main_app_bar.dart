@@ -63,9 +63,10 @@ class MainAppBar extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: AppColors.kBottomAppBarMainScreenHome.withOpacity(0.1),
                             shape: BoxShape.circle),
-                        child: const Icon(
+                        child: Icon(
                           Icons.arrow_forward_ios_outlined,
                           color: Colors.white,
+                          size: AppDimensions.defaultSize * 20,
                         ),
                       ),
                     ),

@@ -86,7 +86,7 @@ class AfterScan extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 30),
+                          height: AppDimensions.getDimensions(requiredHeight: 25),
                         ),
                         Container(
                           width: AppDimensions.getDimensions(requiredWidth: 105),
@@ -97,7 +97,7 @@ class AfterScan extends StatelessWidget {
                           child: Image.asset(AppAssets.kStudentGroupsScreen),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 20),
+                          height: AppDimensions.getDimensions(requiredHeight: 18),
                         ),
                         Text(
                           AppStrings.kStudentNameGroups,
@@ -108,7 +108,7 @@ class AfterScan extends StatelessWidget {
                               fontSize: AppDimensions.defaultSize * 15),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 15),
+                          height: AppDimensions.getDimensions(requiredHeight: 12),
                         ),
                         Text(
                           AppStrings.kStudentLevelGroups,
@@ -119,7 +119,7 @@ class AfterScan extends StatelessWidget {
                               fontSize: AppDimensions.defaultSize * 12),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 15),
+                          height: AppDimensions.getDimensions(requiredHeight: 12),
                         ),
                         Text(
                           AppStrings.kStudentNumberGroups,

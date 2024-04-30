@@ -1,6 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/uderlined_text.dart';
 import 'package:flutter/material.dart';
 
@@ -22,11 +23,17 @@ class ForgetPasswordBottomView extends StatelessWidget {
               fontWeight: FontWeight.w400,
               fontSize: AppDimensions.defaultSize * 10),
         ),
+        SizedBox(
+          height: AppDimensions.getDimensions(requiredHeight: 6),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const CustomUnderLinedText(
+            CustomUnderLinedText(
               myText: AppStrings.kForgetPasswordLeftBottomView,
+              onTap: () {
+                Navigator.pushNamed(context, RoutesManager.accountType);
+              },
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -36,8 +43,11 @@ class ForgetPasswordBottomView extends StatelessWidget {
                 color: AppColors.kLoginCreateAccount,
               ),
             ),
-            const CustomUnderLinedText(
+            CustomUnderLinedText(
               myText: AppStrings.kForgetPasswordRightBottomView,
+              onTap: () {
+                Navigator.pushNamed(context, RoutesManager.loginScreen);
+              },
             )
           ],
         )

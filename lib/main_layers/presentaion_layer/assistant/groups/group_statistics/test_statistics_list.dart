@@ -15,7 +15,7 @@ class TestStatisticsList extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Container(
-      height: AppDimensions.getDimensions(requiredHeight: 170),
+      height: AppDimensions.getDimensions(requiredHeight: 195),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       padding: EdgeInsets.zero,
       decoration: BoxDecoration(
@@ -23,16 +23,13 @@ class TestStatisticsList extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 13)),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             MainTextBlack(
               myText: AppStrings.kFirstTestGroups,
               fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
-            ),
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 4),
             ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,9 +59,6 @@ class TestStatisticsList extends StatelessWidget {
                   fontWeight: FontWeight.w300,
                 ),
               ],
-            ),
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 5),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -119,14 +113,14 @@ class TestStatisticsList extends StatelessWidget {
                                   fontFamily: 'Almarai',
                                   color: AppColors.kFailedPercentageNumberGroups,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: AppDimensions.defaultSize * 20),
+                                  fontSize: AppDimensions.defaultSize * 18),
                             ),
                             SizedBox(
                               width: AppDimensions.getDimensions(requiredWidth: 4),
                             ),
                             MainTextBlack(
                               myText: AppStrings.kFailedPercentageGroups,
-                              fontSize: AppDimensions.defaultSize * 16,
+                              fontSize: AppDimensions.defaultSize * 14,
                               fontWeight: FontWeight.w700,
                             ),
                           ],

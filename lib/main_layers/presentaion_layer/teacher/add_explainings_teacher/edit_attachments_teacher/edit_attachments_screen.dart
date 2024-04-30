@@ -92,10 +92,13 @@ class EditAttachmentsTeacher extends StatelessWidget {
                         Container(
                           height: AppDimensions.getDimensions(requiredHeight: 143),
                           width: AppDimensions.getDimensions(requiredWidth: 143),
+                          padding: EdgeInsets.symmetric(
+                            vertical: AppDimensions.getDimensions(requiredHeight: 5),
+                          ),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
                                 padding: EdgeInsets.symmetric(
@@ -121,11 +124,13 @@ class EditAttachmentsTeacher extends StatelessWidget {
                                   ],
                                 ),
                               ),
+                              Spacer(),
                               Image.asset(
                                 AppAssets.kYouTube,
                                 height: AppDimensions.getDimensions(requiredHeight: 80),
                                 width: AppDimensions.getDimensions(requiredWidth: 143),
                               ),
+                              Spacer(),
                               Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: AppDimensions.getDimensions(requiredWidth: 7),
@@ -154,10 +159,13 @@ class EditAttachmentsTeacher extends StatelessWidget {
                         Container(
                           height: AppDimensions.getDimensions(requiredHeight: 143),
                           width: AppDimensions.getDimensions(requiredWidth: 143),
+                          padding: EdgeInsets.symmetric(
+                            vertical: AppDimensions.getDimensions(requiredHeight: 5),
+                          ),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
                                 padding: EdgeInsets.symmetric(
@@ -183,6 +191,7 @@ class EditAttachmentsTeacher extends StatelessWidget {
                                   ],
                                 ),
                               ),
+                              Spacer(),
                               Column(
                                 children: [
                                   Image.asset(
@@ -198,6 +207,7 @@ class EditAttachmentsTeacher extends StatelessWidget {
                                   ),
                                 ],
                               ),
+                              Spacer(),
                               Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: AppDimensions.getDimensions(requiredWidth: 7),
@@ -230,7 +240,7 @@ class EditAttachmentsTeacher extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, RoutesManager.editQuestionsTeacher);
+                        Navigator.pushNamed(context, RoutesManager.uploadNewAttachedTeacher);
                       },
                       child: Container(
                         height: AppDimensions.getDimensions(requiredHeight: 45),
@@ -241,7 +251,7 @@ class EditAttachmentsTeacher extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             const MainTextGrey(
-                              myText: AppStrings.kEditExams,
+                              myText: AppStrings.updateExplainingAttached,
                             ),
                             SizedBox(
                               width: AppDimensions.getDimensions(requiredWidth: 5),
@@ -261,7 +271,9 @@ class EditAttachmentsTeacher extends StatelessWidget {
                     ),
                     MainButtonRed(
                       buttonName: AppStrings.kSentButtonExams,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, RoutesManager.sendAttachmentsTeacher);
+                      },
                     )
                   ],
                 ),

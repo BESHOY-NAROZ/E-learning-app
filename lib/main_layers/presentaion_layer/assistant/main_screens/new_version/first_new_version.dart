@@ -40,8 +40,7 @@ class FirstNewVersion extends StatelessWidget {
                       top: AppDimensions.getDimensions(requiredHeight: 60),
                     ),
                     child: SizedBox(
-                        height:
-                            AppDimensions.getDimensions(requiredHeight: 308),
+                        height: AppDimensions.getDimensions(requiredHeight: 308),
                         child: Image.asset(AppAssets.kPhone)),
                   ),
                   const Spacer(),
@@ -66,16 +65,14 @@ class FirstNewVersion extends StatelessWidget {
                     left: AppDimensions.getDimensions(requiredWidth: 20),
                   ),
                   child: MainButtonGrey(
-                    buttonName:
-                        AppStrings.kMainFirstButtonTextMainScreenNewVersion,
+                    buttonName: AppStrings.kMainFirstButtonTextMainScreenNewVersion,
                     onPressed: () {
-                      Navigator.pushNamed(
-                          context, RoutesManager.secondNewVersion);
+                      Navigator.pushNamed(context, RoutesManager.secondNewVersion);
                     },
                   )),
               Padding(
                 padding: EdgeInsets.only(
-                  bottom: AppDimensions.getDimensions(requiredHeight: 40),
+                  bottom: AppDimensions.getDimensions(requiredHeight: 20),
                   top: AppDimensions.getDimensions(
                     requiredHeight: 8,
                   ),
@@ -85,8 +82,7 @@ class FirstNewVersion extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, RoutesManager.myHome);
                   },
-                  buttonName:
-                      AppStrings.kMainSecondButtonTextMainScreenNewVersion,
+                  buttonName: AppStrings.kMainSecondButtonTextMainScreenNewVersion,
                 ),
               ),
             ],

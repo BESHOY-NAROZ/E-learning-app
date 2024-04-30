@@ -45,7 +45,7 @@ class _CustomExpandedSubjectsState extends State<CustomExpandedSubjects> {
                       !AppLists.kBoolUnitsForExams[index]
                           ? Icons.arrow_left_outlined
                           : Icons.arrow_drop_down,
-                      size: AppDimensions.getDimensions(requiredWidth: 20),
+                      size: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
                     const Spacer(),
                     MainTextGrey(
@@ -118,7 +118,7 @@ class _CustomExpandedClassesState extends State<CustomExpandedClasses> {
                       !AppLists.kBoolClassesForExams[index]
                           ? Icons.arrow_left_outlined
                           : Icons.arrow_drop_down,
-                      size: AppDimensions.getDimensions(requiredWidth: 20),
+                      size: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
                     const Spacer(),
                     MainTextGrey(
@@ -190,7 +190,7 @@ class _CustomExpandedPartsState extends State<CustomExpandedParts> {
                       !AppLists.kBoolPartsForExams[index]
                           ? Icons.arrow_left_outlined
                           : Icons.arrow_drop_down,
-                      size: AppDimensions.getDimensions(requiredWidth: 20),
+                      size: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
                     const Spacer(),
                     MainTextGrey(
@@ -254,7 +254,7 @@ class CustomExpandedLessons extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.arrow_left_outlined,
-                      size: AppDimensions.getDimensions(requiredWidth: 20),
+                      size: AppDimensions.getDimensions(requiredHeight: 20),
                     ),
                     const Spacer(),
                     MainTextGrey(

@@ -1,17 +1,18 @@
-import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/forget_password_bottom_view.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/main_hint_text_registration.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
-
-import 'forget_password_with_email/forget_password_with_email_screen.dart';
-import 'forget_password_with_phone/forget_password_with_phone_number_screen.dart';
 
 class ForgetPasswordWays extends StatefulWidget {
   const ForgetPasswordWays({Key? key}) : super(key: key);
 
-  static int myIndex = 0;
+  static int myIndex = 1;
 
   @override
   State<ForgetPasswordWays> createState() => _ForgetPasswordWaysState();
@@ -38,79 +39,36 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
               padding:
                   EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: AppDimensions.getDimensions(requiredHeight: 34.16),
-                          width: AppDimensions.getDimensions(requiredWidth: 99.94),
-                          decoration: BoxDecoration(
-                              color: ForgetPasswordWays.myIndex == 0
-                                  ? AppColors.kForgetPasswordToggleSelectedButtonColor
-                                  : AppColors.kForgetPasswordToggleButtonColor,
-                              borderRadius: BorderRadius.circular(10)),
-                          child: MaterialButton(
-                            padding: const EdgeInsets.all(0),
-                            child: Text(
-                              AppStrings.kForgetPasswordButtonEmail,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                color: ForgetPasswordWays.myIndex == 0
-                                    ? AppColors.kForgetPasswordToggleSelectedButtonText
-                                    : AppColors.kForgetPasswordToggleButtonText,
-                                fontSize: AppDimensions.defaultSize * 12,
-                                fontFamily: 'Almarai',
-                              ),
-                            ),
-                            onPressed: () {
-                              setState(() {
-                                ForgetPasswordWays.myIndex = 0;
-                              });
-                            },
-                          ),
-                        ),
-                        //AppColors.kForgetPasswordToggleSelectedButtonColor
-                        Container(
-                          height: AppDimensions.getDimensions(requiredHeight: 34.16),
-                          width: AppDimensions.getDimensions(requiredWidth: 99.94),
-                          decoration: BoxDecoration(
-                              color: ForgetPasswordWays.myIndex == 1
-                                  ? AppColors.kForgetPasswordToggleSelectedButtonColor
-                                  : AppColors.kForgetPasswordToggleButtonColor,
-                              borderRadius: BorderRadius.circular(10)),
-                          child: MaterialButton(
-                            padding: const EdgeInsets.all(0),
-                            child: Text(
-                              AppStrings.kForgetPasswordButtonPhone,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                color: ForgetPasswordWays.myIndex == 1
-                                    ? AppColors.kForgetPasswordToggleSelectedButtonText
-                                    : AppColors.kForgetPasswordToggleButtonText,
-                                fontSize: AppDimensions.defaultSize * 12,
-                                fontFamily: 'Almarai',
-                              ),
-                            ),
-                            onPressed: () {
-                              setState(() {
-                                ForgetPasswordWays.myIndex = 1;
-                              });
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 48.84),
                   ),
-                  ForgetPasswordWays.myIndex == 0
-                      ? const ForgetPasswordWithEmail()
-                      : const ForgetPasswordWithPhoneNumber(),
+                  const MainTextBlue(
+                    myText: AppStrings.kConfirmAccount,
+                  ),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 8),
+                  ),
+                  const MainHintTextRegistration(
+                    myText: AppStrings.kHintConfirmAccount,
+                    textDirection: TextDirection.rtl,
+                  ),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 34),
+                  ),
+                  const CustomTextFormFiled(
+                    hintText: AppStrings.kActualAddPhoneOrEmailGroupsTeacher,
+                  ),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 33),
+                  ),
+                  MainButtonRed(
+                    buttonName: AppStrings.kForgetPasswordMainButtonText,
+                    onPressed: () {
+                      Navigator.pushNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+                    },
+                  ),
                   SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 269),
                   ),

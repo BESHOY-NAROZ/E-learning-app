@@ -20,7 +20,7 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
       bottomNavigationBar: SizedBox(
-        height: AppDimensions.getDimensions(requiredHeight: 64),
+        height: AppDimensions.getDimensions(requiredHeight: 60),
         width: AppDimensions.getDimensions(requiredWidth: 305),
         child: BottomNavigationBar(
           onTap: (value) {

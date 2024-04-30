@@ -76,7 +76,7 @@ class AddAttachedSpecificSubjectTeacher extends StatelessWidget {
                   Icons.arrow_forward_ios_outlined,
                   color: AppColors.kMainGreen45,
                   size: AppDimensions.getDimensions(
-                    requiredWidth: 22,
+                    requiredHeight: 22,
                   ),
                 ),
                 SizedBox(

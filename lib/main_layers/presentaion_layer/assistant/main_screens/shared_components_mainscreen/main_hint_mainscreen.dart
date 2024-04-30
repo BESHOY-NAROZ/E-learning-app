@@ -20,7 +20,11 @@ class MainHintTextMainScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Padding(
-          padding: EdgeInsets.only(bottom: 6, top: 10),
+          padding: EdgeInsets.only(
+              bottom: AppDimensions.getDimensions(
+                  requiredHeight: AppDimensions.getDimensions(requiredHeight: 6)),
+              top: AppDimensions.getDimensions(
+                  requiredHeight: AppDimensions.getDimensions(requiredHeight: 8))),
           child: Text(
             myText1!,
             style: TextStyle(
@@ -55,7 +59,7 @@ class MainHintTextMainScreen extends StatelessWidget {
               fontSize: AppDimensions.defaultSize * 14),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 6),
+          padding: EdgeInsets.only(top: AppDimensions.getDimensions(requiredHeight: 6)),
           child: Text(
             myText5!,
             style: TextStyle(

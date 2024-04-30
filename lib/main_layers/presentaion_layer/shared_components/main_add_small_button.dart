@@ -39,7 +39,7 @@ class MainAddSmallButton extends StatelessWidget {
             children: [
               Icon(
                 Icons.add_circle_outlined,
-                size: AppDimensions.getDimensions(requiredWidth: 18),
+                size: AppDimensions.getDimensions(requiredHeight: 18),
                 color: AppColors.kSmallButtonTextMainScreenHome,
               ),
               SizedBox(

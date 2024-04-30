@@ -62,20 +62,19 @@ class SentExams extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 35),
                 ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 530),
-                  child: ListView.separated(
-                      padding: EdgeInsets.zero,
-                      itemBuilder: (context, index) {
-                        return const ExamsSentList();
-                      },
-                      separatorBuilder: (context, index) {
-                        return SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 15),
-                        );
-                      },
-                      itemCount: 3),
-                )
+                ListView.separated(
+                    padding: EdgeInsets.zero,
+                    shrinkWrap: true,
+                    physics: BouncingScrollPhysics(),
+                    itemBuilder: (context, index) {
+                      return const ExamsSentList();
+                    },
+                    separatorBuilder: (context, index) {
+                      return SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 15),
+                      );
+                    },
+                    itemCount: 3)
               ],
             ),
           ),

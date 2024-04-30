@@ -8,54 +8,45 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/t
 import 'package:flutter/material.dart';
 
 class ForgetPasswordWithPhoneNumber extends StatelessWidget {
-   const ForgetPasswordWithPhoneNumber({Key? key}) : super(key: key);
-
+  const ForgetPasswordWithPhoneNumber({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            const MainTextBlue(
-              myText: AppStrings.kForgetPasswordMainTextPhone,
-            ),
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 9),
-            ),
-            const MainHintTextRegistration(
-              myText: AppStrings.kForgetPasswordHintTextPhone,
-            ),
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 16),
-            ),
-            const CustomTextFormFiled(
-              hintText: AppStrings.kForgetPasswordTextFormFiledHintPhone,
-              keyboardType: TextInputType.phone,
-            ),
-            SizedBox(
-              height: AppDimensions.getDimensions(requiredHeight: 13),
-            ),
-            MainButtonRed(
-              buttonName: AppStrings.kForgetPasswordMainButtonText,
-              onPressed: () {
-                Navigator.pushNamed(context, RoutesManager
-                    .forgetPasswordGetCodePhoneNumber);
-      
-              },
-            ),
-      
-          ],
-      
+        children: [
+          const MainTextBlue(
+            myText: AppStrings.kConfirmAccount,
+          ),
+          SizedBox(
+            height: AppDimensions.getDimensions(requiredHeight: 8),
+          ),
+          const MainHintTextRegistration(
+            myText: AppStrings.kHintConfirmAccount,
+            textDirection: TextDirection.rtl,
+          ),
+          SizedBox(
+            height: AppDimensions.getDimensions(requiredHeight: 34),
+          ),
+          const CustomTextFormFiled(
+            hintText: AppStrings.kActualAddPhoneOrEmailGroupsTeacher,
+          ),
+          SizedBox(
+            height: AppDimensions.getDimensions(requiredHeight: 33),
+          ),
+          MainButtonRed(
+            buttonName: AppStrings.kForgetPasswordMainButtonText,
+            onPressed: () {
+              Navigator.pushNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+            },
+          ),
+        ],
       ),
     );
-
   }
-
-
-
 }
 
 //static int myIndex = 0;

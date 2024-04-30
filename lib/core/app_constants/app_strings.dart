@@ -20,6 +20,10 @@ class AppStrings {
   static const String kForgetPasswordMainTextEmail = 'البريد الإلكترونى';
   static const String kForgetPasswordHintTextPhone = 'أدخل رقم الهاتف المتصل '
       'بالحساب الخاص بك';
+
+  static const String kConfirmAccount = 'تأكيد الحساب';
+  static const String kHintConfirmAccount =
+      'أدخل البريد الإلكترونى أو الهاتف الخاص بالمدرس لتأكيد\nالحساب';
   static const String kForgetPasswordHintTextEmail =
       'أدخل البريد الإلكترونى المتصل بالحساب الخاص بك';
   static const String kForgetPasswordHint = 'أدخل رقم الهاتف المتصل بالحساب الخاص بك';
@@ -938,8 +942,30 @@ class AppStrings {
   static const String scheduleAttached = 'الجدول_الدورى';
   static const String sizeAttached = '1MB';
   static const String dateAttached = '12/07/2024';
+  static const String updateExplainingAttached = 'تعديل الشرح';
+  static const String removedDoneAttached = 'تم حذف الملف';
+  static const String sendAttachmentsAttached = 'ارسال مرفقات الشرح';
+  static const String sendToMeAttached = 'ارسال المرفق  الى المرفقات الخاصة بك';
+  static const String sendDoneAttached = 'تم ارسال المرفق';
+  static const String sendDoneHintAttached = 'تم ارسال المرفق الى قائمة المرفقات';
+  static const String sendDoneButtonAttached = 'الذهاب الى قائمة المرفقات';
+  static const String sendCanceledAttached = 'تم حذف المرفق';
+  static const String sendCanceledHintAttached =
+      'تم حذف مرفق من قائمة المرفقات المرسلة الى مجموعة 1';
+  static const String sendCanceledButtonAttached = 'العودة الى المرفقات';
 
-  // static const String kSetProfileEditing = 'تعيين';
+  /////// Splash screen ////////
+
+  static const String kSTeacher = 'Teacher';
+  static const String kMainOnBoarding1 = 'طلابنا الأعزاء';
+  static const String kMainOnBoarding2 = 'للمعلمين والمعلمات';
+  static const String kMainOnBoarding3 = 'أولياء الأمور';
+  static const String kButtonOnBoarding = 'متابعــــــة';
+  static const String kButton1OnBoarding = 'تسجيل حساب';
+  static const String kButton2OnBoarding = 'تسجيل الدخول';
+  static const String kHintOnBoarding = 'مرحبا بكم، قادة المستقبل والمبتكرين! يسعدنا أن نرحب بكم'
+      ' في مجتمعنا التعليمي. دعونا نشرع في هذه الرحلة المثيرة معًا! دعونا نبحر نحو عالم من الاكتشاف والنمو والإمكانيات التي لا نهاية لها.';
+
 // static const String kSetProfileEditing = 'تعيين';
 // static const String kSetProfileEditing = 'تعيين';
 }

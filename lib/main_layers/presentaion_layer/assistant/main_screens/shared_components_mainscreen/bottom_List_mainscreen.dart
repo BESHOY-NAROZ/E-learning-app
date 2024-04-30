@@ -11,7 +11,7 @@ class BottomListMainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return ListView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),

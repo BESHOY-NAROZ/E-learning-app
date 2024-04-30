@@ -89,7 +89,7 @@ class AddNewClassDone extends StatelessWidget {
                     child: Column(
                       children: [
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 30),
+                          height: AppDimensions.getDimensions(requiredHeight: 20),
                         ),
                         Container(
                           width: AppDimensions.getDimensions(requiredWidth: 105),
@@ -100,7 +100,7 @@ class AddNewClassDone extends StatelessWidget {
                           child: Image.asset(AppAssets.kStudentGroupsScreen),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 15),
+                          height: AppDimensions.getDimensions(requiredHeight: 13),
                         ),
                         Text(
                           AppStrings.kStudentNameGroups,
@@ -111,7 +111,7 @@ class AddNewClassDone extends StatelessWidget {
                               fontSize: AppDimensions.defaultSize * 15),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 7),
                         ),
                         Text(
                           AppStrings.kStudentLevelGroups,
@@ -122,7 +122,7 @@ class AddNewClassDone extends StatelessWidget {
                               fontSize: AppDimensions.defaultSize * 12),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 7),
                         ),
                         Text(
                           AppStrings.kStudentNumberGroups,
@@ -133,14 +133,14 @@ class AddNewClassDone extends StatelessWidget {
                               fontSize: AppDimensions.defaultSize * 12),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 7),
                         ),
                         MainTextGreen(
                           myText: AppStrings.kAttendedGroups,
                           fontSize: AppDimensions.defaultSize * 24,
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 7),
                         ),
                         const MainTextGrey(
                           myText: AppStrings.kAttendedTimeGroups,

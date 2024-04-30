@@ -28,7 +28,8 @@ class NewOffer extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                  top: AppDimensions.getDimensions(requiredHeight: 38),
+                  top: AppDimensions.getDimensions(
+                      requiredHeight: AppDimensions.getDimensions(requiredHeight: 38)),
                 ),
                 child: const CloseSign(),
               ),
@@ -54,7 +55,7 @@ class NewOffer extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10),
+                padding: EdgeInsets.only(top: AppDimensions.getDimensions(requiredHeight: 10)),
                 child: Text(
                   AppStrings.kUnderMainTextMainScreenNewOffer,
                   style: TextStyle(

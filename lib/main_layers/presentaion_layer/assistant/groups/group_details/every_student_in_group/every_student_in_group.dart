@@ -2,8 +2,6 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:flutter/material.dart';
 
 import 'remove_student_bottom_sheet.dart';
@@ -15,8 +13,7 @@ class EveryStudentInGroupList extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Container(
-        margin: EdgeInsets.only(
-            bottom: AppDimensions.getDimensions(requiredHeight: 17)),
+        margin: EdgeInsets.only(bottom: AppDimensions.getDimensions(requiredHeight: 17)),
         width: AppDimensions.getDimensions(
           requiredWidth: 320,
         ),
@@ -37,29 +34,25 @@ class EveryStudentInGroupList extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               const RemoveStudentBottomSheet(),
-              SizedBox(
-                width: AppDimensions.getDimensions(requiredWidth: 100),
-              ),
+              Spacer(),
               Column(
                 children: [
-                  const Text(
+                  Text(
                     AppStrings.kStudentNameGroups,
                     style: TextStyle(
                         fontFamily: 'Almarai',
                         color: AppColors.kSmallListFirstTextMainScreenHome,
                         fontWeight: FontWeight.w700,
-                        fontSize: 15),
+                        fontSize: AppDimensions.defaultSize * 15),
                   ),
-                  SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 10),
-                  ),
-                  const Text(
+                  Spacer(),
+                  Text(
                     AppStrings.kStudentLevelGroups,
                     style: TextStyle(
                         fontFamily: 'Almarai',
                         color: AppColors.kSmallListFirstTextMainScreenHome,
                         fontWeight: FontWeight.w400,
-                        fontSize: 12),
+                        fontSize: AppDimensions.defaultSize * 12),
                   ),
                 ],
               ),
@@ -79,5 +72,3 @@ class EveryStudentInGroupList extends StatelessWidget {
         ));
   }
 }
-
-

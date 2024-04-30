@@ -16,10 +16,10 @@ class MyHome extends StatefulWidget {
 class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
       bottomNavigationBar: SizedBox(
-        height: AppDimensions.getDimensions(requiredHeight: 57.6),
+        height: AppDimensions.getDimensions(requiredHeight: 60),
         width: AppDimensions.getDimensions(requiredWidth: 305),
         child: BottomNavigationBar(
           onTap: (value) {

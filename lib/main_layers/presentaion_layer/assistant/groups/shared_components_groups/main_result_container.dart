@@ -44,9 +44,7 @@ class MainResultContainer extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: AppColors.kSentGreyTextGroups),
               ),
-              SizedBox(
-                height: AppDimensions.getDimensions(requiredHeight: 3),
-              ),
+              Spacer(),
               MainTextGreen(
                 myText: bottomLeftText,
                 fontSize: AppDimensions.defaultSize * 20,

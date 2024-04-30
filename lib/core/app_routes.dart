@@ -63,11 +63,16 @@ import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_u
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/confirm_account/confirm_account_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/assistant_account_sign_up/sign_up_done/sign_up_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/add_id_teacher/add_id_teacher_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/confirm_account/confirm_account_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_main_details_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/splash_screen/splash_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/add_attached_specific_subject_teacher/add_attached_specific_subject_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/add_new_attached_teacher/add_new_attached_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/all_attachments_teacher/all_attachments_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/all_attachments_teacher/remove_attachments_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/edit_attachments_teacher/edit_attachments_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/send_explanation_attachments_teacher/send_attachments_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/send_explanation_attachments_teacher/send_attachments_screen_teacher.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/upload_new_attached_teacher/upload_attached_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/upload_new_attached_teacher/upload_new_attached_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_question_specific_subject_teacher/add_question_specific_subject_teacher_screen.dart';
@@ -159,7 +164,8 @@ import 'package:flutter/material.dart';
 import '../main_layers/presentaion_layer/teacher/exams_teacher/correction _exams_teacher/send_to_assistant_teacher/after_adding_screen_teacher.dart';
 
 class RoutesManager {
-  static const String loginScreen = "/";
+  static const String splashScreen = "/";
+  static const String loginScreen = "/loginScreen";
   static const String resetPasswordDone = "/resetPasswordDone";
   static const String resetPassword = "/resetPassword";
   static const String forgetPasswordWays = "/forgetPasswordWays";
@@ -317,11 +323,16 @@ class RoutesManager {
   static const String uploadAttachedDoneTeacher = "/uploadAttachedDoneTeacher";
   static const String allAttachmentsTeacher = "/allAttachmentsTeacher";
   static const String editAttachmentsTeacher = "/editAttachmentsTeacher";
+  static const String sendAttachmentsTeacher = "/sendAttachmentsTeacher";
+  static const String sendAttachmentsDoneTeacher = "/sendAttachmentsDoneTeacher";
+  static const String removeAttachmentsDoneTeacher = "/removeAttachmentsDoneTeacher";
 }
 
 class RoutesGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
+      case RoutesManager.splashScreen:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SplashScreen());
       case RoutesManager.loginScreen:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const LoginScreen());
       case RoutesManager.resetPasswordDone:
@@ -454,6 +465,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SignUpDone());
       case RoutesManager.addIDTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddIDTeacher());
+      case RoutesManager.confirmAccountTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ConfirmAccountTeacher());
       case RoutesManager.teacherMainDetails:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const TeacherMainDetails());
       case RoutesManager.qRMainScreenTeacher:
@@ -643,6 +656,12 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const AllAttachmentsTeacher());
       case RoutesManager.editAttachmentsTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const EditAttachmentsTeacher());
+      case RoutesManager.sendAttachmentsTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SendAttachmentsTeacher());
+      case RoutesManager.sendAttachmentsDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SendAttachmentsDoneTeacher());
+      case RoutesManager.removeAttachmentsDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const RemoveAttachmentsDoneTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:
