@@ -108,7 +108,7 @@ class ForgetPasswordGetCodeEmail extends StatelessWidget {
                     buttonName: AppStrings.kForgetPasswordGetCodeMainButtonText,
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 269),
+                    height: AppDimensions.getDimensions(requiredHeight: 268),
                   ),
                   const ForgetPasswordBottomView(
                     hintText: AppStrings.kForgetPasswordHintBottomView,
