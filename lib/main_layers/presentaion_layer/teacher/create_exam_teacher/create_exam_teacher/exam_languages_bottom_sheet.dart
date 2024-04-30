@@ -30,6 +30,9 @@ class _ExamLanguagesBottomSheetState extends State<ExamLanguagesBottomSheet> {
             onTap: () {
               showModalBottomSheet(
                 isScrollControlled: true,
+                constraints: const BoxConstraints(
+                  maxWidth: double.infinity,
+                ),
                 context: context,
                 builder: (context) {
                   return Container(

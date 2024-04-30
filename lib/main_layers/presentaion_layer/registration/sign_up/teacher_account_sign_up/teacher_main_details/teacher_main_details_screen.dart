@@ -4,8 +4,9 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_in/shared_components_signin/main_hint_text_registration.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/shared_components_signup/bottom_text_signup.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/bottom_sheets_signup_teacher/choose_language_bottom_sheet.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/bottom_sheets_signup_teacher/choose_role_bottom_sheet.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/registration/sign_up/teacher_account_sign_up/teacher_main_details/teacher_gender_toggle.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_add_small_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
@@ -110,7 +111,7 @@ class TeacherMainDetails extends StatelessWidget {
                     CustomTextFormFiled(
                       hintText: AppStrings.kActualBirthDateSignUp,
                       textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      prefixIcon: const Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
                         fontSize: AppDimensions.defaultSize * 12,
@@ -221,18 +222,7 @@ class TeacherMainDetails extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    CustomTextFormFiled(
-                      hintText: AppStrings.kActualEducationTypeSignUp,
-                      textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
-                      enabled: false,
-                      hintStyle: TextStyle(
-                        fontSize: AppDimensions.defaultSize * 12,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Almarai',
-                        color: AppColors.kDetailsProfileEditing,
-                      ),
-                    ),
+                    const ChooseRoleBottomSheet(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
@@ -246,7 +236,7 @@ class TeacherMainDetails extends StatelessWidget {
                     CustomTextFormFiled(
                       hintText: AppStrings.kActualLevelSignUp,
                       textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      prefixIcon: const Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
                         fontSize: AppDimensions.defaultSize * 12,
@@ -268,7 +258,7 @@ class TeacherMainDetails extends StatelessWidget {
                     CustomTextFormFiled(
                       hintText: AppStrings.kActualClassSignUp,
                       textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      prefixIcon: const Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
                         fontSize: AppDimensions.defaultSize * 12,
@@ -290,7 +280,7 @@ class TeacherMainDetails extends StatelessWidget {
                     CustomTextFormFiled(
                       hintText: AppStrings.kActualGovernmentSignUp,
                       textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      prefixIcon: const Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
                         fontSize: AppDimensions.defaultSize * 12,
@@ -312,7 +302,7 @@ class TeacherMainDetails extends StatelessWidget {
                     CustomTextFormFiled(
                       hintText: AppStrings.kActualStationSignUp,
                       textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      prefixIcon: const Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
                         fontSize: AppDimensions.defaultSize * 12,
@@ -334,7 +324,7 @@ class TeacherMainDetails extends StatelessWidget {
                     CustomTextFormFiled(
                       hintText: AppStrings.kActualSchoolSignUp,
                       textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      prefixIcon: const Icon(Icons.arrow_left_rounded),
                       enabled: false,
                       hintStyle: TextStyle(
                         fontSize: AppDimensions.defaultSize * 12,
@@ -353,29 +343,15 @@ class TeacherMainDetails extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 8),
                     ),
-                    CustomTextFormFiled(
-                      hintText: AppStrings.kActualWorkTypeSignUp,
-                      textDirection: TextDirection.rtl,
-                      prefixIcon: Icon(Icons.arrow_left_rounded),
-                      enabled: false,
-                      hintStyle: TextStyle(
-                        fontSize: AppDimensions.defaultSize * 12,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Almarai',
-                        color: AppColors.kDetailsProfileEditing,
-                      ),
-                    ),
+                    const ChooseRoleBottomSheet(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 16),
                     ),
-                    Row(
+                    const Row(
                       children: [
-                        MainAddSmallButton(
-                          myText: AppStrings.kAddSubjectSignUp,
-                          onPressed: () {},
-                        ),
-                        const Spacer(),
-                        const MainTextGrey(
+                        ChooseLanguagesBottomSheet(),
+                        Spacer(),
+                        MainTextGrey(
                           myText: AppStrings.kSubjectsSignUp,
                           fontSize: 12,
                         ),

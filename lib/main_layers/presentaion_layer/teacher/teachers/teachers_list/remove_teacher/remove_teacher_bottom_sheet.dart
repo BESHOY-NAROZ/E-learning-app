@@ -20,14 +20,17 @@ class RemoveTeacherBottomSheet extends StatelessWidget {
       onTap: () {
         showModalBottomSheet(
           context: context,
+          isScrollControlled: true,
+          constraints: const BoxConstraints(
+            maxWidth: double.infinity,
+          ),
           builder: (context) {
             return Container(
               width: AppDimensions.getDimensions(requiredWidth: 360),
               height: AppDimensions.getDimensions(requiredHeight: 190),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                  color: AppColors.kMainTextWhite,
-                  borderRadius: BorderRadius.circular(20)),
+                  color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
               child: Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: AppDimensions.getDimensions(requiredWidth: 20),
@@ -57,8 +60,7 @@ class RemoveTeacherBottomSheet extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 48),
                         width: AppDimensions.getDimensions(requiredWidth: 136),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                         child: MaterialButton(
                             color: AppColors.kMainScreenNewVersionButton,
                             shape: const RoundedRectangleBorder(),
@@ -69,8 +71,7 @@ class RemoveTeacherBottomSheet extends StatelessWidget {
                               AppStrings.kBackDeleteTeacher,
                               style: TextStyle(
                                   fontFamily: 'Almarai',
-                                  color:
-                                      AppColors.kMainScreenNewVersionButtonText,
+                                  color: AppColors.kMainScreenNewVersionButtonText,
                                   fontWeight: FontWeight.w700,
                                   fontSize: 16),
                             )),
@@ -82,14 +83,12 @@ class RemoveTeacherBottomSheet extends StatelessWidget {
                         height: AppDimensions.getDimensions(requiredHeight: 48),
                         width: AppDimensions.getDimensions(requiredWidth: 136),
                         clipBehavior: Clip.antiAliasWithSaveLayer,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                         child: MaterialButton(
                             color: AppColors.kMainButton,
                             shape: const RoundedRectangleBorder(),
                             onPressed: () {
-                              Navigator.popAndPushNamed(
-                                  context, RoutesManager.removeTeacherDone);
+                              Navigator.popAndPushNamed(context, RoutesManager.removeTeacherDone);
                             },
                             child: const Text(
                               AppStrings.kActualDeleteTeacher,

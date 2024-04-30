@@ -28,6 +28,10 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
       onPressed: () {
         showModalBottomSheet(
           context: context,
+          isScrollControlled: true,
+          constraints: const BoxConstraints(
+            maxWidth: double.infinity,
+          ),
           builder: (context) {
             return StatefulBuilder(
               builder: (context, setState) {

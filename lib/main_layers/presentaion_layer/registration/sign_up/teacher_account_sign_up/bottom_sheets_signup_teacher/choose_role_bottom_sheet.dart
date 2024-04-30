@@ -8,18 +8,18 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/s
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
-class DifficultyQuestionBottomSheet extends StatefulWidget {
-  static String currentRadio = AppStrings.kEasyDifficultyDegreeCreateExam;
+class ChooseRoleBottomSheet extends StatefulWidget {
+  static String currentRadio = AppStrings.kLevelOneCreateExam;
 
-  const DifficultyQuestionBottomSheet({
+  const ChooseRoleBottomSheet({
     super.key,
   });
 
   @override
-  State<DifficultyQuestionBottomSheet> createState() => _DifficultyQuestionBottomSheetState();
+  State<ChooseRoleBottomSheet> createState() => _ChooseRoleBottomSheetState();
 }
 
-class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottomSheet> {
+class _ChooseRoleBottomSheetState extends State<ChooseRoleBottomSheet> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -37,7 +37,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
               builder: (context) {
                 return Container(
                   width: AppDimensions.getDimensions(requiredWidth: 360),
-                  height: AppDimensions.getDimensions(requiredHeight: 254),
+                  height: AppDimensions.getDimensions(requiredHeight: 200),
                   clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(
                       color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
@@ -63,7 +63,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                           height: AppDimensions.getDimensions(requiredHeight: 10),
                         ),
                         MainTextBlue(
-                          myText: AppStrings.kDifficultyDegreeCreateExam,
+                          myText: AppStrings.kEducationLanguageSheet,
                           color: AppColors.kMainBlueC4,
                           fontSize: AppDimensions.defaultSize * 16,
                         ),
@@ -86,7 +86,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     MainTextGrey(
-                                      myText: AppLists.kDifficultyList[index],
+                                      myText: AppLists.kEducationLanguageList[index],
                                       fontSize: AppDimensions.defaultSize * 12,
                                       textDirection: TextDirection.rtl,
                                     ),
@@ -97,8 +97,8 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                                       height: AppDimensions.getDimensions(requiredHeight: 23),
                                       width: AppDimensions.getDimensions(requiredWidth: 23),
                                       child: Radio(
-                                        value: AppLists.kDifficultyList[index],
-                                        groupValue: DifficultyQuestionBottomSheet.currentRadio,
+                                        value: AppLists.kEducationLanguageList[index],
+                                        groupValue: ChooseRoleBottomSheet.currentRadio,
                                         visualDensity: const VisualDensity(
                                             horizontal: VisualDensity.minimumDensity,
                                             vertical: VisualDensity.minimumDensity),
@@ -106,8 +106,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                                             (states) => AppColors.kMainBlueC4),
                                         onChanged: (value) {
                                           setState(() {
-                                            DifficultyQuestionBottomSheet.currentRadio =
-                                                value.toString();
+                                            ChooseRoleBottomSheet.currentRadio = value.toString();
 
                                             Navigator.pop(context);
                                           });
@@ -122,7 +121,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                               return SizedBox(
                                   height: AppDimensions.getDimensions(requiredHeight: 12));
                             },
-                            itemCount: AppLists.kDifficultyList.length),
+                            itemCount: AppLists.kEducationLanguageList.length),
                         const Spacer(),
                       ],
                     ),
@@ -132,7 +131,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
             );
           },
           child: CustomTextFormFiled(
-            hintText: DifficultyQuestionBottomSheet.currentRadio,
+            hintText: ChooseRoleBottomSheet.currentRadio,
             textDirection: TextDirection.rtl,
             prefixIcon: const Icon(Icons.arrow_left_rounded),
             enabled: false,

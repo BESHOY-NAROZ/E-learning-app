@@ -9,16 +9,11 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/m
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
-class ForgetPasswordWays extends StatefulWidget {
+class ForgetPasswordWays extends StatelessWidget {
   const ForgetPasswordWays({Key? key}) : super(key: key);
 
   static int myIndex = 1;
 
-  @override
-  State<ForgetPasswordWays> createState() => _ForgetPasswordWaysState();
-}
-
-class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -66,11 +61,16 @@ class _ForgetPasswordWaysState extends State<ForgetPasswordWays> {
                   MainButtonRed(
                     buttonName: AppStrings.kForgetPasswordMainButtonText,
                     onPressed: () {
-                      Navigator.pushNamed(context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+                      if (myIndex == 0) {
+                        Navigator.pushNamed(
+                            context, RoutesManager.forgetPasswordGetCodePhoneNumber);
+                      } else {
+                        Navigator.pushNamed(context, RoutesManager.forgetPasswordGetCodeEmail);
+                      }
                     },
                   ),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 269),
+                    height: AppDimensions.getDimensions(requiredHeight: 248),
                   ),
                   const ForgetPasswordBottomView(
                     hintText: AppStrings.kForgetPasswordHintBottomView,

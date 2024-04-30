@@ -50,7 +50,7 @@ class ForgetPasswordBottomView extends StatelessWidget {
               },
             )
           ],
-        )
+        ),
       ],
     );
   }

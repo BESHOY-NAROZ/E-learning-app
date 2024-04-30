@@ -13,24 +13,24 @@ class ChangePhoto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 974, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Center(
-      child: Stack(
-        children: [
-          Container(
-            height: AppDimensions.getDimensions(requiredHeight: 136),
-            width: AppDimensions.getDimensions(requiredWidth: 136),
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: AppColors.kBorderProfileEditing, width: 3)),
-            child: Image.asset(AppAssets.kStudentGroupsScreen),
-          ),
-          Positioned(
-            top: AppDimensions.getDimensions(requiredHeight: 100),
-            left: AppDimensions.getDimensions(requiredWidth: 80),
-            child: Container(
+      child: SizedBox(
+        height: AppDimensions.getDimensions(requiredHeight: 150),
+        child: Stack(
+          alignment: Alignment.bottomRight,
+          children: [
+            Container(
+              height: AppDimensions.getDimensions(requiredHeight: 150),
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: AppColors.kBorderProfileEditing, width: 3)),
+              child: Image.asset(
+                AppAssets.kStudentGroupsScreen,
+              ),
+            ),
+            Container(
               height: AppDimensions.getDimensions(requiredHeight: 35),
-              width: AppDimensions.getDimensions(requiredWidth: 35),
               decoration: const BoxDecoration(
                 color: AppColors.kChangeProfileEditing,
                 shape: BoxShape.circle,
@@ -39,6 +39,10 @@ class ChangePhoto extends StatelessWidget {
                   onTap: () {
                     showModalBottomSheet(
                       context: context,
+                      isScrollControlled: true,
+                      constraints: const BoxConstraints(
+                        maxWidth: double.infinity,
+                      ),
                       builder: (context) {
                         return Container(
                           width: AppDimensions.getDimensions(requiredWidth: 360),
@@ -133,10 +137,13 @@ class ChangePhoto extends StatelessWidget {
                       },
                     );
                   },
-                  child: const Icon(Icons.edit)),
+                  child: Icon(
+                    Icons.edit,
+                    size: AppDimensions.defaultSize * 30,
+                  )),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

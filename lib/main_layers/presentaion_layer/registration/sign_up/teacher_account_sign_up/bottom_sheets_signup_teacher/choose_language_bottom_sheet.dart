@@ -2,42 +2,36 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_lists.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_add_small_button.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/separator.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
-class DifficultyQuestionBottomSheet extends StatefulWidget {
-  static String currentRadio = AppStrings.kEasyDifficultyDegreeCreateExam;
-
-  const DifficultyQuestionBottomSheet({
+class ChooseLanguagesBottomSheet extends StatelessWidget {
+  const ChooseLanguagesBottomSheet({
     super.key,
   });
 
-  @override
-  State<DifficultyQuestionBottomSheet> createState() => _DifficultyQuestionBottomSheetState();
-}
-
-class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottomSheet> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return StatefulBuilder(
       builder: (BuildContext context, void Function(void Function()) setState) {
-        return InkWell(
-          onTap: () {
+        return MainAddSmallButton(
+          myText: AppStrings.kAddSubjectSignUp,
+          onPressed: () {
             showModalBottomSheet(
-              context: context,
               isScrollControlled: true,
               constraints: const BoxConstraints(
                 maxWidth: double.infinity,
               ),
+              context: context,
               builder: (context) {
                 return Container(
                   width: AppDimensions.getDimensions(requiredWidth: 360),
-                  height: AppDimensions.getDimensions(requiredHeight: 254),
+                  height: AppDimensions.getDimensions(requiredHeight: 470),
                   clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(
                       color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
@@ -60,15 +54,15 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                           ),
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 10),
+                          height: AppDimensions.getDimensions(requiredHeight: 6),
                         ),
                         MainTextBlue(
-                          myText: AppStrings.kDifficultyDegreeCreateExam,
+                          myText: AppStrings.kSubjectCreateExam,
                           color: AppColors.kMainBlueC4,
                           fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 11),
+                          height: AppDimensions.getDimensions(requiredHeight: 3),
                         ),
                         ListView.separated(
                             shrinkWrap: true,
@@ -86,7 +80,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     MainTextGrey(
-                                      myText: AppLists.kDifficultyList[index],
+                                      myText: AppLists.kLanguagesList[index],
                                       fontSize: AppDimensions.defaultSize * 12,
                                       textDirection: TextDirection.rtl,
                                     ),
@@ -94,26 +88,13 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                                       width: AppDimensions.getDimensions(requiredWidth: 14),
                                     ),
                                     SizedBox(
-                                      height: AppDimensions.getDimensions(requiredHeight: 23),
-                                      width: AppDimensions.getDimensions(requiredWidth: 23),
-                                      child: Radio(
-                                        value: AppLists.kDifficultyList[index],
-                                        groupValue: DifficultyQuestionBottomSheet.currentRadio,
-                                        visualDensity: const VisualDensity(
-                                            horizontal: VisualDensity.minimumDensity,
-                                            vertical: VisualDensity.minimumDensity),
-                                        fillColor: MaterialStateColor.resolveWith(
-                                            (states) => AppColors.kMainBlueC4),
-                                        onChanged: (value) {
-                                          setState(() {
-                                            DifficultyQuestionBottomSheet.currentRadio =
-                                                value.toString();
-
-                                            Navigator.pop(context);
-                                          });
-                                        },
-                                      ),
-                                    ),
+                                        height: AppDimensions.getDimensions(requiredHeight: 23),
+                                        width: AppDimensions.getDimensions(requiredWidth: 23),
+                                        child: Checkbox(
+                                          value: false,
+                                          side: const BorderSide(color: AppColors.kLoginRememberMe),
+                                          onChanged: (value) {},
+                                        )),
                                   ],
                                 ),
                               );
@@ -122,7 +103,7 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
                               return SizedBox(
                                   height: AppDimensions.getDimensions(requiredHeight: 12));
                             },
-                            itemCount: AppLists.kDifficultyList.length),
+                            itemCount: AppLists.kLanguagesList.length),
                         const Spacer(),
                       ],
                     ),
@@ -131,18 +112,6 @@ class _DifficultyQuestionBottomSheetState extends State<DifficultyQuestionBottom
               },
             );
           },
-          child: CustomTextFormFiled(
-            hintText: DifficultyQuestionBottomSheet.currentRadio,
-            textDirection: TextDirection.rtl,
-            prefixIcon: const Icon(Icons.arrow_left_rounded),
-            enabled: false,
-            hintStyle: TextStyle(
-              fontSize: AppDimensions.defaultSize * 12,
-              fontWeight: FontWeight.w700,
-              fontFamily: 'Almarai',
-              color: AppColors.kDetailsProfileEditing,
-            ),
-          ),
         );
       },
     );

@@ -92,6 +92,10 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                       onPressed: () {
                         showModalBottomSheet(
                           context: context,
+                          isScrollControlled: true,
+                          constraints: const BoxConstraints(
+                            maxWidth: double.infinity,
+                          ),
                           builder: (context) {
                             return Container(
                               width: AppDimensions.getDimensions(requiredWidth: 360),

@@ -30,6 +30,10 @@ class _AddTheQuestionToBottomSheetState extends State<AddTheQuestionToBottomShee
         {
           showModalBottomSheet(
             context: context,
+            isScrollControlled: true,
+            constraints: const BoxConstraints(
+              maxWidth: double.infinity,
+            ),
             builder: (context) {
               return StatefulBuilder(
                 builder: (context, setState) {

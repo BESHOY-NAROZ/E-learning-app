@@ -19,6 +19,10 @@ class SolvingIdeaBottomSheet extends StatelessWidget {
       onTap: () {
         showModalBottomSheet(
           context: context,
+          isScrollControlled: true,
+          constraints: const BoxConstraints(
+            maxWidth: double.infinity,
+          ),
           builder: (context) {
             return Container(
               width: AppDimensions.getDimensions(requiredWidth: 360),

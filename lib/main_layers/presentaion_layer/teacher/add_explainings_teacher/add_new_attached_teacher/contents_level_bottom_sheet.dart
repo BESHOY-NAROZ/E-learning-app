@@ -30,6 +30,10 @@ class _ContentsLevelBottomSheetState extends State<ContentsLevelBottomSheet> {
           onTap: () {
             showModalBottomSheet(
               context: context,
+              isScrollControlled: true,
+              constraints: const BoxConstraints(
+                maxWidth: double.infinity,
+              ),
               builder: (context) {
                 return Container(
                   width: AppDimensions.getDimensions(requiredWidth: 360),

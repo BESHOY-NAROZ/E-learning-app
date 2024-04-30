@@ -412,6 +412,13 @@ class AppStrings {
   static const String kAddChoiceBottomSheet = 'اضافة اختيار';
   static const String kChoiceRouteBottomSheet = 'عنوان الاختيار';
   static const String kAddBottomSheet = 'اضافـــة';
+  static const String kRoleSheet = 'الدور الذى يقوم  به';
+  static const String kTeacherSheet = 'مدرس';
+  static const String kCorrectorSheet = 'مدرس مصحح';
+  static const String kEducationLanguageSheet = 'شعبة التعليم';
+  static const String kArabicLanguageSheet = 'عربى';
+  static const String kEnglishLanguageSheet = 'لغات';
+
   static const String kFromGallerySheet = 'اضافة من المعرض';
   static const String kMainRemoveSheet = 'حذف رقم الهاتف';
   static const String kHintRemoveSheet = 'هل انت متأكد انك تريد حذف رقم الهاتف '

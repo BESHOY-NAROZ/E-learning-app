@@ -192,4 +192,12 @@ class AppLists {
     AppStrings.kMainOnBoarding2,
     AppStrings.kMainOnBoarding3,
   ];
+  static List<String> kRoleList = [
+    AppStrings.kTeacherSheet,
+    AppStrings.kCorrectorSheet,
+  ];
+  static List<String> kEducationLanguageList = [
+    AppStrings.kArabicLanguageSheet,
+    AppStrings.kEnglishLanguageSheet,
+  ];
 }

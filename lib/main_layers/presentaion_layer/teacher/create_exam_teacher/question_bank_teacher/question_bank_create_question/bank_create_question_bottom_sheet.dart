@@ -30,6 +30,10 @@ class _BankCreateQuestionBottomSheetState extends State<BankCreateQuestionBottom
             onTap: () {
               showModalBottomSheet(
                 context: context,
+                isScrollControlled: true,
+                constraints: const BoxConstraints(
+                  maxWidth: double.infinity,
+                ),
                 builder: (context) {
                   return Container(
                     width: AppDimensions.getDimensions(requiredWidth: 360),

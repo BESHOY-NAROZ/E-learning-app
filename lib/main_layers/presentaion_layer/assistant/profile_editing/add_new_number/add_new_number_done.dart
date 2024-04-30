@@ -49,7 +49,7 @@ class AddNewNumberDone extends StatelessWidget {
               MainButtonRed(
                 buttonName: AppStrings.kStillEditProfileEditing,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.profileEditing);
+                  Navigator.pushNamed(context, RoutesManager.profileEditingTeacher);
                 },
               ),
             ],
