@@ -3,8 +3,8 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/hint_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
 import 'package:flutter/material.dart';
 
 import 'add_new_teacher_with_email/add_new_teacher_with_email_screen.dart';

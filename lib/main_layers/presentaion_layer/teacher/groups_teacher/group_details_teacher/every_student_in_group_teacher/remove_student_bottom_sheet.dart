@@ -3,8 +3,8 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
 import 'package:flutter/material.dart';
 
 class RemoveStudentBottomSheetTeacher extends StatelessWidget {
@@ -27,7 +27,7 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
           builder: (context) {
             return Container(
               width: AppDimensions.getDimensions(requiredWidth: 360),
-              height: AppDimensions.getDimensions(requiredHeight: 220),
+              height: AppDimensions.getDimensions(requiredHeight: 235),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
                   color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
@@ -44,7 +44,7 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
                       fontSize: AppDimensions.defaultSize * 18,
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 14),
+                      height: AppDimensions.getDimensions(requiredHeight: 12),
                     ),
                     MainTextGrey(
                       myText: AppStrings.kHintDeleteStudent,
@@ -53,11 +53,11 @@ class RemoveStudentBottomSheetTeacher extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 12),
+                      height: AppDimensions.getDimensions(requiredHeight: 14),
                     ),
                     Container(
                       width: AppDimensions.getDimensions(requiredWidth: 360),
-                      height: AppDimensions.getDimensions(requiredHeight: 50),
+                      height: AppDimensions.getDimensions(requiredHeight: 71),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           color: AppColors.kBottomContainerMainScreenHome),

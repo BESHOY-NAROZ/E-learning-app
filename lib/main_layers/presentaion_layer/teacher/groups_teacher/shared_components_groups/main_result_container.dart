@@ -1,7 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_black.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_green.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_green.dart';
 import 'package:flutter/material.dart';
 
 class MainResultContainer extends StatelessWidget {

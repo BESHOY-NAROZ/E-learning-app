@@ -4,11 +4,9 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/close_sign.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_blue.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -24,20 +22,19 @@ class RemoveOrderJoiningDone extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
             const CloseSign(),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 112)),
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 154),
               width: AppDimensions.getDimensions(requiredWidth: 154),
-              child: Lottie.asset(AppAssets.kBlueLike,
-              ),),
-
+              child: Lottie.asset(
+                AppAssets.kBlueLike,
+              ),
+            ),
             const MainTextBlue(
               myText: AppStrings.kMainCancelOrderGroups,
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-
             const Text(
               AppStrings.kHintCancelOrderGroups,
               textAlign: TextAlign.center,
@@ -48,15 +45,12 @@ class RemoveOrderJoiningDone extends StatelessWidget {
                   fontSize: 14),
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 240)),
-
             MainButtonRed(
               buttonName: AppStrings.kGoToGroupGroups,
               onPressed: () {
                 Navigator.pushNamed(context, RoutesManager.groupDetails);
               },
             ),
-
-
           ],
         ),
       ),

@@ -1,7 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/main_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/assistant_of_teacher/add_new_assistant_teacher/add_new_assistant_ways_screen.dart';
 import 'package:flutter/material.dart';
 

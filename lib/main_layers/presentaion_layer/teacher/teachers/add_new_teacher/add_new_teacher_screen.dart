@@ -1,7 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/main_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'add_new_teacher_ways/add_new_teacher_ways_screen.dart';
@@ -20,8 +20,7 @@ class AddNewTeacher extends StatelessWidget {
           myTitle: AppStrings.kAddTeacherAppBarTeachers,
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+          padding: EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [

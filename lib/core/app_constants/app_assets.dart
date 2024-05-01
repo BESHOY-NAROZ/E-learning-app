@@ -81,6 +81,8 @@ class AppAssets {
   static const String kOnBoarding1 = 'assets/images/OnBoarding1.png';
   static const String kOnBoarding2 = 'assets/images/OnBoarding2.png';
   static const String kOnBoarding3 = 'assets/images/OnBoarding3.png';
+  static const String kAdd = 'assets/images/Add.png';
+  static const String kChart = 'assets/images/Chart.png';
 
   ///// Lottie
   static const String kCorrectLottie = 'assets/lottie_files/Correct.json';

@@ -136,6 +136,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teac
     '/create_group_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/group_details_teacher/group_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/group_statistics_teacher/group_statistics_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/groups_students_teacher/remove_group_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/groups_students_teacher/students_groups_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/sent_exams_teacher/sent_exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/students_profile_teacher/student_profile_screen.dart';
@@ -253,6 +254,7 @@ class RoutesManager {
   static const String addPointsDoneTeacher = "/addPointsDoneTeacher";
   static const String purchasesTeacher = "/purchasesTeacher";
   static const String studentsGroupsTeacher = "/studentsGroupsTeacher";
+  static const String removeGroupDone = "/removeGroupDone";
   static const String groupDetailsTeacher = "/groupDetailsTeacher";
   static const String createGroupTeacher = "/createGroupTeacher";
   static const String createGroupDoneTeacher = "/createGroupDoneTeacher";
@@ -508,6 +510,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const PurchasesTeacher());
       case RoutesManager.studentsGroupsTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const StudentGroupsTeacher());
+      case RoutesManager.removeGroupDone:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const RemoveGroupDone());
       case RoutesManager.groupDetailsTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const GroupDetailsTeacher());
       case RoutesManager.createGroupTeacher:

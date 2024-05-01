@@ -5,7 +5,7 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/hint_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/main_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class AfterScanTeacher extends StatelessWidget {
@@ -24,8 +24,8 @@ class AfterScanTeacher extends StatelessWidget {
             myTitle: AppStrings.kAddTeacherAppBarTeachers,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
@@ -59,30 +59,25 @@ class AfterScanTeacher extends StatelessWidget {
                           color: Colors.grey.withOpacity(0.5),
                           spreadRadius: 5,
                           blurRadius: 7,
-                          offset:
-                              const Offset(0, 3), // changes position of shadow
+                          offset: const Offset(0, 3), // changes position of shadow
                         ),
                       ],
                     ),
                     child: Column(
                       children: [
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 30),
+                          height: AppDimensions.getDimensions(requiredHeight: 30),
                         ),
                         Container(
-                          width:
-                              AppDimensions.getDimensions(requiredWidth: 105),
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 105),
+                          width: AppDimensions.getDimensions(requiredWidth: 105),
+                          height: AppDimensions.getDimensions(requiredHeight: 105),
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                           ),
                           child: Image.asset(AppAssets.kStudentGroupsScreen),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 20),
+                          height: AppDimensions.getDimensions(requiredHeight: 20),
                         ),
                         const Text(
                           AppStrings.kStudentNameGroups,
@@ -93,8 +88,7 @@ class AfterScanTeacher extends StatelessWidget {
                               fontSize: 15),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 15),
+                          height: AppDimensions.getDimensions(requiredHeight: 15),
                         ),
                         const Text(
                           AppStrings.kStudentNumberGroups,
@@ -105,23 +99,18 @@ class AfterScanTeacher extends StatelessWidget {
                               fontSize: 12),
                         ),
                         SizedBox(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 30),
+                          height: AppDimensions.getDimensions(requiredHeight: 30),
                         ),
                         Container(
-                          height:
-                              AppDimensions.getDimensions(requiredHeight: 45),
-                          width:
-                              AppDimensions.getDimensions(requiredWidth: 283),
+                          height: AppDimensions.getDimensions(requiredHeight: 45),
+                          width: AppDimensions.getDimensions(requiredWidth: 283),
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10)),
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
                           child: MaterialButton(
                               color: AppColors.kMainButton,
                               shape: const RoundedRectangleBorder(),
                               onPressed: () {
-                                Navigator.pushNamed(
-                                    context, RoutesManager.addNewTeacherDone);
+                                Navigator.pushNamed(context, RoutesManager.addNewTeacherDone);
                               },
                               child: const Text(
                                 AppStrings.kAddButtonGroups,

@@ -3,14 +3,14 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/close_sign.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_blue.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class RemoveStudentDone extends StatelessWidget {
-  const RemoveStudentDone({Key? key}) : super(key: key);
+class RemoveGroupDone extends StatelessWidget {
+  const RemoveGroupDone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class RemoveStudentDone extends StatelessWidget {
             ),
             SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
             Text(
-              AppStrings.kHintRemoveStudentGroups,
+              AppStrings.kDeleteGroupDoneHintGroupsTeacher,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontFamily: 'Almarai',
@@ -47,7 +47,7 @@ class RemoveStudentDone extends StatelessWidget {
             MainButtonRed(
               buttonName: AppStrings.kButtonRemoveStudentGroups,
               onPressed: () {
-                Navigator.pushReplacementNamed(context, RoutesManager.groupDetails);
+                Navigator.pushReplacementNamed(context, RoutesManager.studentsGroupsTeacher);
               },
             ),
           ],

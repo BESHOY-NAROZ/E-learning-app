@@ -2,11 +2,10 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/hint_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/main_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/text_form_filed.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
 class CreateGroupTeacher extends StatelessWidget {
@@ -34,18 +33,12 @@ class CreateGroupTeacher extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 7),
+                  height: AppDimensions.getDimensions(requiredHeight: 40),
                 ),
-                const MainTextGroups(
-                  myText: AppStrings.kCreateGroupGroups,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 20),
-                ),
-                HintTextGroups(
+                MainTextGrey(
                   myText: AppStrings.kCreateGroupHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
+                  fontSize: AppDimensions.defaultSize * 12,
+                  color: AppColors.kMainGery7A,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -63,10 +56,10 @@ class CreateGroupTeacher extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                HintTextGroups(
+                MainTextGrey(
                   myText: AppStrings.kEducationalLevelHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
+                  fontSize: AppDimensions.defaultSize * 12,
+                  color: AppColors.kMainGery7A,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -74,7 +67,7 @@ class CreateGroupTeacher extends StatelessWidget {
                 CustomTextFormFiled(
                   hintText: AppStrings.kHighSchoolHintTextFormGroups,
                   textDirection: TextDirection.rtl,
-                  prefixIcon: Icon(Icons.arrow_left_rounded),
+                  prefixIcon: const Icon(Icons.arrow_left_rounded),
                   enabled: false,
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -86,10 +79,10 @@ class CreateGroupTeacher extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                HintTextGroups(
+                MainTextGrey(
                   myText: AppStrings.kClassRoomHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
+                  fontSize: AppDimensions.defaultSize * 12,
+                  color: AppColors.kMainGery7A,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -97,7 +90,7 @@ class CreateGroupTeacher extends StatelessWidget {
                 CustomTextFormFiled(
                   hintText: AppStrings.kClassRoomHintTextFiledGroups,
                   textDirection: TextDirection.rtl,
-                  prefixIcon: Icon(Icons.arrow_left_rounded),
+                  prefixIcon: const Icon(Icons.arrow_left_rounded),
                   enabled: false,
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -109,10 +102,10 @@ class CreateGroupTeacher extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 16),
                 ),
-                HintTextGroups(
+                MainTextGrey(
                   myText: AppStrings.kSubjectsHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
+                  fontSize: AppDimensions.defaultSize * 12,
+                  color: AppColors.kMainGery7A,
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 8),
@@ -120,7 +113,7 @@ class CreateGroupTeacher extends StatelessWidget {
                 CustomTextFormFiled(
                   hintText: AppStrings.kSubjectsTextFiledGroups,
                   textDirection: TextDirection.rtl,
-                  prefixIcon: Icon(Icons.arrow_left_rounded),
+                  prefixIcon: const Icon(Icons.arrow_left_rounded),
                   enabled: false,
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -130,7 +123,7 @@ class CreateGroupTeacher extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 112),
+                  height: AppDimensions.getDimensions(requiredHeight: 177),
                 ),
                 MainButtonRed(
                   buttonName: AppStrings.kCreationButtonTextGroups,

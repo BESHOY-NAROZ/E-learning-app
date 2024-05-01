@@ -3,11 +3,11 @@ import 'package:assiut_project/core/app_constants/app_lists.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_grey.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/separator.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_blue.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/separator.dart';
 import 'package:flutter/material.dart';
 
 class BottomSheetForCreationQuestion extends StatefulWidget {
@@ -56,12 +56,12 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
                           SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 6),
                           ),
-                          const Align(
+                          Align(
                             alignment: Alignment.topRight,
                             child: MainTextBlue(
                               myText: AppStrings.kAddQuestionBottomSheet,
                               color: AppColors.kMainBlueC4,
-                              fontSize: 16,
+                              fontSize: AppDimensions.defaultSize * 16,
                             ),
                           ),
                           SizedBox(
@@ -84,7 +84,7 @@ class _BottomSheetForCreationQuestionState extends State<BottomSheetForCreationQ
                                     children: [
                                       MainTextGrey(
                                         myText: AppLists.kCreateQuestionList[index],
-                                        fontSize: 12,
+                                        fontSize: AppDimensions.defaultSize * 12,
                                         fontWeight: FontWeight.w400,
                                         textDirection: TextDirection.rtl,
                                       ),

@@ -5,8 +5,8 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/main_hint_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/close_sign.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/close_sign.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
 import 'package:flutter/material.dart';
 
 class NewOffer extends StatelessWidget {
@@ -16,25 +16,17 @@ class NewOffer extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
-      body: SizedBox(
-        height: AppDimensions.screenHeight,
-        width: AppDimensions.screenWidth,
-        child: Padding(
-          padding: EdgeInsets.only(
-            right: AppDimensions.getDimensions(requiredWidth: 20),
-          ),
+      body: Padding(
+        padding: EdgeInsets.only(
+          right: AppDimensions.getDimensions(requiredWidth: 20),
+        ),
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Padding(
-                padding: EdgeInsets.only(
-                  top: AppDimensions.getDimensions(
-                      requiredHeight: AppDimensions.getDimensions(requiredHeight: 38)),
-                ),
-                child: const CloseSign(),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+              const CloseSign(),
+              Stack(
                 children: [
                   Align(
                     alignment: Alignment.centerLeft,
@@ -47,13 +39,15 @@ class NewOffer extends StatelessWidget {
                           child: Image.asset(AppAssets.kMan)),
                     ),
                   ),
-                  const Spacer(),
-                  Padding(
-                      padding: EdgeInsets.only(
-                        top: AppDimensions.getDimensions(requiredHeight: 300),
-                      ),
-                      child:
-                          const MainTextMainScreen(myText: AppStrings.kMainTextMainScreenNewOffer))
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: Padding(
+                        padding: EdgeInsets.only(
+                          top: AppDimensions.getDimensions(requiredHeight: 300),
+                        ),
+                        child: const MainTextMainScreen(
+                            myText: AppStrings.kMainTextMainScreenNewOffer)),
+                  )
                 ],
               ),
               Padding(
@@ -75,7 +69,9 @@ class NewOffer extends StatelessWidget {
                 myText4: AppStrings.kHintText4TextMainScreenNewOffer,
                 myText5: AppStrings.kHintText5TextMainScreenNewOffer,
               ),
-              const Spacer(),
+              SizedBox(
+                height: AppDimensions.getDimensions(requiredHeight: 77),
+              ),
               Padding(
                 padding: EdgeInsets.only(
                   bottom: AppDimensions.getDimensions(requiredHeight: 40),

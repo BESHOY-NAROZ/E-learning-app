@@ -1,7 +1,7 @@
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/exams_teacher/exams_list.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/exams_teacher/toggle_exams.dart';
 import 'package:flutter/material.dart';

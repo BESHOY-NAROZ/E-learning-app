@@ -92,7 +92,7 @@ class AppStrings {
   static const String kSmallListFirstTextMainScreenHome = 'احمد لطيف';
   static const String kSmallListSecondTextMainScreenHome = 'الاحياء , الكيمياء';
   static const String kBottomNavigationBarMenuMainScreenHome = 'المزيد';
-  static const String kBottomNavigationBarNotificationMainScreenHome = 'الإش'
+  static const String kBottomNavigationBarNotificationMainScreenHome = 'الإشعارات'
       'عارات';
   static const String kBottomNavigationBarUsersMainScreenHome = 'المجموعات';
   static const String kBottomNavigationBarHomeMainScreenHome = 'الرئيسية';
@@ -168,7 +168,12 @@ class AppStrings {
       ' - الفصل الثانى - الدرس الأول';
   static const String kCorrectExamsGroups = 'تصحيح';
   static const String kShowExamsGroups = 'عرض';
-  static const String kCreateGroupGroups = 'إنشاء مجموعة جديد';
+  static const String kStudentsGroups = 'الطلاب';
+  static const String kSentExamsExamsGroups = 'الامتحانات المرسلة';
+  static const String kGroupsStaticsGroups = 'احصائيات المجموعة';
+  static const String kAddNewStudentsGroups = 'إضافة طالب جديد ';
+  static const String kSentAttachmentsGroups = 'المرفقات المرسلة ';
+  static const String kCreateGroupGroups = 'إنشاء مجموعة جديدة';
   static const String kCreateGroupHintTextGroups = 'اسم المجموعة';
   static const String kCreateGroupHintTextFormGroups = 'مجموعة 1';
   static const String kEducationalLevelHintTextGroups = 'المرحلة التعليمية';
@@ -577,7 +582,10 @@ class AppStrings {
   static const String kEGGroupsTeacher = 'ج.م';
   static const String kPurchaseGroupsTeacher = 'تم شراء مادة الاحياء';
   static const String kDatePurchaseGroupsTeacher = ' تاريخ الشراء : 12 اكتوبر 2024';
-
+  static const String kDeleteGroupGroupsTeacher = 'حذف مجموعة';
+  static const String kDeleteGroupHintGroupsTeacher = 'هل انت متأكد انك تريد حذف المجموعة ؟';
+  static const String kDeleteGroupDoneGroupsTeacher = 'تم حذف المجموعة';
+  static const String kDeleteGroupDoneHintGroupsTeacher = 'تم حذف مجموعة ( أ ) من قائمة المجموعات';
   //////////////// Exams Teacher ///////////////////////
   static const String kExamsCreatedExams = 'امتحانات تم انشاؤها';
   static const String kEditExams = 'تعديل';

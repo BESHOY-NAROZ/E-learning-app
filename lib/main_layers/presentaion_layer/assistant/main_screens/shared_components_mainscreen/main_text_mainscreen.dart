@@ -8,6 +8,8 @@ class MainTextMainScreen extends StatelessWidget {
   const MainTextMainScreen({super.key, this.myText});
   @override
   Widget build(BuildContext context) {
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
+
     return Text(
       myText!,
       textAlign: TextAlign.end,

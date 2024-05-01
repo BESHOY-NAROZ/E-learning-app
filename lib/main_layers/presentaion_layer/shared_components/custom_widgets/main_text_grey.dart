@@ -23,6 +23,8 @@ class MainTextGrey extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
+
     return Text(
       myText!,
       textAlign: textAlign ?? TextAlign.end,
