@@ -34,9 +34,12 @@ class SmallButtonMainScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Icon(
-                Icons.arrow_left_outlined,
-                color: AppColors.kSmallButtonTextMainScreenHome,
+              Center(
+                child: Icon(
+                  Icons.arrow_left_outlined,
+                  color: AppColors.kSmallButtonTextMainScreenHome,
+                  size: AppDimensions.getDimensions(requiredHeight: 22),
+                ),
               ),
               Text(
                 myText!,

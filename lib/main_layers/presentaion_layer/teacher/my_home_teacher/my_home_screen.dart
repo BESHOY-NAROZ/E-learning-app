@@ -70,12 +70,12 @@ class _MyHomeTeacherState extends State<MyHomeTeacher> {
                     width: AppDimensions.getDimensions(requiredWidth: 24),
                     height: AppDimensions.getDimensions(requiredHeight: 24),
                     child: Image.asset(
-                      AppAssets.kVector3HomeScreen,
+                      AppAssets.kExamVector,
                       color: MyHomeTeacher.index == 2
                           ? AppColors.kBottomNavigationBarSelectedMainScreenHome
                           : AppColors.kBottomNavigationBarUnSelectedMainScreenHome,
                     )),
-                label: AppStrings.kBottomNavigationBarUsersMainScreenHome),
+                label: AppStrings.kExamsTeacher),
             BottomNavigationBarItem(
                 icon: SizedBox(
                   width: AppDimensions.getDimensions(requiredWidth: 24),

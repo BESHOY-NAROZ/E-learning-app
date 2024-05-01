@@ -637,6 +637,9 @@ class AppStrings {
   static const String kBottomSheetMainExams = 'حذف الامتحان';
   static const String kBottomSheetHintExams = 'هل انت متأكد انك تريد حذف الامتحان ؟';
   static const String kBottomSheetToastExams = 'تم حذف الامتحان';
+  static const String kGpsExams = 'امتحانات  تم انشاؤها من GPS';
+  static const String kTeacherExams = 'امتحانات  المدرس';
+  static const String kExamsTeacher = 'الإمتحانات';
 
   /////////////////// Assistant Of Teacher //////////////////////
   static const String kAssistantsOfTeacher = 'المساعدين';

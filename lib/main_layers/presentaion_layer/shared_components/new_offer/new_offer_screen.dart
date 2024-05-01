@@ -1,4 +1,5 @@
 import 'package:assiut_project/core/app_constants/app_assets.dart';
+import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
@@ -8,8 +9,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/c
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_button_red.dart';
 import 'package:flutter/material.dart';
 
-class RemovedAccount extends StatelessWidget {
-  const RemovedAccount({Key? key}) : super(key: key);
+class NewOffer extends StatelessWidget {
+  const NewOffer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,31 +28,45 @@ class RemovedAccount extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                  top: AppDimensions.getDimensions(requiredHeight: 38),
+                  top: AppDimensions.getDimensions(
+                      requiredHeight: AppDimensions.getDimensions(requiredHeight: 38)),
                 ),
                 child: const CloseSign(),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                      top: AppDimensions.getDimensions(requiredHeight: 60),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                        top: AppDimensions.getDimensions(requiredHeight: 60),
+                      ),
+                      child: SizedBox(
+                          height: AppDimensions.getDimensions(requiredHeight: 308),
+                          child: Image.asset(AppAssets.kMan)),
                     ),
-                    child: SizedBox(
-                        height:
-                            AppDimensions.getDimensions(requiredHeight: 308),
-                        width: AppDimensions.getDimensions(requiredWidth: 200),
-                        child: Image.asset(AppAssets.kWarning)),
                   ),
                   const Spacer(),
                   Padding(
                       padding: EdgeInsets.only(
                         top: AppDimensions.getDimensions(requiredHeight: 300),
                       ),
-                      child: const MainTextMainScreen(
-                          myText: AppStrings.kMainTextMainScreenRemovedAccount))
+                      child:
+                          const MainTextMainScreen(myText: AppStrings.kMainTextMainScreenNewOffer))
                 ],
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: AppDimensions.getDimensions(requiredHeight: 10)),
+                child: Text(
+                  AppStrings.kUnderMainTextMainScreenNewOffer,
+                  style: TextStyle(
+                    fontFamily: 'Almarai',
+                    color: AppColors.kUnderMainTextMainScreenNewOffer,
+                    fontWeight: FontWeight.w700,
+                    fontSize: AppDimensions.defaultSize * 18,
+                  ),
+                ),
               ),
               const MainHintTextMainScreen(
                 myText1: AppStrings.kHintText1TextMainScreenNewOffer,
@@ -69,10 +84,9 @@ class RemovedAccount extends StatelessWidget {
                 child: Center(
                   child: MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(context, RoutesManager.myHome);
+                      Navigator.pushNamed(context, RoutesManager.firstNewVersion);
                     },
-                    buttonName:
-                        AppStrings.kMainButtonTextMainScreenRemovedAccount,
+                    buttonName: AppStrings.kMainButtonTextMainScreenNewOffer,
                   ),
                 ),
               )

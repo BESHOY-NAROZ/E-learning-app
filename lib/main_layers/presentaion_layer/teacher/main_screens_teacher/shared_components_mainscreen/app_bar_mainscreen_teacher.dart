@@ -39,9 +39,9 @@ class AppBarMainScreenTeacher extends StatelessWidget {
                       Navigator.pushNamed(context, RoutesManager.paymentTeacher);
                     },
                     child: SizedBox(
-                      width: AppDimensions.getDimensions(requiredWidth: 50),
-                      height: double.infinity,
+                      height: AppDimensions.getDimensions(requiredHeight: 45),
                       child: Stack(
+                        alignment: Alignment.bottomRight,
                         children: [
                           Icon(
                             Icons.shopping_cart_rounded,
@@ -49,19 +49,17 @@ class AppBarMainScreenTeacher extends StatelessWidget {
                             size: AppDimensions.getDimensions(requiredHeight: 45),
                           ),
                           Positioned(
-                            left: AppDimensions.getDimensions(requiredWidth: 13),
-                            top: AppDimensions.getDimensions(requiredHeight: 18),
                             child: Container(
-                              width: AppDimensions.getDimensions(requiredWidth: 30),
-                              height: AppDimensions.getDimensions(requiredHeight: 30),
+                              width: AppDimensions.getDimensions(requiredHeight: 25),
+                              height: AppDimensions.getDimensions(requiredHeight: 25),
                               alignment: Alignment.center,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: AppColors.kAppBarLogin,
                               ),
                               child: Container(
-                                width: AppDimensions.getDimensions(requiredWidth: 25),
-                                height: AppDimensions.getDimensions(requiredHeight: 25),
+                                width: AppDimensions.getDimensions(requiredWidth: 20),
+                                height: AppDimensions.getDimensions(requiredHeight: 20),
                                 padding: EdgeInsets.zero,
                                 margin: EdgeInsets.zero,
                                 decoration: const BoxDecoration(

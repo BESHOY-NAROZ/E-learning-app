@@ -4,6 +4,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/gr
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/menu_mainscreen/menu_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/notifications_teacher/notifications_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/exams_teacher/exams_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/menu_mainscreen/menu_mainscreen.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +50,7 @@ class AppLists {
   static List<Widget> myTeacherScreens = [
     const MenuMainScreenTeacher(),
     const NotificationsTeacher(),
-    const StudentGroups(),
+    const ExamsTeacher(),
     const HomeMainScreenTeacher(),
   ];
 
@@ -199,5 +200,9 @@ class AppLists {
   static List<String> kEducationLanguageList = [
     AppStrings.kArabicLanguageSheet,
     AppStrings.kEnglishLanguageSheet,
+  ];
+  static List<String> kExamsTypeList = [
+    AppStrings.kGpsExams,
+    AppStrings.kTeacherExams,
   ];
 }

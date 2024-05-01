@@ -110,6 +110,7 @@ class AppColors {
   static const Color kMainGery8D = Color(0xFFADB5BD);
   static const Color kMainGeryDA = Color(0xffCED4DA);
   static const Color kMainBlueAA = Color(0xff0F6EAA);
+  static const Color kMainBlueA8 = Color(0xFF2465A8);
   static const Color kMainBlueC4 = Color(0xFF4A88C4);
   static const Color kMainGeryF6 = Color(0xFFEDEEF6);
   static const Color kMainGery80 = Color(0xFF808080);

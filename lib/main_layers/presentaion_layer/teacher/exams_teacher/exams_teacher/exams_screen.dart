@@ -3,6 +3,7 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/main_text_blue.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/exams_teacher/exams_list.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/exams_teacher/toggle_exams.dart';
 import 'package:flutter/material.dart';
 
 class ExamsTeacher extends StatelessWidget {
@@ -32,6 +33,10 @@ class ExamsTeacher extends StatelessWidget {
                     const MainTextBlue(
                       myText: AppStrings.kExamsCreatedExams,
                     ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 18),
+                    ),
+                    const ToggleButtonsExams(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 18),
                     ),

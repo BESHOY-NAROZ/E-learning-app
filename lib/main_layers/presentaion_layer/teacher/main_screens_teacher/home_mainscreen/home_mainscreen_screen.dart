@@ -100,9 +100,14 @@ class HomeMainScreenTeacher extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          const TeacherHomeWorking(
-                            myText: AppStrings.kCreateGroupHome,
-                            myIcon: AppAssets.kVector3HomeScreen,
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, RoutesManager.createGroupTeacher);
+                            },
+                            child: const TeacherHomeWorking(
+                              myText: AppStrings.kCreateGroupHome,
+                              myIcon: AppAssets.kVector3HomeScreen,
+                            ),
                           ),
                           SizedBox(
                             width: AppDimensions.getDimensions(requiredWidth: 15),
@@ -163,7 +168,6 @@ class HomeMainScreenTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),
-
                     AttachedList(),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
@@ -188,41 +192,17 @@ class HomeMainScreenTeacher extends StatelessWidget {
                         requiredHeight: 16,
                       ),
                     ),
-                    const MoreRowMainScreen(
-                        title: AppStrings.kTrainingCreatedHome, vectorIcon: AppAssets.kExamVector),
+                    MoreRowMainScreen(
+                      title: AppStrings.kTrainingCreatedHome,
+                      vectorIcon: AppAssets.kExamVector,
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.examsTeacher);
+                      },
+                    ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),
                     const BottomListMainScreenTeacher()
-                    // SizedBox(
-                    //   height: AppDimensions.getDimensions(requiredHeight: 16),
-                    // ),
-                    // Padding(
-                    //   padding: EdgeInsets.only(
-                    //     left: AppDimensions.getDimensions(
-                    //       requiredWidth: 16,
-                    //     ),
-                    //     right: AppDimensions.getDimensions(requiredWidth: 16),
-                    //   ),
-                    //   child: Container(
-                    //     width: AppDimensions.getDimensions(
-                    //       requiredWidth: 328,
-                    //     ),
-                    //     height: AppDimensions.getDimensions(requiredHeight: 3),
-                    //     color: AppColors.kSplitterMainScreenHome,
-                    //   ),
-                    // ),
-                    // SizedBox(
-                    //   height: AppDimensions.getDimensions(
-                    //     requiredHeight: 28,
-                    //   ),
-                    // ),
-                    // const MoreRowMainScreen(
-                    //     title: AppStrings.kHintText3MainScreenHome,
-                    //     vectorIcon: AppAssets.kVector3HomeScreen),
-                    // SizedBox(
-                    //   height: AppDimensions.getDimensions(requiredHeight: 15),
-                    // ),
                   ],
                 ),
               ),

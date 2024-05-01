@@ -180,7 +180,7 @@ class MenuMainScreenTeacher extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, RoutesManager.generalSettings);
+                        Navigator.pushNamed(context, RoutesManager.teacherBankTeacher);
                       },
                       child: const MainButtonMainScreenMenu(
                         myTitle: AppStrings.kQuestionsBankHome,

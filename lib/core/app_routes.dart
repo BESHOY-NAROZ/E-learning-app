@@ -26,11 +26,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/st
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/students_profile/student_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/menu_mainscreen/menu_mainscreen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/new_offer/new_offer_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/new_version/first_new_version.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/new_version/second_new_version.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/qr_mainscreen/qr_mainscreen_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/removed_account/removed_account_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/my_home/my_home_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/add_new_number/add_new_number_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/add_new_number/add_new_number_screen.dart';
@@ -146,6 +142,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teac
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/students_profile_teacher/student_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/home_mainscreen/home_mainscreen_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/main_screens_teacher/qr_mainscreen/qr_mainscreen_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/my_home_teacher/my_home_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/discount_done/discount_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/payment_after_discount_teacher/payment_after_discount_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/payment_teacher/payment_methods_teacher/fawry_done.dart';
@@ -161,6 +158,10 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_edi
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/profile_editing_teacher/set_password_profile_editing/set_password_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../main_layers/presentaion_layer/shared_components/new_offer/new_offer_screen.dart';
+import '../main_layers/presentaion_layer/shared_components/new_version/first_new_version.dart';
+import '../main_layers/presentaion_layer/shared_components/new_version/second_new_version.dart';
+import '../main_layers/presentaion_layer/shared_components/removed_account/removed_account_screen.dart';
 import '../main_layers/presentaion_layer/teacher/exams_teacher/correction _exams_teacher/send_to_assistant_teacher/after_adding_screen_teacher.dart';
 
 class RoutesManager {
@@ -240,6 +241,7 @@ class RoutesManager {
   static const String setPasswordDoneTeacher = "/setPasswordDoneTeacher";
   static const String setEmailNowTeacher = "/setEmailNowTeacher";
   static const String setEmailDoneTeacher = "/setEmailDoneTeacher";
+  static const String myHomeTeacher = "/myHomeTeacher";
   static const String contactUSTeacher = "/contactUSTeacher";
   static const String generalSettingsTeacher = "/generalSettingsTeacher";
   static const String inviteFriendsTeacher = "/inviteFriendsTeacher";
@@ -482,6 +484,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SetEmailNowTeacher());
       case RoutesManager.setEmailDoneTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SetEmailDoneTeacher());
+      case RoutesManager.myHomeTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const MyHomeTeacher());
       case RoutesManager.contactUSTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ContactUSTeacher());
       case RoutesManager.generalSettingsTeacher:

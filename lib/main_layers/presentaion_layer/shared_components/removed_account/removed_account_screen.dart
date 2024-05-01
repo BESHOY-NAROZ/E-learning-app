@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 
 class RemovedAccount extends StatelessWidget {
   const RemovedAccount({Key? key}) : super(key: key);
+  final myIndex = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -39,9 +40,7 @@ class RemovedAccount extends StatelessWidget {
                       top: AppDimensions.getDimensions(requiredHeight: 60),
                     ),
                     child: SizedBox(
-                        height:
-                            AppDimensions.getDimensions(requiredHeight: 308),
-                        width: AppDimensions.getDimensions(requiredWidth: 200),
+                        height: AppDimensions.getDimensions(requiredHeight: 308),
                         child: Image.asset(AppAssets.kWarning)),
                   ),
                   const Spacer(),
@@ -69,10 +68,13 @@ class RemovedAccount extends StatelessWidget {
                 child: Center(
                   child: MainButtonRed(
                     onPressed: () {
-                      Navigator.pushNamed(context, RoutesManager.myHome);
+                      if (myIndex == 0) {
+                        Navigator.pushNamed(context, RoutesManager.myHome);
+                      } else {
+                        Navigator.pushNamed(context, RoutesManager.myHomeTeacher);
+                      }
                     },
-                    buttonName:
-                        AppStrings.kMainButtonTextMainScreenRemovedAccount,
+                    buttonName: AppStrings.kMainButtonTextMainScreenRemovedAccount,
                   ),
                 ),
               )
