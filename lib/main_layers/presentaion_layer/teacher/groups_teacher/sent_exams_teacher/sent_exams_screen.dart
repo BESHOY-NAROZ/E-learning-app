@@ -26,57 +26,63 @@ class SentExamsTeacher extends StatelessWidget {
             designWidth: 360,
             myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,
           ),
-          Padding(
-            padding:
-                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 7),
-                ),
-                const MainTextGroups(
-                  myText: AppStrings.kExamsSentToGroupGroups,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 3),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+          Expanded(
+            child: Padding(
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    HintTextGroups(
-                      myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
-                      fontWeight: FontWeight.w700,
-                      fontSize: AppDimensions.defaultSize * 16,
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 7),
+                    ),
+                    const MainTextGroups(
+                      myText: AppStrings.kExamsSentToGroupGroups,
                     ),
                     SizedBox(
-                      width: AppDimensions.getDimensions(requiredWidth: 4),
+                      height: AppDimensions.getDimensions(requiredHeight: 3),
                     ),
-                    HintTextGroups(
-                      myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
-                      fontWeight: FontWeight.w700,
-                      fontSize: AppDimensions.defaultSize * 16,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        HintTextGroups(
+                          myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
+                          fontWeight: FontWeight.w700,
+                          fontSize: AppDimensions.defaultSize * 16,
+                        ),
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 4),
+                        ),
+                        HintTextGroups(
+                          myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
+                          fontWeight: FontWeight.w700,
+                          fontSize: AppDimensions.defaultSize * 16,
+                        ),
+                      ],
                     ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 35),
+                    ),
+                    ListView.separated(
+                        padding: EdgeInsets.zero,
+                        shrinkWrap: true,
+                        physics: const BouncingScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return const ExamsSentListTeacher();
+                        },
+                        separatorBuilder: (context, index) {
+                          return SizedBox(
+                            height: AppDimensions.getDimensions(requiredHeight: 15),
+                          );
+                        },
+                        itemCount: 3),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 15),
+                    )
                   ],
                 ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 35),
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 530),
-                  child: ListView.separated(
-                      padding: EdgeInsets.zero,
-                      itemBuilder: (context, index) {
-                        return const ExamsSentListTeacher();
-                      },
-                      separatorBuilder: (context, index) {
-                        return SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 15),
-                        );
-                      },
-                      itemCount: 3),
-                )
-              ],
+              ),
             ),
           ),
         ],

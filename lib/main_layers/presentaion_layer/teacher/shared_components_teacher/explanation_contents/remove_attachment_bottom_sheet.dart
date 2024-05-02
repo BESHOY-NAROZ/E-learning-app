@@ -29,7 +29,7 @@ class RemoveAttachmentBottomSheet extends StatelessWidget {
                 builder: (context) {
                   return Container(
                     width: AppDimensions.getDimensions(requiredWidth: 360),
-                    height: AppDimensions.getDimensions(requiredHeight: 190),
+                    height: AppDimensions.getDimensions(requiredHeight: 165),
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
                         color: AppColors.kMainTextWhite, borderRadius: BorderRadius.circular(20)),
@@ -42,14 +42,14 @@ class RemoveAttachmentBottomSheet extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           MainTextBlack(
-                            myText: AppStrings.kMainDeleteAccount,
+                            myText: AppStrings.kDeleteFileAccount,
                             fontSize: AppDimensions.defaultSize * 18,
                           ),
                           SizedBox(
                             height: AppDimensions.getDimensions(requiredHeight: 14),
                           ),
                           MainTextGrey(
-                            myText: AppStrings.kHintDeleteAccount,
+                            myText: AppStrings.kHintDeleteFileAccount,
                             color: AppColors.kDetailsProfileEditing,
                             fontSize: AppDimensions.defaultSize * 14,
                             fontWeight: FontWeight.w400,

@@ -2,6 +2,7 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class FourButtonsGroups extends StatelessWidget {
@@ -23,7 +24,9 @@ class FourButtonsGroups extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesManager.sentExamsTeacher);
+                  },
                   padding: const EdgeInsets.all(0),
                   icon: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +61,9 @@ class FourButtonsGroups extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesManager.groupStatisticsTeacher);
+                  },
                   padding: const EdgeInsets.all(0),
                   icon: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -99,7 +104,9 @@ class FourButtonsGroups extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesManager.addNewStudentTeacher);
+                  },
                   padding: const EdgeInsets.all(0),
                   icon: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -134,7 +141,9 @@ class FourButtonsGroups extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesManager.attachmentsSentToGroupTeacher);
+                  },
                   padding: const EdgeInsets.all(0),
                   icon: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

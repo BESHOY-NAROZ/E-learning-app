@@ -4,14 +4,13 @@ import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/shared_components_teacher/explanation_contents/explanation_contents.dart';
 import 'package:flutter/material.dart';
 
-class EditAttachmentsTeacher extends StatelessWidget {
-  const EditAttachmentsTeacher({Key? key}) : super(key: key);
+class ExplanationAttachedTeacher extends StatelessWidget {
+  const ExplanationAttachedTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class EditAttachmentsTeacher extends StatelessWidget {
           const MainAppBar(
             designHeight: 1006,
             designWidth: 360,
-            myTitle: AppStrings.kUploadAttachedAddNewAttached,
+            myTitle: AppStrings.kExplanationAttachedTeacher,
           ),
           Expanded(
             child: Padding(
@@ -120,12 +119,6 @@ class EditAttachmentsTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 90),
                     ),
-                    MainButtonRed(
-                      buttonName: AppStrings.kSentButtonExams,
-                      onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.sendAttachmentsTeacher);
-                      },
-                    )
                   ],
                 ),
               ),

@@ -264,6 +264,14 @@ class AppStrings {
 ///////////////////////////////CommonFiles/////////////////////
 
   static const String kContactUsCommon = 'تواصل معنا';
+  static const String kNameCommon = 'مجدى نمر جاد الكريم';
+  static const String kRequestCommon = 'أرسل لك طلب إضافة كطالب ؟';
+  static const String kAcceptCommon = 'قبول';
+  static const String kCancelCommon = 'رفض';
+  static const String kAcceptDoneCommon = 'تم قبول الطالب';
+  static const String kAcceptDoneButtonCommon = 'اضافة الى المجموعة';
+  static const String kAcceptDoneHintCommon =
+      'تم قبول طلب اضافة الطالب مولر مجدى \nيمكنك الان اضفة الطالب الى مجموعة ';
   static const String kContactUsMainTextCommon = 'تواصل الأن من خلال';
   static const String kEmailCommon = 'Example@GPS.com';
   static const String kPhoneCommon = '+20 1234 5484 65';
@@ -423,6 +431,8 @@ class AppStrings {
   static const String kEducationLanguageSheet = 'شعبة التعليم';
   static const String kArabicLanguageSheet = 'عربى';
   static const String kEnglishLanguageSheet = 'لغات';
+  static const String kDeleteAttachmentSheet = 'حذف مرفق';
+  static const String kDeleteAttachmentHintSheet = 'هل انت متأكد انك تريد حذف المرفق ؟';
 
   static const String kFromGallerySheet = 'اضافة من المعرض';
   static const String kMainRemoveSheet = 'حذف رقم الهاتف';
@@ -452,6 +462,8 @@ class AppStrings {
   static const String kHintDeleteAccount = 'هل انت متأكد انك تريد حذف الحساب ؟';
   static const String kActualDeleteAccount = 'حذف';
   static const String kBackDeleteAccount = 'تراجع';
+  static const String kDeleteFileAccount = 'حذف الملف';
+  static const String kHintDeleteFileAccount = 'هل انت متأكد انك تريد حذف الملف ؟';
 
 ///////////// Toast ///////////////
   static const String kDeleteToast = 'تم حذف الحساب';
@@ -648,6 +660,8 @@ class AppStrings {
   static const String kGpsExams = 'امتحانات  تم انشاؤها من GPS';
   static const String kTeacherExams = 'امتحانات  المدرس';
   static const String kExamsTeacher = 'الإمتحانات';
+  static const String kExplanationAttachedTeacher = 'مرفق الشرح';
+  static const String kAttachmentsSentTeacher = 'المرفقات المرسلة  الى المجموعة';
 
   /////////////////// Assistant Of Teacher //////////////////////
   static const String kAssistantsOfTeacher = 'المساعدين';
@@ -971,6 +985,8 @@ class AppStrings {
   static const String sendCanceledHintAttached =
       'تم حذف مرفق من قائمة المرفقات المرسلة الى مجموعة 1';
   static const String sendCanceledButtonAttached = 'العودة الى المرفقات';
+  static const String kUpdateAttached = 'تعديل الشرح';
+  static const String kUpdateDoneAttached = 'تم تعديل الشرح';
 
   /////// Splash screen ////////
 

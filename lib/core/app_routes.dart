@@ -69,6 +69,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explain
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/edit_attachments_teacher/edit_attachments_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/send_explanation_attachments_teacher/send_attachments_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/send_explanation_attachments_teacher/send_attachments_screen_teacher.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/update_explanation_teacher/update_explanation_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/upload_new_attached_teacher/upload_attached_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_explainings_teacher/upload_new_attached_teacher/upload_new_attached_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/add_question_teacher/add_question_specific_subject_teacher/add_question_specific_subject_teacher_screen.dart';
@@ -96,6 +97,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_file
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/general%20_settings_teacher/general%20_settings_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/help_teacher/help_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/invite_friends_teacher/invite_friends_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/notifications_teacher/accept_request_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/points_program_teacher/add_points_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/points_program_teacher/points_program_teacher_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/common_files_teacher/purchases_teacher/purchases_teacher_screen.dart';
@@ -130,10 +132,13 @@ import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teac
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/add_new_student_teacher/add_new_student_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/add_new_student_teacher/after_scan_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/add_new_student_teacher/remove_order_joining.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/attachments_sent_to_the_group_teacher/attachments_sent_to_the_group_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/attachments_sent_to_the_group_teacher/remove_specific_attachment_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/create_group_teacher/create_group_done.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher'
     '/create_group_teacher'
     '/create_group_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/explanation_attached_teacher/explanation_attached_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/group_details_teacher/group_details_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/group_statistics_teacher/group_statistics_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/groups_teacher/groups_students_teacher/remove_group_done.dart';
@@ -330,6 +335,11 @@ class RoutesManager {
   static const String sendAttachmentsTeacher = "/sendAttachmentsTeacher";
   static const String sendAttachmentsDoneTeacher = "/sendAttachmentsDoneTeacher";
   static const String removeAttachmentsDoneTeacher = "/removeAttachmentsDoneTeacher";
+  static const String attachmentsSentToGroupTeacher = "/attachmentsSentToGroupTeacher";
+  static const String removeSpecificAttachmentDoneTeacher = "/removeSpecificAttachmentDoneTeacher";
+  static const String updateExplanation = "/updateExplanation";
+  static const String explanationAttachedTeacher = "/explanationAttachedTeacher";
+  static const String acceptRequestDoneTeacher = "/acceptRequestDoneTeacher";
 }
 
 class RoutesGenerator {
@@ -670,6 +680,17 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SendAttachmentsDoneTeacher());
       case RoutesManager.removeAttachmentsDoneTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const RemoveAttachmentsDoneTeacher());
+      case RoutesManager.attachmentsSentToGroupTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AttachmentsSentToGroupTeacher());
+      case RoutesManager.removeSpecificAttachmentDoneTeacher:
+        return PageRouteBuilder(
+            pageBuilder: (_, __, ___) => const RemoveSpecificAttachmentDoneTeacher());
+      case RoutesManager.updateExplanation:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const UpdateExplanation());
+      case RoutesManager.explanationAttachedTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ExplanationAttachedTeacher());
+      case RoutesManager.acceptRequestDoneTeacher:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AcceptRequestDoneTeacher());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

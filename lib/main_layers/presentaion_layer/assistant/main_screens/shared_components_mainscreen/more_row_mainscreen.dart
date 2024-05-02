@@ -18,7 +18,7 @@ class MoreRowMainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
@@ -40,12 +40,11 @@ class MoreRowMainScreen extends StatelessWidget {
           width: AppDimensions.getDimensions(requiredWidth: 3.42),
         ),
         SizedBox(
-          width: AppDimensions.getDimensions(requiredWidth: 23.3),
-          height: AppDimensions.getDimensions(requiredHeight: 19.3),
           child: Image.asset(
             vectorIcon!,
-            height: AppDimensions.getDimensions(requiredHeight: 19.3),
-            width: AppDimensions.getDimensions(requiredWidth: 23.3),
+            height: AppDimensions.getDimensions(requiredHeight: 20),
+            width: AppDimensions.getDimensions(requiredHeight: 20),
+            fit: BoxFit.fill,
           ),
         ),
       ],

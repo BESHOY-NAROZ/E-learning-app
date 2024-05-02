@@ -17,10 +17,11 @@ class CloseSign extends StatelessWidget {
         onTap: () {
           Navigator.pop(context);
         },
-        child: const Icon(Icons.close_rounded,
-          size: 30,
-          weight: 100
-          ,color: AppColors.kResetPasswordDone,
+        child: Icon(
+          Icons.close_rounded,
+          size: AppDimensions.defaultSize * 30,
+          weight: 100,
+          color: AppColors.kResetPasswordDone,
         ),
       ),
     );

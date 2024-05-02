@@ -10,7 +10,7 @@ class ExamsGrades extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1108, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Column(
       children: [
@@ -34,25 +34,24 @@ class ExamsGrades extends StatelessWidget {
         SizedBox(
           height: AppDimensions.getDimensions(requiredHeight: 15),
         ),
-        SizedBox(
-          height: AppDimensions.getDimensions(requiredHeight: 180),
-          child: ListView.separated(
-              padding: EdgeInsets.zero,
-              itemBuilder: (context, index) {
-                return const MainResultContainer(
-                  topLeftText: AppStrings.kResultGroups,
-                  bottomLeftText: AppStrings.kActualResultGroups,
-                  topRightText: AppStrings.kTransitionalElementsGroups,
-                  bottomRightText: AppStrings.kHintTextStatisticsGroups,
-                );
-              },
-              separatorBuilder: (context, index) {
-                return SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                );
-              },
-              itemCount: 2),
-        ),
+        ListView.separated(
+            shrinkWrap: true,
+            physics: const BouncingScrollPhysics(),
+            padding: EdgeInsets.zero,
+            itemBuilder: (context, index) {
+              return const MainResultContainer(
+                topLeftText: AppStrings.kResultGroups,
+                bottomLeftText: AppStrings.kActualResultGroups,
+                topRightText: AppStrings.kTransitionalElementsGroups,
+                bottomRightText: AppStrings.kHintTextStatisticsGroups,
+              );
+            },
+            separatorBuilder: (context, index) {
+              return SizedBox(
+                height: AppDimensions.getDimensions(requiredHeight: 8),
+              );
+            },
+            itemCount: 3),
       ],
     );
   }

@@ -161,7 +161,7 @@ class HomeMainScreenTeacher extends StatelessWidget {
                     ),
                     MoreRowMainScreen(
                         onTap: () {
-                          Navigator.pushNamed(context, RoutesManager.addNewAttachedTeacher);
+                          Navigator.pushNamed(context, RoutesManager.allAttachmentsTeacher);
                         },
                         title: AppStrings.kAttachedHome,
                         vectorIcon: AppAssets.kPlay),
@@ -202,7 +202,10 @@ class HomeMainScreenTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),
-                    const BottomListMainScreenTeacher()
+                    const BottomListMainScreenTeacher(),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 15),
+                    ),
                   ],
                 ),
               ),

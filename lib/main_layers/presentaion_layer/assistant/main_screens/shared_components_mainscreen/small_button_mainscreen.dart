@@ -14,7 +14,7 @@ class SmallButtonMainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1006, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Container(
         width: AppDimensions.getDimensions(requiredWidth: 61.43),
@@ -43,6 +43,7 @@ class SmallButtonMainScreen extends StatelessWidget {
               ),
               Text(
                 myText!,
+                textAlign: TextAlign.start,
                 style: TextStyle(
                     fontFamily: 'Almarai',
                     color: AppColors.kSmallButtonTextMainScreenHome,

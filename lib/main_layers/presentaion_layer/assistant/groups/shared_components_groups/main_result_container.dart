@@ -22,11 +22,11 @@ class MainResultContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppDimensions.init(context: context, designHeight: 1108, designWidth: 360);
+    AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Container(
       padding: EdgeInsets.zero,
-      height: AppDimensions.getDimensions(requiredHeight: 80),
+      height: AppDimensions.getDimensions(requiredHeight: 57),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       decoration: BoxDecoration(
           color: AppColors.kSentExamsContainerGroups, borderRadius: BorderRadius.circular(8)),
@@ -44,7 +44,9 @@ class MainResultContainer extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: AppColors.kSentGreyTextGroups),
               ),
-              Spacer(),
+              SizedBox(
+                height: AppDimensions.getDimensions(requiredHeight: 8),
+              ),
               MainTextGreen(
                 myText: bottomLeftText,
                 fontSize: AppDimensions.defaultSize * 20,
@@ -60,8 +62,8 @@ class MainResultContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(5, (index) {
                 return Container(
-                  width: AppDimensions.getDimensions(requiredWidth: 2),
-                  height: AppDimensions.getDimensions(requiredHeight: 10),
+                  width: AppDimensions.getDimensions(requiredHeight: 2),
+                  height: AppDimensions.getDimensions(requiredHeight: 8),
                   color: AppColors.kHintTextMainScreenHome,
                 );
               }),

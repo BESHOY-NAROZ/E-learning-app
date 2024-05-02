@@ -1,14 +1,15 @@
+import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/hint_text_groups.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/main_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
 import 'package:flutter/material.dart';
 
-import 'test_statistics_list.dart';
+import 'main_attachments_sent_list.dart';
 
-class GroupStatisticsTeacher extends StatelessWidget {
-  const GroupStatisticsTeacher({Key? key}) : super(key: key);
+class AttachmentsSentToGroupTeacher extends StatelessWidget {
+  const AttachmentsSentToGroupTeacher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,56 +24,55 @@ class GroupStatisticsTeacher extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding:
-                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 7),
+                      height: AppDimensions.getDimensions(requiredHeight: 21),
                     ),
-                    const MainTextGroups(
-                      myText: AppStrings.kGroupStatisticsGroups,
+                    MainTextBlack(
+                      myText: AppStrings.kAttachmentsSentTeacher,
+                      fontSize: AppDimensions.defaultSize * 20,
+                      color: AppColors.kMainBlack,
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 3),
+                      height: AppDimensions.getDimensions(requiredHeight: 5),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        HintTextGroups(
+                        const MainTextGrey(
                           myText: AppStrings.kBottomListGroupNumberHomeMainScreenHome,
-                          fontWeight: FontWeight.w700,
-                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                         SizedBox(
                           width: AppDimensions.getDimensions(requiredWidth: 4),
                         ),
-                        HintTextGroups(
+                        const MainTextGrey(
                           myText: AppStrings.kBottomListFirstTextHomeMainScreenHome,
-                          fontWeight: FontWeight.w700,
-                          fontSize: AppDimensions.defaultSize * 16,
                         ),
                       ],
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 35),
+                      height: AppDimensions.getDimensions(requiredHeight: 24),
                     ),
                     ListView.separated(
-                        padding: EdgeInsets.zero,
                         shrinkWrap: true,
-                        physics: const NeverScrollableScrollPhysics(),
+                        padding: EdgeInsets.zero,
+                        physics: const BouncingScrollPhysics(),
                         itemBuilder: (context, index) {
-                          return const TestStatisticsListTeacher();
+                          return const MainAttachmentsSentList();
                         },
                         separatorBuilder: (context, index) {
                           return SizedBox(
-                            height: AppDimensions.getDimensions(requiredHeight: 15),
+                            height: AppDimensions.getDimensions(requiredHeight: 8),
                           );
                         },
-                        itemCount: 9),
-                    SizedBox(height: AppDimensions.getDimensions(requiredHeight: 15)),
+                        itemCount: 5),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 14),
+                    ),
                   ],
                 ),
               ),
