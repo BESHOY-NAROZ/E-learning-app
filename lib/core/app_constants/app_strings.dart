@@ -92,8 +92,7 @@ class AppStrings {
   static const String kSmallListFirstTextMainScreenHome = 'احمد لطيف';
   static const String kSmallListSecondTextMainScreenHome = 'الاحياء , الكيمياء';
   static const String kBottomNavigationBarMenuMainScreenHome = 'المزيد';
-  static const String kBottomNavigationBarNotificationMainScreenHome = 'الإشعارات'
-      'عارات';
+  static const String kBottomNavigationBarNotificationMainScreenHome = 'الإشعارات';
   static const String kBottomNavigationBarUsersMainScreenHome = 'المجموعات';
   static const String kBottomNavigationBarHomeMainScreenHome = 'الرئيسية';
   static const String kBottomListFirstTextHomeMainScreenHome = 'مجموعة';
