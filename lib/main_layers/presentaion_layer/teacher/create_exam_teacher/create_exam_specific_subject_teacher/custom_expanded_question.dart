@@ -264,14 +264,20 @@ class CustomExpandedLessons extends StatelessWidget {
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 8),
                     ),
-                    Checkbox(
-                      value: false,
-                      side: const BorderSide(
-                        color: AppColors.kMainBlueAA,
-                      ),
-                      activeColor: AppColors.kMainBlueAA,
-                      onChanged: (value) {},
-                    ),
+                    SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 20),
+                        width: AppDimensions.getDimensions(requiredHeight: 20),
+                        child: Transform.scale(
+                          scale: AppDimensions.defaultSize * 1,
+                          child: Checkbox(
+                            value: false,
+                            side: const BorderSide(
+                              color: AppColors.kMainBlueAA,
+                            ),
+                            activeColor: AppColors.kMainBlueAA,
+                            onChanged: (value) {},
+                          ),
+                        ))
                   ],
                 ),
               ),

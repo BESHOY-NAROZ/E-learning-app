@@ -1,6 +1,6 @@
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/core/app_routes.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/splash_screen/splash_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/my_home_teacher/my_home_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppHome extends StatelessWidget {
@@ -16,7 +16,7 @@ class AppHome extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RoutesGenerator.getRoute,
-      home: SplashScreen(),
+      home: MyHomeTeacher(),
     );
   }
 }

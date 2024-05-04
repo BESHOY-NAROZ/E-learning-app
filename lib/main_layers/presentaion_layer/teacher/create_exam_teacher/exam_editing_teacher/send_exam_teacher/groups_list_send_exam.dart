@@ -100,16 +100,13 @@ class SendExamTeacherList extends StatelessWidget {
                     height: AppDimensions.getDimensions(requiredHeight: 50),
                     width: AppDimensions.getDimensions(requiredWidth: 150),
                     child: Stack(
+                      alignment: Alignment.centerRight,
                       children: [
                         Positioned(
-                          right: AppDimensions.getDimensions(requiredWidth: -10),
+                          right: AppDimensions.getDimensions(
+                            requiredHeight: 0,
+                          ),
                           child: Container(
-                            margin: EdgeInsets.only(
-                                left: AppDimensions.getDimensions(requiredWidth: 17),
-                                right: AppDimensions.getDimensions(requiredWidth: 13)),
-                            width: AppDimensions.getDimensions(
-                              requiredWidth: 40,
-                            ),
                             height: AppDimensions.getDimensions(
                               requiredHeight: 40,
                             ),
@@ -122,14 +119,10 @@ class SendExamTeacherList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          right: AppDimensions.getDimensions(requiredWidth: 15),
+                          right: AppDimensions.getDimensions(
+                            requiredHeight: 25,
+                          ),
                           child: Container(
-                            margin: EdgeInsets.only(
-                                left: AppDimensions.getDimensions(requiredWidth: 17),
-                                right: AppDimensions.getDimensions(requiredWidth: 13)),
-                            width: AppDimensions.getDimensions(
-                              requiredWidth: 40,
-                            ),
                             height: AppDimensions.getDimensions(
                               requiredHeight: 40,
                             ),
@@ -142,14 +135,10 @@ class SendExamTeacherList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          right: AppDimensions.getDimensions(requiredWidth: 40),
+                          right: AppDimensions.getDimensions(
+                            requiredHeight: 50,
+                          ),
                           child: Container(
-                            margin: EdgeInsets.only(
-                                left: AppDimensions.getDimensions(requiredWidth: 17),
-                                right: AppDimensions.getDimensions(requiredWidth: 13)),
-                            width: AppDimensions.getDimensions(
-                              requiredWidth: 40,
-                            ),
                             height: AppDimensions.getDimensions(
                               requiredHeight: 40,
                             ),
@@ -162,14 +151,10 @@ class SendExamTeacherList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          right: AppDimensions.getDimensions(requiredWidth: 65),
+                          right: AppDimensions.getDimensions(
+                            requiredHeight: 75,
+                          ),
                           child: Container(
-                            margin: EdgeInsets.only(
-                                left: AppDimensions.getDimensions(requiredWidth: 17),
-                                right: AppDimensions.getDimensions(requiredWidth: 13)),
-                            width: AppDimensions.getDimensions(
-                              requiredWidth: 40,
-                            ),
                             height: AppDimensions.getDimensions(
                               requiredHeight: 40,
                             ),
@@ -182,14 +167,10 @@ class SendExamTeacherList extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          right: AppDimensions.getDimensions(requiredWidth: 90),
+                          right: AppDimensions.getDimensions(
+                            requiredHeight: 100,
+                          ),
                           child: Container(
-                            margin: EdgeInsets.only(
-                                left: AppDimensions.getDimensions(requiredWidth: 17),
-                                right: AppDimensions.getDimensions(requiredWidth: 13)),
-                            width: AppDimensions.getDimensions(
-                              requiredWidth: 40,
-                            ),
                             height: AppDimensions.getDimensions(
                               requiredHeight: 40,
                             ),
@@ -200,7 +181,7 @@ class SendExamTeacherList extends StatelessWidget {
                                     color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
                             child: Image.asset(AppAssets.kStudentGroupsScreen),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

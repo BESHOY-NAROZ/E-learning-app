@@ -31,16 +31,21 @@ class StudentsGroupsListExams extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Align(
-              alignment: Alignment.topLeft,
-              child: Checkbox(
-                value: true,
-                side: const BorderSide(
-                  color: AppColors.kMainBlueAA,
-                ),
-                activeColor: AppColors.kMainBlueAA,
-                onChanged: (value) {},
-              ),
-            ),
+                alignment: Alignment.topLeft,
+                child: SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 20),
+                    width: AppDimensions.getDimensions(requiredHeight: 20),
+                    child: Transform.scale(
+                      scale: AppDimensions.defaultSize * 1,
+                      child: Checkbox(
+                        value: true,
+                        side: const BorderSide(
+                          color: AppColors.kMainBlueAA,
+                        ),
+                        activeColor: AppColors.kMainBlueAA,
+                        onChanged: (value) {},
+                      ),
+                    ))),
             const Spacer(),
             Padding(
               padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),

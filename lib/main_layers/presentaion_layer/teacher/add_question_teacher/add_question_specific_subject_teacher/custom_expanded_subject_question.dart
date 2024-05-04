@@ -55,18 +55,25 @@ class _CustomExpandedSubjectsState extends State<CustomExpandedSubjects> {
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 8),
                     ),
-                    Checkbox(
-                      value: AppLists.kBoolUnitsForExams[index],
-                      side: const BorderSide(
-                        color: AppColors.kMainBlueAA,
-                      ),
-                      activeColor: AppColors.kMainBlueAA,
-                      onChanged: (value) {
-                        setState(() {
-                          AppLists.kBoolUnitsForExams[index] = !AppLists.kBoolUnitsForExams[index];
-                        });
-                      },
-                    ),
+                    SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 20),
+                        width: AppDimensions.getDimensions(requiredHeight: 20),
+                        child: Transform.scale(
+                          scale: AppDimensions.defaultSize * 1,
+                          child: Checkbox(
+                            value: AppLists.kBoolUnitsForExams[index],
+                            side: const BorderSide(
+                              color: AppColors.kMainBlueAA,
+                            ),
+                            activeColor: AppColors.kMainBlueAA,
+                            onChanged: (value) {
+                              setState(() {
+                                AppLists.kBoolUnitsForExams[index] =
+                                    !AppLists.kBoolUnitsForExams[index];
+                              });
+                            },
+                          ),
+                        ))
                   ],
                 ),
               ),
@@ -128,19 +135,25 @@ class _CustomExpandedClassesState extends State<CustomExpandedClasses> {
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 8),
                     ),
-                    Checkbox(
-                      value: AppLists.kBoolClassesForExams[index],
-                      side: const BorderSide(
-                        color: AppColors.kMainBlueAA,
-                      ),
-                      activeColor: AppColors.kMainBlueAA,
-                      onChanged: (value) {
-                        setState(() {
-                          AppLists.kBoolClassesForExams[index] =
-                              !AppLists.kBoolClassesForExams[index];
-                        });
-                      },
-                    ),
+                    SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 20),
+                        width: AppDimensions.getDimensions(requiredHeight: 20),
+                        child: Transform.scale(
+                          scale: AppDimensions.defaultSize * 1,
+                          child: Checkbox(
+                            value: AppLists.kBoolClassesForExams[index],
+                            side: const BorderSide(
+                              color: AppColors.kMainBlueAA,
+                            ),
+                            activeColor: AppColors.kMainBlueAA,
+                            onChanged: (value) {
+                              setState(() {
+                                AppLists.kBoolClassesForExams[index] =
+                                    !AppLists.kBoolClassesForExams[index];
+                              });
+                            },
+                          ),
+                        ))
                   ],
                 ),
               ),
@@ -200,18 +213,25 @@ class _CustomExpandedPartsState extends State<CustomExpandedParts> {
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 8),
                     ),
-                    Checkbox(
-                      value: AppLists.kBoolPartsForExams[index],
-                      side: const BorderSide(
-                        color: AppColors.kMainBlueAA,
-                      ),
-                      activeColor: AppColors.kMainBlueAA,
-                      onChanged: (value) {
-                        setState(() {
-                          AppLists.kBoolPartsForExams[index] = !AppLists.kBoolPartsForExams[index];
-                        });
-                      },
-                    ),
+                    SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 20),
+                        width: AppDimensions.getDimensions(requiredHeight: 20),
+                        child: Transform.scale(
+                          scale: AppDimensions.defaultSize * 1,
+                          child: Checkbox(
+                            value: AppLists.kBoolPartsForExams[index],
+                            side: const BorderSide(
+                              color: AppColors.kMainBlueAA,
+                            ),
+                            activeColor: AppColors.kMainBlueAA,
+                            onChanged: (value) {
+                              setState(() {
+                                AppLists.kBoolPartsForExams[index] =
+                                    !AppLists.kBoolPartsForExams[index];
+                              });
+                            },
+                          ),
+                        ))
                   ],
                 ),
               ),
@@ -264,14 +284,20 @@ class CustomExpandedLessons extends StatelessWidget {
                     SizedBox(
                       width: AppDimensions.getDimensions(requiredWidth: 8),
                     ),
-                    Checkbox(
-                      value: false,
-                      side: const BorderSide(
-                        color: AppColors.kMainBlueAA,
-                      ),
-                      activeColor: AppColors.kMainBlueAA,
-                      onChanged: (value) {},
-                    ),
+                    SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 20),
+                        width: AppDimensions.getDimensions(requiredHeight: 20),
+                        child: Transform.scale(
+                          scale: AppDimensions.defaultSize * 1,
+                          child: Checkbox(
+                            value: false,
+                            side: const BorderSide(
+                              color: AppColors.kMainBlueAA,
+                            ),
+                            activeColor: AppColors.kMainBlueAA,
+                            onChanged: (value) {},
+                          ),
+                        ))
                   ],
                 ),
               ),

@@ -36,13 +36,16 @@ class ExamsCreatedListTeacher extends StatelessWidget {
                   child: SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 20),
                     width: AppDimensions.getDimensions(requiredWidth: 20),
-                    child: Checkbox(
-                      value: true,
-                      side: const BorderSide(
-                        color: AppColors.kMainBlueAA,
+                    child: Transform.scale(
+                      scale: AppDimensions.defaultSize * 1,
+                      child: Checkbox(
+                        value: true,
+                        side: const BorderSide(
+                          color: AppColors.kMainBlueAA,
+                        ),
+                        activeColor: AppColors.kMainBlueAA,
+                        onChanged: (value) {},
                       ),
-                      activeColor: AppColors.kMainBlueAA,
-                      onChanged: (value) {},
                     ),
                   ),
                 ),

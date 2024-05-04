@@ -39,161 +39,176 @@ class BottomListMainScreen extends StatelessWidget {
               padding: EdgeInsets.only(
                 left: AppDimensions.getDimensions(requiredWidth: 13),
                 right: AppDimensions.getDimensions(requiredWidth: 11),
-                top: AppDimensions.getDimensions(requiredHeight: 8),
-                bottom: AppDimensions.getDimensions(requiredHeight: 5),
               ),
-              child: Stack(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Positioned(
-                    top: AppDimensions.getDimensions(requiredWidth: 3),
-                    left: AppDimensions.getDimensions(requiredWidth: 0),
-                    child: Container(
-                      margin: EdgeInsets.only(
-                          left: AppDimensions.getDimensions(requiredWidth: 17),
-                          right: AppDimensions.getDimensions(requiredWidth: 13)),
-                      width: AppDimensions.getDimensions(
-                        requiredWidth: 40,
-                      ),
-                      height: AppDimensions.getDimensions(
-                        requiredHeight: 40,
-                      ),
-                      decoration: BoxDecoration(
-                          color: AppColors.kAppBarPhotoMainScreenHome,
-                          shape: BoxShape.circle,
-                          border:
-                              Border.all(color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
-                    ),
-                  ),
-                  Positioned(
-                    top: AppDimensions.getDimensions(requiredWidth: 3),
-                    left: AppDimensions.getDimensions(requiredWidth: -10),
-                    child: Container(
-                      margin: EdgeInsets.only(
-                          left: AppDimensions.getDimensions(requiredWidth: 17),
-                          right: AppDimensions.getDimensions(requiredWidth: 13)),
-                      width: AppDimensions.getDimensions(
-                        requiredWidth: 40,
-                      ),
-                      height: AppDimensions.getDimensions(
-                        requiredHeight: 40,
-                      ),
-                      decoration: BoxDecoration(
-                          color: AppColors.kAppBarPhotoMainScreenHome,
-                          shape: BoxShape.circle,
-                          border:
-                              Border.all(color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
-                    ),
-                  ),
-                  Positioned(
-                    top: AppDimensions.getDimensions(requiredWidth: 3),
-                    left: AppDimensions.getDimensions(requiredWidth: -20),
-                    child: Container(
-                      margin: EdgeInsets.only(
-                          left: AppDimensions.getDimensions(requiredWidth: 17),
-                          right: AppDimensions.getDimensions(requiredWidth: 13)),
-                      width: AppDimensions.getDimensions(
-                        requiredWidth: 40,
-                      ),
-                      height: AppDimensions.getDimensions(
-                        requiredHeight: 40,
-                      ),
-                      decoration: BoxDecoration(
-                          color: AppColors.kBottomBottomListUsersMainScreenHome,
-                          shape: BoxShape.circle,
-                          border:
-                              Border.all(color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
-                      child: const Center(
-                          child: Text(
-                        AppStrings.kBottomListNumberOfUsersHomeMainScreenHome,
-                        style: TextStyle(color: AppColors.kBottomAppBarMainScreenHome),
-                      )),
-                    ),
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text(
-                            AppStrings.kBottomListGroupNumberHomeMainScreenHome,
-                            style: TextStyle(
-                                fontFamily: 'Almarai',
-                                color: AppColors.kSmallListFirstTextMainScreenHome,
-                                fontWeight: FontWeight.w700,
-                                fontSize: AppDimensions.defaultSize * 16),
-                          ),
-                          SizedBox(
-                            width: AppDimensions.getDimensions(requiredWidth: 8),
-                          ),
-                          Text(
-                            AppStrings.kBottomListFirstTextHomeMainScreenHome,
-                            style: TextStyle(
-                                fontFamily: 'Almarai',
-                                color: AppColors.kSmallListFirstTextMainScreenHome,
-                                fontWeight: FontWeight.w700,
-                                fontSize: AppDimensions.defaultSize * 16),
-                          ),
-                        ],
+                      SizedBox(
+                        height: AppDimensions.getDimensions(requiredHeight: 30),
+                        width: AppDimensions.getDimensions(requiredWidth: 90),
+                        child: Stack(
+                          alignment: Alignment.centerLeft,
+                          children: [
+                            Positioned(
+                              right: AppDimensions.getDimensions(
+                                requiredHeight: 0,
+                              ),
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                    left: AppDimensions.getDimensions(requiredWidth: 17),
+                                    right: AppDimensions.getDimensions(requiredWidth: 13)),
+                                width: AppDimensions.getDimensions(
+                                  requiredWidth: 30,
+                                ),
+                                height: AppDimensions.getDimensions(
+                                  requiredHeight: 30,
+                                ),
+                                decoration: BoxDecoration(
+                                    color: AppColors.kAppBarPhotoMainScreenHome,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
+                                child: Image.asset(AppAssets.kStudentGroupsScreen),
+                              ),
+                            ),
+                            Positioned(
+                              right: AppDimensions.getDimensions(
+                                requiredHeight: 20,
+                              ),
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                    left: AppDimensions.getDimensions(requiredWidth: 17),
+                                    right: AppDimensions.getDimensions(requiredWidth: 13)),
+                                width: AppDimensions.getDimensions(
+                                  requiredWidth: 30,
+                                ),
+                                height: AppDimensions.getDimensions(
+                                  requiredHeight: 30,
+                                ),
+                                decoration: BoxDecoration(
+                                    color: AppColors.kAppBarPhotoMainScreenHome,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
+                                child: Image.asset(AppAssets.kStudentGroupsScreen),
+                              ),
+                            ),
+                            Positioned(
+                              right: AppDimensions.getDimensions(
+                                requiredHeight: 40,
+                              ),
+                              child: Container(
+                                margin: EdgeInsets.only(
+                                    left: AppDimensions.getDimensions(requiredWidth: 17),
+                                    right: AppDimensions.getDimensions(requiredWidth: 13)),
+                                width: AppDimensions.getDimensions(
+                                  requiredWidth: 30,
+                                ),
+                                height: AppDimensions.getDimensions(
+                                  requiredHeight: 30,
+                                ),
+                                decoration: BoxDecoration(
+                                    color: AppColors.kBottomBottomListUsersMainScreenHome,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        color: AppColors.kAppBarBorderMainScreenHome, width: 2)),
+                                child: Center(
+                                    child: Text(
+                                  AppStrings.kBottomListNumberOfUsersHomeMainScreenHome,
+                                  style: TextStyle(
+                                      color: AppColors.kBottomAppBarMainScreenHome,
+                                      fontSize: AppDimensions.defaultSize * 12),
+                                )),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
+                      Spacer(),
                       Text(
-                        AppStrings.kBottomListSecondTextHomeMainScreenHome,
+                        AppStrings.kBottomListGroupNumberHomeMainScreenHome,
                         style: TextStyle(
                             fontFamily: 'Almarai',
-                            color: AppColors.kBottomBottomListHintMainScreenHome,
-                            fontWeight: FontWeight.w400,
-                            fontSize: AppDimensions.defaultSize * 14),
+                            color: AppColors.kSmallListFirstTextMainScreenHome,
+                            fontWeight: FontWeight.w700,
+                            fontSize: AppDimensions.defaultSize * 16),
+                      ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 4),
                       ),
                       Text(
-                        AppStrings.kBottomListThirdTextHomeMainScreenHome,
+                        AppStrings.kBottomListFirstTextHomeMainScreenHome,
                         style: TextStyle(
                             fontFamily: 'Almarai',
-                            color: AppColors.kBottomBottomListHintMainScreenHome,
-                            fontWeight: FontWeight.w400,
-                            fontSize: AppDimensions.defaultSize * 14),
+                            color: AppColors.kSmallListFirstTextMainScreenHome,
+                            fontWeight: FontWeight.w700,
+                            fontSize: AppDimensions.defaultSize * 16),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text(
-                            AppStrings.kBottomListFirstTeacherHomeMainScreenHome,
-                            style: TextStyle(
-                                fontFamily: 'Almarai',
-                                color: AppColors.kBottomBottomListHintMainScreenHome,
-                                fontWeight: FontWeight.w700,
-                                fontSize: AppDimensions.defaultSize * 12),
-                          ),
-                          // SizedBox(
-                          //   width: AppDimensions.getDimensions(requiredWidth: 3.42),
-                          // ),
-                          SizedBox(
-                            width: AppDimensions.getDimensions(requiredWidth: 23.3),
-                            height: AppDimensions.getDimensions(requiredHeight: 19.3),
-                            child: Image.asset(AppAssets.kVector2HomeScreen),
-                          ),
-                          SizedBox(
-                            width: AppDimensions.getDimensions(requiredWidth: 31),
-                          ),
-                          Text(
-                            AppStrings.kBottomListSecondTeacherHomeMainScreenHome,
-                            style: TextStyle(
-                                fontFamily: 'Almarai',
-                                color: AppColors.kBottomBottomListHintMainScreenHome,
-                                fontWeight: FontWeight.w700,
-                                fontSize: AppDimensions.defaultSize * 12),
-                          ),
-                          // SizedBox(
-                          //   width: AppDimensions.getDimensions(requiredWidth: 3.42),
-                          // ),
-                          SizedBox(
-                            width: AppDimensions.getDimensions(requiredWidth: 23.3),
-                            height: AppDimensions.getDimensions(requiredHeight: 19.3),
-                            child: Image.asset(AppAssets.kVector2HomeScreen),
-                          ),
-                        ],
-                      )
                     ],
                   ),
+                  Text(
+                    AppStrings.kBottomListSecondTextHomeMainScreenHome,
+                    style: TextStyle(
+                        fontFamily: 'Almarai',
+                        color: AppColors.kBottomBottomListHintMainScreenHome,
+                        fontWeight: FontWeight.w400,
+                        fontSize: AppDimensions.defaultSize * 14),
+                  ),
+                  Text(
+                    AppStrings.kBottomListThirdTextHomeMainScreenHome,
+                    style: TextStyle(
+                        fontFamily: 'Almarai',
+                        color: AppColors.kBottomBottomListHintMainScreenHome,
+                        fontWeight: FontWeight.w400,
+                        fontSize: AppDimensions.defaultSize * 14),
+                  ),
+                  SizedBox(
+                    height: AppDimensions.getDimensions(requiredHeight: 6),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(
+                        AppStrings.kBottomListFirstTeacherHomeMainScreenHome,
+                        style: TextStyle(
+                            fontFamily: 'Almarai',
+                            color: AppColors.kBottomBottomListHintMainScreenHome,
+                            fontWeight: FontWeight.w700,
+                            fontSize: AppDimensions.defaultSize * 12),
+                      ),
+                      // SizedBox(
+                      //   width: AppDimensions.getDimensions(requiredWidth: 3.42),
+                      // ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 23.3),
+                        height: AppDimensions.getDimensions(requiredHeight: 19.3),
+                        child: Image.asset(AppAssets.kVector2HomeScreen),
+                      ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 31),
+                      ),
+                      Text(
+                        AppStrings.kBottomListSecondTeacherHomeMainScreenHome,
+                        style: TextStyle(
+                            fontFamily: 'Almarai',
+                            color: AppColors.kBottomBottomListHintMainScreenHome,
+                            fontWeight: FontWeight.w700,
+                            fontSize: AppDimensions.defaultSize * 12),
+                      ),
+                      // SizedBox(
+                      //   width: AppDimensions.getDimensions(requiredWidth: 3.42),
+                      // ),
+                      SizedBox(
+                        width: AppDimensions.getDimensions(requiredWidth: 23.3),
+                        height: AppDimensions.getDimensions(requiredHeight: 19.3),
+                        child: Image.asset(AppAssets.kVector2HomeScreen),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),

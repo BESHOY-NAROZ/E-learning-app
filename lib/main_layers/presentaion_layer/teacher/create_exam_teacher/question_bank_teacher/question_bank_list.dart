@@ -27,17 +27,19 @@ class QuestionBankList extends StatelessWidget {
           Row(
             children: [
               SizedBox(
-                height: AppDimensions.getDimensions(requiredHeight: 24),
-                width: AppDimensions.getDimensions(requiredWidth: 24),
-                child: Checkbox(
-                  value: false,
-                  side: const BorderSide(
-                    color: AppColors.kMainBlueAA,
-                  ),
-                  activeColor: AppColors.kMainBlueAA,
-                  onChanged: (value) {},
-                ),
-              ),
+                  height: AppDimensions.getDimensions(requiredHeight: 24),
+                  width: AppDimensions.getDimensions(requiredWidth: 24),
+                  child: Transform.scale(
+                    scale: AppDimensions.defaultSize * 1,
+                    child: Checkbox(
+                      value: false,
+                      side: const BorderSide(
+                        color: AppColors.kMainBlueAA,
+                      ),
+                      activeColor: AppColors.kMainBlueAA,
+                      onChanged: (value) {},
+                    ),
+                  )),
               const Spacer(),
               const MainTextBlue(
                 myText: AppStrings.kChooseCorrectAnswerCreateExam,

@@ -34,11 +34,11 @@ class HomeMainScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 15),
+                      height: AppDimensions.getDimensions(requiredHeight: 12),
                     ),
                     const MainTextMainScreen(myText: AppStrings.kMainTextMainScreenHome),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 10),
+                      height: AppDimensions.getDimensions(requiredHeight: 7),
                     ),
                     const MoreRowMainScreen(
                         title: AppStrings.kHintText1MainScreenHome,
@@ -47,7 +47,7 @@ class HomeMainScreen extends StatelessWidget {
                       height: AppDimensions.getDimensions(requiredHeight: 15),
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 160),
+                      height: AppDimensions.getDimensions(requiredHeight: 140),
                       child: ListView.builder(
                         itemCount: 3,
                         scrollDirection: Axis.horizontal,
@@ -66,7 +66,7 @@ class HomeMainScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 16),
+                      height: AppDimensions.getDimensions(requiredHeight: 13),
                     ),
                     Padding(
                       padding: EdgeInsets.only(
@@ -85,7 +85,7 @@ class HomeMainScreen extends StatelessWidget {
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(
-                        requiredHeight: 28,
+                        requiredHeight: 16,
                       ),
                     ),
                     const MoreRowMainScreen(
@@ -127,19 +127,16 @@ class HomeMainScreen extends StatelessWidget {
                                             fontWeight: FontWeight.w700,
                                             fontSize: AppDimensions.defaultSize * 16),
                                       ),
-                                      Spacer(),
-                                      Padding(
-                                        padding: EdgeInsets.only(
-                                          bottom: AppDimensions.getDimensions(requiredHeight: 3),
-                                        ),
-                                        child: Text(
-                                          AppStrings.kSmallListSecondTextMainScreenHome,
-                                          style: TextStyle(
-                                              fontFamily: 'Almarai',
-                                              color: AppColors.kSmallListSecondTextMainScreenHome,
-                                              fontWeight: FontWeight.w700,
-                                              fontSize: AppDimensions.defaultSize * 12),
-                                        ),
+                                      SizedBox(
+                                        height: AppDimensions.getDimensions(requiredHeight: 4),
+                                      ),
+                                      Text(
+                                        AppStrings.kSmallListSecondTextMainScreenHome,
+                                        style: TextStyle(
+                                            fontFamily: 'Almarai',
+                                            color: AppColors.kSmallListSecondTextMainScreenHome,
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: AppDimensions.defaultSize * 12),
                                       ),
                                     ],
                                   ),
@@ -148,10 +145,10 @@ class HomeMainScreen extends StatelessWidget {
                                         left: AppDimensions.getDimensions(requiredWidth: 17),
                                         right: AppDimensions.getDimensions(requiredWidth: 13)),
                                     width: AppDimensions.getDimensions(
-                                      requiredWidth: 46.33,
+                                      requiredWidth: 37,
                                     ),
                                     height: AppDimensions.getDimensions(
-                                      requiredHeight: 46.33,
+                                      requiredHeight: 37,
                                     ),
                                     decoration: BoxDecoration(
                                         color: AppColors.kAppBarPhotoMainScreenHome,
@@ -187,7 +184,7 @@ class HomeMainScreen extends StatelessWidget {
                     ),
                     SizedBox(
                       height: AppDimensions.getDimensions(
-                        requiredHeight: 28,
+                        requiredHeight: 15,
                       ),
                     ),
                     const MoreRowMainScreen(
