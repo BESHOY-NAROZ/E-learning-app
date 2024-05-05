@@ -2,11 +2,13 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_white.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/delete_question_bottom_sheet.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/teacher/exams_teacher/actual_exam_teacher/main_four_buttons_actual_exam.dart';
 import 'package:flutter/material.dart';
 
@@ -123,53 +125,36 @@ class ActualExamTeacher extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Container(
-                        height: AppDimensions.getDimensions(requiredHeight: 45),
-                        width: AppDimensions.getDimensions(requiredWidth: 156),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const MainTextGrey(
-                              myText: AppStrings.kDeleteQExams,
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 5),
-                            ),
-                            Image.asset(
-                              AppAssets.kRemoveGroupsScreen,
-                              color: AppColors.kMainTextBlack,
-                              height: AppDimensions.getDimensions(requiredHeight: 20),
-                              width: AppDimensions.getDimensions(requiredWidth: 20),
-                            ),
-                          ],
-                        ),
-                      ),
+                      const DeleteQuestionBottomSheet(),
                       SizedBox(
                         width: AppDimensions.getDimensions(requiredWidth: 9),
                       ),
-                      Container(
-                        height: AppDimensions.getDimensions(requiredHeight: 45),
-                        width: AppDimensions.getDimensions(requiredWidth: 156),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const MainTextGrey(
-                              myText: AppStrings.kEditExams,
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 5),
-                            ),
-                            Image.asset(
-                              AppAssets.kEdit,
-                              color: AppColors.kMainTextBlack,
-                              height: AppDimensions.getDimensions(requiredHeight: 20),
-                              width: AppDimensions.getDimensions(requiredWidth: 20),
-                            ),
-                          ],
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, RoutesManager.editQuestionsTeacher);
+                        },
+                        child: Container(
+                          height: AppDimensions.getDimensions(requiredHeight: 45),
+                          width: AppDimensions.getDimensions(requiredWidth: 156),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const MainTextGrey(
+                                myText: AppStrings.kEditExams,
+                              ),
+                              SizedBox(
+                                width: AppDimensions.getDimensions(requiredWidth: 5),
+                              ),
+                              Image.asset(
+                                AppAssets.kEdit,
+                                color: AppColors.kMainTextBlack,
+                                height: AppDimensions.getDimensions(requiredHeight: 20),
+                                width: AppDimensions.getDimensions(requiredWidth: 20),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],

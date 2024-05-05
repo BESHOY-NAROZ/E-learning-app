@@ -138,8 +138,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                   : AppStrings.kButton2OnBoarding,
                               onPressed: () {
                                 if (myIndex == 2) {
-                                  Navigator.pushReplacementNamed(
-                                      context, RoutesManager.loginScreen);
+                                  Navigator.of(context, rootNavigator: false)
+                                      .pushReplacementNamed(RoutesManager.loginScreen);
                                 } else {
                                   pageController.nextPage(
                                       duration: const Duration(milliseconds: 400),

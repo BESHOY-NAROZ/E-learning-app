@@ -3,6 +3,9 @@ import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_grey.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/solving_idea_bottom_sheet.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/solving_way_bottom_sheet.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/teacher/create_exam_teacher/exam_editing_teacher/video_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 
 class MainFourButtonsActualExam extends StatelessWidget {
@@ -16,29 +19,7 @@ class MainFourButtonsActualExam extends StatelessWidget {
       children: [
         Row(
           children: [
-            Container(
-              height: AppDimensions.getDimensions(requiredHeight: 45),
-              width: AppDimensions.getDimensions(requiredWidth: 156),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const MainTextGrey(
-                    myText: AppStrings.kAnswerVideoExams,
-                  ),
-                  SizedBox(
-                    width: AppDimensions.getDimensions(requiredWidth: 5),
-                  ),
-                  Image.asset(
-                    AppAssets.kVideo,
-                    color: AppColors.kMainTextBlack,
-                    height: AppDimensions.getDimensions(requiredHeight: 20),
-                    width: AppDimensions.getDimensions(requiredWidth: 20),
-                  ),
-                ],
-              ),
-            ),
+            const VideoBottomSheet(),
             SizedBox(
               width: AppDimensions.getDimensions(requiredWidth: 9),
             ),
@@ -72,55 +53,11 @@ class MainFourButtonsActualExam extends StatelessWidget {
         ),
         Row(
           children: [
-            Container(
-              height: AppDimensions.getDimensions(requiredHeight: 45),
-              width: AppDimensions.getDimensions(requiredWidth: 156),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const MainTextGrey(
-                    myText: AppStrings.kSolutionWayExams,
-                  ),
-                  SizedBox(
-                    width: AppDimensions.getDimensions(requiredWidth: 5),
-                  ),
-                  Image.asset(
-                    AppAssets.kEditFile,
-                    color: AppColors.kMainTextBlack,
-                    height: AppDimensions.getDimensions(requiredHeight: 20),
-                    width: AppDimensions.getDimensions(requiredWidth: 20),
-                  ),
-                ],
-              ),
-            ),
+            const SolvingWayBottomSheet(),
             SizedBox(
               width: AppDimensions.getDimensions(requiredWidth: 9),
             ),
-            Container(
-              height: AppDimensions.getDimensions(requiredHeight: 45),
-              width: AppDimensions.getDimensions(requiredWidth: 156),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8), color: AppColors.kMainGeryFA),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const MainTextGrey(
-                    myText: AppStrings.kSolutionIdeaExams,
-                  ),
-                  SizedBox(
-                    width: AppDimensions.getDimensions(requiredWidth: 5),
-                  ),
-                  Image.asset(
-                    AppAssets.kLight,
-                    color: AppColors.kMainTextBlack,
-                    height: AppDimensions.getDimensions(requiredHeight: 20),
-                    width: AppDimensions.getDimensions(requiredWidth: 20),
-                  ),
-                ],
-              ),
-            ),
+            const SolvingIdeaBottomSheet(),
           ],
         ),
       ],
