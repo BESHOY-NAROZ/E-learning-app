@@ -44,6 +44,9 @@ class BottomListMainScreenTeacher extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
+              SizedBox(
+                height: AppDimensions.getDimensions(requiredHeight: 8),
+              ),
               Padding(
                 padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 9)),
                 child: Text(
@@ -54,7 +57,7 @@ class BottomListMainScreenTeacher extends StatelessWidget {
                       color: AppColors.kSentGreyTextGroups),
                 ),
               ),
-              const Spacer(),
+              Spacer(),
               Container(
                 padding: EdgeInsets.zero,
                 width: double.infinity,
