@@ -5,10 +5,10 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/sh
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
-import 'add_new_class_ways/add_new_class_ways_screen.dart';
+import 'add_new_student_to_class_ways_screen.dart';
 
-class AddNewClass extends StatelessWidget {
-  const AddNewClass({Key? key}) : super(key: key);
+class AddNewStudentToClass extends StatelessWidget {
+  const AddNewStudentToClass({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class AddNewClass extends StatelessWidget {
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 45),
               ),
-              const AddNewClassWays()
+              const AddNewStudentToClassWays()
             ],
           ),
         )

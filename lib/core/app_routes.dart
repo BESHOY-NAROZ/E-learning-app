@@ -10,9 +10,11 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/ad
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/add_new_student/add_new_student_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/add_new_student/after_scan_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/add_new_student/remove_order_joining.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_class_by_qr_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_class_done.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_class_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_class_assistant/add_new_class_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_class_assistant/add_new_class_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_student_to_class/add_new_student_to_class_by_qr_screen.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_student_to_class/add_new_student_to_class_done.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/add_new_student_to_class/add_new_student_to_class_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/attendance_and_departure_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/attendance_and_departure/who_attended.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/create_group/create_group_done.dart';
@@ -32,12 +34,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_e
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/add_new_number/add_new_number_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/profile_editing_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_email/reset_email_done.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_email/reset_email_get_code.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_email/reset_email_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_email/set_email_now.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_password_ways/reset_password_ways_screen.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_password_ways/reset_password_with_email/reset_password_get_code_email.dart';
-import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_password_ways/reset_password_with_phone/reset_password_get_code_phone_number.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_password_ways/set_password_profile_editing/set_password_done_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/profile_editing/reset_password_ways/set_password_profile_editing/set_password_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/teachers/add_new_teacher/add_new_teacher_by_qr_screen.dart';
@@ -222,13 +219,8 @@ class RoutesManager {
   static const String addOpinionDone = "/addOpinionDone";
   static const String profileEditing = "/profileEditing";
   static const String resetEmail = "/resetEmail";
-  static const String resetEmailGetCode = "/resetEmailGetCode";
-  static const String setEmailNow = "/setEmailNow";
   static const String resetEmailDone = "/resetEmailDone";
-  static const String resetPasswordWays = "/resetPasswordWays";
-  static const String resetPasswordGetCodePhoneNumber = "/resetPasswordGetCodePhoneNumber";
-  static const String resetPasswordGetCodeEmail = "/resetPasswordGetCod"
-      "eEmail";
+
   static const String setPasswordProfileEditing = "/setPasswordProfileEditing";
   static const String setPasswordDone = "/setPasswordDone";
   static const String addNewNumber = "/addNewNumber";
@@ -340,6 +332,8 @@ class RoutesManager {
   static const String updateExplanation = "/updateExplanation";
   static const String explanationAttachedTeacher = "/explanationAttachedTeacher";
   static const String acceptRequestDoneTeacher = "/acceptRequestDoneTeacher";
+  static const String addNewClassAssistant = "/addNewClassAssistant";
+  static const String addNewClassDoneAssistant = "/addNewClassDoneAssistant";
 }
 
 class RoutesGenerator {
@@ -409,11 +403,11 @@ class RoutesGenerator {
       case RoutesManager.whoAttended:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const WhoAttended());
       case RoutesManager.addNewClass:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewClass());
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewStudentToClass());
       case RoutesManager.addNewClassByQR:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewClassByQR());
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewStudentToClassByQR());
       case RoutesManager.addNewClassDone:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewClassDone());
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewStudentToClassDone());
       case RoutesManager.teachers:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const Teachers());
       case RoutesManager.removeTeacherDone:
@@ -446,19 +440,8 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ProfileEditing());
       case RoutesManager.resetEmail:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ResetEmail());
-      case RoutesManager.resetEmailGetCode:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ResetEmailGetCode());
-      case RoutesManager.setEmailNow:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const SetEmailNow());
       case RoutesManager.resetEmailDone:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ResetEmailDone());
-      case RoutesManager.resetPasswordWays:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ResetPasswordWays());
-      case RoutesManager.resetPasswordGetCodePhoneNumber:
-        return PageRouteBuilder(
-            pageBuilder: (_, __, ___) => const ResetPasswordGetCodePhoneNumber());
-      case RoutesManager.resetPasswordGetCodeEmail:
-        return PageRouteBuilder(pageBuilder: (_, __, ___) => const ResetPasswordGetCodeEmail());
       case RoutesManager.setPasswordProfileEditing:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const SetPasswordProfileEditing());
       case RoutesManager.setPasswordDone:
@@ -691,6 +674,10 @@ class RoutesGenerator {
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const ExplanationAttachedTeacher());
       case RoutesManager.acceptRequestDoneTeacher:
         return PageRouteBuilder(pageBuilder: (_, __, ___) => const AcceptRequestDoneTeacher());
+      case RoutesManager.addNewClassAssistant:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewClassAssistant());
+      case RoutesManager.addNewClassDoneAssistant:
+        return PageRouteBuilder(pageBuilder: (_, __, ___) => const AddNewClassDoneAssistant());
       // case RoutesManager.newOffer:
       // return PageRouteBuilder(pageBuilder: (_, __, ___)=> NewOffer());
       default:

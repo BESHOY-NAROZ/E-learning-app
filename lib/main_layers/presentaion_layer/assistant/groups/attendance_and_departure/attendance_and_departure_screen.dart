@@ -95,7 +95,7 @@ class AttendanceAndDeparture extends StatelessWidget {
                     MainButtonGrey(
                       buttonName: AppStrings.kNewLessonGroups,
                       onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.addNewClass);
+                        Navigator.pushNamed(context, RoutesManager.addNewClassAssistant);
                       },
                     ),
                   ],

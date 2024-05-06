@@ -8,16 +8,9 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/c
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/text_form_filed.dart';
 import 'package:flutter/material.dart';
 
-class AddNewStudentWays extends StatefulWidget {
-  const AddNewStudentWays({Key? key}) : super(key: key);
+class AddNewStudentToClassWays extends StatelessWidget {
+  const AddNewStudentToClassWays({Key? key}) : super(key: key);
 
-  static int myIndex = 0;
-
-  @override
-  State<AddNewStudentWays> createState() => _AddNewStudentWaysState();
-}
-
-class _AddNewStudentWaysState extends State<AddNewStudentWays> {
   @override
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
@@ -39,9 +32,9 @@ class _AddNewStudentWaysState extends State<AddNewStudentWays> {
           height: AppDimensions.getDimensions(requiredHeight: 50),
         ),
         MainButtonRed(
-          buttonName: AppStrings.kSentRequestNowGroups,
+          buttonName: AppStrings.kStudentSignToClassButtonGroups,
           onPressed: () {
-            Navigator.pushNamed(context, RoutesManager.afterScanAddStudentTeacher);
+            Navigator.pushReplacementNamed(context, RoutesManager.addNewClassDone);
           },
         ),
         SizedBox(

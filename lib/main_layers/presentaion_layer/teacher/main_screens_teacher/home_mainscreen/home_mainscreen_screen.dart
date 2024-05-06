@@ -44,9 +44,30 @@ class HomeMainScreenTeacher extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 7),
                     ),
-                    const MoreRowMainScreen(
-                        title: AppStrings.kHintText1MainScreenHome,
-                        vectorIcon: AppAssets.kVector1HomeScreen),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          AppStrings.kHintText1MainScreenHome,
+                          style: TextStyle(
+                              fontFamily: 'Almarai',
+                              color: AppColors.kHintTextMainScreenHome,
+                              fontWeight: FontWeight.w700,
+                              fontSize: AppDimensions.defaultSize * 16),
+                        ),
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 3.42),
+                        ),
+                        SizedBox(
+                          child: Image.asset(
+                            AppAssets.kVector1HomeScreen,
+                            height: AppDimensions.getDimensions(requiredHeight: 20),
+                            width: AppDimensions.getDimensions(requiredHeight: 20),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ],
+                    ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 15),
                     ),

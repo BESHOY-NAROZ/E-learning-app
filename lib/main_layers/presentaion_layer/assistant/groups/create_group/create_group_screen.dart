@@ -27,118 +27,122 @@ class CreateGroup extends StatelessWidget {
             designWidth: 360,
             myTitle: AppStrings.kCreateGroupGroups,
           ),
-          Padding(
-            padding:
-                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 7),
+          Expanded(
+            child: Padding(
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 7),
+                    ),
+                    const MainTextGroups(
+                      myText: AppStrings.kCreateGroupGroups,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 20),
+                    ),
+                    HintTextGroups(
+                      myText: AppStrings.kCreateGroupHintTextGroups,
+                      fontWeight: FontWeight.w700,
+                      fontSize: AppDimensions.defaultSize * 16,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    CustomTextFormFiled(
+                      hintText: AppStrings.kCreateGroupHintTextFormGroups,
+                      textDirection: TextDirection.rtl,
+                      hintStyle: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        color: AppColors.kFormFiledHint,
+                        fontSize: AppDimensions.defaultSize * 12,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 16),
+                    ),
+                    HintTextGroups(
+                      myText: AppStrings.kEducationalLevelHintTextGroups,
+                      fontWeight: FontWeight.w700,
+                      fontSize: AppDimensions.defaultSize * 16,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    CustomTextFormFiled(
+                      hintText: AppStrings.kHighSchoolHintTextFormGroups,
+                      textDirection: TextDirection.rtl,
+                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      enabled: false,
+                      hintStyle: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        color: AppColors.kFormFiledHint,
+                        fontSize: AppDimensions.defaultSize * 12,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 16),
+                    ),
+                    HintTextGroups(
+                      myText: AppStrings.kClassRoomHintTextGroups,
+                      fontWeight: FontWeight.w700,
+                      fontSize: AppDimensions.defaultSize * 16,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    CustomTextFormFiled(
+                      hintText: AppStrings.kClassRoomHintTextFiledGroups,
+                      textDirection: TextDirection.rtl,
+                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      enabled: false,
+                      hintStyle: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        color: AppColors.kFormFiledHint,
+                        fontSize: AppDimensions.defaultSize * 12,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 16),
+                    ),
+                    HintTextGroups(
+                      myText: AppStrings.kSubjectsHintTextGroups,
+                      fontWeight: FontWeight.w700,
+                      fontSize: AppDimensions.defaultSize * 16,
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 8),
+                    ),
+                    CustomTextFormFiled(
+                      hintText: AppStrings.kSubjectsTextFiledGroups,
+                      textDirection: TextDirection.rtl,
+                      prefixIcon: Icon(Icons.arrow_left_rounded),
+                      enabled: false,
+                      hintStyle: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        color: AppColors.kFormFiledHint,
+                        fontSize: AppDimensions.defaultSize * 12,
+                        fontFamily: 'Almarai',
+                      ),
+                    ),
+                    SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 112),
+                    ),
+                    MainButtonRed(
+                      buttonName: AppStrings.kCreationButtonTextGroups,
+                      onPressed: () {
+                        Navigator.pushNamed(context, RoutesManager.createGroupDone);
+                      },
+                    )
+                  ],
                 ),
-                const MainTextGroups(
-                  myText: AppStrings.kCreateGroupGroups,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 20),
-                ),
-                HintTextGroups(
-                  myText: AppStrings.kCreateGroupHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                CustomTextFormFiled(
-                  hintText: AppStrings.kCreateGroupHintTextFormGroups,
-                  textDirection: TextDirection.rtl,
-                  hintStyle: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.kFormFiledHint,
-                    fontSize: AppDimensions.defaultSize * 12,
-                    fontFamily: 'Almarai',
-                  ),
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 16),
-                ),
-                HintTextGroups(
-                  myText: AppStrings.kEducationalLevelHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                CustomTextFormFiled(
-                  hintText: AppStrings.kHighSchoolHintTextFormGroups,
-                  textDirection: TextDirection.rtl,
-                  prefixIcon: Icon(Icons.arrow_left_rounded),
-                  enabled: false,
-                  hintStyle: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.kFormFiledHint,
-                    fontSize: AppDimensions.defaultSize * 12,
-                    fontFamily: 'Almarai',
-                  ),
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 16),
-                ),
-                HintTextGroups(
-                  myText: AppStrings.kClassRoomHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                CustomTextFormFiled(
-                  hintText: AppStrings.kClassRoomHintTextFiledGroups,
-                  textDirection: TextDirection.rtl,
-                  prefixIcon: Icon(Icons.arrow_left_rounded),
-                  enabled: false,
-                  hintStyle: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.kFormFiledHint,
-                    fontSize: AppDimensions.defaultSize * 12,
-                    fontFamily: 'Almarai',
-                  ),
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 16),
-                ),
-                HintTextGroups(
-                  myText: AppStrings.kSubjectsHintTextGroups,
-                  fontWeight: FontWeight.w700,
-                  fontSize: AppDimensions.defaultSize * 16,
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 8),
-                ),
-                CustomTextFormFiled(
-                  hintText: AppStrings.kSubjectsTextFiledGroups,
-                  textDirection: TextDirection.rtl,
-                  prefixIcon: Icon(Icons.arrow_left_rounded),
-                  enabled: false,
-                  hintStyle: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    color: AppColors.kFormFiledHint,
-                    fontSize: AppDimensions.defaultSize * 12,
-                    fontFamily: 'Almarai',
-                  ),
-                ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 112),
-                ),
-                MainButtonRed(
-                  buttonName: AppStrings.kCreationButtonTextGroups,
-                  onPressed: () {
-                    Navigator.pushNamed(context, RoutesManager.createGroupDone);
-                  },
-                )
-              ],
+              ),
             ),
           ),
         ],

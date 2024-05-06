@@ -7,6 +7,7 @@ import 'package:assiut_project/core/app_dimensions.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/onboarding_screen/onboarding_screen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     timer = Timer(
-        const Duration(seconds: 3),
+        const Duration(seconds: 4),
         () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (BuildContext context) => const OnBoardingScreen())));
   }
@@ -44,12 +45,14 @@ class _SplashScreenState extends State<SplashScreen> {
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 195),
             ),
-            Image.asset(
-              AppAssets.kTeacherLogo,
+            SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 411),
               width: AppDimensions.getDimensions(requiredWidth: 330),
+              child: Lottie.asset(
+                AppAssets.kLogo,
+              ),
             ),
-            Spacer(),
+            const Spacer(),
             MainTextBlack(
               myText: AppStrings.kSTeacher,
               color: AppColors.kMainBlack,

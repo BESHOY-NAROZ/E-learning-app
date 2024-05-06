@@ -132,6 +132,7 @@ class AppStrings {
   static const String kSentExamsGroups = 'الامتحانات المرسلة';
   static const String kAttendanceAndDepartureGroups = 'الحضور و الانصراف';
   static const String kAddNewStudentGroups = 'اضافة طالب جديد';
+  static const String kAddNewStudentToAttendGroups = 'اضافة طالب';
   static const String kAddStudentEmailGroups = 'أدخل البريد الإلكترونى المتصل بحساب الطالب';
   static const String kAddStudentPhoneGroups = 'أدخل رقم الهاتف المتصل بحساب الطالب';
   static const String kSentRequestNowGroups = 'أرسل الطلب الأن';
@@ -235,6 +236,15 @@ class AppStrings {
   static const String kMainRemoveStudentGroups = 'تم حذف الطالب';
   static const String kHintRemoveStudentGroups = 'تم حذف الطالب “كريم عاطف\nصالح ” من المجموعة';
   static const String kButtonRemoveStudentGroups = 'العودة الى المجموعة';
+  static const String kAddNewClassGroups = 'اضافة حصة جديدة';
+  static const String kClassNameGroups = 'إسم الحصة';
+  static const String kActualClassNameGroups = 'الحصة الاولى';
+  static const String kSubjectNameGroups = 'المادة';
+  static const String kActualSubjectNameGroups = 'مادة الكيمياء';
+  static const String kAddClassNameGroups = 'اضافة حصة';
+  static const String kAddClassDoneGroups = 'تم إضافة حصة جديدة';
+  static const String kAddClassHintGroups = 'تم اضافة حصة جديدة بأسم الحصة الاولى';
+  static const String kAddClassButtonGroups = 'الرجوع الى قائمة الحصص';
 
 ///////////////////////////////Teachers/////////////////////
 
@@ -369,6 +379,8 @@ class AppStrings {
       'جديد';
   static const String kAddNewNumberDoneHintProfileEditing = 'تم اضافة المزيد من '
       'الارقام و طرق التواصل مع المدرس';
+  static const String kAddNewNumberDoneHintAssProfileEditing = 'تم اضافة المزيد من '
+      'الارقام و طرق التواصل مع المساعد';
   static const String kStillEditProfileEditing = 'استكمال تعديل الحساب';
 
   ///////////////////// Sin Up ////////////////////////////////
@@ -689,6 +701,8 @@ class AppStrings {
   static const String kAddNewAssistantNowAssistantOfTeacher = 'إضافة مساعد الأن';
   static const String kEnterWaysAssistantOfTeacher = 'أدخل البريد الإلكترونى أو الهاتف الخاص '
       'بالمساعد لإرسال طلب الإضافة الأن';
+  static const String kEnterWaysAssistantTeOfTeacher = 'أدخل البريد الإلكترونى أو الهاتف الخاص '
+      'بالمدرس لإرسال طلب الإضافة الأن';
   static const String kAddButtonAssistantOfTeacher = 'اضافة';
   static const String kAddingDoneAssistantOfTeacher = 'تم إرسال طلب إضافة مساعد إلى “كريم عاطف'
       '\nصالح ”';

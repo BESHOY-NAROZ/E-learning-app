@@ -36,7 +36,7 @@ class AddNewNumberDone extends StatelessWidget {
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
               Text(
-                AppStrings.kAddNewNumberDoneHintProfileEditing,
+                AppStrings.kAddNewNumberDoneHintAssProfileEditing,
                 textAlign: TextAlign.center,
                 textDirection: TextDirection.rtl,
                 style: TextStyle(
@@ -49,7 +49,7 @@ class AddNewNumberDone extends StatelessWidget {
               MainButtonRed(
                 buttonName: AppStrings.kStillEditProfileEditing,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.profileEditingTeacher);
+                  Navigator.pushNamed(context, RoutesManager.profileEditing);
                 },
               ),
             ],

@@ -2,6 +2,7 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/app_bar_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/bottom_List_mainscreen.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/main_screens/shared_components_mainscreen/main_text_mainscreen.dart';
@@ -22,9 +23,12 @@ class HomeMainScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          const AppBarMainScreen(
+          AppBarMainScreen(
             designHeight: 1006,
             designWidth: 360,
+            onTap: () {
+              Navigator.pushNamed(context, RoutesManager.profileEditing);
+            },
           ),
           Expanded(
             child: Padding(
@@ -40,9 +44,30 @@ class HomeMainScreen extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 7),
                     ),
-                    const MoreRowMainScreen(
-                        title: AppStrings.kHintText1MainScreenHome,
-                        vectorIcon: AppAssets.kVector1HomeScreen),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          AppStrings.kHintText1MainScreenHome,
+                          style: TextStyle(
+                              fontFamily: 'Almarai',
+                              color: AppColors.kHintTextMainScreenHome,
+                              fontWeight: FontWeight.w700,
+                              fontSize: AppDimensions.defaultSize * 16),
+                        ),
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredWidth: 3.42),
+                        ),
+                        SizedBox(
+                          child: Image.asset(
+                            AppAssets.kVector1HomeScreen,
+                            height: AppDimensions.getDimensions(requiredHeight: 20),
+                            width: AppDimensions.getDimensions(requiredHeight: 20),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ],
+                    ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 15),
                     ),
@@ -88,9 +113,13 @@ class HomeMainScreen extends StatelessWidget {
                         requiredHeight: 16,
                       ),
                     ),
-                    const MoreRowMainScreen(
-                        title: AppStrings.kHintText2MainScreenHome,
-                        vectorIcon: AppAssets.kVector2HomeScreen),
+                    MoreRowMainScreen(
+                      title: AppStrings.kHintText2MainScreenHome,
+                      vectorIcon: AppAssets.kVector2HomeScreen,
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.teachers);
+                      },
+                    ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 15),
                     ),
@@ -187,9 +216,13 @@ class HomeMainScreen extends StatelessWidget {
                         requiredHeight: 15,
                       ),
                     ),
-                    const MoreRowMainScreen(
-                        title: AppStrings.kHintText3MainScreenHome,
-                        vectorIcon: AppAssets.kVector3HomeScreen),
+                    MoreRowMainScreen(
+                      title: AppStrings.kHintText3MainScreenHome,
+                      vectorIcon: AppAssets.kVector3HomeScreen,
+                      onTap: () {
+                        Navigator.pushNamed(context, RoutesManager.studentsGroups);
+                      },
+                    ),
                     SizedBox(
                       height: AppDimensions.getDimensions(requiredHeight: 15),
                     ),

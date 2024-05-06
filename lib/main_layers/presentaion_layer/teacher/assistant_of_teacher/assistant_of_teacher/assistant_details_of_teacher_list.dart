@@ -47,7 +47,7 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                       builder: (context) {
                         return Container(
                           width: AppDimensions.getDimensions(requiredWidth: 360),
-                          height: AppDimensions.getDimensions(requiredHeight: 190),
+                          height: AppDimensions.getDimensions(requiredHeight: 160),
                           clipBehavior: Clip.antiAlias,
                           decoration: BoxDecoration(
                               color: AppColors.kMainTextWhite,
@@ -65,7 +65,7 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                                   fontSize: AppDimensions.defaultSize * 18,
                                 ),
                                 SizedBox(
-                                  height: AppDimensions.getDimensions(requiredHeight: 14),
+                                  height: AppDimensions.getDimensions(requiredHeight: 8),
                                 ),
                                 MainTextGrey(
                                   myText: AppStrings.kDeleteMainAssistantOfTeacher,
@@ -74,7 +74,7 @@ class AssistantsDetailsOfTeacherList extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                 ),
                                 SizedBox(
-                                  height: AppDimensions.getDimensions(requiredHeight: 12),
+                                  height: AppDimensions.getDimensions(requiredHeight: 18),
                                 ),
                                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                                   Container(

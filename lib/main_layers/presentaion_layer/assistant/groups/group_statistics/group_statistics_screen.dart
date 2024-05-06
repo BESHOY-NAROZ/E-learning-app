@@ -14,11 +14,6 @@ class GroupStatistics extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Scaffold(
-      // bottomNavigationBar:  const MainBottomNavigationBar(
-      //   designHeight: 1006,
-      //   designWidth: 360,
-      //
-      // ),
       body: Column(
         children: [
           const MainAppBar(
@@ -76,7 +71,8 @@ class GroupStatistics extends StatelessWidget {
                             height: AppDimensions.getDimensions(requiredHeight: 15),
                           );
                         },
-                        itemCount: 9)
+                        itemCount: 9),
+                    SizedBox(height: AppDimensions.getDimensions(requiredHeight: 15)),
                   ],
                 ),
               ),

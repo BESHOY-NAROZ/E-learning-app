@@ -6,8 +6,8 @@ import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/sh
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_app_bar.dart';
 import 'package:flutter/material.dart';
 
-class AddNewClassByQR extends StatelessWidget {
-  const AddNewClassByQR({Key? key}) : super(key: key);
+class AddNewStudentToClassByQR extends StatelessWidget {
+  const AddNewStudentToClassByQR({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

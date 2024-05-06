@@ -2,6 +2,7 @@ import 'package:assiut_project/core/app_constants/app_assets.dart';
 import 'package:assiut_project/core/app_constants/app_colors.dart';
 import 'package:assiut_project/core/app_constants/app_strings.dart';
 import 'package:assiut_project/core/app_dimensions.dart';
+import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_black.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_white.dart';
 import 'package:flutter/material.dart';
@@ -83,7 +84,9 @@ class ExamsSentListTeacher extends StatelessWidget {
                   width: AppDimensions.getDimensions(requiredWidth: 60),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, RoutesManager.actualExamTeacher);
+                  },
                   child: SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 50),
                     width: AppDimensions.getDimensions(requiredWidth: 50),

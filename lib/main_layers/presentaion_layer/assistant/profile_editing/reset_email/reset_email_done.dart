@@ -35,21 +35,25 @@ class ResetEmailDone extends StatelessWidget {
                 myText: AppStrings.kResetDoneProfileEditing,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-              Text(
-                AppStrings.kResetDoneHintProfileEditing,
-                textAlign: TextAlign.center,
-                textDirection: TextDirection.rtl,
-                style: TextStyle(
-                    fontFamily: 'Almarai',
-                    color: AppColors.kSignInMainHintText,
-                    fontWeight: FontWeight.w400,
-                    fontSize: AppDimensions.defaultSize * 14),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: AppDimensions.getDimensions(requiredWidth: 10)),
+                child: Text(
+                  AppStrings.kResetDoneHintProfileEditing,
+                  textAlign: TextAlign.center,
+                  textDirection: TextDirection.rtl,
+                  style: TextStyle(
+                      fontFamily: 'Almarai',
+                      color: AppColors.kSignInMainHintText,
+                      fontWeight: FontWeight.w400,
+                      fontSize: AppDimensions.defaultSize * 14),
+                ),
               ),
-              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(
-                buttonName: AppStrings.kResetPasswordDoneMainButtonText,
+                buttonName: AppStrings.kBackToProfileProfileEditingShared,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.loginScreen);
+                  Navigator.pushNamed(context, RoutesManager.profileEditing);
                 },
               ),
             ],

@@ -141,7 +141,7 @@ class ProfileEditing extends StatelessWidget {
                     MainButtonGrey(
                       buttonName: AppStrings.kResetPasswordProfileEditing,
                       onPressed: () {
-                        Navigator.pushNamed(context, RoutesManager.resetPasswordWays);
+                        Navigator.pushNamed(context, RoutesManager.setPasswordProfileEditing);
                       },
                     ),
                     SizedBox(

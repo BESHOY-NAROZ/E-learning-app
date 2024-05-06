@@ -88,4 +88,5 @@ class AppAssets {
   static const String kCorrectLottie = 'assets/lottie_files/Correct.json';
   static const String kBlueLike = 'assets/lottie_files/BlueLike.json';
   static const String kCoins = 'assets/lottie_files/Coins.json';
+  static const String kLogo = 'assets/lottie_files/logo.json';
 }

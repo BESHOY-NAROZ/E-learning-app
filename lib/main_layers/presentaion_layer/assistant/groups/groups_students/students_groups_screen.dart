@@ -37,8 +37,7 @@ class StudentGroups extends StatelessWidget {
                 height: AppDimensions.getDimensions(requiredHeight: 7),
               ),
               Padding(
-                padding: EdgeInsets.only(
-                    right: AppDimensions.getDimensions(requiredWidth: 10)),
+                padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 10)),
                 child: const MainTextGroups(
                   myText: AppStrings.kAppBarTitleGroupsStudentGroups,
                 ),
@@ -48,17 +47,17 @@ class StudentGroups extends StatelessWidget {
               ),
               SizedBox(
                 height: AppDimensions.getDimensions(requiredHeight: 400),
-                child: ListView.builder(
+                child: ListView.separated(
                   padding: EdgeInsets.zero,
                   itemCount: 2,
                   scrollDirection: Axis.vertical,
                   itemBuilder: (context, index) {
-                    return InkWell(
-                        onTap: () {
-                          Navigator.pushNamed(
-                              context, RoutesManager.groupDetails);
-                        },
-                        child: const StudentsGroupsListGroups());
+                    return const StudentsGroupsListGroups();
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 19),
+                    );
                   },
                 ),
               ),

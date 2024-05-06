@@ -28,8 +28,8 @@ class GroupDetails extends StatelessWidget {
             myTitle: AppStrings.kAppBarTitleGroupsStudentGroups,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
+            padding:
+                EdgeInsets.symmetric(horizontal: AppDimensions.getDimensions(requiredWidth: 20)),
             child: Column(
               children: [
                 SizedBox(
@@ -39,21 +39,20 @@ class GroupDetails extends StatelessWidget {
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 27),
                 ),
-                SizedBox(
-                  height: AppDimensions.getDimensions(requiredHeight: 280),
-                  child: ListView.builder(
-                    padding: EdgeInsets.zero,
-                    itemCount: 3,
-                    scrollDirection: Axis.vertical,
-                    itemBuilder: (context, index) {
-                      return InkWell(
-                          onTap: () {
-                            Navigator.pushNamed(
-                                context, RoutesManager.studentsProfile);
-                          },
-                          child: const EveryStudentInGroupList());
-                    },
-                  ),
+                ListView.separated(
+                  shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(),
+                  padding: EdgeInsets.zero,
+                  itemCount: 3,
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (context, index) {
+                    return const EveryStudentInGroupList();
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: AppDimensions.getDimensions(requiredHeight: 17),
+                    );
+                  },
                 ),
                 SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 59),
@@ -64,21 +63,18 @@ class GroupDetails extends StatelessWidget {
                     Navigator.pushNamed(context, RoutesManager.groupStatistics);
                   },
                 ),
-                SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 11)),
+                SizedBox(height: AppDimensions.getDimensions(requiredHeight: 11)),
                 MainButtonGrey(
                   buttonName: AppStrings.kSentExamsGroups,
                   onPressed: () {
                     Navigator.pushNamed(context, RoutesManager.sentExams);
                   },
                 ),
-                SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 11)),
+                SizedBox(height: AppDimensions.getDimensions(requiredHeight: 11)),
                 MainButtonGrey(
                   buttonName: AppStrings.kAttendanceAndDepartureGroups,
                   onPressed: () {
-                    Navigator.pushNamed(
-                        context, RoutesManager.attendanceAndDeparture);
+                    Navigator.pushNamed(context, RoutesManager.attendanceAndDeparture);
                   },
                 )
               ],

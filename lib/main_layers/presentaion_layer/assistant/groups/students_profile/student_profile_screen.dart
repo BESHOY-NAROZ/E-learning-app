@@ -71,7 +71,11 @@ class StudentProfile extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
+                        SizedBox(
+                          width: AppDimensions.getDimensions(requiredHeight: 25),
+                        ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const MainTextGrey(
                               myText: AppStrings.kBirthDateGroups,
@@ -85,12 +89,26 @@ class StudentProfile extends StatelessWidget {
                               color: AppColors.kStudentNameGroups,
                               fontSize: AppDimensions.defaultSize * 12,
                             ),
+                            SizedBox(
+                              height: AppDimensions.getDimensions(requiredHeight: 10),
+                            ),
+                            const MainTextGrey(
+                              myText: AppStrings.kGenderGroups,
+                              color: AppColors.kStudentNameGroups,
+                            ),
+                            SizedBox(
+                              height: AppDimensions.getDimensions(requiredHeight: 3),
+                            ),
+                            MainTextGrey(
+                              myText: AppStrings.kActualGenderGroups,
+                              color: AppColors.kStudentNameGroups,
+                              fontSize: AppDimensions.defaultSize * 12,
+                            ),
                           ],
                         ),
-                        SizedBox(
-                          width: AppDimensions.getDimensions(requiredWidth: 80),
-                        ),
+                        Spacer(),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const MainTextGrey(
                               myText: AppStrings.kEmailGroups,
@@ -104,40 +122,9 @@ class StudentProfile extends StatelessWidget {
                               color: AppColors.kStudentNameGroups,
                               fontSize: AppDimensions.defaultSize * 12,
                             ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 10),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Column(
-                          children: [
-                            const MainTextGrey(
-                              myText: AppStrings.kGenderGroups,
-                              color: AppColors.kStudentNameGroups,
-                            ),
                             SizedBox(
-                              height: AppDimensions.getDimensions(requiredHeight: 3),
+                              height: AppDimensions.getDimensions(requiredHeight: 10),
                             ),
-                            MainTextGrey(
-                              myText: AppStrings.kActualGenderGroups,
-                              color: AppColors.kStudentNameGroups,
-                              fontSize: AppDimensions.defaultSize * 12,
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 80),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          width: AppDimensions.getDimensions(requiredWidth: 90),
-                        ),
-                        Column(
-                          children: [
                             const MainTextGrey(
                               myText: AppStrings.kPhoneNumberGroups,
                               color: AppColors.kStudentNameGroups,
@@ -173,6 +160,7 @@ class StudentProfile extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             const MainTextGrey(
                               myText: AppStrings.kEducationTypeGroups,
@@ -186,37 +174,9 @@ class StudentProfile extends StatelessWidget {
                               color: AppColors.kStudentNameGroups,
                               fontSize: AppDimensions.defaultSize * 12,
                             ),
-                          ],
-                        ),
-                        SizedBox(
-                          width: AppDimensions.getDimensions(requiredWidth: 130),
-                        ),
-                        Column(
-                          children: [
-                            const MainTextGrey(
-                              myText: AppStrings.kSectionTypeGroups,
-                              color: AppColors.kStudentNameGroups,
-                            ),
                             SizedBox(
-                              height: AppDimensions.getDimensions(requiredHeight: 3),
+                              height: AppDimensions.getDimensions(requiredHeight: 10),
                             ),
-                            MainTextGrey(
-                              myText: AppStrings.kActualSectionTypeGroups,
-                              color: AppColors.kStudentNameGroups,
-                              fontSize: AppDimensions.defaultSize * 12,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: AppDimensions.getDimensions(requiredHeight: 10),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Column(
-                          children: [
                             const MainTextGrey(
                               myText: AppStrings.kClassRoomGroups,
                               color: AppColors.kStudentNameGroups,
@@ -231,11 +191,25 @@ class StudentProfile extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          width: AppDimensions.getDimensions(requiredWidth: 75),
-                        ),
+                        Spacer(),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
+                            const MainTextGrey(
+                              myText: AppStrings.kSectionTypeGroups,
+                              color: AppColors.kStudentNameGroups,
+                            ),
+                            SizedBox(
+                              height: AppDimensions.getDimensions(requiredHeight: 3),
+                            ),
+                            MainTextGrey(
+                              myText: AppStrings.kActualSectionTypeGroups,
+                              color: AppColors.kStudentNameGroups,
+                              fontSize: AppDimensions.defaultSize * 12,
+                            ),
+                            SizedBox(
+                              height: AppDimensions.getDimensions(requiredHeight: 10),
+                            ),
                             const MainTextGrey(
                               myText: AppStrings.kEducationalLevelGroups,
                               color: AppColors.kStudentNameGroups,

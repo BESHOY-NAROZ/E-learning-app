@@ -7,6 +7,7 @@ import 'package:assiut_project/main_layers/presentaion_layer/shared_components/c
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_text_blue.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SetPasswordDone extends StatelessWidget {
   const SetPasswordDone({Key? key}) : super(key: key);
@@ -26,26 +27,32 @@ class SetPasswordDone extends StatelessWidget {
               SizedBox(
                   height: AppDimensions.getDimensions(requiredHeight: 154),
                   width: AppDimensions.getDimensions(requiredWidth: 154),
-                  child: Image.asset(AppAssets.kCorrect)),
+                  child: Lottie.asset(
+                    AppAssets.kBlueLike,
+                  )),
               const MainTextBlue(
                 myText: AppStrings.kResetDoneProfileEditing,
               ),
               SizedBox(height: AppDimensions.getDimensions(requiredHeight: 18)),
-              Text(
-                AppStrings.kHintResetDoneProfileEditing,
-                textAlign: TextAlign.center,
-                textDirection: TextDirection.rtl,
-                style: TextStyle(
-                    fontFamily: 'Almarai',
-                    color: AppColors.kSignInMainHintText,
-                    fontWeight: FontWeight.w400,
-                    fontSize: AppDimensions.defaultSize * 14),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: AppDimensions.getDimensions(requiredWidth: 10)),
+                child: Text(
+                  AppStrings.kHintResetDoneProfileEditing,
+                  textAlign: TextAlign.center,
+                  textDirection: TextDirection.rtl,
+                  style: TextStyle(
+                      fontFamily: 'Almarai',
+                      color: AppColors.kSignInMainHintText,
+                      fontWeight: FontWeight.w400,
+                      fontSize: AppDimensions.defaultSize * 14),
+                ),
               ),
-              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 280)),
+              SizedBox(height: AppDimensions.getDimensions(requiredHeight: 250)),
               MainButtonRed(
-                buttonName: AppStrings.kResetPasswordDoneMainButtonText,
+                buttonName: AppStrings.kBackToProfileProfileEditingShared,
                 onPressed: () {
-                  Navigator.pushNamed(context, RoutesManager.loginScreen);
+                  Navigator.pushNamed(context, RoutesManager.profileEditing);
                 },
               ),
             ],

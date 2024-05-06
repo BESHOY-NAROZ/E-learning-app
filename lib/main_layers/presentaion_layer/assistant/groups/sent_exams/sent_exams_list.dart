@@ -15,7 +15,7 @@ class ExamsSentList extends StatelessWidget {
   Widget build(BuildContext context) {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
     return Container(
-      height: AppDimensions.getDimensions(requiredHeight: 120),
+      height: AppDimensions.getDimensions(requiredHeight: 100),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8), color: AppColors.kSentExamsContainerGroups),
@@ -62,7 +62,7 @@ class ExamsSentList extends StatelessWidget {
                   onTap: () {},
                   child: SizedBox(
                     height: AppDimensions.getDimensions(requiredHeight: 50),
-                    width: AppDimensions.getDimensions(requiredWidth: 50),
+                    width: AppDimensions.getDimensions(requiredWidth: 100),
                     child: Row(children: [
                       MainTextWhite(
                         myText: AppStrings.kCorrectExamsGroups,
@@ -80,7 +80,7 @@ class ExamsSentList extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: AppDimensions.getDimensions(requiredWidth: 66),
+                  width: AppDimensions.getDimensions(requiredWidth: 60),
                 ),
                 InkWell(
                   onTap: () {},
@@ -102,6 +102,9 @@ class ExamsSentList extends StatelessWidget {
                           child: Image.asset(AppAssets.kShowExam)),
                     ]),
                   ),
+                ),
+                SizedBox(
+                  width: AppDimensions.getDimensions(requiredWidth: 45),
                 ),
               ],
             ),

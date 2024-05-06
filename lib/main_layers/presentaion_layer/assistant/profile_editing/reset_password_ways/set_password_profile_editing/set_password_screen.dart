@@ -18,6 +18,7 @@ class SetPasswordProfileEditing extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             const MainAppBar(
               designHeight: 1006,
@@ -48,7 +49,7 @@ class SetPasswordProfileEditing extends StatelessWidget {
                   ),
                   const SetPasswordValidation(),
                   SizedBox(
-                    height: AppDimensions.getDimensions(requiredHeight: 32),
+                    height: AppDimensions.getDimensions(requiredHeight: 80),
                   ),
                   MainButtonRed(
                     buttonName: AppStrings.kSetProfileEditing,

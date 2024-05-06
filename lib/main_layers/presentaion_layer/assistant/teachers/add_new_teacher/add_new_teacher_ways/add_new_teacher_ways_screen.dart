@@ -5,10 +5,8 @@ import 'package:assiut_project/core/app_routes.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/assistant/groups/shared_components_groups/hint_text_groups.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_grey.dart';
 import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/main_button_red.dart';
+import 'package:assiut_project/main_layers/presentaion_layer/shared_components/custom_widgets/text_form_filed.dart';
 import 'package:flutter/material.dart';
-
-import 'add_new_teacher_with_email/add_new_teacher_with_email_screen.dart';
-import 'add_new_teacher_with_phone/add_new_teacher_with_phone_screen.dart';
 
 class AddNewTeacherWays extends StatefulWidget {
   const AddNewTeacherWays({Key? key}) : super(key: key);
@@ -26,76 +24,20 @@ class _AddNewStudentWaysState extends State<AddNewTeacherWays> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              height: AppDimensions.getDimensions(requiredHeight: 34.16),
-              width: AppDimensions.getDimensions(requiredWidth: 99.94),
-              decoration: BoxDecoration(
-                  color: AddNewTeacherWays.myIndex == 0
-                      ? AppColors.kForgetPasswordToggleSelectedButtonColor
-                      : AppColors.kForgetPasswordToggleButtonColor,
-                  borderRadius: BorderRadius.circular(10)),
-              child: MaterialButton(
-                padding: const EdgeInsets.all(0),
-                child: Text(
-                  AppStrings.kForgetPasswordButtonEmail,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    color: AddNewTeacherWays.myIndex == 0
-                        ? AppColors.kForgetPasswordToggleSelectedButtonText
-                        : AppColors.kForgetPasswordToggleButtonText,
-                    fontSize: AppDimensions.defaultSize * 12,
-                    fontFamily: 'Almarai',
-                  ),
-                ),
-                onPressed: () {
-                  setState(() {
-                    AddNewTeacherWays.myIndex = 0;
-                  });
-                },
-              ),
-            ),
-            //AppColors.kForgetPasswordToggleSelectedButtonColor
-            Container(
-              height: AppDimensions.getDimensions(requiredHeight: 34.16),
-              width: AppDimensions.getDimensions(requiredWidth: 99.94),
-              decoration: BoxDecoration(
-                  color: AddNewTeacherWays.myIndex == 1
-                      ? AppColors.kForgetPasswordToggleSelectedButtonColor
-                      : AppColors.kForgetPasswordToggleButtonColor,
-                  borderRadius: BorderRadius.circular(10)),
-              child: MaterialButton(
-                padding: const EdgeInsets.all(0),
-                child: Text(
-                  AppStrings.kForgetPasswordButtonPhone,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    color: AddNewTeacherWays.myIndex == 1
-                        ? AppColors.kForgetPasswordToggleSelectedButtonText
-                        : AppColors.kForgetPasswordToggleButtonText,
-                    fontSize: AppDimensions.defaultSize * 12,
-                    fontFamily: 'Almarai',
-                  ),
-                ),
-                onPressed: () {
-                  setState(() {
-                    AddNewTeacherWays.myIndex = 1;
-                  });
-                },
-              ),
-            ),
-          ],
+        HintTextGroups(
+          myText: AppStrings.kEnterWaysAssistantTeOfTeacher,
+          fontSize: AppDimensions.defaultSize * 12,
+          fontWeight: FontWeight.w700,
         ),
         SizedBox(
-          height: AppDimensions.getDimensions(requiredHeight: 25),
+          height: AppDimensions.getDimensions(requiredHeight: 20),
         ),
-        AddNewTeacherWays.myIndex == 0
-            ? const AddNewTeacherWithEmail()
-            : const AddNewTeacherWithPhone(),
+        const CustomTextFormFiled(
+          hintText: AppStrings.kActualAddPhoneOrEmailGroupsTeacher,
+        ),
+        SizedBox(
+          height: AppDimensions.getDimensions(requiredHeight: 50),
+        ),
         MainButtonRed(
           buttonName: AppStrings.kSentRequestNowGroups,
           onPressed: () {

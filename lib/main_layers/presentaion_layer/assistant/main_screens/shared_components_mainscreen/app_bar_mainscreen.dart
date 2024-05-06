@@ -6,10 +6,12 @@ import 'package:flutter/material.dart';
 class AppBarMainScreen extends StatelessWidget {
   final double? designHeight;
   final double? designWidth;
+  final void Function()? onTap;
   const AppBarMainScreen({
     Key? key,
     this.designHeight,
     this.designWidth,
+    this.onTap,
   }) : super(key: key);
 
   @override
@@ -41,17 +43,21 @@ class AppBarMainScreen extends StatelessWidget {
                   SizedBox(
                     width: AppDimensions.getDimensions(requiredWidth: 12),
                   ),
-                  Container(
-                    width: AppDimensions.getDimensions(
-                      requiredWidth: 46.33,
+                  InkWell(
+                    onTap: onTap,
+                    child: Container(
+                      width: AppDimensions.getDimensions(
+                        requiredWidth: 46.33,
+                      ),
+                      height: AppDimensions.getDimensions(
+                        requiredHeight: 46.33,
+                      ),
+                      decoration: BoxDecoration(
+                          color: AppColors.kAppBarPhotoMainScreenHome,
+                          shape: BoxShape.circle,
+                          border:
+                              Border.all(color: AppColors.kAppBarBorderMainScreenHome, width: 3)),
                     ),
-                    height: AppDimensions.getDimensions(
-                      requiredHeight: 46.33,
-                    ),
-                    decoration: BoxDecoration(
-                        color: AppColors.kAppBarPhotoMainScreenHome,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: AppColors.kAppBarBorderMainScreenHome, width: 3)),
                   ),
                 ],
               ),

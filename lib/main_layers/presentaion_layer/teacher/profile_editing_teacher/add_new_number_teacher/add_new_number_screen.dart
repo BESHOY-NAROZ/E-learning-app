@@ -84,7 +84,7 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                           return Container(
                                             width: AppDimensions.getDimensions(requiredWidth: 360),
                                             height:
-                                                AppDimensions.getDimensions(requiredHeight: 187),
+                                                AppDimensions.getDimensions(requiredHeight: 160),
                                             clipBehavior: Clip.antiAlias,
                                             decoration: BoxDecoration(
                                                 color: AppColors.kMainTextWhite,
@@ -104,7 +104,7 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                                   ),
                                                   SizedBox(
                                                     height: AppDimensions.getDimensions(
-                                                        requiredHeight: 14),
+                                                        requiredHeight: 8),
                                                   ),
                                                   MainTextGrey(
                                                     myText: AppStrings.kHintRemoveSheet,
@@ -114,7 +114,7 @@ class _AddNewNumberTeacherState extends State<AddNewNumberTeacher> {
                                                   ),
                                                   SizedBox(
                                                     height: AppDimensions.getDimensions(
-                                                        requiredHeight: 12),
+                                                        requiredHeight: 18),
                                                   ),
                                                   Row(
                                                       mainAxisAlignment: MainAxisAlignment.center,

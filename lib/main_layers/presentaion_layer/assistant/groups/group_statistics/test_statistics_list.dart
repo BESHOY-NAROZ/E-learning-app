@@ -15,7 +15,7 @@ class TestStatisticsList extends StatelessWidget {
     AppDimensions.init(context: context, designHeight: 778, designWidth: 360);
 
     return Container(
-      height: AppDimensions.getDimensions(requiredHeight: 195),
+      height: AppDimensions.getDimensions(requiredHeight: 241),
       width: AppDimensions.getDimensions(requiredWidth: 320),
       padding: EdgeInsets.zero,
       decoration: BoxDecoration(
@@ -23,13 +23,16 @@ class TestStatisticsList extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 13)),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             MainTextBlack(
               myText: AppStrings.kFirstTestGroups,
               fontSize: AppDimensions.defaultSize * 16,
               fontWeight: FontWeight.w700,
+            ),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 4),
             ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -60,6 +63,9 @@ class TestStatisticsList extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 5),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -86,112 +92,83 @@ class TestStatisticsList extends StatelessWidget {
             SizedBox(
               height: AppDimensions.getDimensions(requiredHeight: 14),
             ),
+
+            //////////////////////////
+
+            MainTextBlack(
+              myText: AppStrings.kSucceededPercentageGroups,
+              fontSize: AppDimensions.defaultSize * 16,
+              fontWeight: FontWeight.w700,
+            ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(
-                  width: AppDimensions.getDimensions(requiredWidth: 144),
-                  height: AppDimensions.getDimensions(requiredHeight: 70),
-                  padding: EdgeInsets.zero,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: AppColors.kPercentageFirstContainerGroups),
-                  child: Padding(
-                    padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 7)),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 5),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Text(
-                              AppStrings.kSolvePercentageNumberGroups,
-                              style: TextStyle(
-                                  fontFamily: 'Almarai',
-                                  color: AppColors.kFailedPercentageNumberGroups,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: AppDimensions.defaultSize * 18),
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 4),
-                            ),
-                            MainTextBlack(
-                              myText: AppStrings.kFailedPercentageGroups,
-                              fontSize: AppDimensions.defaultSize * 14,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 3),
-                        ),
-                        MainTextGrey(
-                          myText: AppStrings.kSucceededNumberGroups,
-                          fontSize: AppDimensions.defaultSize * 12,
-                          fontWeight: FontWeight.w300,
-                          textDirection: TextDirection.rtl,
-                        )
-                      ],
-                    ),
-                  ),
+                MainTextGrey(
+                  myText: AppStrings.kSucceededNumberGroups,
+                  fontSize: AppDimensions.defaultSize * 12,
+                  fontWeight: FontWeight.w300,
+                  textDirection: TextDirection.rtl,
                 ),
                 SizedBox(
-                  width: AppDimensions.getDimensions(requiredWidth: 8),
+                  width: AppDimensions.getDimensions(requiredWidth: 20),
                 ),
-                Container(
-                  width: AppDimensions.getDimensions(requiredWidth: 144),
-                  height: AppDimensions.getDimensions(requiredHeight: 70),
-                  padding: EdgeInsets.zero,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: AppColors.kPercentageSecondContainerGroups),
-                  child: Padding(
-                    padding: EdgeInsets.only(right: AppDimensions.getDimensions(requiredWidth: 7)),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 5),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Text(
-                              AppStrings.kSolvePercentageNumberGroups,
-                              style: TextStyle(
-                                  fontFamily: 'Almarai',
-                                  color: AppColors.kSucceededPercentageNumberGroups,
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: AppDimensions.defaultSize * 20),
-                            ),
-                            SizedBox(
-                              width: AppDimensions.getDimensions(requiredWidth: 4),
-                            ),
-                            MainTextBlack(
-                              myText: AppStrings.kSucceededPercentageGroups,
-                              fontSize: AppDimensions.defaultSize * 16,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: AppDimensions.getDimensions(requiredHeight: 3),
-                        ),
-                        MainTextGrey(
-                          myText: AppStrings.kSucceededNumberGroups,
-                          fontSize: AppDimensions.defaultSize * 12,
-                          fontWeight: FontWeight.w300,
-                          textDirection: TextDirection.rtl,
-                        )
-                      ],
-                    ),
-                  ),
+                Text(
+                  AppStrings.kSolvePercentageNumberGroups,
+                  style: TextStyle(
+                      fontFamily: 'Almarai',
+                      color: AppColors.kSucceededPercentageNumberGroups,
+                      fontWeight: FontWeight.w700,
+                      fontSize: AppDimensions.defaultSize * 20),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 5),
+            ),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: List.generate(30, (index) {
+                  return Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: AppDimensions.getDimensions(requiredWidth: 1)),
+                    height: AppDimensions.getDimensions(requiredHeight: 1),
+                    width: AppDimensions.getDimensions(requiredWidth: 3),
+                    color: AppColors.kMainTextBlack,
+                  );
+                })),
+            SizedBox(
+              height: AppDimensions.getDimensions(requiredHeight: 5),
+            ),
+            MainTextBlack(
+              myText: AppStrings.kFailedPercentageGroups,
+              fontSize: AppDimensions.defaultSize * 16,
+              fontWeight: FontWeight.w700,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                MainTextGrey(
+                  myText: AppStrings.kFailedNumberGroups,
+                  fontSize: AppDimensions.defaultSize * 12,
+                  fontWeight: FontWeight.w300,
+                  textDirection: TextDirection.rtl,
+                ),
+                SizedBox(
+                  width: AppDimensions.getDimensions(requiredWidth: 20),
+                ),
+                Text(
+                  AppStrings.kSolvePercentageNumberGroups,
+                  style: TextStyle(
+                      fontFamily: 'Almarai',
+                      color: AppColors.kFailedPercentageNumberGroups,
+                      fontWeight: FontWeight.w700,
+                      fontSize: AppDimensions.defaultSize * 20),
                 ),
               ],
             )
+
+            /////////////////////////
           ],
         ),
       ),
